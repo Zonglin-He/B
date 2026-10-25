@@ -8,6 +8,7 @@ interchangeable method.
 ## Start Here
 
 - [Completed 64-image rebuttal update, 2026-10-25](updates/rebuttal64-20261025/README.md)
+- [Completed context/top-K/episode-bootstrap cache analysis](updates/mechanism-audit-20261025/README.md)
 - [Latest completed results](LATEST_RESULTS.md)
 - [Experiment suites](index/suites.csv)
 - [Individual result records](index/runs.csv)

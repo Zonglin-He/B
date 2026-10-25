@@ -1,0 +1,68 @@
+{
+  "verified": true,
+  "source": "/home/wwww/hzl/results/rebuttal_evidence_extensions_20261025_2012",
+  "included": "completed CPU analysis; pending GPU manifest explicitly not a result",
+  "gpu_results_included": false,
+  "files": [
+    {
+      "path": "offline/support_distribution_provenance.json",
+      "bytes": 352,
+      "sha256": "e7436803f91f161259560cc65dbac04ee9d747d55a7e6a47c9dd4a4a7f38220c"
+    },
+    {
+      "path": "offline/paired_episode_bootstrap.csv",
+      "bytes": 618,
+      "sha256": "563bb53f38badf18bbaea2a2df9ed422b62e65f49d3b95839d7e062c30883b81"
+    },
+    {
+      "path": "offline/provenance.json",
+      "bytes": 56536,
+      "sha256": "2455d922f5fe5eb768b9d8033f81bf7be12fbed08a219fd691a944f7dfc6e8d1"
+    },
+    {
+      "path": "offline/support_distributions.csv",
+      "bytes": 9221,
+      "sha256": "0426d73c067f78c730bdb461abeff8fab0bc17d820b9898f966039b540ab4e44"
+    },
+    {
+      "path": "offline/context_groups.csv",
+      "bytes": 2419,
+      "sha256": "47c0a03461146ba2dc6351473806ef54d9d942e9c0dfb3728024cf4f6cf48c2c"
+    },
+    {
+      "path": "offline/topk_coverage.csv",
+      "bytes": 197113,
+      "sha256": "e6c23a557e6d993edb50daa19db6cd87b4c8344cb8fff757079d7dd5b0da07fc"
+    },
+    {
+      "path": "offline/protocol_inventory.csv",
+      "bytes": 2825,
+      "sha256": "8e4c8ecf1dcded898fb4807b5aa46c4baab46da8b297a7dd809428c43665c4ea"
+    },
+    {
+      "path": "offline/topk_exclusion_summary.csv",
+      "bytes": 1140,
+      "sha256": "6bf9278e6eb2fbae4634dd37f1c0d57777d848cebaa57c6f59e9a9cdf48cb783"
+    },
+    {
+      "path": "offline/all_candidate_scores.csv",
+      "bytes": 3976856,
+      "sha256": "2b05f242dbbda639845a69dd4fe2938675bb1c77c86287b59649f4af98952b2b"
+    },
+    {
+      "path": "README.md",
+      "bytes": 4353,
+      "sha256": "752605fabb4c57a653cfafecc3339b80391bb8acfaf1e31c07c58db47321e3a2"
+    },
+    {
+      "path": "manifest.json",
+      "bytes": 19575,
+      "sha256": "ba869836f68a68f42a55d536948e96ae9158a7e3c484c76e891971373684ea19"
+    },
+    {
+      "path": "manifest_seal.json",
+      "bytes": 83,
+      "sha256": "70d10f0cbfdafb8c0e124f95b7de0eed4187e26ca39572f2db3d27aff30b1688"
+    }
+  ]
+}

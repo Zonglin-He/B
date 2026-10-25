@@ -1,0 +1,4 @@
+dataset,comparison,images,episodes,repeats,delta_mIoU,ci_low,ci_high,bootstrap_fraction_positive,unit,not_an_independent_seed_test
+coco_cd,Full TRACE minus confidence weighting,500,18,10000,7.878106954588915,5.454349079434639,10.383086306578898,1.0,paired complete adaptation episode,True
+coco_object,Full TRACE minus confidence weighting,5000,358,10000,2.057452768422735,1.5053735701212239,2.590470438844695,1.0,paired complete adaptation episode,True
+coco_cd,Full TRACE minus w/o Region Construction,500,18,10000,2.780282973920592,1.5119122717697777,4.036406657267722,1.0,paired complete adaptation episode,True

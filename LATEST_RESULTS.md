@@ -6,6 +6,14 @@ This is a snapshot, not a live experiment dashboard.
 
 ## New: Completed 64-Image Reviewer Controls
 
+[Additional CPU cache analysis](updates/mechanism-audit-20261025/README.md) now
+includes complete context groups, excluded-candidate audit, and paired complete
+episode bootstrap intervals. Full-minus-confidence mIoU differences are +7.8781
+on COCO-CD (95% CI [+5.4543,+10.3831]) and +2.0575 on COCO Object
+([+1.5054,+2.5905]); Full-minus-w/o-Region-Construction on COCO-CD is +2.7803
+([+1.5119,+4.0364]). This reuses sealed predictions; it is not new inference.
+The sham-control GPU manifest is present only as a pending protocol, not results.
+
 The [separate verified update](updates/rebuttal64-20261025/README.md) contains all
 completed region-boundary/internal-allocation, semantic-role, and noisy
 fixed-versus-refresh controls, including unfavorable and null outcomes.
