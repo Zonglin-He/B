@@ -1,0 +1,537 @@
+{
+  "status": "sealed_before_label_scoring",
+  "records": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000014473.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/a9b1fdcf6aeaba8e077ca59beb0a6c99fa861b12b6494742da612377074ba1f5.npz",
+      "sha256": "8347001ab16633c4fd64bf11950c82fe6c5120b58232f368fe663717d8f8c02f",
+      "before_sha256": "a79e42c528dbae6b197c7f708837501f7e1c4a95bcc22d2d1d371d78f4c20138",
+      "after_sha256": "5d3bcb07e755ef05c0fe51055292a69f2ff0ae880a324a7d0dd8f1bcc86aad1c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000022589.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/421532cf955697ead192470d50a0bf09a5a256f25f31cd49d6c6fbd118ccf6b0.npz",
+      "sha256": "2e33e215bd60f7afb3ee18936216f22d5d78b16ce2b4a204e60e720771b6b59c",
+      "before_sha256": "57726a9c65af513aa61da394373cc171470596c84f1161589f1a6486e1e39b65",
+      "after_sha256": "3808caf47e1edae2cf2ecc2de26318ae8d32876c3dfab3f736f61dd0a8809509"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000031817.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/b80b0ac15ec70cfe8a46635ed58d29bb5cca980da19723a68452e2c9ef036458.npz",
+      "sha256": "284589725cb055e4eaa718ae11ff7581d371584aa71d2dbc292de29112a09e74",
+      "before_sha256": "ab06dd28b29cee605cd56e6edf0330910d53f8fc4e8f10c93ff6f98d031feadf",
+      "after_sha256": "3033e6c693dcdf1f355284bd62133d81e2aceb751911dd21efa7bdc77e7df238"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000037988.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/06481d2bf8448c7c2285271e5051f327e5a339ebc1434d4f7b703003fb15de58.npz",
+      "sha256": "7daa9d54b34db99c31032fcff9d0175234c563067ae4025ab90af743d5b2f94d",
+      "before_sha256": "d50a1a382d791e4c6af545bde95842bb354a7aafb6a558725a9f41959ff1d56b",
+      "after_sha256": "e43f6764c82c174b2e63c8aa25deb65f02a2240958be98ad74c43731b5f7f437"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000038825.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/2e38422914a912908f2ff10cf0e030fc97964b284e69c4346cfd0a54cc01d9a3.npz",
+      "sha256": "06a106446c475ca6be174d3a0b09d491294306ff8bd14a499a15e4f964fb5e44",
+      "before_sha256": "e078e47f1847aecd3f8c6f5a3eb3ad8d2e14c577a501a954b7f4362fc97deb0a",
+      "after_sha256": "49eb8ee2472d1d85646971b947d0426f36755672e0d5b99a0a7e9286964abded"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000051326.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/f0ed9738ca37ef7fd30516bd6fa3b810bb5874fae5f109336345aa5d6217e3d2.npz",
+      "sha256": "d5569ef8caee38f8a6d9406ea49e8d39e55e005d61c2dac9228a5546ef4c5f6b",
+      "before_sha256": "5b41d517ecaa089462ae8c26397fd756258f30b7a72fd5778950c111f5bcff70",
+      "after_sha256": "d48c34fe47700b5553e521410b9fb4c1b0482466f72732ac7747f6ac1ee4af67"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000054605.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/44587a74956c1ad25feedf77167150d8b5acdd413b35567179905612a557e764.npz",
+      "sha256": "a7657e1e2f66d7858aea0e45504fd7b3a56a8e0e8dc6c2fea2bc56b61cdb7534",
+      "before_sha256": "3492c9720a08c6db4f6526752bd9260dd9417511c92f3fe783f29e509bde1e45",
+      "after_sha256": "baec0f8d65e940fc12d0057e26eae72e50afbb4222e84f967ee45118bf4c5534"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000066886.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/e98a15bccf261dd17272c2dea2e435d7bcfcb8efda5a0120b6020eb438429d50.npz",
+      "sha256": "a4cc2ea12584e606b95fa079540662fa0eb830f3eff4bb5e1c6335e4f3104056",
+      "before_sha256": "750233960104e80da91c938c6cac1c5b758c2c1cb57d197d3f96a10460f768e4",
+      "after_sha256": "687e5117709a9aeb3b2cc2c4af5bb92405d62d6f232d09740389537b6047b2a9"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000069106.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/af7eeccac8aad97f06f1558850cda706c65af84a3d090a1ea3704d27cfd45b8b.npz",
+      "sha256": "ed37e12cad78caf4e6f3f4e32a1af88cbe62b182a4504e6851f688e7b6a3cbf5",
+      "before_sha256": "4759b26e437199b35a5705caf8303d035dd1ebffd61b1d302ed158959b689113",
+      "after_sha256": "416571ff9b683402c6b9c1fd6e2a89d6b01c9a55d1b0af4422bf171fe0dc9a65"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000074200.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/71db2c6e161a14e2452540510394122a581fb7bd9070bc8c2b1aebb16db115cb.npz",
+      "sha256": "7f0699646d4c91f5be3cb1b088953a0501ebf015385d6ee8dc6e851e958cded6",
+      "before_sha256": "62cbad2b4f13dac1fe6d1ccaaafc6cfef866de240c92259377a237162ac1dae1",
+      "after_sha256": "6c375a75ba50b5f9ef9d7a4b15768ae80bbba7f3fe5c2e8ef28db12994fe4fec"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000104803.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/ceb074166fdb4838c389b7fd87804ba241f052f47f3b805c0a8b81b8023659be.npz",
+      "sha256": "7e424de1d5b9303ac55072e4f7d8efc722031ae607cbffb2f6ee872482fa62f9",
+      "before_sha256": "acf06f1b278e1ab4cfaf823c6527113dec5a0d21504fff2037aaa3e3639eceb4",
+      "after_sha256": "eef2720bbc21ae2414fa9067288fa3bb064890bb44ea0a136ec4793849e53ea7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000115898.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/37a449d029a0551959101bf5e7963fa68a5fd02372471641e44502eff0d2e60f.npz",
+      "sha256": "b97a4e014b0a22cb32cf9ce27ad6255fa3cc07eff214bb22c49a65457a13d81f",
+      "before_sha256": "b1340c82fc3ade9b66ba04b0aeb2290268fce3ae19055087ce1996618bb3a6b6",
+      "after_sha256": "c7ad92813dd41900d80aa54460b12c96c7f18f7a64958e7ca24b81fae64f70ba"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000121744.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/a9b7cad661b829c465853db8a8dfd4daddf0f0baaf188850c7012bf0f0e1905b.npz",
+      "sha256": "6cf8fa8d865b113b41d732c7f405d7e6e0b35e061cff19583cab44f091b8dbed",
+      "before_sha256": "8a8e410aecd5ab9c396955212c34270b342b60c1675b422ee07729025ce5d336",
+      "after_sha256": "5791c80aefc05e0dc2ffd26f48de1d7b1db4c49a1987d0a92307587582a94aa1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000130699.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/e83b212d0c5e604af12067b4e66d38fbde9921adb1d234d9848ca5d2b272f622.npz",
+      "sha256": "a6c16fc8290e91f3f94b9a7f73dececbdd66a8f393f14fdeee76fb0316bc4553",
+      "before_sha256": "aff55f0132854080dcc8482c49280c3ba12a91e3eb1cafdf28c6742344e82a1c",
+      "after_sha256": "26f2416c55f05788f5eedba495361c5b332b674971fdf09a0122fb73346c13a4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000138241.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/bd9ca0256997f74bc3f38fb1df31293d87aaba64f64c6cb9564b7c529a65f4f1.npz",
+      "sha256": "23bbb5a39f6c5a73e00c699f92488c163c7c87df85638487f02b20c3d86e4842",
+      "before_sha256": "d0f8886b09103b693f1c3d106ffa15cd26b7988f09e1ec8b46752b85b595af78",
+      "after_sha256": "34e36434d23c7ec79970884cf332b5391eb448459b16ff7afd551a386a66434e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000143068.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/924a126c6095c232bfe8f66b6e71e70fecec130462420fd963a11978a07271cd.npz",
+      "sha256": "40534a29f690e1b1d1059b42c5d40076b9bf939a3707e91ed7c34d1230bca787",
+      "before_sha256": "a5689cfeb8eb69cbfa8fcb3ab344bc3b375f4a1e1e71e35e7bf1ea8f8ae35cff",
+      "after_sha256": "794eae24089452ae339116152f87be4bd0ac0ad377f262b6161089b50b84e99c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000166642.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/4039e6f3916c14012aa2f9f6acdb92ce6f6f108661f4824ccdc0a7d3d49b1845.npz",
+      "sha256": "3c9fa49e8065bf2a7c0344f2b5fa370f7368d2ec10d688401a3c259d599f0f36",
+      "before_sha256": "a0262e5ff847ec856c163cf45791cc6c63c6ec454402468aaa522674ce01088a",
+      "after_sha256": "266576e26f9032806f36ce089f0f7f2aa6c6ef7e1fd6c3f62672bab3fad99a8e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000167353.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/9cfa608959d9fe4adbb601893bb162bb489b85b1a2d714a9ff8177b51b346de6.npz",
+      "sha256": "1999d71125c54a7d62dc08fbb96ac082b918bb49b22044b0032263e79521248c",
+      "before_sha256": "e88d5daf97a72c7de902b04c277fcc8da843ae41972e3f3a3f8b7d2bd0e2db04",
+      "after_sha256": "a4eda0c556ca9c0fc3162c5be2d56211f9c239867e8db84db90d9075fcc5268d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000170595.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/a8ee5cbbfb866358dd904292a475011e659c32bd1d3d4609c819a197994dc103.npz",
+      "sha256": "9e7424cd2c8d325b7c59b1a47fc053385f7dc5767c5fed9eb367f84b546efb28",
+      "before_sha256": "20eee456428e431b6ace750dd8028013eadcb6a2741cc15607b3f15301bacb4a",
+      "after_sha256": "6f38ebdc61e02144c6b95d5665d7b443ef44a8406711214c289bed7a14796a8e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000182162.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/a29e3a1a47ef766a51cd3973f43775435849887b86fbe285980bffa9de6ad9f5.npz",
+      "sha256": "7fe1f217faa96652b82f3c2c998286e39cedd1c235168d60d48451980346ea07",
+      "before_sha256": "88adb69bb716b4c33cac7b424b7efc42c5107c2fab7c52aaaf0f2286f8ae53bf",
+      "after_sha256": "5f22879b3c87e677f7c3b7532717568857d53dd056c1469de46ef79f626c3f0c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000194746.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/fa5a5ea3b1549c75661481edd13b09d02479610a126a032d6ee09e56166fd87a.npz",
+      "sha256": "c9a3d9ce007b6712b388bbc9dd6a5120817e294f50e533e399d23648fb102d83",
+      "before_sha256": "0ea36c34e9f0ec7e26d2028c2f2de1a73ba5a89a48f81c17f393367e6ecd1b5b",
+      "after_sha256": "d3ed158b6d9f847ea23bafeacdd070a0ecf644880733085e7cb27722afc23d08"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000200162.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/7a2f3a7912c3b17fde5e9771e7c61c4ebd405307cc510c33f761fcbb41b152f7.npz",
+      "sha256": "1e14a995e9e211b61059d062b7df0f0e8f6e2cf038b206e80177e44bcfefdaa0",
+      "before_sha256": "5a43ccfafc5bfadc4a400e9a9fce87ba9cbc2c5e753f36f9dd26bf7325fa62c2",
+      "after_sha256": "86a92c1e31831b0eeee42e1aeb521dc45e06b30a05fd6041a86db6d67c88574a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000205289.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/d6bcd0294957eaf5234accf2d01693905c3b4c6117c25d4f1cab0cb5bd35fff4.npz",
+      "sha256": "73d7829205e0284775d1748398138fbbdd0a84e4123fefce753418353a5ec048",
+      "before_sha256": "f0bd179aabbae680d8e66b884c45f9f8a781b7beb7498b53e0d49add239ceba2",
+      "after_sha256": "8770c02eff5e623dae319418a888dcab359dce701b4db6f54ec9e712354ba58d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000216516.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/cf2822b1bae3f8029533cf722cbf9d0e4073c8a6510f50fa53f48848b1778138.npz",
+      "sha256": "dd12aa300779a26fb64b0fce9448b57639f4417071c3790c03cfc34cd869b326",
+      "before_sha256": "5914d6cd52ec78ee0e2c1ffc5030bf8fe9ddde786f2fec905cf447c7a75c44da",
+      "after_sha256": "a6f5d8a05cbbe477692b719f5911683e7a4fd846a3ccc4971b22811b4236b7d5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000221017.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/04c90d35e076d52bf55beeb84ef677ad3f6444bec21d5f8b433f640379cdf913.npz",
+      "sha256": "ded1591ae71aea02a2b1b933af70726ce09cda24d4b74c2094449ca5715c12c6",
+      "before_sha256": "de6d2913889f92791148dbb9b11a8e6257be4c73d1e21f963f77a807702d7c42",
+      "after_sha256": "296734820323c42e3928212b4a4039b28421de346a1df21967a26c6d7b6a4d3f"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000227765.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/80bccbd1b2ef1c1e74771851978f00d3fa213d8a5e34dfdc66235198f801af90.npz",
+      "sha256": "86bcfd1934b2a1a32d6ee09aa10e50bafd7f8ad6473416fc519f9ee42efe994a",
+      "before_sha256": "1f0a648c4f113230572450d6ecf5c73e147148fd60db9e073ea5d18d37539b5b",
+      "after_sha256": "1246ea2028fa26bce4729ec60bbb73243c96c1d6bd367dd18274df25aed95c37"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000229553.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/7a3aa882fb5fd176d76edd9368c06e992ebf30e740b7771f2cae5f2a302b66f6.npz",
+      "sha256": "bcb6c6f7bdfe6b8ab26aa0656d40115e27de61be9d8e4848708d0d4f46bdecad",
+      "before_sha256": "0485c7ddfec79f6e19a30c99976cb43c868160b60224b7ea1244323506195b61",
+      "after_sha256": "413e5967f340813686e1e7ee6eb1eff9eff00ffafe31f4fce4858ea01a22e464"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000231097.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/2716f1bab21a32aeff1826b713db412e468198fe6d6549b6492e73c588679a50.npz",
+      "sha256": "bd9800246dd23a3d6a2e04fb544f256f01f662cef7fe9330886c023093a586ec",
+      "before_sha256": "9031f270be42eb1ce3c255cb6642bd428737ef2eec17be2a1b4d0de34e0f7a8a",
+      "after_sha256": "0ae60cfdb7f011dde5d1768b481536816b1d8f484d3d19763188eb702da5c2dd"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000244750.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/c9be8753ced96692c24077a3964ce949ef54a44a00aea364e0e3af7cf2dbfb5f.npz",
+      "sha256": "6cf6064f69e2bbd45cbfa2c2cf140cfbf1bd791d208647dffa806685c98e8263",
+      "before_sha256": "6ececc2ae3c2f78d926e5308ea2158074cdb7027c7656f12a31b10cf5ab5cfd1",
+      "after_sha256": "8072c7babb292ed4d08a399fed1a20e08c72eeee26af254918d49503492d02c7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000252559.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/750ef558ba620d2dc81f359f855b4482116da4648ae8e6413fd719b3e3792e19.npz",
+      "sha256": "b59a3e02705db08444e4317e023a2dfeb84d5b75b6f8b50a424e8eb65358aa4b",
+      "before_sha256": "b4b571b70678ae126ac7ab1b51d6060e8900ae02daa090381a93a3b91fd779ef",
+      "after_sha256": "1d7e3695f04d93044689ce322d912bc761db8edc13b7329541e3dfa9c9447130"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000273760.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/88e9e74d923bf38c70ff913e8749c7b53178d254e8bf9de411d3035b95a6c40a.npz",
+      "sha256": "f341a9497285d3577ac31508e19fa6f06ec040ff1eca1fa3b9a631a4c7468dc8",
+      "before_sha256": "b457258996ff9a71dfcd046edeed093411924139db0cab9669455bd56ea25385",
+      "after_sha256": "1d17e514cc8af3bd05d1fa714275b08c3be0bec9d86e4e0a9bfeb61d80195db5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000293390.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/5283948a81e03ab4b77e8d9dc1d91abbc976671508f899210dec3b1269de0ebc.npz",
+      "sha256": "b867016d6352b71ab6252e10a886991936d40fea76dd10ca9ba14fcaa5e06c7c",
+      "before_sha256": "290c230fac2bb681e87641f0cd578e168dabd2a73eb0cdafa86e510a0e338b45",
+      "after_sha256": "21dd6bfe713deedcb9da6bca82e3a4a1960e81288527c89e5b34fe03faeda838"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000294163.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/09c0a5407d375e019a699c08dd9c788c225e4aa1ae2f0858fd0e8f176d7c69c2.npz",
+      "sha256": "6c9ee1273155bce5f3bd9eabd1f523d1ddec81fdfddeb8a733bda987a26bd3ec",
+      "before_sha256": "7655f98910e86a2950331c50803719afa0a6c18a0788462b28936b9802b60911",
+      "after_sha256": "0f367e519cc6eb4e20f92e178552a0735373065543902bce9238e35d9f9f93f6"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000300155.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/b6f8f964a5e7acd90b92d37a2131df49f3e3c2d52078d790ae4ec983e18968a8.npz",
+      "sha256": "316727ca7ba6e0f995efcb7158e5316c6298d3a46bf84ac356a95380d8353878",
+      "before_sha256": "675ecee209a0d4c7a24da6cd4af758b47606f6a1515f2d0eb122279eec290019",
+      "after_sha256": "f099558e5bf3fc8cf028d3b9a32038b7b4d10e72d9357ae3fdb5fdc38e10d9c6"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000302107.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/cb4674aff25975d3b4e37b0707a500c21fb70db9b3e9dffd9bc58915f93918ce.npz",
+      "sha256": "cbd2178f0f7f5871e29dc152aa0f6c4ed463a76b641d1a0352ba438f5fe0c634",
+      "before_sha256": "4f0cd5e4cc052fa83a4ca0a74ec231d9779af5c2d1ce264074c85501698b9cd6",
+      "after_sha256": "dccb7ed1beb70aa88aea39ff4d0269acf39da42727684a6dba850fd7c47dc6fc"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000306733.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/fd42888a9fa7d7fea2a6d3993f995c454b184c1fcf50a85e60d8f7a2eb7fc4a5.npz",
+      "sha256": "0a7d1d6b7d4e42c6906fdac3d55c25ef71e556df950dce664d13d58622fe379a",
+      "before_sha256": "555e2481bfb0bfae508e1020b2a5427ae3b583328b693f07c698644078b73a21",
+      "after_sha256": "a36feae0e5bf4afef1c772ceba0028c847bb8be20ad60190dc863fdee4e925ed"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000309467.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/78e56020bb054f06a34e08e56cf069a7188736b0d18adc2fd6b1cfb186b9eebe.npz",
+      "sha256": "ca2b435551d4bba357b3d44846410d138da1017a00d5f1cfe4576032a888011b",
+      "before_sha256": "70d6f0edc65b03a3d58237bbd1c98aba4b764b4fcb1de52e607d4a407ea0ddbb",
+      "after_sha256": "ba770a2a6de2d3f25e8365c8fb63d44e6096db6ccc580bafc0f9a1ad997370e0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000328959.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/3a1425807c7006d062ea808f7db3ef797002a58f2edde633448802d9170dd86e.npz",
+      "sha256": "85791bc67edb105b29f5c01971feb264b9eebbe15c0699a8c63920a87365bda7",
+      "before_sha256": "a3a90541cc7755a7e6cf20a11fe97aaae76091a401094cdd35d542215cd82a56",
+      "after_sha256": "4f7eab273d0925f713fb72d17a500a9ea43d3550af4b5ac54b8f7266044e8c31"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000336628.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/2feff8c043d13228dd6ec072a9846e8aa87b2fd305dcc6abd9508726159cb7ac.npz",
+      "sha256": "fdb7ac6ce7b918fed5deb92d2163cf652e22e952e175f89f67fa6fdaab07c4b7",
+      "before_sha256": "93f8cba28f7702f6b17f700279b0b708bcd8284ca131de0c94a950e5645063d1",
+      "after_sha256": "0b4690e1bb9ce1797d54e15b474c8b881203944a31b1621a8bbfb76e44f49d14"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000341828.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/1f8f687bb186341f54c31a08fb128b44ebe30e99a9cbb762cb56b298ea900254.npz",
+      "sha256": "fd0585640030e226e068ae54d9085c60415f1ea6a3a94261a7be7a89eabd52a6",
+      "before_sha256": "2b1056208e72bed5d9b84ad5cc365127ed68bef77cf2461af3e20a049b9c6276",
+      "after_sha256": "0da96880d6a501d26ac96e63ed891f0a7eefcf07c1bf502a805341c35dafa4a1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000345469.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/d37a6a861c67dfa8306111ec139f2f85398fd85294a979f166d728f91affa396.npz",
+      "sha256": "999152faa7a3ecb507cdb660bc23c0d5f9eb44fcf32cdb6dc61366c168b2f340",
+      "before_sha256": "454212248837e8f560b5d09cd337c45bd91f491bda24181714fd91f9813becb7",
+      "after_sha256": "781f02dc519c79ef69d59c41005dd1cc93de018c8fa97aba61dc4288e1e1386a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000352900.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/ab5df9c9a1332e89fdad01508173fe30ab288322a583c28741a29aba91256404.npz",
+      "sha256": "0b927640fb07c8fdb1a2e799e7ead2509fa019ca00bbc66fcbcc63116febcb63",
+      "before_sha256": "bb42f221a5c94c33c7d4186f2a941ba745791fa3bfdfb7935fcf0a36693b95c9",
+      "after_sha256": "164acfee97505c4384ee3ee7e0e5a0c746fd1c7fe78bc6c2df45f6fb05acab02"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000356094.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/4958c28ecd87f1efe3b8c2a3a347ca1a8d348c4ec54be215c9de762fc019ad22.npz",
+      "sha256": "8b74053aa62f62874d52ec4d6a5064adb0c97de07a24063028e6e9fde449b1f7",
+      "before_sha256": "a9018076ce8ae6db53e72debff99c3c1154f34700df469d3df50b74d2ef06f7c",
+      "after_sha256": "d04be736c8e7a8f9613ae0c1da56e995c2823af854d87e9d260fcb4cd35cde25"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000360960.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/12471beb62230760d427459bed5ead029d0aef0949174a0e1a81b804c40d23fd.npz",
+      "sha256": "d85a8c3ffb3f741beb1f53e4440358baeeef35fde8274a809490c33d5b0ebfcf",
+      "before_sha256": "94a773891b5fb57a3e93e7b78a3c8cb1f420ac4db6ab9265ba4131cd4fd6e14b",
+      "after_sha256": "7b4c6549315be420a01f3efcc03f1712b04c6dc918555cf4fcbf6adc63a34d9f"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000367095.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/49b96bb498e155017af8e67d62d267855377daff31ab7c5cac0f48161054161e.npz",
+      "sha256": "02fc2ea18e1ccc9bf4de3c5dc4b523eb99739c725b9ef87760c1c79e617842f1",
+      "before_sha256": "218909170392a1d4b521bc8dc7a9229e6e0ef2cda4155e2d65bb6dae5b089377",
+      "after_sha256": "c09255a74d229f7f2efc165b1d5e6b197c4387588da7ddab0d05b8b656c19f36"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000391144.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/1907483d994b69a3fcda927af0ee30c1b790d2d8a3957ab3528fa21b9682a187.npz",
+      "sha256": "7bc290b2b83d69c90306e706a0a6db48cc3e9f14bfb9caf7b2932d2fbfb4c6a1",
+      "before_sha256": "1bc11f91ae2d33c56ba07105f0f892cfa2faf995d144596e7db0d0986b24d497",
+      "after_sha256": "026c6ab02de9abc07e7fe908e3da8689a213e5e4ecb3a98f49a2cb0d925770d1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000393115.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/79c85b9e5edc930eb4ca49cf7e8ccf4400792003ae2024e2939c6f8eb8c81a27.npz",
+      "sha256": "2cec4d02830e96733c3664a065b6aae352cbfcec15392e9756aa7d720430d8d6",
+      "before_sha256": "4bc03534dc80a9f0421687cf61afb3d77f92397656b329cb73244e793554a90f",
+      "after_sha256": "dc5b956217e6fbf4bb0d6b43006d60df8c87c9f411018e9327340ae9ab388d78"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000401991.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/def4adf99ff65b91b7019761e067d7c3e69a5294cc183a57fb909d22d0736419.npz",
+      "sha256": "773dcbc17dc399f73a2fa751c9ec5562f801dd4c38990dda2b13ef58c4a827c0",
+      "before_sha256": "861af54caf5fd076485711bedf78f39ed1e89fd851c21925e9876010f29b57d2",
+      "after_sha256": "39ff949b112dd2fbd02a8f0c98c13772cf48b439d4c244fb4d4f14d9f44ba36b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000405195.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/e2e94f3937af95e5ee5740f15237f7e1c421bca931471e4394e4c0a9636ee254.npz",
+      "sha256": "acb2e3a3eaa5756279b5bec390342c082b78c7822e2d851ae1bcb54e135d89e1",
+      "before_sha256": "2daed9862f13b11a9e40fd9cd9bfecb64770c3f074a99a92db75eaa3e122f75e",
+      "after_sha256": "53a2a407d3c42494697e366b03c4d390ec2b82474f802db6e934e8011902b280"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000405249.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/3b5bc39173acec0d0f78f3c686c47a7e38e6c99d635ec4d41339737b97298c1a.npz",
+      "sha256": "ef0dd07ad7579f0af22c8af4b81a527ee6697cab4d5f3b3a9c63555fc5eb81eb",
+      "before_sha256": "35ddab15dd9fc320fe955f14d6800f4669a974a54035dad6757ce3893ed272b7",
+      "after_sha256": "cbcf964169dd65701fce8764f4a12659f95e2be24c28b825d3dbdb8bb1078387"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000409542.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/2518e137a9ae0cd5d0149cf3eab866627a6aecefb73871ac3f288091ef552cf6.npz",
+      "sha256": "1ff1c683b4c664dd12428655b8763563001427b3ebf5f4dc3096cdf15950e18e",
+      "before_sha256": "0dee3771c6991e9e454fb8130977494765dcb51e111f8f2ae5ff402ad7bbebac",
+      "after_sha256": "02b3bb418392641ad2ded36ed416433a3847ad8a94e38e9e3e169db6494a91b1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000422886.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/8c30377b5c844c4e068cafbdff9480e698b2b73266c0eb32c55d95e9bafbead6.npz",
+      "sha256": "d2cd1ad6323dc1924f6b2726f877113d29ac0627f1cb35c6e959d7d1be38d115",
+      "before_sha256": "787137e132523d70386c818ceec980a16cd49f28118d93056b41b7cc562a5892",
+      "after_sha256": "fce5a28400388f5327155701dd75c07ef42083886a9b05d4b71323a13e822554"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000426241.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/5dd15702fe9db5e4799f04e643efa198849a67ebca90c7e329a3e7c079be7aaf.npz",
+      "sha256": "c14fd57736e765346e83b0642c08faf3a44aaeb85810ef6e03f9ca7bf49588b2",
+      "before_sha256": "1245be2fee08ea85bba4aa5e329812a7e49f6b528f48c459c2a09994edf8b1f3",
+      "after_sha256": "f10901e0cce7dd58cf9c2623cfe0827783a355347e30e46a65832a1bd0888e64"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000430286.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/ce46e9203b34e8a5623d78d68736d4da9035ac465870be8579836fe31d148983.npz",
+      "sha256": "2e0cac3c572f661d418642d158b346c84a0e1d5a3e16ca88d0268402f50d251a",
+      "before_sha256": "89a17afe044eebf809eed08b8be5ec76be0ed46fe907d2a9303152e5ae501f2e",
+      "after_sha256": "e7c2e67f7a61267e7e7a0bcba4a48d30a2ae4f458141f66beab2e73919ba4f75"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000436315.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/29ef7605cc55f01cd715637af2fa011c64457fc9082c5980f9a76092f824627d.npz",
+      "sha256": "25fe18ba351ae017bc097f53551c999dbf180a62a7985b2fb7c1e9a95bb16618",
+      "before_sha256": "a99aad059137a25a1d0aedbfeb178986c58478e05f19229ad4109918cd759951",
+      "after_sha256": "cfaf545b8f79a57a79da6fc816b67c5578fa6463f7b96476ea39a49ac6f06927"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000447200.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/108845041a43d65450896ae668bb477afac716b80ec6bb9ddfff2fdf9a2e4d51.npz",
+      "sha256": "3393205c5fa72f7bdc6611e46324bd18dbf9757a8927925478694a46bb81c89b",
+      "before_sha256": "aa01db6c3aeb3224534b784912003a37474185fcd4ad971efbe7dd1490a35df6",
+      "after_sha256": "0a7c364de1fdd4bcd28d99c17ec939911fddb9526b6ea3f9d548b39483e40d6b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000458325.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/d771cbe634301e5f1b408f0446bf21dc8a734cba8f87ed47de7d8374a81896a3.npz",
+      "sha256": "2f7ea7bb828d741ba302fe47c649fac73f6d8e63ac708cf96e13346a604249ff",
+      "before_sha256": "5d2876808140f828105fa68bb084739ff7b09f49444a9cc328dc4a7d0bd9ade5",
+      "after_sha256": "a64f1bbad8d7972424265a88915dad3b44d435ca08c5e7ca58942eaf9dc99379"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000459757.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/913afed0eb1a42834e84825520acee87c530190913b1ba61f828c85125573fd8.npz",
+      "sha256": "0ebd8f809cb7ba8f4d97767adff693525c59c3261fa6b0179d0e74b624ca793c",
+      "before_sha256": "0c7003be9d230471a839e09142536a9bebc63192ce3358eff886b36023e7f01b",
+      "after_sha256": "b11c0eb1ee41f24b7f11bd8a058645df137ca40898954e192e5a9b74c33bc458"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000478474.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/2871e6d3346697d5d30c5cdc598cad13faf8ba4d9b8c875b96a7959243d7f77c.npz",
+      "sha256": "98d9deed9b8737bc90c0b33d68639217bc097d45f904c5f95637985b26c5cfe3",
+      "before_sha256": "3fabb4075ce2c1e9020b19b6c2fa1235aae9b2f8b51e1a0f1bb9109a7d501f66",
+      "after_sha256": "64eb9486b4a0f6d519504e67601f0d6f7e6aab3149099ea60031c8385cdbad8b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000535578.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/b1415f5ad0a8bdacaefcdc6eb171721ff0f4de9d2f496d05ccec01a715bf10b8.npz",
+      "sha256": "fb0ed0e845faa27479b41a81f9f1ff83636c90ff8ae0222f742022bfc3f9cf8d",
+      "before_sha256": "4522c7a3d96d155cceb69653e3117c91a91e6466ba63665ca0cafd2c51a78f97",
+      "after_sha256": "7de2759dde3c46e3139d1cf446c6c14e9a844608cfe8866e568a0307d7ce7ad8"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000549167.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/18ec00be7b5c87f731b56e2c7d28e67a8b83887ac5e5df6865d02f40c91616a8.npz",
+      "sha256": "db83dbd9d1a15e23bb8f1e99607a5725105c29e48427d96f1c1490d921427d6c",
+      "before_sha256": "7c87e62231ef29c297d5a1eac120ea94a99804ea018a78771fd6b1415e574496",
+      "after_sha256": "b5af630233dd2dbd92313c122ee97962f783c835bf11081adaeb010ef551a39e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000577932.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/1d427062455602ebb9e4e3c39da61462de50cc94d8fa27376e35cb2989a226dd.npz",
+      "sha256": "52db47dd485a0440b2322d8e677e164e0f794656cea9b3dcae8b44890cd84764",
+      "before_sha256": "649b5cf0410138b8e2c901afe1b48a8b9dafeae27a544ea949efb19433c1c8a3",
+      "after_sha256": "56dc85e2493c705729a1f852d5968488fbc76a81f946c438b1c50a0aa1a16310"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000579321.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/b9f2e711cbb121a135125bedac110841732631f7732c05c3d327843080d0ada8.npz",
+      "sha256": "f2a6e6602a8d787c401735d37d0d4ae0a6532fbd52076c4c7d215dd350555060",
+      "before_sha256": "d8a83afc137547b04af63e31405306de318dec8eee4e0923d61db68af2158bd9",
+      "after_sha256": "0799341a65f6e1a6e30ac0b4eab3fcb8e078de679bc2f73f5d4ab78a513d6c20"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000580410.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/regions/coco_object/eroded_boundary/predictions/60f00caaabe2723b2271dafe4ea10141cc653bbe2ae006f4e3da5135362d6323.npz",
+      "sha256": "ec989c9395492e152654a30e773124a564be3ceb7eb435443b32d8d036bf0be2",
+      "before_sha256": "dc261bc7f27177cb10d75b6ba845d49edabc51bd8b9f113a344cc2d7060bf60a",
+      "after_sha256": "be69422bb536d9372340aaae99774e1f6b4d269b04edff58bd488d4523059d7b"
+    }
+  ],
+  "labels_in_artifact": false,
+  "classes": [
+    "background",
+    "person",
+    "bicycle",
+    "car",
+    "motorcycle",
+    "airplane",
+    "bus",
+    "train",
+    "truck",
+    "boat",
+    "traffic light",
+    "fire hydrant",
+    "stop sign",
+    "parking meter",
+    "bench",
+    "bird",
+    "cat",
+    "dog",
+    "horse",
+    "sheep",
+    "cow",
+    "elephant",
+    "bear",
+    "zebra",
+    "giraffe",
+    "backpack",
+    "umbrella",
+    "handbag",
+    "tie",
+    "suitcase",
+    "frisbee",
+    "skis",
+    "snowboard",
+    "sports ball",
+    "kite",
+    "baseball bat",
+    "baseball glove",
+    "skateboard",
+    "surfboard",
+    "tennis racket",
+    "bottle",
+    "wine glass",
+    "cup",
+    "fork",
+    "knife",
+    "spoon",
+    "bowl",
+    "banana",
+    "apple",
+    "sandwich",
+    "orange",
+    "broccoli",
+    "carrot",
+    "hot dog",
+    "pizza",
+    "donut",
+    "cake",
+    "chair",
+    "couch",
+    "potted plant",
+    "bed",
+    "dining table",
+    "toilet",
+    "tv",
+    "laptop",
+    "mouse",
+    "remote",
+    "keyboard",
+    "cell phone",
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ]
+}

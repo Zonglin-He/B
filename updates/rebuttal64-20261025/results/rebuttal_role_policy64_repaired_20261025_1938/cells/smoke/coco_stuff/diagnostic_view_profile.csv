@@ -1,0 +1,10 @@
+episode,policy,repeat,candidates,diagnostic_views,seconds,visual_calls,visual_inputs,ovss_calls,diagnostic_inputs,visual_passes_per_view,scope
+0,role_aware,0,130,309,1.1340927621349692,78,618,39,309,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,role_aware,1,130,309,1.1423221724107862,78,618,39,309,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,role_aware,2,130,309,1.1410163715481758,78,618,39,309,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,quality_only,0,130,260,0.959859948605299,66,520,33,260,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,quality_only,1,130,260,0.9627524903044105,66,520,33,260,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,quality_only,2,130,260,0.9630776727572083,66,520,33,260,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,all_dominance,0,130,390,1.4356523333117366,98,780,49,390,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,all_dominance,1,130,390,1.4392438540235162,98,780,49,390,2.0,"native diagnostic views only, not end-to-end adaptation"
+0,all_dominance,2,130,390,1.4330283347517252,98,780,49,390,2.0,"native diagnostic views only, not end-to-end adaptation"

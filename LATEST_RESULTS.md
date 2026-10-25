@@ -4,6 +4,19 @@ This page separates submitted-method evidence from new algorithm variants.
 The authoritative rows, populations, seeds, and paths remain in the linked CSVs.
 This is a snapshot, not a live experiment dashboard.
 
+## New: Completed 64-Image Reviewer Controls
+
+The [separate verified update](updates/rebuttal64-20261025/README.md) contains all
+completed region-boundary/internal-allocation, semantic-role, and noisy
+fixed-versus-refresh controls, including unfavorable and null outcomes.
+The original main queue remains separate and continues running.
+
+COCO Object within-region allocation, holding each native parent budget fixed,
+changes subset mIoU from 19.5348 to 19.9188 and actual whole-image correct-to-wrong
+rate from 19.2164% to 13.0575%. PC60 mIoU changes from 23.7211 to 23.6625.
+These are fixed 64-image diagnostic results, not full-validation replacements.
+The offline instance audit includes uncovered instances in its denominator.
+
 ## Submitted TRACE: Full-Split Module Ablation
 
 The COCO-CD and PC60 rows below have completed seeds 0/1/2; the values are

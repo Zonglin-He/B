@@ -1,0 +1,29 @@
+{
+  "started_at_utc": "2026-10-25T12:02:40.485823+00:00",
+  "finished_at_utc": "2026-10-25T12:02:42.959266+00:00",
+  "source_root": "/home/wwww/B/.export-work/priority64-20261025",
+  "snapshot_type": "read_only_live_file_snapshot",
+  "atomic": false,
+  "source_modified": false,
+  "gpu_work_started": false,
+  "included_files": 2042,
+  "logical_bytes": 288215117,
+  "unique_objects": 1965,
+  "git_result_bytes": 7443115,
+  "excluded_counts": {},
+  "suite_count": 3,
+  "run_index_rows": 79,
+  "archives": [
+    {
+      "name": "results-objects-001.tar.gz",
+      "objects": 1965,
+      "bytes": 28094043,
+      "sha256": "b46d725673eda68a51c24e68d05335df72ea0b75de1e1a24c9b41750696a68d5"
+    }
+  ],
+  "files_manifest_sha256": "5a52ea6e0c42aaadd671096707982a64e2b58163dd90988581ddac003367d6f3",
+  "queue_snapshots": {},
+  "finalized_at_utc": "2026-10-25T12:02:44.767705+00:00",
+  "source_patch_and_credential_audit": true,
+  "run_index_source": "captured_archive_bytes"
+}

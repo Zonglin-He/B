@@ -1,0 +1,118 @@
+{
+  "status": "sealed_before_label_scoring",
+  "tokens": [
+    {
+      "episode": 0,
+      "candidate_json": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/candidates/episode_000000.json",
+      "candidate_json_sha256": "92b3713ffb27c2df80b9a988c94ce1bb2b17cd40a95e2964abebe1fbaf980c4f",
+      "token_path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/tokens/episode_000000.npz",
+      "token_sha256": "42c22b6024083be38fc9a1b954db2fb0e88cbbec1ac1cf588d7f22675d4e2ad5",
+      "image_ids": [
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001972.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004329.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001572.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005548.jpg"
+      ],
+      "patch_image_ids": [
+        0,
+        1,
+        2,
+        3
+      ]
+    }
+  ],
+  "records": {
+    "role_aware": [
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001972.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/role_aware/predictions/8d200f067ff26af56c5b5efb395dd68903da01930282efe6bf7b87387380c0ec.npz",
+        "sha256": "d1528a0a8b23c628fc652d407838ba573ab0b4f487adc77f149e6dffb9ad2f10",
+        "before_sha256": "119c7757d28d4589f2f4c0d548f49fdf82545710dfb61fc8ec6c619db710f2d0",
+        "after_sha256": "43fba88d55f26e129ec01b4bf5f4ddae21de8f31eeb4d0d7f249db3b19edaf3e"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004329.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/role_aware/predictions/d04a3c04f20fdf766499af9aa2d6e326f09bc0a03f5e13d0a4cc78cfa65fbc1f.npz",
+        "sha256": "99eec1a3a1badfef474b7f64dcde9109848262c07bcd5cff1a66e0de0d9728d4",
+        "before_sha256": "f71cb17b07800107bd6d41594cbc2a11f416444793e6e27994481677c14ddabf",
+        "after_sha256": "4117fbaa58f15d127e30f91713c55fe52bd7f8099d2806eb3747e238bb80bd8e"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001572.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/role_aware/predictions/90551cab5c9a4ee9ac8f467fdf704a9921030689665754cc2d9236f8b1798909.npz",
+        "sha256": "fb1ec5e412115d8b592bb4ec48e51df8a127656a10783c43fcd8ef31151b54fe",
+        "before_sha256": "fe150933125f2aa00475f73f602d788e51c4cf223040d8adf7f8a5bd582dd99b",
+        "after_sha256": "ee3555323a97c5091999a27a6d38bb83d76fb8ebebcef1c0f10eafbad43d779b"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005548.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/role_aware/predictions/68b7ee9d7c42acea4be14934b0c55d0bb74f440e9e9985bf2fee67f022910507.npz",
+        "sha256": "5dfa8da0769e938b2af3126edda41e2ed75a5704e55798d8abfcbaab26cd5473",
+        "before_sha256": "5c9adfe8f998b11996292071170e82ab65bbe0c0012a00d3f4a53fffd30a89ab",
+        "after_sha256": "cc3943edc5bf61c3e997d33a11e617e05fb78b35ec52de558805c16c7e23cd59"
+      }
+    ],
+    "quality_only": [
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001972.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/quality_only/predictions/8d200f067ff26af56c5b5efb395dd68903da01930282efe6bf7b87387380c0ec.npz",
+        "sha256": "982a04c77616c491027e6c7fe5a01035d9da77be716b23ab5c4898cb864df631",
+        "before_sha256": "119c7757d28d4589f2f4c0d548f49fdf82545710dfb61fc8ec6c619db710f2d0",
+        "after_sha256": "3eb6b878f84699d400ae3fadf444297715ca4db6eace44dfec543bf86d250f15"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004329.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/quality_only/predictions/d04a3c04f20fdf766499af9aa2d6e326f09bc0a03f5e13d0a4cc78cfa65fbc1f.npz",
+        "sha256": "50432a777e0d98e0b7539df431e42ddbd97336af64000aecf62c9ab217fbddfd",
+        "before_sha256": "f71cb17b07800107bd6d41594cbc2a11f416444793e6e27994481677c14ddabf",
+        "after_sha256": "0c002aed5a63897062d865de99ce23677825bfed0f8c9280c04c2baeb53613ea"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001572.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/quality_only/predictions/90551cab5c9a4ee9ac8f467fdf704a9921030689665754cc2d9236f8b1798909.npz",
+        "sha256": "0959b323779069c9f96ecafebd70709add835130ac14a29dc1e0f603f0724a2f",
+        "before_sha256": "fe150933125f2aa00475f73f602d788e51c4cf223040d8adf7f8a5bd582dd99b",
+        "after_sha256": "fbe020307d1996187b6ea90350f4a6dc26909ebda3fa6477fc88887547b8c5b1"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005548.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/quality_only/predictions/68b7ee9d7c42acea4be14934b0c55d0bb74f440e9e9985bf2fee67f022910507.npz",
+        "sha256": "ec1e947292b583f12503d33e6a21fbb6d465ef0da736837abc3a26380ef07f5c",
+        "before_sha256": "5c9adfe8f998b11996292071170e82ab65bbe0c0012a00d3f4a53fffd30a89ab",
+        "after_sha256": "423324e85b883ad442d373e2051705bc3242ae320cc33afba9e7f3136e205bab"
+      }
+    ],
+    "all_dominance": [
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001972.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/all_dominance/predictions/8d200f067ff26af56c5b5efb395dd68903da01930282efe6bf7b87387380c0ec.npz",
+        "sha256": "00aa7e9e4ca276de13894b75109a4cbc117eb0809d6b6e8e7a6ee51c8b90492b",
+        "before_sha256": "119c7757d28d4589f2f4c0d548f49fdf82545710dfb61fc8ec6c619db710f2d0",
+        "after_sha256": "b89f49b638967ccea7f4ca2df6283db282e233032094f297677cc82804d014e6"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004329.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/all_dominance/predictions/d04a3c04f20fdf766499af9aa2d6e326f09bc0a03f5e13d0a4cc78cfa65fbc1f.npz",
+        "sha256": "7842e7b97851961cc997c94bb31c2c24e574df6f12dbbbeef07aa39dd43570ae",
+        "before_sha256": "f71cb17b07800107bd6d41594cbc2a11f416444793e6e27994481677c14ddabf",
+        "after_sha256": "134c082758118a499d9f154487b84b856f9bfdd1143b975d523bc866fa993b84"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001572.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/all_dominance/predictions/90551cab5c9a4ee9ac8f467fdf704a9921030689665754cc2d9236f8b1798909.npz",
+        "sha256": "52376d25d79fb8a7f1941fc2d865f9713cd8ccda654d29673e65c5c90d54d835",
+        "before_sha256": "fe150933125f2aa00475f73f602d788e51c4cf223040d8adf7f8a5bd582dd99b",
+        "after_sha256": "105ab2b38131685de286425b9cc2b9367024a7d762fcb86ec47ff0f343702857"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005548.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/cells/smoke/pc60/all_dominance/predictions/68b7ee9d7c42acea4be14934b0c55d0bb74f440e9e9985bf2fee67f022910507.npz",
+        "sha256": "c44e0fa391bfc61922fc39d410616c4267ca462003a0efbacf9a08e02b295bde",
+        "before_sha256": "5c9adfe8f998b11996292071170e82ab65bbe0c0012a00d3f4a53fffd30a89ab",
+        "after_sha256": "eedbff1e5ae4c9864e71aa00ef20e14c917edc4dbceefe3c801e960d18130cee"
+      }
+    ]
+  },
+  "label_access": false,
+  "manifest_sha256": "f54ae879ba87b569d52ea1004325bbfabd82d48c6ee8d8e4c35ec1659fdb15f3"
+}

@@ -1,0 +1,23 @@
+{
+  "completed_at": "2026-10-25T11:44:57.234533+00:00",
+  "manifest_sha256": "f54ae879ba87b569d52ea1004325bbfabd82d48c6ee8d8e4c35ec1659fdb15f3",
+  "controller": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+  "results": {
+    "cells/smoke/coco_stuff/result.json": "26b293bbb721dad10ab4686495053efb0453b661b3b2dae7b1e378422f37c7fd",
+    "cells/smoke/coco_stuff/all_dominance/result.json": "0dc3fc344150868ee999989d7c46c58596960d54ce2e7d8d61be3d1c4e754fd5",
+    "cells/smoke/coco_stuff/quality_only/result.json": "4b34857765d200fd9fe24d0d9488d15c4565bdbd498ff6602e8d69c194d8e97c",
+    "cells/smoke/coco_stuff/role_aware/result.json": "81040b57f22baad88bed8c00a6950c1054d568b04bfbc5c207c3f614bbc67be2",
+    "cells/smoke/pc60/result.json": "f22e03d1cacb0a4bba65ecafef675a27d82e4f2e4b83c602edd2a56697e79d7f",
+    "cells/smoke/pc60/all_dominance/result.json": "834efcdc4d63865be0b260f1a51b0d0d22b5e19786a0b4ef6fedd23c74600288",
+    "cells/smoke/pc60/quality_only/result.json": "1eecd5706f841539854f02d5b25ff1448c33612e81e4b26e16c45b34abeec456",
+    "cells/smoke/pc60/role_aware/result.json": "cd32fbdae14ea4989f78f89ee702982feb6ed98c2ae6d223c9bc67955913b4cf",
+    "cells/formal/coco_stuff/result.json": "ec72878ac5aee6fb1c29dbdb3d006060b6fbe48c438ca02c75b732da6fc7299d",
+    "cells/formal/coco_stuff/all_dominance/result.json": "18973eadf3b8d4d7a7471796b40936d2b62900ddcf39168557e3f2c657c91504",
+    "cells/formal/coco_stuff/quality_only/result.json": "9cf7899df828bd8393179b159c462b7cb1099c60e57752428280e69f5453c880",
+    "cells/formal/coco_stuff/role_aware/result.json": "90562a003d75f8a1eb503830dbfe9411bee9d0ecdc6311097b96ecea5e14ac98",
+    "cells/formal/pc60/result.json": "a3905939b0300cb788bafd170547165e3ac58a345258107cbe76bdbf88f6974f",
+    "cells/formal/pc60/all_dominance/result.json": "71bbd51ce106be3e960f3b766f1335affb2d64aecdfee25fdb6c029c2432bec3",
+    "cells/formal/pc60/quality_only/result.json": "6d1270800a5390dacd679010962a50c3b74e48fdb3011faf65f001586d70d6ca",
+    "cells/formal/pc60/role_aware/result.json": "fdd2642610b9574d63d769082e0c3ed328b32f2ab04e3e2597f271f78f48eaa7"
+  }
+}

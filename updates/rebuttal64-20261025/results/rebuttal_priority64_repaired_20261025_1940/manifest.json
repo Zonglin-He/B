@@ -1,0 +1,1831 @@
+{
+  "created_at": "2026-10-25T11:39:07.484503+00:00",
+  "parent": "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+  "role_root": "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+  "backbone": "/home/wwww/hzl/results/rebuttal_backbone_vitb16_20261025_1238",
+  "parent_manifest_sha256": "4e8cbc3dc1addcf81202ca14db0668d3e4a6ff4a0b8ae482416a65157c30817f",
+  "role_manifest_sha256": "f54ae879ba87b569d52ea1004325bbfabd82d48c6ee8d8e4c35ec1659fdb15f3",
+  "source_hashes": {
+    "test_local_controls.py": "7a00ab1b70e0977e0454767e977699395dae32c62bf232608e1491a01b743426",
+    "local_controls.py": "6ca000a92ecf63721fe27db3180fee784149c8725152cbfb8bbdaed3672eac44",
+    "priority64.py": "e25fe7103685ac0c590b4edd5e1b46a31d711fdb1a48bd3382d0011ed9c7fa48"
+  },
+  "local_jobs": [
+    {
+      "id": "smoke/regions/coco_object",
+      "study": "regions",
+      "dataset": "coco_object",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "seed": 0,
+      "selection_seed": 20271025,
+      "condition": "clean",
+      "image_ids": [
+        "/home/wwww/hzl/data/coco/val2017/000000115898.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000244750.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000436315.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000535578.jpg"
+      ]
+    },
+    {
+      "id": "smoke/source_bias/coco_cd",
+      "study": "source_bias",
+      "dataset": "coco_cd",
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "seed": 0,
+      "selection_seed": 20271025,
+      "condition": "gaussian_noise_s3",
+      "image_ids": [
+        "/home/wwww/hzl/data/coco/train2017/000000110155.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000114521.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000334916.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000519094.jpg"
+      ]
+    },
+    {
+      "id": "regions/coco_object",
+      "study": "regions",
+      "dataset": "coco_object",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 64,
+      "smoke": false,
+      "seed": 0,
+      "selection_seed": 20271025,
+      "condition": "clean",
+      "image_ids": [
+        "/home/wwww/hzl/data/coco/val2017/000000014473.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000022589.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000031817.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000037988.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000038825.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000051326.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000054605.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000066886.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000069106.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000074200.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000104803.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000115898.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000121744.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000130699.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000138241.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000143068.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000166642.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000167353.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000170595.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000182162.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000194746.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000200162.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000205289.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000216516.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000221017.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000227765.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000229553.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000231097.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000244750.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000252559.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000273760.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000293390.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000294163.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000300155.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000302107.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000306733.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000309467.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000328959.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000336628.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000341828.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000345469.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000352900.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000356094.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000360960.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000367095.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000391144.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000393115.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000401991.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000405195.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000405249.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000409542.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000422886.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000426241.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000430286.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000436315.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000447200.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000458325.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000459757.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000478474.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000535578.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000549167.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000577932.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000579321.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000580410.jpg"
+      ]
+    },
+    {
+      "id": "regions/pc60",
+      "study": "regions",
+      "dataset": "pc60",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 64,
+      "smoke": false,
+      "seed": 0,
+      "selection_seed": 20271025,
+      "condition": "clean",
+      "image_ids": [
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001589.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001759.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001852.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001972.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002175.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002272.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002408.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002465.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002488.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002675.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_003425.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_003726.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_003991.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004055.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004148.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004176.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004329.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004377.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004507.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_005008.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_005279.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000270.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000347.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000447.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000473.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000769.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000791.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000975.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001094.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001256.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001264.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001344.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001370.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001406.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001529.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001572.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001776.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002025.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002070.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002573.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002674.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002801.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003260.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003285.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003381.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003451.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003562.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003641.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003665.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003696.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003892.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003893.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003910.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_004075.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_004289.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_004877.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005100.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005340.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005467.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005548.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005909.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005951.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_006010.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_006028.jpg"
+      ]
+    },
+    {
+      "id": "source_bias/coco_cd",
+      "study": "source_bias",
+      "dataset": "coco_cd",
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 64,
+      "smoke": false,
+      "seed": 0,
+      "selection_seed": 20271025,
+      "condition": "gaussian_noise_s3",
+      "image_ids": [
+        "/home/wwww/hzl/data/coco/train2017/000000026321.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000027937.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000033924.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000034039.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000040359.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000045208.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000048126.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000056898.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000067906.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000068238.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000075591.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000076985.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000106820.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000110155.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000111141.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000114521.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000115157.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000147890.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000193821.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000220922.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000222659.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000239985.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000243456.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000246753.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000258129.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000274139.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000287328.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000318722.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000329528.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000333407.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000334916.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000336372.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000361127.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000385186.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000396217.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000398434.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000427816.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000431756.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000442174.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000442214.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000442672.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000445500.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000446899.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000453538.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000466514.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000476011.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000487995.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000510695.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000519094.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000520389.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000523594.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000531076.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000540410.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000542054.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000543210.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000546264.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000548946.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000560830.jpg",
+        "/home/wwww/hzl/data/coco/train2017/000000571835.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000001675.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000068078.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000172330.jpg",
+        "/home/wwww/hzl/data/coco/val2017/000000263463.jpg"
+      ]
+    },
+    {
+      "id": "source_bias/pc60",
+      "study": "source_bias",
+      "dataset": "pc60",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 64,
+      "smoke": false,
+      "seed": 0,
+      "selection_seed": 20271025,
+      "condition": "gaussian_noise_s3",
+      "image_ids": [
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001589.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001759.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001852.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_001972.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002175.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002272.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002408.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002465.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002488.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_002675.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_003425.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_003726.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_003991.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004055.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004148.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004176.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004329.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004377.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_004507.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_005008.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2009_005279.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000270.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000347.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000447.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000473.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000769.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000791.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_000975.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001094.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001256.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001264.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001344.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001370.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001406.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001529.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001572.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_001776.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002025.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002070.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002573.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002674.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_002801.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003260.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003285.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003381.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003451.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003562.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003641.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003665.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003696.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003892.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003893.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_003910.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_004075.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_004289.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_004877.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005100.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005340.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005467.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005548.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005909.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_005951.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_006010.jpg",
+        "/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2010_006028.jpg"
+      ]
+    }
+  ],
+  "handoff": {
+    "requested_at": 1792927595.4580827,
+    "reason": "User explicitly requested 64-image rebuttal studies immediately after current GPU cell, then resume original queue and defer backbone",
+    "controller_pid": 2701902,
+    "worker_pid": 3696824,
+    "active": "ablation/coco_object/seed0/without_region_construction",
+    "before": {
+      "status": "running",
+      "created_at": "2026-10-25T04:26:46.607252+00:00",
+      "cells": {
+        "smoke/ablation/full": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:27:03.188996+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/ablation/full"
+          ],
+          "pid": 2701915,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:27:13.941125+00:00"
+        },
+        "smoke/ablation/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:27:13.952037+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/ablation/without_region_construction"
+          ],
+          "pid": 2703118,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:27:24.940220+00:00"
+        },
+        "smoke/ablation/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:27:24.952400+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/ablation/without_source_tracing"
+          ],
+          "pid": 2704329,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:27:36.065723+00:00"
+        },
+        "smoke/ablation/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:27:36.078412+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/ablation/without_reliability_weighting"
+          ],
+          "pid": 2705563,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:27:47.228332+00:00"
+        },
+        "smoke/robustness/gaussian_noise": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:27:47.243953+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/robustness/gaussian_noise"
+          ],
+          "pid": 2706789,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:27:58.461847+00:00"
+        },
+        "smoke/robustness/random_mask": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:27:58.473580+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/robustness/random_mask"
+          ],
+          "pid": 2707994,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:28:09.131849+00:00"
+        },
+        "smoke/robustness/color_style": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:28:09.144317+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/robustness/color_style"
+          ],
+          "pid": 2709291,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:28:19.905836+00:00"
+        },
+        "smoke/refresh/clean/frozen": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:28:19.917196+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/refresh/clean/frozen"
+          ],
+          "pid": 2710535,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:28:31.071880+00:00"
+        },
+        "smoke/refresh/clean/midpoint": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:28:31.082102+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/refresh/clean/midpoint"
+          ],
+          "pid": 2711776,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:28:42.138839+00:00"
+        },
+        "smoke/refresh/gaussian_noise_s3/midpoint": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:28:42.150377+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/refresh/gaussian_noise_s3/midpoint"
+          ],
+          "pid": 2713031,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:28:53.476716+00:00"
+        },
+        "smoke/selection/top_confidence": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:28:53.487875+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/selection/top_confidence"
+          ],
+          "pid": 2714345,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:29:14.433413+00:00"
+        },
+        "smoke/selection/random": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:29:14.445815+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/selection/random"
+          ],
+          "pid": 2715940,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:29:33.301064+00:00"
+        },
+        "smoke/selection/spatial": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:29:33.313545+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "smoke/selection/spatial"
+          ],
+          "pid": 2717488,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:29:52.621873+00:00"
+        },
+        "refresh/coco_cd/clean/frozen": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:29:52.633005+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/coco_cd/clean/frozen"
+          ],
+          "pid": 2719068,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:30:30.634605+00:00"
+        },
+        "refresh/coco_cd/clean/midpoint": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:30:30.650677+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/coco_cd/clean/midpoint"
+          ],
+          "pid": 2721485,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:31:08.467938+00:00"
+        },
+        "refresh/coco_cd/gaussian_noise_s3/frozen": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:31:08.479750+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/coco_cd/gaussian_noise_s3/frozen"
+          ],
+          "pid": 2723834,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:31:48.087595+00:00"
+        },
+        "refresh/coco_cd/gaussian_noise_s3/midpoint": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:31:48.100995+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/coco_cd/gaussian_noise_s3/midpoint"
+          ],
+          "pid": 2726420,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:32:27.802809+00:00"
+        },
+        "context_perturbation/coco_cd/seed0/default": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:32:27.815913+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed0/default"
+          ],
+          "pid": 2729062,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:32:54.372222+00:00"
+        },
+        "context_perturbation/coco_cd/seed0/gaussian_noise": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:32:54.385283+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed0/gaussian_noise"
+          ],
+          "pid": 2731003,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:33:20.819871+00:00"
+        },
+        "context_perturbation/coco_cd/seed0/random_mask": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:33:20.833454+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed0/random_mask"
+          ],
+          "pid": 2733042,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:33:47.515448+00:00"
+        },
+        "context_perturbation/coco_cd/seed0/color_style": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:33:47.528303+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed0/color_style"
+          ],
+          "pid": 2735111,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:34:14.237646+00:00"
+        },
+        "context_perturbation/coco_cd/seed1/default": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:34:14.250439+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed1/default"
+          ],
+          "pid": 2737154,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:34:40.790291+00:00"
+        },
+        "context_perturbation/coco_cd/seed1/gaussian_noise": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:34:40.803060+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed1/gaussian_noise"
+          ],
+          "pid": 2739108,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:35:07.687229+00:00"
+        },
+        "context_perturbation/coco_cd/seed1/random_mask": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:35:07.700279+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed1/random_mask"
+          ],
+          "pid": 2741739,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:35:34.432454+00:00"
+        },
+        "context_perturbation/coco_cd/seed1/color_style": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:35:34.445077+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed1/color_style"
+          ],
+          "pid": 2743743,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:36:01.112284+00:00"
+        },
+        "context_perturbation/coco_cd/seed2/default": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:36:01.127052+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed2/default"
+          ],
+          "pid": 2745702,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:36:27.708486+00:00"
+        },
+        "context_perturbation/coco_cd/seed2/gaussian_noise": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:36:27.723376+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed2/gaussian_noise"
+          ],
+          "pid": 2747652,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:36:54.398557+00:00"
+        },
+        "context_perturbation/coco_cd/seed2/random_mask": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:36:54.411360+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed2/random_mask"
+          ],
+          "pid": 2749663,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:37:21.645722+00:00"
+        },
+        "context_perturbation/coco_cd/seed2/color_style": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:37:21.659439+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/coco_cd/seed2/color_style"
+          ],
+          "pid": 2751617,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:37:48.309072+00:00"
+        },
+        "refresh/pc60/clean/frozen": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:37:48.324009+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/pc60/clean/frozen"
+          ],
+          "pid": 2753557,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:39:30.810432+00:00"
+        },
+        "refresh/pc60/clean/midpoint": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:39:30.825189+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/pc60/clean/midpoint"
+          ],
+          "pid": 2758300,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:41:13.502063+00:00"
+        },
+        "refresh/pc60/gaussian_noise_s3/frozen": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:41:13.516410+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/pc60/gaussian_noise_s3/frozen"
+          ],
+          "pid": 2762995,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:42:56.328057+00:00"
+        },
+        "refresh/pc60/gaussian_noise_s3/midpoint": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:42:56.342235+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "refresh/pc60/gaussian_noise_s3/midpoint"
+          ],
+          "pid": 2767665,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:44:40.192782+00:00"
+        },
+        "context_perturbation/pc60/seed0/default": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:44:40.207855+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed0/default"
+          ],
+          "pid": 2772390,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:45:33.303175+00:00"
+        },
+        "context_perturbation/pc60/seed0/gaussian_noise": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:45:33.321003+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed0/gaussian_noise"
+          ],
+          "pid": 2775302,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:46:26.096580+00:00"
+        },
+        "context_perturbation/pc60/seed0/random_mask": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:46:26.109475+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed0/random_mask"
+          ],
+          "pid": 2778287,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:47:18.693222+00:00"
+        },
+        "context_perturbation/pc60/seed0/color_style": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:47:18.705983+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed0/color_style"
+          ],
+          "pid": 2781341,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:48:11.894453+00:00"
+        },
+        "context_perturbation/pc60/seed1/default": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:48:11.909909+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed1/default"
+          ],
+          "pid": 2784175,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:49:05.323294+00:00"
+        },
+        "context_perturbation/pc60/seed1/gaussian_noise": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:49:05.338105+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed1/gaussian_noise"
+          ],
+          "pid": 2787529,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:49:57.511391+00:00"
+        },
+        "context_perturbation/pc60/seed1/random_mask": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:49:57.526765+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed1/random_mask"
+          ],
+          "pid": 2790240,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:50:50.080768+00:00"
+        },
+        "context_perturbation/pc60/seed1/color_style": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:50:50.096544+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed1/color_style"
+          ],
+          "pid": 2792942,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:51:43.345766+00:00"
+        },
+        "context_perturbation/pc60/seed2/default": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:51:43.362014+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed2/default"
+          ],
+          "pid": 2795666,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:52:36.528694+00:00"
+        },
+        "context_perturbation/pc60/seed2/gaussian_noise": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:52:36.544949+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed2/gaussian_noise"
+          ],
+          "pid": 2798398,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:53:29.769740+00:00"
+        },
+        "context_perturbation/pc60/seed2/random_mask": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:53:29.787169+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed2/random_mask"
+          ],
+          "pid": 2801182,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:54:22.435664+00:00"
+        },
+        "context_perturbation/pc60/seed2/color_style": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:54:22.452348+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "context_perturbation/pc60/seed2/color_style"
+          ],
+          "pid": 2803920,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:55:14.786398+00:00"
+        },
+        "selection/pc60/top_confidence": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:55:14.802314+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection/pc60/top_confidence"
+          ],
+          "pid": 2806654,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:56:06.612045+00:00"
+        },
+        "selection/pc60/random": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:56:06.630000+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection/pc60/random"
+          ],
+          "pid": 2809340,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:56:58.094674+00:00"
+        },
+        "selection/pc60/spatial": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:56:58.110815+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection/pc60/spatial"
+          ],
+          "pid": 2812024,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:57:50.030988+00:00"
+        },
+        "selection_audit/pc60/all_candidates": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:57:50.049942+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection_audit/pc60/all_candidates"
+          ],
+          "pid": 2814733,
+          "returncode": 0,
+          "finished_at": "2026-10-25T04:59:04.594658+00:00"
+        },
+        "selection/coco_object/top_confidence": {
+          "status": "completed",
+          "started_at": "2026-10-25T04:59:04.609359+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection/coco_object/top_confidence"
+          ],
+          "pid": 2817783,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:00:45.233173+00:00"
+        },
+        "selection/coco_object/random": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:00:45.249709+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection/coco_object/random"
+          ],
+          "pid": 2822848,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:02:26.365003+00:00"
+        },
+        "selection/coco_object/spatial": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:02:26.381194+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection/coco_object/spatial"
+          ],
+          "pid": 2827905,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:04:06.144525+00:00"
+        },
+        "selection_audit/coco_object/all_candidates": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:04:06.158403+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "selection_audit/coco_object/all_candidates"
+          ],
+          "pid": 2832955,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:05:58.741438+00:00"
+        },
+        "ablation/coco_cd/seed0/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:05:58.756767+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed0/without_region_construction"
+          ],
+          "pid": 2837454,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:06:47.393611+00:00"
+        },
+        "ablation/coco_cd/seed0/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:06:47.409021+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed0/without_source_tracing"
+          ],
+          "pid": 2840371,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:07:43.648571+00:00"
+        },
+        "ablation/coco_cd/seed0/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:07:43.666386+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed0/without_reliability_weighting"
+          ],
+          "pid": 2843437,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:08:39.987447+00:00"
+        },
+        "ablation/coco_cd/seed1/full": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:08:40.006526+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed1/full"
+          ],
+          "pid": 2846532,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:09:36.246692+00:00"
+        },
+        "ablation/coco_cd/seed1/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:09:36.266339+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed1/without_region_construction"
+          ],
+          "pid": 2849650,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:10:24.737014+00:00"
+        },
+        "ablation/coco_cd/seed1/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:10:24.756166+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed1/without_source_tracing"
+          ],
+          "pid": 2852621,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:11:20.506270+00:00"
+        },
+        "ablation/coco_cd/seed1/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:11:20.526492+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed1/without_reliability_weighting"
+          ],
+          "pid": 2855690,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:12:16.158231+00:00"
+        },
+        "ablation/coco_cd/seed2/full": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:12:16.179392+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed2/full"
+          ],
+          "pid": 2858762,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:13:11.647463+00:00"
+        },
+        "ablation/coco_cd/seed2/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:13:11.670204+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed2/without_region_construction"
+          ],
+          "pid": 2861836,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:14:00.041576+00:00"
+        },
+        "ablation/coco_cd/seed2/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:14:00.066204+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed2/without_source_tracing"
+          ],
+          "pid": 2864744,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:14:56.013322+00:00"
+        },
+        "ablation/coco_cd/seed2/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:14:56.039599+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_cd/seed2/without_reliability_weighting"
+          ],
+          "pid": 2867818,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:15:52.593859+00:00"
+        },
+        "ablation/pc60/seed0/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:15:52.621843+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed0/without_region_construction"
+          ],
+          "pid": 2870912,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:31:12.651723+00:00"
+        },
+        "ablation/pc60/seed0/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:31:12.692952+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed0/without_source_tracing"
+          ],
+          "pid": 2907957,
+          "returncode": 0,
+          "finished_at": "2026-10-25T05:53:46.657074+00:00"
+        },
+        "ablation/pc60/seed0/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T05:53:46.709496+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed0/without_reliability_weighting"
+          ],
+          "pid": 2957297,
+          "returncode": 0,
+          "finished_at": "2026-10-25T06:16:21.383223+00:00"
+        },
+        "ablation/pc60/seed1/full": {
+          "status": "completed",
+          "started_at": "2026-10-25T06:16:21.446687+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed1/full"
+          ],
+          "pid": 3006876,
+          "returncode": 0,
+          "finished_at": "2026-10-25T06:38:56.080033+00:00"
+        },
+        "ablation/pc60/seed1/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T06:38:56.157821+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed1/without_region_construction"
+          ],
+          "pid": 3056275,
+          "returncode": 0,
+          "finished_at": "2026-10-25T06:54:16.052261+00:00"
+        },
+        "ablation/pc60/seed1/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T06:54:16.144587+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed1/without_source_tracing"
+          ],
+          "pid": 3093349,
+          "returncode": 0,
+          "finished_at": "2026-10-25T07:16:51.670374+00:00"
+        },
+        "ablation/pc60/seed1/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T07:16:51.774771+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed1/without_reliability_weighting"
+          ],
+          "pid": 3142990,
+          "returncode": 0,
+          "finished_at": "2026-10-25T07:39:26.152140+00:00"
+        },
+        "ablation/pc60/seed2/full": {
+          "status": "completed",
+          "started_at": "2026-10-25T07:39:26.272035+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed2/full"
+          ],
+          "pid": 3192469,
+          "returncode": 0,
+          "finished_at": "2026-10-25T08:02:00.731303+00:00"
+        },
+        "ablation/pc60/seed2/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T08:02:00.882671+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed2/without_region_construction"
+          ],
+          "pid": 3241754,
+          "returncode": 0,
+          "finished_at": "2026-10-25T08:17:20.060457+00:00"
+        },
+        "ablation/pc60/seed2/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T08:17:20.203718+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed2/without_source_tracing"
+          ],
+          "pid": 3278933,
+          "returncode": 0,
+          "finished_at": "2026-10-25T08:39:57.251933+00:00"
+        },
+        "ablation/pc60/seed2/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T08:39:57.410900+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/pc60/seed2/without_reliability_weighting"
+          ],
+          "pid": 3331494,
+          "returncode": 0,
+          "finished_at": "2026-10-25T09:02:31.451778+00:00"
+        },
+        "ablation/voc21/seed0/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T09:02:31.632270+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed0/without_region_construction"
+          ],
+          "pid": 3384504,
+          "returncode": 0,
+          "finished_at": "2026-10-25T09:09:48.557800+00:00"
+        },
+        "ablation/voc21/seed0/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T09:09:48.744656+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed0/without_source_tracing"
+          ],
+          "pid": 3401053,
+          "returncode": 0,
+          "finished_at": "2026-10-25T09:22:15.786739+00:00"
+        },
+        "ablation/voc21/seed0/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T09:22:15.969006+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed0/without_reliability_weighting"
+          ],
+          "pid": 3438105,
+          "returncode": 0,
+          "finished_at": "2026-10-25T09:34:47.623111+00:00"
+        },
+        "ablation/voc21/seed1/full": {
+          "status": "completed",
+          "started_at": "2026-10-25T09:34:47.830847+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed1/full"
+          ],
+          "pid": 3479724,
+          "returncode": 0,
+          "finished_at": "2026-10-25T09:47:23.303922+00:00"
+        },
+        "ablation/voc21/seed1/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T09:47:23.602908+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed1/without_region_construction"
+          ],
+          "pid": 3526550,
+          "returncode": 0,
+          "finished_at": "2026-10-25T09:54:45.346459+00:00"
+        },
+        "ablation/voc21/seed1/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T09:54:45.570628+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed1/without_source_tracing"
+          ],
+          "pid": 3544653,
+          "returncode": 0,
+          "finished_at": "2026-10-25T10:07:13.885072+00:00"
+        },
+        "ablation/voc21/seed1/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T10:07:14.093230+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed1/without_reliability_weighting"
+          ],
+          "pid": 3594928,
+          "returncode": 0,
+          "finished_at": "2026-10-25T10:19:43.057670+00:00"
+        },
+        "ablation/voc21/seed2/full": {
+          "status": "completed",
+          "started_at": "2026-10-25T10:19:43.265568+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed2/full"
+          ],
+          "pid": 3643195,
+          "returncode": 0,
+          "finished_at": "2026-10-25T10:31:42.807960+00:00"
+        },
+        "ablation/voc21/seed2/without_region_construction": {
+          "status": "completed",
+          "started_at": "2026-10-25T10:31:42.983285+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed2/without_region_construction"
+          ],
+          "pid": 3659977,
+          "returncode": 0,
+          "finished_at": "2026-10-25T10:38:34.726451+00:00"
+        },
+        "ablation/voc21/seed2/without_source_tracing": {
+          "status": "completed",
+          "started_at": "2026-10-25T10:38:34.903534+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed2/without_source_tracing"
+          ],
+          "pid": 3661174,
+          "returncode": 0,
+          "finished_at": "2026-10-25T10:50:19.675654+00:00"
+        },
+        "ablation/voc21/seed2/without_reliability_weighting": {
+          "status": "completed",
+          "started_at": "2026-10-25T10:50:19.859628+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/voc21/seed2/without_reliability_weighting"
+          ],
+          "pid": 3663239,
+          "returncode": 0,
+          "finished_at": "2026-10-25T11:02:43.679427+00:00"
+        },
+        "ablation/coco_object/seed0/without_region_construction": {
+          "status": "running",
+          "started_at": "2026-10-25T11:02:43.913108+00:00",
+          "command": [
+            "/home/wwww/miniconda3/envs/mlmp/bin/python",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+            "--root",
+            "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+            "--job",
+            "ablation/coco_object/seed0/without_region_construction"
+          ],
+          "pid": 3696824
+        }
+      },
+      "total": 97,
+      "pid": 2701902,
+      "started_at": "2026-10-25T04:27:03.181105+00:00",
+      "dependency": "/home/wwww/hzl/results/trace_voc21_forward_reduction_20261025",
+      "active": "ablation/coco_object/seed0/without_region_construction"
+    },
+    "controller_command": [
+      "/home/wwww/miniconda3/envs/mlmp/bin/python",
+      "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_queue.py",
+      "run",
+      "--root",
+      "/home/wwww/hzl/results/rebuttal_original_20261025_122642"
+    ],
+    "worker_command": [
+      "/home/wwww/miniconda3/envs/mlmp/bin/python",
+      "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+      "--root",
+      "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+      "--job",
+      "ablation/coco_object/seed0/without_region_construction"
+    ],
+    "action": "SIGSTOP coordinator only; GPU worker left running"
+  },
+  "continuation_from": "/home/wwww/hzl/results/rebuttal_priority64_20261025_1934",
+  "order": [
+    "finish_current_cell",
+    "role64",
+    "region_and_source_bias64",
+    "remaining_original_jobs",
+    "backbone"
+  ],
+  "constraints": "Original formulas and per-dataset settings; no K/steps/lr reduction, sample/threshold search or GT-dependent adaptation",
+  "region_variants": [
+    "native CC",
+    "eroded intervention boundary",
+    "dilated intervention boundary",
+    "finer local source regions, matched parent budget",
+    "within-region token redistribution, same native views and parent budget"
+  ],
+  "bias_variants": [
+    "uniform",
+    "confidence",
+    "fixed TRACE",
+    "midpoint TRACE"
+  ],
+  "scope": "64-image fixed diagnostic panels; not new full-validation or significance evidence"
+}

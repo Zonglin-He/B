@@ -1,0 +1,42 @@
+{
+  "created_at": "2026-10-25T11:38:32.529837+00:00",
+  "method": "Original submitted TRACE, q=min(T,C), d=max(D-T,0)",
+  "primary_mechanistic_endpoint": "Mean fractional weight attenuation d on initially majority-correct stuff candidates; GT purity>=0.5 fixed a priori",
+  "secondary_mechanistic_endpoints": [
+    "Fraction of such candidates with any d>0",
+    "Analytical normalized candidate coefficient changes under the full episode denominator; not gradient/loss mass",
+    "D_self-D_class_union after weakening all source-predicted same-real-class locations",
+    "GT same-class area outside the candidate; stratified by its presence, not selected using outcomes"
+  ],
+  "adaptation_endpoints": [
+    "dataset classwise mIoU",
+    "thing/stuff/background classwise mIoU",
+    "GT-role-specific actual pixel Correct-to-Wrong and Wrong-to-Correct",
+    "fixed-candidate GT accuracy before/after; averaged within image, not token-level pseudo-replication"
+  ],
+  "profiling": "First 4 episodes, fixed candidates, native diagnostic-view evaluation only; 3 repeats per policy, alternating policy order. Separate from actual adaptation outcomes; exclude initialization, source logits, loading and scoring.",
+  "controls": [
+    "role_aware",
+    "quality_only",
+    "all_dominance"
+  ],
+  "fixed": [
+    "source checkpoint",
+    "candidate masks/top-K",
+    "native target/context scores",
+    "batch episodes",
+    "lr",
+    "steps",
+    "native entropy objective",
+    "visual LayerNorm parameters"
+  ],
+  "population": "Fixed seed-selected 64-image validation diagnostic panels, no selection/tuning after scoring",
+  "statistical_scope": "Descriptive paired mechanism/control effects; no significance asserted from rounded mIoU, seeds, pixels or candidates",
+  "labels": "No labels in view construction, weighting or optimization. All predictions/candidates sealed before separate GT scoring.",
+  "sample_seed": 20271025,
+  "no_threshold_search": true,
+  "retain_all_results": true,
+  "scheduling": "Appended after original suite and representative backbone; no existing queue interrupted or reordered",
+  "union_control": "All source argmax tokens of the same REAL class within the same crop, valid pixels only, plus candidate; no GT masks",
+  "interpretation": "Role exemption is not presumed to improve mIoU. Mechanism and end-to-end allocation effects reported separately."
+}

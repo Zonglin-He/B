@@ -1,0 +1,1204 @@
+candidate_id,image_id,patch_in_image,class_idx,area,overlapping_instances,instances,largest_instance_fraction
+294eb76d897cc64951cbe94e5fb514d2c7ded05551e168aff05f8532d7ec2fa0,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,50,1,0,[],0.0
+ccb03f27a370f06cb04cbeebe7cee475288334deb0ff924c4a935bb817912ea7,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,50,1,0,[],0.0
+b6cd152869b28edbb5de483b868f218fd13436fbe235d63e2bfe3ab906938793,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,7,1,0,[],0.0
+9800c84aa385233c4cdc641ec3d3aa4ecf9635a74e7051efa6dfbee3b1d8e34b,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,50,3,0,[],0.0
+43384b76e5f2cfc6d45a84169b6f45caddf534ed6700c7c3e0eef83148e5107a,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,50,2,0,[],0.0
+3c614523d5da5d8f3084a2f83e1636b4b006a2480cc119b78a2a71002ead205d,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,7,1,0,[],0.0
+a5aae8a4d68ccab2b93762cca923ddf02604afd48b7e6ba515c2a35f7a557a67,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,7,39,1,"[{""instance_id"": 169920, ""overlap_tokens"": 14, ""visible_tokens"": 40}]",0.358974358974359
+d742eea4bc5a0bc58900e2239549109b5f15ef6fa75dd3ae080a8635bcc8993f,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,7,33,1,"[{""instance_id"": 169920, ""overlap_tokens"": 22, ""visible_tokens"": 40}]",0.6666666666666666
+2852f5bf8791e17305dffad53f0d3010194634ae6ce1b5ad5c4b8e14e6646ada,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,7,1,0,[],0.0
+bfc17394f8a37331f5a723f2241f01d6eac9b2575eea36cdcc52e1ef20954622,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,7,1,0,[],0.0
+320c004f9456d31fce1b43e10ed76c3aa6d8293e0f338051dc3aae2a58b2bab2,/home/wwww/hzl/data/coco/val2017/000000014473.jpg,0,7,2,0,[],0.0
+d0f0000702a347d228c41ccf17649d96092a3e3fca3fd4a5af46363c08906265,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,1,1,"[{""instance_id"": 68797, ""overlap_tokens"": 1, ""visible_tokens"": 78}]",1.0
+43d9ae01bb30c6d9ebd1078181de8c26b209b3d35bb29fb436dbf01d071bc3ef,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,4,1,"[{""instance_id"": 68797, ""overlap_tokens"": 4, ""visible_tokens"": 78}]",1.0
+52e7fdca44f67f4d0308ade5488a4ceff5a1f9d536f1a35c148407bb7235f83f,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,6,1,"[{""instance_id"": 68797, ""overlap_tokens"": 6, ""visible_tokens"": 78}]",1.0
+eed0ecb29571a9b93d0dd8d1ec1c942ab5a2032c0166c86742545778d083e1fb,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,7,1,"[{""instance_id"": 68797, ""overlap_tokens"": 7, ""visible_tokens"": 78}]",1.0
+9f53a681f87f3aa2b8b2c13ba2ede8010f018f28787598e8398839820c9fad54,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,33,2,"[{""instance_id"": 65742, ""overlap_tokens"": 11, ""visible_tokens"": 11}, {""instance_id"": 68797, ""overlap_tokens"": 19, ""visible_tokens"": 78}]",0.5757575757575758
+b837d8f6cf22047d91302845ad54cb93d3174139b78ab3b2beccb59c68e07183,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,1,0,[],0.0
+e07cbc4f28facc0bf75db1854b45ec54f09863497abb5b63a892916eb7ae41ad,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,2,0,[],0.0
+b02833238c5075a6ec9083145101407e6e54d57328184c1d2c95ebc5fcc9de35,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,18,1,0,[],0.0
+c94ab41323c315515a39c40396b98659c69f19812685db6d97ca379acb9d633f,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,19,6,1,"[{""instance_id"": 68797, ""overlap_tokens"": 5, ""visible_tokens"": 78}]",0.8333333333333334
+0ddd1fe46c7c8898108f24aabbf049cc1fd50f7b8ed72e79ec9f38ff1d27fd03,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,18,1,0,[],0.0
+61b5c2167e1b0746b3e81ce6644a55bf93ffabc02a15157f5fbf66e85c239f19,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,18,1,0,[],0.0
+39e2b3117469e2a50908d84d68858b9ec72e6cf8cb57aeaa78d51507f9244513,/home/wwww/hzl/data/coco/val2017/000000022589.jpg,0,20,1,0,[],0.0
+99df98d590771c2dd1c747f7734741925baf11feedabdfc8b5632717904349bc,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,1,1,"[{""instance_id"": 149792, ""overlap_tokens"": 1, ""visible_tokens"": 84}]",1.0
+a4ecfcd4e984e284cacab9894260a3eb4b1607298dcf6f9ab28c70b935f54286,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,1,0,[],0.0
+1f7ed044542ef5c8b589ec2645c070a31eaac66ebac20325bd3f437379d644f3,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,14,1,"[{""instance_id"": 149792, ""overlap_tokens"": 14, ""visible_tokens"": 84}]",1.0
+ed67b2b98befe6f791afa11a1f9ab7edba9464b84f1e31d70184de9b23260316,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,3,0,[],0.0
+6ea21fca2150119f78761f4ded4c4b572b47cfc874197d26d359c1739a1d9dbd,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,1,0,[],0.0
+671aa2efbab6832e50aec0a6ed77ab57be38185d16dacd9939f8fa838b8e8b06,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,36,1,0,[],0.0
+b9a6b1a291d929e982a34fda815b05745e6a0b5ae21b94ec388092ed02fdc227,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,14,0,[],0.0
+3915939d11ef0da2467b5b0a286e19282b674473bf2ac914c4d21cb02dc0fa66,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,1,0,[],0.0
+2f8a47067420a2322cac2c3a29bbdcf632b3f21b959c705d10149d5d61c54477,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,8,1,"[{""instance_id"": 149792, ""overlap_tokens"": 7, ""visible_tokens"": 84}]",0.875
+8682178850e682456a8d6b8ee95b55515a33b4ee84fd98b063819b1073865abf,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,10,1,0,[],0.0
+5773dc1cc01361b575144e1518616b07b8a2989a6c8a48d626621f1b29e9e1e9,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,36,1,0,[],0.0
+af7edf301f9cf71bda2904e1464c462aca2c64936a05edc2ce65f88e09b46626,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,25,1,"[{""instance_id"": 149792, ""overlap_tokens"": 22, ""visible_tokens"": 84}]",0.88
+677eaa0785bc1e45acdad2718dad21635432c91a924d632d65f24264666854b7,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,1,0,[],0.0
+8e397836d8b5b29f264f962e6e8c042ec94ce20c9ebffe4e2375d57992ac53bb,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,1,0,[],0.0
+17077b09e4bf1fa4fde6ad5503a6e9f857920b0c5e68585e38710197a4d1d1c3,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,1,0,[],0.0
+56af85181eb4c61d26457952f25d7a492a5f300ee7543625848bccd03f323532,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,4,2,"[{""instance_id"": 207041, ""overlap_tokens"": 3, ""visible_tokens"": 6}, {""instance_id"": 1727815, ""overlap_tokens"": 2, ""visible_tokens"": 18}]",0.75
+3c7bd548849a2a83701d0e7d3e5c10ce0b4055e38f0b2ed9437046946e6021ce,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,6,1,"[{""instance_id"": 149792, ""overlap_tokens"": 6, ""visible_tokens"": 84}]",1.0
+ea841f01cc07fadd4fd9b351042b1a5ac99a47632ca0f3407b31587ca49f611a,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,41,1,"[{""instance_id"": 190799, ""overlap_tokens"": 37, ""visible_tokens"": 109}]",0.9024390243902439
+77731c064bb86b04af7e4d109e02427ff4a01f1918af088ad9fa60b9ac0cc5fa,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,1,1,"[{""instance_id"": 190799, ""overlap_tokens"": 1, ""visible_tokens"": 109}]",1.0
+26a0a9624de193a8817b7be01af7f0246d12ce3a54dbbcc832dbe4fca2e605e5,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,9,1,"[{""instance_id"": 190799, ""overlap_tokens"": 9, ""visible_tokens"": 109}]",1.0
+219a6d13b9e102eca693143d3b8316dca3ef7d40f14ae46173674966dd4dd4ea,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,41,3,"[{""instance_id"": 190799, ""overlap_tokens"": 34, ""visible_tokens"": 109}, {""instance_id"": 1684562, ""overlap_tokens"": 1, ""visible_tokens"": 4}, {""instance_id"": 1740709, ""overlap_tokens"": 4, ""visible_tokens"": 5}]",0.8292682926829268
+4d6a4c376825b1953230cf0c08436c39430b137fa8f964700c22be7bc8664893,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,4,3,0,[],0.0
+d885f33d37ea2fbd767101a606df447b3f722dc30462398960d8671593e24e2e,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,13,2,0,[],0.0
+f85d5b847999f3aca2f5b5ee08503a61e0a5a056c18c125b3b0cf499a6c31ed4,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,1,1,"[{""instance_id"": 190799, ""overlap_tokens"": 1, ""visible_tokens"": 109}]",1.0
+313220fa569655f8e40045fa84b99a2e04b7ff3495f7805ee8181bc7e3323e3d,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,1,1,"[{""instance_id"": 190799, ""overlap_tokens"": 1, ""visible_tokens"": 109}]",1.0
+8f11b06d2ff8338e8f25e8befeffc9e28a53a76e92edecb90ff7bb8b2bc542b8,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,13,1,0,[],0.0
+c329aab0274924e2351e7468dca76d3ea7d01a9ef6236819c1040491d8d244a9,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,13,5,0,[],0.0
+10362fed279349fd577c97e91926e73c61dd37c2dd76ac0c9da7f7026c7c8afe,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,13,1,0,[],0.0
+813e71e2cbc7ab04560017f9668d2d8b6f7cd3aec9ac0e5fba3d5e5375ddfd16,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,1,1,"[{""instance_id"": 1684562, ""overlap_tokens"": 1, ""visible_tokens"": 4}]",1.0
+e93695171de14173c9013e7ad619d709d0e419f42b11d137ec4d6937358ac073,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,13,1,0,[],0.0
+63a646c761e38c19039ceb5541d477c5e1a799326e46f358066c4558fab5cedc,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,13,1,0,[],0.0
+caa0c02c21cdef52dae3a9220e5aa43571535bf0dfdc3e937dcf7eb8e2589398,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,13,7,0,[],0.0
+1834ab27a377f4b3d22803cbce9690151af1b179a09b918d238d016db808f182,/home/wwww/hzl/data/coco/val2017/000000031817.jpg,0,1,1,1,"[{""instance_id"": 190799, ""overlap_tokens"": 1, ""visible_tokens"": 109}]",1.0
+c7e1c4c16dfd42f7158219772dd1cc391b5bc7bbcaa602c6b55fe2982b414984,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,33,1,0,[],0.0
+26be453b86e21780cb4d8b5030967ad97e51f106ea131d72be4239bc1072ea73,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,1,0,[],0.0
+25fcf2256e03d5f7e4e55d6d1e11662415ef2605ffa6373c372434fabfc7c5eb,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,1,0,[],0.0
+a09d76eb8c83965e500240310a7de5ef169e75fd732d0f57afc9e14306a57b21,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,1,0,[],0.0
+d4783f039a799cb1fbf5885202a3bbc5715879551d7f5a9034a07269d7df203f,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,18,1,0,[],0.0
+568787f90f92968339f6b671eafe6008c745fdcfb376496a32b50b7360e1c174,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,1,7,1,"[{""instance_id"": 437148, ""overlap_tokens"": 4, ""visible_tokens"": 10}]",0.5714285714285714
+8f45de81dbedc7f219b3a00d113f64c11515ac5bdc7196bdc9f47c56b53c25cd,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,2,0,[],0.0
+0509bc0a678e7d801aa2cb971aa0171ac4e69b57f4232dcc070790a2105d5cf3,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,5,0,[],0.0
+dc2349944adf41c5d2f7c86fafc9d585d3783ef6fe39d428bcf38c786d541ab9,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,2,0,[],0.0
+2a6e1bc5eb8f4134c2b8e45192ed72bd12bda5be1a2676289c47acde1bb8ae57,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,1,0,[],0.0
+4eb445d5a0b4dae586ea6105d76058cc0828207e0bb170d2b0faec6b583a9851,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,2,0,[],0.0
+84bf7c1d401e17360a894691a4ec4def4abcf0a876fdb2ba89de105502bbeed1,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,2,0,[],0.0
+d789e7bfccb3a455e8f937511b47c8b405c552bdc52f53b30a7561adb8434319,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,15,1,"[{""instance_id"": 655777, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.13333333333333333
+713d7ea3a1f52b2d5a0ffe62da3ee06dc36f07e6ba33dd754d249ddf7b7b2bb2,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,1,1,0,[],0.0
+aae90c74502867d32e33795cd2fca81b44a38700aee0aea404740efa59a788c0,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,30,0,[],0.0
+00d1212bb526414ec9dff53bea35a1fed9cf448eb1adbea45672b96ad29e3b04,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,2,0,[],0.0
+7fd9998176d3defd3173d5452c91e0fcfca872dc90cbe44897a5e1458ac74d86,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,3,0,[],0.0
+7f075b360651813de4107f1ad5bc471dd113e6853bb1cc9598874ccdf40185f1,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,4,0,[],0.0
+e216be5df834c5de2ff0683fb88daf40638702bc681cbe7db32918de3b95ffc2,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,36,2,0,[],0.0
+4e2163ab4fca121fa3fa4169dfe7ec4056f6a88ce30f075683ed87de14cea428,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,1,0,[],0.0
+e706e1ff5c342e0d14d63733c55ce9a8ee2a83fb3bb09af4c8d6d2bf86a64be1,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,8,0,[],0.0
+c16078b997516325a5bf658b9073d5044f3abb27f4d751ac750b2e0d1955d874,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,3,0,[],0.0
+086c27c70870859959836fdf9889c860550f164e080b2a43583277b00b0de17a,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,3,0,[],0.0
+123675f835f3f968e83beb78ae42bd1eb5f12727c444bf7bc03a1ad77ba04398,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,3,0,[],0.0
+98745c72edb5ea85a7b6363b1febd74fd807648a74f379190e789566af709580,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,1,0,[],0.0
+28c537414de60a8bfa431c181dfa45e91c1fa0f128bf08254236201350d6a592,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,4,0,[],0.0
+d77313b4a213a73355bb12f51163de6dc6cda20bd96fdc2a269e30a1c91e1187,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,36,1,0,[],0.0
+f86f6a766a94a787e08ab6843baa6521546663df26afeff82c194503654ff799,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,1,2,1,"[{""instance_id"": 437148, ""overlap_tokens"": 2, ""visible_tokens"": 10}]",1.0
+ccdd27033120b85676fdcf12906c2ed6b104cca8a6dc4f1b4d57ba58113a1df8,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,1,6,1,"[{""instance_id"": 437148, ""overlap_tokens"": 1, ""visible_tokens"": 10}]",0.16666666666666666
+081abf5dee1f9fe204251d93e137ef7317fb63a472f8e09e32a313d18a4b67ca,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,2,0,[],0.0
+ef303720893ceafb87392de0b5541584627ddd6770e261b058142289084bd3b5,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,39,1,0,[],0.0
+a2aa8fc32540916fd12a18bd8d7a72d8e9b4e793aa2eca74b4621b3d90a3c096,/home/wwww/hzl/data/coco/val2017/000000037988.jpg,0,1,1,0,[],0.0
+496d6c1eafb8c2ff349ca67f6409dedea86703a813bbffae9184a12febf3ecb3,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,3,1,"[{""instance_id"": 589499, ""overlap_tokens"": 3, ""visible_tokens"": 75}]",1.0
+bfbdb83db6678b1270c14e340a15b5c71ffca4916954f33040abda0b977d7f4d,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,1,"[{""instance_id"": 589675, ""overlap_tokens"": 1, ""visible_tokens"": 65}]",1.0
+dc91182d8fe591784a71ebe0df777983068953f23a93e7ac9222ed97e9971e61,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,1,"[{""instance_id"": 589675, ""overlap_tokens"": 1, ""visible_tokens"": 65}]",1.0
+4a80a7633045258e810cda70545b42e507c28facceae726bf8f6cdbbd3ad61f3,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,4,1,"[{""instance_id"": 589675, ""overlap_tokens"": 4, ""visible_tokens"": 65}]",1.0
+6f83d5267f91d2410f52fd36b03ec0b953bbc8148ef299a8f10e83f17e800c55,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,1,"[{""instance_id"": 589499, ""overlap_tokens"": 1, ""visible_tokens"": 75}]",1.0
+906996d318e560a33b7daeabef4a633a025d5d0e764767e6b3bbea7fafd9bb42,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,4,1,"[{""instance_id"": 589499, ""overlap_tokens"": 4, ""visible_tokens"": 75}]",1.0
+71a9b0123ee99ba70ab41968abfd27dc1dadef4e74cb610a27ede5686c842ce5,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,1,"[{""instance_id"": 589499, ""overlap_tokens"": 1, ""visible_tokens"": 75}]",1.0
+ceda8ca5577c4d610434a51ee589238a18108ecb7e6111d713c9dded0ecf4d0d,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,4,1,"[{""instance_id"": 589499, ""overlap_tokens"": 4, ""visible_tokens"": 75}]",1.0
+b6450de54105d592131069e1d895f1ad63586c227a4548206b4f8dd1406ee786,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,0,[],0.0
+32e0ed12403bf9192ad34e1e2ef49fa2e834fb01f4d7c0ef21521248e03c2dea,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,2,1,"[{""instance_id"": 589675, ""overlap_tokens"": 2, ""visible_tokens"": 65}]",1.0
+84271fa80980620c91a8dfa4cf13aef09b3600d6fe38eb60cc1dd6ce2e0a9c7d,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,9,1,"[{""instance_id"": 589675, ""overlap_tokens"": 9, ""visible_tokens"": 65}]",1.0
+4df1eec2a77b3990b232bb04b155100cbe9f26322cb987f84a7bb75177278185,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,24,1,0,[],0.0
+6cc8fffe844ef3d77b932d7d75653db3899dc98a15328630b7aea20bf7aa91bb,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,4,1,"[{""instance_id"": 589675, ""overlap_tokens"": 4, ""visible_tokens"": 65}]",1.0
+55ddafac6368d4b7289b81c1c0f33c5c9ad925778fe745ed4723919cb544891d,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,1,"[{""instance_id"": 589499, ""overlap_tokens"": 1, ""visible_tokens"": 75}]",1.0
+81e9e8c6eb31ec4e5e810e439d0746d3f9f0f76d8a6889a38dcbaafa22830d00,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,1,"[{""instance_id"": 589499, ""overlap_tokens"": 1, ""visible_tokens"": 75}]",1.0
+415bdc7dadddf4965d4ddc5b161c40b3c8342f247bfaa447330650006f9827dd,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,18,115,0,[],0.0
+a225a23b5592a06c701b164feff93e15e12865125965b1f56e8fa7dbea48697c,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,18,2,0,[],0.0
+8f2c2079db338b3c4e50d6fe249942d4a80d9dd098714c41aabc23c2e7b67b2d,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,15,1,0,[],0.0
+6ce112ee02c0557ac38a0b62bf289de12844a117834b735732432d36d6c197e6,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,3,1,"[{""instance_id"": 589499, ""overlap_tokens"": 3, ""visible_tokens"": 75}]",1.0
+6fc2d2402032b16f4acc91754169119ead1a977beec45346019ceca326829671,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,23,1,1,"[{""instance_id"": 589499, ""overlap_tokens"": 1, ""visible_tokens"": 75}]",1.0
+57f0b4afd81bdadd1f80c192135b059da58dcd06b1e9e13951bab9ce37ab682e,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,17,1,0,[],0.0
+2a7f063fd3afdefc36797841fda5d8fda29e9451efdafad3ca1860100b7b4838,/home/wwww/hzl/data/coco/val2017/000000038825.jpg,0,24,1,0,[],0.0
+1543b38a42aca22ee0035316bc24c14c50ace0ad043224939a787ba9ceb8b600,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,2,0,[],0.0
+e2c6d02738003d639babeb00bcd819565fd88e19d67efa75060a4ea122d64c65,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,1,0,[],0.0
+b9aba94570f259c8512ea2965db8907ebf6f1170313e20f80c4b07aba66c7729,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,74,1,0,[],0.0
+5dd403248b61f93e8ac6a70151ad8163a1550ab31940eba5da5e4c10696cefc5,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,1,0,[],0.0
+fcd943a6a9ccf77f298240ff02c697ebc330cf4e346868776ccb15464d20a5f4,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,2,0,[],0.0
+656a4abb981f289481a58a26990871deb86457682cb489da4d84c1afc60061de,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,1,0,[],0.0
+ff6eb856be623fb3e4687a7746f3cc0e7c52f94d88a8e0e0db7cc4bc48995453,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,9,0,[],0.0
+28f8558e275b58992d4fd5ec4c6b5cde6ca65805db408782a1cbf2f2b93d46cf,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,1,0,[],0.0
+e8a15c6c6ec56e874f66fa1332d0979ef9e5ca7350d00bd3aaab2760dabb326b,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,74,2,0,[],0.0
+1f1fb75fdc52b1f22fc6fd3778c06905ee4962e971919bf15af2263e9b35ae34,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,76,1,1,"[{""instance_id"": 1153088, ""overlap_tokens"": 1, ""visible_tokens"": 60}]",1.0
+e7c43138586b584b6b8ea2a81caec643650d8c1eeddd10a88d27a569832c7179,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,6,0,[],0.0
+3b8ecd0ee30502fdf06d3d227284ccd925fdd126d39087762dc14efe0bc12ded,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,76,1,0,[],0.0
+76dc605a3da56c3fa90bf93200a99cb5219257df16924ac04e150db274c33763,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,74,1,0,[],0.0
+69fe50238afbcba2d2b6603575438af27af047d164a6045594d646f5bc894865,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,6,0,[],0.0
+53ad5344c15809dbe11a29d9b0088ccf3aad778b2f1cb79ecf0615f0214ac51e,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,15,0,[],0.0
+32a11dcc6e421381004827cd03c167ddd87c17e057850e5deeb374e753e67ce4,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,2,0,[],0.0
+57fbead6af7310f679ea42aeebe617e3533bae12a49a09020b535b50f454ac9f,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,2,0,[],0.0
+e9be320da419c0be101c7b5c2646f6c70b7595bf4d49223df1cace333b08d55b,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,74,8,0,[],0.0
+2b524830d42bbb1db0ce80a3efa701b6789581cfce490c5d9001f19537bc3da8,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,2,0,[],0.0
+c66c465866fb2bfc32e7aefa789f73709bef2e2f8ccb23822b472e3b586879ba,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,76,1,0,[],0.0
+1f4d3f5e6c08116b80c0772b0a7c0479d2fa6be5bd54e37967b04c59cb755073,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,2,0,[],0.0
+ec4be136b358b59ee6b9de5da46f1a6e78dced53045c795f580155284a2eebde,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,76,1,1,"[{""instance_id"": 1153088, ""overlap_tokens"": 1, ""visible_tokens"": 60}]",1.0
+143022f78cabf0ada0f526f72066728ec4c0a25f1821a8886d5994c89bab0734,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,1,0,[],0.0
+6990c0859fd4dac05d1249e867040f2514dc17f20434c6e5fc160cbb6cd4df42,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,65,9,0,[],0.0
+ae6b98d74b97f9a19fd3e940f316ebcddbd5b93265cbc27d1ec12e44f6b746a4,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,2,0,[],0.0
+bc90456e17dabed5c1366b154b6a0971268cc7645aca187f48400906788ae5f5,/home/wwww/hzl/data/coco/val2017/000000051326.jpg,0,50,1,0,[],0.0
+a977519d80bec6778a15f47fe752ddc7bc4b699f1dea212e1bee6f1f288b7a0a,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,43,5,1,"[{""instance_id"": 687492, ""overlap_tokens"": 2, ""visible_tokens"": 4}]",0.4
+0135336b24f0681f9634a358d5406cb0285d17f513c5c65bccbbc206c91ffb31,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,56,35,1,"[{""instance_id"": 1085199, ""overlap_tokens"": 24, ""visible_tokens"": 30}]",0.6857142857142857
+edcc398646672a1e7560d25b2bc7ef7b299d26425369b3ec965d173366987d65,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,2,1,"[{""instance_id"": 390579, ""overlap_tokens"": 2, ""visible_tokens"": 190}]",1.0
+24f757c8bbeab167fc30be03a83d71decc314b5f3ab2a4195d10866972ec74e5,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,1,2,1,"[{""instance_id"": 1708708, ""overlap_tokens"": 2, ""visible_tokens"": 8}]",1.0
+9692bcd1910c6afd7c6cb6d3c8104ef4621ef008429b9ff1e40f0727ccd48675,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,4,1,"[{""instance_id"": 390579, ""overlap_tokens"": 4, ""visible_tokens"": 190}]",1.0
+09bec3c1554678c6676703f51d285dcc3ef67d0917b7152b022e8a95e051c1d8,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,10,1,"[{""instance_id"": 390579, ""overlap_tokens"": 10, ""visible_tokens"": 190}]",1.0
+ff8b9d52fadf32fa213582247e0f773a5dc3bd7c9201f48c3f8911950d31e8a7,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,4,1,"[{""instance_id"": 390579, ""overlap_tokens"": 4, ""visible_tokens"": 190}]",1.0
+54920514d1ecefd6b5e5e2216d884edeced671beb8b9b39111ae9cd474612cff,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,2,1,"[{""instance_id"": 390579, ""overlap_tokens"": 2, ""visible_tokens"": 190}]",1.0
+d6f8568c31bf7d5d993ab9057696190cecd9cd7bf789632f76215afe28d774f2,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,56,6,0,[],0.0
+6acd5bff62099acb34360ca8538a02ac16906f27a523b20e54e5429282cf8a43,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,3,1,"[{""instance_id"": 1617927, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.3333333333333333
+f0e4f5dd5c209ffc620f6f003646203aff858ce2a0ab697af6260820dc72d13e,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,7,1,"[{""instance_id"": 390579, ""overlap_tokens"": 7, ""visible_tokens"": 190}]",1.0
+4915cbb9dbbcb8237727c9b9459223cc3954941ec9d527376d9e6c48fe902238,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,42,16,1,"[{""instance_id"": 1506712, ""overlap_tokens"": 15, ""visible_tokens"": 34}]",0.9375
+38bb168822bde5e156d7aaa711bb43f5502fe40aff1fa349f86d75e58de16b92,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,43,4,2,"[{""instance_id"": 687492, ""overlap_tokens"": 1, ""visible_tokens"": 4}, {""instance_id"": 689387, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.25
+b48051866dceaf1c9482a39abc573abe2387165c948fee39ad53cf09532d6f40,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,2,1,"[{""instance_id"": 390579, ""overlap_tokens"": 2, ""visible_tokens"": 190}]",1.0
+7793b149c253d22abe0406e47151fa1c448b71d812edbb4b80e1bedad1795458,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,33,2,"[{""instance_id"": 390579, ""overlap_tokens"": 10, ""visible_tokens"": 190}, {""instance_id"": 1958939, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.30303030303030304
+71d208a2677f909f4011db5b0aa4bbe63fb204df7c5f3759140e7d9ac0418abb,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,56,1,0,[],0.0
+77a59c709f5552ae42a4ab5c440d5c41569912b8c1399f884a5d4ad6962c9aa0,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,6,1,"[{""instance_id"": 390579, ""overlap_tokens"": 6, ""visible_tokens"": 190}]",1.0
+f4c45cad6792a5d5b0d673deaade6d8dd66e6df7b3aeeafaa7ba06808f4f5e7d,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,57,4,1,"[{""instance_id"": 1581171, ""overlap_tokens"": 3, ""visible_tokens"": 5}]",0.75
+9e6e2e652d7a37cf3bac76699e89f64cda434ce8c78c6f933f151fb9eb83f272,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,8,1,"[{""instance_id"": 390579, ""overlap_tokens"": 8, ""visible_tokens"": 190}]",1.0
+74ae3da75e6455c834b138af35e9d68fe868d430360a8c625fa6bd02b8ae5d10,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,1,18,2,"[{""instance_id"": 1733827, ""overlap_tokens"": 12, ""visible_tokens"": 16}, {""instance_id"": 2165741, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.6666666666666666
+f3347482cf256450e348cf830b6d3fd7f2f93f1d66d55d4dfec676d8b960d717,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,1,2,1,"[{""instance_id"": 1733827, ""overlap_tokens"": 1, ""visible_tokens"": 16}]",0.5
+2e5ec6e64ea68073967bfddfecbc98aac2b04b40b9cffc964ede3ba775a1333b,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,2,1,"[{""instance_id"": 390579, ""overlap_tokens"": 2, ""visible_tokens"": 190}]",1.0
+683a3b37ae97651becf30734f362d382c70d49e6d64a878a5fafb47e5c9aa6db,/home/wwww/hzl/data/coco/val2017/000000054605.jpg,0,61,4,1,"[{""instance_id"": 390579, ""overlap_tokens"": 4, ""visible_tokens"": 190}]",1.0
+0af9c9f88d2a27487a2bbfad8d61335ebbc325cf7c5b2606ccec25ac3e43ecd4,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,79,1,0,[],0.0
+ace5e5f72f487b2940e8127a855f4a26c941f5b490ad74d7f09ef67d69c0ddc1,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,79,18,0,[],0.0
+291905891639ccaa91b55ce5dfa10ce0baea1d5b0b56a2c4c9d7a0e6c0d60a00,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,0,[],0.0
+d54cc2d183e68aa38770f818029cc7cc81616e6d8cec27aa606ee540726513f6,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,80,2,0,[],0.0
+f8f3cd3af8d3163735b45713be481ff18faebf2b6d97b139c17036aec2a6760e,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,0,[],0.0
+cea1cbc84d4c48fada075edaa9f0549f936d9140a6fd90fe4da2b9f64f546b01,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,34,1,"[{""instance_id"": 449505, ""overlap_tokens"": 34, ""visible_tokens"": 141}]",1.0
+39a2d7f080b657aa786ff11c9158b64b8ea64eca8e06bcfc00f823b51d505c26,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,79,3,0,[],0.0
+ca947bada74d889d205f03dcbb67daaec43679913f98a3513ffc2310aca61409,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,1,"[{""instance_id"": 449505, ""overlap_tokens"": 1, ""visible_tokens"": 141}]",1.0
+afdc256c7d41c92446e3e48d7bf06fab49866fb6662764eb81c647ed6b7d6e6d,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,2,1,"[{""instance_id"": 449505, ""overlap_tokens"": 2, ""visible_tokens"": 141}]",1.0
+78f37cf28984207d4e6224c54bb9705019299f1a98e2cbdea0ce70a099a65be1,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,63,1,"[{""instance_id"": 449505, ""overlap_tokens"": 62, ""visible_tokens"": 141}]",0.9841269841269841
+bd45da833cd3593dd67793e5d0b7baa8d2bbb5b2900df2ae13352a6c152b703d,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,0,[],0.0
+0aa5c9441a39c07d0e317e7b628e9c9be439a69fa7aa6f9795d00d1eba41c0d2,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,61,1,0,[],0.0
+a65fead4532604ffc7c0c2ff9dda0ab244f08222db573973b541c02938efe058,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,0,[],0.0
+51a859fd2ad48c3fed7be784c3f2c78db8d0f1c6554f5ddd350dfc0debba586f,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,1,"[{""instance_id"": 449505, ""overlap_tokens"": 1, ""visible_tokens"": 141}]",1.0
+fb211ffc5d2100dc8ae527de47cf6c373d1a758f917fc4ddb8014c5a3cb9bb30,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,79,5,0,[],0.0
+d474d7482dddc0720e651daffce308b15a0228e33ae676459c618cfab31b6c79,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,1,"[{""instance_id"": 449505, ""overlap_tokens"": 1, ""visible_tokens"": 141}]",1.0
+24e868a32dc44e0defdaccdcb5424c66d44edce1697a5f1be42dc86a65a2f4e0,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,61,3,0,[],0.0
+8fb94391b5e519e696a89123a82dfbbca29d8ebc9c8001a94934743cd43f5df9,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,1,"[{""instance_id"": 449505, ""overlap_tokens"": 1, ""visible_tokens"": 141}]",1.0
+d4c15e7f8e3e8b62acff3643a32eab70eb9b084577cb27024638d0e09fbf4eef,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,66,1,0,[],0.0
+54361741028402edda6c0634cae7552c41ef34aa13a2332262e8ce560b99bcf6,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,79,4,0,[],0.0
+ac0eb6d5e87a289e6dfe5ac843e48d580a2385df72fc9c5ec28d4e948b715a60,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,1,1,1,"[{""instance_id"": 449505, ""overlap_tokens"": 1, ""visible_tokens"": 141}]",1.0
+a337799b3f51523d8b34dba0aded539853bff2cb9f30bc1fdf116d537ea7efb5,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,61,3,0,[],0.0
+c9cedf9652a4befb06a0ec48db9ff9d2837296b458200e6044e686101b8aa357,/home/wwww/hzl/data/coco/val2017/000000066886.jpg,0,61,6,0,[],0.0
+109f6605b9c4e8319753f6ff5e2d49cea7ed5ebab72b177c8c85c95f6116f168,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,1,1,"[{""instance_id"": 593198, ""overlap_tokens"": 1, ""visible_tokens"": 10}]",1.0
+7bdae84738b59819ebf92cf69ab6d55f91ece077c1ed3c9dc92fa8d6d0ec59f1,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,1,1,"[{""instance_id"": 593198, ""overlap_tokens"": 1, ""visible_tokens"": 10}]",1.0
+c1bcb511e7def1c8a9700504829d05299f4d273595c4d0c532ccd0195ecbc351,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,1,1,"[{""instance_id"": 593125, ""overlap_tokens"": 1, ""visible_tokens"": 16}]",1.0
+081e31310149dcf76914b44b0833187f6a9f22b2e15e0ec479d2b7a03a773cc2,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,1,0,[],0.0
+54b5bd717a407f9721b01b90723d0d08e74061d606c2f51d87ee5df963c9bbca,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,1,0,[],0.0
+42412f7212cd7ca1a8f5adcfcb5f42dabea6ae076022bafa36b8eb64ab1940ce,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,2,1,"[{""instance_id"": 593125, ""overlap_tokens"": 1, ""visible_tokens"": 16}]",0.5
+bed276094a271518be5dca9b26656580b8d896c6b9697e402117203e396d5bdf,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,4,1,"[{""instance_id"": 593177, ""overlap_tokens"": 4, ""visible_tokens"": 10}]",1.0
+020d3e203229d23e444d4bbc6f3ca4e287bfa44133635a24fc27d38fb1287a5c,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,3,1,"[{""instance_id"": 593125, ""overlap_tokens"": 3, ""visible_tokens"": 16}]",1.0
+ddec75dc22db74a358917858fed8bed1e1b516b0220a49809602b6c385bf9379,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,18,38,0,[],0.0
+7651f6099edc2e0de21b4cb303db705c2689fbdcf9e13e89d5700930fdfc9bea,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,23,2,1,"[{""instance_id"": 593125, ""overlap_tokens"": 1, ""visible_tokens"": 16}]",0.5
+91d8d30a6c852709a930bdc3994493ba75c48a13226e8e53543516f12ab2c155,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,18,9,0,[],0.0
+453a4bc8720c38d156ff4c58cf08d8bf2143fe61d55d96b58d7453c5d4a04cc6,/home/wwww/hzl/data/coco/val2017/000000069106.jpg,0,24,1,0,[],0.0
+7b3411be6ed618c9d9672bc8e5b940c98b144f17f3e40d61f2b0f08b111198e8,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,1,1,"[{""instance_id"": 1478609, ""overlap_tokens"": 1, ""visible_tokens"": 23}]",1.0
+e6005c98ef362b945e157bdba0e9e8a088edd0b4d5b37da8c7cfe63cd68723e0,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,5,1,"[{""instance_id"": 1479819, ""overlap_tokens"": 3, ""visible_tokens"": 11}]",0.6
+5e720acd3c58adafc527427639d87eb27f9001f53a35dee6972c09bc96be8b6e,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,1,1,"[{""instance_id"": 1479605, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+56a1d66732026889ed6fa66f7a52fcce1d35d733101c368fe523601281b20757,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,5,1,"[{""instance_id"": 1479605, ""overlap_tokens"": 4, ""visible_tokens"": 37}]",0.8
+d16c74de530d4c94ea393962f5ac790d549963b37336043099b1badccbbcd4cc,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,5,1,"[{""instance_id"": 1478609, ""overlap_tokens"": 5, ""visible_tokens"": 23}]",1.0
+f40b0f25745bfc1beb7285b2f807080cf634194a8a1738cf78aee4efe3a550e2,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,1,1,"[{""instance_id"": 1479605, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+46b4e9fc379322cbb0eea6416ae7996a2c7c2f6d2fc68903d1a8ca34d0bde2b0,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,1,1,"[{""instance_id"": 1478609, ""overlap_tokens"": 1, ""visible_tokens"": 23}]",1.0
+d47f56e516b6adffa4cfe1ba6f0aecb2158b99876cd4378b2df09da0ec77eec9,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,2,1,"[{""instance_id"": 1479605, ""overlap_tokens"": 2, ""visible_tokens"": 37}]",1.0
+b1293a5318992da913e72ef08aeff4aa41cb97f66661ea1141cb0bd427e44bc6,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,3,1,"[{""instance_id"": 1479605, ""overlap_tokens"": 3, ""visible_tokens"": 37}]",1.0
+cc4710f5adba0420a0c690dcca32c8c899a355020f562ae92aa7c70eea8f2063,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,42,1,0,[],0.0
+23e44868d732ac9012da39d933f65e7d3162621da5005e7202e124833a18f0a4,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,1,1,"[{""instance_id"": 1479605, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+3bf527e9d8bb4cfbf1fab32db33c084bcd67b3de516e61b92db8e13650b7df0a,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,59,1,0,[],0.0
+c3c41b833ae9d4dc8c9d32ce1bd81c9b18672b38302d03db3ffe7e56e08ea2a0,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,59,16,0,[],0.0
+08514cf7c30665ae55cfce04cd0308aa3a0443bc763725e0ac51417560e6f23e,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,59,3,0,[],0.0
+807e1ad637cb363e35c2c9889b456f80fb301ce61a100ec1bf352886ab4087a2,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,31,1,0,[],0.0
+914c2c2db3fdbb61caf5b811c42ae36a0b32fc3d7c2a71ba74ab4b18695b1511,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,5,1,"[{""instance_id"": 1479819, ""overlap_tokens"": 4, ""visible_tokens"": 11}]",0.8
+b8f2d5f9e70ea08065487a48157c511f96316d5f9243cc6e67c2e82c2d69c2de,/home/wwww/hzl/data/coco/val2017/000000074200.jpg,0,38,6,1,"[{""instance_id"": 1478609, ""overlap_tokens"": 3, ""visible_tokens"": 23}]",0.5
+544619db49490cf9c05b4aa72c99ff596a69e26340936576845a137fc1670e1d,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,1,0,[],0.0
+ecc212d115e8ce2eb727db4a16bb6450c56caaaa81111d544b2237f76ed87cca,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,8,1,"[{""instance_id"": 1094207, ""overlap_tokens"": 3, ""visible_tokens"": 81}]",0.375
+fdea6120c48cdc108e7686373fae16d0a3b98ac91083df4e8f931ffd8a1b2a6e,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,1,0,[],0.0
+0e7cd6e4caeb9e9eb41e1c22fe7ed9e15f2e50bcb69089577891b976770ba751,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,77,1,"[{""instance_id"": 1094207, ""overlap_tokens"": 35, ""visible_tokens"": 81}]",0.45454545454545453
+151fd0d96e2a63edc6fef83d8dec9e076f6dcf935a44928f97c233c63aae579b,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,1,0,[],0.0
+e2bdfbbef0602968434324336c78dd79d33315fab96164c4319a07bbae019c34,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,4,0,[],0.0
+0d3f1d4e8179749efbad69883751885462ebfc0bfbe974097d2ce51fa6b0a80b,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,11,1,"[{""instance_id"": 1094207, ""overlap_tokens"": 2, ""visible_tokens"": 81}]",0.18181818181818182
+0ab411ea44aa5533af98e7f964bf593e16b1c079aa6912047c9c73dafafc4c16,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,8,0,[],0.0
+49489934f27b6f6cf582c26cef6d15918edf653457afc0f5e054b5dd2479a878,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,4,0,[],0.0
+67a2f361beac0c653348c0d4d0049bb8156ce63d719ecb2fa16d21a157d1eb15,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,3,0,[],0.0
+15ab8787edc5531635ba3f58349091fd63f6270874356ed9df13dcd4d0927c0e,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,62,1,1,"[{""instance_id"": 1094207, ""overlap_tokens"": 1, ""visible_tokens"": 81}]",1.0
+aae8e909e9c7eaa2b4d8934a043d9f8cab960eb94f5755646e5276a123c18cf5,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,61,9,0,[],0.0
+c4bad56604d2b3e56396d4d248085c8ca8e3755c79b699a4c1197003ec5442da,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,61,4,0,[],0.0
+6a0739ee9c2aa7e9991cda912a9ac86ccd27772f20df4596b97e9b034a14b962,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,3,3,0,[],0.0
+4584f11921146088fdb86b7d3b581d478f1e0df1f75cf957a2bb7a68e4f349bb,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,61,4,0,[],0.0
+0a17ad927d4732220236e903f1bdf60e98924d1c598e908b4a8611c22fdcddd9,/home/wwww/hzl/data/coco/val2017/000000104803.jpg,0,61,1,0,[],0.0
+86503b9c661b3783a04ad091466bce392c6cb97cc02ddba3d72b08c2996f0697,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,38,1,0,[],0.0
+4893cad00fbb9c0686a1b9617638289cd6c4d132f3da37aa19ade4f39968256c,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,38,1,0,[],0.0
+cbbe282a4cc4cd97e71a904229a53c8417376759ba05e2ffc310d58e2fba5283,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,38,19,1,"[{""instance_id"": 649000, ""overlap_tokens"": 8, ""visible_tokens"": 8}]",0.42105263157894735
+ff61cbc3c35dec086ec0968194efab51ca32fca07c603e2eca1413d6ba2b2c57,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,38,2,0,[],0.0
+5dab8408e0b612eac65f7052984a32df9cc7cba3091f2c1010cb2ce72fd708ce,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,38,1,0,[],0.0
+7280dda866aedfd25ed01ff291bab7b874ddd87d25df00079bdf5450d10b3871,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,1,1,1,"[{""instance_id"": 472619, ""overlap_tokens"": 1, ""visible_tokens"": 20}]",1.0
+b3da99f6d802ee715c52a1a2e3d2cdf6e0c7378491bf4d8fb51d6ecb08c26456,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,1,2,1,"[{""instance_id"": 472619, ""overlap_tokens"": 2, ""visible_tokens"": 20}]",1.0
+5b3ea56f1b1e2ac784a857e27b93d7ced15916a2dc3354c83aafd88749cb312b,/home/wwww/hzl/data/coco/val2017/000000115898.jpg,0,1,1,0,[],0.0
+107ef46f38eda6e9b2e266d1cb6ebd0e083be7cd0a098dcf20a00ae1aead61fa,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,2,1,"[{""instance_id"": 1237916, ""overlap_tokens"": 2, ""visible_tokens"": 32}]",1.0
+c8501ccd58b23c6f6027866d50028643325cf3ed86b813eb40fa39cddde39d49,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,11,1,"[{""instance_id"": 1237916, ""overlap_tokens"": 8, ""visible_tokens"": 32}]",0.7272727272727273
+4b15703e9e8b7571fb32458f41f662ebad20e905fd6c87f7957ba794d07da22f,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+58ce529fec466cf6a56e239b43bc7832718642e05fcebc1588d3af519f4a459a,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+0746934c9101541a219cdeefcf5dd7ae0bafb5d66e22e12307f9dd5eb833850f,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+d68516e9f778b5820e4a5264e40e3478a076ae04f8b68fa6843d4b3078103145,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+8a2591840c5992e0ff7f393edf2c8685de5eda9e78609b1a322b0be0718edbe9,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+8141ae2645d541ad069e288bbab2afdc55a36b832dfc24d447e043381f3473e3,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,13,0,[],0.0
+7cfd7b496415268d6a60e8c1b2ee91ef541468fcf49e5a1a816522e84774bf3c,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+2644fe420dfe9ece443640dca70dd59c5bf223525aaca398424301d60a2c33eb,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,2,1,"[{""instance_id"": 1232296, ""overlap_tokens"": 2, ""visible_tokens"": 40}]",1.0
+5fd6f45b3e6a094803176cb9524d69f1a3123f25fa80154022f5bb5e76c5d6df,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,13,7,0,[],0.0
+031fee3168666a3c6ce9237085b64b8efeac89b2b4b3cbec097352c2b0668218,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,2,0,[],0.0
+a6efa8b66864da6cb5ed779ee761408ae2aafb1290e338fd91a9fee51bddde97,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,1,1,"[{""instance_id"": 1296898, ""overlap_tokens"": 1, ""visible_tokens"": 6}]",1.0
+3842c50567e441048265390b19a58b9c323b44280ef7e561d51c32fbaa4d4a8c,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+a97d909fa4708cf2c8ff5c207b88f417a775c359d39054cff272db16c02a8d34,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,55,4,"[{""instance_id"": 655034, ""overlap_tokens"": 6, ""visible_tokens"": 6}, {""instance_id"": 1482587, ""overlap_tokens"": 4, ""visible_tokens"": 5}, {""instance_id"": 1482722, ""overlap_tokens"": 4, ""visible_tokens"": 5}, {""instance_id"": 1482768, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.10909090909090909
+d568c9bc5f71f888eaf46bc8f24dce51f053410570e6630fda5a17bf1868470a,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,1,0,[],0.0
+371c14486752ba633cee666c218737c3fa9d5f2ec88a3152df58bda5ffedc263,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,7,1,"[{""instance_id"": 1281506, ""overlap_tokens"": 5, ""visible_tokens"": 8}]",0.7142857142857143
+40322ac3ce0a9eb370c6bfff69508496042daef2e1f97cd2cfb1a3a9827b70f5,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,18,2,"[{""instance_id"": 1237916, ""overlap_tokens"": 12, ""visible_tokens"": 32}, {""instance_id"": 1268588, ""overlap_tokens"": 2, ""visible_tokens"": 6}]",0.6666666666666666
+9afb8dff92da0ffc8718c12b0c5ea409f68f47352ff1bd3a175236c70d51f847,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+bfb17356c08dd2cf2a83e2e3627a188a8f154a789ff3a3c481f162b98aa078c1,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+49c91997ffc8b6d2ab50c519cfcde4ff4d223bc3d0b910b380492ca6445a1f40,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+cc21936cf064597a099977fd66f69ac2156bee09e0e92dd286a0c8e3f1b24086,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+aabada4b39e5221076aa6b1d20f38c457fad264e73c2486abce394625dc7e84b,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+130c64f75bdd4fa6e914dabd493bde71d61588243dcfa9e8b91539bc9ec25cea,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,39,1,0,[],0.0
+cce39d4d6f8addfdbe64ec81f801b5f2bff66e85c0793aee105289a2d1b0ba93,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,33,1,0,[],0.0
+c04cf1e2020c91efb8da55afc754f3cbadc870e2eb3623d9af91b9889d076c51,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,3,1,"[{""instance_id"": 1232296, ""overlap_tokens"": 2, ""visible_tokens"": 40}]",0.6666666666666666
+9efb1624728a360ca14fe7c6a2306666e9b0879fcc89496c77ab49f23daa0f2a,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,33,1,0,[],0.0
+7561684a27ccd1c3f03a1ed169229f7aea3ca88c119270bd068201df85cf3110,/home/wwww/hzl/data/coco/val2017/000000121744.jpg,0,1,1,1,"[{""instance_id"": 1232296, ""overlap_tokens"": 1, ""visible_tokens"": 40}]",1.0
+7fa6887f7072c6815a8e0710ee5237f854d6ba2b43ac74ebec3429bbdb57cefe,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,6,3,0,[],0.0
+2b66c9779f6a2579ecce06bfdf21fda3c67911a849ef78b517589b2533647aae,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,1,1,1,"[{""instance_id"": 1747271, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",1.0
+fbc8860ed5e68698bb9fb0623939bab9b3c383171bb2052e8d85226c09d11cd9,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,3,3,1,"[{""instance_id"": 1785456, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.6666666666666666
+09da135792413e3d1cd66fc7eec1cb8a0fa4edda7252fcfe34f2abe47d18755c,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,3,2,0,[],0.0
+25a7d61aba6260e8935d50eb08b60134081be5aff753a0e1b8a2e7b9d4b4509f,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,6,4,0,[],0.0
+0b05f228a58f00396272a028ee40d6f64f5947e5ffc51028060bcfcb706d4a62,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,33,1,0,[],0.0
+c67971af9e5c6d133fa48a75aeb916b6ed5dd5878d8c597e6ab4e0550c30be39,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,13,1,0,[],0.0
+6e0e063d79161da3a54cc27cbf42397d06ad0523820ef5d98192cc196a491cd4,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,11,1,0,[],0.0
+0697ab8a08f1472c0b04709eacb19a7a5f04b81bf6f3242079113059c9f4f478,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,33,1,0,[],0.0
+6601b90ce663acbb9e2a5d8a824877233dfc310a7ceb08b9ca22f3ec69b5e86f,/home/wwww/hzl/data/coco/val2017/000000130699.jpg,0,30,1,0,[],0.0
+f94dd088051dec87052f7601e510566a1d09e37bc7ada3a20b6e7354fb58ba7a,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,53,1,1,"[{""instance_id"": 1568659, ""overlap_tokens"": 1, ""visible_tokens"": 28}]",1.0
+bae47cb3e669a4c56bcc3058b65ae7727651f26d816c833002108fa9915a68df,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,51,1,0,[],0.0
+cda29577b1812f17d7adb2cef10f0336904b75119d094de4509fdd712c2f953f,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,53,7,1,"[{""instance_id"": 1568659, ""overlap_tokens"": 7, ""visible_tokens"": 28}]",1.0
+b734b176d93b990e5a522c5932acbfdab44c2d494317d76797ed0e3e6b7713b7,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,1,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 1, ""visible_tokens"": 256}]",1.0
+3e7fffc30cae73efb00c319b61948fe2b58946a546e43d4fe5eab76478fa74ea,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,70,1,0,[],0.0
+c738b06949cc48aec6f21f209f49a87d95aa73646e6119260a36cbd3dc28f75c,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,1,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 1, ""visible_tokens"": 256}]",1.0
+c4aabbd339c6ee482d6f7e94660981c661309eaf3b21d3c8285f8ed418551da4,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,2,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 2, ""visible_tokens"": 256}]",1.0
+25c1f25c31fd5be5f92efa9ebf22646514d428cad957937cee7cad14594a4d6e,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,1,0,[],0.0
+9397822942de78f7cff3c3340876dbb895afa29b1c7e2ddd606224388348ee39,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,46,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 46, ""visible_tokens"": 256}]",1.0
+17be265b00b066b7ad8e3fe2a0d0801c37122fdddaf99409cff5ce420bd4d272,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,7,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 7, ""visible_tokens"": 256}]",1.0
+525945c5e19f7a67d3234b2337ad0fa134a41b04bec531a264c0c2c214b4a2d5,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,4,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 4, ""visible_tokens"": 256}]",1.0
+6350a9dfc34937dc86f545800f7112e98bd8e1ed40810a649e627c089cfef5e6,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,3,0,[],0.0
+772785b8c84fc6da621ee08f6eef50a0b8a66c6ee3b6842a7fb41d5382f5d478,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,1,0,[],0.0
+ab2d04d49d4447173503fe514e0cfcfc1113b9709f7a75ca28243e4508c3057d,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,46,1,0,[],0.0
+59fc892852bf3bb8ac2113492142e797a359e110cd237f63c0aa4ad46ff441ea,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,7,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 7, ""visible_tokens"": 256}]",1.0
+78715f04b304c45485dea84a959a3ebf58dd6e07ee4535b18eea7d6db9daa57f,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,1,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 1, ""visible_tokens"": 256}]",1.0
+256e0543796cd79a962329165dfd3706c7095f1cf861c4da75ad7d67e70abcef,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,3,0,[],0.0
+afa33f554af7c288b2678525ec81667487b4e715cb094fd7bf372e85bd731a68,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,53,2,1,"[{""instance_id"": 1568659, ""overlap_tokens"": 2, ""visible_tokens"": 28}]",1.0
+9759fe0095b9d04df8073b7c560af44e5afa3d1e48be818396a07cb9d976252a,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,2,0,[],0.0
+2bd46bc67e8ea84c25d885b3e8dcc9ec6faf1ef354947bb2f089ce66c408efcb,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,54,2,0,[],0.0
+6beb0293eb018cef6c7d9252c91fd051d4bd4a3ace213b84b3b6f552a2d3ecee,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,61,5,1,"[{""instance_id"": 1960892, ""overlap_tokens"": 5, ""visible_tokens"": 256}]",1.0
+56be53cecf9188d8d5b5631ba6968618d3a1248efcce1016dcf12d8a5efaad47,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,46,3,0,[],0.0
+3d00e5ce1f81f7e10808536c21e966d15c82dfe91e1b2129ae0388219408e6a0,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,5,0,[],0.0
+0dafe7882a2c1b1e214538a06180bdd5f4c5b7c5f46d85fcc7913e1b7dafcb2f,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,1,0,[],0.0
+7d5a57e754b7408d25c6ba277ec7ba7ad61c398b0bbe6a5458be597195598479,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,15,0,[],0.0
+341fe32b4ddd0702ca56e0d1f03a8c576e439036ef66089c842560cc39cad80b,/home/wwww/hzl/data/coco/val2017/000000138241.jpg,0,49,1,0,[],0.0
+6fc61b0a7f1524f6dba663ea8224d45280d6220452b9a41efc9fc69a9164fb8b,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,34,6,0,[],0.0
+dcb37d27816686b42913dade65cdee747820a38b5b53f8437893b5a2a02c67df,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,34,21,1,"[{""instance_id"": 621551, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",0.047619047619047616
+c07c621c3e23af227a7fbfc0e072294ee9d2e4c99f12ecf39ce46bf58ba77fdf,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,1,1,1,"[{""instance_id"": 430155, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",1.0
+10a5cc12169c69e4ae7a9a3783353eb85769a527cffd580632fb8b7e5d0ffe3c,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,1,12,3,"[{""instance_id"": 430155, ""overlap_tokens"": 2, ""visible_tokens"": 3}, {""instance_id"": 1748763, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 2207362, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.16666666666666666
+7ebe29df21fb5c05ff01574c441f2cb691eea89dd5e998a4de4d07a0aac3b4f4,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,1,1,0,[],0.0
+79870f91612431102616eaa138f5a7e484ad80faa25d2a21609735890e8856d5,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,34,2,0,[],0.0
+79fa3758e5ed574a88b3af9ead8911296f61b6798b0508704c4a4777302e0d66,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,1,2,0,[],0.0
+f1db2f8813575829a5f7dfd896a28e3878fab190d3c97893e7f6bc0ca7a6c4d9,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,34,3,0,[],0.0
+e14adc45b3f0f4edaaa67be2e0086c388d80619fe1ce4c42eb8296ba581f5d37,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,34,4,0,[],0.0
+0ce7fc9987a179080d8f207c4f20aee19fa6ff3b2c619e2e614ccf38c278996c,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,34,1,0,[],0.0
+59679eba635b19a90a032529ac5e1ceb1e56a5d99adaa67b900273939b128520,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,9,1,0,[],0.0
+929eb74212cacdc57fbd12d873c004f1b9256a722f2b6d6bb5a97e66e23c32b4,/home/wwww/hzl/data/coco/val2017/000000143068.jpg,0,34,4,0,[],0.0
+5778efeeddd3d16ab531780329105ec30a483eff0dae3a96d702dfd05605d9b0,/home/wwww/hzl/data/coco/val2017/000000166642.jpg,0,21,1,0,[],0.0
+3aec6a258a0253fd3434cedd245ec07e786dcb3441f0a16f93abcd8129d6b147,/home/wwww/hzl/data/coco/val2017/000000166642.jpg,0,21,59,1,"[{""instance_id"": 580122, ""overlap_tokens"": 58, ""visible_tokens"": 80}]",0.9830508474576272
+010061963e39d6b0bbeb2b629d72d6a42770e824f2f2aca1efc963368d8334e5,/home/wwww/hzl/data/coco/val2017/000000166642.jpg,0,1,2,0,[],0.0
+8e2292341dec9d12b530d1e1e4d6f72a92c9116dc4dd31180ba2badde45d1b9c,/home/wwww/hzl/data/coco/val2017/000000166642.jpg,0,22,1,0,[],0.0
+8999149af2bb2c555a51ce479a3aed7e15678cb19320a6dea420bd8c238bbc6f,/home/wwww/hzl/data/coco/val2017/000000166642.jpg,0,22,1,0,[],0.0
+da6d56ef674acc303c5b35494a5dfe2c9f22770d4d7ad1b1d74a5464530d6093,/home/wwww/hzl/data/coco/val2017/000000166642.jpg,0,22,1,0,[],0.0
+76df6981e1eab47f6f42d751447b4772d36466f75615c65a5793a7efa212abbb,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,2,1,"[{""instance_id"": 338004, ""overlap_tokens"": 2, ""visible_tokens"": 106}]",1.0
+2f3cca3c481c3a891895008dac19c4f1ee8481fcced77531348deee553f82fee,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,2,1,"[{""instance_id"": 338004, ""overlap_tokens"": 2, ""visible_tokens"": 106}]",1.0
+fead68162cd4f138707983449ed2740871b813e0ec6d5c2b81f0146b0af18a01,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,48,1,"[{""instance_id"": 338004, ""overlap_tokens"": 43, ""visible_tokens"": 106}]",0.8958333333333334
+17ed77ba94fe95fd397a81fa2b07d17774d580b54b39c544684fe70f7a906b1c,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,1,0,[],0.0
+5f149dfdc24110c6b54bc16b17c4cdada93b43865611f6798055c4ae1ebcce78,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,1,0,[],0.0
+e37bc1855697aed9c8fc76581819a34ecc82d0ebe1db07340b12de6541d056f5,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,2,1,"[{""instance_id"": 338004, ""overlap_tokens"": 2, ""visible_tokens"": 106}]",1.0
+bbd154e2c311715b61db4a3b60b39f4b467d8af4b9a98ee21d8a6f1a547aa2dc,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,1,0,[],0.0
+2faa5654089622d558751d1d31bdf17563cf4d4b97377fd76490095328944e37,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,75,2,1,"[{""instance_id"": 338004, ""overlap_tokens"": 2, ""visible_tokens"": 106}]",1.0
+d3add7b8109850397e62062fe1d713c6f9ff68f8b54f13ab4abbbde372b94afa,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,61,1,0,[],0.0
+5a9a714bd00a21c01e387481b150f6faa7183c83b70ad008bd5c5976135232e0,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,5,1,0,[],0.0
+1206a0fb90f75bf67bf3c3b7e133833b90cbb89995507172a95f1da0e27a531d,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,15,3,0,[],0.0
+87017d58a1ed2fe8c2312636d4c8dd6e5f706fa5f4d4531d0cd10c161266aace,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,33,1,0,[],0.0
+fd37107cffa1c16b3c13a3e793984a5a28036954e5b58ecbd497a5d4d373a099,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,61,1,0,[],0.0
+73cbd1867f03796ff8cec936733236b318fae1b99a9af16fe8182f94b7d9dede,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,65,1,0,[],0.0
+96bb1bcbdf01edfc6ff42482a45cf8d2334a7691b6a6ce677818f734a006bb5a,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,15,1,0,[],0.0
+9a381d47f2b0988935206d7eeea797a01c623153f667676ab2c5360f20deece0,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,33,1,0,[],0.0
+ccdb21e8b219683b2dad501247974ae5021314308b8c766df271b37f5bdaecba,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,76,1,0,[],0.0
+e8d16986f60ab4e27ee75c83457f2d0a09198c5e3941a9fadf070e77675f8d5c,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,15,1,0,[],0.0
+8ac35f8e3b85c36ae986a700caefd51cc9c9e660b807181e24247976aeff1ecf,/home/wwww/hzl/data/coco/val2017/000000167353.jpg,0,61,1,0,[],0.0
+fba2ef936674f828612808a723eea5a89f6460369a39c2f921f6765cfdc6ef68,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,50,1,0,[],0.0
+0c5f9eb697240aa10e2506dd38834b60ced8d58207456b067f9c4e9aa2b718d9,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,50,2,0,[],0.0
+67493e79c0bcbed888ba92d941cfda50073743312a197930f2cfec13d0e9069c,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,49,57,1,"[{""instance_id"": 1910029, ""overlap_tokens"": 24, ""visible_tokens"": 30}]",0.42105263157894735
+3f039cf2b9e70003f26a28589fa1549f87d8d8822402d58bac618f5e263c418b,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,2,0,[],0.0
+317c1b0dd1f19037efe6a82bcd2f3ec0e7925d6d0094d80913026d62ea1ebd7e,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,64,1,0,[],0.0
+cba4c3c81af890625d9693abd76fdf6c2a0c89ef898c686f7a5fb1da3e90bf41,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,4,1,"[{""instance_id"": 320735, ""overlap_tokens"": 2, ""visible_tokens"": 46}]",0.5
+7545cbbd03c9002af38ffca51f73686c31e06d8e203ebcf5b717ee8d487c07d4,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,50,3,0,[],0.0
+75655e787bfa0b05fbda76bd79be97ebbb5b8ed02cda4b11fafb2c0abf356d76,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,1,0,[],0.0
+fc3f60e13b208b0bc7e55522f9f51fdf71a4cd64beff1e586a15115237c8031b,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,1,1,"[{""instance_id"": 320735, ""overlap_tokens"": 1, ""visible_tokens"": 46}]",1.0
+36b9b09c3258f00b7af286cb7b9aeccd6a89b455b0207299ffbfaa2f8ace95b6,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,49,1,0,[],0.0
+a8f1c70f34a4c7e8472804c3df37f03cc158cd0447fc965c161abb9e9e97cd93,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,46,1,0,[],0.0
+da4a804e30af0d9e5317c9dfdd7890b84eadd134891702ed292af6db43653b7a,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,31,1,"[{""instance_id"": 320735, ""overlap_tokens"": 9, ""visible_tokens"": 46}]",0.2903225806451613
+3a42baf67a98c6f3f0e854634e28358ec05fc2c9b2e169ef20a2be5159bd47f0,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,2,1,"[{""instance_id"": 320735, ""overlap_tokens"": 1, ""visible_tokens"": 46}]",0.5
+f5b727676d83f510610cd1426b21156001358006827a2c9a48fcb52186c58571,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,46,1,0,[],0.0
+2b76c3ce307cd5f455bca9d8b378a56c0fe1c12e31354952fb0c0e89a4e9ce8d,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,71,1,0,[],0.0
+cfb348ab71ec7aaf3944432803cc948dc8f88567554d850e2a5029395e4de1ab,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,71,2,0,[],0.0
+975927da64627a0d9436ef4ea7a1e2b1482cb8c22e53d1d0358e27dd7222e6ff,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,1,0,[],0.0
+b6fbb974bec4f46bbecd84996eb3163400b3c1f586913a1511332a566b372be2,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,3,0,[],0.0
+f281ca4e32389cc3b2cc75d75164a251dab807b36f6334762f9532f581f9288b,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,61,1,0,[],0.0
+66a1023852bdcaeb3d70822fbd0ec9902f57a4e01f141c9d7e34170ac565f9fa,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,49,1,0,[],0.0
+6e5026709b0a160df4c381c14e8890c6c54bbdeb047152cae819ee8a7b2de29e,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,48,2,0,[],0.0
+f305183152e09860f916e82ae252e5b9085217f73af98bf45ed99dc9a5a01c0a,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,71,1,0,[],0.0
+5634936a5c23d307ed90e87c27eb52ae89ba7bbcea552a972fb73fd773b623a4,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,46,1,0,[],0.0
+72c33882dbae894e8648aa30d690724822049bd08710be8c200897031b280154,/home/wwww/hzl/data/coco/val2017/000000170595.jpg,0,33,1,0,[],0.0
+abefc2104eef6c76aa2c34a048b92ade8713f8b44ae6b594fbb72e1834a66434,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,58,43,1,"[{""instance_id"": 99472, ""overlap_tokens"": 17, ""visible_tokens"": 19}]",0.3953488372093023
+73a15da82d38dfcfe9f4dcb394db7301a6e3b8ced3b164c119a39141b2f27c4a,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,42,2,0,[],0.0
+3e3a24bf57e3015feba84ddd11b5ee018fadd55fb7e28e81d323f0824b461b47,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,25,2,0,[],0.0
+04fad3a29b6784b4049b145bfd246a0fa0743baa6e00b84e721c65f43a3b4d47,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,34,1,0,[],0.0
+a6f2909305677944acd82afc43b24d973355325c64d62b4f695904fe88fe6d75,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,17,1,0,[],0.0
+f95694b198f9c10f9f54e8fd4223286e71e430cc5bfff9476e35b67989f6f4c1,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,58,1,0,[],0.0
+0a020596f1809fb9be65896baf8fced55c98125ad0d42ddfdf2e2f52d8e6efe9,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,4,1,0,[],0.0
+52e574a80c85877f40bc2509cdd49be526d6c71805f6c98d8fe6dcabc19d4e8f,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,34,1,0,[],0.0
+ddd5d8737da7a6d880413a4e10a50aff19aa486e15f74ceb64a075ace1d5502b,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,56,2,0,[],0.0
+9084ecac1e24ac9e926ff4609a29715e6e2f477f88c361caca3ed796e5faed24,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,25,1,0,[],0.0
+c57fabfab27b61adf7eb08c4e535d40be27c4dab05d5e85bb26d262e472b0b84,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,58,2,0,[],0.0
+be4b6135a663e289dc8a7a3ce496fb44df77802c9a9df375006f922d0c813839,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,34,7,0,[],0.0
+63bec392b36aeb8e7da3475c3f7e36a0e2c776a006bc5bcef848e18a8011853e,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,56,3,0,[],0.0
+e5a4b18d3febc366b60c7982ef52a535062617d163105ae1bc68b29555907fe2,/home/wwww/hzl/data/coco/val2017/000000182162.jpg,0,57,1,0,[],0.0
+4eebb1775495d2d737f274ec65019cb126c3695aefa939b696c2606e84fc3b35,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,55,1,0,[],0.0
+e4770142900f83a95facc7715f2d2f2a08ad48cf26b228f7ef0bde3a4a2fcbde,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,55,3,0,[],0.0
+d5b24457702e853f5dcd016ba17d9cb009f8de35166bc7cf5e51d770142f2b14,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,54,7,1,"[{""instance_id"": 1075065, ""overlap_tokens"": 7, ""visible_tokens"": 8}]",1.0
+e0164f5bbda891cf490e3b0c4b366e1d95c38250ff4a6be20dca421dc730b162,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,50,1,0,[],0.0
+4064c19804553742350e5dc700dc4115a8491aafc9356151c94d7813a931c745,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,55,1,0,[],0.0
+e744d5a11d2453d791b7193e33cc10ab23db46148f9a5e7cc23d7d5037ab8d18,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,70,226,1,"[{""instance_id"": 1643209, ""overlap_tokens"": 225, ""visible_tokens"": 255}]",0.995575221238938
+5c05c9efc722b09af4c76df5dfad9d5aa4ee2578bf66d36a2a1ad39dc1879939,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,50,1,0,[],0.0
+b4df4419333d29c6df8febac3dea4d52e77af5a23dd805686c841664e7721448,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,71,1,0,[],0.0
+dfc042d98ccd90dd372d79364e9955e41e060825f02dc19ef76687a66cd77b4e,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,71,1,0,[],0.0
+2c8c65d4aa4c3aca075a438bcf276b0cc1ec7e4509a62e4be8d961ade4f727be,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,71,1,0,[],0.0
+27c63ecab744ce34056cd0bdf14fee94344f737acb039bca9bed5b1c496df88e,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,71,3,0,[],0.0
+b849599c073017a86fbe5b8e5fdff0c83145d25d11407e1791a52e62a73f42fc,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,71,1,0,[],0.0
+ae7b122b30df5ddf11406f0521a6d847726c2b4f9c2d212e294d4a71d96b1ac5,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,71,2,0,[],0.0
+06846c4bd8c8036c570ef2932ba98fc9c3c7334dc4bcb1a819b9e146e5c2a459,/home/wwww/hzl/data/coco/val2017/000000194746.jpg,0,1,1,0,[],0.0
+9067501b719cb5a7e27493632f9edf7e39e66089d4ca4ac8390acc6f36d991bf,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,10,1,0,[],0.0
+d89182d70a8c85911e9b9753a54233d10d8d2444f4f11db3869d80a7aed7c3b9,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,10,5,1,"[{""instance_id"": 1806485, ""overlap_tokens"": 3, ""visible_tokens"": 3}]",0.6
+8ecb0f45300d7d08a81173cedd7746daf97b483ad268495e116b78428ea0d585,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,1,0,[],0.0
+2867a2382ddcfa35d209c6e09132424a3697e00b552ae28217631f9daaad95f4,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,1,0,[],0.0
+916e6b7f507982350b54af7f90cd541b05b1c7eaf0d63f9cf7ff948fb8fc4b92,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,3,0,[],0.0
+22c9f2d9e28906d75c7769e54012f64a576ce2177d6c52f8e40188235a7d0379,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,50,1,0,[],0.0
+4defee2e1a3106d97a6819ac8a33a27abe8814ca4cf50fb57a2c7b856a278509,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,10,1,1,"[{""instance_id"": 1383935, ""overlap_tokens"": 1, ""visible_tokens"": 4}]",1.0
+99bc9a980350f12786cd1ad4239ec5d90e2281cb35f63eac5970eb7ace92ec7b,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,10,6,1,"[{""instance_id"": 406298, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",0.16666666666666666
+b96f412c022c10b9007726409347c7717b640a9638375785ac29200f46ffb868,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,1,0,[],0.0
+dc8fa26ff180ef2e8e35af9562c2d68ec6d77b0e1ebf9a1784073d1c47b23283,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,3,0,[],0.0
+99742f7c1b0e3915a03793db38724f4c3487f0bc06840ce27794c8a569bf9489,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,97,1,"[{""instance_id"": 171691, ""overlap_tokens"": 50, ""visible_tokens"": 62}]",0.5154639175257731
+17b5025b60783a22c63ff8895ab3c6259775d0911b3ff8c4cb593ec69dbf2a77,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,10,4,1,"[{""instance_id"": 1806085, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.25
+c1539aa084af8316870b20d6cf4f717ca168626b393633c00cea5a8f7833dd72,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,1,0,[],0.0
+dd84ed45d37faa062ff9ba36062c650c36870ce2bb9b3ab084fd3587be8b3a76,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,1,0,[],0.0
+ba906d3e670b7b4dbf2f5432f30fa4f636cac511506b4e8c70812956d196877f,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,1,0,[],0.0
+fbd70ab063fab760214d22ef7d0e6ce6f3d1fc061dce47fe70bcc34d32b56ec2,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,3,0,[],0.0
+eb6c700297025efc2b61e4adfa7fed364a6e18cbc4965a8b90baf2e72545658f,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,2,0,[],0.0
+632029a13b99fd8b679adb6abaa779889f7f8f992f87a320d29806adac684daa,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,1,0,[],0.0
+cf7fef041a8c3441146715933741196c22420beed85aeeb737cce60f5bd5c0e0,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,3,0,[],0.0
+0b9e508bec87dade376a3e6f81b96cf413c49d2bb16ccdc38e054d7423f91c9f,/home/wwww/hzl/data/coco/val2017/000000200162.jpg,0,7,5,0,[],0.0
+ea9d189036e73c901f069c467dabe21183a3f4b13de4b182eb2be0f6b219e733,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,8,1,"[{""instance_id"": 394068, ""overlap_tokens"": 7, ""visible_tokens"": 28}]",0.875
+430e1b36db8a1cd854bc11d029acf5df5cfd2d7144381a134b27d80a67d5294d,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,3,1,0,[],0.0
+aa0e89aeaf996c551eaa8839762fcd44db17714b81a53813fb18200bb71ffd23,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,1,0,[],0.0
+3904df56a467a9d3cece17cc13e2a4443336b8f94a4f14bd9fb2493947805cdf,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,1,1,"[{""instance_id"": 394068, ""overlap_tokens"": 1, ""visible_tokens"": 28}]",1.0
+de334fb8203bd48c3168df56373e7a029d87718af13e67d2114d48919030b404,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,3,21,0,[],0.0
+4f68bb0dca21176aa4e334ee7acf848b2f0e37a621d5b77b62b871fe8ba6d37a,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,1,0,[],0.0
+272ab368ebd8eeeb8524555bb37bc46eade4790c7683b518aea80de1b52b8681,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,2,0,[],0.0
+23f82132d8a6d18e28984d9031cdd0c08459ae24c3ef4782be1e2595ed0385d9,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,3,2,0,[],0.0
+0129cf2a390852d16ee1398f2b091a3e292d1b9d1e25bcea3f0a5f174390c742,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,2,0,[],0.0
+61b5272cf8591419eb261babd41a619e1c82c2cf3095a07f09bc8e7c0f382686,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,1,1,"[{""instance_id"": 394068, ""overlap_tokens"": 1, ""visible_tokens"": 28}]",1.0
+a21a7280c2304026882768d8484615ede8a81ce5db2ca4c749fb39438808e4f6,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,2,0,[],0.0
+6387b91fac5ab63d224ba22c7ec451c080981f83cc5fd18d386b8639cba2652c,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,8,1,0,[],0.0
+5e96e0854dd00c4a96a9d4416045b39a88d2e81a6695850cece85d663f7baf36,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,1,0,[],0.0
+e8abc5240b247159a0bc287e616f297bc1f5d0db680acf8c5ba00dbf1c58e0c3,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,3,0,[],0.0
+c1a9bab8abfd2f8201d8b661672ca995dea8ee301430e1c6b3e3ae1a1478bce2,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,1,0,[],0.0
+eaa67a9b27d39cb1687f3cd162185e4a6bab6213cab5a1036fade5e9fde6dcfe,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,2,0,[],0.0
+e853b6d3e5961e98a971029f95c0699809b78c438fd72609df65a953fb577998,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,1,0,[],0.0
+57123c58078c1a2d36b303ef97892a33989f485e21944ce233473ffd45be423d,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,35,1,0,[],0.0
+060c0af7dd9c47dd95021af099a45d1fc9231fef0bf084c1b4bc32e361823dc9,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,1,0,[],0.0
+65cc679e51b0f3485bc3bc2203c8ec38de7ab23e78b632911a372515b84bfe40,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,35,3,0,[],0.0
+43c2a7859f4abbfaf9cce5735e95a011de5366d412187eaf14e5be222c6cd2c8,/home/wwww/hzl/data/coco/val2017/000000205289.jpg,0,74,1,0,[],0.0
+fab7baa9c8ffadc5122eb22d37b9d14b5967f166eb387617517adc58e3067db9,/home/wwww/hzl/data/coco/val2017/000000216516.jpg,0,50,1,0,[],0.0
+a33e1c90c211c0301c2241b5946eb7ec846d528995bfe4a22bfa94ee351e8ce6,/home/wwww/hzl/data/coco/val2017/000000216516.jpg,0,1,31,1,"[{""instance_id"": 460197, ""overlap_tokens"": 18, ""visible_tokens"": 30}]",0.5806451612903226
+c6672a19917281e68beb2cfc0d7448aec9ecc04b54707f43510cf3feb65ced62,/home/wwww/hzl/data/coco/val2017/000000216516.jpg,0,31,1,0,[],0.0
+c94713e4aae6f067a275edef153ce6eea9d3a32ef0871161a3783249b008cc49,/home/wwww/hzl/data/coco/val2017/000000216516.jpg,0,31,72,1,"[{""instance_id"": 606485, ""overlap_tokens"": 6, ""visible_tokens"": 6}]",0.08333333333333333
+8d098512382f7187e163abde3f383581f7cfc7a42bb8eb473e9401122899cf5c,/home/wwww/hzl/data/coco/val2017/000000216516.jpg,0,32,2,0,[],0.0
+e40e09280678c2a083cae71bd8dbca4e2eecf9a20a534bfa1092c06cca00e91e,/home/wwww/hzl/data/coco/val2017/000000216516.jpg,0,31,2,0,[],0.0
+a3718c4699a255e9752e81720b0c310e25107db0088d6444bf6be0363ded113c,/home/wwww/hzl/data/coco/val2017/000000216516.jpg,0,31,1,0,[],0.0
+d4c06305c4e009c8518f18afa7d7c942be5011edd7915bb45c4a2e8943d1bd18,/home/wwww/hzl/data/coco/val2017/000000221017.jpg,0,15,29,1,"[{""instance_id"": 36934, ""overlap_tokens"": 12, ""visible_tokens"": 12}]",0.41379310344827586
+ead5ebbc019b494c100e7ee6bcb0a6ddcaaf8b7597f3622831f72017e89d2535,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+a7273550eb0b43e66e1d4bed6edbcd75d6b04370f9404bad4542ad5f970bbfea,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+dd5367201bdd65aa2aecc7cf5a46c3def74ec0c92f6afeab091c5d0ff966c093,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,51,1,0,[],0.0
+e46172b8d8716040f3e3fdc7296d6959592ce9d00520cfe30f3b56e2d2fff123,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,51,1,0,[],0.0
+7a0a2affa4f595fc240de65f6f59200ce996833a2ebb577e1aaeb511327171a5,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,1,0,[],0.0
+84a3e6ae1a6382e99d4d8c47afc03b1346e6f187352f5dfe3d9ee040f17a1b52,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+a5023111213abb585e4e337b292d389f56de75c34e1761d4eda8157f2e254113,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,51,1,0,[],0.0
+9abee01297bff398bb240684c2a99a70f6ec8feff153a5530c12c2b2ac51a96a,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,51,1,0,[],0.0
+b4ab2e81cbaf9a71a07e6949fae51e29c2281ca30f4e8e0092a36ccb2886f619,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+8a49b648aba7468d4352df8d0541450e3fcce87dff71150f77482ff1be7dd835,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,51,1,0,[],0.0
+92c1f2b15d4501b08224c7bd6ac93326f5c1c441c81549b633bded4d6b4a2d34,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,1,0,[],0.0
+79db10f776729b3ce54e7c9e74657560851867fac72789e138b38cecd9444a17,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+3253fa3ec1cd4872857f4a3c836d5588339827d48b692413e32c51943f5fa814,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,3,0,[],0.0
+1b1d285767444eaaade924f22374b0fa69a6e0f54957a99a58077f7d1acb0a7b,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+0c6444c942e79d790d36f08c339767fae6030ff3ab911cb1e81f846f430225c9,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,51,2,0,[],0.0
+c4717ef7605409b9d67233c7f816fe47e1a47c1bde4dd684162e2ce512312eeb,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,8,0,[],0.0
+52f901d185e16df957af71f5e774e82e3f48f765f87ab92f1e40f15a16f3049d,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,52,1,1,"[{""instance_id"": 1917065, ""overlap_tokens"": 1, ""visible_tokens"": 72}]",1.0
+9fb5ec77555145771eda5c1da2969013ddf4778c5af2c5ccd5142635c8d08c80,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,70,1,0,[],0.0
+482647a296658a7f2ed6474f9d2e5ec813642ab5427aff6c3392cc794f5ef2ab,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,1,0,[],0.0
+6636694c716afb54be162eaa30b3e7b7de565ecd931290164e1555263c5b50f6,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+50356dbaf80e0df4d355e11eede3cbd47ea19bb3cc612d207ef7a1895a901522,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,45,5,1,"[{""instance_id"": 708022, ""overlap_tokens"": 3, ""visible_tokens"": 9}]",0.6
+954d355075a20b6bbeebf1750cbbb3d452688398538fb039b25eecab5b98641c,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,4,0,[],0.0
+6c60fbfd265164aef91d561146efc66f40a61184616d1a18c3a6b8ab9e2c919e,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,52,1,2,"[{""instance_id"": 1062217, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1917065, ""overlap_tokens"": 1, ""visible_tokens"": 72}]",1.0
+57a4dd84223a87597d9c5d4ca3cf7a3e086f9cb5fffed853508f488a56114bb1,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,2,0,[],0.0
+f400740f076a2849f9278e572081658812f71bb881a0f5e23c6c5a0694619981,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+33cf551849193ff2fc44621fed5b8b75a327ae90f09b2d0c4d39c82fd986c8dd,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,70,32,0,[],0.0
+1a408a908aa48e6e713d573b73c6fc88003a4642db5dbadbad4c4d367f110b60,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,6,0,[],0.0
+96958fe1525cedb4da556e49e963b045bc809ded64e468dd8c51f86973d49e4a,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,47,0,[],0.0
+4757ecc4bec0c9eb5ff4e4deb8a1ec92114c43633518ca77a47153396ec60431,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,1,0,[],0.0
+42c4bf7fb7ae149d19a597e65ec168b7fc220daf98c154f4cab79ecbab61ce37,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,46,8,0,[],0.0
+3a1fe73d3b8a0efb0a19d26564ceca6d27d439a01f171818730c8ac30597c1cf,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,50,3,0,[],0.0
+a902cc8776f955c6f5e7f110abfc81565220aec1eea3905a78825e9b129c2d01,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,70,2,0,[],0.0
+6ca9750f1741bd8cd09af902b95a26a3de6db57f377e46e0f13d1177fe7a6bc0,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,70,31,0,[],0.0
+6959285cb5b972f5b9bcfb1b6cb8f9aec1d05a254469927ee2b19ecfe173995e,/home/wwww/hzl/data/coco/val2017/000000227765.jpg,0,45,9,1,"[{""instance_id"": 708022, ""overlap_tokens"": 6, ""visible_tokens"": 9}]",0.6666666666666666
+26510039f5c95984e7f4f7d9e3f2cfb766929e27a363c0effe5a1c6a2cd6a86c,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,10,2,0,[],0.0
+9d4629720cd8907c60fe9e9176316c90877bd51639cd8150b38a689b851e6620,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,1,2,1,"[{""instance_id"": 431999, ""overlap_tokens"": 2, ""visible_tokens"": 39}]",1.0
+7141edb5c634decc29be7d87c64ec1e532eac72084a5d3129cfa670673845031,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,37,5,1,"[{""instance_id"": 644851, ""overlap_tokens"": 3, ""visible_tokens"": 8}]",0.6
+40c22f2ccb0997e3badcd9a55ac064df04a067f253abd54df9c7b73339ecfd0c,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,37,9,1,"[{""instance_id"": 644851, ""overlap_tokens"": 1, ""visible_tokens"": 8}]",0.1111111111111111
+c51b7f90e13a308689f6dc88899bbcec4b62bf82256b79754af63783ffa05267,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,17,1,0,[],0.0
+2b480398645cf55dcd5c9da3c6715a5d1f06c6d4984167447418955a25a42b66,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,37,11,1,"[{""instance_id"": 644851, ""overlap_tokens"": 3, ""visible_tokens"": 8}]",0.2727272727272727
+bc175553a8ca7e8928c10d37e3eade2b21e506a232e21b08f9d52857b90875e8,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,1,7,1,"[{""instance_id"": 431999, ""overlap_tokens"": 5, ""visible_tokens"": 39}]",0.7142857142857143
+730cd1db1e9eff79a3f1fdfb0e81a46228a4f59a3940dd96dd496a73dcfc64f2,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,37,1,0,[],0.0
+e83059d5d6ff1637cfcae23c6b344e3994171b6045dbae722a18728dc18f6e50,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,37,1,0,[],0.0
+022e79da9ca82e4b08780c7a295e5c51ce6af9ad30cd23ae05733b568b6e4579,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,37,1,0,[],0.0
+2848f682da0175c1fd74a69d3234607aafc3b277df9870151171e0fd76465157,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,32,1,0,[],0.0
+b7f5e1d1c4f4f177c337d443bf5d95f5a4b0397077e7c59ed1a40914fb467c33,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,1,33,1,"[{""instance_id"": 431999, ""overlap_tokens"": 22, ""visible_tokens"": 39}]",0.6666666666666666
+5d7123187481117b91ae2fbad006ca895439e032c4192910045e229777489625,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,37,1,0,[],0.0
+9b7cc8c2572444c1e9a9be4e9ae57108faee6006f1e7d6b2e92247871885bbc1,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,36,8,0,[],0.0
+9ffd0c4b6f013113740c5746fb807801015abf026e5e566d692557c5241bdf20,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,50,1,0,[],0.0
+20a7ba0b281b0e5798f8161ae9614f9f4f53c5b5b7a265dbf1d80a2603d3f75a,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,4,1,0,[],0.0
+ea0fa0197a0f67341b64d9f9442b7639cab49bfe9c0e47ad015ac3c5f67030d0,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,32,2,0,[],0.0
+d172c639472f1d5782a3de1f759cc2d4ee97704ca8849948839c2c26388b592b,/home/wwww/hzl/data/coco/val2017/000000229553.jpg,0,36,1,0,[],0.0
+2c7cc1d9965434ee3fdd9dd95fdcf9299fca52cd8c9e9740232a757f27a1409e,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,51,7,1,"[{""instance_id"": 1057142, ""overlap_tokens"": 7, ""visible_tokens"": 9}]",1.0
+052515fa54347befdf838e01e8207b9d6ca34cc7d774f182f0aeee4ae25ea47b,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,51,1,1,"[{""instance_id"": 1059072, ""overlap_tokens"": 1, ""visible_tokens"": 6}]",1.0
+ce129253845fca028809884518ae2627cf37c42bca6894d1403eea99297a95c1,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,51,11,2,"[{""instance_id"": 1059072, ""overlap_tokens"": 2, ""visible_tokens"": 6}, {""instance_id"": 1059914, ""overlap_tokens"": 7, ""visible_tokens"": 10}]",0.6363636363636364
+0ec6ff941fdd413beb3d4e0abe6f26763d92345b2f7ab13d2aa3fff014da8402,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,52,2,1,"[{""instance_id"": 1061646, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",1.0
+c4c2e68f5cfbc9e56b1c5995c26ee47b8135ecf5a5947341259cbfe9489f421a,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,41,1,0,[],0.0
+51d7bb434694f432decd1035be71e5adfea235173df764700a31a0570d6f6f3e,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,3,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 3, ""visible_tokens"": 256}]",1.0
+7d784b05c623158aecac1291ed9d32a736cc13ce6b3c10fd2a3d1fe62e71c61d,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,1,0,[],0.0
+b65799c5102b6a3197434ef44033a36e7ba35f65c618787d6c2a21e372ccc536,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,41,1,0,[],0.0
+fcc6e2fcedf5b326fdfb5bfa8e0386deeaaba66141b474b45ba1d29fef6ae0e4,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,2,0,[],0.0
+9c0c8dba361b0c8c44ade70b8ddeb1f31a3908fba14da7a24cf047703bf1d6da,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,1,1,"[{""instance_id"": 710153, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+544274c13d843bb3b3088994a6ae5505644309df6ffcb488a5e4a25b4e10d97a,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,1,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 1, ""visible_tokens"": 256}]",1.0
+28679e7ca7515a433c366e53dd62d271e5f33b30f25e7b5481891d9b121ac26c,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,1,0,[],0.0
+54799e457f84a06bfcbcadb40da895d236b4bba798bb27edff720d1b6a73b7ba,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,43,1,0,[],0.0
+a8b52e6bbbae3f45c601715ce5948b53c56ae1f8a5996b7ee67f1294e5f43646,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,43,1,0,[],0.0
+137d1c9880c26fc726ab2372a3e0f20bfe07a5eaedfc62b03535aa948fd8b6c7,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,1,0,[],0.0
+41b34100073ddb77d4e0f5799596fdd674f1f727d29e3c8e6b55c27e4acad331,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,2,0,[],0.0
+cdc35bb80afddd72065a50b78ec83eed02f76d21e567b08accce7e23b4b9d27b,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,43,1,1,"[{""instance_id"": 1516906, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",1.0
+d4c7a44915bc9aa07a141d9d2616b7338222c4d4bead1b7b1730dcc24db263a2,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,1,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 1, ""visible_tokens"": 256}]",1.0
+b00ea25d4d499fe30fd23f515eb032b075a9761e9599eaba976a1761e850bf07,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,40,1,0,[],0.0
+31385cc4c6637e8b293b8494287bd8d76b8f766b659942ba055b65a4208a6673,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,68,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 68, ""visible_tokens"": 256}]",1.0
+a171860448856d9a3e8619b977ab5665bfb170bcfdace1b943c4c08a014fc9e7,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,1,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 1, ""visible_tokens"": 256}]",1.0
+a6a0707d040a3e6c634dbe3ab85dbf3c4a0024ddcb1212878b8d1847026aea52,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,1,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 1, ""visible_tokens"": 256}]",1.0
+441bc2b8c2d216f013886c7d5799d977b414d10e3c88f54c14b6b441efaa1ef3,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,6,0,[],0.0
+f8e0da58b7c4f37aee815eede796305170d532a3a012d5e5433225b2dd1f688b,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,43,3,1,"[{""instance_id"": 1516906, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",0.3333333333333333
+9c60b5362729c8b8c9b40cd8f368b78ca0144c44fb6279e0a0ab472aeff71523,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,51,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 51, ""visible_tokens"": 256}]",1.0
+63a40dc35b85ced42f9fb35a64d77e5ac956a65fd5da8b9541897444e9c24943,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,61,4,1,"[{""instance_id"": 2131211, ""overlap_tokens"": 4, ""visible_tokens"": 256}]",1.0
+e9ec2710addff75f28a23db55ef1b07809e94563126d8b6790b8a819949759b1,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,52,1,0,[],0.0
+f50e739f3369ff115b8c214889aff4d6edce3f562a66513f53c372a35469cdea,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,3,0,[],0.0
+5f1a567aeb794388be37e862fb38234cbfc3173eab1f86d8e923bd35ff145bb6,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,43,1,0,[],0.0
+3075c52851327dea67ff19f680c499b23850874b236804c2e90ea8c8b9674cc8,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,1,0,[],0.0
+457c538e28523bb54e6b672791198f74825dcd1b0e1e32c5f31fcc37315b21db,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,5,0,[],0.0
+0eae3fe0cf2d4e619614271a84a7c3ff3c73a4ca8c1df95185c09042152af14c,/home/wwww/hzl/data/coco/val2017/000000231097.jpg,0,46,1,0,[],0.0
+e302d921b5294f7b0dbbc465d86020396f8e1a261ba72e556712b6a9444197e9,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,64,1,0,[],0.0
+b96874ac93bb5395d39f58a1ca283230c38c5ea4a5a34c94a698774d7f0a1a4c,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,64,1,0,[],0.0
+f92930be0596e9eefbcd76bac4f6c7def1a8f0bc51ae18b524ceedcf9b3c71d5,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,1,1,"[{""instance_id"": 2227135, ""overlap_tokens"": 1, ""visible_tokens"": 36}]",1.0
+f955b4fb7bd18a8e5324cd2ee94d217f0455fbca7dfe5e9b88def91533c28c1d,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,2,1,"[{""instance_id"": 2227135, ""overlap_tokens"": 2, ""visible_tokens"": 36}]",1.0
+38f9f880ed778b1b73a7fa64ecc598d776b75c11466e1c37e0e4c7a0a1cc2732,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,64,1,0,[],0.0
+6e9baecf7335155585df489e42177a221006fcf19daa13ad7babcbac15e74364,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,1,0,[],0.0
+8d65ddbe649eb307837f62869426fc146b946c8c9a466ccaee79eb0c02a8628f,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,1,4,1,"[{""instance_id"": 2015768, ""overlap_tokens"": 3, ""visible_tokens"": 5}]",0.75
+6f537117426838e54da9b5e53a699ffa1d9ca05118fb41e6bd5360e4c1a09495,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,41,23,3,"[{""instance_id"": 662231, ""overlap_tokens"": 4, ""visible_tokens"": 4}, {""instance_id"": 663162, ""overlap_tokens"": 4, ""visible_tokens"": 4}, {""instance_id"": 665038, ""overlap_tokens"": 4, ""visible_tokens"": 5}]",0.17391304347826086
+5df6f7a5031bdc9d1a9bbbdc48f24ef17ca6502d62cb530bb27e8edfc45b6e95,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,3,1,"[{""instance_id"": 2227135, ""overlap_tokens"": 3, ""visible_tokens"": 36}]",1.0
+7364cdb181223214e980378db8fc7d012945a2f876ae7afa31e802be1ac1685b,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,1,1,1,"[{""instance_id"": 503049, ""overlap_tokens"": 1, ""visible_tokens"": 7}]",1.0
+2046e948953c6fbf521ee99206f44f037ba67642d25d3f7e5b340b6b9379fdd6,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,41,16,0,[],0.0
+4aa285e3dfd070911069ed81fa899fe7ce26cab4d8bfd7fe0988b3464ef5075c,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,41,5,0,[],0.0
+0272930b76808138daf0ffd2843173cab07a1453f84b5c1d674f282255626ea3,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,1,0,[],0.0
+33b7124714fb13a4945a22b79dbff3c3d6eb511c110411602ba66c4e5d335724,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,3,1,"[{""instance_id"": 2227135, ""overlap_tokens"": 2, ""visible_tokens"": 36}]",0.6666666666666666
+91b4482bfc73860e71778ee78237427cf3f26171780b455f9bc6dc02e87aeb50,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,1,0,[],0.0
+0a57e743b3cbbfa192ffe6683b43854efe198f0c24d54ed75c1e0ef95bfa67d8,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,64,1,0,[],0.0
+38925c300ee4e083438083afaddb74c82c11a54fc1c112b86e42955c34a60711,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,16,1,"[{""instance_id"": 2227135, ""overlap_tokens"": 12, ""visible_tokens"": 36}]",0.75
+b81dae0925573a0f2bffb0d483963fc7f52406d80b1916c3c74bd3c6a91afa54,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,41,1,0,[],0.0
+0d2ad7683698c0f59a097bdbe07cf589e185b784e981f34f993783d0311e5fcf,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,1,5,1,"[{""instance_id"": 453731, ""overlap_tokens"": 5, ""visible_tokens"": 21}]",1.0
+5cc12a98a83a4c27095dbde251a321e609a6653f969662be03941e7b69626d11,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,4,0,[],0.0
+edb2b661ec4fa9567d3a5154a1add34582b6c4a95a51c5107da08a74e9a1a9dd,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,76,14,0,[],0.0
+18b13553ca8730dc78dbc14c7166d9f659c3544f7bca9bc09a4300ae65287589,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,64,1,0,[],0.0
+667cfeb566f3e2adbfaf750059b68513ff538f0aa31163598dce8e64326c302e,/home/wwww/hzl/data/coco/val2017/000000244750.jpg,0,61,1,0,[],0.0
+7f3fa44fd6c77c933c724c7f21f1e53f7403a40909b7ab9557d4c46fe952a2d7,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,59,1,0,[],0.0
+48d403f4759c207a1082b5f0de541297bfde532eddbeb88d35c45f0ef52e8596,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,79,2,0,[],0.0
+717952f7bde59515f2246f6c9b79da13206e5e7e8014811efbebc8a3bc0f296f,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,54,1,0,[],0.0
+85ba5906fc8d025af809c9d0e0fcb924ada2bb76ba4dad2c59c8033f9dde78a7,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,79,1,0,[],0.0
+3dcbf13283b51e6b065d84fd0b1c7dbb768df99337fa8e0e6bb4eb6b0b8a4292,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,13,1,0,[],0.0
+3e6081a2ff56ce9cf41d23f317da66c8da697f92941542583ecc78775150043d,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,1,4,2,"[{""instance_id"": 1328706, ""overlap_tokens"": 1, ""visible_tokens"": 3}, {""instance_id"": 1717870, ""overlap_tokens"": 3, ""visible_tokens"": 7}]",0.75
+f5fe0edc508b8575caceed84c00b056cab79467f3deb2d8ba1ec04d29a9d520e,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,79,2,0,[],0.0
+cd9d20c0e637923615545c61e905051e5552cf68c00dcf47adf8d5326d2644e9,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,1,8,2,"[{""instance_id"": 1222083, ""overlap_tokens"": 2, ""visible_tokens"": 2}, {""instance_id"": 1290276, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.25
+202683538b3129dd3425e3b95092cab89073a5f9dfcae54351de35db6575d533,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,1,12,3,"[{""instance_id"": 1267980, ""overlap_tokens"": 3, ""visible_tokens"": 3}, {""instance_id"": 1328706, ""overlap_tokens"": 1, ""visible_tokens"": 3}, {""instance_id"": 1717870, ""overlap_tokens"": 3, ""visible_tokens"": 7}]",0.25
+5d1e410712e722fe50438b5f07449d09cd79f4d61a5de6fd00eb8e3eda6a38c5,/home/wwww/hzl/data/coco/val2017/000000252559.jpg,0,13,2,0,[],0.0
+d0dbefaad18428c8bf26d9dc0e65110606a80e8201d05b0e84f98836742dffcb,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,2,0,[],0.0
+cf97c63a98b51b6be71b3028e49c8ac86a56bd508c5a347fdc6bfbd35efcd7f3,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,2,0,[],0.0
+340e88b1e665428e2d8785acf8eccfd6dbf8ec8a5c1217f82f338a8faf4a085b,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,1,"[{""instance_id"": 476757, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+b3a6ed1779ff14cd3e08ba7abfacfad7d8ec81afa1c0405cf1525960176a8242,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,14,1,"[{""instance_id"": 659830, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.07142857142857142
+a189910ef9dc6ba6c729c7235f2648c0328ca461f1aa3167adea89b9858151b5,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,8,1,"[{""instance_id"": 476757, ""overlap_tokens"": 6, ""visible_tokens"": 37}]",0.75
+29deb605822a39c67cb603a9810b2acba4389bfef0e924be919b6d0a8d374200,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,6,0,[],0.0
+1319c559e69e971d1bc96821b946ef50a7fc3f387cf5a5e5894e319074823083,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,1,0,[],0.0
+dafcfc6b8b2fb571eb55b51aa6f1068e812c4a059efde712a9e521c7ab7c0fcc,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,2,0,[],0.0
+fe49d485f6e4b959ca05312cedd80cc1daea969470c074b4ae776af2d164d31b,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,1,"[{""instance_id"": 476757, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+97a59bb4363a9d37aefd7704c7f62587927910c768f4e22cfb28670f4e2fe7e2,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,1,"[{""instance_id"": 476757, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+003b42680cd402402a651ec67dbef73d73b531ac534d588e6ed9a693f1d7d5de,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,1,"[{""instance_id"": 476757, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+d45b1504abddd13bea1a2ece8c6f4a7aaacce344782b1b0c66fcffdfb3b661fa,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,1,0,[],0.0
+e6721c643dbf3a367c2bbb78ab9ca60eb3b9b0d739b8e1dfc61f22b29bfd79ad,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,1,0,[],0.0
+abd1572ee88f1f33cd753fb129c61e5d9c0d0ed5b66fe6f8b8f1fe6074d4f199,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,1,0,[],0.0
+f06dfcf8b273ffd32cbe69a262891dd56244f5202397a836b23361438e10ebdc,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,39,1,0,[],0.0
+966f5fedd13cc4b14f1bac370c65c0e598e9d500bd14aa98be967cc51d1376ae,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,33,1,0,[],0.0
+95d9aca7e37b16d2fd69d1acbe1fc2e4a425d80c9dc4cb9b64b0c3a96c79d05c,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,33,1,0,[],0.0
+c6c3747db67a11a19fd3e58e9044e57d867ad914e4ad92e423a786c40980c2d9,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,33,2,0,[],0.0
+04d8ac0f9e3e3aa8b68ecfa67ebd889ed48c5640bdc05276545162a566d48c8c,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,4,1,"[{""instance_id"": 476757, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",0.25
+9c2ef97eba4a8fb3f61b999360441465f6581b184e78527b01560bda1b689cb2,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,0,[],0.0
+5ffddfb3645b99bd3b7163f1f4080268f6752e7fd952190583ac80cb4e397d78,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,0,[],0.0
+42ba4595912d412061c65ebae4fc3192cc00bab2c850763f24a8db0c7a06fb82,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,4,1,"[{""instance_id"": 476757, ""overlap_tokens"": 2, ""visible_tokens"": 37}]",0.5
+6aff6dbbaa71dbbdd6f48f518135653ffb57b7e92195536c128f260d6ae1f4a2,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,0,[],0.0
+22f36575c6d3deab49a8a28f046677458407aac5caf2bc5369a16c2dbdbca0e1,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,1,"[{""instance_id"": 476757, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+dd1a152ae44d529f878a47fb236255917c106ff4d270ce130c891808caec85fa,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,1,"[{""instance_id"": 476757, ""overlap_tokens"": 1, ""visible_tokens"": 37}]",1.0
+fb9c16b9254ca5be0a3ff208ebbe814eb35db615595d481af47fde6c5b17b190,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,18,5,0,[],0.0
+9fa09b42ee97c6846a539dbcb08e06442d320e478323c051861d16e1b9e61c5a,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,18,1,0,[],0.0
+5ee2f7ae61fb98ab666e917c312405093f1ef0659aa5b2a01b1a8f408109b0d8,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,3,1,"[{""instance_id"": 476757, ""overlap_tokens"": 2, ""visible_tokens"": 37}]",0.6666666666666666
+e991b91ee0b1d0d75875c214538f15df45209c724d823f1e3a829c83ae0a7a30,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,3,0,[],0.0
+8d36deb1dd5b5c8e46d92b348cdb6e6a58ebbaa04baa651715a660a6f058fd56,/home/wwww/hzl/data/coco/val2017/000000273760.jpg,0,1,1,0,[],0.0
+61a485ee47d7ce4d8bcd5419e9a47f93424b44799aa0df555bdec34a95ba37a6,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,80,3,1,"[{""instance_id"": 341631, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.3333333333333333
+e7c7515dc3e10feffce2e77c0ceed761757671f303c4976531e5ec1ad293d136,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,9,1,0,[],0.0
+736473c2e125897e3e16b435da742558640b7fa39e1692062069343d44425988,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,72,1,0,[],0.0
+6294a314129871c0aa946303fbdb50d9efdb237c0ad25b1ed1a320bc6a50ede9,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,72,51,1,"[{""instance_id"": 1130339, ""overlap_tokens"": 7, ""visible_tokens"": 7}]",0.13725490196078433
+98330e5b42175b82f4e1d06f8a62a678910b1d7c75bc7277bb61c85d1b1d1a64,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,72,1,0,[],0.0
+bdeca8120535b44a5e43e100bb7ef36a2b61e438cd4004cc607c904848150750,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,72,1,0,[],0.0
+2ff840c0f656ab3f4ff37ec4c33de5bbea8140ff50052ebe49292976194625bf,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,62,2,0,[],0.0
+48cb0845bb83d090e21a6c22235febad47faada153b24ed501ffe436626fc23a,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,62,2,0,[],0.0
+f88748fc3694941359f85bbd70d194c4c5ee8118d68e53c0e8888756ed4fa791,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,72,1,0,[],0.0
+d73757a642cdda70192199391d17f43c86a180055a8f456d328087b16447a85a,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,62,1,0,[],0.0
+5d54fd7f92517399415b2b3eb2e4dba69dac88727927b55b2c46e953a1d04a92,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,62,1,0,[],0.0
+87ca1c1d1f6051e95ad69a001357aca9ce2d635346acd5eb8e20ea4e513bca70,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,72,5,0,[],0.0
+2bf9b1c762f97451ed3689a6605e2bb4ddf0094489692778ac61ae94617c2f74,/home/wwww/hzl/data/coco/val2017/000000293390.jpg,0,72,4,0,[],0.0
+0c722bec9ba367b5a9f2d0b2dd90aa5b3c316f165ff450ec0b7bf28211157191,/home/wwww/hzl/data/coco/val2017/000000294163.jpg,0,15,1,0,[],0.0
+f920edc0bd925bf1dccccd5ce32bbda7fdbde4d6b091c01dfdfab008af13347b,/home/wwww/hzl/data/coco/val2017/000000294163.jpg,0,15,1,0,[],0.0
+d04afc65388f6551727e61172d19688643c02bcc04fe22e0c402f7d4339db7cc,/home/wwww/hzl/data/coco/val2017/000000294163.jpg,0,15,1,0,[],0.0
+fa28842fa3ce072430f6dddbe9fe928bb87c43a24fee0c52550d545d207d636d,/home/wwww/hzl/data/coco/val2017/000000294163.jpg,0,75,33,2,"[{""instance_id"": 337000, ""overlap_tokens"": 3, ""visible_tokens"": 3}, {""instance_id"": 341237, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.09090909090909091
+3787c234cf8ddaebea8eed38812ade9b526c4f1753811e4e8834239fec994fc0,/home/wwww/hzl/data/coco/val2017/000000294163.jpg,0,75,3,0,[],0.0
+050814343697c2e9d193cc92ffa7fef73726cc8c339836486cd5f3c2225fb6f7,/home/wwww/hzl/data/coco/val2017/000000300155.jpg,0,15,26,1,"[{""instance_id"": 41237, ""overlap_tokens"": 18, ""visible_tokens"": 19}]",0.6923076923076923
+8486d66687c1e48a221c9f4e1d5681d524e9b00bdd910f0841691cbb9260e4a8,/home/wwww/hzl/data/coco/val2017/000000300155.jpg,0,50,1,0,[],0.0
+0c2b585ffcd1ba4b9cc115067ea6c4a630d667604b869b5fa8b68a5225ab3c40,/home/wwww/hzl/data/coco/val2017/000000300155.jpg,0,15,1,0,[],0.0
+b64c66a06f9f83ed9356326d8eabd0362f0142e2608d9b2df72cf7809a1cf5c5,/home/wwww/hzl/data/coco/val2017/000000300155.jpg,0,15,1,0,[],0.0
+965c169c64f7ec43121c957afc1bd443e23109cc0a46345943468b28e6a0b694,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,1,0,[],0.0
+b920993b2e8c1e913148fcfcc27d86bc45f11b7ac90ac250c33bd432d99e469d,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,1,0,[],0.0
+06bc0d672abe7b0e711f15118b07f3bac60184bdcf702838442b5845dbda4092,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,3,0,[],0.0
+7744c829bea50971343eb6024fdcced61e35ddfe30328e3fad189531810790ba,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,1,0,[],0.0
+7c030200566b177bfadb3864f90031ec3f7b8086937b6c508f402493b382e938,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,47,1,0,[],0.0
+326719886811145d341eb937ffab0377ceb8aa36e16ce1c9c02b3cc91801051e,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,5,1,"[{""instance_id"": 632020, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.4
+235141bc5f83739fbc7198aa8db271bc1e55d1435045be43f97c2f1213f81df0,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,36,3,0,[],0.0
+7eb2911f3a1e4b724280767b755a86eea012240b40c999e73cc390e80a649722,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,36,8,0,[],0.0
+9e270796b900682916a8628fe3f0db3c378621a2c5340b472ef7774654bd5ebf,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,26,0,[],0.0
+2761eaee8349a39154307cb69a72b5bcb998a2ca8d90d89e0ec33c688305fdb1,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,79,1,0,[],0.0
+78ffdcea95bfbe102f9a49be7ae105d5d5326b1ec11950ce9f9a684c960cb012,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,1,0,[],0.0
+7466765a0ba2b1c8247a914474ce6a2c87bc4f198f1ddc9ecb75cea2d105dc1d,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,36,25,1,"[{""instance_id"": 1470385, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.08
+d2a420664ba2449da5497799e1c8c8c435ad0d9fd258fed6a6ed37661bfd8428,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,47,2,0,[],0.0
+cfc703bd7f32db8c1a94203d129777471c4e3da635e6bba275fd7a798e566f7f,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,35,21,0,[],0.0
+0ea329aef02ecae249aaf62f0e6d5b7cb8d7a0b1235c69b0654c30c61f950dea,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,36,6,0,[],0.0
+1225718c6b815ad0ed2ef6e7a6ba1b12e3ac9a361c7db4e512a60b72c7e773d9,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,36,1,0,[],0.0
+e87d568de21b3f57dfe4ce268abaf8b6d1c026ae5027373f79208c2cdbc7b207,/home/wwww/hzl/data/coco/val2017/000000302107.jpg,0,36,13,0,[],0.0
+d35130e5da8b059ffddf99aad4c7c96d1248182602d48fc6e5b32435740a23f3,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,1,0,[],0.0
+abeb9593c1e9cecbb78c7c584d8e2618d3bc6b30d613c57c27683cc6dfa6b26f,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,1,0,[],0.0
+671f5017a6d76b239564413e6c720a296770bb554bc86ef2c12c57fd0097efbe,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,1,0,[],0.0
+15b04386022562698f20430a549f510992a325ce5b080fb272fb1651be01a223,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,15,2,0,[],0.0
+26b769ec971aad64ddf5c6fdb3c809b174a3a4cf348031063e5cd8aa0e7ece9a,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,18,0,[],0.0
+1a6f97d4d1693b12db251399f373e1117c65ffc293f2416fedc24fceeb0d38a2,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,1,0,[],0.0
+d502521985e9b28c52f513f1d19e72fc45c5035f396c3090646f0bdeef5a6672,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,59,10,1,"[{""instance_id"": 24390, ""overlap_tokens"": 7, ""visible_tokens"": 10}]",0.7
+26d614611e18be6b8fa9ec6563c3944b65cc1a53ec259946898f04c7aad43117,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,2,1,"[{""instance_id"": 1967640, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",0.5
+d686e85e3d912516c1c1ff318dd2e9e8b3bbe246e0e1dcd4e9b4a6b2ae9e3db3,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,1,0,[],0.0
+566bd1ba58b338a35e3ad10e4077bb045e58fbf2128198c5dc1096234463e25a,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,3,0,[],0.0
+b6b41cfd39c733c7005347f4b2fd08248c0a498a97fe6757418a42127dafcf88,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,2,0,[],0.0
+b822c7329f6b18a89e01a9b2247c9abd2a29d0fc2118ad1d6165a40747f5f559,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,4,0,[],0.0
+97614d7d7d0191752a63afc1a2368e1c69dfc7e3a4ceb88693a332ca64971c47,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,1,0,[],0.0
+fc0d93d19550ff989335b03708b7803190c56c9721ab307f9881b9eb4b7322db,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,1,0,[],0.0
+6b54701368c1e4db5d988f6fcf006eec07b45124bc6590d0d02ed8c5d9d82f24,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,1,0,[],0.0
+1ddb5861e3712c4e81c7c529f7a6ec8cd2caba3b43c46b3c188e2d99e7efa098,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,59,6,1,"[{""instance_id"": 1953673, ""overlap_tokens"": 3, ""visible_tokens"": 4}]",0.5
+0d43c1d193e2240e7bce2c811925fb0b6d7ab0d13307a521d7f80bb82ff234d3,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,1,0,[],0.0
+e5c70b1b423053e6fa342a25ce576b183516fd035337c62926d94efcf6c4ea03,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,2,0,[],0.0
+a54d40dec5310b16299c638ea24b74504567590c7fd23f77c55c82e89ee6fc9c,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,5,0,[],0.0
+6be27a996102ff94aabf13bf069cb74cbfc92c748e15e66534f8fd1fe1b78287,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,2,0,[],0.0
+2877992d3b2df38123d9012b0606fd125ec7f5bbbc52287a26d7b91727c97f0e,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,1,0,[],0.0
+9c84afcafdd4d6ad2b5323d694a2c9c8d6e82737652edd3ad739f2001adb4358,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,62,1,0,[],0.0
+c6e99eca5ff1061e97c5ed38f777e578f7c59e5655c8dc3b1706a6e82f6eb59e,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,76,1,0,[],0.0
+4d7fd710f399f1c4f6c3a9997384153a1e1d2440219554acd81f72da9fc85e9a,/home/wwww/hzl/data/coco/val2017/000000306733.jpg,0,72,4,0,[],0.0
+bf9cdd30f6bcb2dad25b88ddabf50c948fbf6a4628f481b49b3bcd89b560e598,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,1,0,[],0.0
+edfffba6097aa2f8658411ca81629a5ee3f58216f056d308f48444fe3e86a7da,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,3,0,[],0.0
+89f081ad757b8d8651095c540e698d668a5ec997b0e170a3f978c0cf6bd07456,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,1,3,1,"[{""instance_id"": 448392, ""overlap_tokens"": 3, ""visible_tokens"": 7}]",1.0
+5c947b2c7ddfb99f0bf509c31335392ff3dcb8b5e2491abdee0990a2d7e4212b,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,1,1,0,[],0.0
+43f2dd1726d0c024b539d077fa4d178f5e69805f79135157e6bd5cec7f991a8c,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,1,1,1,"[{""instance_id"": 464186, ""overlap_tokens"": 1, ""visible_tokens"": 6}]",1.0
+2cc46538d558940f9b1c2e4d8870d0199ad8db33c3574738a52afe6c937972aa,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,1,0,[],0.0
+f37014865207a3aed3e76e17a92f77e63aeebda7e5ac0f5679ce8d6d08f01bf3,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,2,0,[],0.0
+ecb2e6b478fbafb9d27c7588d68704fd9345d6e194dc0dec4f6be4a684020900,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,1,0,[],0.0
+2f58847829520117a3aa26fedca7d99abf63fe166892055e3d35c21ffe3316f8,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,1,0,[],0.0
+4015ba2f18abf9a4eb56717801d76dd8720ee9521f5913ab309a2223c32a7165,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,25,2,1,"[{""instance_id"": 1170521, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",1.0
+219cce7992a794b76dd797190678bb9ecb8c5718dc3549be3b63f99e61eb02c7,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,1,0,[],0.0
+b7dd3565e3b8d6028b2c264c4199c2bc2bf13463ddf76d539615fd54f0184d49,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,1,2,1,"[{""instance_id"": 448392, ""overlap_tokens"": 1, ""visible_tokens"": 7}]",0.5
+93294e4c8674dfeab41116d812195afc2163219d06fc3dd6fc70f4522eb0c232,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,1,1,0,[],0.0
+935ce2f35312e2f0518e0b0f863e7d789f8183afc211c3a32c8013ed7fe8c3d8,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,32,1,0,[],0.0
+8a544400bdacd7f84b479a6e3eb566991c12b4894d188d571d7f3eb709c9a442,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,31,32,1,"[{""instance_id"": 2200838, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.03125
+a24fc983d8bbd7ac89e91e9a7f9bfe5c59b7809e1232656c7f4d8ff060b8888e,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,1,1,0,[],0.0
+746794d028719ad79fa3ee458df0a4849cb9d62922e5768b3968e15486e28cbe,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,32,1,0,[],0.0
+48b0b76ea1f2307387e2d6dba9ea6fde80c039274ffd57d5474a2e0c6dcef851,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,32,4,0,[],0.0
+4209fbbaf79276c1344304653ad57eb830b47e4ad39250aa98f1c2231c34ed17,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,32,1,0,[],0.0
+cb5c87153aa11d39ddfbfc2f2f404ca8b0631691ab18f0124c4aa1e1e0d6e666,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,32,1,0,[],0.0
+fd25a6375d32a26490892482e4a6bf2c7875e8ba0e542f6dc0b86d1728f82c4b,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,32,1,0,[],0.0
+025f2c8764dd160603a5ffdd10769daa7b9640f9fae50926e4c72b4f02869766,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,32,1,0,[],0.0
+0aee6ef99795d157af4acfdc406fa0467462d6f29d863436e8946a4ed15e0112,/home/wwww/hzl/data/coco/val2017/000000309467.jpg,0,1,2,0,[],0.0
+8394ee005c220f46e6ee22b6c1468e4caf2fc6eb472b59e66e55fd9ca2f5adf5,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,1,0,[],0.0
+524077262428bda6c79feca19bfe38d46ffae675eb4e06b4abacc3a23a2ffc0d,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,57,4,0,[],0.0
+a8068e4707508867affad02be8c1be498980c083b986880059e76ea9ed5c968a,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,57,1,0,[],0.0
+880c30645a6f8adc2fc1119bf22064f5e7ed26364f88cb57514e3946fc0318ce,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,57,10,0,[],0.0
+ca21b2819e06fc9f6540579c6597ed64a008bcf63c402c665585df50e23b6f76,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,100,1,"[{""instance_id"": 1095493, ""overlap_tokens"": 20, ""visible_tokens"": 38}]",0.2
+f86a10d7872eb3e2bc4c10c4402c0969f89082eaa744ed0f011f8a90381e2fd3,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,79,13,0,[],0.0
+9eb6f37f18c261937d94291f835df059db681ff38228f68445d90bd9ad8f69a3,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,3,0,[],0.0
+cca285c08e58b7758c5a19fe7bd1356beb60e6ad1b44b18aab7f0b3cc725e1c6,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,5,1,"[{""instance_id"": 1095493, ""overlap_tokens"": 1, ""visible_tokens"": 38}]",0.2
+9d5090124eef5afe99a4342ca8241dd10a5748d53efaf504f183263e2cc14ec4,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,11,0,[],0.0
+829ad019c7db9539f5e67c07ebf7d8c0884413dfaccce89116d70929797faa48,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,1,0,[],0.0
+6b3e496863895357d0e2dd9fbac7e03d03054debfcdce3285f87c8987f09b1b4,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,2,0,[],0.0
+4404610a5d3803174d643824f910b291804e03142724dc5a074c44e2b31c84ef,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,2,0,[],0.0
+fbbe2a15560ea3df5dcc5e2af1b62921ea3ab201e25c653ff15b287e41458983,/home/wwww/hzl/data/coco/val2017/000000328959.jpg,0,62,1,0,[],0.0
+624aac74586fd3ba69fdf46ef051726f8c6b8665a79c5df44832d7f90bf451ca,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+3858d330e08a9f0cebb116440df8316c897d36aa30da298c45b394919a6e5e49,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+1531b051e8c39ae1fa3aaee5491148fb1401b94f5af819ddb38553d8615667e0,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+dc0b48f215980885c82a224334cf1d047616aff0214ce00ca855ca425c70441c,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+92d853b6085f88376e8993df1b258bf72ba638d409211d3649a8b935702fe433,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+7ba5964a11506a4a77cdf3625a5a85ce348a1945f5964044735a020432adb9a1,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+592f8c126a3260fca90aa28be4c334f6ce55c0c76f38fa28a1af674c9b6be558,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,2,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 2, ""visible_tokens"": 248}]",1.0
+40782d11fd7d6c331f01068e4df87bd6b0ee24595d4bb3837f0e82f318b585ef,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,1,1,"[{""instance_id"": 237868, ""overlap_tokens"": 1, ""visible_tokens"": 13}]",1.0
+0f2db7b9c25787e51c9c6539b899980e04a59431cb26b7dedb55ffe365b3a9c9,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+2bfa3128cd500050fed1bbcd0f6d6115808237f5936d9839df7143be1845fdcb,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+5806b03c2550856dff707a045caf0098020235d5d009ad63b0a7459765242d41,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,2,1,"[{""instance_id"": 237184, ""overlap_tokens"": 2, ""visible_tokens"": 45}]",1.0
+a7f7134d217b077a0e47f77114884e31e691a66aa0efe362396f05ea024c70ee,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,12,1,0,[],0.0
+7ecae63a49d0faa7bbc7fc2e852784550a7c12565a176ac1d5ddad79eb99c756,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,4,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 4, ""visible_tokens"": 248}]",1.0
+2b28f30344e50607d2883f64e5d02a13e60ac12369c3f8038dbe6d161c5ada07,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,4,1,"[{""instance_id"": 237184, ""overlap_tokens"": 4, ""visible_tokens"": 45}]",1.0
+500501567d10b0b04cee23c5694fd14d27bc11e79b6b030e04a84208053de592,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+a3c45a5c7d4bf1d9206a078588e2471bdac3f81f8f8a8290e726fb4e23e71681,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,4,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 4, ""visible_tokens"": 248}]",1.0
+b9b1e488a9271d6846967f36d8c6f1176989a8acc30dc533cd585b4876cfee0b,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,35,1,0,[],0.0
+de1e6d6b4460dc868e3f9c0464c14f10a3bf60d87d0008d739778c7a7a8c9efd,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,8,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 8, ""visible_tokens"": 248}]",1.0
+5a338b82d5e9cae48029d5bb750dea8b1bcc679f43c4fe2d7a679d7e835a4028,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+6346b1726ee5d56566acc6fe858afbaed283122534df2d38b20433598f256322,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,8,1,0,[],0.0
+b4e24ae6887d2e01405a7e43c17b6f16e8dd4ce986af2c2fa28e828ab4eb6bb0,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,8,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 8, ""visible_tokens"": 248}]",1.0
+670f5b770437f92ebd4a91e62764514fa052e334bd46992d1f085c5db45fa65a,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,13,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 13, ""visible_tokens"": 248}]",1.0
+e80c91f26520fa40063c90974fcadff6bf6647373dc0f458b72cc289f3ca2aa5,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,1,1,"[{""instance_id"": 237184, ""overlap_tokens"": 1, ""visible_tokens"": 45}]",1.0
+52b2bfd4a763db7094a57df9125604eee1bfeb7bff9184998c8d99894f9b6146,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,8,1,0,[],0.0
+c6a85d5c088e1858d0594b1765b54cdebca7833789281c03f5ac2d138820f5ad,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,27,2,"[{""instance_id"": 187915, ""overlap_tokens"": 2, ""visible_tokens"": 23}, {""instance_id"": 237184, ""overlap_tokens"": 20, ""visible_tokens"": 45}]",0.7407407407407407
+694d03e267bc69d67dd0e0ab070682bdfd90195cead3d16e250087b9baf9b3c2,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,8,1,0,[],0.0
+d552461dbed43e571dbceffc5aab2cbf16ea3e79788c373c6e29c85802b76e90,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,8,1,0,[],0.0
+5aa3cdd137ea4d17126d6fe560185a5754aa63c5a2317ea53f0cf31f4a7d6ac6,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,1,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 1, ""visible_tokens"": 248}]",1.0
+f686280a7f57a1ca48f13cfec5b52b2c1612a0dbbe8742a6e3b1289917fd2ce6,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,2,1,"[{""instance_id"": 237868, ""overlap_tokens"": 2, ""visible_tokens"": 13}]",1.0
+230d1e400587c78ee9bb504e01968288f349d685d16853f44fb9b395fd92bc6a,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,8,1,"[{""instance_id"": 2049579, ""overlap_tokens"": 8, ""visible_tokens"": 248}]",1.0
+71143c31524fb41a9489d53b4edcfe74fc3fe299d23b8ea9cd2e8370912d1529,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,6,2,0,[],0.0
+4e4d5bda7cd4f1f263d3daf777b0cc792509682e19a0aacac35a2647b91cf204,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,1,1,"[{""instance_id"": 237184, ""overlap_tokens"": 1, ""visible_tokens"": 45}]",1.0
+5b8545d33dfd467accbeb3c39b39d129ecef0fc0aae7314782d90f0d2a45be71,/home/wwww/hzl/data/coco/val2017/000000336628.jpg,0,1,10,1,"[{""instance_id"": 187915, ""overlap_tokens"": 8, ""visible_tokens"": 23}]",0.8
+005db0d1048b76cdbaf109e1df1235c3f150ae64fffabe637a10a0422a9e7ca1,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,68,4,1,"[{""instance_id"": 324360, ""overlap_tokens"": 3, ""visible_tokens"": 3}]",0.75
+5de5d93268bc794c000242e12f0008e2136608618c630806bac20f5dc69bd943,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,68,1,0,[],0.0
+4fb31e05ed087321c1ac61de3d054a76e0d5f90ea86a0f491a15cba34b77f215,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,68,1,0,[],0.0
+6175429989874fd1da3ce2f6cce7180ef3f2b953685ade68b2549b64055ab91c,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,1,0,[],0.0
+8c06aba674ce45ec1d75f4f2f64b3a4a68dc47dba0f54b11fdd36bd3b5f777a5,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,49,22,1,"[{""instance_id"": 1554338, ""overlap_tokens"": 19, ""visible_tokens"": 20}]",0.8636363636363636
+873e2b9d1708b6aa40723df2678514c66e2100bcf7e95e315ece3847c949f812,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,1,60,1,"[{""instance_id"": 448341, ""overlap_tokens"": 58, ""visible_tokens"": 176}]",0.9666666666666667
+671730d32fd76237a6e580d34047ee026d0676b1424ab4c5c6d41c01e7271bd1,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,10,0,[],0.0
+a5d42f8d60ec23d21409dae2b1d2c7083239bc349beafb8c4bbc603908ab9789,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,3,0,[],0.0
+17698e615536c9a57016c4384ea0988cbd3c261d074601a8802987636fc46ddb,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,1,0,[],0.0
+0aeeb6c56aa73361a3005d612ec2563a2d582930a34cf47f1e26e2090278a016,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,2,0,[],0.0
+9f7c38ef6792009ff12baa1ec0b93c2f5580753a70c1bc0dbc2ef5b4100be8b4,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,1,0,[],0.0
+be6f04912d7462bf72672549cdb04651487a410aedbe88c2ce9c060080bab6c1,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,1,3,1,"[{""instance_id"": 448341, ""overlap_tokens"": 2, ""visible_tokens"": 176}]",0.6666666666666666
+5e5649c8f7ea5bde02567a3a1d75d3f575b318c0f7d951a7c79714409020cb66,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,1,0,[],0.0
+677e7c3cc2c9193da898a65f6ef455ab50e762ecf22cf61fb3826844d8fa30b7,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,1,0,[],0.0
+4144e92e01aa203dcc8d2d1d695fd25a6ab66c62a340f3d72bae35c05017fbf0,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,2,0,[],0.0
+63348b0c77bec5881466780e6fb415d6dba9dbc85c86288614d2450e145bf4a2,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,1,1,1,"[{""instance_id"": 448341, ""overlap_tokens"": 1, ""visible_tokens"": 176}]",1.0
+25229a1f1323f93df71824d22392fefb1470856372b14e72a61fc1234034f000,/home/wwww/hzl/data/coco/val2017/000000341828.jpg,0,61,2,0,[],0.0
+9c5993b416e55f70f4b78637d0c86396f00e6ba8880192f439a538a3332cfca1,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,1,0,[],0.0
+0ecb6e0c0bd32475ea00871fd5e9c39ce90a29997ec45a123a02cf518f66534d,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,1,0,[],0.0
+b8d38185bb2a2453054748f87ca356a0a82edf3711687bd5d8fb50b39ae9a4d3,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,1,0,[],0.0
+cfb0c0d8fc443232b97218447a11c329ae002f367f1eeddabd24a2b7dea1ca93,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,1,0,[],0.0
+0e7b9cd825345fc72766a9239ac1821e846654afa66008db33bf0f0ad22cc516,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,5,0,[],0.0
+d59c70d7bf61e63e50f36d20971192c311ad4b41940717773e6928d30b25e2b6,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,10,0,[],0.0
+57b7c27106a517577f4fc22b60ca6a038cf37c3fb7f7ab9f2249d977556abe90,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,73,2,0,[],0.0
+1a4e74549afd28c11a3e86e249e79d58fb6ef9265183d10d69c51ffdca412e01,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,82,4,"[{""instance_id"": 1078192, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1572729, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1573971, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 2118441, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.012195121951219513
+64f763c1dccada76adeee76856a343a4d501861b11bd17ff0055a431330de081,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,73,1,0,[],0.0
+fd2e74a233056a9ed0d439fdcf3156190ca658a9f27366417ef31c2c198f77a7,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,13,0,[],0.0
+232d6df30f23b14ea5b15d90f41ceed220277b07e51c88a90160814370277c1c,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,6,0,[],0.0
+340d72127cf791e1492faf73a429d8d70294d0cc7ae805e7f3e4d5095ce4fe06,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,1,0,[],0.0
+9815bb78bf70a493af563d41eb812cf382fa90cfffdf518514f68de313b2b01b,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,1,0,[],0.0
+77ba4c42e3992e818823a3aed3f8ff17062a343600287542f9181af89015ec96,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,12,2,0,[],0.0
+3fd07b2c31ba60844115a5793d078e0670e63c9cc794462e9fde51bb45b772be,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,70,1,0,[],0.0
+9a43cc61edaa22375425cfc621576344e75fdce5251704032725212d90bd8a1f,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,55,3,0,[],0.0
+08043550d4c8d3f904e2064e288936d3f22f3040eff968c3dc6095609cf2db0b,/home/wwww/hzl/data/coco/val2017/000000345469.jpg,0,70,1,0,[],0.0
+2823e4822a41cb1c7c334dbdf0b502d3e77f6e9056e04df4fec603212c036528,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,3,1,"[{""instance_id"": 1057330, ""overlap_tokens"": 3, ""visible_tokens"": 5}]",1.0
+ffdd47d00b0c28909b2db3da10665ebf3131a31a343143e11636caaa36fc5121,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,0,[],0.0
+c84c16572176f3025f2ec50d35ee0f79e50e7740e77d9771231d93150484b89d,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,1,"[{""instance_id"": 1060967, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+de34a7b4bece40536e12f6e5ab60d004183ac87e7a8a674c40a1cb06f3769847,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,2,1,"[{""instance_id"": 1061010, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.5
+c4893ba8ad460129021272d40f73772e5116dc7d9bfa0fa2eb2bd53e6b32f519,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,0,[],0.0
+11f765ce3a38076429be68933a92308a9147d34d6331848f80cb3c21ef3ebc2f,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,0,[],0.0
+88317ab46294664e67a059111c3424c56b70c64be2cf9d61f55408706051351a,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,5,1,"[{""instance_id"": 1059901, ""overlap_tokens"": 5, ""visible_tokens"": 8}]",1.0
+8a55cf802e4ff40a9c266ff535d7428b947f3fde2c8ff970c1b39649434432c4,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,0,[],0.0
+0736cc3af5f60e0cdaabff2bd06e759528953c01c09a59a850c7de9cebe01cda,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,5,1,"[{""instance_id"": 2187711, ""overlap_tokens"": 5, ""visible_tokens"": 6}]",1.0
+a35815eba89be33eeb070a61139a6da1b64ed8f1410a5a0ba8674870568b3173,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,0,[],0.0
+962273e2983d9206d1807904ebcbc6e5c4eedb680bcd19f614c8998489f33c73,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,0,[],0.0
+cb49f40df8bbe8c63b9d419ad1fd6cddd5ddb6d6b906d139c4889ddfd5788ad4,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+acdc3d7a096657d65e83f3ec9bb47f43033d03366f117a6920a54165b0c5c369,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+a661c9f1b95097b9be78f1e23facd7e9f33e6135c8eb3cb33866b84d46b9b21a,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+11a0f86641593f830889a009fdb3cff60a8012807434352ff2543ebab3443c50,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,2,0,[],0.0
+b4b8f0c02e2e01a12869c8a9f2dec4ac8a3990851d5880a6e63faab77e8e478f,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+3611cdce7fb09471f7498c2ab0017725f017bfcca9a9e0f368b270300192ee60,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,51,1,0,[],0.0
+64ca25e1115f79e01e159b6d67c551b91a9bb80f2bd0da5f5180739a6f52cada,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,70,1,0,[],0.0
+48bc942c97814dc8cc42e5e31a187cb1d22d403e4ef84a561b392d3cd65f0782,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+054d330ffe5d3849193a4566bc6fbd62cedc1b58261a66b44ce4e255fef93a81,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,46,1,1,"[{""instance_id"": 1535732, ""overlap_tokens"": 1, ""visible_tokens"": 214}]",1.0
+25ea1884928171949adc5aecb393035e840dea2c410fe28ffaa8347c252b62c7,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+0287bfe05d157f48866f928861b860b551a38846ae291bb133e52ee61e8b15d1,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+d216da2b0143d47fef190d40e2aa72fbadf563e88f0209e359fa71a2effbe31f,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,43,1,0,[],0.0
+07f5beff4d0d86924b9644b0e33f4a5735607bf52323b019df5b75f33880023e,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+d4dccd5fe32cead073464722a440f5ed9491ea49d7a8e82daf9feceb15c267ae,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+2cd5e04b37075daefb33d759780d8e040846584ecf0cc0d22de01bb9a8c77617,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,61,1,0,[],0.0
+d6b1406f3fc7fd4c978090610c51182b80a6a9c65e46e4c4858d49d19691fce9,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,1,0,[],0.0
+84a44d24e412cc16b62895174e2341acb4d0622a11244891140fab157e400f17,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,61,1,0,[],0.0
+2df05c2950fffe889660db0a298d859b5059ecfe7bd1339008cacfa7e3a124a7,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,13,0,[],0.0
+f55382320018649538e0b80249d42088d733b9720491eb178a6ef8e72bb598e3,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,61,2,0,[],0.0
+2601e8d0c0e0b53521a8c155bf25404ff19c27ee2e337c481dbb7a62787df70f,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,41,2,0,[],0.0
+df90d85e35d8fae87294433e7b8983f75453aa2d12f2ae54fb9dec658a5c6a5c,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,61,1,0,[],0.0
+8c9fe51b133f3458dae116cd1f4e51f8eb1ef64940be5f4cde82d2ab57a07a4a,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,54,4,0,[],0.0
+2de096fa77aa105b1828e37ad67c5a7e1958c7ce6c1fb0d9ca9de308c491abc3,/home/wwww/hzl/data/coco/val2017/000000352900.jpg,0,43,1,0,[],0.0
+a033a218830c9d60b1c2e0ed933ab20dcc3be6d4be5e7fec168db8bcd46ab1f1,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,1,0,[],0.0
+87e8063ef1c0f565a244e68da9f527c68c9cdaa6734ad3d3c41e17e6e2a56f9a,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,2,0,[],0.0
+4e8af516b3590608d96989297ae53866f292fd154803b2fbe942f3aa32b82669,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,1,0,[],0.0
+707d1c4ba6483a9ef9121e84b7902bfd149d1dfe08dfb6bfbce5eef6396be01d,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,1,0,[],0.0
+7276350a9a4c95f2c312d0b170cf3ef768d58fd504f4b374fa0727c477c7630d,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,1,1,1,"[{""instance_id"": 451122, ""overlap_tokens"": 1, ""visible_tokens"": 39}]",1.0
+7117e296dea6dded05325115e8d019a3854759a60298cfe0acf9142fe9b39bbf,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,1,0,[],0.0
+f7849dcefd0785ca35130a7b4f8f024c915515ac40782315ff526efbd18afb99,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,13,1,"[{""instance_id"": 628097, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.07692307692307693
+e792ebfd82c05acc48ec99214c94f14ff66de73a9f0a61afef6c34153c7b6bab,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,36,3,0,[],0.0
+0907065ad282c373ec1bcee76a4da0daf989906f83680a32e8523d0fd1146ad6,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,6,0,[],0.0
+3879c6a64d43ebe3bfd6109da8b0b25314da4f1c2aa631b5e088b62d64fa301b,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,1,4,1,"[{""instance_id"": 451122, ""overlap_tokens"": 4, ""visible_tokens"": 39}]",1.0
+615724fddbbdd13320fe73f4c002c1bfcef15f213e884503935a26c0521a0d8e,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,1,0,[],0.0
+61c207c38efbe7415e59a81a964a2a9f19d0e540d4d58653736b424f4a7d93bd,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,6,0,[],0.0
+d9e32b168b544dfa373571d1af96a4f393d0c6fff233b741fb9d460822a5bf60,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,1,2,0,[],0.0
+aab19068e5c4ccd7f5523a66b677eb65f9a4b7da4413cf03b6477d7336646012,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,1,0,[],0.0
+b51006f98355930333a82f4986c8ee2103b232ef86e17c7c56359317a0b3b0af,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,33,1,0,[],0.0
+7b6f033744a51ba835fc0932fdb5e91cfae6398081a5b21d02dd9e71301e16ec,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,33,1,0,[],0.0
+7746aa7717959d7ad29d7be44fa8973bd0118a951831aedfa217e55ee09aeffb,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,1,0,[],0.0
+1439a6163e89c1f2b98fe15f0a55ac3b7a98319b798c061a4bb6307df517ce5b,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,36,2,0,[],0.0
+08e813f1b357d279338eb41faa77e79f96e0203c602a6f4652fd823d581ee449,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,33,1,0,[],0.0
+7ed70e53ef1ecce3f5cde1596c23b933391eca523ca3c5a54763f8cae30b715d,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,33,1,0,[],0.0
+ddadab34a66ec0600ee85eab7fc435685545713fe6b449d2d52524fd5d623c7a,/home/wwww/hzl/data/coco/val2017/000000356094.jpg,0,35,2,0,[],0.0
+8b646083ecba95e90d3babd7680d2d6ccaed7e1db973744c2902121b38be9f96,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,26,5,1,"[{""instance_id"": 281295, ""overlap_tokens"": 3, ""visible_tokens"": 30}]",0.6
+fc6d4c348ec8a1a727a12f0572048b27b5933cdc5cc50af7679d800a53a470a0,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,1,"[{""instance_id"": 507246, ""overlap_tokens"": 1, ""visible_tokens"": 39}]",1.0
+019eb56846fe8d45ecc8a62eec7c8cc7a16567b3a0e55b135318d4e61466ab50,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,26,30,1,"[{""instance_id"": 281295, ""overlap_tokens"": 24, ""visible_tokens"": 30}]",0.8
+4b888649e1b66029ec4efd3b06454ccdb2623f95e027dbd4b797416b2dba8cb5,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,0,[],0.0
+e65935bb6c55a1e0bc8cd2665adfa8d3b7f5db888431e0da1f2d6456aef7ee17,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,6,2,"[{""instance_id"": 1722094, ""overlap_tokens"": 3, ""visible_tokens"": 9}, {""instance_id"": 2007641, ""overlap_tokens"": 1, ""visible_tokens"": 7}]",0.5
+741f01ac7081853ae878de22ad9b0de32b0d53c4419170d6342f3cf0ba7a3d0e,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,4,2,"[{""instance_id"": 507246, ""overlap_tokens"": 1, ""visible_tokens"": 39}, {""instance_id"": 2007641, ""overlap_tokens"": 1, ""visible_tokens"": 7}]",0.25
+070d9e5639598b0545c62fd6e864dbbde3f282ae41e26a78818da22c098025ca,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,10,1,0,[],0.0
+79d407ad17ccd4d2fc8efbe5de249b17bb892dc24ebc811198bd527dc390e3bf,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,78,5,"[{""instance_id"": 507246, ""overlap_tokens"": 24, ""visible_tokens"": 39}, {""instance_id"": 521861, ""overlap_tokens"": 13, ""visible_tokens"": 18}, {""instance_id"": 548188, ""overlap_tokens"": 10, ""visible_tokens"": 12}, {""instance_id"": 1722094, ""overlap_tokens"": 5, ""visible_tokens"": 9}, {""instance_id"": 2007641, ""overlap_tokens"": 4, ""visible_tokens"": 7}]",0.3076923076923077
+8a08e9d06b4d4b72dcc529db3b66f47b9be20810c78a871a829a1657ed66954f,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,10,2,0,[],0.0
+19c6c8f4652236da200a7d794e539645293a55a993dc98e9e5f39194a912ea1c,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,0,[],0.0
+821c67cdf3263e6acdceb7f75ecb2948b3bd329fb60783946e38d113033ce268,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,2,0,[],0.0
+48b9142ed68cc64a5a5a5a67ff194428bb77093bd3dbf68034cb2fc04c2a1929,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,2,0,[],0.0
+bb158c81c106a58e034f98af725b093081ae084900167389ec0f9fa647374ce3,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,8,1,"[{""instance_id"": 507246, ""overlap_tokens"": 5, ""visible_tokens"": 39}]",0.625
+4e9ce29a403d07dbcfff8d7ae4b01568e10679214c6df1f28fbe54181b871627,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,0,[],0.0
+41b6af41250747f8ace5593527ef994dc7b97db5f28df2663057e32eaa78da33,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,2,0,[],0.0
+620f4d18e8235ab6da5b62aaac21dcbce3811f1ae370f0dff406e85d58fe205a,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,0,[],0.0
+91b07fa16077405ea936c610004215fcaf4fb75fd6536197c11e4019641ee5eb,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,0,[],0.0
+088621fd5b519b6d725c5a687ff186d1c83175f41ea5d1268de1283412f04c9e,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,0,[],0.0
+d93931b47f19a84945221106fa413b024a82aea4d1ecea8a9c094667726e8580,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,2,0,[],0.0
+f156e66d43e2f7222c39adb76c96162b020e92cb0def0f4bbc62b47477ebb950,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,4,2,0,[],0.0
+2643c66fda235111ad119de2a54f83fc59646c478d943ed7128dd6eb6f2fd884,/home/wwww/hzl/data/coco/val2017/000000360960.jpg,0,1,1,0,[],0.0
+bdc15220186b6796e73621c03d2effb81c100e7906037ed2f8ab53883d278be2,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,50,1,0,[],0.0
+78fac8ecabeeb9a819e1fa9ef50ea2b4d7fa966397a6d7f328f03cb312a8bfaf,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,50,1,0,[],0.0
+6b42113b912743832375698d782617048e6395ce3bbb8b854c7602c92dc817df,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,59,2,1,"[{""instance_id"": 1608411, ""overlap_tokens"": 2, ""visible_tokens"": 4}]",1.0
+b365da0feebc1d327592f67ad8458661725f8720d6f84eb0ce9aa049d5859d03,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,1,6,0,[],0.0
+473fcdb95b64b0e6e329dd639e6291ed0bf012758fcd89cd2b2dbcdf3e7ddd7b,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,42,3,1,"[{""instance_id"": 672305, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.3333333333333333
+23ee4ccb80d3918b86c3a27485ea1301e8d2de9d502679ea3489fb9b098de85f,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,50,1,0,[],0.0
+ad2b7a87a5869a5e09ac0dbc7e8e26f8b7ac102e95cc75eb71f483c3314d1064,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,64,1,0,[],0.0
+65f9de58a60a24fbcc2e6f47cd31a92a7100d766ff550287b1b25782a7b16666,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,1,1,1,"[{""instance_id"": 224404, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+9eb7ae38a700354908a386c08758b2bee1f8d31fcec814a037f030b916ee24bd,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,40,2,0,[],0.0
+27d72b76f63ab94ff20d49d4070c17f3d0ebc3dde671d66ac1eead032f743f8b,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,67,3,1,"[{""instance_id"": 1114781, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",0.3333333333333333
+35d3770287a7c5817dba5343ab901595be5952c2af7fd02466daba0c4caa3e9a,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,1,1,1,"[{""instance_id"": 220314, ""overlap_tokens"": 1, ""visible_tokens"": 33}]",1.0
+d19d9c4968370d5cc1c2e8559797fb11872be0740e7866878cc6e563a7e50cba,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,57,11,1,"[{""instance_id"": 107645, ""overlap_tokens"": 6, ""visible_tokens"": 6}]",0.5454545454545454
+d311a289d9b51749f2b92d329c327490f43291404aabba41cb482bc8e256ce93,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,1,1,0,[],0.0
+91000199c55c81eb4ef5468b4d16b1046bbaac32b82bff037a3a64ab018f9c48,/home/wwww/hzl/data/coco/val2017/000000367095.jpg,0,1,24,1,"[{""instance_id"": 220314, ""overlap_tokens"": 22, ""visible_tokens"": 33}]",0.9166666666666666
+25f4093fea5357b02b7abfe5f8488c7c8f0b22aad19b8984fb695786c6bcc407,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,21,1,0,[],0.0
+cdbb2d11163f5092f39fa5fc56ec0a682f0bdce07e2e4c803d5e980fd7af0c02,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,21,1,0,[],0.0
+184140c079180e49b3013484e3e0fddf8f602e43c82f613ef58c465bee008ee6,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,21,1,0,[],0.0
+dcf615c35e87d9f0fa9980f4cb4ce519a12006518e9234feb8ba72410ec7053a,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,21,151,6,"[{""instance_id"": 580818, ""overlap_tokens"": 59, ""visible_tokens"": 62}, {""instance_id"": 582151, ""overlap_tokens"": 25, ""visible_tokens"": 25}, {""instance_id"": 582490, ""overlap_tokens"": 20, ""visible_tokens"": 25}, {""instance_id"": 583213, ""overlap_tokens"": 29, ""visible_tokens"": 32}, {""instance_id"": 583686, ""overlap_tokens"": 6, ""visible_tokens"": 6}, {""instance_id"": 1821218, ""overlap_tokens"": 4, ""visible_tokens"": 5}]",0.39072847682119205
+9a3b162ab21e2456e76110945f6091959e05fd72278e833846661beb9605f3aa,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,23,1,0,[],0.0
+acb6abfb59c195c4e455e1e8d42e4ed0dbdd8951729db1a4e0d52df6344af01d,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,19,1,0,[],0.0
+27faaf080afe8337510e3889cd90c1b0c1dd5f3b5eac60141207cd1bf3412d01,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,23,1,0,[],0.0
+da5046d30101d5fe070aa806c5e7cfc2b4cae4ff93b70b661a6ef256a85d0226,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,19,1,0,[],0.0
+27e529065b1f8dee2fc266d3098bc8d2216fb447ff2b8db853f4ea52bcf87601,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,23,1,0,[],0.0
+6b432339929fec90af0c00d187f99de49347f0d0c49d68ee0b362a8e4f7d91ba,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,23,1,0,[],0.0
+7f54c0c5493ab0a49d8fcc4dd431726526bfd5678fad797a197e4a1d9cc79927,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,47,1,0,[],0.0
+2a16ad6983d3aac13e0fb615c90c15f96f534a7eba2e0f237722d77929cdaae5,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,24,1,0,[],0.0
+b1eacd002fab477557133c75fdb05305b8490e76a4cda61cfb8399376e0fbaf4,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,15,1,0,[],0.0
+2699c4118b31e7c9ccbb06617e5fe0ce8ef54b636c42003a06159f3644083017,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,1,4,0,[],0.0
+8bc0b4ef0841d4f936afec75f1f482213de31e7c095e27f8b15945f7f1c5e6f3,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,1,1,0,[],0.0
+833e68b879ece32fb17d389884e346e0f372d2a33fe5c30650ed34f3d6af65d1,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,1,1,0,[],0.0
+86805c120c7ca446343ec4be53a1321a396f7f55dd1769102b271d5e1bd10d59,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,1,1,0,[],0.0
+59f37c37d55ffca49974beb20ac283bde36941395ce1aa486b2ee04fc5b4ca41,/home/wwww/hzl/data/coco/val2017/000000391144.jpg,0,1,1,0,[],0.0
+773284ba3eff1234135f466a021add9566f26f66ecc2cd4dde238d57e5a54bc6,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,1,18,1,"[{""instance_id"": 447494, ""overlap_tokens"": 13, ""visible_tokens"": 58}]",0.7222222222222222
+47b3669e99bd34f3d8c7313c2c83d9e6ad08fe8a51ce7b3e3bc49bb91e007d70,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,37,49,1,"[{""instance_id"": 642476, ""overlap_tokens"": 38, ""visible_tokens"": 62}]",0.7755102040816326
+e4362e05c85b54354e012b70c106168ae4000458cd2a1b33a70bc1b3b95f3821,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,37,20,1,"[{""instance_id"": 642476, ""overlap_tokens"": 12, ""visible_tokens"": 62}]",0.6
+ab6210a91ac58d9be71ba122f2d3f49d25f9234c3cfc2db4389178ce46552290,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,1,1,0,[],0.0
+991747c5d6d2426ba86b00050a5d4aa42dd89c8ae09bae9f647d3065d937e45e,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,1,1,0,[],0.0
+6fed8da5b7a4101f4082331797d1fc9748c100e1cfa8769725145ee600c93834,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,1,4,0,[],0.0
+addb6c8cd5f0b2b0cf0f83fd85fa2f813f6fa8c3cd4718688ef19b5a9312a2f3,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,1,1,1,"[{""instance_id"": 447494, ""overlap_tokens"": 1, ""visible_tokens"": 58}]",1.0
+cbe01b70265d2ba46d8d9fd6f19712b0f5335604cce1512f6b0e818860c0188e,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,1,47,1,"[{""instance_id"": 447494, ""overlap_tokens"": 40, ""visible_tokens"": 58}]",0.851063829787234
+a7babae69b6108baaa9a2aa4a19e167d2ca93af02801a75b1177d345da358cbb,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,1,2,1,"[{""instance_id"": 447494, ""overlap_tokens"": 2, ""visible_tokens"": 58}]",1.0
+1f68436fb21020b822b8adf38cba5f69832a18afcd041e3ea8dbd313215fb067,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,18,3,0,[],0.0
+bbd83033fde3cee26d172435422f5df395d4d089fe449435a1747b0e83d56433,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,37,1,0,[],0.0
+33500012ed1e938eadefea1f0ab1e2a5439e632ccaf1120efa5826e4ef3be683,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,37,1,0,[],0.0
+256c6cb38a40c8e8c0a196ace0af311ba688b7ca8173fa6bb2c2965db707cf45,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,43,2,0,[],0.0
+ba994c9b54badd3be0ede4ec45404e1acba1753317db89527fe19ac440a82a76,/home/wwww/hzl/data/coco/val2017/000000393115.jpg,0,37,3,0,[],0.0
+89cd75db803a8f066e0b0f41b360703c9294733dbeff454f76d61f45ac0cb900,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,16,13,1,"[{""instance_id"": 49934, ""overlap_tokens"": 13, ""visible_tokens"": 15}]",1.0
+e58e2d9226cf67739b7bb927b474a2595d964ee7cf5ecbf208a5a1991b63658e,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,17,40,1,"[{""instance_id"": 2410, ""overlap_tokens"": 38, ""visible_tokens"": 43}]",0.95
+0a13cee59a34a4df3f70597f710d7c75373a904e5bacfca4f2543e46e2a8417f,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,58,6,0,[],0.0
+899992f2185da6a70fd36f1e8def4e3a8c9edef6ef7cb6bcfcd5ee072847c8c0,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,58,2,0,[],0.0
+57d59823fc2f580da563ae998bf0cf23ca204281914ab183332664ad41916647,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,1,2,0,[],0.0
+29d643e44d8d45ddfa0380fd25bd8a7861810351b233679da3087ac54a88fef3,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,58,4,0,[],0.0
+a2c7a2cc43afe21309431a47a5260f3f0a8195e80b87c5a20d53df1f916b7cfc,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,58,1,0,[],0.0
+408825e3204f250186ce0f91af12dbc446344fe6018632bc1f11ffd4a40a982f,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,58,1,0,[],0.0
+3469010f3ef6195e7d004a87896e1fb4eb75f1d04caa36d2fd3cfff24774886d,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,58,1,0,[],0.0
+e5be226a367705f9b16d7e69b27d0c3c54bccc53da9e58384c2d58d8785eaa69,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,28,1,0,[],0.0
+876665bb0d039748a185120bdeaf510c343df6339c3f5b3325c946bef07625e6,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,1,1,0,[],0.0
+32187d4e37af74389600aaefcb6811a2af2480ad447ce8f48b81f12be96861a8,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,1,2,0,[],0.0
+456f07f4dedf9cef6a7138d0a5b595013fcc0f05570fe3d9b8d427bf1ee4a725,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,58,1,0,[],0.0
+efa5c01d1c8c182a0f3db6c66da6420d869e1434da27ecf3b5b1e94ac0ea363e,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,1,1,0,[],0.0
+91a3a2a6f894bb202168e24f99cdf470b5acbf047440bd78aa2ca26d3f626da8,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,1,2,0,[],0.0
+d2c752b92e5fa70f4608fb8ba8b94bbac6f10c1c14488d87cbf019703bc9336e,/home/wwww/hzl/data/coco/val2017/000000401991.jpg,0,1,1,0,[],0.0
+65516982d81fa750b8349935d1bdd03a7f3d0376dadbe408c0bad23ae407205c,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,1,0,[],0.0
+21fb41665147ae22639f7b4c9f88c3082dbf8729d86db84a5722e59c82b92177,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,36,1,0,[],0.0
+8a652d411473abc84ac229048cf266bd5e4076c20d4063ee98a04fefda84f05d,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,2,0,[],0.0
+fdcdccc75d9e4bf79cf96e2d0e0650dcf27088e66b25d98d777362ea7a0356ca,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,1,0,[],0.0
+e2cec27ae5c52285557f95448a6f10bbcedee7849f5299526418284d4607dc53,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,118,6,"[{""instance_id"": 1081797, ""overlap_tokens"": 2, ""visible_tokens"": 2}, {""instance_id"": 1082521, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1082552, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1082943, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1573363, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1574278, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.01694915254237288
+dc784a6baaa61cd31e52f8431139355f73b0bc7f141308c42ae6414784b87db4,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,1,3,1,"[{""instance_id"": 501054, ""overlap_tokens"": 3, ""visible_tokens"": 6}]",1.0
+01f6c78e5c8b07bafb7fe32ac069f481aa9f63b8f48613ffad0af21cce9920ab,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,70,3,0,[],0.0
+69075085614b079387060a6130b210e2fc8a02300ec6dbf387a8cf7f1868a7fb,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,1,0,[],0.0
+b7da9ab00bd641decff813739817a16103dc2a26a926288f3e2060faa52c0dd9,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,70,1,0,[],0.0
+cc362774db01a8616ca80065df7161928dd58bd4f17963e676f9e231e9c23934,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,1,0,[],0.0
+db1ddd70c69a007d2cefb9b2b0b43f6c334c0da946631c00322bc746019ee1f1,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,2,0,[],0.0
+a53985c1ccfe20230bece554284282ad5fa5a711c4ad4518069dc2cee983f0cc,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,1,0,[],0.0
+fdbb4e4e2ec239bb2f96bfa933f7b8ca170308756861c5b1d99684e5080f9e62,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,1,0,[],0.0
+29a51c11b16764b7c6f653edf4dc600a372dfd6d76ee09375feb65cd2f82976d,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,70,1,0,[],0.0
+179d92cce5819516024865f2ddb09f0ec2c125e0aed29e27201fa2c6d4b4e30c,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,70,2,0,[],0.0
+c59e3f3ea95e4a06a63d8725ffe73b6c241ef49d70b2fbe862cfec53e6960b7b,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,55,1,0,[],0.0
+0452f611a76ac0052b4bbb85fbc2099ae1141be6bc8b413232ea7763a4529e9f,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,70,1,0,[],0.0
+859a5d657f8a1a68c0d601e344245198d06d0135524b6664bf03fca619cb8ab8,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,1,2,0,[],0.0
+61b7ef63772292cb74eddfbfa004445ba731adc9ae7873f81a289c087afdc437,/home/wwww/hzl/data/coco/val2017/000000405195.jpg,0,70,1,0,[],0.0
+0dc1ed63c46c6bb7b6cab8b4f8ed83a6af6851a41d6fd2c90d36218e662627d3,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,56,2,1,"[{""instance_id"": 1927839, ""overlap_tokens"": 1, ""visible_tokens"": 11}]",0.5
+0d68fd3036a452bccb1b9b2c71bc97b7c0ac396e7fd87579d188e57cb0446225,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,1,1,"[{""instance_id"": 393619, ""overlap_tokens"": 1, ""visible_tokens"": 91}]",1.0
+94a7c16f75643ff56370e61ca69a4cc03426502aa7e0429bf6997d8b24f678bd,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,56,1,0,[],0.0
+1a76bb18fdb8e5bca324f1ba46b8a75ee5be94a4d85702a0171b988d6bbee503,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,1,0,[],0.0
+0ffed01dd1ded4c41f46a5433db96fb75d927515ba476a4644b3796783f10288,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,1,1,"[{""instance_id"": 393619, ""overlap_tokens"": 1, ""visible_tokens"": 91}]",1.0
+9f7333d445493de0cf241eeaa743d7600707ddaf457cd7de55d0fb4af3fd7ed8,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,56,19,3,"[{""instance_id"": 1083751, ""overlap_tokens"": 4, ""visible_tokens"": 5}, {""instance_id"": 1927383, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1927839, ""overlap_tokens"": 5, ""visible_tokens"": 11}]",0.2631578947368421
+8bfbecb23a9f0b419e442686b391528a0eec02c0885f0fc8ef070ad26496d474,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,1,0,[],0.0
+c79eeb8e1378d6a9b7eddae96193dbc0a51cae31be982c277ff6abe4ab8db359,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,1,1,"[{""instance_id"": 393619, ""overlap_tokens"": 1, ""visible_tokens"": 91}]",1.0
+671cb22498da6b41665255127498acfb91e6b19160ce1f73dfc84cea58b94aa7,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,1,1,"[{""instance_id"": 393619, ""overlap_tokens"": 1, ""visible_tokens"": 91}]",1.0
+bd4b4650f0172d4bd681ff5564043296235cb7ac683755e592763501390008e7,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,56,1,0,[],0.0
+ac2b56320b6592ab80bf85265c35b30e3aa91eca3e8847d40e452cea3724baee,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,50,1,0,[],0.0
+f922d34f3ccf72b1392afccb42574c3b2634d7c14fe777cec47aa39b54023274,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,56,1,0,[],0.0
+cd1fe9132ad1484144e2942b207939490c48c1e108dcb98aa935ec889b62c8a8,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,10,1,"[{""instance_id"": 393619, ""overlap_tokens"": 10, ""visible_tokens"": 91}]",1.0
+cacdeb8240f63a52f79316b5fb58f5888486c0189b6138ffb0317fd4a2938c4f,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,19,1,"[{""instance_id"": 1316508, ""overlap_tokens"": 19, ""visible_tokens"": 45}]",1.0
+48babbc6e6d438b3237620211237656a7569ca6288cb57f1aa49d34b44243a9b,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,11,1,"[{""instance_id"": 393619, ""overlap_tokens"": 8, ""visible_tokens"": 91}]",0.7272727272727273
+36650cb2c9ce88f3ac33ff18312b318178f77db7ad2c6cbcf67a2877624df904,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,56,1,0,[],0.0
+e8b6aade70ac3b60f558d756ed8a20591f8234a0a64a246e571768c9495cbbf0,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,48,1,0,[],0.0
+db8f419e74cc823607658c3c9eb5f0260ae936fce5287d6573a915e3384a4d3e,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,1,1,"[{""instance_id"": 1281944, ""overlap_tokens"": 1, ""visible_tokens"": 10}]",1.0
+33614c4e8821f0a063273c76230266667a735f5ad652c5334c3d1c00e046b2fb,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,1,1,"[{""instance_id"": 393619, ""overlap_tokens"": 1, ""visible_tokens"": 91}]",1.0
+38077a2c5f3ff3c439c1402c9f707d60e7fb2d18719b139d712a3595e41bdd57,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,6,1,"[{""instance_id"": 1321837, ""overlap_tokens"": 6, ""visible_tokens"": 14}]",1.0
+9d8446dea44c79ae8d5b67f0c846295cc51eb17141434464619c0bca05b08768,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,5,1,"[{""instance_id"": 1316508, ""overlap_tokens"": 4, ""visible_tokens"": 45}]",0.8
+620fbdbd211046d1a810b36fda2330e4b53925464b14571c2c0fcac504163994,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,1,0,[],0.0
+5bc975d09814007f3303af9072f9045b484e001b318c6e4a31a541dc2945f683,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,9,1,"[{""instance_id"": 1712719, ""overlap_tokens"": 9, ""visible_tokens"": 15}]",1.0
+afdc49fea3a23aab2f5a74f4d14b6ce7e5884f312dc21a3ed4c08f26fa71518c,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,2,1,"[{""instance_id"": 1266248, ""overlap_tokens"": 2, ""visible_tokens"": 24}]",1.0
+714e5ac0a579a7ea852703870e5d9d0193ecbd47350c4297d90cafbab0bb1c7d,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,1,1,"[{""instance_id"": 1266248, ""overlap_tokens"": 1, ""visible_tokens"": 24}]",1.0
+314dd12ef63c675bfd1c05daeecea3ea42c45666627d9f19eaffb509bd83952a,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,56,1,0,[],0.0
+036039ca98d422a30f69eec4128300560cd0b2e47246b9d3a96c2aad423ee1c9,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,61,2,1,"[{""instance_id"": 393619, ""overlap_tokens"": 2, ""visible_tokens"": 91}]",1.0
+dd284a5ced7c757a4f0a829e8a71265649b434f01d9a16756d5e967f30d77117,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,50,1,0,[],0.0
+9685727a99eac0f490d1bf6f61df6b80108590da0a362c2d3fd5108ab2c6f04e,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,1,1,"[{""instance_id"": 1316508, ""overlap_tokens"": 1, ""visible_tokens"": 45}]",1.0
+44572072f4b37361bd3530ee1511d58b4b1257671915d8de50e6affbc8366bb5,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,3,1,"[{""instance_id"": 1321837, ""overlap_tokens"": 3, ""visible_tokens"": 14}]",1.0
+2f1b1606aa4924368e441c2e41909b77744f6ebd3e2cd4edbcf4c25643043527,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,1,0,[],0.0
+5d0a85298d6f222c6318c6f00a44953108ddeb53e7205a55ad90008034966da5,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,54,2,0,[],0.0
+68d3b1d9637bbb68c89527b12ada4632708aba0df383a85d65ca9fa58cc82006,/home/wwww/hzl/data/coco/val2017/000000405249.jpg,0,1,5,1,"[{""instance_id"": 1272877, ""overlap_tokens"": 5, ""visible_tokens"": 10}]",1.0
+f18ea4f0db62d84a5eb1f88419fcba4df08d67ec858fb6e62f39081144968dbe,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,2,1,"[{""instance_id"": 491324, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",0.5
+73d3fc749b72a5f4ac5d86d798ca569eb4b4244640999855dc88fa0624069aae,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,75,15,2,"[{""instance_id"": 339051, ""overlap_tokens"": 6, ""visible_tokens"": 6}, {""instance_id"": 339766, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.4
+87d2814b71876adcb50e679fbcbed0f6b8f31e98b761ba74b0ee2579daac26bb,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,1,1,"[{""instance_id"": 465070, ""overlap_tokens"": 1, ""visible_tokens"": 8}]",1.0
+f6d14210c93bc97277d390d269b3d66065555185047c2ddf4c85e4549c459ba8,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,15,1,0,[],0.0
+9f815a757ce1a0f595d3106e1ab5b5e3d9ada063c613c149ff9bb545bf7518e4,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,1,0,[],0.0
+9933877c0bc37596237900410b6f2621c5285e9a5d20ea0569c9d46c562441d5,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,2,1,"[{""instance_id"": 1732443, ""overlap_tokens"": 1, ""visible_tokens"": 4}]",0.5
+794affccad8d9bc779e577f07ffe57498412d61cd6048076bf024010328b28a1,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,1,0,[],0.0
+0df15c2a0c4574daa50903ea80f518ce156b682a24522b69d598f34fe14e7339,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,4,1,"[{""instance_id"": 465070, ""overlap_tokens"": 1, ""visible_tokens"": 8}]",0.25
+7e6394483ec13c11ed5a3774e47ff19c83a245c22f6c53a139c9d201abfcbb8c,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,75,1,0,[],0.0
+0a9281089e1e6c00b0882c6995f432c442d31b899adf7ee5c87047a524df130c,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,1,1,"[{""instance_id"": 2154917, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+50231e232bdeb22c55479efa29e58c5743db3348cb1a3ab1c82bbe9d261ae1e7,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,1,1,"[{""instance_id"": 491324, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",1.0
+49530c5f14d69f75c4b21a8ae40fdd1bad1782ae1c4bb1b5ca606498ed33d92c,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,6,2,"[{""instance_id"": 465070, ""overlap_tokens"": 2, ""visible_tokens"": 8}, {""instance_id"": 1732443, ""overlap_tokens"": 3, ""visible_tokens"": 4}]",0.5
+c5461a313d1c1ce5b66430ca0dbd6bc53846d38b3d3abfe2a59640677e442cee,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,2,1,"[{""instance_id"": 465070, ""overlap_tokens"": 2, ""visible_tokens"": 8}]",1.0
+c006caf2965ffe3587b1f549fd5d2fa31585bc7ffa224ab6f0a3417074ec6bfc,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,13,1,0,[],0.0
+1da5cd4c231430ba4cf30081aa493231732c61e45970391da98509d28ad14083,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,15,2,0,[],0.0
+3f0e894b53e36f7ec65320e77d26b8b5cfb9721bc55d8475884584fdadbfd96d,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,27,2,0,[],0.0
+cf97e53b8d0ee2522d56ddc7511ca1a04d05950b2a8e5ebad8ee926fd8dc4923,/home/wwww/hzl/data/coco/val2017/000000409542.jpg,0,1,4,1,"[{""instance_id"": 1733125, ""overlap_tokens"": 2, ""visible_tokens"": 3}]",0.5
+7c7da1f714e47ef8669c928a8d1e7109a1f9a516d2fc11444cb14e737dbf2694,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,55,1,0,[],0.0
+7fa5f0311a9bc812a3fd2fd5aea594e45b848649ece5708122a1a55035996d76,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,53,3,1,"[{""instance_id"": 1069571, ""overlap_tokens"": 3, ""visible_tokens"": 13}]",1.0
+8df8e1b5edb127add9f31eeeb67e9119fbb3120e053344eea22ea64a693cf8bb,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,58,38,1,"[{""instance_id"": 2225293, ""overlap_tokens"": 31, ""visible_tokens"": 33}]",0.8157894736842105
+d2529a0c2ff0e432c88d7d322080357f1767fef0ac88790e1fc3a9df05c22433,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,49,28,0,[],0.0
+4efbdc38c33ac7a4ca21906737d996a13b15c62bea7d86fc99f389ac091067a0,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,36,1,"[{""instance_id"": 432822, ""overlap_tokens"": 35, ""visible_tokens"": 139}]",0.9722222222222222
+716dadf340985549ad303d2271d3c3a68950518621d9c253e505bf9a9c71f5b3,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,49,1,0,[],0.0
+a6833bd6f97be7f0cf46f4ece24e7ea7971d62b22ecc4a1256b52933e397aa6a,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,49,1,0,[],0.0
+fa9bd2bb638138f89df237bd6b21c38c0db8b0bf36d60415838c27a9a2ac80d8,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,1,0,[],0.0
+6b0f5068ae767ee9295b7a41cad9e22d04e36ca97c269347797944307a52cc90,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,15,1,"[{""instance_id"": 432822, ""overlap_tokens"": 15, ""visible_tokens"": 139}]",1.0
+563662e11443554e69277a7703502d4db37db7828921e9de83625ca65ffd620f,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,58,1,0,[],0.0
+34a284854606bee8b5afd3951c10f07df3a659a5f56df616f08b42dedb57a742,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,36,14,0,[],0.0
+8b65610fe32ee5efcc0898089eee440929511a8b306abe9f39d91cf3f34c1a54,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,37,1,"[{""instance_id"": 432822, ""overlap_tokens"": 34, ""visible_tokens"": 139}]",0.918918918918919
+825a7bc480dbd4c63f5e58235f8ed7c7ef866125f21db768ce7826d71de85442,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,58,1,0,[],0.0
+f16234f611c1b9d995b8e0e71bfad3a0815e2eebdff49e0e434357fd20cc3c16,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,58,1,0,[],0.0
+57300b09265a6553abd4f32bc113620941b0f1d18147be887474424b11f4894e,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,58,4,0,[],0.0
+4fdb05c3f7e5bb63bf5aff86fdc41be203dc296bd60310b3f7993759206995c2,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,58,1,0,[],0.0
+9e3b14580c33f6227a258c22478505e0b8f9d642cc2583aaae8b158f54b7e3ae,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,1,1,"[{""instance_id"": 432822, ""overlap_tokens"": 1, ""visible_tokens"": 139}]",1.0
+ad08c55f9a8dfbb96f36fac8c66ebbc3956937031df0837c0c3d83b5d26ef656,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,36,1,0,[],0.0
+26c289cb1a4ca7ed36089174a1f0fa4e745e6eca0e512f5b2f9d882461f02a4c,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,58,2,0,[],0.0
+585d1327f1bb83e910672c0a2b9fce66cf7b148c175fed5bf7f9f108975dbb34,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,5,1,"[{""instance_id"": 432822, ""overlap_tokens"": 5, ""visible_tokens"": 139}]",1.0
+45ba22c0b20df2037e9b25facdfdba5ed97644f792c1846ad7aca885917d931e,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,1,1,"[{""instance_id"": 432822, ""overlap_tokens"": 1, ""visible_tokens"": 139}]",1.0
+c4b1be759d15fdc4a7e70021ba6936c9bd297c5e26d715500b7a43e573c0f347,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,1,0,[],0.0
+e9eecc42739e64480026fed541e99fd7ac38bd678198611e324709e85ddc435a,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,2,1,"[{""instance_id"": 432822, ""overlap_tokens"": 2, ""visible_tokens"": 139}]",1.0
+803e2a4ae092a767d65aa09c0f3ef2a2e54cd2c1b14296897e9f8f32b0f61e5c,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,1,0,[],0.0
+ccfc076665712129b17f21cf045172277b65c2a58297e3928bc494942123d9a4,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,1,0,[],0.0
+a4168be61397f25ee8ffb6b31d16c8cc4dbf0a5c9acfd21755a7d879b3264c46,/home/wwww/hzl/data/coco/val2017/000000422886.jpg,0,1,1,1,"[{""instance_id"": 432822, ""overlap_tokens"": 1, ""visible_tokens"": 139}]",1.0
+5efc8206e801e6b6bd23bcf0ba5328ff3a624b47c2b62bb991aaacd6b4115084,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,63,1,0,[],0.0
+6e399ba50b051f5d63b8cc5bf2c8a8f8fcdf36e74451e6461a07fb1514c2ac0b,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,63,1,0,[],0.0
+16e0b6785df9cec5e6c4edb23707eefb5da7ce34467b8219a955eaabf01bf43e,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,67,1,1,"[{""instance_id"": 1117332, ""overlap_tokens"": 1, ""visible_tokens"": 4}]",1.0
+3b5a99db796e0c1f0724b8820787f9ccd261105a0d13e6dd37ed43b342a18c45,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,65,1,0,[],0.0
+4962596c840bc6bd9ad62c538d4cb859e93870e27561927d9af3def12f6d1428,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,63,3,1,"[{""instance_id"": 28257, ""overlap_tokens"": 2, ""visible_tokens"": 14}]",0.6666666666666666
+92b9f7d26b1e65388e00d6b1705eb8114807ca63c1d5ff8f11481c0b1304b1c0,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,68,1,0,[],0.0
+68cd79e5b8e21c972145adf6da0b7344c5d011246fd408f3a9c474b5fbbf528a,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,63,11,1,"[{""instance_id"": 28257, ""overlap_tokens"": 3, ""visible_tokens"": 14}]",0.2727272727272727
+7b966f477a5a03c2a5766c0d8cbad6e3b961820de3fc0da388587a559a0ee932,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,67,2,1,"[{""instance_id"": 1117332, ""overlap_tokens"": 2, ""visible_tokens"": 4}]",1.0
+7062b4a6551b260a31a46dd11919c7d14d7a22a2b238c027904c8ee42ac6f847,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,28,2,0,[],0.0
+3f67b2f83179dc3c70f9c779744a61e66a26984d6c4504f33ecda398023172b9,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,40,1,0,[],0.0
+34434ed0bdcaeb4cc5f6843124f4410b88cd18387d32c347af7fbffc2e0d932c,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,64,3,0,[],0.0
+347f5bee8b231accff4dcbbefd66c240f7c29b81be807fa6f279130c4ebda4b5,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,63,1,0,[],0.0
+131b57e97ff8f0c2942c30549576a2c3b8170f2ef2c9a2e9f7bd495c4114320c,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,50,1,0,[],0.0
+73e959f599cb5bee802155aac409097bb79e03e93453c2bbc69ce2478ab8ca97,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,64,1,0,[],0.0
+be7c3c51e0fc8d1c1604e851a47a499fb883e8f6da9cbd10d7090b3771758d9b,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,1,3,0,[],0.0
+1afcfad97ce5eb6b8b3672b92bdf17c808a0483e83daaab9817461d332561ea9,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,61,1,0,[],0.0
+dc3381c64a4323608c756b42f29a3907c488ae9fac93d79ac8c9f22d105ae837,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,67,1,1,"[{""instance_id"": 1117032, ""overlap_tokens"": 1, ""visible_tokens"": 3}]",1.0
+38d72e28ee4557e486947ff9cd0382b5048b10d0d765c3a3a348cbf17270332e,/home/wwww/hzl/data/coco/val2017/000000426241.jpg,0,61,1,0,[],0.0
+eb473d759dfea93d551de2705dfceb25158e58bb7e9d5051cbfbb3286d05a040,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,29,1,0,[],0.0
+994b47fc195acc67e4168466ce59d78eb2eaa9da4c9a0af39a4bf2270bfc59a7,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,66,9,1,"[{""instance_id"": 1108469, ""overlap_tokens"": 6, ""visible_tokens"": 7}]",0.6666666666666666
+bc185811cdd6db1dabb0d4471a5f0123af7f1997e636c64e0e7a6f80bc8c7d14,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,66,14,2,"[{""instance_id"": 1109287, ""overlap_tokens"": 4, ""visible_tokens"": 9}, {""instance_id"": 1110206, ""overlap_tokens"": 2, ""visible_tokens"": 4}]",0.2857142857142857
+b6706b69553ad52f675318bc58f2e86cb554e3aa1e03bfea27e0635ca1af3482,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,29,1,0,[],0.0
+7582041d4a39602ee420022db4682f4dfbd3eddf2f77f18ed964303e2946b46c,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,29,2,0,[],0.0
+2e7b7702fb943c86d9a9ed38c1a54bd55c0f683434f04946a48b3b3d89033953,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,29,1,0,[],0.0
+78d08d47cd5c98cb9f11d17633edd6908d31eb7c67259a1ebb2f5c781d28e5ef,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,29,1,0,[],0.0
+f359f0d56f1784ac7b92ac3c09e1cfe083763aafdd7f2d19a755b6b44fbe39bd,/home/wwww/hzl/data/coco/val2017/000000430286.jpg,0,1,1,0,[],0.0
+3d730b352efe7e55f7925dd5c8552a149a27a852b260db27919dcef59e76aa1d,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,54,1,1,"[{""instance_id"": 1072695, ""overlap_tokens"": 1, ""visible_tokens"": 95}]",1.0
+60668b40fee91baf7ed3eedf888471bcae3c1bb6e4b89c03bd3006d8a7b324e1,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,2,0,[],0.0
+c8c2d11f6bfcb3151559702e339eed0348f62aa98235d7f0f1014848f11ea411,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,1,0,[],0.0
+38ab0909f0b44e60fc30f065166e94e5148fe78bb3eda338d065ded20a8dab5d,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,54,85,1,"[{""instance_id"": 1072695, ""overlap_tokens"": 78, ""visible_tokens"": 95}]",0.9176470588235294
+f719e9fb80e4c80fb8734fbbc5c3106dbe10d55c019e4a162e473dead37e5f6d,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,53,1,0,[],0.0
+e59ef8d3510f3737775bfff63666bc588edd9c0a6ad09b3b9015716f1754c803,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,73,0,[],0.0
+d791c4883c1d894f3735c7c1982c06c35815a8a2fc8080bd0158741931a8fe3e,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,54,2,0,[],0.0
+628e93a1a4a8333e443aab578e4053d73f6288975166e861b126e3bfa5066137,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,12,0,[],0.0
+0ab9dfd0d038558510f1afa7e02fdabd79cc8b74e71325541e5add3361854417,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,1,0,[],0.0
+b2a4cdc0b9bc57a191c68be5a081a18dfe172879cef1a3a4267bf151c535477f,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,18,0,[],0.0
+d14a47faf2283ff689b4d95c340eb555ffc00b31d788cadbd8216bfae38a9d9e,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,1,0,[],0.0
+655017ac9073c8b5bfe9b4d5fa31870223d8e778894bd033dbb146a066a02b36,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,15,0,[],0.0
+fe706954535e41135170f31a87d36bd529b08c41c12b0aa277bd9b4b970deaf0,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,4,0,[],0.0
+82a2e296812918b18a804a94685dbc72ad3f368dcff6d61cf280ba96f59e303a,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,61,1,0,[],0.0
+935737eef29f56270f7cc3157c040fb3e706c68cc259f6710036e9d2b9437164,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,19,1,0,[],0.0
+d501c09a72377b5913d35080c8e7e4ae046c69953fa362d85fc764e12d9d37c4,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,19,1,0,[],0.0
+fd67bf1b457f90122630b8e24bf86e1a174c8003ba23f823e191c55e74cb6103,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,71,1,0,[],0.0
+c3b8190077a2614ae2d52df14917cf521715bb3ea1f58d3057bd9ea68b5c7df8,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,61,1,0,[],0.0
+9f1552d4d49e36da043d11ca6511f0ec16611bf5ce3b9ce368fb021faf30ecd0,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,61,1,0,[],0.0
+0b404bddc0ddbbed56401930774e64306b8dd9986548d2e31dd1606d7ee8b040,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,71,1,0,[],0.0
+5c0b504b0ff389d51b9d178ad5c62ab3455065d673689d3c5a6f45e6367b3fb7,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,71,3,0,[],0.0
+c0a2dbbf718aa94b59fe29e7557c35a2f754ec7b98307898b3acd4a9f6161595,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,71,2,0,[],0.0
+09a05c1958748b7b8c1876755f340c4eb1962b2c8caa399914b26ac84260b36a,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,19,1,0,[],0.0
+6579e5535dd8db9eececdea5308a154e03654d3617a41552a14a5b4445a1e740,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,71,4,0,[],0.0
+f4bec68411ca123f1db2df50a1b666cdd00b407f4593700c5bb1fad0fec3c504,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,71,1,0,[],0.0
+19970d5305f7cd36aec64f27a2933d5bcdaed52b5a0a4f6e846c811dc16f8dec,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,53,1,0,[],0.0
+2147f79b9163bf542a61d3349fb1587984773697daf38d12afb0b3255f07cf87,/home/wwww/hzl/data/coco/val2017/000000436315.jpg,0,70,1,0,[],0.0
+2ca1c9bdc11ea806d8bcd539cab9bb5b3c56b41da613eab3ed2f848f0109a70f,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,3,0,[],0.0
+36cdd7147fedec76c5091c8bee0e9b549ae60da7e2324a92bd7d7128f6a46ef4,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,50,2,0,[],0.0
+ef16f82817c3cedc339a50f26384dba4c88939cb9f3ea8694628137ba30c0f54,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,3,0,[],0.0
+7bd57b2b9bae453e69c416dc6fd44539b63949b9fc0a0fc06df94a718d2629b4,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,3,0,[],0.0
+b673d8a6068175cfb26615183aef17edaf0bf7ed6b3b4d6d1b26216fdf957fa0,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,5,0,[],0.0
+80547305e929c439a096e7d01852fec026d38ddad24beba2692b390ea17c058b,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,17,1,0,[],0.0
+5d3e890aed2db6dfdadb3a9a2e9768f920e0cfa24d13660279ee94b0fbf0d471,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,17,44,1,"[{""instance_id"": 5993, ""overlap_tokens"": 33, ""visible_tokens"": 67}]",0.75
+53bf175aaec7b8667155ce079eeee544ccd8b23cff1ea0590fb7efbcb42e0e38,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,5,0,[],0.0
+1d841c04bad7f51808ed78d7d25625655993f63f2141e7669c2457d431589fd4,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,4,0,[],0.0
+21d4b35af825c326affabd2b17a41cf743772f1ec9cd9bdcbd01598d61ff8535,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,17,33,1,"[{""instance_id"": 5993, ""overlap_tokens"": 25, ""visible_tokens"": 67}]",0.7575757575757576
+389388df25ba11152fb2d42ad7e0b91223a4236646882c89e6129885b6e87914,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,3,0,[],0.0
+fc3767a63e97d988c7cba2e316d730847a3754fc31529378bfbcd0340c73c2e1,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,2,0,[],0.0
+67c4903a799085c9bce09ab83a9ddc6174419529024875291f9b927cc1da87ba,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,17,1,0,[],0.0
+3f5a5ff6fbd73d57d555a94f2377f127d208b81f44ccd8962fba90afa7b9d467,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,59,1,0,[],0.0
+9c0b90a9411bcfee73e520db4f02646aa88f9748f72e80c73e5f85345c46c5cd,/home/wwww/hzl/data/coco/val2017/000000447200.jpg,0,50,1,0,[],0.0
+7ce5500ae870f7066c426bc3b736189451f04f998b25b9fbc6dc3d2e887cf407,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,37,2,0,[],0.0
+40b311b7402158fa1e0d5224fb344693cff4735977b0583f76707e1048081987,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,50,1,0,[],0.0
+b20416cc01982a8da806ecfeddb75f1beac74eeed88420ff25e83dedb61c3745,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,10,1,0,[],0.0
+a3354877192a186cfec4d89beb7c77553a1b010105b600c0979fa4342d688b8e,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,1,1,1,"[{""instance_id"": 494456, ""overlap_tokens"": 1, ""visible_tokens"": 5}]",1.0
+d66abf98d1717265604caace3c6a4c0e049b04043803df747139cb15910cdc79,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,13,3,0,[],0.0
+fe7de48b43b305b7e12397c55cb40b592aa461da3f819837536c8f6019c444ed,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,10,1,0,[],0.0
+4e5ad2cf03a51c8d35d57cf994303a64cd8edcb533e5be670758d039dd08a7ac,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,3,39,7,"[{""instance_id"": 1352579, ""overlap_tokens"": 11, ""visible_tokens"": 11}, {""instance_id"": 1352868, ""overlap_tokens"": 12, ""visible_tokens"": 12}, {""instance_id"": 1358429, ""overlap_tokens"": 5, ""visible_tokens"": 5}, {""instance_id"": 1358475, ""overlap_tokens"": 2, ""visible_tokens"": 2}, {""instance_id"": 1359105, ""overlap_tokens"": 3, ""visible_tokens"": 3}, {""instance_id"": 1781686, ""overlap_tokens"": 2, ""visible_tokens"": 2}, {""instance_id"": 1783302, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.3076923076923077
+f87750544484f92bff094cac483aab1deed90b8112d1931c624dc125bd3df1af,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,1,1,1,"[{""instance_id"": 538031, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+68f67856726e08a8f06a570613735eb62bf22624ac8ad4f091fa525d77ad8836,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,3,39,4,"[{""instance_id"": 1358343, ""overlap_tokens"": 7, ""visible_tokens"": 9}, {""instance_id"": 1773524, ""overlap_tokens"": 11, ""visible_tokens"": 12}, {""instance_id"": 1775733, ""overlap_tokens"": 11, ""visible_tokens"": 11}, {""instance_id"": 2038763, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.28205128205128205
+c26a3c41731745e0e6a2ae97ac922c89626052c8a6885c155e91d30a49f1c2cd,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,1,10,3,"[{""instance_id"": 494456, ""overlap_tokens"": 3, ""visible_tokens"": 5}, {""instance_id"": 535350, ""overlap_tokens"": 1, ""visible_tokens"": 2}, {""instance_id"": 538031, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",0.3
+720bb10c46b919c58d7bbdc8e15d53bf603378f3db9d8f86fb09dd6712d3681c,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,13,1,0,[],0.0
+38219aab5b1f2bff25cf8d02234edf828b5afa7760f0548dc1930b40e6af5790,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,13,8,0,[],0.0
+192cdfb28de0c0e2aba884d36f3adb53d5089f436f42cc29a2ae871208f0a9b0,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,1,1,1,"[{""instance_id"": 494456, ""overlap_tokens"": 1, ""visible_tokens"": 5}]",1.0
+f3e9e9e1760742ac2c4cffacc1b981791c91d83247b25a48776928f091baa056,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,10,2,0,[],0.0
+8ce4a5b3f42d6ff5b8f1ab1ff4abae961db11e04a29944b6716156bca572267f,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,13,2,0,[],0.0
+e652796da6785040156f18cff62a3767a86af107346cc97e8302140b6c733f4c,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,13,18,0,[],0.0
+c57e06cec44e5c9cb76e43eccf897ae496490850ba5a529f34120d822990e56f,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,13,1,0,[],0.0
+8c84f7851652eb052ee66d88699c3238e996e98affc8a7422e3568edff7a9fb2,/home/wwww/hzl/data/coco/val2017/000000458325.jpg,0,13,18,0,[],0.0
+62c55b08b883ef2b0e16a192c67a751fd5dd05f9675445f38da4fb701545fdd2,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,24,25,1,"[{""instance_id"": 601313, ""overlap_tokens"": 3, ""visible_tokens"": 3}]",0.12
+ab81ce42475871adff2ea9b197433e3519b6cb4345aa612c1a71fcd542b9c2e3,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,24,2,0,[],0.0
+5233a7fa53f7feedcbad674b88087aa4c08636a74cca26603f435d5006a50db7,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,3,1,0,[],0.0
+323228821a56bbfb2bb9fb4d427986b42e00463c5adce46d1d76a767565dde6c,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,24,1,0,[],0.0
+ef2d6ed5040cd0be84eb7d7b736cab556a0824f573be75991331cd03d814eb49,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,21,1,0,[],0.0
+0a0f94665ff3160cf90d355c6a49484aa1999e11c675c30abbed053465d13d60,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,21,1,0,[],0.0
+8218f58b926be26810a85381e5b308014f0bd72d1de6dc27fe8dedc575f09320,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,21,1,0,[],0.0
+1afa0d1f6d94d6a0a9a0e9a1670b74ba4dd0bc07b777c5ae57f1434abb1e1231,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,21,3,0,[],0.0
+4e11745d6c9d9aa0b59554a89683f6f1e501e766420a45a505171228c463f09d,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,20,1,0,[],0.0
+06635f15334bb263214d7ab3ab71d3fa613cea26b41da1027d5a6c682a3d6f87,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,18,1,0,[],0.0
+20770f0c49d3ace170391fb18683401a5d664adc615879e784cc3675683c552c,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,21,1,0,[],0.0
+67da480b9d4eccb18d77b44e8c8e339b30d1a525c49f9d102189b7dba499bf13,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,24,1,0,[],0.0
+a5c63bf53f1e4ececcb6f97f9cc7d0bc4e4e2918f1fce79bd0ca2d6edcf5ddf3,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,21,1,0,[],0.0
+5de119b2e584c871b1b3dcc6c0a7eeb2fb24d96d63c4973a68fb9d300211fb81,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,23,1,0,[],0.0
+25112f54fec4aa0ffc623a07cbc10be69638e46f206a0a96b7262378570dbbc8,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,18,1,0,[],0.0
+bdb54c8d363ec855e00d7d325369a1726f16425f194343ad0aa6b7ceb5fde61b,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,50,1,0,[],0.0
+56d7a1252772207a68d749e0e3792ab3747636cd88a2ecb5f5adf1b519fd4339,/home/wwww/hzl/data/coco/val2017/000000459757.jpg,0,50,1,0,[],0.0
+189591eea833fdc2bb066af01785a3ce9436949f9084efbb88b8eb08fa2d23e6,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,50,1,0,[],0.0
+1888245c9ef6679a0a1686fb3932f19f16d9a7681c5136133689e1627a6f44ff,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,8,1,0,[],0.0
+bf2e9fe9b8e53554771f5a93278e2732d308f89b077dd1ef832706766abbf407,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,50,2,0,[],0.0
+c92b2ecc909ef92cff073646fdf9d1a578e89fa6a04b67f445a571d20d87178e,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,8,1,1,"[{""instance_id"": 399070, ""overlap_tokens"": 1, ""visible_tokens"": 36}]",1.0
+722f380712f9c2cf4de7b9492a314a1e726e93073a5cd4cdf4eaa8efb106f3e6,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,12,3,0,[],0.0
+f19ed0980044c508d7e8500883b6c8ca7acb18c10c537320d20837d4c23313e3,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,8,42,2,"[{""instance_id"": 399070, ""overlap_tokens"": 28, ""visible_tokens"": 36}, {""instance_id"": 399256, ""overlap_tokens"": 4, ""visible_tokens"": 5}]",0.6666666666666666
+77cdd696d33e9fe2e199ee75d381a84601dec24f4f1e4d5b8355949435b5e80d,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,8,1,0,[],0.0
+7bae0b1c574b89d696ab683549e10a50f18b381a1513d1b32b828f39953973fe,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,50,2,0,[],0.0
+ddcde23a3dafdb81fb23b128d559d3319653cb87bc638cfe3bb4b576ee263e5d,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,8,1,0,[],0.0
+e868a9395e9740aa4c5e61dffaa4b80e72c56157f0da07e35fbbd3f45c405eb1,/home/wwww/hzl/data/coco/val2017/000000478474.jpg,0,8,1,0,[],0.0
+6592452f6f8880d5e1886da07ba8dc19c417125412b52ab1d7ef5773f6f5a98d,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,19,2,0,[],0.0
+08e9e290c8abaa165d0ce0ec588e30102506a8a34b2dd1a936a9f1f41585090b,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,19,3,1,"[{""instance_id"": 67890, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.3333333333333333
+cf9a81830906755caeb75ec2e2bc3d56291f26ca761ae08be80ff479667e3f02,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,19,1,0,[],0.0
+a04224b1685424b15d18a95d347c9e352d2f0d958d20b102860a32a2febb88b8,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,19,3,1,"[{""instance_id"": 65711, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.6666666666666666
+ed739eaad9e72f15c67076caa5f5b4bea21224ed8da2d3b8e5213014dac641d4,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,19,4,1,"[{""instance_id"": 64813, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.25
+3073221237309a4012dcf8a5d5e214184c602af1a496d81ad760d4b1f94aecff,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,19,1,0,[],0.0
+a72632d08c4ce139c5fc4f0525f750e5bd79ed3621907f25b6b8abfcddaebf26,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,19,18,2,"[{""instance_id"": 61715, ""overlap_tokens"": 6, ""visible_tokens"": 6}, {""instance_id"": 64439, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.3333333333333333
+367236e780ccb6b6b373c49b88b78d95bc31e9ac5f1ee9d288007c3bcc1a281e,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,50,1,0,[],0.0
+8a304df761fc7788ecd942dc51806b6e399e708aaf3cab63849f762751e9985a,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,50,1,0,[],0.0
+4a8dc8298a05f63e970499fc0a157184ea9045eedf0893db1b4e1925d9954d13,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,50,1,0,[],0.0
+b53c21237ee3a687cd7b0e3b33f0fbb32606ffdec41e71cb8a5104793827e781,/home/wwww/hzl/data/coco/val2017/000000535578.jpg,0,1,1,0,[],0.0
+e01354df599d7736a01f76cf42fd5bdee3d8cd66cd690075f19589b7083025cb,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,1,"[{""instance_id"": 1059684, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+d6073367669be791dbb16fdf8f97fe8da9e4bb9874047dcd7fae254a34d1989f,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,1,"[{""instance_id"": 1060688, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",1.0
+f83ad7b160abc7fd734fdac1dd2bf78272a56bb3c33f26c0d9b2172e5e085b34,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,6,1,"[{""instance_id"": 1056390, ""overlap_tokens"": 6, ""visible_tokens"": 8}]",1.0
+aba5fcc6eef594c379377b4498d188c56d13dd10873054a90cf89d52a001cba0,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,0,[],0.0
+a376f7ce3702477ae4a21db54640c21bfadcd7c104c7f32f3b843e86151f0775,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,0,[],0.0
+03ebd0a18b37b9145e31624d22f111857282a270d72615a42004b487ae00df5f,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,1,"[{""instance_id"": 1058215, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+93391aab086d9ecc16a8e665d21f60eb813f682fae073ecada612bd3fbc19c2d,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,0,[],0.0
+18b871017dd73336cd6b967cc59199f7339e2e24ba4d30c6579b1562cfd1e2c1,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,1,"[{""instance_id"": 2114943, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",1.0
+c4e529815bb85e32f7884542b9cd6bf3fbc7cb4f95085f9989dd64ed05da8d47,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,41,1,0,[],0.0
+6cf2781d405e44c49e6cf9fd4f9edf4bbdf91accc558a886a22a217cb6abcdb2,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,1,1,"[{""instance_id"": 415206, ""overlap_tokens"": 1, ""visible_tokens"": 120}]",1.0
+926f5f016e3923686076b8b51c55c93e07116f0863af17b5b347eafc70527370,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,3,1,"[{""instance_id"": 415206, ""overlap_tokens"": 3, ""visible_tokens"": 120}]",1.0
+d06a05bb337fb082941823614058b59cc6ada20a73d79c6f404997c3022a1217,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,3,0,[],0.0
+d0b46ee88bf10f53a64cd55178d262713aac41c9f0c26958d54b6d80d9bb1793,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,2,0,[],0.0
+533e03f66ab211c6d4e7a6af9351288d64011c82251d52d53ae9de68700035b5,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,0,[],0.0
+ee2078613cf59b16740afb0edf92187484b72bea3ae6c422765657905cc713f2,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,41,1,0,[],0.0
+ca62fa4a6b648dea8ba13cfe5b9115e3904fcec665b9687b0b197344b311b381,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,2,1,"[{""instance_id"": 415206, ""overlap_tokens"": 2, ""visible_tokens"": 120}]",1.0
+6a01ffcf5091dc2a848e453ff881e7518dbe5c31f1627176139454624c18641f,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,1,1,"[{""instance_id"": 415206, ""overlap_tokens"": 1, ""visible_tokens"": 120}]",1.0
+8c2bf5aab1fca70b8a153294b6a57a5fc27797bc63f987517928e87296ddd0bb,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,4,1,"[{""instance_id"": 415206, ""overlap_tokens"": 4, ""visible_tokens"": 120}]",1.0
+f738b566adea25fdd9d1361440983f3d286526486d2aa6029f391bc9578ed78f,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,51,1,0,[],0.0
+3743aac308b393731e9ae58e1c5c3a70c247c7ab6a3308c47b1d183d52a7b482,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,2,1,"[{""instance_id"": 415206, ""overlap_tokens"": 2, ""visible_tokens"": 120}]",1.0
+b471a2a87147f7dc8b93c5226546a3e2891b580f459cd7a0ed586f111d45f28f,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,1,1,"[{""instance_id"": 415206, ""overlap_tokens"": 1, ""visible_tokens"": 120}]",1.0
+8e30a52ad8b6e1e864006ef90708a4ebbbf0706f36278a4c15eb9648958f98a0,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,46,15,0,[],0.0
+b4273e6ab7fa3e2c5793f375c7f5ab3bb9d184af5bd07dd6c0cfbd9eaa889a9c,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,8,1,"[{""instance_id"": 415206, ""overlap_tokens"": 2, ""visible_tokens"": 120}]",0.25
+6fcd1f28089eeef69f2156d26296b64c3d1bd10c85b5b77a0e92d08875f7487f,/home/wwww/hzl/data/coco/val2017/000000549167.jpg,0,61,1,0,[],0.0
+f86b4f008e3e192f0b672dfc2c681e0032c55afd34d5b2ef6522649a6da010d4,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,25,1,0,[],0.0
+5b6d0056b7ac4d1aa80c8066e3d214190e772b449fa3bc49f2edf25fe63e4f74,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,25,1,0,[],0.0
+494fa8843123ef003e2590537ad0fa589ecb2cf584ac60fda42411dc5bf348e2,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,3,3,1,"[{""instance_id"": 145507, ""overlap_tokens"": 2, ""visible_tokens"": 2}]",0.6666666666666666
+3d181831e406527fa771af6cb876b62f04886f9366a8310afd0fe33230df3609,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,10,1,0,[],0.0
+1bf13d8246524cfe0a1ac3f9e20acbc707b6e8ba76fe0f9af80b199e243d9db9,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,50,1,0,[],0.0
+1d841cb4971ecb58ab034274d76d0cadc06b69e995b982cf9c9931bf991d9245,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,2,5,0,[],0.0
+42db122d5a32e15d8bd343cc7adaa8eb062480cfebf10c8388f31221a1e59343,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,1,5,1,"[{""instance_id"": 212268, ""overlap_tokens"": 4, ""visible_tokens"": 9}]",0.8
+cc322c10d1ac9204e7338bf53f9586b9f3a4f0a00ff16daea0acccfcc883e7d1,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,6,1,0,[],0.0
+7c15ea10506d031a0af8a1bb152082aa21291e16da9976b29abb86fca962d943,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,2,1,0,[],0.0
+745a500ed5242fffc4a9bf73cf90b1653ec2e6dd04159f0f2c314147e1888430,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,25,1,1,"[{""instance_id"": 1164381, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",1.0
+42e99d4fb83b4ccbcf15f9ccbce577209149166edab2b3c857c0716413dd2bac,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,3,26,1,"[{""instance_id"": 135321, ""overlap_tokens"": 24, ""visible_tokens"": 24}]",0.9230769230769231
+3ffca2635542e4e3ca1c7068650b49bafd26dd1a442db98f0317b35ce6e6c6cd,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,3,6,1,"[{""instance_id"": 140876, ""overlap_tokens"": 1, ""visible_tokens"": 2}]",0.16666666666666666
+6de0aebf4372f12c023c5191c458f0bf32c1fd3e1925df6c2df7cb3ccd66caaa,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,1,1,0,[],0.0
+6cd9a7a3c66c5851d5749acd23aeaf3063dc3f998110cb0b4868cee714d5b8a7,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,28,1,0,[],0.0
+ca51e36c8b4a6c33a5a7b952851cc25aab574572811c2ec353026bf6db619b50,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,1,2,2,"[{""instance_id"": 256709, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 2023104, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.5
+ac17bafabffcc48d89b131ecec7736b3e212b4815f9be7fda56655832c5c3377,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,1,2,0,[],0.0
+7ee4f77f3bf9979922ba944b906cc7b3110311f485a405cf4d1480de41426210,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,13,1,0,[],0.0
+469e6e105bb6e6a69c67eccf8d60ea8a21a36ecd6d1b781b04dc585f0840ae94,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,1,1,0,[],0.0
+38d3ea1f6600d4b1219115365124991501519222a76278f7df283f58c87bbcdc,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,13,7,0,[],0.0
+8487f63d77db08ad6e73b93eaf7602a61de3b904b5ec5bdf6014462096066fa1,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,28,1,0,[],0.0
+2e006c3505eda8b2be17423a881b6d60bdaddd2733a9c499ef1b21f5488c535c,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,28,4,0,[],0.0
+3868af47068b13c026d80b3f8285a1244f856b6ebbf84aedc186c9bb0b286cc0,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,1,3,0,[],0.0
+6329a4a73e4ad52e9a16331209842a899cb580abb4dc8878c29077d446ebdd14,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,27,1,0,[],0.0
+9656577fa0c5c9a12edcdbfd69123f2292f7160b42c573faafe9065ec63d20d8,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,13,1,0,[],0.0
+4431607c1a1bf7a9db0b7180350aa3e93ffbd181f3eae1e41fd406c3f8a56d03,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,13,2,0,[],0.0
+f6a1c64e549bfaea7a0ac427670330b4b66d2f9e5685003ab03987090e1543fe,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,13,2,0,[],0.0
+6a7b37ada31563686e4c0e682c520a946f8624988040c261037b651555509124,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,13,13,0,[],0.0
+6ff30a18bb93156c7b3ca84bba8d7e9f541051adc7ff06cf00ae83d614e7c7f3,/home/wwww/hzl/data/coco/val2017/000000577932.jpg,0,13,3,0,[],0.0
+9f703857254bf817915334d892ad52e668760ab0620edb29f1bdbc7ce908282f,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,0,[],0.0
+d8ec29dbce587e46ddf46b305e18b42170f07eb2783f0175554289e4b1f8a2ea,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,0,[],0.0
+91a5d3bbede1091a94dfec84a24141a9c00b2145e6db9d903ab2d7a52096dc84,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,0,[],0.0
+b297e9c317851d397f9102183b501a88fb7e252147eac876e9554741e38d9ea7,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,1,"[{""instance_id"": 3419, ""overlap_tokens"": 1, ""visible_tokens"": 62}]",1.0
+a586474ad7d6f27e0cbd882608fc401c238feae177536d455387dbc37dd1092b,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,1,0,[],0.0
+48f492b1833f7206c7ad83a43574ae8e7b2518cc133c34a827a689d1835e8e67,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,16,1,"[{""instance_id"": 3419, ""overlap_tokens"": 12, ""visible_tokens"": 62}]",0.75
+3af33c9dd406932fd8acc29498bb6c05f1b2991dd71354ed33ca9f309f015f0a,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,0,[],0.0
+7e4af1e7f044643f99bf177262bf7170afa1c1d3994489a2b256dbff7d3489a2,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,47,1,0,[],0.0
+c3eae30af6f5df902d8962c6b8d248b948692f8d9fd811bc8241b43bed013fb0,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,2,0,[],0.0
+615e68c4229d8d2803827571f0fb7665e9883df5cb243fb896c2c7b07759a90a,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,2,0,[],0.0
+cf542653b13224768cd86816d5cf37b2ca57950a2ca6e1eb1da095e6c6f4cf36,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,23,1,"[{""instance_id"": 3419, ""overlap_tokens"": 19, ""visible_tokens"": 62}]",0.8260869565217391
+09fcd1e3d9d641167a8fb9d6309373af49c425b34a483f0898459f1a65526701,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,28,5,0,[],0.0
+2438f82faf5c0643c0d43c9294b153cd9ab761f32e3ffc2a098400931480e2df,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,0,[],0.0
+c362de2013cb7534e0d8b3b49d0bc8587dfac79f006e17127313ee1ea224771b,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,1,0,[],0.0
+ff68ebf36f313d522df5d0b6332f0425f921c7ac765be0ee3aa2b55ee3acc70f,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,16,2,0,[],0.0
+352915bd9e67af88e9afec766f7704c148571b2dbea5a5b7fbd06b6ef75c8c2a,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,37,1,"[{""instance_id"": 203166, ""overlap_tokens"": 24, ""visible_tokens"": 25}]",0.6486486486486487
+44800705bd9ad12b31272d93535a804557ef91cce8e8585621066f6bb39b8b14,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,18,0,[],0.0
+b3e046cee8f7a6436e3205b933ddec55d8fdfca8efc7c4b35e71422d5fcd4530,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,0,[],0.0
+4d5776f807433554ffbd0f2423928f9ebccaf51240e96461638176e8a90daca2,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,17,1,0,[],0.0
+013ba5f0e5989ad601136877dc29d5f019062397a7ebcaa883f010c2a183b3da,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,1,0,[],0.0
+4e5dc4497badc382dd25fc1d6cb78d29eb4b2404df0a94dc8e2750b0e11f39ce,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,1,0,[],0.0
+e4a88f03d22e3574fb4d4b28386f5e556d9be7ec6c85110c79c0a3d8ebbd4a99,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,1,0,[],0.0
+45ab4aee3fea4a41ccefe25cab03d923e0db26edeef8740ebe97c59d5c6b4380,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,1,0,[],0.0
+9e6cc3d10f11323fd793e4733a896cc401405cc0030a3b8444e88ee74d9902b0,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,79,2,0,[],0.0
+fa76b269ea478de5b02a53d6c4e57c4b528a784d4e0f9614e0bba41827d5db28,/home/wwww/hzl/data/coco/val2017/000000579321.jpg,0,1,1,0,[],0.0
+d2cd4dab5aad2893589da8b6b06acfa6125c53863e5370ef70db55f8d4037374,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,16,2,0,[],0.0
+85ae47f2d828bfa4e7199e1559d2138730095cc7a7eb09f2feedce769058350c,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,58,2,0,[],0.0
+ed15ef88b5513f578395dfd7edebb1a878b63bbbbb9370cb104c621958f6c9dd,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,57,10,1,"[{""instance_id"": 375757, ""overlap_tokens"": 7, ""visible_tokens"": 7}]",0.7
+d53f27d486038e034c8c66ac8fc8427c81a5fd7eb8cb293ed329471f9a5ddbff,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,1,2,0,[],0.0
+f1c5b028a23615c4897366452ece37980011a2a68325a3a4e279181fc90386b5,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,16,4,0,[],0.0
+43925535d0f30ab946dac404a278806ce01265f0b5f6338b28f4880d5351565a,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,1,1,0,[],0.0
+6367a67bd8ad633acea7059b9a005687a654f14d2c8e85c69cba0af653600839,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,58,34,1,"[{""instance_id"": 115117, ""overlap_tokens"": 21, ""visible_tokens"": 22}]",0.6176470588235294
+eb0f06871c917a27a4820e653c41887729350980d6e084b54e6a602dfddbec8b,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,1,1,0,[],0.0
+a8cd3f81b02e385fb534212cf587c9d793b5a3782c55393c1f9de35e44882501,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,25,4,0,[],0.0
+af0febf752c2bc15c85fd16432391d67cc552cfacaca468de37b8cf75938bec6,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,16,1,0,[],0.0
+d3bbed81501dbc08cba34498a954f985a0a85358dc07fed511507f3c3854a7f1,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,58,1,0,[],0.0
+05206f2ac784dd2f16588283426c9f3a0403b572a841253d307b6941f0c2c2e0,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,61,3,0,[],0.0
+a764ccba8db3b1f185317e7ba12e7557540e6af8dc9f99de8f018606ff1f1d77,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,58,1,0,[],0.0
+1591e8ad85da5008e0a906ccf67500e71eb459f220dff89b8a68b416bc3e6063,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,59,2,0,[],0.0
+3873ab7a7a7c505095643a0871965189524d31bdf00ea27bf1cfd252eefe8ea7,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,74,6,2,"[{""instance_id"": 1658254, ""overlap_tokens"": 1, ""visible_tokens"": 1}, {""instance_id"": 1986362, ""overlap_tokens"": 1, ""visible_tokens"": 1}]",0.16666666666666666
+b6d7d4de6b41ba2c67388fca7b66214bf20a364802f06853bf21ac3f4d8dc958,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,25,1,0,[],0.0
+3e550d1026da74a7859f48b9ea80bf406341862c0f7da987c0804b1cf1c3f5db,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,58,1,0,[],0.0
+76a8b06922709a994ebd03bbf4775131455f39d2c5329f5eca6c7c5e10a90703,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,57,5,0,[],0.0
+05e60829f30121d42265af541da44036d2a90d909b6ef128cc7b79adf5e6ecd5,/home/wwww/hzl/data/coco/val2017/000000580410.jpg,0,61,1,0,[],0.0

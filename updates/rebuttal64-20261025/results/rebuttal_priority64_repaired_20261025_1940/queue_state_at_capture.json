@@ -1,0 +1,176 @@
+{
+  "status": "resuming_original_queue",
+  "active": "continue/ablation/coco_object/seed0/without_source_tracing",
+  "cells": {
+    "role64/smoke/pc60": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "smoke/pc60"
+      ],
+      "started_at": "2026-10-25T11:39:14.581515+00:00",
+      "pid": 3831521,
+      "finished_at": "2026-10-25T11:39:39.602588+00:00",
+      "returncode": 0
+    },
+    "role64/smoke/coco_stuff": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "smoke/coco_stuff"
+      ],
+      "started_at": "2026-10-25T11:39:39.603479+00:00",
+      "pid": 3833172,
+      "finished_at": "2026-10-25T11:40:13.597046+00:00",
+      "returncode": 0
+    },
+    "role64/formal/pc60": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "formal/pc60"
+      ],
+      "started_at": "2026-10-25T11:40:13.598250+00:00",
+      "pid": 3835202,
+      "finished_at": "2026-10-25T11:42:31.394521+00:00",
+      "returncode": 0
+    },
+    "role64/formal/coco_stuff": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "formal/coco_stuff"
+      ],
+      "started_at": "2026-10-25T11:42:31.396335+00:00",
+      "pid": 3841105,
+      "finished_at": "2026-10-25T11:44:57.231537+00:00",
+      "returncode": 0
+    },
+    "smoke/regions/coco_object": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/source/local_controls.py",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+        "--job",
+        "smoke/regions/coco_object"
+      ],
+      "started_at": "2026-10-25T11:44:57.236872+00:00",
+      "pid": 3847589,
+      "finished_at": "2026-10-25T11:45:23.942713+00:00",
+      "returncode": 0
+    },
+    "smoke/source_bias/coco_cd": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/source/local_controls.py",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+        "--job",
+        "smoke/source_bias/coco_cd"
+      ],
+      "started_at": "2026-10-25T11:45:23.946402+00:00",
+      "pid": 3849506,
+      "finished_at": "2026-10-25T11:45:34.323729+00:00",
+      "returncode": 0
+    },
+    "regions/coco_object": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/source/local_controls.py",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+        "--job",
+        "regions/coco_object"
+      ],
+      "started_at": "2026-10-25T11:45:34.327096+00:00",
+      "pid": 3850668,
+      "finished_at": "2026-10-25T11:49:04.929188+00:00",
+      "returncode": 0
+    },
+    "regions/pc60": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/source/local_controls.py",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+        "--job",
+        "regions/pc60"
+      ],
+      "started_at": "2026-10-25T11:49:04.932598+00:00",
+      "pid": 3864470,
+      "finished_at": "2026-10-25T11:50:52.255784+00:00",
+      "returncode": 0
+    },
+    "source_bias/coco_cd": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/source/local_controls.py",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+        "--job",
+        "source_bias/coco_cd"
+      ],
+      "started_at": "2026-10-25T11:50:52.260199+00:00",
+      "pid": 3870873,
+      "finished_at": "2026-10-25T11:51:23.865666+00:00",
+      "returncode": 0
+    },
+    "source_bias/pc60": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/source/local_controls.py",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+        "--job",
+        "source_bias/pc60"
+      ],
+      "started_at": "2026-10-25T11:51:23.870005+00:00",
+      "pid": 3873143,
+      "finished_at": "2026-10-25T11:52:30.352140+00:00",
+      "returncode": 0
+    },
+    "continue/ablation/coco_object/seed0/without_source_tracing": {
+      "status": "running",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/run_cell.py",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+        "--job",
+        "ablation/coco_object/seed0/without_source_tracing"
+      ],
+      "started_at": "2026-10-25T11:52:30.597264+00:00",
+      "pid": 3877266
+    }
+  },
+  "created_at": "2026-10-25T11:39:07.485815+00:00",
+  "pid": 3831425,
+  "waiting_job": null
+}

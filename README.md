@@ -1,12 +1,13 @@
 # B: TRACE Experiment Results
 
-Private evidence archive for TRACE research. This is a **results repository**, not
+Public evidence archive for TRACE research. This is a **results repository**, not
 the model implementation. It preserves historical results, the submitted method's
 reviewer evidence, and newer algorithm variants without treating them as one
 interchangeable method.
 
 ## Start Here
 
+- [Completed 64-image rebuttal update, 2026-10-25](updates/rebuttal64-20261025/README.md)
 - [Latest completed results](LATEST_RESULTS.md)
 - [Experiment suites](index/suites.csv)
 - [Individual result records](index/runs.csv)

@@ -1,0 +1,340 @@
+{
+  "status": "completed",
+  "summary": {
+    "images": 64,
+    "thing_candidates": 1203,
+    "candidates_touching_multiple_instances": 75,
+    "semantically_mixed_candidates": 394,
+    "visible_non_crowd_instances": 445,
+    "uncovered_instances": 135,
+    "instances_with_multiple_fragments": 108
+  },
+  "sources": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000014473.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000014473_instanceTrainIds.png",
+      "gt_sha256": "85ecd21109993ee3d1860719ac62d89a56c19cddfd732e5402bb14e995fd9153"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000022589.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000022589_instanceTrainIds.png",
+      "gt_sha256": "5a1fe241be48d10e404def39817d8563dc95fc9da21683fcef683df302eda9b6"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000031817.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000031817_instanceTrainIds.png",
+      "gt_sha256": "bf9e26d3bad3df49692bd1d1aed2138f6deda7dd84e7f089efc13b7f7f03908d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000037988.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000037988_instanceTrainIds.png",
+      "gt_sha256": "731813a7cb11ce02471f7c8cc35ea55fed75ad63bd962930c63521997b790d00"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000038825.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000038825_instanceTrainIds.png",
+      "gt_sha256": "763d8cb1ea1109af550b046d07a3556cd9544ce77655e92cf443a9029474ca32"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000051326.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000051326_instanceTrainIds.png",
+      "gt_sha256": "9b6ac5f40ff96dbf654c372a96a72ce53248956904b32c31e6fcce7daf51de3d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000054605.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000054605_instanceTrainIds.png",
+      "gt_sha256": "2d62e2b513ec94d7d91a57ca53745d77d6ae38983d517e4ad0d8b4a18e572a14"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000066886.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000066886_instanceTrainIds.png",
+      "gt_sha256": "ee04f825d611da4a5d168fdb970302738557ee00cf42969848020c2aafcc44fe"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000069106.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000069106_instanceTrainIds.png",
+      "gt_sha256": "c4af4da80b155ae7e13c412d84ed66850a97f7ec80fc93634d974df75e516013"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000074200.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000074200_instanceTrainIds.png",
+      "gt_sha256": "d2284b5e84f493466bee565c28e4e4efc1a76dc8496474da8e2737faa91d0e6d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000104803.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000104803_instanceTrainIds.png",
+      "gt_sha256": "6c48a995fb9228c9d81c8127e07ef5007b1cf62ad4bbd540465d02a8a79a43f7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000115898.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000115898_instanceTrainIds.png",
+      "gt_sha256": "613f936491448ed6c74e80b45b8405944364d9cdb670820cab20fc0a08a0a23d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000121744.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000121744_instanceTrainIds.png",
+      "gt_sha256": "4de60c71c180a8cbe2d1b87ab7517ec5293b2ca7ec09c27ef2cfbff77a24a022"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000130699.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000130699_instanceTrainIds.png",
+      "gt_sha256": "54b709560a38ad6dbfc767d85d1e79beeb12af983b9008ccd537310c57d20448"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000138241.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000138241_instanceTrainIds.png",
+      "gt_sha256": "9984874f96706bbc78397c270534b6e2f9a3919d0764ad3de21e2efa18325265"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000143068.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000143068_instanceTrainIds.png",
+      "gt_sha256": "b5b28bfbb121afbe6e74fd2b76bba43c5a7a8cef4fd6bfd63a57c074e4c93494"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000166642.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000166642_instanceTrainIds.png",
+      "gt_sha256": "2e155efdff6264abdbc36cdd453aa331947878d9bb3384bab7071518e98f0264"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000167353.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000167353_instanceTrainIds.png",
+      "gt_sha256": "4fd21da2d7097de31c83e76907de234327402046937f7e9e1ff963fb214b748b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000170595.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000170595_instanceTrainIds.png",
+      "gt_sha256": "109fc04d6b409169bd8ae8d9f329b6133a4f1eb6f33463246fe7ea3655d9f0f2"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000182162.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000182162_instanceTrainIds.png",
+      "gt_sha256": "64cc77c5ef49a1933f3c7f050801fa597953cd01e23a3255f58a44b66907a87f"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000194746.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000194746_instanceTrainIds.png",
+      "gt_sha256": "e7b63c6af707cbacd7959543bcb44115fe0f46798ccd8257a00141566174d10c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000200162.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000200162_instanceTrainIds.png",
+      "gt_sha256": "68dd62c96940a2a1294ba1ee98cacb1f02a2613cf37fdbfdb728957d87019173"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000205289.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000205289_instanceTrainIds.png",
+      "gt_sha256": "952691245e816bc7dd61f4a4cff904995e0a8e08133c17cf2a5f5d636c4f74aa"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000216516.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000216516_instanceTrainIds.png",
+      "gt_sha256": "50144167b117f01e31a4ecb90740aafc4481cad2c0ee8a93816105b7ad02c2be"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000221017.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000221017_instanceTrainIds.png",
+      "gt_sha256": "28b385f389dbf97bee49703849f3e2956d088d02f09d70b1aa583af60c54ec17"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000227765.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000227765_instanceTrainIds.png",
+      "gt_sha256": "c4e12e5f5db976cfa36f9f4d399bb40b54d9625a232f7955681ae2bfcb109894"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000229553.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000229553_instanceTrainIds.png",
+      "gt_sha256": "caabc88e0d1483d56900efaaeae913f857b550f7036cb0d81565c1d0dc7c1029"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000231097.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000231097_instanceTrainIds.png",
+      "gt_sha256": "d04706259a8e6cee0ebc8f7f76322990834fe17dbb88bd8ed851dce389336835"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000244750.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000244750_instanceTrainIds.png",
+      "gt_sha256": "1e3c4881a830e5f648ef7a28a447c7040afe99e0aff11e29879ab5347dfcee60"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000252559.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000252559_instanceTrainIds.png",
+      "gt_sha256": "5efa6c734716a517c71c66ab8bdb91d1a72bc406314c7c31abc60f98ca968547"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000273760.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000273760_instanceTrainIds.png",
+      "gt_sha256": "3b21a2cc0ae5c84cb72e293b76b5bc8a9a012f6a34567adc2e7b9055ecb193d1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000293390.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000293390_instanceTrainIds.png",
+      "gt_sha256": "35d73e167de4d7c0cb61352c276db4a7fff01ede2e70c5230e54cabd51b0b8f7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000294163.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000294163_instanceTrainIds.png",
+      "gt_sha256": "1723c81b08d000f729b3df0374a97b2ae0bc230c4f0b7d4a2f0c5a7b6a4e7ec0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000300155.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000300155_instanceTrainIds.png",
+      "gt_sha256": "3d347d8c3080fd8a19a8bea4b182fa7f75bf72c3abe62414a5046fadab54397a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000302107.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000302107_instanceTrainIds.png",
+      "gt_sha256": "358ccc6b537aba6458b98aaaec5c2a1cd91cae47e8b1128e2e3f8631dc1e4aa3"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000306733.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000306733_instanceTrainIds.png",
+      "gt_sha256": "9a68a2e6d66e983ff8772bc32f4215413ba33c76261ac6eab28719b266fccd13"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000309467.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000309467_instanceTrainIds.png",
+      "gt_sha256": "e8db6e4c54d7679cb1133127ac5a078d39c68e8ab0f8a1bb5c0e9a7679513743"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000328959.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000328959_instanceTrainIds.png",
+      "gt_sha256": "1ad6d79a95ea5be71b13efdaf36e74a62b9b2390066ada1ad57a9e4dfadfa743"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000336628.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000336628_instanceTrainIds.png",
+      "gt_sha256": "8e7cf51a428de03a1790c9943504160cc4cc30f558f81ce3a12f136c950d1055"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000341828.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000341828_instanceTrainIds.png",
+      "gt_sha256": "e578677c4c85a163d23eb2ad784fae00f90151d23cdb1d9d9b30160f57977d8b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000345469.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000345469_instanceTrainIds.png",
+      "gt_sha256": "ea35b10055ded1226a607bc4e7de2540e8f87cbf245f3b6e689c9879d43cb426"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000352900.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000352900_instanceTrainIds.png",
+      "gt_sha256": "4a933be86399b3df0c8eb62357daced27d5adc85f20db389f8f551b010d699e1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000356094.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000356094_instanceTrainIds.png",
+      "gt_sha256": "6824717fcc98ab86e1dff972c59c487645f169fdc69c8adcb90f12177fd6e6e0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000360960.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000360960_instanceTrainIds.png",
+      "gt_sha256": "17ee3ba62d9590436143ed3dad316833d69ffe2e5db141fb9eb9dd60d235dff1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000367095.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000367095_instanceTrainIds.png",
+      "gt_sha256": "a57d75be3e1345311d439c41730df9e8cef4ddd63188b3e7bcbd51f8f46210b6"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000391144.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000391144_instanceTrainIds.png",
+      "gt_sha256": "9cddd817d83bca43256b7b016bf2a46630662153c31b735324946a91d2a74db8"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000393115.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000393115_instanceTrainIds.png",
+      "gt_sha256": "5bf7d87d5b059c9e38e25c85683123bcd9741dc47a79d09c114a2bbbe897e51c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000401991.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000401991_instanceTrainIds.png",
+      "gt_sha256": "2f4631336a295562f32b1371275871b00aa61642280500ed249d766e6218c679"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000405195.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000405195_instanceTrainIds.png",
+      "gt_sha256": "2f568ff8809fc028078d973f9ab72bf604599b37953802386093d77a1d0b7e01"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000405249.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000405249_instanceTrainIds.png",
+      "gt_sha256": "487dc66a295fd97061247fd68d35137f71c15d2fe825801c7b98ebd8d59f891b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000409542.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000409542_instanceTrainIds.png",
+      "gt_sha256": "7c10dc443840901610878f2b72a5ea279b3bcecfc955733d070bdc7a87663731"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000422886.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000422886_instanceTrainIds.png",
+      "gt_sha256": "852120353bf540bc7641377bcba136678c55790fc45a8d9725b4f728dd93dcb4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000426241.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000426241_instanceTrainIds.png",
+      "gt_sha256": "cb3eec6fbe46e1a85af000e7ca4183a86a6c7b046d93e153930f9d64853510a5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000430286.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000430286_instanceTrainIds.png",
+      "gt_sha256": "a3e363e5af047c3786ce75d9764e510131c89ff71e3b34dbb01d15156221e051"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000436315.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000436315_instanceTrainIds.png",
+      "gt_sha256": "8025a532a72df680f0a4322dc029222c6f4e79ee8870a7365ccd08b508e1ccad"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000447200.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000447200_instanceTrainIds.png",
+      "gt_sha256": "ae8bab7b5403e62c0c55ca34803d660b65c58a8ceb3d018e6746d20c1550b636"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000458325.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000458325_instanceTrainIds.png",
+      "gt_sha256": "650f9370d73d1b370db136b84079cdbd236577c84edd0d127cbe4eba4d0e1b76"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000459757.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000459757_instanceTrainIds.png",
+      "gt_sha256": "e23c787ee10ac767b9c00b36b0f7fe40b72a74be754db345f4e445d8b2a4ed89"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000478474.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000478474_instanceTrainIds.png",
+      "gt_sha256": "29bdf3f0b8623c0d69e656010d42d0f8927a8b1d73bb1685dee445dc6ff9204f"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000535578.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000535578_instanceTrainIds.png",
+      "gt_sha256": "13c02733cbb11ce64a4b583d06d4ba002e7ccdb78aab196a690faca0e1979d43"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000549167.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000549167_instanceTrainIds.png",
+      "gt_sha256": "4ba743fb28352cc60056cc3ba8cd3a4eaadba584bcecee35323c11edbe191b09"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000577932.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000577932_instanceTrainIds.png",
+      "gt_sha256": "0b42d5a3fe3606dad7b15dbf5ad3fd2f2c31300b7f58fcf4356408320bb7ff09"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000579321.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000579321_instanceTrainIds.png",
+      "gt_sha256": "80a477805b94cccdbb5e5801e4484f4c1a8199a15abb75840c21cdb65e893a14"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000580410.jpg",
+      "gt_path": "/home/wwww/hzl/data/coco_mlmp/annotations/val2017/000000580410_instanceTrainIds.png",
+      "gt_sha256": "a9cc962e80eec1d751b6de849b22c13ce2ed130e3b1548b2eb23b76630dea851"
+    }
+  ],
+  "worker_sha256": "7806900f75f816046ce6d5c7b21dafce29bf15d2a407f188e66ad18a859361a0",
+  "prediction_seal_sha256": "2d58386018640a489585518c9eabd92ff5dec1b75529e86f6b7492ec35ca74a0",
+  "annotation_sha256": "e8c7f7908f1d7278341fae127d0da654f102f11bd7b21d8aeefa635b8c810b6f",
+  "scope": "offline-only model-output-resolution mask audit, fixed 64 images; crowds and zero-area instances explicitly recorded",
+  "ground_truth_in_adaptation": false,
+  "all_visible_instances_in_denominator": true
+}

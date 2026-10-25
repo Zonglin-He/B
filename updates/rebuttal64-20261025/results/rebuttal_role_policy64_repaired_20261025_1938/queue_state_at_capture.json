@@ -1,0 +1,73 @@
+{
+  "status": "completed",
+  "active": null,
+  "cells": {
+    "smoke/pc60": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "smoke/pc60"
+      ],
+      "started_at": "2026-10-25T11:39:14.581515+00:00",
+      "pid": 3831521,
+      "finished_at": "2026-10-25T11:39:39.602588+00:00",
+      "returncode": 0
+    },
+    "smoke/coco_stuff": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "smoke/coco_stuff"
+      ],
+      "started_at": "2026-10-25T11:39:39.603479+00:00",
+      "pid": 3833172,
+      "finished_at": "2026-10-25T11:40:13.597046+00:00",
+      "returncode": 0
+    },
+    "formal/pc60": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "formal/pc60"
+      ],
+      "started_at": "2026-10-25T11:40:13.598250+00:00",
+      "pid": 3835202,
+      "finished_at": "2026-10-25T11:42:31.394521+00:00",
+      "returncode": 0
+    },
+    "formal/coco_stuff": {
+      "status": "completed",
+      "command": [
+        "/home/wwww/miniconda3/envs/mlmp/bin/python",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938/source/role_policy.py",
+        "_cell",
+        "--root",
+        "/home/wwww/hzl/results/rebuttal_role_policy64_repaired_20261025_1938",
+        "--job",
+        "formal/coco_stuff"
+      ],
+      "started_at": "2026-10-25T11:42:31.396335+00:00",
+      "pid": 3841105,
+      "finished_at": "2026-10-25T11:44:57.231537+00:00",
+      "returncode": 0
+    }
+  },
+  "pid": 3831425,
+  "controlled_by": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940",
+  "finished_at": "2026-10-25T11:44:57.234078+00:00"
+}

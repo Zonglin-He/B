@@ -1,0 +1,358 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "source_bias/coco_cd",
+    "study": "source_bias",
+    "dataset": "coco_cd",
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 64,
+    "smoke": false,
+    "seed": 0,
+    "selection_seed": 20271025,
+    "condition": "gaussian_noise_s3",
+    "image_ids": [
+      "/home/wwww/hzl/data/coco/train2017/000000026321.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000027937.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000033924.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000034039.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000040359.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000045208.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000048126.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000056898.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000067906.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000068238.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000075591.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000076985.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000106820.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000110155.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000111141.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000114521.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000115157.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000147890.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000193821.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000220922.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000222659.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000239985.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000243456.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000246753.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000258129.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000274139.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000287328.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000318722.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000329528.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000333407.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000334916.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000336372.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000361127.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000385186.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000396217.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000398434.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000427816.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000431756.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000442174.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000442214.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000442672.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000445500.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000446899.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000453538.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000466514.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000476011.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000487995.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000510695.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000519094.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000520389.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000523594.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000531076.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000540410.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000542054.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000543210.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000546264.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000548946.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000560830.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000571835.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000001675.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000068078.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000172330.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000263463.jpg"
+    ]
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "uniform",
+      "label": "Uniform regions",
+      "images": 64,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 54.4977817218551,
+        "intersection": [
+          2078433,
+          260937,
+          174859
+        ],
+        "union": [
+          2750508,
+          402902,
+          754889
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 59.682654491474665,
+        "intersection": [
+          2275364,
+          276669,
+          176274
+        ],
+        "union": [
+          2741862,
+          458055,
+          494304
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 3211264,
+      "initially_correct_pixels": 2728307,
+      "correct_to_wrong_pixels": 364422,
+      "initially_wrong_pixels": 482957,
+      "wrong_to_correct_pixels": 150344,
+      "correct_to_wrong_pct": 13.357074552094028,
+      "wrong_to_correct_pct": 31.12989355159983,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/source_bias/coco_cd/uniform/prediction_seal.json",
+      "prediction_seal_sha256": "8d0267f2b2891035e53b551186ea59796271338550df05413fb6a4bb92b612ae",
+      "worst_group_mIoU": 36.201814378670996,
+      "foreground_errors": {
+        "foreground_pixels": 486085,
+        "identity_flip_pixels": 24960,
+        "foreground_to_background_pixels": 25329,
+        "identity_flip_pct": 5.134904389150046,
+        "foreground_to_background_pct": 5.210817038172336
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    },
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "confidence",
+      "label": "Original confidence",
+      "images": 64,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 56.97891704673081,
+        "intersection": [
+          2172422,
+          268766,
+          173503
+        ],
+        "union": [
+          2751182,
+          413510,
+          643145
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 59.682654491474665,
+        "intersection": [
+          2275364,
+          276669,
+          176274
+        ],
+        "union": [
+          2741862,
+          458055,
+          494304
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 3211264,
+      "initially_correct_pixels": 2728307,
+      "correct_to_wrong_pixels": 293967,
+      "initially_wrong_pixels": 482957,
+      "wrong_to_correct_pixels": 180351,
+      "correct_to_wrong_pct": 10.774703873134511,
+      "wrong_to_correct_pct": 37.343076091660336,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/source_bias/coco_cd/confidence/prediction_seal.json",
+      "prediction_seal_sha256": "b6143b9c9cb9cbf15f5bcdb41bf197d72b087e4e6fd686af81845d4be72d81ce",
+      "worst_group_mIoU": 46.51022544206589,
+      "foreground_errors": {
+        "foreground_pixels": 486085,
+        "identity_flip_pixels": 17813,
+        "foreground_to_background_pixels": 26003,
+        "identity_flip_pct": 3.6645854120164167,
+        "foreground_to_background_pct": 5.349475914706276
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    },
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "frozen",
+      "label": "frozen",
+      "images": 64,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 74.57670842042691,
+        "intersection": [
+          2587573,
+          258047,
+          156227
+        ],
+        "union": [
+          2793966,
+          378511,
+          248204
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 59.682654491474665,
+        "intersection": [
+          2275364,
+          276669,
+          176274
+        ],
+        "union": [
+          2741862,
+          458055,
+          494304
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 3211264,
+      "initially_correct_pixels": 2728307,
+      "correct_to_wrong_pixels": 48638,
+      "initially_wrong_pixels": 482957,
+      "wrong_to_correct_pixels": 322178,
+      "correct_to_wrong_pct": 1.7827172675215803,
+      "wrong_to_correct_pct": 66.70945860604567,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/source_bias/coco_cd/frozen/prediction_seal.json",
+      "prediction_seal_sha256": "8520ed647201de40ee75032c10f9a9a20fdab40aeff8708adeb266ed665407dd",
+      "worst_group_mIoU": 51.625526633670034,
+      "foreground_errors": {
+        "foreground_pixels": 486085,
+        "identity_flip_pixels": 3024,
+        "foreground_to_background_pixels": 68787,
+        "identity_flip_pct": 0.622113416377794,
+        "foreground_to_background_pct": 14.15122869456988
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    },
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "midpoint",
+      "label": "midpoint",
+      "images": 64,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 75.11814667321858,
+        "intersection": [
+          2603024,
+          254292,
+          153825
+        ],
+        "union": [
+          2800066,
+          368971,
+          242350
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 59.682654491474665,
+        "intersection": [
+          2275364,
+          276669,
+          176274
+        ],
+        "union": [
+          2741862,
+          458055,
+          494304
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 3211264,
+      "initially_correct_pixels": 2728307,
+      "correct_to_wrong_pixels": 52800,
+      "initially_wrong_pixels": 482957,
+      "wrong_to_correct_pixels": 335634,
+      "correct_to_wrong_pct": 1.9352660825926116,
+      "wrong_to_correct_pct": 69.49562797516136,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_priority64_repaired_20261025_1940/cells/source_bias/coco_cd/midpoint/prediction_seal.json",
+      "prediction_seal_sha256": "68df34b59ef97604f3210ab3611c95e45f388b61275a7dbd2df5b433dd496bc1",
+      "worst_group_mIoU": 51.82968744020552,
+      "foreground_errors": {
+        "foreground_pixels": 486085,
+        "identity_flip_pixels": 3081,
+        "foreground_to_background_pixels": 74887,
+        "identity_flip_pct": 0.6338397605357088,
+        "foreground_to_background_pct": 15.406153244802864
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "elapsed_seconds": 23.89501642342657,
+  "prediction_seal_sha256": "5d091611f1f79bcc0c26f58617996142bd6dbcc49a2d75063f605474b31dd7bf",
+  "scope": "fixed 64-image diagnostic subset; not full validation",
+  "no_threshold_search": true,
+  "parent_budget_matched_for_fine_controls": true
+}
