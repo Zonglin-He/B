@@ -1,0 +1,294 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "sham/coco_cd",
+    "study": "sham",
+    "dataset": "coco_cd",
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 64,
+    "smoke": false,
+    "seed": 0,
+    "selection_seed": 20271025,
+    "condition": "clean",
+    "image_ids": [
+      "/home/wwww/hzl/data/coco/train2017/000000026321.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000027937.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000033924.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000034039.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000040359.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000045208.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000048126.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000056898.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000067906.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000068238.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000075591.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000076985.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000106820.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000110155.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000111141.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000114521.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000115157.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000147890.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000193821.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000220922.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000222659.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000239985.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000243456.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000246753.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000258129.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000274139.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000287328.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000318722.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000329528.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000333407.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000334916.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000336372.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000361127.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000385186.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000396217.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000398434.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000427816.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000431756.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000442174.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000442214.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000442672.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000445500.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000446899.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000453538.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000466514.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000476011.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000487995.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000510695.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000519094.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000520389.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000523594.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000531076.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000540410.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000542054.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000543210.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000546264.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000548946.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000560830.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000571835.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000001675.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000068078.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000172330.jpg",
+      "/home/wwww/hzl/data/coco/val2017/000000263463.jpg"
+    ]
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "native",
+      "label": "native",
+      "images": 64,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 74.45583566251382,
+        "intersection": [
+          2591372,
+          253347,
+          155387
+        ],
+        "union": [
+          2801735,
+          375899,
+          244788
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 63.65974028495822,
+        "intersection": [
+          2353349,
+          280917,
+          178142
+        ],
+        "union": [
+          2739711,
+          443229,
+          427180
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 3211264,
+      "initially_correct_pixels": 2812408,
+      "correct_to_wrong_pixels": 58605,
+      "initially_wrong_pixels": 398856,
+      "wrong_to_correct_pixels": 246303,
+      "correct_to_wrong_pct": 2.0838014967956284,
+      "wrong_to_correct_pct": 61.75236175461821,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/sham/coco_cd/native/prediction_seal.json",
+      "prediction_seal_sha256": "90b5c7e8e16e02c58792ed9b32d2ea5503fe2258c0c4c54aad4ed52f8b33f9df",
+      "worst_group_mIoU": 51.91243235696843,
+      "foreground_errors": {
+        "foreground_pixels": 486085,
+        "identity_flip_pixels": 795,
+        "foreground_to_background_pixels": 76556,
+        "identity_flip_pct": 0.16355164220249546,
+        "foreground_to_background_pct": 15.749508830760051
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    },
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "sham_residual",
+      "label": "sham_residual",
+      "images": 64,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 74.0739416891,
+        "intersection": [
+          2612780,
+          241402,
+          149029
+        ],
+        "union": [
+          2820230,
+          362412,
+          236675
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 63.65974028495822,
+        "intersection": [
+          2353349,
+          280917,
+          178142
+        ],
+        "union": [
+          2739711,
+          443229,
+          427180
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 3211264,
+      "initially_correct_pixels": 2812408,
+      "correct_to_wrong_pixels": 74048,
+      "initially_wrong_pixels": 398856,
+      "wrong_to_correct_pixels": 264851,
+      "correct_to_wrong_pct": 2.6329039029898933,
+      "wrong_to_correct_pct": 66.40266161221092,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/sham/coco_cd/sham_residual/prediction_seal.json",
+      "prediction_seal_sha256": "4a24527b67cb567fb74c2ca0444712cd33face5c51bc021614f4c145de3059ee",
+      "worst_group_mIoU": 50.92060363157261,
+      "foreground_errors": {
+        "foreground_pixels": 486085,
+        "identity_flip_pixels": 603,
+        "foreground_to_background_pixels": 95051,
+        "identity_flip_pct": 0.12405237767057202,
+        "foreground_to_background_pct": 19.55439892199924
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    },
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "sham_all_views",
+      "label": "sham_all_views",
+      "images": 64,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 72.23349607401758,
+        "intersection": [
+          2630050,
+          216494,
+          145116
+        ],
+        "union": [
+          2848911,
+          349629,
+          232328
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 63.65974028495822,
+        "intersection": [
+          2353349,
+          280917,
+          178142
+        ],
+        "union": [
+          2739711,
+          443229,
+          427180
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 3211264,
+      "initially_correct_pixels": 2812408,
+      "correct_to_wrong_pixels": 100808,
+      "initially_wrong_pixels": 398856,
+      "wrong_to_correct_pixels": 280060,
+      "correct_to_wrong_pct": 3.5844016942065307,
+      "wrong_to_correct_pct": 70.21581723729868,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/sham/coco_cd/sham_all_views/prediction_seal.json",
+      "prediction_seal_sha256": "b8dd742b380f99a1a87228bfa5bcdb3bb586c3e9a37c2c36de7d3ff75a9160ba",
+      "worst_group_mIoU": 48.21045713482648,
+      "foreground_errors": {
+        "foreground_pixels": 486085,
+        "identity_flip_pixels": 743,
+        "foreground_to_background_pixels": 123732,
+        "identity_flip_pct": 0.1528539247250995,
+        "foreground_to_background_pct": 25.454807286791404
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "prediction_seal_sha256": "e6de0b47425c301670c7849da08af86c55da8afd1f560d6713189c41e5e52cb6",
+  "elapsed_seconds": 21.65042287763208,
+  "scope": "fixed 64-image diagnostic subset; not full validation",
+  "no_sample_or_threshold_search": true
+}

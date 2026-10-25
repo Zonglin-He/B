@@ -84,7 +84,7 @@ def exclusion(path):
 
 
 def family(name):
-    if name.startswith(('rebuttal_original_', 'rebuttal_priority64_', 'rebuttal_role_policy64_', 'reviewer_followup_',
+    if name.startswith(('rebuttal_original_', 'rebuttal_priority64_', 'rebuttal_role_policy64_', 'rebuttal_sham_', 'reviewer_followup_',
                         'reviewer_response_', 'reviewer_corruption_', 'trace_runtime_')):
         return 'submitted_trace_reviewer_evidence'
     if name.startswith('rebuttal_backbone_'):

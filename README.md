@@ -7,6 +7,7 @@ interchangeable method.
 
 ## Start Here
 
+- [Completed sham intervention controls, 2026-10-25](updates/sham-20261025/README.md)
 - [Completed 64-image rebuttal update, 2026-10-25](updates/rebuttal64-20261025/README.md)
 - [Completed context/top-K/episode-bootstrap cache analysis](updates/mechanism-audit-20261025/README.md)
 - [Latest completed results](LATEST_RESULTS.md)

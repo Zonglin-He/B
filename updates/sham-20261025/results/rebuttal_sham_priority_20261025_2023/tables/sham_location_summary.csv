@@ -1,0 +1,5 @@
+dataset,role,candidates,eligible,shape_preserving,noncontiguous,images_with_drop_pair,mean_image_drop_location_effect,fraction_positive_drop_location_effect,event
+coco_object,background,934,928,920,8,0,,,D_sham-D_native; positive means weakening candidate reduces response more than weakening outside
+coco_object,thing,1203,1201,1180,21,64,0.6426437637656339,0.9816819317235637,D_sham-D_native; positive means weakening candidate reduces response more than weakening outside
+coco_cd,background,59,23,22,1,0,,,D_sham-D_native; positive means weakening candidate reduces response more than weakening outside
+coco_cd,thing,197,195,176,19,63,0.630421600438514,0.958974358974359,D_sham-D_native; positive means weakening candidate reduces response more than weakening outside

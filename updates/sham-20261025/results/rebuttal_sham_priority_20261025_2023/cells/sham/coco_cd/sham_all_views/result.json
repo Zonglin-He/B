@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "policy": "sham_all_views",
+  "label": "sham_all_views",
+  "images": 64,
+  "full_split": false,
+  "metrics": {
+    "mIoU": 72.23349607401758,
+    "intersection": [
+      2630050,
+      216494,
+      145116
+    ],
+    "union": [
+      2848911,
+      349629,
+      232328
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "pre_metrics": {
+    "mIoU": 63.65974028495822,
+    "intersection": [
+      2353349,
+      280917,
+      178142
+    ],
+    "union": [
+      2739711,
+      443229,
+      427180
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "valid_pixels": 3211264,
+  "initially_correct_pixels": 2812408,
+  "correct_to_wrong_pixels": 100808,
+  "initially_wrong_pixels": 398856,
+  "wrong_to_correct_pixels": 280060,
+  "correct_to_wrong_pct": 3.5844016942065307,
+  "wrong_to_correct_pct": 70.21581723729868,
+  "prediction_seal": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/sham/coco_cd/sham_all_views/prediction_seal.json",
+  "prediction_seal_sha256": "b8dd742b380f99a1a87228bfa5bcdb3bb586c3e9a37c2c36de7d3ff75a9160ba",
+  "worst_group_mIoU": 48.21045713482648,
+  "foreground_errors": {
+    "foreground_pixels": 486085,
+    "identity_flip_pixels": 743,
+    "foreground_to_background_pixels": 123732,
+    "identity_flip_pct": 0.1528539247250995,
+    "foreground_to_background_pct": 25.454807286791404
+  },
+  "split_counts": {},
+  "evaluation_scope": "balanced 500-image test"
+}

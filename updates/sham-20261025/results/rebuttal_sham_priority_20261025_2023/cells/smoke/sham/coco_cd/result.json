@@ -1,0 +1,234 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "smoke/sham/coco_cd",
+    "study": "sham",
+    "dataset": "coco_cd",
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 4,
+    "smoke": true,
+    "seed": 0,
+    "selection_seed": 20271025,
+    "condition": "clean",
+    "image_ids": [
+      "/home/wwww/hzl/data/coco/train2017/000000110155.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000114521.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000334916.jpg",
+      "/home/wwww/hzl/data/coco/train2017/000000519094.jpg"
+    ]
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "native",
+      "label": "native",
+      "images": 4,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 70.26909195288343,
+        "intersection": [
+          157061,
+          20675,
+          6822
+        ],
+        "union": [
+          173207,
+          30740,
+          12903
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 64.40979293488355,
+        "intersection": [
+          152018,
+          20530,
+          6944
+        ],
+        "union": [
+          173166,
+          30090,
+          18660
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 200704,
+      "initially_correct_pixels": 179492,
+      "correct_to_wrong_pixels": 2868,
+      "initially_wrong_pixels": 21212,
+      "wrong_to_correct_pixels": 7934,
+      "correct_to_wrong_pct": 1.59784280079335,
+      "wrong_to_correct_pct": 37.403356590609086,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_cd/native/prediction_seal.json",
+      "prediction_seal_sha256": "6c030e004b9f8de3fad6bed325aaa4b85b166dfa56faaf95c339977ef510218e",
+      "worst_group_mIoU": 54.95087844897406,
+      "foreground_errors": {
+        "foreground_pixels": 28007,
+        "identity_flip_pixels": 0,
+        "foreground_to_background_pixels": 510,
+        "identity_flip_pct": 0.0,
+        "foreground_to_background_pct": 1.8209733280965472
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    },
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "sham_residual",
+      "label": "sham_residual",
+      "images": 4,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 71.7206257617076,
+        "intersection": [
+          158853,
+          20496,
+          6667
+        ],
+        "union": [
+          173541,
+          29582,
+          12269
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 64.40979293488355,
+        "intersection": [
+          152018,
+          20530,
+          6944
+        ],
+        "union": [
+          173166,
+          30090,
+          18660
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 200704,
+      "initially_correct_pixels": 179492,
+      "correct_to_wrong_pixels": 2544,
+      "initially_wrong_pixels": 21212,
+      "wrong_to_correct_pixels": 9068,
+      "correct_to_wrong_pct": 1.417333363046821,
+      "wrong_to_correct_pct": 42.74938713935508,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_cd/sham_residual/prediction_seal.json",
+      "prediction_seal_sha256": "65aad81f534d1441fec4f99fb36188b831f35bbe2f76fe20954e3986ed2adf27",
+      "worst_group_mIoU": 37.06929483851405,
+      "foreground_errors": {
+        "foreground_pixels": 28007,
+        "identity_flip_pixels": 0,
+        "foreground_to_background_pixels": 844,
+        "identity_flip_pct": 0.0,
+        "foreground_to_background_pct": 3.0135323312029136
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    },
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "sham_all_views",
+      "label": "sham_all_views",
+      "images": 4,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 71.62177237942848,
+        "intersection": [
+          159210,
+          20159,
+          6694
+        ],
+        "union": [
+          173851,
+          29101,
+          12393
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 64.40979293488355,
+        "intersection": [
+          152018,
+          20530,
+          6944
+        ],
+        "union": [
+          173166,
+          30090,
+          18660
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 200704,
+      "initially_correct_pixels": 179492,
+      "correct_to_wrong_pixels": 2761,
+      "initially_wrong_pixels": 21212,
+      "wrong_to_correct_pixels": 9332,
+      "correct_to_wrong_pct": 1.5382301161054532,
+      "wrong_to_correct_pct": 43.993965679803885,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_cd/sham_all_views/prediction_seal.json",
+      "prediction_seal_sha256": "12f64457067fd107d9de1fe06e4bc2f83868e32111bafb24555c7cca85f10ac8",
+      "worst_group_mIoU": 36.97594607479516,
+      "foreground_errors": {
+        "foreground_pixels": 28007,
+        "identity_flip_pixels": 0,
+        "foreground_to_background_pixels": 1154,
+        "identity_flip_pct": 0.0,
+        "foreground_to_background_pct": 4.120398471810619
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "prediction_seal_sha256": "238bb6187a477c2056399541b6d90457e289ead6815c5e775c4f9df9db097189",
+  "elapsed_seconds": 2.463328016921878,
+  "scope": "four-image smoke",
+  "no_sample_or_threshold_search": true
+}

@@ -1,0 +1,101 @@
+{
+  "status": "sealed_before_GT",
+  "records": {
+    "native": [
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000115898.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/native/predictions/37a449d029a0551959101bf5e7963fa68a5fd02372471641e44502eff0d2e60f.npz",
+        "sha256": "30047c839685e0a6ff5be7764c364912e9e7e2d7e978b31083266609b42df685",
+        "before_sha256": "2b76a11195f5972ed6cf87bbbf5e5f9eff745a54f3b67dd7ea7a031829918afd",
+        "after_sha256": "9fe93a9f417c86cdba21e9189e6e19ff156c9498f44c7781308aff4e09be6d33"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000244750.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/native/predictions/c9be8753ced96692c24077a3964ce949ef54a44a00aea364e0e3af7cf2dbfb5f.npz",
+        "sha256": "9b16df4798d7a225bb512e3612faf6bf6ac9adeed8f81a619e4492997f0472a0",
+        "before_sha256": "194fe0ac94653a4d000afced9b6b388f4c62742306c4d274db25a830cb5edd2e",
+        "after_sha256": "10d049bfb1d77f8df9bec541c442a0ae7ec29717f0c628e3350f03f236696b0b"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000436315.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/native/predictions/29ef7605cc55f01cd715637af2fa011c64457fc9082c5980f9a76092f824627d.npz",
+        "sha256": "ccc9d7759e7ea6dea291a727e569611cb41c9d40b1a9868517b13610c76cceca",
+        "before_sha256": "a01071812db1fd63c0464fb300c71b6a968e678b0eee4f6503c9503857fe1dd4",
+        "after_sha256": "3336332ecf20dcd0a5fbbb7e0b0ab776e183e550f58d3e760cfd343153e291ec"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000535578.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/native/predictions/b1415f5ad0a8bdacaefcdc6eb171721ff0f4de9d2f496d05ccec01a715bf10b8.npz",
+        "sha256": "c0e5431ec2c33a021b0932d08d8032164f50b92b6538822630f49b13a7a0f7fb",
+        "before_sha256": "e2a516a491c56c30d8d856ae2c74f3c8f250699363735002deec01a2c631be9a",
+        "after_sha256": "6866224d3212009e7e26ef3481e10ce8b74f7a555c3d54c0860c343185333cf8"
+      }
+    ],
+    "sham_residual": [
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000115898.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_residual/predictions/37a449d029a0551959101bf5e7963fa68a5fd02372471641e44502eff0d2e60f.npz",
+        "sha256": "a47b46882b3e2b3cf3a9c197f0d0498b0a3650fce2808f183560120c72d45150",
+        "before_sha256": "2b76a11195f5972ed6cf87bbbf5e5f9eff745a54f3b67dd7ea7a031829918afd",
+        "after_sha256": "fbf759009bebdf42a933a92e2e3d88b6ac273374e6a73eddd2c326590950d509"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000244750.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_residual/predictions/c9be8753ced96692c24077a3964ce949ef54a44a00aea364e0e3af7cf2dbfb5f.npz",
+        "sha256": "f6e45ed268a084bc0e9a05bab366164e4cbc688293da09735d73a5728af964c9",
+        "before_sha256": "194fe0ac94653a4d000afced9b6b388f4c62742306c4d274db25a830cb5edd2e",
+        "after_sha256": "5a020045afd868996da641704c7c38cbc93dce618d89e9df57719b989afae7e4"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000436315.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_residual/predictions/29ef7605cc55f01cd715637af2fa011c64457fc9082c5980f9a76092f824627d.npz",
+        "sha256": "387c073ab7ed22821d042afef086e3b801185e7728f01045c12ad1d8a85f08fc",
+        "before_sha256": "a01071812db1fd63c0464fb300c71b6a968e678b0eee4f6503c9503857fe1dd4",
+        "after_sha256": "f240a63123080ab9ddf4561fd26e8ee254c6a4bf0858d5d92ae9db10cfa8b981"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000535578.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_residual/predictions/b1415f5ad0a8bdacaefcdc6eb171721ff0f4de9d2f496d05ccec01a715bf10b8.npz",
+        "sha256": "5e5d158dd1e82ddb863e55223da3b49b9ed63f27dc08d54433c975e4852b4f03",
+        "before_sha256": "e2a516a491c56c30d8d856ae2c74f3c8f250699363735002deec01a2c631be9a",
+        "after_sha256": "2954dd730b72e3cc658ddc4cba91edb1ce7593cae3a3ca4e9b1ed2658f43b968"
+      }
+    ],
+    "sham_all_views": [
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000115898.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_all_views/predictions/37a449d029a0551959101bf5e7963fa68a5fd02372471641e44502eff0d2e60f.npz",
+        "sha256": "be8e584f924b6fc06cdda9e5cfe0b1a0f708d1dc6622b24810c34177d550a10f",
+        "before_sha256": "2b76a11195f5972ed6cf87bbbf5e5f9eff745a54f3b67dd7ea7a031829918afd",
+        "after_sha256": "0c3e30d7cac4a645167ac67e22ce49aeb82da654375a7e6ca2cc8c50b002f131"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000244750.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_all_views/predictions/c9be8753ced96692c24077a3964ce949ef54a44a00aea364e0e3af7cf2dbfb5f.npz",
+        "sha256": "3cab92a6e9b811566f8351e6165c70976aaa9686f265a906cf15d0b5b8bbe17b",
+        "before_sha256": "194fe0ac94653a4d000afced9b6b388f4c62742306c4d274db25a830cb5edd2e",
+        "after_sha256": "b02b519b2cb416d8ce0415913bedd903309ce83ed398fceb7fe92f66dd4666d6"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000436315.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_all_views/predictions/29ef7605cc55f01cd715637af2fa011c64457fc9082c5980f9a76092f824627d.npz",
+        "sha256": "d2b5e8f89e42cd79515bcb9f8dd89d37d52c98e701822c2ebe37e463afe2cf96",
+        "before_sha256": "a01071812db1fd63c0464fb300c71b6a968e678b0eee4f6503c9503857fe1dd4",
+        "after_sha256": "1255524e9bb0348f65873c626f9f49ac5a21633650046ff49436d0d83e4b004a"
+      },
+      {
+        "image_id": "/home/wwww/hzl/data/coco/val2017/000000535578.jpg",
+        "path": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023/cells/smoke/sham/coco_object/sham_all_views/predictions/b1415f5ad0a8bdacaefcdc6eb171721ff0f4de9d2f496d05ccec01a715bf10b8.npz",
+        "sha256": "7a639791a9616fd9ba878116231fb8a3d1f1a267af182fc19418b4846ec38bef",
+        "before_sha256": "e2a516a491c56c30d8d856ae2c74f3c8f250699363735002deec01a2c631be9a",
+        "after_sha256": "f62992cf4a0ea8b1297947a20577780997d2f0e15c87fc8769e5db3bc6a5b6db"
+      }
+    ]
+  },
+  "candidate_files": {
+    "candidates/episode_000000.npz": "7e225fcb5311644d8741821b07e8d42eaf8b39fbf63b14144d624d25fc83d66e",
+    "candidates/episode_000000_sham_masks.npz": "36224783a3cd2b6ffd83568b89bfdbe1aa965df1d064c8be213e238e110fff97",
+    "candidates/episode_000000.json": "84a2fd6acfa3299f8ad3233e452c441538667176c08fbb47bd8f04514b0990b0"
+  },
+  "probes_sha256": "e79ab1c2a23d39ca7a93ac94ebca77403a2e8c7547a33c94e12f44d11afed6f7"
+}

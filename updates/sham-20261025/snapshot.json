@@ -1,0 +1,29 @@
+{
+  "started_at_utc": "2026-10-25T12:57:01.172788+00:00",
+  "finished_at_utc": "2026-10-25T12:57:01.499202+00:00",
+  "source_root": "/home/wwww/B/.export-work/sham-20261025",
+  "snapshot_type": "read_only_live_file_snapshot",
+  "atomic": false,
+  "source_modified": false,
+  "gpu_work_started": false,
+  "included_files": 519,
+  "logical_bytes": 35625772,
+  "unique_objects": 517,
+  "git_result_bytes": 1606658,
+  "excluded_counts": {},
+  "suite_count": 1,
+  "run_index_rows": 24,
+  "archives": [
+    {
+      "name": "results-objects-001.tar.gz",
+      "objects": 517,
+      "bytes": 2664430,
+      "sha256": "b43829b2096d90dad030f768d93d095b7cd205c57a89c5aa21e901db6a1c8a50"
+    }
+  ],
+  "files_manifest_sha256": "9773f28a535698de2270279462d86c5c7a5ceb91c795d42d2fbe814b068b2fbb",
+  "queue_snapshots": {},
+  "finalized_at_utc": "2026-10-25T12:57:01.707856+00:00",
+  "source_patch_and_credential_audit": true,
+  "run_index_source": "captured_archive_bytes"
+}

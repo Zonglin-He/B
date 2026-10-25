@@ -1,0 +1,66 @@
+{
+  "captured_at_utc": "2026-10-25T12:57:01.172635+00:00",
+  "source": "/home/wwww/hzl/results/rebuttal_sham_priority_20261025_2023",
+  "method": "Archived submitted TRACE, not later algorithm variants",
+  "scope": "Two fixed 64-image diagnostic studies and two four-image smoke checks",
+  "public_upload_authorization": "User requested sham upload to public Zonglin-He/B",
+  "cells": [
+    {
+      "id": "smoke/sham/coco_cd",
+      "dataset": "coco_cd",
+      "images": 4,
+      "smoke": true,
+      "full_split": false,
+      "result_sha256": "33e17b747de103ae98a7c9cdad4605ed3eee3c9c8f6afae8f419a60ec7009a62",
+      "verified_prediction_files": 12,
+      "verified_candidate_files": 3,
+      "diagnostic_seal_sha256": "238bb6187a477c2056399541b6d90457e289ead6815c5e775c4f9df9db097189"
+    },
+    {
+      "id": "smoke/sham/coco_object",
+      "dataset": "coco_object",
+      "images": 4,
+      "smoke": true,
+      "full_split": false,
+      "result_sha256": "a826f318ee047680b0a422c718634bed97b1144807344926643157dd19230417",
+      "verified_prediction_files": 12,
+      "verified_candidate_files": 3,
+      "diagnostic_seal_sha256": "e1d29f06e0135c0106c89504bfbdf5598d37190906e41376770d35ee3fc24241"
+    },
+    {
+      "id": "sham/coco_cd",
+      "dataset": "coco_cd",
+      "images": 64,
+      "smoke": false,
+      "full_split": false,
+      "result_sha256": "75fe231a8a375fa2c3c5bcc6907ee236433b6991d4dc0577eff7f77f13847c19",
+      "verified_prediction_files": 192,
+      "verified_candidate_files": 9,
+      "diagnostic_seal_sha256": "e6de0b47425c301670c7849da08af86c55da8afd1f560d6713189c41e5e52cb6"
+    },
+    {
+      "id": "sham/coco_object",
+      "dataset": "coco_object",
+      "images": 64,
+      "smoke": false,
+      "full_split": false,
+      "result_sha256": "318112bfd1e8ada8155b6765d8b0499bc0349b26aa9d3f580783217e81480a1b",
+      "verified_prediction_files": 192,
+      "verified_candidate_files": 15,
+      "diagnostic_seal_sha256": "8aea2aa1ba627229ef3012427b34a845b400531672af7e6ce6fa10f756166ff3"
+    }
+  ],
+  "source_modified": false,
+  "gpu_work_started": false,
+  "historical_manifest_also_lists_signals_jobs_not_included": true,
+  "omitted": [
+    "pending or active queue work",
+    "unrelated copied offline analyses",
+    "source/runtime dependencies",
+    "dataset images and GT annotations",
+    "model weights",
+    "credentials"
+  ],
+  "native_fallback": "Ineligible sham masks retain native scores in adaptation",
+  "interpretation": "Location specificity does not identify a unique causal source"
+}

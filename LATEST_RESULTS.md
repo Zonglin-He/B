@@ -4,6 +4,26 @@ This page separates submitted-method evidence from new algorithm variants.
 The authoritative rows, populations, seeds, and paths remain in the linked CSVs.
 This is a snapshot, not a live experiment dashboard.
 
+## New: Completed Sham Intervention Controls
+
+The [verified sham update](updates/sham-20261025/README.md) contains both fixed
+64-image studies and their separate four-image smoke checks, with complete
+predictions, candidate masks/responses, and unrounded outcome tables.
+
+| Dataset | Native TRACE | Sham residual only | All-view sham |
+|---|---:|---:|---:|
+| COCO-CD | 74.4558 | 74.0739 | 72.2335 |
+| COCO Object | 19.5348 | 19.9531 | 19.4728 |
+
+The paired residual-location effect is positive for 95.8974% of eligible thing
+candidates on COCO-CD and 98.1682% on COCO Object. These controls isolate
+intervention location while keeping the operator, applied area, candidate
+selection, readout/loss masks, and optimization settings fixed. All outcomes
+are retained: the residual-only sham is higher than native on COCO Object.
+This is evidence of location specificity, not a universal causal-source or
+uniform downstream-improvement claim. These are subset results, not main-table
+full-split replacements.
+
 ## New: Completed 64-Image Reviewer Controls
 
 [Additional CPU cache analysis](updates/mechanism-audit-20261025/README.md) now
@@ -12,12 +32,13 @@ episode bootstrap intervals. Full-minus-confidence mIoU differences are +7.8781
 on COCO-CD (95% CI [+5.4543,+10.3831]) and +2.0575 on COCO Object
 ([+1.5054,+2.5905]); Full-minus-w/o-Region-Construction on COCO-CD is +2.7803
 ([+1.5119,+4.0364]). This reuses sealed predictions; it is not new inference.
-The sham-control GPU manifest is present only as a pending protocol, not results.
+The CPU-analysis snapshot retains its historical pending sham protocol;
+the completed sham outcomes are now in the separate update linked above.
 
 The [separate verified update](updates/rebuttal64-20261025/README.md) contains all
 completed region-boundary/internal-allocation, semantic-role, and noisy
 fixed-versus-refresh controls, including unfavorable and null outcomes.
-The original main queue remains separate and continues running.
+Original-queue and backbone progress remains separate from this snapshot.
 
 COCO Object within-region allocation, holding each native parent budget fixed,
 changes subset mIoU from 19.5348 to 19.9188 and actual whole-image correct-to-wrong

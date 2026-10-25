@@ -12,6 +12,10 @@ spec.loader.exec_module(exporter)
 
 
 class ExportTests(unittest.TestCase):
+    def test_sham_evidence_is_submitted_trace_not_a_new_algorithm(self):
+        self.assertEqual(exporter.family('rebuttal_sham_priority_20261025_2023'),
+                         'submitted_trace_reviewer_evidence')
+
     def test_roundtrip_dedup_and_exclusions(self):
         with tempfile.TemporaryDirectory() as temp:
             root = Path(temp)
