@@ -1,0 +1,176 @@
+{
+  "sources": [
+    {
+      "dataset": "voc21",
+      "seed": "historical",
+      "path": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/voc21/candidate_outcomes.csv",
+      "sha256": "3784536c911286d634bb73dfb04497e661d4a55561817efcb69b9f96bd5d2569",
+      "candidates": 16010,
+      "images": 512,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/voc21/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "3784536c911286d634bb73dfb04497e661d4a55561817efcb69b9f96bd5d2569"
+    },
+    {
+      "dataset": "voc21",
+      "seed": 0,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/voc21/seed0/candidate_outcomes.csv",
+      "sha256": "dcab6ab0584759afcf5334bad89d5992bdcca8b39a7cc03b9b6f577a3a100e5e",
+      "candidates": 16010,
+      "images": 512,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/voc21/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "3784536c911286d634bb73dfb04497e661d4a55561817efcb69b9f96bd5d2569"
+    },
+    {
+      "dataset": "voc21",
+      "seed": 1,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/voc21/seed1/candidate_outcomes.csv",
+      "sha256": "0b3ca11cd2976b6d832c2fe2e7d941651f7b797cadc3878530541c7a6a31824f",
+      "candidates": 16010,
+      "images": 512,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/voc21/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "3784536c911286d634bb73dfb04497e661d4a55561817efcb69b9f96bd5d2569"
+    },
+    {
+      "dataset": "voc21",
+      "seed": 2,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/voc21/seed2/candidate_outcomes.csv",
+      "sha256": "9bbbba6493a1b487874512aafc2132320bf2a91304b678bd87a5ad230bf1154d",
+      "candidates": 16010,
+      "images": 512,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/voc21/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "3784536c911286d634bb73dfb04497e661d4a55561817efcb69b9f96bd5d2569"
+    },
+    {
+      "dataset": "pc60",
+      "seed": "historical",
+      "path": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/pc60/candidate_outcomes.csv",
+      "sha256": "877a4260051d39a3f63343d9f08de11c478b6b6fe60288eef6d8210e260a24d5",
+      "candidates": 11223,
+      "images": 513,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/pc60/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "877a4260051d39a3f63343d9f08de11c478b6b6fe60288eef6d8210e260a24d5"
+    },
+    {
+      "dataset": "pc60",
+      "seed": 0,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/pc60/seed0/candidate_outcomes.csv",
+      "sha256": "6f105268cf750e62379781840ea7bd5355f30b2568ffb0a34f7c2ffc8ee31212",
+      "candidates": 11223,
+      "images": 513,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/pc60/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "877a4260051d39a3f63343d9f08de11c478b6b6fe60288eef6d8210e260a24d5"
+    },
+    {
+      "dataset": "pc60",
+      "seed": 1,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/pc60/seed1/candidate_outcomes.csv",
+      "sha256": "85fb129f6d522d92d5577abd59b93f2400b83651191ef77a00968bb213460363",
+      "candidates": 11223,
+      "images": 513,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/pc60/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "877a4260051d39a3f63343d9f08de11c478b6b6fe60288eef6d8210e260a24d5"
+    },
+    {
+      "dataset": "pc60",
+      "seed": 2,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/pc60/seed2/candidate_outcomes.csv",
+      "sha256": "70da274ec6cc63a3f42e19e96bdbf2cd44d81943865366836fc62da963d63fdf",
+      "candidates": 11223,
+      "images": 513,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/pc60/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "877a4260051d39a3f63343d9f08de11c478b6b6fe60288eef6d8210e260a24d5"
+    },
+    {
+      "dataset": "coco_object",
+      "seed": "historical",
+      "path": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_coco_object/coco_object/candidate_outcomes.csv",
+      "sha256": "8afe99d61479ddeb86cff33e3b41e49d9d718c03a8c47585fd6af3299827cc06",
+      "candidates": 17515,
+      "images": 518,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_coco_object/coco_object/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "8afe99d61479ddeb86cff33e3b41e49d9d718c03a8c47585fd6af3299827cc06"
+    },
+    {
+      "dataset": "coco_object",
+      "seed": 0,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_object/seed0/candidate_outcomes.csv",
+      "sha256": "fc36e6d09047886ee9a9ebdd096ff36eb108073aad9b7ca3e6ea7a34085130b0",
+      "candidates": 17515,
+      "images": 518,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_coco_object/coco_object/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "8afe99d61479ddeb86cff33e3b41e49d9d718c03a8c47585fd6af3299827cc06"
+    },
+    {
+      "dataset": "coco_object",
+      "seed": 1,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_object/seed1/candidate_outcomes.csv",
+      "sha256": "adc37139065b9896d3e31207d28d4aa176faf6533c12ef45bd8b01be55d97ec6",
+      "candidates": 17515,
+      "images": 518,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_coco_object/coco_object/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "8afe99d61479ddeb86cff33e3b41e49d9d718c03a8c47585fd6af3299827cc06"
+    },
+    {
+      "dataset": "coco_object",
+      "seed": 2,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_object/seed2/candidate_outcomes.csv",
+      "sha256": "48c042c569bb8b1da0a22b61b425689aa52551b203d035dd4e3eccb25e9c5892",
+      "candidates": 17515,
+      "images": 518,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_coco_object/coco_object/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "8afe99d61479ddeb86cff33e3b41e49d9d718c03a8c47585fd6af3299827cc06"
+    },
+    {
+      "dataset": "coco_cd",
+      "seed": "historical",
+      "path": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/coco_cd/candidate_outcomes.csv",
+      "sha256": "22fdf910cfca3b3b1f570ca31bdea35948006660cfed5a29877ff4cd1011c04d",
+      "candidates": 1998,
+      "images": 500,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/coco_cd/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "22fdf910cfca3b3b1f570ca31bdea35948006660cfed5a29877ff4cd1011c04d"
+    },
+    {
+      "dataset": "coco_cd",
+      "seed": 0,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_cd/seed0/candidate_outcomes.csv",
+      "sha256": "c453bc143c81d81de8809f01f4b5279fce12e3bedb48e3d92d2a4a7bb2eb69b3",
+      "candidates": 1998,
+      "images": 500,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/coco_cd/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "22fdf910cfca3b3b1f570ca31bdea35948006660cfed5a29877ff4cd1011c04d"
+    },
+    {
+      "dataset": "coco_cd",
+      "seed": 1,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_cd/seed1/candidate_outcomes.csv",
+      "sha256": "5d9dc711d19528a7e4858015fcb7715c4df9a78a48424c9e32f12df2925bdf07",
+      "candidates": 1998,
+      "images": 500,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/coco_cd/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "22fdf910cfca3b3b1f570ca31bdea35948006660cfed5a29877ff4cd1011c04d"
+    },
+    {
+      "dataset": "coco_cd",
+      "seed": 2,
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_cd/seed2/candidate_outcomes.csv",
+      "sha256": "20f1c2f4385350a56e93e45d2b16fdb49e6404f3b46eaccebd2030ebe12d4314",
+      "candidates": 1998,
+      "images": 500,
+      "auxiliary_score_source": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/coco_cd/candidate_outcomes.csv",
+      "auxiliary_score_sha256": "22fdf910cfca3b3b1f570ca31bdea35948006660cfed5a29877ff4cd1011c04d"
+    }
+  ],
+  "event": "isolated one-step unit-weight update mean GT-class probability drop >= threshold",
+  "primary_threshold": 0.001,
+  "fixed_sensitivity_thresholds": [
+    0.005,
+    0.01,
+    0.02
+  ],
+  "denominator": "all same-mask candidates with all five finite pre-update scores",
+  "score_direction": "larger = greater predicted harm; q/rho use 1-score",
+  "provenance": "post-hoc comparison on previously measured outcomes; no new model forward",
+  "auxiliary_scores": "entropy/disagreement inherited by exact ID+mask match from sealed historical pre-update scores",
+  "scope": "isolated-candidate risk association, not full-episode update safety or learned risk classifier"
+}

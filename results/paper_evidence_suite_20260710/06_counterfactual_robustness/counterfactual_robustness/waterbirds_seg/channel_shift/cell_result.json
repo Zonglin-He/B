@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/06_counterfactual_robustness/counterfactual_robustness/waterbirds_seg/channel_shift",
+  "duration_sec": 392.273,
+  "evidence_type": "newly_run",
+  "results": {
+    "original": {
+      "mAcc": 70.11,
+      "mAcc_std": 0.0,
+      "mDice": 68.06,
+      "mDice_std": 0.0,
+      "mIoU": 55.2,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

@@ -1,0 +1,8 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,lr,steps,batch_size,config_override,result_path,evidence_type
+all,noadapt,0,ok,24.31,35.46,55.17,26.77,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721/all/noadapt/seed0/results.txt,newly_run
+all,tent,0,ok,27.89,39.57,55.29,395.202,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721/all/tent/seed0/results.txt,newly_run
+all,tpt,0,ok,24.47,36.04,38.04,541.288,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721/all/tpt/seed0/results.txt,newly_run
+all,watt,0,ok,17.99,27.82,32.87,4861.116,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721/all/watt/seed0/results.txt,newly_run
+all,clipartt,0,failed:1,,,,8.155,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721/all/clipartt/seed0/results.txt,newly_run
+all,mlmp,0,ok,32.25,45.27,55.02,433.199,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721/all/mlmp/seed0/results.txt,newly_run
+all,trace,0,ok,31.93,45.14,52.45,4910.004,0.00063,16,1,{},/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721/all/trace/seed0/results.txt,newly_run

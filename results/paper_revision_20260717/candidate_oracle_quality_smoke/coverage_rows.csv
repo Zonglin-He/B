@@ -1,0 +1,3 @@
+evidence_type,dataset,candidate_source,batch_idx,patch_batch_idx,role,gt_pixels,role_mask_coverage,same_class_pixel_coverage,candidate_count
+newly_run,voc20,prediction,0,0,thing,44,0.0,0.0,6
+newly_run,voc20,oracle_gt,0,0,thing,44,1.0,1.0,2

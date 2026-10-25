@@ -1,0 +1,8 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,result_path,evidence_type
+fog,noadapt,0,ok,15.89,22.72,57.2,7.159,/home/wwww/hzl/results/acdc_natural_shift_20260720/00_smoke/fog/noadapt/seed0/results.txt,newly_run
+fog,tent,0,ok,18.26,25.59,55.44,9.642,/home/wwww/hzl/results/acdc_natural_shift_20260720/00_smoke/fog/tent/seed0/results.txt,newly_run
+fog,tpt,0,ok,23.72,33.03,35.06,10.776,/home/wwww/hzl/results/acdc_natural_shift_20260720/00_smoke/fog/tpt/seed0/results.txt,newly_run
+fog,watt,0,ok,19.37,27.36,41.02,39.009,/home/wwww/hzl/results/acdc_natural_shift_20260720/00_smoke/fog/watt/seed0/results.txt,newly_run
+fog,clipartt,0,failed:1,,,,8.154,/home/wwww/hzl/results/acdc_natural_shift_20260720/00_smoke/fog/clipartt/seed0/results.txt,newly_run
+fog,mlmp,0,ok,26.64,34.74,60.63,9.944,/home/wwww/hzl/results/acdc_natural_shift_20260720/00_smoke/fog/mlmp/seed0/results.txt,newly_run
+fog,trace,0,ok,28.18,36.31,61.04,39.331,/home/wwww/hzl/results/acdc_natural_shift_20260720/00_smoke/fog/trace/seed0/results.txt,newly_run

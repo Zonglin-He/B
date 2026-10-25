@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_object/defocus_blur",
+  "duration_sec": 1006.198,
+  "evidence_type": "newly_run",
+  "results": {
+    "defocus_blur": {
+      "mAcc": 54.69,
+      "mAcc_std": 0.0,
+      "mDice": 40.52,
+      "mDice_std": 0.0,
+      "mIoU": 27.38,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{4pt}
+\caption{Per-dataset reliability-quartile analysis for matched TTA baselines. Each cell reports C$\rightarrow$H / Flip in percent. Q1 and Q4 denote the lowest- and highest-reliability candidates, respectively. Quartiles are formed independently within each dataset and semantic role, while the resulting candidate bins are shared by all methods. Both metrics are conditioned on each method's initially correct regions. Lower is better; no result pools candidates across datasets.}
+\label{tab:baseline-reliability-quartiles-per-dataset}
+\begin{tabular}{llrrrr}
+\toprule
+Dataset & Method & Q1 C$\rightarrow$H / Flip & Q2 & Q3 & Q4 \\
+\midrule
+Waterbirds-Seg & No Adapt & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 \\
+ & TENT & 8.4 / 86.7 & 2.9 / 79.4 & 0.0 / 67.1 & 1.2 / 50.0 \\
+ & TPT & 10.8 / 95.2 & 15.7 / 83.3 & 6.0 / 77.4 & 8.3 / 61.9 \\
+ & WATT & 70.7 / 92.4 & 66.0 / 95.1 & 80.2 / 92.3 & 62.5 / 81.8 \\
+ & CLIPArTT & 75.9 / 81.9 & 63.7 / 85.3 & 55.3 / 68.2 & 47.6 / 59.5 \\
+ & MLMP & 27.7 / 83.0 & 14.7 / 55.9 & 9.5 / 38.1 & 4.8 / 23.8 \\
+ & \textbf{CFC-TTA} & 9.6 / 86.2 & 10.8 / 69.6 & 2.4 / 51.2 & 3.6 / 31.0 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,32 @@
+{
+  "evidence_type": "newly_run",
+  "timestamp": "2026-07-18 12:54:45",
+  "protocol": "same clean image prefix, NaCLIP ViT-L/14 backbone, and frozen CFC-TTA candidate masks",
+  "baseline_optimization": {
+    "lr": 0.001,
+    "steps": 10,
+    "tpt_n_ctx": 4,
+    "watt_l": 2,
+    "watt_m": 5,
+    "clipartt_k": 3,
+    "source": "public MLMP baseline integration and the project's existing matched baseline protocol"
+  },
+  "trace_optimization": "canonical dataset-specific settings from cfc_tta.configs.best_clean",
+  "candidate_source": "pre-adaptation CFC-TTA dense predictions",
+  "aggregation": "region-level statistics plus subset-level confusion-matrix mIoU",
+  "datasets": [
+    "coco_cd",
+    "waterbirds_seg"
+  ],
+  "methods": [
+    "tpt",
+    "watt",
+    "clipartt"
+  ],
+  "max_images": 240,
+  "max_images_by_dataset": {
+    "coco_cd": 240,
+    "waterbirds_seg": 240
+  },
+  "seed": 0
+}

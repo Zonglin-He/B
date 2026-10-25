@@ -1,0 +1,67 @@
+{
+  "confirmation_split": "all 124 calibration-sequence frames; select by macro mIoU over fog/night/rain/snow",
+  "coordinate_policy": "Tune one parameter at a time and freeze its best value before moving on.",
+  "default_confirmation_condition_csv": "/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/summary/condition_mean_std_summary.csv",
+  "evidence_type": "newly_run_tuning_protocol",
+  "held_out_split": "282 frames from disjoint sequences; never read by this script",
+  "methods": [
+    "trace"
+  ],
+  "search_spaces": {
+    "trace": [
+      [
+        "lr",
+        [
+          0.0001,
+          0.0003,
+          0.00063,
+          0.001,
+          0.003,
+          0.01
+        ]
+      ],
+      [
+        "steps",
+        [
+          1,
+          3,
+          5,
+          10,
+          16
+        ]
+      ],
+      [
+        "cfc_max_regions",
+        [
+          4,
+          8,
+          16,
+          24,
+          32
+        ]
+      ],
+      [
+        "cfc_min_region_conf",
+        [
+          0.0,
+          0.211,
+          0.478,
+          0.70675
+        ]
+      ],
+      [
+        "cfc_rho_min",
+        [
+          0.0,
+          0.1,
+          0.5,
+          0.9
+        ]
+      ]
+    ]
+  },
+  "selection_split": "tuning_proxy: 8 frames per weather from calibration-only sequences",
+  "split_manifest": "/home/wwww/hzl/data/acdc/eval_sequence_split_v1/manifest.json",
+  "suite": "acdc_sequence_disjoint_coordinate_tuning",
+  "weather_aggregation": "Each configuration is evaluated once on the pooled split with per-image confusion statistics; fog/night/rain/snow mIoU values are then reconstructed and macro-averaged."
+}

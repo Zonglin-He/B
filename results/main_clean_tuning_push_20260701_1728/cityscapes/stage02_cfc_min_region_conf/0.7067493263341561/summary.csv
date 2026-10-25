@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+cityscapes,ok,31.49,43.9,53.27,33.35,-1.860000000000003,0,1756.22,/home/wwww/hzl/results/main_clean_tuning_push_20260701_1728/cityscapes/stage02_cfc_min_region_conf/0.7067493263341561/cityscapes/minimal_cfc/results.txt,newly_run,paper_ready

@@ -1,0 +1,12 @@
+dataset,stage,channel,param,value,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,exit_code,duration_sec,summary
+voc21,1,param,cfc_max_regions,24,45.4,58.82,83.43,50.78,-5.380000000000003,0,31.97,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/24/summary.csv
+voc21,1,param,cfc_max_regions,1,44.8,58.08,83.11,50.78,-5.980000000000004,0,25.59,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/1/summary.csv
+voc21,1,param,cfc_max_regions,2,45.46,58.84,84.41,50.78,-5.32,0,27.28,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/2/summary.csv
+voc21,1,param,cfc_max_regions,3,45.51,58.89,83.88,50.78,-5.270000000000003,0,28.29,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/3/summary.csv
+voc21,1,param,cfc_max_regions,4,45.33,58.71,83.83,50.78,-5.450000000000003,0,29.18,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/4/summary.csv
+voc21,1,param,cfc_max_regions,6,45.48,58.84,83.8,50.78,-5.300000000000004,0,30.22,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/6/summary.csv
+voc21,1,param,cfc_max_regions,8,45.55,58.89,83.77,50.78,-5.230000000000004,0,30.79,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/8/summary.csv
+voc21,1,param,cfc_max_regions,10,45.42,58.81,83.55,50.78,-5.359999999999999,0,31.32,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/10/summary.csv
+voc21,1,param,cfc_max_regions,14,45.41,58.8,83.53,50.78,-5.3700000000000045,0,31.71,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/14/summary.csv
+voc21,1,param,cfc_max_regions,20,45.38,58.79,83.43,50.78,-5.399999999999999,0,31.94,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/20/summary.csv
+voc21,1,param,cfc_max_regions,32,45.38,58.79,83.42,50.78,-5.399999999999999,0,31.95,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_20260630/voc21/stage01_cfc_max_regions/32/summary.csv

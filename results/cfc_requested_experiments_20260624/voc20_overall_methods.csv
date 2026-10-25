@@ -1,0 +1,5 @@
+evidence_type,input_dir,dataset,method,num_images,mIoU,mDice,mAcc
+preexisting_artifact,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,NoAdapt,1449,78.14838290214539,87.33713030815125,87.57684826850891
+preexisting_artifact,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,TENT,1449,77.32989192008972,86.5487277507782,88.68039846420288
+preexisting_artifact,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,MLMP,1449,83.00325274467468,90.35172462463379,91.25221371650696
+preexisting_artifact,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,CFC-TTA,1449,84.6376121044159,91.19479060173035,92.54800081253052

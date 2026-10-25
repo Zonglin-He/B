@@ -1,0 +1,68 @@
+{
+  "baseline_optimizer_protocol": {
+    "batch_size": 1,
+    "lr": 0.001,
+    "steps": 10
+  },
+  "conditions": [
+    "all"
+  ],
+  "config_overrides": {
+    "trace": {
+      "batch_size": 1,
+      "lr": 0.001,
+      "params": {
+        "cfc_max_regions": 16,
+        "cfc_min_region_conf": 0.478,
+        "cfc_rho_min": 0.1
+      },
+      "steps": 16
+    }
+  },
+  "evidence_type": "newly_run_protocol",
+  "label_space": "Cityscapes 19 train IDs",
+  "methods": [
+    "trace"
+  ],
+  "overrides_json": "/home/wwww/hzl/results/acdc_sequence_post_direct_trace_tuning_20260721/cells/tuning_proxy/trace/98e9a33a33be/overrides.json",
+  "save_per_image_stats": true,
+  "seeds": [
+    0
+  ],
+  "shift_type": "real captured adverse weather; no synthetic MLMP corruption is used",
+  "source_domain": "Cityscapes clean",
+  "suite": "natural_domain_shift_acdc",
+  "target_domain": "ACDC val",
+  "trace_config": {
+    "batch_size": 1,
+    "lr": 0.00063,
+    "params": {
+      "alpha_cls": 0.0,
+      "cfc_bg_budget_cap": 0.0,
+      "cfc_bg_cap_min_fg": 0.0,
+      "cfc_blur_kernel": 9,
+      "cfc_fg_area_a0": 4.0,
+      "cfc_fg_area_tau": 0.75,
+      "cfc_fg_guard": true,
+      "cfc_fg_guard_eta": 0.5,
+      "cfc_fg_guard_mode": "semantic_area",
+      "cfc_local_grouping": false,
+      "cfc_max_regions": 32,
+      "cfc_max_regions_per_class": 6,
+      "cfc_min_region_conf": 0.478,
+      "cfc_real_class_grouping": false,
+      "cfc_region_normalized_loss": true,
+      "cfc_region_selection": "threshold",
+      "cfc_rho_min": 0.1,
+      "cfc_tau_cf": 0.32762,
+      "cfc_use_cf_stability": true,
+      "cfc_use_source_diagnosis": true,
+      "cfc_use_source_tracing": true,
+      "cfc_use_target_support": true,
+      "cfc_use_valid_mask": false,
+      "cfc_view_batch_size": 8
+    },
+    "steps": 16
+  },
+  "trace_config_policy": "Start from the complete Cityscapes TRACE configuration. Any ACDC tuning override is selected on the sequence-disjoint calibration root and recorded verbatim."
+}

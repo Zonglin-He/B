@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc20/frost",
+  "duration_sec": 514.501,
+  "evidence_type": "newly_run",
+  "results": {
+    "frost": {
+      "mAcc": 83.59,
+      "mAcc_std": 0.0,
+      "mDice": 81.05,
+      "mDice_std": 0.0,
+      "mIoU": 70.12,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

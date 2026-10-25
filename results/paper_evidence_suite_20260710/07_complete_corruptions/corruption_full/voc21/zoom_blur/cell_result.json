@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc21/zoom_blur",
+  "duration_sec": 1282.053,
+  "evidence_type": "newly_run",
+  "results": {
+    "zoom_blur": {
+      "mAcc": 61.45,
+      "mAcc_std": 0.0,
+      "mDice": 54.56,
+      "mDice_std": 0.0,
+      "mIoU": 38.74,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

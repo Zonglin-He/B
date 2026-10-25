@@ -1,0 +1,12 @@
+{
+  "trace": {
+    "batch_size": 1,
+    "lr": 0.001,
+    "params": {
+      "cfc_max_regions": 8,
+      "cfc_min_region_conf": 0.478,
+      "cfc_rho_min": 0.1
+    },
+    "steps": 16
+  }
+}

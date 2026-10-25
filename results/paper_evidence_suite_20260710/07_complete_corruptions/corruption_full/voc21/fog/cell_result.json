@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc21/fog",
+  "duration_sec": 1301.278,
+  "evidence_type": "newly_run",
+  "results": {
+    "fog": {
+      "mAcc": 77.31,
+      "mAcc_std": 0.0,
+      "mDice": 63.66,
+      "mDice_std": 0.0,
+      "mIoU": 47.98,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

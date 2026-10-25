@@ -1,0 +1,25 @@
+{
+  "status": "sealed_before_label_scoring",
+  "records": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/smoke/groups/tent/tent/predictions/636b27b9fa5e3ec92052e8071fb87e55d6c754e49d1d5db4a9fe233051876095.npz",
+      "sha256": "3a4753d47412e33b67aa7d4ef59f3c675913667a9bda03cad036626065959c6f",
+      "before_sha256": "6139cf23d46c8323495cc69019793380718b274549075eeeb51e784141ba27c9",
+      "after_sha256": "40a6a2553cf716e0934b81097502ea11cbe3b67065de5169623dead5be789068"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000132165.jpg",
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/smoke/groups/tent/tent/predictions/1a496ea65080895a3a5a6db2799cf1f69879538b03a6547de7eb9c6c48799d4d.npz",
+      "sha256": "fb0bce10f08276d985db8c0e0714a0158674b01ed32b7928f382e2c00c49d654",
+      "before_sha256": "81006b7157e6d88e60aa941a2f536fac78093c72ccb7ed80102ac745fd3cdf6b",
+      "after_sha256": "1c9ac2c34799f3bd3d50812526fd851e934319cc9145e508923fdffa5e9db9a7"
+    }
+  ],
+  "labels_in_artifact": false,
+  "classes": [
+    "background",
+    "cat",
+    "dog"
+  ]
+}

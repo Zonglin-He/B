@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc20/snow",
+  "duration_sec": 444.599,
+  "evidence_type": "newly_run",
+  "results": {
+    "snow": {
+      "mAcc": 88.38,
+      "mAcc_std": 0.0,
+      "mDice": 87.01,
+      "mDice_std": 0.0,
+      "mIoU": 78.28,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

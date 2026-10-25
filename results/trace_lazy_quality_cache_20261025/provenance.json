@@ -1,0 +1,13 @@
+{
+  "sources": {
+    "/home/wwww/hzl/results/trace_algorithm_efficiency_20261025/gpu_fixed_config/evaluation/pc60/quality_only/attempt_001/candidate_diagnostics.csv": "4ab78e23c9df9302a190fc31c4a8e782d8d76c5ee8fd089ff0cfcf58946ea0dc",
+    "/home/wwww/hzl/results/trace_algorithm_efficiency_20261025/gpu_fixed_config/evaluation/voc21/quality_only/attempt_001/candidate_diagnostics.csv": "b5b5f5a51ace08c1b616dc610b9967b613aefde47ef41246e47b2edcf488cfa5",
+    "/home/wwww/hzl/results/trace_algorithm_efficiency_20261025/gpu_fixed_config/evaluation/coco_cd/quality_only/attempt_001/candidate_diagnostics.csv": "b90ebd7205c297103b58345e2c18defae2dbcefde4c2d4a7e5f3095b3b58988f",
+    "/home/wwww/hzl/results/trace_algorithm_efficiency_20261025/gpu_fixed_config/evaluation/coco_object/quality_only/attempt_001/candidate_diagnostics.csv": "bd203690170057465faf7e30d4fe40e19a3d9e45c1e5412bfd3f19d8000b66b0"
+  },
+  "pilot_seal": "e64c685ddd641b7991da198d2f9e05753094129b7ac1cd311ad59ba74d5c9843",
+  "selector_sha256": "03a098e47b747c213dff739632e36c06150cdd2e7c64bff111b33ee1f2b2a201",
+  "fixed_support_replay": true,
+  "timing_or_accuracy_claim": false,
+  "meaning": "Query decisions use saved complete supports. New batching can change floating-point supports; these are conditional counts, not GPU timings or adaptation outcomes."
+}

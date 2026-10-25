@@ -1,0 +1,5 @@
+condition,method,seed,images,mIoU,mDice,mAcc,stats_path,evidence_type
+fog,trace,0,8,26.529583146832575,35.81342941557801,57.159369118814354,/home/wwww/hzl/results/acdc_sequence_post_direct_trace_tuning_20260721/cells/tuning_proxy/trace/82d03ef8dbf3/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats
+night,trace,0,8,19.779748100808792,27.54881409468383,48.52030777792085,/home/wwww/hzl/results/acdc_sequence_post_direct_trace_tuning_20260721/cells/tuning_proxy/trace/82d03ef8dbf3/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats
+rain,trace,0,8,25.073214616037976,33.06085714141568,46.883969285077164,/home/wwww/hzl/results/acdc_sequence_post_direct_trace_tuning_20260721/cells/tuning_proxy/trace/82d03ef8dbf3/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats
+snow,trace,0,8,27.057536718798914,35.9062053753126,49.79811455771755,/home/wwww/hzl/results/acdc_sequence_post_direct_trace_tuning_20260721/cells/tuning_proxy/trace/82d03ef8dbf3/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats

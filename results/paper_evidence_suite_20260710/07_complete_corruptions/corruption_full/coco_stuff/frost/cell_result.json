@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_stuff/frost",
+  "duration_sec": 2389.603,
+  "evidence_type": "newly_run",
+  "results": {
+    "frost": {
+      "mAcc": 27.2,
+      "mAcc_std": 0.0,
+      "mDice": 22.61,
+      "mDice_std": 0.0,
+      "mIoU": 14.17,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

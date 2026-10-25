@@ -1,0 +1,82 @@
+{
+  "pc60": {
+    "dataset": "PascalContext60Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 9,
+    "lr": 0.00225,
+    "steps": 11,
+    "trace_max_regions": 22,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "voc21": {
+    "dataset": "PascalVOC21Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 16,
+    "lr": 0.00063,
+    "steps": 36,
+    "trace_max_regions": 33,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "coco_cd": {
+    "dataset": "COCOCDDataset",
+    "data_subdir": "coco_cd_ovss",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 28,
+    "lr": 0.0086,
+    "steps": 5,
+    "trace_max_regions": 4,
+    "class_extensions": false,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+  },
+  "coco_object": {
+    "dataset": "COCOObjectDataset",
+    "data_subdir": "coco_stuff",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 14,
+    "lr": 0.003,
+    "steps": 29,
+    "trace_max_regions": 34,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/pc60/brightness",
+  "duration_sec": 1126.869,
+  "evidence_type": "newly_run",
+  "results": {
+    "brightness": {
+      "mAcc": 52.56,
+      "mAcc_std": 0.0,
+      "mDice": 41.39,
+      "mDice_std": 0.0,
+      "mIoU": 29.11,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

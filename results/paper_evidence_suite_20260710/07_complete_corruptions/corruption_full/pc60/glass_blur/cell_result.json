@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/pc60/glass_blur",
+  "duration_sec": 1546.668,
+  "evidence_type": "newly_run",
+  "results": {
+    "glass_blur": {
+      "mAcc": 45.7,
+      "mAcc_std": 0.0,
+      "mDice": 37.77,
+      "mDice_std": 0.0,
+      "mIoU": 26.16,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

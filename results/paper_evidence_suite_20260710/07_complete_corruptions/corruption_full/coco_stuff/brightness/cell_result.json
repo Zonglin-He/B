@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_stuff/brightness",
+  "duration_sec": 2372.622,
+  "evidence_type": "newly_run",
+  "results": {
+    "brightness": {
+      "mAcc": 39.18,
+      "mAcc_std": 0.0,
+      "mDice": 30.44,
+      "mDice_std": 0.0,
+      "mIoU": 20.07,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

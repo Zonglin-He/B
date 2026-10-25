@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_stuff,ok,21.61,32.33,42.37,21.25,0.35999999999999943,1,2371.92,/home/wwww/hzl/results/coco_stuff_cfctta_3seeds_20260708_103838/seed0/coco_stuff/coco_stuff/minimal_cfc/results.txt,newly_run,paper_ready

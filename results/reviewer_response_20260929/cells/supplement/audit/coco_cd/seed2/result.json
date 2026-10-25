@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "task": "isolated_audit",
+  "dataset": "coco_cd",
+  "seed": 2,
+  "candidates": 1998,
+  "full_panel": true,
+  "reference": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/coco_cd/candidate_outcomes.csv",
+  "cache": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/11_final_diagnostics/coco_cd/trace_candidate_cache.pkl.gz",
+  "reference_sha256": "22fdf910cfca3b3b1f570ca31bdea35948006660cfed5a29877ff4cd1011c04d",
+  "cache_sha256": "d8c25648b89f2fe0b6e58cb2ad092d68cd56c8f1310ae1dc3339c2d91b6ec715",
+  "duration_seconds": 51.33745644474402,
+  "max_null_probability_difference": 0.0,
+  "update_policy": "one unit-weight candidate, one step, fresh model and optimizer reset; no GT in loss",
+  "endpoint": "mean per-location GT probability; max-collapse class extensions then renormalize; pre/post batch size 1",
+  "config": {
+    "dataset": "COCOCDDataset",
+    "data_subdir": "coco_cd_ovss",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 28,
+    "lr": 0.0086,
+    "steps": 5,
+    "trace_max_regions": 4,
+    "trace_view_batch_size": 8,
+    "class_extensions": false,
+    "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+  },
+  "historical_warning": "same previously analyzed masks; fresh outcomes, not an untouched confirmation panel"
+}

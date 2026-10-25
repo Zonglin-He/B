@@ -1,0 +1,24 @@
+{
+  "batch_tuning": {
+    "status": "completed",
+    "trials": 16,
+    "selected_batch_size": 8,
+    "full_mIoU": 52.21642747390581,
+    "finished_at": "2026-10-25T01:32:02.271046+00:00"
+  },
+  "parent_audit": {
+    "status": "completed",
+    "cells": 24,
+    "finished_at": "2026-10-25T00:30:20.056858+00:00",
+    "note": "Old external Full CD excluded. Extended environment unknown for primary costs; treat these as exploratory profiles."
+  },
+  "parent_suite": {
+    "status": "completed",
+    "completed": 29,
+    "cells_total": 29,
+    "finished_at": "2026-10-25T00:29:51.358392+00:00",
+    "wall_seconds": 3482.8536455566064
+  },
+  "no_active_benchmark_workers": true,
+  "inherited_config_or_outcomes": false
+}

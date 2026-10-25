@@ -1,0 +1,16 @@
+{
+  "created": 1790690001.645364,
+  "datasets": [
+    "voc21",
+    "pc60",
+    "coco_object",
+    "coco_stuff",
+    "coco_cd",
+    "waterbirds_seg"
+  ],
+  "max_images": 32,
+  "reason": "Explicit extra operator requested in W5; all six diagnostic datasets, no outcome-based selection",
+  "operator": "OpenCV Telea radius=3; holes are the selected mask or its complement; retained pixels unchanged",
+  "limitation": "Classical local inpainting, not a learned generative inpainting model; may have artifacts on large masks",
+  "schedule": "one serial auxiliary diagnostic after each main cell; no interference with running GPU cells"
+}

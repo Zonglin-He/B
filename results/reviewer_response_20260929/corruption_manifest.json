@@ -1,0 +1,113 @@
+{
+  "datasets": [
+    "voc21",
+    "pc60",
+    "coco_object",
+    "coco_cd"
+  ],
+  "methods": [
+    "noadapt",
+    "tent",
+    "tpt",
+    "watt",
+    "clipartt",
+    "mlmp",
+    "trace"
+  ],
+  "corruptions": [
+    "gaussian_noise",
+    "shot_noise",
+    "defocus_blur",
+    "brightness",
+    "contrast",
+    "jpeg_compression"
+  ],
+  "severities": [
+    1,
+    3,
+    5
+  ],
+  "images_per_dataset": 256,
+  "sampling_seed": 20270929,
+  "adaptation_seeds": [
+    0
+  ],
+  "corruptions_seed": "fixed image-specific seed shared across methods",
+  "implementation": {
+    "package": "imagecorruptions",
+    "version": "1.1.2",
+    "upstream": "https://github.com/bethgelab/imagecorruptions",
+    "source_hashes": {
+      "corruptions.py": "adb5944eccfafe0118e777e3300c94420eab486556ca805ea101d3374d130cbb",
+      "__init__.py": "14c8f4da43f1e7fe2fd0b4b9b3b8d668962aacebd574f888140f22502704129a"
+    },
+    "seed_policy": "SHA256(dataset, image basename, operator, severity, 20270929); independent of method and adaptation seed",
+    "location": "entire resized RGB image, before normalization and overlapping crops",
+    "labels": "unchanged",
+    "protocol": "selected common-corruption panel, not the full ImageNet-C benchmark"
+  },
+  "metrics": [
+    "per corruption/severity mIoU",
+    "per severity arithmetic mean mIoU over six corruptions",
+    "clean minus corrupted mean mIoU"
+  ],
+  "exclusions": "No tuning on corrupted labels; no geometric warps; no cherry-picked severities; not a natural-shift or continual claim",
+  "configuration_files": {
+    "pc60/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc60_trace.json",
+    "coco_object/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_object_trace.json",
+    "coco_cd/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_cd_trace.json",
+    "coco_stuff/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_stuff_trace.json",
+    "voc21/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc21_trace.json",
+    "waterbirds_seg/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/waterbirds_seg_trace.json",
+    "waterbirds_seg/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/waterbirds_seg_mlmp.json",
+    "waterbirds_seg/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/waterbirds_seg_tent.json",
+    "waterbirds_seg/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/waterbirds_seg_tpt.json",
+    "waterbirds_seg/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/waterbirds_seg_watt.json",
+    "waterbirds_seg/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/waterbirds_seg_clipartt.json",
+    "waterbirds_seg/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/waterbirds_seg_noadapt.json",
+    "voc20/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc20_trace.json",
+    "voc20/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc20_mlmp.json",
+    "voc20/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc20_tent.json",
+    "voc20/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc20_tpt.json",
+    "voc20/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc20_watt.json",
+    "voc20/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc20_clipartt.json",
+    "voc20/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc20_noadapt.json",
+    "voc21/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc21_mlmp.json",
+    "voc21/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc21_tent.json",
+    "voc21/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc21_tpt.json",
+    "voc21/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc21_watt.json",
+    "voc21/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc21_clipartt.json",
+    "voc21/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/voc21_noadapt.json",
+    "pc59/trace": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc59_trace.json",
+    "pc59/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc59_mlmp.json",
+    "pc59/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc59_tent.json",
+    "pc59/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc59_tpt.json",
+    "pc59/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc59_watt.json",
+    "pc59/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc59_clipartt.json",
+    "pc59/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc59_noadapt.json",
+    "pc60/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc60_mlmp.json",
+    "pc60/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc60_tent.json",
+    "pc60/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc60_tpt.json",
+    "pc60/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc60_watt.json",
+    "pc60/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc60_clipartt.json",
+    "pc60/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/pc60_noadapt.json",
+    "coco_object/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_object_mlmp.json",
+    "coco_object/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_object_tent.json",
+    "coco_object/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_object_tpt.json",
+    "coco_object/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_object_watt.json",
+    "coco_object/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_object_clipartt.json",
+    "coco_object/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_object_noadapt.json",
+    "coco_stuff/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_stuff_mlmp.json",
+    "coco_stuff/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_stuff_tent.json",
+    "coco_stuff/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_stuff_tpt.json",
+    "coco_stuff/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_stuff_watt.json",
+    "coco_stuff/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_stuff_clipartt.json",
+    "coco_stuff/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_stuff_noadapt.json",
+    "coco_cd/noadapt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_cd_noadapt.json",
+    "coco_cd/tent": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_cd_tent.json",
+    "coco_cd/tpt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_cd_tpt.json",
+    "coco_cd/watt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_cd_watt.json",
+    "coco_cd/clipartt": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_cd_clipartt.json",
+    "coco_cd/mlmp": "/home/wwww/hzl/results/reviewer_response_20260929/released_configs/coco_cd_mlmp.json"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc21/brightness",
+  "duration_sec": 1268.391,
+  "evidence_type": "newly_run",
+  "results": {
+    "brightness": {
+      "mAcc": 79.81,
+      "mAcc_std": 0.0,
+      "mDice": 66.9,
+      "mDice_std": 0.0,
+      "mIoU": 51.76,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

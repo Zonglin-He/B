@@ -1,0 +1,24 @@
+{
+  "sources": [
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/role_free/coco_cd/full/per_image_counts.json",
+      "sha256": "c3abf20098b547015f2b97a0b031c57472eba2fc9159f1dd8a428d6e033ae96c"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/role_free/coco_cd/quality_only/per_image_counts.json",
+      "sha256": "2c2d1c18041b8ffb0be11e4b7c75b317ce677322517eb69de55517fc0a855581"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/role_free/coco_cd/all_dominance/per_image_counts.json",
+      "sha256": "3252be18ed82006394041be6541300e606905abc320c4ac6640e33f152deedf9"
+    }
+  ],
+  "metadata": {
+    "/home/wwww/hzl/external/label-flips/annotations/coco_cd/instances_test_balanced.json": "05e56f9e0145778cc2d6d8921c7c8bc4ee383449b5bd27dba42473eecc9c585f"
+  },
+  "aggregation": "sum image intersections/unions within group before classwise IoU",
+  "absent_class_rule": "omit zero-union classes; report present class indices in every row",
+  "group_definition": "2*label+context; aligned if label=context; counterfactual otherwise",
+  "caveat": "worst-group mIoU is a groupwise segmentation aggregate, not classification worst-group accuracy",
+  "foreground_errors": "cannot infer identity flips/omissions from I/U caches; fresh prediction run required"
+}

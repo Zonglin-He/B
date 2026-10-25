@@ -1,0 +1,108 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "groups/coco_cd/noadapt",
+    "dataset": "coco_cd",
+    "task": "evaluate",
+    "method": "noadapt",
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "dependencies": [
+      "smoke/controls/coco_cd",
+      "smoke/controls/coco_object",
+      "smoke/groups/noadapt",
+      "smoke/groups/tent",
+      "smoke/groups/tpt",
+      "smoke/groups/mlmp"
+    ]
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "noadapt",
+      "label": "noadapt",
+      "images": 500,
+      "full_split": true,
+      "metrics": {
+        "mIoU": 61.14434758192533,
+        "intersection": [
+          17361324,
+          2031348,
+          1788810
+        ],
+        "union": [
+          21194524,
+          3278815,
+          4521179
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 61.14434758192533,
+        "intersection": [
+          17361324,
+          2031348,
+          1788810
+        ],
+        "union": [
+          21194524,
+          3278815,
+          4521179
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 25088000,
+      "initially_correct_pixels": 21181482,
+      "correct_to_wrong_pixels": 0,
+      "initially_wrong_pixels": 3906518,
+      "wrong_to_correct_pixels": 0,
+      "correct_to_wrong_pct": 0.0,
+      "wrong_to_correct_pct": 0.0,
+      "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/groups/coco_cd/noadapt/noadapt/prediction_seal.json",
+      "prediction_seal_sha256": "4a1b1e61aa1c6142e7ec5b34b19ee32bac351056bd0150acabcf1c04e26e1351",
+      "worst_group_mIoU": 41.36840169700287,
+      "foreground_errors": {
+        "foreground_pixels": 3996906,
+        "identity_flip_pixels": 73318,
+        "foreground_to_background_pixels": 103430,
+        "identity_flip_pct": 1.834368884332031,
+        "foreground_to_background_pct": 2.5877516258826203
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 5.948937825392932,
+  "reset_checks": 18,
+  "all_resets_exact": true,
+  "native_cache_equivalence": [],
+  "image_set_sha256": "e6f0934f74ce9bbc480336aad1ee7fa99073308a6e683988c8871f7907d6d61b",
+  "image_order_sha256": "55ccf9157b9eba12318a2a73d3ea37f014bb6128a9db5a40b4118f6e17693a5d"
+}

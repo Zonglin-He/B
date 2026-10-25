@@ -1,0 +1,13 @@
+condition,method,images,mIoU,mDice,mAcc,evidence_type,source,display_method
+fog,noadapt,100,23.16,33.43,57.39,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/fog/noadapt/seed0/results.txt,No Adapt
+fog,mlmp,100,33.06,45.56,58.56,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/mlmp/seed0/per_image_stats/original_s0.npz,MLMP
+fog,trace,100,33.9,46.6,57.67,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/trace/seed0/per_image_stats/original_s0.npz,TRACE
+night,noadapt,106,21.63,31.49,49.97,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/night/noadapt/seed0/results.txt,No Adapt
+night,mlmp,106,24.53,35.56,48.62,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/mlmp/seed0/per_image_stats/original_s0.npz,MLMP
+night,trace,106,24.71,36.11,47.02,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/trace/seed0/per_image_stats/original_s0.npz,TRACE
+rain,noadapt,100,23.84,34.26,55.07,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/rain/noadapt/seed0/results.txt,No Adapt
+rain,mlmp,100,32.65,44.48,54.81,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/mlmp/seed0/per_image_stats/original_s0.npz,MLMP
+rain,trace,100,32.82,44.81,52.78,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/trace/seed0/per_image_stats/original_s0.npz,TRACE
+snow,noadapt,100,23.3,34.32,53.92,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/snow/noadapt/seed0/results.txt,No Adapt
+snow,mlmp,100,31.48,44.0,52.63,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/mlmp/seed0/per_image_stats/original_s0.npz,MLMP
+snow,trace,100,31.7,44.33,51.47,newly_run_derived_from_full_per_image_stats,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/trace/seed0/per_image_stats/original_s0.npz,TRACE

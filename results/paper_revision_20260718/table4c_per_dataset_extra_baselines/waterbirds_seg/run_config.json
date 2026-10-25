@@ -1,0 +1,73 @@
+{
+  "evidence_type": "newly_run",
+  "timestamp": "2026-07-18 13:02:13",
+  "dataset_key": "waterbirds_seg",
+  "dataset": "WaterbirdsSegDataset",
+  "data_dir": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95",
+  "corruption": "original",
+  "max_batches": 120,
+  "methods": [
+    "tpt",
+    "watt",
+    "clipartt"
+  ],
+  "baseline_protocol": {
+    "lr": 0.001,
+    "steps": 10,
+    "tpt_n_ctx": 4,
+    "watt_l": 2,
+    "watt_m": 5,
+    "clipartt_k": 3
+  },
+  "param_preset": "clean",
+  "params": {
+    "alpha_cls": 0.01,
+    "cfc_max_regions": 2,
+    "cfc_max_regions_per_class": 1,
+    "cfc_region_selection": "threshold",
+    "cfc_min_region_conf": 0.211,
+    "cfc_view_batch_size": 8,
+    "cfc_blur_kernel": 9,
+    "cfc_tau_cf": 10.0,
+    "cfc_rho_min": 0.98,
+    "cfc_use_source_tracing": true,
+    "cfc_use_target_support": true,
+    "cfc_use_source_diagnosis": true,
+    "cfc_use_cf_stability": true,
+    "cfc_use_valid_mask": false,
+    "cfc_real_class_grouping": false,
+    "cfc_local_grouping": false,
+    "cfc_fg_guard": true,
+    "cfc_fg_guard_mode": "semantic_area",
+    "cfc_fg_guard_eta": 0.016,
+    "cfc_fg_area_a0": 4.0,
+    "cfc_fg_area_tau": 2.91,
+    "cfc_bg_budget_cap": 0.0,
+    "cfc_bg_cap_min_fg": 0.0,
+    "cfc_region_normalized_loss": true
+  },
+  "vocabulary": {
+    "variant": "canonical",
+    "model_classes": [
+      "background",
+      "landbird",
+      "waterbird"
+    ],
+    "eval_class_names": [
+      "background",
+      "landbird",
+      "waterbird"
+    ],
+    "model_to_eval": [
+      0,
+      1,
+      2
+    ],
+    "num_base_classes": 3
+  },
+  "num_model_classes": 3,
+  "num_eval_classes": 3,
+  "num_base_classes": 3,
+  "device": "cuda",
+  "gpu": "NVIDIA GeForce RTX 5090"
+}

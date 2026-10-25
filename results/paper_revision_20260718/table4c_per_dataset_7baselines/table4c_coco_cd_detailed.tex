@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\caption{Matched-candidate reliability analysis on COCO-CD. Each quartile cell reports $\Delta$ region accuracy / correct-to-harm percentage; higher is better for $\Delta$Acc and lower is better for C$\rightarrow$H. Quartiles are role controlled within this dataset only.}
+\label{tab:source-risk-coco-cd}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & mIoU $\uparrow$ & Q1 $\Delta$Acc / C$\rightarrow$H & Q2 & Q3 & Q4 & AUC $\uparrow$ \\
+\midrule
+No Adapt & 62.76 & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 & -- \\
+TENT & 71.76 & 6.9 / 0.0 & 4.6 / 0.0 & 3.6 / 0.0 & 3.8 / 0.0 & -- \\
+TPT & 69.20 & 6.7 / 10.3 & 4.9 / 8.6 & 2.3 / 10.0 & 4.7 / 7.1 & 0.922 \\
+WATT & 39.31 & -24.8 / 56.7 & -21.7 / 53.3 & -18.1 / 38.3 & -13.5 / 35.1 & 0.518 \\
+CLIPArTT & 55.86 & -3.1 / 19.0 & -4.4 / 22.4 & -3.4 / 15.0 & -2.3 / 12.5 & 0.434 \\
+MLMP & 71.17 & 3.3 / 0.0 & 2.3 / 0.0 & 1.8 / 0.0 & 1.6 / 0.0 & -- \\
+\textbf{CFC-TTA} & 73.04 & 3.7 / 3.4 & 3.1 / 1.7 & 2.3 / 1.7 & 2.6 / 0.0 & 0.934 \\
+\bottomrule
+\end{tabular}
+\end{table*}

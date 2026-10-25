@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_object/contrast",
+  "duration_sec": 1009.022,
+  "evidence_type": "newly_run",
+  "results": {
+    "contrast": {
+      "mAcc": 51.79,
+      "mAcc_std": 0.0,
+      "mDice": 37.64,
+      "mDice_std": 0.0,
+      "mIoU": 24.8,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

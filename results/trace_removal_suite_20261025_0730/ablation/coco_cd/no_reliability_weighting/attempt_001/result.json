@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "name": "ablation/coco_cd/no_reliability_weighting",
+  "dataset": "coco_cd",
+  "variant": "no_reliability_weighting",
+  "images": 500,
+  "split": "evaluation",
+  "full_split": true,
+  "metrics": {
+    "mIoU": 66.21,
+    "mDice": 78.45,
+    "mAcc": 90.34,
+    "aAcc": 88.44
+  },
+  "miou_unrounded": 66.20817227703118,
+  "intersection": [
+    18542393.0,
+    1884441.0,
+    1761095.0
+  ],
+  "union": [
+    21296181.0,
+    2887283.0,
+    3804607.0
+  ],
+  "ms_per_image": 38.782801338563765,
+  "peak_allocated_mib": 6820.41455078125,
+  "diagnostic_views_per_image": 11.986486486486486,
+  "warmup_episodes": 2,
+  "wall_seconds": 20.711410746909678,
+  "protocol_sha256": "883a770449eaefdbc73849ed6aa5b133578b86b4e235f2df0fda4e46744be071"
+}

@@ -1,0 +1,47 @@
+{
+  "status": "completed",
+  "dataset": "voc20",
+  "method": "trace",
+  "variant": "full",
+  "backend": "shared_legacy",
+  "protocol": "uniform",
+  "seed": 0,
+  "images": 128,
+  "full_split": false,
+  "calibration": false,
+  "metrics": {
+    "mIoU": 82.28,
+    "mDice": 89.71,
+    "mAcc": 91.92,
+    "aAcc": 90.33
+  },
+  "condition_metrics": {},
+  "config": {
+    "dataset": "PascalVOC20Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 1,
+    "lr": 0.001,
+    "steps": 10,
+    "trace_max_regions": 1,
+    "trace_view_batch_size": 24,
+    "class_extensions": true,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "warmup_batches": 5,
+  "ms_per_image": 149.79500587030154,
+  "images_per_second": 6.675789985053571,
+  "adaptation_ms_per_image": 141.40855258603284,
+  "visual_calls_per_image": 16.0,
+  "visual_inputs_per_image": 20.0,
+  "peak_allocated_mib": 1185.65087890625,
+  "metric_scope": "dataset classwise intersection/union; timing excludes loading and scoring"
+}

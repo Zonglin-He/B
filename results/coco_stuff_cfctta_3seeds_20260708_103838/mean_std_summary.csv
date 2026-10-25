@@ -1,0 +1,2 @@
+dataset,seeds,mIoU_mean,mIoU_std,mDice_mean,mDice_std,mAcc_mean,mAcc_std,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,evidence_type
+coco_stuff,0 1 2,21.61,0.019999999999999574,32.339999999999996,0.045825756949560134,42.346666666666664,0.06806859285553771,21.25,0.35999999999999943,1,newly_run_full_clean_3seeds

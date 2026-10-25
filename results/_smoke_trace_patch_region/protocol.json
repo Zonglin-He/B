@@ -1,0 +1,23 @@
+{
+  "commit": "037c94fce56df90458abe45ff247aa3d311764d3",
+  "dirty_diff_sha256": "e659e59e249fdb8628ccd6e3f28cee5f656439ad307481b33c4733405ae4c629",
+  "dirty": true,
+  "argv": [
+    "experiments/run_trace_patch_region_evidence.py",
+    "--output-root",
+    "/home/wwww/hzl/results/_smoke_trace_patch_region",
+    "--datasets",
+    "voc20",
+    "--max-images",
+    "2",
+    "--workers",
+    "0",
+    "--force"
+  ],
+  "evidence_type": "newly_run_protocol",
+  "split_rule": "sha1(image_path) mod 5; dev=0, test=1..4",
+  "ground_truth_usage": "evaluation_only",
+  "method_file_sha256": "b76b87e11f9872f6e1796e3ec71807c1a320b046f175a7efdaa468f7eaae8a99",
+  "views_file_sha256": "af22312044e1bf6c8ef94c4e2b33c8db0515a338f9eb9aa98ca5acd9c01267a5",
+  "reliability_file_sha256": "f4106b1f3cd7f150577c777e1fb3c27864ec7882c06f54099a22222cc730f0f9"
+}

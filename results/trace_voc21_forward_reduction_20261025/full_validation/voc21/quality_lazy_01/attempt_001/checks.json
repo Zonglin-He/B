@@ -1,0 +1,17 @@
+{
+  "algorithm": "quality_lazy_01",
+  "config_fixed": true,
+  "source_verified": true,
+  "environment_verified": true,
+  "data_cohort_verified": true,
+  "per_image_metrics_verified": true,
+  "synchronized_costs_verified": true,
+  "artifact_sha256": {
+    "result.json": "1bc0b0242ed6ad19617d04c3bed3e00ef6f653b283b2015d13aaa5244a42eaad",
+    "protocol.json": "2094d33e6d3207152ae1e7034ff9f97826bc05ef81da819d25f73e6fd7805245",
+    "per_image_counts.json": "aa8a15bf0780031141315709d02fb2018727f773afde53be7b7ecf480fbb9904",
+    "cost.csv": "f0305a7c3ff96f0091ed215f9723572cd2728e7892fc69da8f7052829ec5eea7",
+    "candidate_diagnostics.csv": "72629181d45c1d63a3f59b0eb0c1d63c933cda3f11620fa4c5754c027c2ebe74",
+    "adaptation_parameters.json": "525d6914aa23f3a927cbd85e6c147e2a90508ca1e18150746201351566538c3c"
+  }
+}

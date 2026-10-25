@@ -1,0 +1,25 @@
+{
+  "dataset": "pc59",
+  "fixed_method_params": {
+    "cfc_max_regions": 24,
+    "cfc_min_region_conf": 0.4782591369590684,
+    "alpha_cls": 0.0
+  },
+  "fixed_cfg_params": {
+    "lr": 0.001,
+    "steps": 16
+  },
+  "stage_best_param": "steps",
+  "stage_best_value": 16,
+  "stage_best_mIoU": 33.02,
+  "global_best": {
+    "dataset": "pc59",
+    "best_mIoU": 33.02,
+    "best_stage": 4,
+    "best_channel": "cfg",
+    "best_param": "lr",
+    "best_value": 0.001,
+    "best_summary": ""
+  },
+  "mlmp_mIoU": 31.95
+}

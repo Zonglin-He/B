@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_object,ok,27.44,39.84,66.37,28.84,-1.3999999999999986,0,120.46,/home/wwww/hzl/results/main_clean_tuning_push_20260701_1728/coco_object/stage03_alpha_cls/0.0/coco_object/minimal_cfc/results.txt,newly_run,paper_ready

@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "task": "isolated_audit",
+  "dataset": "voc21",
+  "seed": 0,
+  "candidates": 16010,
+  "full_panel": true,
+  "reference": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/voc21/candidate_outcomes.csv",
+  "cache": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/17_voc21_diagnostics/voc21/trace_candidate_cache.pkl.gz",
+  "reference_sha256": "3784536c911286d634bb73dfb04497e661d4a55561817efcb69b9f96bd5d2569",
+  "cache_sha256": "b70bbbd857d2c277e3ee0f98f0f6a2cde87e2699fab7487cdba52d14c475b20d",
+  "duration_seconds": 358.91529918368906,
+  "max_null_probability_difference": 0.0,
+  "update_policy": "one unit-weight candidate, one step, fresh model and optimizer reset; no GT in loss",
+  "endpoint": "mean per-location GT probability; max-collapse class extensions then renormalize; pre/post batch size 1",
+  "config": {
+    "dataset": "PascalVOC21Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 16,
+    "lr": 0.00063,
+    "steps": 36,
+    "trace_max_regions": 33,
+    "trace_view_batch_size": 8,
+    "class_extensions": true,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "historical_warning": "same previously analyzed masks; fresh outcomes, not an untouched confirmation panel"
+}

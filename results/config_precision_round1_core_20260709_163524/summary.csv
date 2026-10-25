@@ -1,0 +1,5 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_cd,ok,74.68,84.91,88.16,72.1,2.5800000000000125,1,41.12,results/config_precision_round1_core_20260709_163524/coco_cd/minimal_cfc/run.log,newly_run,paper_ready
+waterbirds_seg,ok,55.19,68.05,70.12,52.18,3.009999999999998,1,535.24,results/config_precision_round1_core_20260709_163524/waterbirds_seg/minimal_cfc/run.log,newly_run,paper_ready
+voc20,ok,84.99,91.43,92.86,83.76,1.2299999999999898,1,458.81,results/config_precision_round1_core_20260709_163524/voc20/minimal_cfc/run.log,newly_run,paper_ready
+coco_stuff,ok,21.59,32.31,42.31,21.25,0.33999999999999986,1,2367.48,results/config_precision_round1_core_20260709_163524/coco_stuff/minimal_cfc/run.log,newly_run,paper_ready

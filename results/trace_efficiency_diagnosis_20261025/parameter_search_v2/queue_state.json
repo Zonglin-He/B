@@ -1,0 +1,6 @@
+{
+  "status": "superseded_before_execution",
+  "dependency": "/home/wwww/hzl/results/voc21_batch_refine_20261025_0820",
+  "replacement": "/home/wwww/hzl/results/trace_efficiency_diagnosis_20261025/parameter_search_v3",
+  "reason": "Review tightened upstream artifact validation and unresolved OOM handling; this snapshot never launched GPU work."
+}

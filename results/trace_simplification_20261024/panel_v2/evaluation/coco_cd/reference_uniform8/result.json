@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "name": "reference_uniform8",
+  "dataset": "coco_cd",
+  "images": 56,
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 76.72,
+    "mDice": 86.38,
+    "mAcc": 91.51,
+    "aAcc": 93.67
+  },
+  "miou_unrounded": 76.72235590080652,
+  "intersection": [
+    2238353.0,
+    188169.0,
+    205435.0
+  ],
+  "union": [
+    2414873.0,
+    271321.0,
+    301561.0
+  ],
+  "ms_per_image": 43.03375116017248,
+  "peak_allocated_mib": 7785.5732421875,
+  "diagnostic_views_per_image": 12.0,
+  "warmup_episodes": 1,
+  "wall_seconds": 2.835634870454669,
+  "protocol_sha256": "55ab91580acb2965906a088050acfad5f2d6d8ad6e5026d8d3907d419c58662b"
+}

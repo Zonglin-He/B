@@ -1,0 +1,108 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "groups/coco_cd/tpt",
+    "dataset": "coco_cd",
+    "task": "evaluate",
+    "method": "tpt",
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "dependencies": [
+      "smoke/controls/coco_cd",
+      "smoke/controls/coco_object",
+      "smoke/groups/noadapt",
+      "smoke/groups/tent",
+      "smoke/groups/tpt",
+      "smoke/groups/mlmp"
+    ]
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "tpt",
+      "label": "tpt",
+      "images": 500,
+      "full_split": true,
+      "metrics": {
+        "mIoU": 66.40969925524558,
+        "intersection": [
+          20704624,
+          1275759,
+          1098445
+        ],
+        "union": [
+          22708241,
+          2300511,
+          2088420
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 61.17420021750948,
+        "intersection": [
+          17371513,
+          2032915,
+          1788288
+        ],
+        "union": [
+          21194719,
+          3288198,
+          4500367
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 25088000,
+      "initially_correct_pixels": 21192716,
+      "correct_to_wrong_pixels": 1447505,
+      "initially_wrong_pixels": 3895284,
+      "wrong_to_correct_pixels": 3333617,
+      "correct_to_wrong_pct": 6.83020052738875,
+      "wrong_to_correct_pct": 85.58084596655854,
+      "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/groups/coco_cd/tpt/tpt/prediction_seal.json",
+      "prediction_seal_sha256": "209e6bc70b3e7d061134c027ee02ccaf9cae9fb76520202d4a573a8b248266f0",
+      "worst_group_mIoU": 47.86029572126938,
+      "foreground_errors": {
+        "foreground_pixels": 3996906,
+        "identity_flip_pixels": 5555,
+        "foreground_to_background_pixels": 1617147,
+        "identity_flip_pct": 0.13898250296604422,
+        "foreground_to_background_pct": 40.45997078740406
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 17.562064895872027,
+  "reset_checks": 18,
+  "all_resets_exact": true,
+  "native_cache_equivalence": [],
+  "image_set_sha256": "e6f0934f74ce9bbc480336aad1ee7fa99073308a6e683988c8871f7907d6d61b",
+  "image_order_sha256": "55ccf9157b9eba12318a2a73d3ea37f014bb6128a9db5a40b4118f6e17693a5d"
+}

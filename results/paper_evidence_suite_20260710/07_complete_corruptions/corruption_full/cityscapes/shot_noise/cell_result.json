@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/cityscapes/shot_noise",
+  "duration_sec": 7371.975,
+  "evidence_type": "newly_run",
+  "results": {
+    "shot_noise": {
+      "mAcc": 37.52,
+      "mAcc_std": 0.0,
+      "mDice": 36.1,
+      "mDice_std": 0.0,
+      "mIoU": 25.13,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

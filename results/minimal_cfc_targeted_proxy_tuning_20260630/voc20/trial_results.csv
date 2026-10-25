@@ -1,0 +1,5 @@
+dataset,stage,channel,param,value,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,exit_code,duration_sec,summary
+voc20,1,param,cfc_max_regions,1,52.78,57.89,83.32,83.76,-30.980000000000004,0,10.5,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_20260630/voc20/stage01_cfc_max_regions/1/summary.csv
+voc20,1,param,cfc_max_regions,32,59.96,66.02,83.97,83.76,-23.800000000000004,0,11.24,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_20260630/voc20/stage01_cfc_max_regions/32/summary.csv
+voc20,1,param,cfc_max_regions,32,59.96,66.02,83.97,83.76,-23.800000000000004,0,11.25,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_20260630/voc20/stage01_cfc_max_regions/32/summary.csv
+voc20,1,param,cfc_max_regions,14,59.95,66.01,83.96,83.76,-23.810000000000002,0,11.22,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_20260630/voc20/stage01_cfc_max_regions/14/summary.csv

@@ -1,0 +1,17 @@
+evidence_type,dataset,cell,candidate_source,reliability,mIoU,mDice,mAcc,status,duration_sec,result_path
+newly_run,voc20,pred_uniform,prediction,uniform,77.84,86.52,89.91,ok,62.33,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/voc20/pred_uniform/run.log
+newly_run,voc20,pred_trace,prediction,trace,78.71,86.49,90.82,ok,77.5,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/voc20/pred_trace/run.log
+newly_run,voc20,oracle_uniform,oracle_gt,uniform,79.99,88.02,90.18,ok,61.53,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/voc20/oracle_uniform/run.log
+newly_run,voc20,oracle_trace,oracle_gt,trace,78.04,86.14,89.2,ok,67.98,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/voc20/oracle_trace/run.log
+newly_run,pc60,pred_uniform,prediction,uniform,29.88,41.51,54.13,ok,33.25,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/pc60/pred_uniform/run.log
+newly_run,pc60,pred_trace,prediction,trace,30.29,41.98,53.46,ok,58.2,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/pc60/pred_trace/run.log
+newly_run,pc60,oracle_uniform,oracle_gt,uniform,29.55,41.31,53.53,ok,31.31,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/pc60/oracle_uniform/run.log
+newly_run,pc60,oracle_trace,oracle_gt,trace,29.88,41.6,53.49,ok,50.88,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/pc60/oracle_trace/run.log
+newly_run,coco_object,pred_uniform,prediction,uniform,26.39,37.19,59.96,ok,42.41,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_object/pred_uniform/run.log
+newly_run,coco_object,pred_trace,prediction,trace,25.2,36.09,60.78,ok,54.32,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_object/pred_trace/run.log
+newly_run,coco_object,oracle_uniform,oracle_gt,uniform,25.42,36.5,55.39,ok,40.37,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_object/oracle_uniform/run.log
+newly_run,coco_object,oracle_trace,oracle_gt,trace,25.93,37.06,51.89,ok,50.5,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_object/oracle_trace/run.log
+newly_run,coco_stuff,pred_uniform,prediction,uniform,17.73,26.7,39.69,ok,43.1,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_stuff/pred_uniform/run.log
+newly_run,coco_stuff,pred_trace,prediction,trace,17.85,26.66,39.06,ok,121.1,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_stuff/pred_trace/run.log
+newly_run,coco_stuff,oracle_uniform,oracle_gt,uniform,16.67,24.97,35.64,ok,35.28,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_stuff/oracle_uniform/run.log
+newly_run,coco_stuff,oracle_trace,oracle_gt,trace,17.79,26.58,37.66,ok,78.82,/home/wwww/hzl/results/paper_revision_20260717/candidate_oracle_4datasets_240/coco_stuff/oracle_trace/run.log

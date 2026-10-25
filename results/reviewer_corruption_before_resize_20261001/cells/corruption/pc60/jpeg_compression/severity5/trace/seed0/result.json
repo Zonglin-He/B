@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "dataset": "pc60",
+  "method": "trace",
+  "variant": "full",
+  "backend": "shared_legacy",
+  "protocol": "released",
+  "seed": 0,
+  "images": 256,
+  "corruption": "jpeg_compression",
+  "severity": 5,
+  "formula": "native",
+  "gamma": null,
+  "blur_kernel": null,
+  "full_split": false,
+  "calibration": false,
+  "metrics": {
+    "mIoU": 26.15,
+    "mDice": 36.83,
+    "mAcc": 45.91,
+    "aAcc": 48.97
+  },
+  "condition_metrics": {},
+  "config": {
+    "dataset": "PascalContext60Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 9,
+    "lr": 0.00225,
+    "steps": 11,
+    "trace_max_regions": 22,
+    "trace_view_batch_size": 8,
+    "class_extensions": true,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "warmup_batches": 5,
+  "ms_per_image": 241.66246878327493,
+  "images_per_second": 4.138002913877409,
+  "adaptation_ms_per_image": 238.35857209453792,
+  "visual_calls_per_image": 14.919431279620854,
+  "visual_inputs_per_image": 119.9478672985782,
+  "peak_allocated_mib": 3287.4345703125,
+  "metric_scope": "dataset classwise intersection/union; timing excludes loading and scoring"
+}

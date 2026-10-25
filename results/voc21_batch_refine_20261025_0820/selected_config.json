@@ -1,0 +1,26 @@
+{
+  "config": {
+    "dataset": "PascalVOC21Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 8,
+    "lr": 0.00063,
+    "steps": 36,
+    "trace_max_regions": 33,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "selection_split": "VOC2012 train",
+  "selection_seed": 2027,
+  "calibration_images": 512,
+  "production_defaults_modified": false
+}

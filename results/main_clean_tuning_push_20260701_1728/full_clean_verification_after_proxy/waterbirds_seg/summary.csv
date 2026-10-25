@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+waterbirds_seg,ok,53.12,65.74,63.51,52.18,0.9399999999999977,1,216.34,/home/wwww/hzl/results/main_clean_tuning_push_20260701_1728/full_clean_verification_after_proxy/waterbirds_seg/waterbirds_seg/minimal_cfc/results.txt,newly_run,paper_ready

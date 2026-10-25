@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/pc59/elastic_transform",
+  "duration_sec": 2297.025,
+  "evidence_type": "newly_run",
+  "results": {
+    "elastic_transform": {
+      "mAcc": 42.96,
+      "mAcc_std": 0.0,
+      "mDice": 37.37,
+      "mDice_std": 0.0,
+      "mIoU": 25.66,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

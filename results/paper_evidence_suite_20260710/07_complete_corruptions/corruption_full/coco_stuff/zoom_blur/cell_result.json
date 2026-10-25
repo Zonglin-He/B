@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_stuff/zoom_blur",
+  "duration_sec": 2403.117,
+  "evidence_type": "newly_run",
+  "results": {
+    "zoom_blur": {
+      "mAcc": 21.3,
+      "mAcc_std": 0.0,
+      "mDice": 18.17,
+      "mDice_std": 0.0,
+      "mIoU": 10.94,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

@@ -1,0 +1,8 @@
+variant,dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+no_fg_guard,voc20,ok,30.02,33.41,69.91,83.76,-53.74000000000001,0,7.26,/home/wwww/hzl/results/final_protocol_smoke_20260630/no_fg_guard/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+semantic_only_guard,voc20,ok,35.3,39.01,68.91,83.76,-48.46000000000001,0,7.28,/home/wwww/hzl/results/final_protocol_smoke_20260630/semantic_only_guard/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+area_only_guard,voc20,ok,35.83,39.78,69.6,83.76,-47.93000000000001,0,7.28,/home/wwww/hzl/results/final_protocol_smoke_20260630/area_only_guard/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+fg_guard,voc20,ok,35.29,39.01,68.91,83.76,-48.470000000000006,0,7.27,/home/wwww/hzl/results/final_protocol_smoke_20260630/fg_guard/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+no_source_diagnosis,voc20,ok,29.82,33.14,69.65,83.76,-53.940000000000005,0,7.21,/home/wwww/hzl/results/final_protocol_smoke_20260630/no_source_diagnosis/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+no_cf_stability,voc20,ok,35.54,39.36,69.25,83.76,-48.220000000000006,0,7.27,/home/wwww/hzl/results/final_protocol_smoke_20260630/no_cf_stability/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+no_cls,voc20,ok,45.74,50.65,69.73,83.76,-38.02,0,7.27,/home/wwww/hzl/results/final_protocol_smoke_20260630/no_cls/voc20/minimal_cfc/results.txt,newly_run,paper_ready

@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "dataset": "voc20",
+  "images": 1449,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "draws": 10000,
+  "delta_miou": -0.04573916371897724,
+  "ci95_low": -1.1340036724124851,
+  "ci95_high": 1.0780315619140666,
+  "trace_miou_by_seed": [
+    83.96186562372712,
+    83.96186562372712,
+    83.96186562372712
+  ],
+  "mlmp_miou_by_seed": [
+    84.00289223369923,
+    84.00987515650516,
+    84.01004697213394
+  ],
+  "sources": [
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/voc20/trace/seed0/per_image_counts.json",
+      "sha256": "6da16c375ab0cb88472a7a3bc2c3e8910e17747238764ed21eee60b5133fdd1b"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/voc20/trace/seed1/per_image_counts.json",
+      "sha256": "6da16c375ab0cb88472a7a3bc2c3e8910e17747238764ed21eee60b5133fdd1b"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/voc20/trace/seed2/per_image_counts.json",
+      "sha256": "6da16c375ab0cb88472a7a3bc2c3e8910e17747238764ed21eee60b5133fdd1b"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/voc20/mlmp/seed0/per_image_counts.json",
+      "sha256": "26f7e7e02cf074032f6eeca4950886ec1ac535bda827e4b2a572f1c4380b7b25"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/voc20/mlmp/seed1/per_image_counts.json",
+      "sha256": "07313a295424ade338f86307096b3b59f2876c8306d82d4c9b16002e373ff034"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/voc20/mlmp/seed2/per_image_counts.json",
+      "sha256": "38a08592579b414a358b0c8a54f1b27f318273d8c19977284b920f7c858dd3e0"
+    }
+  ],
+  "estimator": "resample identical image IDs jointly for both methods/all three seeds; recompute classwise intersection/union mIoU then mean seeds",
+  "interpretation": "image-sampling uncertainty conditional on these three fixed seeds/configurations; not tuning uncertainty or a three-seed t-test"
+}

@@ -1,0 +1,67 @@
+{
+  "status": "completed",
+  "method": "tpt",
+  "dataset": "coco_cd",
+  "images": 128,
+  "full_split": false,
+  "metrics": {
+    "mIoU": 63.74,
+    "mDice": 76.25,
+    "mAcc": 69.22,
+    "aAcc": 91.4
+  },
+  "miou_unrounded": 63.736660119917275,
+  "method_settings": {
+    "constructor": {
+      "lr": 0.001,
+      "steps": 10,
+      "ovss_type": "naclip",
+      "ovss_backbone": "ViT-L/14",
+      "n_ctx": 4
+    },
+    "optimizer": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "update_steps": 10,
+    "reset": "model and optimizer at each episode",
+    "backend": "archived MLMP NaCLIP",
+    "prompt_scope": "four learned context tokens, initialized from a photo of a",
+    "backend_equivalence_claim": false,
+    "comparison_scope": "Matched checkpoint/queries/data/episodes; backend and method-specific prompts retained. native_noadapt versus noadapt is not a pure backend-equivalence test; legacy_trace_noadapt matches native prompts/layers for an inference-path control.",
+    "prompt_templates": [
+      "a photo of a {}"
+    ]
+  },
+  "optimizer_parameters": [
+    "ctx"
+  ],
+  "intersection": [
+    5297940.0,
+    343169.0,
+    228844.0
+  ],
+  "union": [
+    5849538.0,
+    628400.0,
+    497165.0
+  ],
+  "wall_seconds": 7.848746300674975,
+  "warmup_episodes": 2,
+  "measured_images": 72,
+  "ms_per_image": 52.89989602493329,
+  "adaptation_ms_per_image": 51.257821899424826,
+  "inference_ms_per_image": 1.6420741255084674,
+  "peak_allocated_mib": 11688.8310546875,
+  "visual_inputs_per_image": 11.0,
+  "visual_calls_per_image": 0.4583333333333333,
+  "all_visual_inputs": 1408,
+  "all_visual_calls": 55,
+  "source_input_checks": "pre/post passed",
+  "adapter_sha256": "03e8fe606fece98d42b7824ca8f9ebe42bffeec335fe0a0a17af8ea70e1c6f9f",
+  "protocol_sha256": "ca167d69759f7a3bd5283449696c1a060e9a16612be92b2ff3d0018fe7e10d71",
+  "per_image_counts_sha256": "c972bb58f1b4ec96babaed31f6ac136ebf766bfefff81b45bd7d5747a023c162",
+  "cost_sha256": "e0eb9c3ab2ed45fdcfeb275528d297c778ea6dc21e7d49c7a5d4d8be8007f5f4"
+}

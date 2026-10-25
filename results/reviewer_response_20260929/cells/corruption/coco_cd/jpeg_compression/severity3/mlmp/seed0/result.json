@@ -1,0 +1,54 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "method": "mlmp",
+  "variant": "full",
+  "backend": "shared_legacy",
+  "protocol": "released",
+  "seed": 0,
+  "images": 256,
+  "corruption": "jpeg_compression",
+  "severity": 3,
+  "formula": "native",
+  "gamma": null,
+  "blur_kernel": null,
+  "full_split": false,
+  "calibration": false,
+  "metrics": {
+    "mIoU": 65.06,
+    "mDice": 77.63,
+    "mAcc": 89.09,
+    "aAcc": 88.07
+  },
+  "condition_metrics": {},
+  "config": {
+    "dataset": "COCOCDDataset",
+    "data_subdir": "coco_cd_ovss",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 4,
+    "lr": 0.001,
+    "steps": 10,
+    "trace_max_regions": 4,
+    "trace_view_batch_size": 8,
+    "class_extensions": false,
+    "data_dir": "/home/wwww/hzl/data/coco_cd_ovss",
+    "alpha_cls": 1.0,
+    "prompt_integration": "loss"
+  },
+  "warmup_batches": 5,
+  "ms_per_image": 48.383577857008675,
+  "images_per_second": 20.668169744605677,
+  "adaptation_ms_per_image": 44.602698011134386,
+  "visual_calls_per_image": 3.0,
+  "visual_inputs_per_image": 12.0,
+  "peak_allocated_mib": 2857.14208984375,
+  "metric_scope": "dataset classwise intersection/union; timing excludes loading and scoring"
+}

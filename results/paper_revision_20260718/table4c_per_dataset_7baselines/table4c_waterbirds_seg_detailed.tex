@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\caption{Matched-candidate reliability analysis on Waterbirds-Seg. Each quartile cell reports $\Delta$ region accuracy / correct-to-harm percentage; higher is better for $\Delta$Acc and lower is better for C$\rightarrow$H. Quartiles are role controlled within this dataset only.}
+\label{tab:source-risk-waterbirds-seg}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & mIoU $\uparrow$ & Q1 $\Delta$Acc / C$\rightarrow$H & Q2 & Q3 & Q4 & AUC $\uparrow$ \\
+\midrule
+No Adapt & 39.96 & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 & -- \\
+TENT & 45.36 & 8.8 / 8.4 & 9.3 / 2.9 & 10.4 / 0.0 & 6.9 / 1.2 & 0.703 \\
+TPT & 44.67 & 17.0 / 10.8 & 8.9 / 15.7 & 13.9 / 6.0 & 11.7 / 8.3 & 0.812 \\
+WATT & 22.99 & -20.7 / 70.7 & -23.7 / 66.0 & -29.1 / 80.2 & -21.5 / 62.5 & 0.506 \\
+CLIPArTT & 25.95 & -23.3 / 75.9 & -19.7 / 63.7 & -16.0 / 55.3 & -14.2 / 47.6 & 0.542 \\
+MLMP & 42.59 & -0.9 / 27.7 & -0.3 / 14.7 & 4.1 / 9.5 & 4.4 / 4.8 & 0.863 \\
+\textbf{CFC-TTA} & 49.26 & 13.3 / 9.6 & 5.5 / 10.8 & 12.7 / 2.4 & 9.2 / 3.6 & 0.884 \\
+\bottomrule
+\end{tabular}
+\end{table*}

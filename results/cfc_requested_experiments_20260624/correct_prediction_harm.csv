@@ -1,0 +1,17 @@
+evidence_type,input_dir,dataset,method,source_group,initially_correct_regions,correct_to_harm_rate,correct_to_worse_rate,correct_to_wrong_rate,mean_region_accuracy_delta,mean_entropy_delta
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,NoAdapt,all,1863,0.0,0.0,0.0,0.0,0.0
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,NoAdapt,background_dominant,693,0.0,0.0,0.0,0.0,0.0
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,NoAdapt,mixed,618,0.0,0.0,0.0,0.0,0.0
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,NoAdapt,object_dominant,552,0.0,0.0,0.0,0.0,0.0
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,TENT,all,1842,0.5667752442996743,0.4006514657980456,0.03420195439739414,-0.02400863166179204,-0.04794116361691114
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,TENT,background_dominant,685,0.5547445255474452,0.362043795620438,0.03941605839416058,-0.026975722859756354,-0.055683301245846493
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,TENT,mixed,608,0.5756578947368421,0.4194078947368421,0.03125,-0.01979140809132667,-0.04572617865539842
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,TENT,object_dominant,549,0.5719489981785064,0.42805100182149364,0.030965391621129327,-0.024976964011951222,-0.04073414463836656
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,MLMP,all,1863,0.509393451422437,0.25979602791196993,0.00966183574879227,-0.0008988411016302344,-0.04888483611962116
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,MLMP,background_dominant,693,0.5050505050505051,0.2597402597402597,0.01443001443001443,-0.00514128605040895,-0.05392445625227226
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,MLMP,mixed,618,0.48058252427184467,0.2605177993527508,0.006472491909385114,0.005227864077947672,-0.04884445793967846
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,MLMP,object_dominant,552,0.5471014492753623,0.25905797101449274,0.007246376811594203,-0.0024319741658974385,-0.042603127719761345
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,CFC-TTA,all,1863,0.48845947396672035,0.24261943102522812,0.02308105206655931,-0.009136555397831068,-0.06987876283459729
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,CFC-TTA,background_dominant,693,0.4790764790764791,0.2352092352092352,0.03318903318903319,-0.01626503126310053,-0.07789253527085284
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,CFC-TTA,mixed,618,0.47896440129449835,0.25080906148867316,0.019417475728155338,-0.003381036029085758,-0.06876120245559114
+newly_run_analysis_of_preexisting_run,/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,VOC20,CFC-TTA,object_dominant,552,0.5108695652173914,0.2427536231884058,0.014492753623188406,-0.006630898142854373,-0.06106917590688119

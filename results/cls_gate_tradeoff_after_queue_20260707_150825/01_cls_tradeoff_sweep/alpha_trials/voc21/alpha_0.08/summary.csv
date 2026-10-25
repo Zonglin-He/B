@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+voc21,ok,53.42,68.39,81.04,50.78,2.6400000000000006,1,1240.23,/home/wwww/hzl/results/cls_gate_tradeoff_after_queue_20260707_150825/01_cls_tradeoff_sweep/alpha_trials/voc21/alpha_0.08/voc21/minimal_cfc/results.txt,newly_run,paper_ready

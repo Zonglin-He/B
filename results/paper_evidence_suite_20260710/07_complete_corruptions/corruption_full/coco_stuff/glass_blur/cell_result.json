@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_stuff/glass_blur",
+  "duration_sec": 2467.923,
+  "evidence_type": "newly_run",
+  "results": {
+    "glass_blur": {
+      "mAcc": 32.38,
+      "mAcc_std": 0.0,
+      "mDice": 26.8,
+      "mDice_std": 0.0,
+      "mIoU": 17.33,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

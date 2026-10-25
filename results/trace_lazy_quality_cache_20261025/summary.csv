@@ -1,0 +1,13 @@
+dataset,algorithm,candidates,cf_evaluated,modeled_diagnostic_inputs,diagnostic_inputs_saved_fraction,active_groups,active_groups_lost,max_omitted_mass_bound,max_group_bound,new_model_forward,new_mIoU_available,measured_speedup_available
+pc60,quality_staged,2812,2812,5624,0.0,831,0,0.0,0.0,False,False,False
+pc60,quality_lazy_01,2812,1696,4508,0.1984352773826458,831,188,0.009623930720751206,1.0,False,False,False
+pc60,quality_lazy_class_01,2812,2379,5191,0.07699146514935988,831,0,0.0029920918536962544,0.009927288561914945,False,False,False
+voc21,quality_staged,4144,4144,8288,0.0,998,0,0.0,0.0,False,False,False
+voc21,quality_lazy_01,4144,2464,6608,0.20270270270270271,998,237,0.009034436891402204,1.0,False,False,False
+voc21,quality_lazy_class_01,4144,3412,7556,0.08832046332046332,998,0,0.003598139340996346,0.009975797389495618,False,False,False
+coco_cd,quality_staged,512,512,1024,0.0,243,0,0.0,0.0,False,False,False
+coco_cd,quality_lazy_01,512,512,1024,0.0,243,0,0.0,0.0,False,False,False
+coco_cd,quality_lazy_class_01,512,510,1022,0.001953125,243,0,8.507110094019152e-05,0.0033376150463834417,False,False,False
+coco_object,quality_staged,4298,4298,8596,0.0,1178,0,0.0,0.0,False,False,False
+coco_object,quality_lazy_01,4298,2128,6426,0.252442996742671,1178,369,0.009619819242669315,1.0,False,False,False
+coco_object,quality_lazy_class_01,4298,3190,7488,0.12889716147045138,1178,0,0.0028705256683687983,0.009960617463354469,False,False,False

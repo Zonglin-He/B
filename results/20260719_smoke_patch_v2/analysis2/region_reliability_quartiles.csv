@@ -1,0 +1,3 @@
+evidence_type,dataset,dataset_label,method,method_label,quartile,regions,correct_to_wrong,correct_to_wrong_rate
+newly_run_heldout_definition,voc20,VOC20,tent,TENT,4,1,0,0.0
+newly_run_heldout_definition,voc20,VOC20,cfctta,TRACE,4,1,0,0.0

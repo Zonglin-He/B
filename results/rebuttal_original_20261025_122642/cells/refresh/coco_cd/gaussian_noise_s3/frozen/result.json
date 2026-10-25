@@ -1,0 +1,134 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "refresh/coco_cd/gaussian_noise_s3/frozen",
+    "dataset": "coco_cd",
+    "task": "refresh",
+    "variant": "frozen",
+    "display_name": "Fixed source-model weights",
+    "seed": 0,
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 128,
+    "smoke": false,
+    "selection_seed": 20271010,
+    "condition": "gaussian_noise_s3"
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "frozen",
+      "label": "frozen",
+      "images": 128,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 74.07571090764677,
+        "intersection": [
+          4982614,
+          558003,
+          399929
+        ],
+        "union": [
+          5448413,
+          808845,
+          647252
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 60.334177948638455,
+        "intersection": [
+          4296020,
+          595581,
+          462398
+        ],
+        "union": [
+          5317686,
+          957997,
+          1215374
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 6422528,
+      "initially_correct_pixels": 5353999,
+      "correct_to_wrong_pixels": 121956,
+      "initially_wrong_pixels": 1068529,
+      "wrong_to_correct_pixels": 708503,
+      "correct_to_wrong_pct": 2.2778487631394775,
+      "wrong_to_correct_pct": 66.30638943819027,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/refresh/coco_cd/gaussian_noise_s3/frozen/frozen/prediction_seal.json",
+      "prediction_seal_sha256": "080ff0e39fdf43c30da3b7813cb7a3f608c671119cfcee3b868fc518569f3f0e",
+      "worst_group_mIoU": 50.076558110757304,
+      "foreground_errors": {
+        "foreground_pixels": 1133768,
+        "identity_flip_pixels": 16183,
+        "foreground_to_background_pixels": 159653,
+        "identity_flip_pct": 1.4273643285045972,
+        "foreground_to_background_pct": 14.081628692995393
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 37.99799645319581,
+  "native_cache_equivalence": {
+    "exact": true,
+    "update_steps": 5,
+    "parameter_sha256": "69df3f47983898c1661ed74f8d8d5a8d9ae3203fe06af365abf04d57030ad5c4",
+    "optimizer_sha256": "506340e79516cb52b7c70c327e85912ffed21c131e334b6ff8e6b2d2dc13b565",
+    "diagnostics_enabled": true
+  },
+  "source_checks_sha256": "8d30f84e2cb331fdae56c356f1ce3daaf3a41d5b2b4d7ad4e7c4418c652e78a8",
+  "source_model_parameters_sha256": "e98788d30cd2a2a7e377b2919763add5c152a81e9cec7b442d2d7be38accb5c9",
+  "K": 4,
+  "actual_stepcounts": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "configured_steps": 5,
+  "module_variants": [
+    "full",
+    "without_region_construction",
+    "without_source_tracing",
+    "without_reliability_weighting"
+  ],
+  "selected_variant": "frozen",
+  "image_order_sha256": "dc01b378e4cc434224b904ced95aad4ac9251d838d526fca922fe12041201685",
+  "timing": {
+    "estimate_seconds": 5.4969839956611395,
+    "update_seconds": 13.64384585712105,
+    "diagnostic_seconds": 11.26309372112155
+  },
+  "evidence_scope": "fixed diagnostic subset",
+  "full_unfavorable_results_retained": true
+}

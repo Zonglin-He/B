@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc20/elastic_transform",
+  "duration_sec": 499.45,
+  "evidence_type": "newly_run",
+  "results": {
+    "elastic_transform": {
+      "mAcc": 83.55,
+      "mAcc_std": 0.0,
+      "mDice": 82.48,
+      "mDice_std": 0.0,
+      "mIoU": 72.18,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

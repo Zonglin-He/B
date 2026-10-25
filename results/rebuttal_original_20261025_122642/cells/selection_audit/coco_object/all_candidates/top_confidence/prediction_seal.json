@@ -1,0 +1,537 @@
+{
+  "status": "sealed_before_label_scoring",
+  "records": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000002587.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/8d547b02bc62b2e2988e4d6b12e4e0393caff2c9b3864ddd77602cd935422994.npz",
+      "sha256": "15add555726f9c186966e6dbe8b465d184d8ef2d4830bee95b4fe8747c0edc7d",
+      "before_sha256": "5315d0160c8fe35dd024a9a4a67f71059718e43bb44f6788eb3eda7207ea101d",
+      "after_sha256": "f8dceec75493dabf22b9faf2215b3ea7c538651f86d3821ff51c9d09d3aab0de"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000003156.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/cf2f540e63407f48dd8c468e8539af86251442039eb5f6a29becdd3291c45ee1.npz",
+      "sha256": "031117ba549b95a72018d04fcf74ae413ee5e5b1bef93a9ca72cbd13f46e6a34",
+      "before_sha256": "2ebf2f02b2f47305edae5a0faeb3fcda0b754cb6d3eadfacb00168bf0bda5778",
+      "after_sha256": "d49114aa9e57bbbeb36410201da7e48e7ca1a1585dad2c451397558295da39d5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000005503.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/c733e1e71272dd1c3d8e320a807b797274ddbe8196d9e78b4c1ca0aa2e42e8ba.npz",
+      "sha256": "89670a2d0b33c1e310cff2f535b88f0a8eb3bae75cff72e085a343af54a931b4",
+      "before_sha256": "7fed9e9cdd39ef1ea93780bfb185d32dd62eb8e5e0700b6d7f439724b30da477",
+      "after_sha256": "d7d8af7d5cd6a4a65d1df6a6f0bc58a8fb2db487216b444febd383ab67dab20c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000017959.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/973ca57031817122b1728f253af9e59a6376a7ff26830ec8fb70f9fb54d79820.npz",
+      "sha256": "454de3cc4eea38547af3c1248bf3a835a2eeb9b7cbc1321d0116b6642454a405",
+      "before_sha256": "9c57337d133eccfa0f7e36b83e2902b6317ab0f8ab97b1a8ec4b2c142014e714",
+      "after_sha256": "96ea11b0ad4654eee34e29f3a9c08e4da408b3df7bb9add0c28a91c39684b10c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000033109.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/94782eed9ffe49523d30466a4822a1e3e66b68ab5fce02f3f6b96820973b9a72.npz",
+      "sha256": "a6db0cd0c2ec869340a1be02632826acb7c7203c6d7b5b75ffe66bfad1e91e9e",
+      "before_sha256": "fe72d2592a6537c4a384e40e62f05b43fc6d8afb0a9c69cc0bb0d2c6c950532b",
+      "after_sha256": "b918de1aa0bef73d12a4946dd900fef2031eb90b731df8968dc730fc67383c50"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000034257.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/f6acef1df86ef75e4737f6ebcefa37f45cf3be9d6d8f454135bd9b9dadedd1cf.npz",
+      "sha256": "5bb7a16d51d17b688e59cbc70e2b16a1663051164edb941ff9e69e6b0160c236",
+      "before_sha256": "df2c214fe00309df08853a9ade305ca6a626d2cbb720db256179c1e264401eb4",
+      "after_sha256": "3f7b219b5dca2da4ad1e6209c2130876759f902522dafdcc322b0345aa3ad6fe"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000049810.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/1deb2a7aaf40e9c2e61f47c5cbc3d6345103c30f50c7860420d3db7e20e47c16.npz",
+      "sha256": "5acfbdfcacff97ecb7a58ced8b792b934a1b9d0f4ecf0882ebf131aeaecd2839",
+      "before_sha256": "0fac569f3dad84fee12792683ac680e7f95be37997d9b297c8a5281334f80b85",
+      "after_sha256": "9ae270aa13239357c50fd540293014b0f26039f8573b1d7ac50b2aad507a1d30"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000066926.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/71bda25ac3c920e58fc4a15d75a9c55e4df04eb4367ab54cf413dcd82ca39e6e.npz",
+      "sha256": "9a260cea28b5d1f93e67b03bdde6a136a22743de33e6522d4b3b3a9bd93b6f04",
+      "before_sha256": "abc4d263d05e9f88f4a2cba43dd321caf89b812cd578e85ba775c10acc5e1997",
+      "after_sha256": "99eba4ba7517dd4c97bea25197f41d27ae145b4a9f2cd5bd8e7884710db6675b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000073326.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/b803b8638379dcfcdc3a9f4e9a02421ed3c9340ffa19dcd8e8efc50136c92207.npz",
+      "sha256": "54aab1b21f8658288b83718be2672aecf970491cda159a7352383dda0b014d83",
+      "before_sha256": "eb7db24ba10ddbadac0fb804a5f9da4f1aa1f2e826ed79b46b1be2574516dcdf",
+      "after_sha256": "c8d697d9ae8b750e3a7cac0193796fbfb48abdcc8ac88212f84827d2b8aa45f5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000076731.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/e5fab034a6b1e943e803c7b9b8f838d11240f6384cd46608197fc5a21bf75cef.npz",
+      "sha256": "d752d59a968c2eb54af270f2c5df209511dbc6aaf6e81cb86e48a136671703f6",
+      "before_sha256": "3e4c2dd083545b9b966776b540eef66cefaba6d89c4bd0846782049a346bec3d",
+      "after_sha256": "c2a0584c58e9a4162929f1c80f7878093e4d7693ef6ee6b8e1b803ce60d934c4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000080413.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/704f63cebe6205e2c4f7bcdfc20a0612e4d6c4f147738a4733a309d9c88f22d6.npz",
+      "sha256": "a2fc6916ee05de35e9eb672f6501934a794794dfde6c821ebb59bb0585a7e122",
+      "before_sha256": "9e2df5bff6b91e3bbbb7e086398db07d994e04b9733a3091e51e2ab0055c45c8",
+      "after_sha256": "9792630173ecfc72f061300b51506104886caaf6b56c125a7cceb771e1b28834"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000096960.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/eb16a5052f9623c15f33c1a31f6fd12b3b316d014823215843d807bdb0d7d7ff.npz",
+      "sha256": "5274990981c6bc2b5b1c8b62671ed0bcaccbd5e270bfe5e85e87b4bd314f081c",
+      "before_sha256": "4f42ac4a582c94c31bf248d29d405efaa9ee6f0014b6452490e131f7b6ece93f",
+      "after_sha256": "0e176297150ee61be0f3c47acdb183f582a9bc2e9603df84e0583623d6f8eb08"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000108495.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/159186246bb39c3829e30981cf6b171b04d1dcd977ae5d1468ccd12fb23bf667.npz",
+      "sha256": "1d40e191d658b152eefcf629ff351a1b72e587910e891aaa2d054257c0d16a37",
+      "before_sha256": "29e12af8ac6860d66e7dd109023f38a146385c94f981d7f3f80aabb778713637",
+      "after_sha256": "6b920e098774e1034d6b3e74b2b105d858e6919a6324e9616d3bbd3f5d7aefb0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000115118.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/5eb3e66c84d43900c8108075810c661f1752eb90ab4d3aad3c1c727304dfe7d8.npz",
+      "sha256": "bd46cffe2da353950fefbfe87f3d733d4babecd24740f7e8d28d0ab626c0048f",
+      "before_sha256": "37369e8bb39f7847ffc7d78f020920cc4de406ea4332fcdd378918ffeed8f614",
+      "after_sha256": "9c2ef896e01519de442b37b3becf58e3ba06a756bf9add62d45a1651d89e1af3"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000129135.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/881daadadf638e07e4fc0785aa2d83b0f745226fa1002870086ff58381dcba95.npz",
+      "sha256": "582111ab32d137dd64ba087eab80ced281dcbc1f630ac058e26be70aa24a3f0a",
+      "before_sha256": "a12b6479640ba430f9b5df70bb67c01c7058fe505a479b04cb5da8d2696cdc48",
+      "after_sha256": "f92eeee8184230299d072416448ce11bb2a3c333015d85a356135381be6aecfa"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000129945.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/f2f385af9f34ebd6d2e628d46044f0af4163fcdd4febebeda678b26633e4b3e6.npz",
+      "sha256": "3e9685f16eb1fd6c5dbd2d62f7bf7de30a60a27ef4dc8aaf8d89867d7e0dab71",
+      "before_sha256": "00a474bcc5be6acf3eca4d56b6c9a2af10feb805f2ae0d4a703ee28763742a41",
+      "after_sha256": "d28258fb236e8e87f433e8fd6faaac94843f61754d92c63b3944fdc0db46aa9c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000133631.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/1d5f557458c1328a94b901dacfac00792f2ed8ee5614b4e23d0c5cb5ad4661f1.npz",
+      "sha256": "d3564542c0a54a841b39555caa45068c1ebe45f26fcb3c4f94aeddec58ed0d71",
+      "before_sha256": "0ad79d815490e54ab2dc212c3536e164a486568ce04fc6153d39f8e2c49de2e2",
+      "after_sha256": "c8642d20d45bc25c643a1d4f7ed3ae67fb6f4971a5caca998bf94d2ecb5b8568"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000147338.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/10be5ed3500504e0f862bc4d81a5752c0ee266068987690ee31cbff7ed2c08c9.npz",
+      "sha256": "d60298d9b6219846f9dee6bfc69ce48ba126b8cf394350fb56d774cee97222b5",
+      "before_sha256": "5a25f7d570eb6df2f634d002cd97e917ea54bfe8b72a7f4d601f6914f79c869a",
+      "after_sha256": "4b634cf3cd8621f49b7be003824964d66b348a2b90761c6cb3c421346e632496"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000151000.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/eb7239a79c73ec94a50397067c19ae18392ded3dd6adae03c99a93e5c64437aa.npz",
+      "sha256": "168c1195bd90efc488408a9f7efe06e7f4fbdda9ec6979e6538f6ef845de9bc7",
+      "before_sha256": "a994341aa20a6bf90d070e8af47b09d4188c84097fac7ef643a430b8ad0d3738",
+      "after_sha256": "85812d2feffc069ab0a3f864ee93a69c98bf07ddb7c0aa9c3c81dec658cdc347"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000154339.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/7d2e7227ba990d02b3d33b88a7b68b055d38e462888a0579ce2a9d827b33ed32.npz",
+      "sha256": "174942dab9d8dbcd4bb75fbe2a2bbe52c607d879e5b13f14c056746f5a70845a",
+      "before_sha256": "873e6656b7eef4b71deb9aa887fe3519ffcca935d6fcd80bb2fa3521e2978e2f",
+      "after_sha256": "598f15f2a5246a9fdc527de273c6d0008a7aa5d8a332a87053ff8c035cffc89e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000156292.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/e05f3fdae9768e778c113360aa4c7e82cb9fa2308e4f6f41f00de1989ce3b265.npz",
+      "sha256": "0dcc060e85405ca592da601b2ca751dae8369351288c97d07a3f0ce8153dbc0f",
+      "before_sha256": "05e53cb882fc9dbb3ed080e07d6ebcc9d1b2535ce8070ce88c24b84bda9ac8c9",
+      "after_sha256": "233a824641e4581381fe71e489e68072bad81f3260e554d974c8d5febd56df9e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000161875.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/66d5c25ffc1591a61a865f85e7f214949f11fd4a0338d114562753194b4f4c1d.npz",
+      "sha256": "b73c03cf92397237dc654f4a49acfb2b2e99a5b0c99f39120960461fca60c919",
+      "before_sha256": "69a0f68306c5d767bd14e15e36bb9b274c7cd78dd2450f7ad2a75a61d367a266",
+      "after_sha256": "ffb9b9cdf022acbba8fe5a9770df1552ecbd06b17f33a22165dd9d9cf662d86b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000165681.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/033d080c704b430dff95137c1e4a36c18bfa309bb8db51ea994674f4cc627f44.npz",
+      "sha256": "01c91ee2c19bc4366fed220b23687ba98fa27c6d176ee9c1fa7d32d2b9834e98",
+      "before_sha256": "78e966d9cea1e9811da891e24d315fbfbb00dd490bc23460c48f74e7896660e0",
+      "after_sha256": "18d659b88ae5aff9670d321d65f6beee0be1234d7fa4a54f62ca883479540631"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000176778.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/51198aabc14fdf4b7dac15de7be03ee3fe61344535fbbd7bdd6f086b52394b27.npz",
+      "sha256": "eb20caf1c2d95020a6e87a20044486a068ee5f5b9392163c4368f2cb01c09cb5",
+      "before_sha256": "a9239ad50a7d129036740092dbd7e43956995c13f8332646bd282f8c2efa629f",
+      "after_sha256": "6bdea8ffe1ce716684a792f94bf40582d557682fe6139590090c805f35b15918"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000176847.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/45478735be64747a470b5568bd67891eeb592f7e41384564e2faeca538dea98e.npz",
+      "sha256": "8cd047d6e0b1a71ff50b0afedf61ae5eee886454408a34c4244fd46f848385e0",
+      "before_sha256": "f6c87089198a0688d88e00ab73a56457887ed83a8748ed621b9f1b5274a1fe20",
+      "after_sha256": "af2fc7d1a62fd593b52fc9d7f2a5c06a1554867d8ffe31f935ea9b388f49dd94"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000185473.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/e9defdefee12ab2ad6cded2fa5f2691f759792bc681696ec6704fc9894ce15c3.npz",
+      "sha256": "c110edda4730282306f8435640d1226964644e268554312ba4eb5c9dc2a89e88",
+      "before_sha256": "0ae5f5118c43776173e414de1c6a5b0fd8e04d8164ac251239d10f0a5066fb5b",
+      "after_sha256": "e12744036532a7924bc5d581107ff0027817a580ec6b161f11aac4fe261f8d05"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000198960.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/13f08821cbd2935d1321a7d9f0dfd174e2a93301d25026d23f283da5e5e12845.npz",
+      "sha256": "13134b864396e1978455a2c27c2b1a05354dd15f439ed79138692e17764408f8",
+      "before_sha256": "1d918d68dbfc226acbbc13551f729dd317b08e80c54be62501d0c06e444dc7cf",
+      "after_sha256": "5d3c6e9eac330f94ec8ccda7dc8f423db0154e86f2892c8974cae383d9df983b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000203931.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/c5ce4e02dbb63702a3abbdced4f34783e1938b30415b4a587620a93061b70643.npz",
+      "sha256": "6e379d1c7360ddfa44393605cdba927057e78546aa1232c6445bda130936cb27",
+      "before_sha256": "c97bbb902a49c60c614dc16863ff97271e8dafba6a8fc186709956bcd7149f30",
+      "after_sha256": "5ed30f3993dac0326348347eab28161a13d1971f15042c418e51ca07801f37b4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000221754.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/5384aab23daaaa57ed10b9dc682106d877683f8af23b446672cb74a8ba03aeb3.npz",
+      "sha256": "07b54b721d513bc1d2903301ae48f5932e72806cf8ffea106784028275e7be14",
+      "before_sha256": "cb56c5fc5b89a635da935e7da83f384d8e4f1d54abbbe7fced6f7e126d6b62d2",
+      "after_sha256": "bec6f3fd2fd7932ecf2e9cb8e9e4229be119e85307ab235906c11104a52d3584"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000226662.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/ac9f27823bcabb389e18e96c402470fcf08063467a107534adae8ca747786002.npz",
+      "sha256": "f7f7069219ff3d02fc26caba69fe8d8ed918ac716d06d35d6a82250805a90833",
+      "before_sha256": "f3dcc9ec679da70b113c9512e62faebe6fc7353fa4c38026b5d8908be41231d7",
+      "after_sha256": "683a558fb42bd9dc2e7000635a145d15ae39c1c4dada7993b0469b9f35868d3c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000253695.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/e7732c8c3583c2352dcc90e685bca73b0859f21cf4d4903e2839e99393768966.npz",
+      "sha256": "c004d5eeec0988df448670d29f9b3c7a4abd2b6977c03e72328970d23575076d",
+      "before_sha256": "52e27d5039cf8d2f5f4e56023276cb3007fcbe4f113cab71cb62f45c7931dc78",
+      "after_sha256": "aca95987d0d73665376f3cc1db5c8bf42b2232f22ecacf6917cc1b0e107b1ae4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000266892.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/df6f8c3e9a0cb6f382280f61895468c0d9039c3a0592afff180ec943d3db61d2.npz",
+      "sha256": "caba4157382eb081e5a556d2c4a0078afe0a368d56eacb34184aab2e80c4a2b0",
+      "before_sha256": "2028f2836e8a1efa0cb4d797c143e99ae7c7f67e8770d1cd8cdf2e107fc1a6fc",
+      "after_sha256": "8c430263c09ce49bb0f9378331080822ba21ed07c871f35b2c122dafa1807a57"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000284445.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/c849d93c4686ee9f7e7d2f8c34d9189329ba4de02357d6d75174e4567f505989.npz",
+      "sha256": "e280e4efb03e94c8e865038c4ad754c7c158c0f66026817f4d963a3facb373d8",
+      "before_sha256": "5c5d82cb88a7da1afc0cf0296be9c6e1046dfbae9ddd78fbffc441c0078ed9a2",
+      "after_sha256": "fd1325dabfef135854521b7cb109c0a2c30736bb6b6dc8b55ac9fc1189a53be1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000285788.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/ef2412ff88910d8538c381d4ea3bf4ba91643c6296452ed99e364c1aeb9faaaf.npz",
+      "sha256": "6fe10e9b55400dd779594d8c67c1d6f3552f1103f44f90b5738a0c30f47792ed",
+      "before_sha256": "0471561288c4a043cc4e92bd6efadecfd17ee335760158a620896e8c8fa99fea",
+      "after_sha256": "616b2731ac38c8031ed44403d05a500b0be408fad71abb55cc58b05ebff06861"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000291634.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/768da8564e3c8e528e3549a4461541b3615e6de485a9f8ea49c9f78483a8f3fa.npz",
+      "sha256": "bbeb40efdd80b6feabdd1908064c9067dbdb5773defeb8604d3da723fc28533f",
+      "before_sha256": "251ff0bdf661291531ca4dcac09aac5ecb97f1f4e5393c6941d4eea2d0f74813",
+      "after_sha256": "2357a8cfe886098370e1f4d860045187d902e25050bed7b58421300f9423c10e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000308430.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/35bbb403867f1e5f82f09fb569545ac03090d6b20de5655083f744b94d2658cd.npz",
+      "sha256": "ab2d3db7362ca5ff84f52af859db9e965b735a35c193081a973d5ef078da14bb",
+      "before_sha256": "aa02df4755d903ebc24748c2814d3d51bff29e384e074e7fbee75f830bb0ce7c",
+      "after_sha256": "032aaca7e68368898cfc6b3614b5ee87f0dff5dca60310ef27240e2521a520f2"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000314034.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/ea79eb025a62789dfc07e5c3a5ffab6aad3da13c30a87e24026a1025051b1a2a.npz",
+      "sha256": "f4a937f383bcdf1f9d9c7da80d27bd2d906931f49baa3871fb7e3d3203d4ac18",
+      "before_sha256": "3621c0ee6dd488e3de7ee74737276afed5cdf6181d8abf24a5bccacc25b7b7b9",
+      "after_sha256": "b56631da6a89fb12e2e121505be13281a3007aefefce260626258815aac420f9"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000325483.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/b4b2e73a859c60aef4936df21b591eca44db93a64b5ffe6011f1f79656359da9.npz",
+      "sha256": "c387661fa88072b2044932604d44cb3cf7c11d5b7785a0b9c4e824129bbad620",
+      "before_sha256": "09a2ea4ecfc7513342bcf56828f738a78a8cd83d0036c50843c64757fa34ec3c",
+      "after_sha256": "8d28577674128d5e54f7bfb7be5c60ada7204fb13bae4b7c8654b51615cbe812"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000331817.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/34fd32d5cd0f722a5f9ce082eb4f83f74c3292f83b37b130501e7248cb46147e.npz",
+      "sha256": "42c54f77e655f9add9ce983ebc53f217a71f1e374af1a5b9c854275df4c54a34",
+      "before_sha256": "894a51ce7490f6df793d7d2431f49cfd37a38decc137f7418ab8b8db64e8ae37",
+      "after_sha256": "4212268fb8739ccf22bc2aa98d7b00c221af9d759c4a6563639a27a06df8e1a4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000342367.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/ad44da40ad28c49193b3a91c5bf064ceabb85f00c246242aab183aa5c13ef3dd.npz",
+      "sha256": "e1e0fdf001aa9e2b6d807cd99d1f868b34c8ba21a324523a7a99727d022c96ef",
+      "before_sha256": "cb5db24d4b3616524e19d066f275c3264234f2e402444641db495b141d54efdf",
+      "after_sha256": "b9ca0f6f933d39f7c9ac014a9226d0fb1abf7f85bdaf0f5b6b7d9ef5bf45e1fe"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000352618.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/105c3a81157d77055ad39f5cf77736faf3448398a2db8918d1c2367f5646dc97.npz",
+      "sha256": "42bfce6578c53dca0bf6103be8b468950d7a1f0d681e4754a86f099dfdc69011",
+      "before_sha256": "18108eb520ad7d1b7702cac731826ac1ec1382f866862deb6b715da1fadc4d3b",
+      "after_sha256": "ab2a091ba62ef933a9db53fd4dbbc581125237c2128988b6e9bb72d79d1815ab"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000357737.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/ff3dd9971c33df84e5c91ed5f35afd63ee2b75fe85e7d724c12e775375ed5b66.npz",
+      "sha256": "a90a803eba9ef5b322664ee3dda8b3ac78e41dbe97a20142791fa87bd0cdb9bb",
+      "before_sha256": "991cf229c1241b10b2f63b26b0627c4089f20fac846d7f16917639aaacc9211a",
+      "after_sha256": "8aac740fcfbee121784779ed5997e6c21948dc8e76f149d69047b3b16c191993"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000361147.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/adfe1976b94021b767b09a6335517ce822ab28235baa7d4c6c197fbd519fbf56.npz",
+      "sha256": "5f3374dedc07fde8d49428a3cf99be18dd6cf742738e89251add3bd448b8283b",
+      "before_sha256": "8aa61e09bc1a62f89282b645bafb6db3405d1accb7a1126749a2bfa0868cbf21",
+      "after_sha256": "78c9e5a704225b63475985492098961f45c8f09508c4d600ab93a04c03e2eb86"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000362682.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/dc99795791539c5e602ac7379bef2cea80c356698d6b4ec0c5d3c14cddfc7b5e.npz",
+      "sha256": "a3e408d131cf78ed879e81081376b4c76cc73db09479c0f2f47aa4fd82c7a5c9",
+      "before_sha256": "22759fe9f3166eaf3e4798d864a681b9ee201f43558be1710e1a8b658f320294",
+      "after_sha256": "020ca66752240a1a2af59d9b40ac13dc2e06c33816371f2996c7c381a4f951d7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000396903.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/558f49979a7f0f6e75091cdbd7e3d5ec0aea56193271f018b03e51bf5fcf81ab.npz",
+      "sha256": "2d08e8633c7d09b8fc016e5979d813d161bd3dfa7a2c1ae8794bfffa2fa928b8",
+      "before_sha256": "3b954558639f080597926b0abaff7ea5c145c699d259fd06fa2fe5f4caae977f",
+      "after_sha256": "1053c637ec2b258bcbd6f7ef8cf3fcc40c79b25ebaf1d935cec2bd144f8b8ad5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000397133.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/81826a4706548bd288a1373a75e905b00ea4e6f46a1e2e6732de02c70f6ebdd8.npz",
+      "sha256": "e967d43f2690b956ae96507b1ffcb401bb7664994a95a522d8ef6cfcde39edd4",
+      "before_sha256": "9d8e088b0a5a3715af39b3b76ed6be573dd2c68b1875a14c152aed8659e4253f",
+      "after_sha256": "0abb4f44062a0e9a5dbf3a8d3495df6db051a37bff976e77fab563d1521b37f7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000427338.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/5a8bc2c9782e3fcbfb080161c5346568ced4072cf86b259e62ee7f226b79bb70.npz",
+      "sha256": "3bd0e8895e1d9b2dfe1c6d2e1bc33613fbf227a8470cee004fc5ff94c104455a",
+      "before_sha256": "54660b02101c8ad390c7eaf1fbc76d71c7d857b188a70685e5b46711c88201ad",
+      "after_sha256": "06f5a4e30635e840e9872a1b5a18cfac73d4416ca1f7dd2576aef15154c5d91b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000434548.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/946b4c4c89f77215ad6d4ea553a97598a867f31f623aac1217b11826348573d1.npz",
+      "sha256": "9398e5bab3c8fa314e905f8523d1adfe68dbd21fb822bf55ec00d7341cfe052a",
+      "before_sha256": "5ad1c35fb67f071248e9a4c0702b1851d546ef4a2f35731b0353ddc4a3dd50e9",
+      "after_sha256": "70715679a0fe8d428d8791786cf02ec9bbaf8f60a09dcca1e940abef3dae5386"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000435205.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/7dde87056ac20ed63159b889b98ee878978da8d82850d9437632ec994acd7288.npz",
+      "sha256": "663c4fc5696e8757f576b9bfae3989d89e59dd56eae959c9e6bcbc94cfb6482a",
+      "before_sha256": "4d702010327186925f970edb7613742c570a638d627b8ebeff907deb986f2cbe",
+      "after_sha256": "155bb44117b3383b3f89981d53c75dcf3b59d91ed9a1efbcbeab28969a918540"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000439426.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/a4bd5b5cbc32c1666f37a3526cd685ed57fa3df05ea4024eb851fa95f1bce2b6.npz",
+      "sha256": "ac56c262fcd4648ef25e279f03a18a3eaf7bff9b674f056e6a5e3f0331142420",
+      "before_sha256": "b0a28c209fb1295181b452cc87468c78a0544393af453c87138f698fb0d220e9",
+      "after_sha256": "281a0755f376328d1faa380f59b431b0a164a4e9fb392a1c0bc08d7b7fc25df1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000451090.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/3525389454fac9d0ea0fceae99e50f35b2bec0eaa2fe6b067f8d5f8e8435afc0.npz",
+      "sha256": "90e369dfc732f0a62d483ec028aa7fd9b03ce30f1febf3c5a7a1bb7614ef7366",
+      "before_sha256": "fa8920d8330f639f4edbe91a6d1e8e4eb35b0484c2bb923ab0c0626a79031515",
+      "after_sha256": "918b49347ba601aee37c45f3a22977a08892b7ab9fb926cdb920ae3d9883f8bf"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000459954.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/5f18452b2258cb5d4c855b54de797649d9357ba0cfa990a0b666963d18419e8c.npz",
+      "sha256": "3a725a8bf6b0831a2e2643c344db6d57210dc2ad13a8e246a4a547a304e6000c",
+      "before_sha256": "444f0457cbdb4c1ae411b6ce58946b4d831acaf9a641bce18f813d6d43b1f005",
+      "after_sha256": "97daec8fed468e792cb1fe0375b0780ed523e46f0e124c4c038b3eddd6ff668f"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000503823.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/6cdd9b7ac9cb6bbc661fdf2f54b3b6566558b2a6146b7630b01dc861070b32f8.npz",
+      "sha256": "455388d80be746d8b38454bd37a99ac2ca2de55f0c5a067453609eddb2f8042b",
+      "before_sha256": "1b01d4a29b6883eac50b480337ca9c15376f079356eed4d1d2e6141ee99bfc95",
+      "after_sha256": "df6f512ecb3cfef79d9e60ba94547693bf58a39a406d832fd1895bb5bdbb69b9"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000522156.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/c4e444f188722c8061e3d7cfb8699cee620a67e45cd60bc5c605b9e610b28c6c.npz",
+      "sha256": "a188f5e2b16d4a2a2c87dc931a2f119549148d5e95e672ac871e38e021306fd2",
+      "before_sha256": "2c63691d4a5e271f9a3af23d92eca83f137449bafa3da6827c09bcd8db1c4c03",
+      "after_sha256": "96c2bed86b51392e1261785a7ecae533ea147dbe24257c5454ad924a2b2e6e46"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000530975.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/1a2b807fac9e806b71aa2dd2a5ef2873972ae47e9cb5140e3c0dc3ae710fb7d3.npz",
+      "sha256": "3cde2ae2261845e24a5317dd6d3cc0d8acc800ded9ac6d622ba00c57db58ce83",
+      "before_sha256": "675deaf731f4e9e2e78d6152108ce61f2a29197ed4f531a9be66674c40b67d91",
+      "after_sha256": "2048af10dfa887c6d6f0d83cfd6a026961eb3ba32e48161206479ebe7de6a21c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000531495.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/264bcb583451b7c0bd253c2c27a5dd3ca50218722c26b1bf176591c9e0b3c570.npz",
+      "sha256": "ee6c6675a94b81a455d92f00572deea3c4935dff3f0a87721cb416e57dbea34f",
+      "before_sha256": "10dd7a115d4756bb4e33db25cbdc1e4f68a7635fba4722f96cdc889908575135",
+      "after_sha256": "bc67473307caa06507ac6f53eba41c81b56ca75d0e292c74eaa1335a69dfd719"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000535523.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/7944a08c782b2c595de461e7640df99e884ee8b5ce46d4fdaadaab9b529b555f.npz",
+      "sha256": "9dd088e2fd11476bb608fea0d02529ea082c945bfa78b5ba1f8ad52d101620bd",
+      "before_sha256": "8e4e7227435cebbfe4f305708734d84a36cab910515a4ac96647ec67dd14fb2f",
+      "after_sha256": "21d0ff2107fe4fc67778ca352c413517a3e84cb22e69ddf33ffb8227fdc27855"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000540466.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/eb5e0c63c74362ab48dbf56aacd05af5cdbebf29718be5ca288f83e9cf802ca7.npz",
+      "sha256": "60e7fae96882433237fe10f132008a1929958f7d7001b33a53f3fdf17dbeabff",
+      "before_sha256": "046e1eb957b70f312f9a9cdd3c47c1092dbab578975f7bd15ae006b9e9289d94",
+      "after_sha256": "f2267b61a1650437a62af55428d7fb421ce24979bc06027a9a5561fe377cd504"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000546826.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/b8cfae957ab73ba86ae13dd55d048b935267095471e74501fab0c062361f068a.npz",
+      "sha256": "6c6305187266ff95943dba8c1c13a20792ad9e11d5bd7727eab70773f385dd0e",
+      "before_sha256": "ce96860db65816ea26dce1b46202373adf3e2f9c532c10ea64d32e821195d153",
+      "after_sha256": "aa9f4cf182138aa3df890b04dfe93e68175af1fd5a4d9a6e6a8d257b4c7f68d0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000547502.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/0c5536d15470212522a5a5cdb83bca70ce7578231916c743736119c49425379d.npz",
+      "sha256": "4e9c94de4649827685460805f3e9a380a9211a4189683e0139e4dbd7e4ddfb48",
+      "before_sha256": "14c6d6d61300675dfa6aa2f62e36a45a0abccf4fe789f2c2bfc9dad60ab8ed93",
+      "after_sha256": "6670ee997ee2cdd206769a3e701c821f58405c615b2d8ff56391dc40745b8ab0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000559547.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/f8240a94a90e415d01f9070f6a60684222cb5a74c12160d0541d59032558bd34.npz",
+      "sha256": "f7255bb102768ea08c4e8e73b814cbe86a7b03ed343c814fbda30edaf4edd26f",
+      "before_sha256": "4bd499401fccb018ab4ad3da03a390d57c281576d99f6d00cc06a8015617f786",
+      "after_sha256": "8865d68c5607f5941e3d159a3ebbef62d88f9e7de33ffac877f48cb5751d3d6a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000561223.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/4d55f24e966b52f9e5189133a35daa32e51a3fbfd8fc73a08e219660b90fc0da.npz",
+      "sha256": "bb8ea520151c368c7aa35cf69087fb13470db18d1bf148d7a9e43921ca0a5358",
+      "before_sha256": "70233bad8d6b6445a4dcc66f6efa042e5a26ea16ee7c30e88a976f8c4d6aa700",
+      "after_sha256": "ba6ee24bf5cf40924a7d81e7f22415a6b94cf94b748dc0e67684e224a8afd45d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000569700.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/2059c43c266f557e0b37dbb9b1c853e5a72da807849c670739d7c97eeeacffc2.npz",
+      "sha256": "3631ae19eab4d84a25402c583e5a739858e176a18408fb2ec8c9de3c5f78c9e6",
+      "before_sha256": "a350de4160187b07c34f5460608773710872d37b545a1ed4b1852f3e175d31c0",
+      "after_sha256": "d17d177ec5ef8ee2d33332a6063e2938a51f67f29af0f2041cb211fdf0733f20"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000575815.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/selection_audit/coco_object/all_candidates/top_confidence/predictions/30db4868db337435d4daf9534b4ac2e39efbe2a18ce3504887968cfe0dcd8ed5.npz",
+      "sha256": "581854282afc067a6b3bffcc4646c1346d519de56f3837c9e8cbf208afbb90b6",
+      "before_sha256": "49879d82b1c37a12dc7929f218e6dcb862dd800f81b8ca990a5cddd3bba1dd11",
+      "after_sha256": "360f2103dcde92fe6802ebc8752a09ec93fbc8c91f7332444fe6953cf4a79f12"
+    }
+  ],
+  "labels_in_artifact": false,
+  "classes": [
+    "background",
+    "person",
+    "bicycle",
+    "car",
+    "motorcycle",
+    "airplane",
+    "bus",
+    "train",
+    "truck",
+    "boat",
+    "traffic light",
+    "fire hydrant",
+    "stop sign",
+    "parking meter",
+    "bench",
+    "bird",
+    "cat",
+    "dog",
+    "horse",
+    "sheep",
+    "cow",
+    "elephant",
+    "bear",
+    "zebra",
+    "giraffe",
+    "backpack",
+    "umbrella",
+    "handbag",
+    "tie",
+    "suitcase",
+    "frisbee",
+    "skis",
+    "snowboard",
+    "sports ball",
+    "kite",
+    "baseball bat",
+    "baseball glove",
+    "skateboard",
+    "surfboard",
+    "tennis racket",
+    "bottle",
+    "wine glass",
+    "cup",
+    "fork",
+    "knife",
+    "spoon",
+    "bowl",
+    "banana",
+    "apple",
+    "sandwich",
+    "orange",
+    "broccoli",
+    "carrot",
+    "hot dog",
+    "pizza",
+    "donut",
+    "cake",
+    "chair",
+    "couch",
+    "potted plant",
+    "bed",
+    "dining table",
+    "toilet",
+    "tv",
+    "laptop",
+    "mouse",
+    "remote",
+    "keyboard",
+    "cell phone",
+    "microwave",
+    "oven",
+    "toaster",
+    "sink",
+    "refrigerator",
+    "book",
+    "clock",
+    "vase",
+    "scissors",
+    "teddy bear",
+    "hair drier",
+    "toothbrush"
+  ]
+}

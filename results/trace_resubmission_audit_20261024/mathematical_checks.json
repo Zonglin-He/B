@@ -1,0 +1,42 @@
+{
+  "status": "CPU algebra counterexamples, not dataset performance",
+  "random_triples": 1000000,
+  "dominance_bounds_passed": true,
+  "normalized_loss": 0.8400000000000001,
+  "normalized_loss_weights_times_0_001": 0.84,
+  "singleton_losses": [
+    1.0,
+    1.0,
+    1.0
+  ],
+  "two_regions_equal_weights": 0.6,
+  "first_region_split_into_five": 0.8666666666666667,
+  "min_of_means": 0.5,
+  "mean_of_tokenwise_minima": 0.1,
+  "duplicate_query_example": {
+    "logits_exponentiated": [
+      9.0,
+      1.0
+    ],
+    "original_probability": 0.9,
+    "after_duplicate_target_query": 0.47368421052631576,
+    "original_base_argmax": 0,
+    "after_base_argmax": 0
+  },
+  "adam_constant_loss_rescaling": [
+    {
+      "epsilon": 0.0,
+      "reference_step_norm": 0.014203148442857198,
+      "scaled_loss_step_norm": 0.014203148442857198,
+      "step_norm_ratio": 1.0,
+      "max_parameter_difference": 0.0
+    },
+    {
+      "epsilon": 1e-08,
+      "reference_step_norm": 0.014203147882071032,
+      "scaled_loss_step_norm": 0.01420258767955411,
+      "step_norm_ratio": 0.9999605578621322,
+      "max_parameter_difference": 4.541991305284654e-07
+    }
+  ]
+}

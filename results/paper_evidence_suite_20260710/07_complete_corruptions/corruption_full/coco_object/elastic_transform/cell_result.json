@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_object/elastic_transform",
+  "duration_sec": 1018.803,
+  "evidence_type": "newly_run",
+  "results": {
+    "elastic_transform": {
+      "mAcc": 50.7,
+      "mAcc_std": 0.0,
+      "mDice": 39.54,
+      "mDice_std": 0.0,
+      "mIoU": 26.8,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

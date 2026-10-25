@@ -1,0 +1,4 @@
+evidence_type,dataset,method,num_corruptions_excluding_original,avg_corruption_mIoU,best_corruption,best_mIoU,worst_corruption,worst_mIoU,mlmp_avg_mIoU_from_paper,delta_vs_mlmp_avg,win_count_vs_mlmp_per_corruption,top1_count_among_paper_methods_plus_cfctta,avg_rank_among_paper_methods_plus_cfctta
+preexisting_artifact,PascalContext59-C,CFC-TTA,15,26.642,pixelate,31.46,zoom_blur,21.16,27.03,-0.3880000000000017,3,3,1.8
+preexisting_artifact,PascalContext60-C,CFC-TTA,15,24.642666666666667,pixelate,28.73,zoom_blur,19.62,24.07,0.5726666666666667,13,13,1.1333333333333333
+preexisting_artifact,VOC21-C,CFC-TTA,15,46.92266666666667,brightness,50.59,zoom_blur,39.43,46.25,0.6726666666666716,14,14,1.0666666666666667

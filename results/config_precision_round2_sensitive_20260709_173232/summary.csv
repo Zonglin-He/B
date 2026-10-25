@@ -1,0 +1,4 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_cd,ok,74.7,84.93,88.18,72.1,2.6000000000000085,1,29.93,results/config_precision_round2_sensitive_20260709_173232/coco_cd/minimal_cfc/run.log,newly_run,paper_ready
+voc20,ok,84.97,91.42,92.85,83.76,1.2099999999999937,1,464.32,results/config_precision_round2_sensitive_20260709_173232/voc20/minimal_cfc/run.log,newly_run,paper_ready
+coco_stuff,ok,21.6,32.32,42.32,21.25,0.3500000000000014,1,2366.02,results/config_precision_round2_sensitive_20260709_173232/coco_stuff/minimal_cfc/run.log,newly_run,paper_ready

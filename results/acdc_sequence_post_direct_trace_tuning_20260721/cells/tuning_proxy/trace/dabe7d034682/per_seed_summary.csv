@@ -1,0 +1,2 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,lr,steps,batch_size,config_override,result_path,evidence_type
+all,trace,0,ok,30.51,42.01,56.31,229.26,0.001,16,1,"{""batch_size"": 1, ""lr"": 0.001, ""params"": {""cfc_max_regions"": 8, ""cfc_min_region_conf"": 0.211, ""cfc_rho_min"": 0.1}, ""steps"": 16}",/home/wwww/hzl/results/acdc_sequence_post_direct_trace_tuning_20260721/cells/tuning_proxy/trace/dabe7d034682/all/trace/seed0/results.txt,newly_run

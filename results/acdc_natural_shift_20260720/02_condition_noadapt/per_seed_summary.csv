@@ -1,0 +1,5 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,result_path,evidence_type
+fog,noadapt,0,ok,23.16,33.43,57.39,13.399,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/fog/noadapt/seed0/results.txt,newly_run
+night,noadapt,0,ok,21.63,31.49,49.97,13.657,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/night/noadapt/seed0/results.txt,newly_run
+rain,noadapt,0,ok,23.84,34.26,55.07,13.382,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/rain/noadapt/seed0/results.txt,newly_run
+snow,noadapt,0,ok,23.3,34.32,53.92,13.374,/home/wwww/hzl/results/acdc_natural_shift_20260720/02_condition_noadapt/snow/noadapt/seed0/results.txt,newly_run

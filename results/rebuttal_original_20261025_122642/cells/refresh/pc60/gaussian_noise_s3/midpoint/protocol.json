@@ -1,0 +1,31 @@
+{
+  "phi": {
+    "operator_seed": 20271010,
+    "gaussian_noise_std_rgb": 38.25,
+    "random_mask_probability": 0.5,
+    "random_mask_fill_rgb": [
+      127.5,
+      127.5,
+      127.5
+    ],
+    "color_style_mean_rgb": [
+      110.0,
+      135.0,
+      150.0
+    ],
+    "color_style_std_rgb": [
+      45.0,
+      55.0,
+      50.0
+    ],
+    "color_style_std_floor_rgb": 1.0
+  },
+  "color_style": "fixed RGB mean/std transfer to an image-independent palette; not neural style transfer",
+  "intervention": "Only make_trace_counterfactual_background is replaced; native keep/drop weakening and mask assembly unchanged",
+  "seed_policy": "adaptation seed=job.seed; phi keyed by patch pixels and fixed operator_seed; dataset corruption keyed by source RGB SHA256 and image basename, never adaptation seed",
+  "corruption": "archived imagecorruptions gaussian_noise severity3 on full source RGB before PIL BILINEAR resize",
+  "refresh": "same initial masks; midpoint after steps//2 completed Adam updates, one reset per episode",
+  "selection": "all native connected components before K selection; class unions per patch/class",
+  "metric": "archived reviewer_followup.score_sealed reconstructed mIoU and actual paired pixel C->W/W->C",
+  "thresholds": "none tuned; all results retained"
+}

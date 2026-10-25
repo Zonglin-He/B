@@ -1,0 +1,5 @@
+condition,method,n_seeds,mIoU_mean,mIoU_std,evidence_type
+all,watt,1,17.85,0.0,newly_run_natural_domain_shift
+all,clipartt,0,,,newly_run_natural_domain_shift
+all,mlmp,1,31.46,0.0,newly_run_natural_domain_shift
+all,trace,1,31.48,0.0,newly_run_natural_domain_shift

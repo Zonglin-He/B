@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/pc60/jpeg_compression",
+  "duration_sec": 1128.303,
+  "evidence_type": "newly_run",
+  "results": {
+    "jpeg_compression": {
+      "mAcc": 49.2,
+      "mAcc_std": 0.0,
+      "mDice": 39.7,
+      "mDice_std": 0.0,
+      "mIoU": 27.66,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

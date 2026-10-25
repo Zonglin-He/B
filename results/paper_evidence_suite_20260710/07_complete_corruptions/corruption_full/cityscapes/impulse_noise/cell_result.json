@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/cityscapes/impulse_noise",
+  "duration_sec": 7095.148,
+  "evidence_type": "newly_run",
+  "results": {
+    "impulse_noise": {
+      "mAcc": 31.2,
+      "mAcc_std": 0.0,
+      "mDice": 31.29,
+      "mDice_std": 0.0,
+      "mIoU": 21.01,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

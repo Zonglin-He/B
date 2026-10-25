@@ -1,0 +1,11 @@
+{
+  "macro_miou_delta": 0.014000000000000767,
+  "worst_dataset_delta": -0.05000000000000071,
+  "scope": "Historical seed-0 full splits; not new runs or equivalence tests. Timing excludes loading/scoring.",
+  "missing_datasets": [
+    "voc20",
+    "pc59",
+    "cityscapes",
+    "waterbirds"
+  ]
+}

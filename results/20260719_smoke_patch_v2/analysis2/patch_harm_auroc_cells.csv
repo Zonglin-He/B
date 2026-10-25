@@ -1,0 +1,25 @@
+evidence_type,dataset,dataset_label,method,method_label,task,signal,threshold,patches,positives,prevalence,AUROC,AUPRC
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,probability_drop,Entropy,0.05,109,1,0.009174311926605505,0.5185185185185186,0.018867924528301886
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,probability_drop,1-Confidence,0.05,109,1,0.009174311926605505,0.4907407407407407,0.017857142857142856
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,probability_drop,1-Margin,0.05,109,1,0.009174311926605505,0.4722222222222222,0.017241379310344827
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,probability_drop,MLMP-D,0.05,109,1,0.009174311926605505,0.6203703703703703,0.023809523809523808
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,probability_drop,TRACE source risk,0.05,109,1,0.009174311926605505,0.5,0.009174311926605505
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,probability_drop,TRACE calibrated risk,0.05,109,1,0.009174311926605505,0.4722222222222222,0.017241379310344827
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,correct_to_wrong,Entropy,,109,1,0.009174311926605505,0.5185185185185186,0.018867924528301886
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,correct_to_wrong,1-Confidence,,109,1,0.009174311926605505,0.4907407407407407,0.017857142857142856
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,correct_to_wrong,1-Margin,,109,1,0.009174311926605505,0.4722222222222222,0.017241379310344827
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,correct_to_wrong,MLMP-D,,109,1,0.009174311926605505,0.6203703703703703,0.023809523809523808
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,correct_to_wrong,TRACE source risk,,109,1,0.009174311926605505,0.5,0.009174311926605505
+newly_run_heldout,voc20,VOC20,cfctta,TRACE,correct_to_wrong,TRACE calibrated risk,,109,1,0.009174311926605505,0.4722222222222222,0.017241379310344827
+newly_run_heldout,voc20,VOC20,tent,TENT,probability_drop,Entropy,0.05,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,probability_drop,1-Confidence,0.05,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,probability_drop,1-Margin,0.05,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,probability_drop,MLMP-D,0.05,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,probability_drop,TRACE source risk,0.05,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,probability_drop,TRACE calibrated risk,0.05,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,correct_to_wrong,Entropy,,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,correct_to_wrong,1-Confidence,,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,correct_to_wrong,1-Margin,,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,correct_to_wrong,MLMP-D,,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,correct_to_wrong,TRACE source risk,,108,0,0.0,,
+newly_run_heldout,voc20,VOC20,tent,TENT,correct_to_wrong,TRACE calibrated risk,,108,0,0.0,,

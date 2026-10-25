@@ -1,0 +1,2 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,lr,steps,batch_size,config_override,result_path,evidence_type
+all,trace,0,ok,32.41,45.77,51.7,1953.209,0.001,16,1,"{""batch_size"": 1, ""lr"": 0.001, ""params"": {""cfc_max_regions"": 8, ""cfc_min_region_conf"": 0.478, ""cfc_rho_min"": 0.1}, ""steps"": 16}",/home/wwww/hzl/results/acdc_sequence_heldout_tuned_trace_20260721/all/trace/seed0/results.txt,newly_run

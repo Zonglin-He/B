@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\centering
+\footnotesize
+\setlength{\tabcolsep}{3.4pt}
+\caption{Role-specific confidence-source diagnosis over initially correct candidates. Statistics are macro-averaged over dataset--role strata so that Cityscapes patches do not dominate the result. C$\rightarrow$H is the correct-to-harm rate. AUC treats harmful updates as positive and uses $1-\rho$, entropy, or inverse raw confidence as the ranking signal.}
+\label{tab:role-source-diagnosis}
+\begin{tabular}{lrrrrrrrrr}
+\toprule
+Role & Sets & Regions & $s_{\rm keep}$ & $s_{\rm leak}$ & $s_{\rm cf}$ & C$\rightarrow$H & $1-\rho$ & Entropy & $1-$Conf. \\
+\midrule
+Background & 4 & 4941 & 0.579 & 0.465 & 0.615 & 4.4 & 0.728 & 0.602 & 0.635 \\
+Stuff & 4 & 56340 & 0.439 & 0.181 & 0.272 & 18.7 & 0.559 & 0.702 & 0.755 \\
+Thing & 9 & 14481 & 0.509 & 0.413 & 0.483 & 18.3 & 0.603 & 0.714 & 0.708 \\
+\bottomrule
+\end{tabular}
+\end{table*}

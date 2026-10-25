@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_object/gaussian_noise",
+  "duration_sec": 1011.241,
+  "evidence_type": "newly_run",
+  "results": {
+    "gaussian_noise": {
+      "mAcc": 54.28,
+      "mAcc_std": 0.0,
+      "mDice": 39.75,
+      "mDice_std": 0.0,
+      "mIoU": 26.75,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

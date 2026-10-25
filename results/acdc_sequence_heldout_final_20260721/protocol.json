@@ -1,0 +1,14 @@
+{
+  "suite": "acdc_post_direct_conditional_tuning",
+  "trigger": "Direct held-out TRACE (31.93) did not exceed direct held-out MLMP (32.25).",
+  "tuned_methods": [
+    "trace"
+  ],
+  "baseline_results": "/home/wwww/hzl/results/acdc_sequence_heldout_eval_20260721",
+  "tuned_trace_results": "/home/wwww/hzl/results/acdc_sequence_heldout_tuned_trace_20260721",
+  "configuration_selection": "/home/wwww/hzl/results/acdc_sequence_post_direct_trace_tuning_20260721",
+  "selection_data": "sequence-disjoint ACDC calibration/proxy only",
+  "held_out_used_for_parameter_selection": false,
+  "protocol_risk": "The decision to open tuning was made after observing the direct held-out comparison; parameter values themselves were selected without held-out access.",
+  "evidence_type": "newly_run_conditionally_tuned_domain_shift"
+}

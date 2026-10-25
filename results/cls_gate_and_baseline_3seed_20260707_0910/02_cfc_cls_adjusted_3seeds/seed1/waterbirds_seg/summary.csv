@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+waterbirds_seg,ok,55.14,68.01,70.1,52.18,2.960000000000001,1,388.35,/home/wwww/hzl/results/cls_gate_and_baseline_3seed_20260707_0910/02_cfc_cls_adjusted_3seeds/seed1/waterbirds_seg/waterbirds_seg/minimal_cfc/results.txt,newly_run,paper_ready

@@ -1,0 +1,15 @@
+{
+  "package": "imagecorruptions",
+  "version": "1.1.2",
+  "upstream": "https://github.com/bethgelab/imagecorruptions",
+  "source_hashes": {
+    "corruptions.py": "adb5944eccfafe0118e777e3300c94420eab486556ca805ea101d3374d130cbb",
+    "__init__.py": "14c8f4da43f1e7fe2fd0b4b9b3b8d668962aacebd574f888140f22502704129a"
+  },
+  "seed_policy": "SHA256(dataset, image basename, operator, severity, 20270929); independent of method and adaptation seed",
+  "location": "entire source-resolution RGB image, before resize, normalization and overlapping crops",
+  "order": "corrupt_then_resize",
+  "resize": "PIL BILINEAR, unchanged from the clean loader",
+  "labels": "unchanged",
+  "protocol": "selected common-corruption panel, not the full ImageNet-C benchmark"
+}

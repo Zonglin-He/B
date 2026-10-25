@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc21/pixelate",
+  "duration_sec": 1253.485,
+  "evidence_type": "newly_run",
+  "results": {
+    "pixelate": {
+      "mAcc": 80.22,
+      "mAcc_std": 0.0,
+      "mDice": 67.87,
+      "mDice_std": 0.0,
+      "mIoU": 52.78,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

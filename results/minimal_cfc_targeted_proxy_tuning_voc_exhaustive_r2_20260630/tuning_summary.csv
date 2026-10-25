@@ -1,0 +1,3 @@
+dataset,best_mIoU,mlmp_mIoU,delta_vs_mlmp,fixed_method_params,fixed_cfg_params,tuning_kind,evidence_type
+voc20,80.41,83.76,-3.3500000000000085,"{""cfc_max_regions"": 8, ""cfc_min_region_conf"": 0.7067493263341561, ""alpha_cls"": 2.479211148358474, ""cfc_rho_min"": 0.0, ""cfc_max_regions_per_class"": 10}","{""lr"": 0.003, ""steps"": 10, ""batch_size"": 6}",background_object_heavy,newly_run_proxy
+voc21,50.65,50.78,-0.13000000000000256,"{""cfc_max_regions"": 8, ""cfc_min_region_conf"": 0.25, ""alpha_cls"": 2.138442383394772, ""cfc_rho_min"": 0.0, ""cfc_max_regions_per_class"": 4}","{""lr"": 0.000629036333408876, ""steps"": 36, ""batch_size"": 8}",background_object_heavy,newly_run_proxy

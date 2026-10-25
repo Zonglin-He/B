@@ -1,0 +1,28 @@
+{
+  "dataset": "voc20",
+  "fixed_method_params": {
+    "cfc_max_regions": 14,
+    "cfc_min_region_conf": 0.7067493263341561,
+    "alpha_cls": 2.138442383394772,
+    "cfc_rho_min": 0.5,
+    "cfc_max_regions_per_class": 3
+  },
+  "fixed_cfg_params": {
+    "lr": 0.0013555509361296916,
+    "steps": 17,
+    "batch_size": 1
+  },
+  "stage_best_param": "batch_size",
+  "stage_best_value": 1,
+  "stage_best_mIoU": 84.6,
+  "global_best": {
+    "dataset": "voc20",
+    "best_mIoU": 84.61,
+    "best_stage": 5,
+    "best_channel": "param",
+    "best_param": "cfc_max_regions_per_class",
+    "best_value": 3,
+    "best_summary": ""
+  },
+  "mlmp_mIoU": 83.76
+}

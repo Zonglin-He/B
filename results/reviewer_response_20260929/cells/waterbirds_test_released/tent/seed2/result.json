@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "dataset": "waterbirds_seg",
+  "method": "tent",
+  "variant": "full",
+  "backend": "shared_legacy",
+  "protocol": "released",
+  "seed": 2,
+  "images": 2568,
+  "corruption": null,
+  "severity": 0,
+  "formula": "native",
+  "gamma": null,
+  "blur_kernel": null,
+  "full_split": true,
+  "calibration": false,
+  "metrics": {
+    "mIoU": 53.91,
+    "mDice": 67.16,
+    "mAcc": 77.92,
+    "aAcc": 84.61
+  },
+  "condition_metrics": {},
+  "config": {
+    "dataset": "WaterbirdsSegDataset",
+    "data_subdir": "waterbirds_seg/correlation_0.95",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 2,
+    "lr": 0.001,
+    "steps": 10,
+    "trace_max_regions": 7,
+    "trace_view_batch_size": 8,
+    "class_extensions": false,
+    "data_dir": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95"
+  },
+  "warmup_batches": 5,
+  "ms_per_image": 68.68661599862881,
+  "images_per_second": 14.558877089242001,
+  "adaptation_ms_per_image": 65.59137998555114,
+  "visual_calls_per_image": 5.5,
+  "visual_inputs_per_image": 11.0,
+  "peak_allocated_mib": 2312.1494140625,
+  "metric_scope": "dataset classwise intersection/union; timing excludes loading and scoring"
+}

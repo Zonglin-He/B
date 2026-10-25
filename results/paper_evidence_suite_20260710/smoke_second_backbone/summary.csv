@@ -1,0 +1,4 @@
+suite,dataset,variant,method,status,result_path
+second_backbone,voc20,noadapt,noadapt,failed:1,results/paper_evidence_suite_20260710/smoke_second_backbone/second_backbone/voc20/noadapt/run.log
+second_backbone,voc20,mlmp,mlmp,failed:1,results/paper_evidence_suite_20260710/smoke_second_backbone/second_backbone/voc20/mlmp/run.log
+second_backbone,voc20,cfctta_frozen_naclip_config,cfctta,failed:1,results/paper_evidence_suite_20260710/smoke_second_backbone/second_backbone/voc20/cfctta_frozen_naclip_config/run.log

@@ -1,0 +1,4 @@
+evidence_type,dataset,dataset_label,method,method_label,num_shared_regions,num_initially_correct,num_correct_to_harm,correct_to_harm_rate,mean_region_accuracy_delta_all,mean_region_accuracy_delta_initially_correct,mean_region_prediction_flip_rate,region_flip_incidence,auc_cfc_risk,auc_entropy_risk,auc_inverse_confidence,precision_top10_cfc_risk,subset_mIoU,subset_mDice,subset_mAcc
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,1,1,0,0.0,0.0013440251350402832,0.0013440251350402832,0.0013440237380564213,0.0,nan,nan,nan,0.0,100.0,100.0,100.0
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,1,1,0,0.0,0.0012513399124145508,0.0012513399124145508,0.0012513324618339539,0.0,nan,nan,nan,0.0,100.0,100.0,100.0
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,1,1,0,0.0,0.0013440251350402832,0.0013440251350402832,0.0013440237380564213,0.0,nan,nan,nan,0.0,100.0,100.0,100.0

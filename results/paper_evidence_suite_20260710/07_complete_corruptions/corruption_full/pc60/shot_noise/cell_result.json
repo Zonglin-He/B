@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/pc60/shot_noise",
+  "duration_sec": 1127.07,
+  "evidence_type": "newly_run",
+  "results": {
+    "shot_noise": {
+      "mAcc": 45.33,
+      "mAcc_std": 0.0,
+      "mDice": 36.94,
+      "mDice_std": 0.0,
+      "mIoU": 25.26,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

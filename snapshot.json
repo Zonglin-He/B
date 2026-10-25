@@ -1,0 +1,251 @@
+{
+  "started_at_utc": "2026-10-25T09:33:28.211246+00:00",
+  "finished_at_utc": "2026-10-25T09:47:02.778595+00:00",
+  "source_root": "/home/wwww/hzl/results",
+  "snapshot_type": "read_only_live_file_snapshot",
+  "atomic": false,
+  "source_modified": false,
+  "gpu_work_started": false,
+  "included_files": 243217,
+  "logical_bytes": 23794853810,
+  "unique_objects": 165804,
+  "git_result_bytes": 188770442,
+  "excluded_counts": {
+    "source_runtime_or_dependency_directory": 86,
+    "not_a_result_artifact_or_excluded_weight_source_archive": 3766,
+    "source_patch_not_uploaded": 1,
+    "symlink_not_followed": 10,
+    "non_experiment_driver_runtime": 1
+  },
+  "suite_count": 129,
+  "run_index_rows": 1449,
+  "archives": [
+    {
+      "name": "results-objects-001.tar.gz",
+      "objects": 17282,
+      "bytes": 138081742,
+      "sha256": "6f954026f7a6fa1eaa10fab4aca26b8087d8e2e6a054f5b05676ed34c5872c75"
+    },
+    {
+      "name": "results-objects-002.tar.gz",
+      "objects": 14841,
+      "bytes": 150615945,
+      "sha256": "6def1369e90eda3a3a9bd02c176751153136bc6c28ea4f30d556763881d64caf"
+    },
+    {
+      "name": "results-objects-003.tar.gz",
+      "objects": 17110,
+      "bytes": 200226836,
+      "sha256": "8e5a79e0fc5d03106b8810b41a025e3dc5470bca833becff6c92a36d19a958a0"
+    },
+    {
+      "name": "results-objects-004.tar.gz",
+      "objects": 5003,
+      "bytes": 29155372,
+      "sha256": "d9892893963265ca62baee012b1f2dc99ad3e24e63fe4c12db0f736bb944cb7a"
+    },
+    {
+      "name": "results-objects-005.tar.gz",
+      "objects": 4996,
+      "bytes": 29685725,
+      "sha256": "ac1d307e39d6880a57992d6309e7243a8c3c85a36fba4017aeef627b795c66dc"
+    },
+    {
+      "name": "results-objects-006.tar.gz",
+      "objects": 5002,
+      "bytes": 29907509,
+      "sha256": "889518156e552f2c0d6afa3eaf4540d69a52cc8b580571514d81b4337b501e6e"
+    },
+    {
+      "name": "results-objects-007.tar.gz",
+      "objects": 5002,
+      "bytes": 29922508,
+      "sha256": "9a2d02d66443b7f0539c469572610974f86044a0557237a95c9552f0e832f21b"
+    },
+    {
+      "name": "results-objects-008.tar.gz",
+      "objects": 10099,
+      "bytes": 72326340,
+      "sha256": "fabbe9cfeeb67c59bc3eb9b8e9096a7951cb6e6dc51f35581720c44061a25e38"
+    },
+    {
+      "name": "results-objects-009.tar.gz",
+      "objects": 38003,
+      "bytes": 128567873,
+      "sha256": "e924e7b758dbb5414d790a45d6917750ad463749bb05de787d774530a18bf94e"
+    },
+    {
+      "name": "results-objects-010.tar.gz",
+      "objects": 5004,
+      "bytes": 30038491,
+      "sha256": "4aa65523a0cf8c76ce1bf2e762926316e377cba819716e6fc5f0d874ff038262"
+    },
+    {
+      "name": "results-objects-011.tar.gz",
+      "objects": 5004,
+      "bytes": 29941843,
+      "sha256": "837ae865fadb5671238fbb4dac0dd5ef5e77535de5d3413e4d0554b3129f1934"
+    },
+    {
+      "name": "results-objects-012.tar.gz",
+      "objects": 7735,
+      "bytes": 81650097,
+      "sha256": "dfc41cd0daaefa688901d33b8d95c171a467057b0b90b26775de246294e250a7"
+    },
+    {
+      "name": "results-objects-013.tar.gz",
+      "objects": 2145,
+      "bytes": 253346504,
+      "sha256": "adbf12b24117bce18370d4aa9ada95610c14f0f4016e89b3dfd75416e2c7048d"
+    },
+    {
+      "name": "results-objects-014.tar.gz",
+      "objects": 11621,
+      "bytes": 400129668,
+      "sha256": "40d61552fb14acd66b93c06e29a983956deacc737600c3c8f9b785725fc54844"
+    },
+    {
+      "name": "results-objects-015.tar.gz",
+      "objects": 2719,
+      "bytes": 617156489,
+      "sha256": "bc2786df4c1677d4692c194627e2fd01fc913cca4e6a5bf91d59dd4608169c37"
+    },
+    {
+      "name": "results-objects-016.tar.gz",
+      "objects": 153,
+      "bytes": 332572178,
+      "sha256": "35fbe350188f06b071cfebba7925a2451d74e3ffed36753e23b87552b04cf92d"
+    },
+    {
+      "name": "results-objects-017.tar.gz",
+      "objects": 7061,
+      "bytes": 257190208,
+      "sha256": "d364379607a3aac5b3718c40e7f4485dea51c944b7566b13a584e2f5496a57ca"
+    },
+    {
+      "name": "results-objects-018.tar.gz",
+      "objects": 6998,
+      "bytes": 227840405,
+      "sha256": "4b5f9de25dd0b17667f4e7f2e2581e317877f4260ec159e7eb6772f373523eb9"
+    },
+    {
+      "name": "results-objects-019.tar.gz",
+      "objects": 26,
+      "bytes": 162590,
+      "sha256": "b0332f238b89f986cfb5609bd375f4324c151610667379804dab277909508134"
+    }
+  ],
+  "files_manifest_sha256": "a84a6e77179555ef017124aec72e4acc9f282a2e62e04e5669db6d4a6cb89234",
+  "queue_snapshots": {
+    "rebuttal_original_20261025_122642": {
+      "status": "running",
+      "active": "ablation/voc21/seed0/without_reliability_weighting",
+      "counts": {
+        "completed": 77,
+        "running": 1
+      },
+      "total": 97
+    },
+    "reviewer_corruption_before_resize_20261001": {
+      "status": null,
+      "active": null,
+      "counts": {
+        "completed": 382
+      },
+      "total": null
+    },
+    "reviewer_followup_20261010_123627": {
+      "status": null,
+      "active": null,
+      "counts": {
+        "completed": 22
+      },
+      "total": null
+    },
+    "reviewer_response_20260929": {
+      "status": null,
+      "active": null,
+      "counts": {
+        "completed": 619,
+        "cancelled": 154
+      },
+      "total": null
+    },
+    "rebuttal_backbone_vitb16_20261025_1238": {
+      "status": "waiting_for_original_suite",
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_algorithm_efficiency_20261025": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_baseline_comparison_20261025_v2": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 24
+    },
+    "trace_efficiency_diagnosis_20261025": {
+      "status": "superseded_before_execution",
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_lazy_quality_gpu_20261025": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 20
+    },
+    "trace_removal_suite_20261025_0730": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_simplification_20261024": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_two_view_full_20261025": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 4
+    },
+    "trace_two_view_full_baselines_20261025": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 16
+    },
+    "trace_voc21_forward_reduction_20261025": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 13
+    },
+    "voc21_batch_refine_20261025_0820": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": null
+    }
+  },
+  "finalized_at_utc": "2026-10-25T09:52:24.347589+00:00",
+  "source_patch_and_credential_audit": true,
+  "run_index_source": "captured_archive_bytes",
+  "mtime_provenance": {
+    "policy": "pre-capture source stat where available; otherwise blank; never shared object timestamp",
+    "counts": {
+      "pre_capture_source_stat": 242823,
+      "mtime_not_asserted": 394
+    }
+  }
+}

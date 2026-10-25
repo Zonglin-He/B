@@ -1,0 +1,6 @@
+dataset,candidates,flagged_high_conf_low_iou,flagged_with_purity_ge_0_9,flagged_with_purity_eq_1,flagged_majority_correct,note
+all,18377,12085,3390,3313,3937,"IoU uses the entire same-class GT mask in the crop, not best matching instance"
+coco_cd,1998,1246,226,213,256,"IoU uses the entire same-class GT mask in the crop, not best matching instance"
+pc60,11223,7417,1945,1911,2367,"IoU uses the entire same-class GT mask in the crop, not best matching instance"
+voc20,1591,973,628,620,670,"IoU uses the entire same-class GT mask in the crop, not best matching instance"
+waterbirds_seg,3565,2449,591,569,644,"IoU uses the entire same-class GT mask in the crop, not best matching instance"

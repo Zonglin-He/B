@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "dataset": "coco_stuff",
+  "images": 5000,
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "draws": 10000,
+  "delta_miou": 0.45227730640244346,
+  "ci95_low": 0.22203263853773586,
+  "ci95_high": 0.6745044020505881,
+  "trace_miou_by_seed": [
+    21.50809095485163,
+    21.50809095485163,
+    21.50809095485163
+  ],
+  "mlmp_miou_by_seed": [
+    21.055000237438428,
+    21.057481757911933,
+    21.054958949997182
+  ],
+  "sources": [
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/coco_stuff/trace/seed0/per_image_counts.json",
+      "sha256": "79499feeaa55cb83887013cf45c20b5eb8ecb8ae7a9d669e8d8536acc1a057f5"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/coco_stuff/trace/seed1/per_image_counts.json",
+      "sha256": "79499feeaa55cb83887013cf45c20b5eb8ecb8ae7a9d669e8d8536acc1a057f5"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/coco_stuff/trace/seed2/per_image_counts.json",
+      "sha256": "79499feeaa55cb83887013cf45c20b5eb8ecb8ae7a9d669e8d8536acc1a057f5"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/coco_stuff/mlmp/seed0/per_image_counts.json",
+      "sha256": "f0d5657370d8938cb6bf526517455962ac26aa7c6230c4df0392649a62ea7c14"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/coco_stuff/mlmp/seed1/per_image_counts.json",
+      "sha256": "de01804be517b01f8afe790c4491ac8308380868e46b1f24bdd9d38ed9d96a37"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/matched_released/coco_stuff/mlmp/seed2/per_image_counts.json",
+      "sha256": "c815996ea1eb71ce517098bb2c9e9d46065b0d43b082ecbcabb52fca164c28e6"
+    }
+  ],
+  "estimator": "resample identical image IDs jointly for both methods/all three seeds; recompute classwise intersection/union mIoU then mean seeds",
+  "interpretation": "image-sampling uncertainty conditional on these three fixed seeds/configurations; not tuning uncertainty or a three-seed t-test"
+}

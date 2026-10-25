@@ -1,0 +1,5 @@
+evidence_type,dataset,candidate_source,batch_idx,patch_batch_idx,role,real_class_idx,component_area,best_candidate_iou,recalled_iou_0_25,recalled_iou_0_50
+newly_run,voc20,prediction,0,0,thing,0,43,0.0,0,0
+newly_run,voc20,prediction,0,0,thing,0,1,0.0,0,0
+newly_run,voc20,oracle_gt,0,0,thing,0,43,1.0,1,1
+newly_run,voc20,oracle_gt,0,0,thing,0,1,1.0,1,1

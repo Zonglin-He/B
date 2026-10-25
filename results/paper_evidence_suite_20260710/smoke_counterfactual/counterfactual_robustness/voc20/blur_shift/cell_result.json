@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/smoke_counterfactual/counterfactual_robustness/voc20/blur_shift",
+  "duration_sec": 6.765,
+  "evidence_type": "newly_run",
+  "results": {
+    "original": {
+      "mAcc": 49.92,
+      "mAcc_std": 0.0,
+      "mDice": 40.38,
+      "mDice_std": 0.0,
+      "mIoU": 33.87,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

@@ -1,0 +1,28 @@
+{
+  "dataset": "voc21",
+  "fixed_method_params": {
+    "cfc_max_regions": 8,
+    "cfc_min_region_conf": 0.25,
+    "alpha_cls": 2.138442383394772,
+    "cfc_rho_min": 0.0,
+    "cfc_max_regions_per_class": 4
+  },
+  "fixed_cfg_params": {
+    "lr": 0.000629036333408876,
+    "steps": 36,
+    "batch_size": 8
+  },
+  "stage_best_param": "batch_size",
+  "stage_best_value": 8,
+  "stage_best_mIoU": 50.65,
+  "global_best": {
+    "dataset": "voc21",
+    "best_mIoU": 50.65,
+    "best_stage": 8,
+    "best_channel": "cfg",
+    "best_param": "batch_size",
+    "best_value": 8,
+    "best_summary": ""
+  },
+  "mlmp_mIoU": 50.78
+}

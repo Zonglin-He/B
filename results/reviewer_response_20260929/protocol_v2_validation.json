@@ -1,0 +1,24 @@
+{
+  "created": 1790694363.859156,
+  "tests": "10 reviewer protocol tests passed, CPU only",
+  "production_diff_unchanged": true,
+  "active_manifest_sha256": "03cf5ca912932db3a19a94ae532bcc2535a38344557b79ea63ce4cf350dcb522",
+  "archive_sha256": "309c577f387530dd43ec67c8c25942f8b6f5d9bef5da3d0ec7e825d06b806acb",
+  "source_hashes": {
+    "tools/reviewer_response/audit_identity.py": "ba374cd842a905b6b690503d1012be4dce948b6b516441a79150d5c978d30cf8",
+    "tools/reviewer_response/common.py": "5c0bc8c7e2f39205d9f8b21ebf06a95a80473296bfc032445f0689c0721396c4",
+    "tools/reviewer_response/corruptions.py": "8301f2839da8116890ae12cf40754e392af9c22833bb976d6fd076d905057967",
+    "tools/reviewer_response/handoff_queue.py": "81a09c0781660c73cd793946e96a4867aec59167e4496b703c7262cb661db05a",
+    "tools/reviewer_response/inpaint_queue.py": "5162b53b59b80709fb18681c776cf53b9b5abb65bd98614a9fd4461b7016b979",
+    "tools/reviewer_response/offline_audit.py": "de3e9b9d27968e68d6eb45f0ff775280152e8868ebb7eec178fdf4834a99c586",
+    "tools/reviewer_response/revise_queue.py": "d4a565e7ede84ca0cf94ac016303cf5b221029737fa8e37053ed90874d290716",
+    "tools/reviewer_response/run_cell.py": "d6862f9ea37850056872023974f5b9f5fe5dd7db003e4953ebbcabad48d961e5",
+    "tools/reviewer_response/run_queue.py": "78bc7a2e2e5cb00db7d49f29cb96852673885426a56389bbde04846ccc9d4e82",
+    "tools/reviewer_response/summarize.py": "0fa74df8ce49e584644d43ad848a473045dfb7364dec01002fa733051752f8dd",
+    "tools/reviewer_response/summarize_corruption.py": "889cd36227902ba7d3ba644eadab8ff15d97498d8830006fbcfbb0fd902786b5",
+    "tools/reviewer_response/test_protocol.py": "ce50c5d829815d08a7e0f3aba903ecb79556a85ddf97515f809d11f8c25ce5f8",
+    "tools/reviewer_response/update_report.py": "792052a8cc0134358f621de48b5a74c0e7213bfeaf658a3a6a2149c21c56043c",
+    "tools/reviewer_response/README.md": "5c2047a199087b4e6baedacd0e71b975d390496d501b7bb5dfd1839e21e4aaaa",
+    "docs/reviewer-response-20260929.md": "cf39171e96545afc2b802cebed3d2ece438b4622552d9d3fa65acd8860b1a52a"
+  }
+}

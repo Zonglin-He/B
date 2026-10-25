@@ -1,0 +1,39 @@
+{
+  "status": "sealed_before_label_scoring",
+  "records": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_reliability_weighting/without_reliability_weighting/predictions/636b27b9fa5e3ec92052e8071fb87e55d6c754e49d1d5db4a9fe233051876095.npz",
+      "sha256": "2037f6c48a954c56e0d3a43a841459a8f359dcabe0a85362873c49c9d045b8d0",
+      "before_sha256": "8bdb3b7342e057444dee45c0be247dd71ecbdf5f210dbfaffd17de4a2a265127",
+      "after_sha256": "2bf5d94a92590c3937a45dedc1666e60000d2eeb2034485701bd9849b5521fdf"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000048126.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_reliability_weighting/without_reliability_weighting/predictions/82693797597ff830b91c17bd3ec9fbf715762c5f4698856418840e718dfd8a62.npz",
+      "sha256": "dec5be48f7088cc8a788bb2b04892efb430ab8bdc384212483b7906efae5ce71",
+      "before_sha256": "4af73b6c95321ae5ab2153b974f25c6b754e2b768a86acc50e2eed65262a7182",
+      "after_sha256": "7b82aebb5890dd08f08779df0bf8df5702ffab9e38fe6088ef9512effe5871be"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000132165.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_reliability_weighting/without_reliability_weighting/predictions/1a496ea65080895a3a5a6db2799cf1f69879538b03a6547de7eb9c6c48799d4d.npz",
+      "sha256": "92c2bbf96fc3ccfcbe732e7363be4218126cedce0dabcb1a8b6d2173b0b18f0a",
+      "before_sha256": "ec247ad4c2622c8325b249454bf53cac77a3fd0d8e906e0c443d7fb2ca9603bb",
+      "after_sha256": "082f0ff6ea69a75290e34086b5713f01d6dc6833a081cae8e2e42dafbc8bcaf0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000311783.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_reliability_weighting/without_reliability_weighting/predictions/0f5c9fbbe2322cb2848b73af71ba4775f0bb124f3ccd7aeea622e460e8d470ec.npz",
+      "sha256": "4ddd275c28bde452f787b6d247e09a1e387f5e8abc55914847d3dbd7424b15d3",
+      "before_sha256": "7b6beb56320608e7aa69210bfcd4feee2da66cbad1c45d401379ec8a2b15a176",
+      "after_sha256": "6a74fb0f4d18a3affd277f9f3780a2bca0f379a011381361f0b8b256a4c167fd"
+    }
+  ],
+  "labels_in_artifact": false,
+  "classes": [
+    "background",
+    "cat",
+    "dog"
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "smoke/robustness/random_mask",
+    "dataset": "coco_cd",
+    "task": "robustness",
+    "variant": "random_mask",
+    "display_name": "Context random masking",
+    "seed": 0,
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 4,
+    "smoke": true,
+    "selection_seed": 20271010
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "random_mask",
+      "label": "random_mask",
+      "images": 4,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 63.47374036017218,
+        "intersection": [
+          139538,
+          0,
+          28178
+        ],
+        "union": [
+          172526,
+          0,
+          61166
+        ],
+        "present_classes": [
+          0,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 48.086596525373956,
+        "intersection": [
+          151104,
+          0,
+          28090
+        ],
+        "union": [
+          172614,
+          77,
+          49523
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 200704,
+      "initially_correct_pixels": 179194,
+      "correct_to_wrong_pixels": 13778,
+      "initially_wrong_pixels": 21510,
+      "wrong_to_correct_pixels": 2300,
+      "correct_to_wrong_pct": 7.6888735113898905,
+      "wrong_to_correct_pct": 10.692701069270107,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/robustness/random_mask/random_mask/prediction_seal.json",
+      "prediction_seal_sha256": "2e0a1781674b795a149f0a2011c0ae91a5c9a7cf887e7da401e1bee686b33df9",
+      "worst_group_mIoU": 49.00208873927845,
+      "foreground_errors": {
+        "foreground_pixels": 28426,
+        "identity_flip_pixels": 0,
+        "foreground_to_background_pixels": 248,
+        "identity_flip_pct": 0.0,
+        "foreground_to_background_pct": 0.8724407232815028
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 9.082654381170869,
+  "native_cache_equivalence": {
+    "exact": true,
+    "update_steps": 5,
+    "parameter_sha256": "2af1aaf7b513759f55fe449a583737f1fdb2359cb38c2f376509ceb12d70015a",
+    "optimizer_sha256": "8e02de5a8ff4d708b2d894c36ad9b8b51aef905de6094be1c2a8d887e13bd8bc",
+    "diagnostics_enabled": true
+  },
+  "source_checks_sha256": "8d30f84e2cb331fdae56c356f1ce3daaf3a41d5b2b4d7ad4e7c4418c652e78a8",
+  "source_model_parameters_sha256": "e98788d30cd2a2a7e377b2919763add5c152a81e9cec7b442d2d7be38accb5c9",
+  "K": 4,
+  "actual_stepcounts": [
+    5
+  ],
+  "configured_steps": 5,
+  "module_variants": [
+    "full",
+    "without_region_construction",
+    "without_source_tracing",
+    "without_reliability_weighting"
+  ],
+  "selected_variant": "random_mask",
+  "image_order_sha256": "e075729fbcff65c3ed3d4336831c698bfe8c79bd1496cc5b14ad99c55e7bdd6c",
+  "timing": {
+    "estimate_seconds": 0.19187820423394442,
+    "update_seconds": 0.09097774233669043,
+    "diagnostic_seconds": 0.0
+  },
+  "evidence_scope": "four-image smoke",
+  "full_unfavorable_results_retained": true
+}

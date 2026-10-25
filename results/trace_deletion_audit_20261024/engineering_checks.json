@@ -1,0 +1,15 @@
+{
+  "device": "cpu",
+  "cuda_used": false,
+  "scope": "Synthetic functional checks on current code, not full dataset or GPU bitwise certification",
+  "original_support_equals_candidate_confidence": 31,
+  "indices_only_exact_objective": true,
+  "indices_only_exact_entropy_gradient": true,
+  "stuff_background_identical_score_and_view_cases": 100,
+  "disable_weight_tracking_exact_logits": true,
+  "remove_unreachable_prompt_branch_exact_logits": true,
+  "reduced_final_ln2_unused_parameter_names": [
+    "backbone.visual.transformer.resblocks.1.ln_2.weight",
+    "backbone.visual.transformer.resblocks.1.ln_2.bias"
+  ]
+}

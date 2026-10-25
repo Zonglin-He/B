@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "name": "evaluation/coco_cd/quality_lazy_01",
+  "dataset": "coco_cd",
+  "variant": "full",
+  "images": 128,
+  "algorithm": "quality_lazy_01",
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 74.22,
+    "mDice": 84.61,
+    "mAcc": 90.03,
+    "aAcc": 92.72
+  },
+  "miou_unrounded": 74.22401569063122,
+  "intersection": [
+    5042862.0,
+    507592.0,
+    404631.0
+  ],
+  "union": [
+    5501848.0,
+    730798.0,
+    657325.0
+  ],
+  "ms_per_image": 32.61929251150124,
+  "peak_allocated_mib": 6820.40673828125,
+  "diagnostic_views_per_image": 8.0,
+  "warmup_episodes": 2,
+  "wall_seconds": 4.979923143982887,
+  "protocol_sha256": "7558ad1b73e8289fc578cdb4f445ada062593c772b956a75a4da137815d129f8"
+}

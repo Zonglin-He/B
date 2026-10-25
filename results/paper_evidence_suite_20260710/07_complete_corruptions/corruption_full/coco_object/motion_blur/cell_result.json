@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_object/motion_blur",
+  "duration_sec": 1008.888,
+  "evidence_type": "newly_run",
+  "results": {
+    "motion_blur": {
+      "mAcc": 56.41,
+      "mAcc_std": 0.0,
+      "mDice": 41.66,
+      "mDice_std": 0.0,
+      "mIoU": 28.47,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

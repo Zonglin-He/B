@@ -1,0 +1,129 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "smoke/refresh/gaussian_noise_s3/midpoint",
+    "dataset": "coco_cd",
+    "task": "refresh",
+    "variant": "midpoint",
+    "display_name": "One midpoint refresh",
+    "seed": 0,
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 4,
+    "smoke": true,
+    "selection_seed": 20271010,
+    "condition": "gaussian_noise_s3"
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "midpoint",
+      "label": "midpoint",
+      "images": 4,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 84.8284199489499,
+        "intersection": [
+          166467,
+          0,
+          25547
+        ],
+        "union": [
+          175157,
+          0,
+          34237
+        ],
+        "present_classes": [
+          0,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 44.8893927830738,
+        "intersection": [
+          145029,
+          0,
+          28172
+        ],
+        "union": [
+          172532,
+          9,
+          55666
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 200704,
+      "initially_correct_pixels": 173201,
+      "correct_to_wrong_pixels": 2667,
+      "initially_wrong_pixels": 27503,
+      "wrong_to_correct_pixels": 21480,
+      "correct_to_wrong_pct": 1.5398294467122013,
+      "wrong_to_correct_pct": 78.10057084681671,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/refresh/gaussian_noise_s3/midpoint/midpoint/prediction_seal.json",
+      "prediction_seal_sha256": "7bf194a104c249bfa9fbee7c7fa53596aad9c20989c0e48d8db3dd88f004f92b",
+      "worst_group_mIoU": 73.55837687216997,
+      "foreground_errors": {
+        "foreground_pixels": 28426,
+        "identity_flip_pixels": 0,
+        "foreground_to_background_pixels": 2879,
+        "identity_flip_pct": 0.0,
+        "foreground_to_background_pct": 10.128051783578414
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 9.669237778522074,
+  "native_cache_equivalence": {
+    "exact": true,
+    "update_steps": 5,
+    "parameter_sha256": "a4814fba0f7a2ebff45a10bc63bcdc7785a4f2b094e72c0c5e7a5fefe86fbccc",
+    "optimizer_sha256": "ce4f12eb9af953c113f4ab21ff2c2e88bb6b5c3f0ea805338ba82a4844294684",
+    "diagnostics_enabled": true
+  },
+  "source_checks_sha256": "8d30f84e2cb331fdae56c356f1ce3daaf3a41d5b2b4d7ad4e7c4418c652e78a8",
+  "source_model_parameters_sha256": "e98788d30cd2a2a7e377b2919763add5c152a81e9cec7b442d2d7be38accb5c9",
+  "K": 4,
+  "actual_stepcounts": [
+    5
+  ],
+  "configured_steps": 5,
+  "module_variants": [
+    "full",
+    "without_region_construction",
+    "without_source_tracing",
+    "without_reliability_weighting"
+  ],
+  "selected_variant": "midpoint",
+  "image_order_sha256": "e075729fbcff65c3ed3d4336831c698bfe8c79bd1496cc5b14ad99c55e7bdd6c",
+  "timing": {
+    "estimate_seconds": 0.18125040736049414,
+    "update_seconds": 0.5113724861294031,
+    "diagnostic_seconds": 0.41506508085876703
+  },
+  "evidence_scope": "four-image smoke",
+  "full_unfavorable_results_retained": true
+}

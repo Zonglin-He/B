@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "name": "evaluation/coco_cd/staged_full",
+  "dataset": "coco_cd",
+  "variant": "full",
+  "images": 128,
+  "algorithm": "staged_full",
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 74.14,
+    "mDice": 84.55,
+    "mAcc": 89.93,
+    "aAcc": 92.69
+  },
+  "miou_unrounded": 74.13502235552305,
+  "intersection": [
+    5042073.0,
+    506858.0,
+    403873.0
+  ],
+  "union": [
+    5504167.0,
+    733746.0,
+    654339.0
+  ],
+  "ms_per_image": 38.80428636653556,
+  "peak_allocated_mib": 6820.40673828125,
+  "diagnostic_views_per_image": 12.0,
+  "warmup_episodes": 2,
+  "wall_seconds": 5.6808149088174105,
+  "protocol_sha256": "2ecd378d66e2951a0e09e019c6a2daa86229a8b6f23f486f2343b18d0412101f"
+}

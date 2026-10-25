@@ -1,0 +1,39 @@
+{
+  "status": "sealed_before_label_scoring",
+  "records": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_region_construction/without_region_construction/predictions/636b27b9fa5e3ec92052e8071fb87e55d6c754e49d1d5db4a9fe233051876095.npz",
+      "sha256": "60b9b63e025abc53bb512657ad5c0254b91a317dd3865ef7f723b7253b7728ad",
+      "before_sha256": "8bdb3b7342e057444dee45c0be247dd71ecbdf5f210dbfaffd17de4a2a265127",
+      "after_sha256": "09bc51d974dfe2350363a3550244008c91dc372460065e1c213675ec8b4c3542"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000048126.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_region_construction/without_region_construction/predictions/82693797597ff830b91c17bd3ec9fbf715762c5f4698856418840e718dfd8a62.npz",
+      "sha256": "4d1e6da9b937e4acfbeb6f7155ea21a75089c07667c04f689e81223f588e3104",
+      "before_sha256": "4af73b6c95321ae5ab2153b974f25c6b754e2b768a86acc50e2eed65262a7182",
+      "after_sha256": "ad87bd6c242ae77633fb083c3378a2dc92b0ea0f09543e0e45aaf62b1aca3053"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000132165.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_region_construction/without_region_construction/predictions/1a496ea65080895a3a5a6db2799cf1f69879538b03a6547de7eb9c6c48799d4d.npz",
+      "sha256": "dc75e50c7bd59b72c448e8262def24f991a5673c77fdd3db3718982b4ffee148",
+      "before_sha256": "ec247ad4c2622c8325b249454bf53cac77a3fd0d8e906e0c443d7fb2ca9603bb",
+      "after_sha256": "669516cf3869eb0d0b66a820eb3b297af5eac3aeaddd0f2ead6525aa81ec29a4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000311783.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/ablation/without_region_construction/without_region_construction/predictions/0f5c9fbbe2322cb2848b73af71ba4775f0bb124f3ccd7aeea622e460e8d470ec.npz",
+      "sha256": "4391a7afea47148bded7b3554ed8899d38dcddff75c801eaa640178cfda6f9b6",
+      "before_sha256": "7b6beb56320608e7aa69210bfcd4feee2da66cbad1c45d401379ec8a2b15a176",
+      "after_sha256": "f00d2c687bf8e6f5b9a7bf61915170b311af067b9d7182fce4b99b312bfd47ea"
+    }
+  ],
+  "labels_in_artifact": false,
+  "classes": [
+    "background",
+    "cat",
+    "dog"
+  ]
+}

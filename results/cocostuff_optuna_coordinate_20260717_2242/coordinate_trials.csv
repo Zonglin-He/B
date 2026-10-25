@@ -1,0 +1,3 @@
+evidence_type,claim_readiness,stage,channel,parameter,value,proxy_images,mIoU,returncode,duration_sec,config_token,method_params,cfg_params,result_path
+newly_run_proxy,diagnostic_only,1,cfg,batch_size,6,200,17.42,0,106.47556042671204,4434222e3911,{},"{""batch_size"": 6}",/home/wwww/hzl/results/cocostuff_optuna_coordinate_20260717_2242/01_coordinate_proxy/stage_01_batch_size/trial_00_4434222e3911/summary.csv
+newly_run_proxy,diagnostic_only,1,cfg,batch_size,4,200,17.19,0,105.41317105293274,2ab0b1f1645e,{},"{""batch_size"": 4}",/home/wwww/hzl/results/cocostuff_optuna_coordinate_20260717_2242/01_coordinate_proxy/stage_01_batch_size/trial_01_2ab0b1f1645e/summary.csv

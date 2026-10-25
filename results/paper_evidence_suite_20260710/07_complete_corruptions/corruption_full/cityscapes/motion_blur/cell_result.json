@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/cityscapes/motion_blur",
+  "duration_sec": 7349.172,
+  "evidence_type": "newly_run",
+  "results": {
+    "motion_blur": {
+      "mAcc": 42.85,
+      "mAcc_std": 0.0,
+      "mDice": 38.6,
+      "mDice_std": 0.0,
+      "mIoU": 26.68,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

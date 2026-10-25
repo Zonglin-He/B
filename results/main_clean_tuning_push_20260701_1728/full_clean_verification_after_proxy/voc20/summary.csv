@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+voc20,ok,85.02,91.45,92.88,83.76,1.259999999999991,1,458.35,/home/wwww/hzl/results/main_clean_tuning_push_20260701_1728/full_clean_verification_after_proxy/voc20/voc20/minimal_cfc/results.txt,newly_run,paper_ready

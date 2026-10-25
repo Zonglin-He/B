@@ -1,0 +1,61 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "policy": "augmentation_consistency",
+  "label": "Horizontal-flip consistency",
+  "images": 2,
+  "full_split": false,
+  "metrics": {
+    "mIoU": 59.51332712016565,
+    "intersection": [
+      68949,
+      0,
+      12681
+    ],
+    "union": [
+      87671,
+      0,
+      31403
+    ],
+    "present_classes": [
+      0,
+      2
+    ]
+  },
+  "pre_metrics": {
+    "mIoU": 74.66579733997771,
+    "intersection": [
+      79176,
+      0,
+      12531
+    ],
+    "union": [
+      87821,
+      0,
+      21176
+    ],
+    "present_classes": [
+      0,
+      2
+    ]
+  },
+  "valid_pixels": 100352,
+  "initially_correct_pixels": 91707,
+  "correct_to_wrong_pixels": 10341,
+  "initially_wrong_pixels": 8645,
+  "wrong_to_correct_pixels": 264,
+  "correct_to_wrong_pct": 11.276129412149563,
+  "wrong_to_correct_pct": 3.053788316946212,
+  "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/smoke/controls/coco_cd/augmentation_consistency/prediction_seal.json",
+  "prediction_seal_sha256": "225e0ac6e7db956a9965cb8153336f21d8eacf31ce333350097a5d29ab9f3e1a",
+  "worst_group_mIoU": 45.50799374700274,
+  "foreground_errors": {
+    "foreground_pixels": 12681,
+    "identity_flip_pixels": 0,
+    "foreground_to_background_pixels": 0,
+    "identity_flip_pct": 0.0,
+    "foreground_to_background_pct": 0.0
+  },
+  "split_counts": {},
+  "evaluation_scope": "balanced 500-image test"
+}

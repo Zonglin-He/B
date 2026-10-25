@@ -1,0 +1,6 @@
+variant,dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+no_fg_guard,voc20,ok,85.07,91.46,92.92,83.76,1.309999999999988,1,459.11,/home/wwww/hzl/results/paper_ablation_single_seed_20260708_130036/guard_ablation_8datasets/no_fg_guard/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+no_fg_guard,voc21,ok,52.66,67.7,82.11,50.78,1.8799999999999955,1,1245.17,/home/wwww/hzl/results/paper_ablation_single_seed_20260708_130036/guard_ablation_8datasets/no_fg_guard/voc21/minimal_cfc/results.txt,newly_run,paper_ready
+no_fg_guard,pc59,ok,33.33,46.41,55.97,31.95,1.379999999999999,1,2132.19,/home/wwww/hzl/results/paper_ablation_single_seed_20260708_130036/guard_ablation_8datasets/no_fg_guard/pc59/minimal_cfc/results.txt,newly_run,paper_ready
+no_fg_guard,pc60,ok,30.39,42.95,55.26,27.99,2.400000000000002,1,1117.16,/home/wwww/hzl/results/paper_ablation_single_seed_20260708_130036/guard_ablation_8datasets/no_fg_guard/pc60/minimal_cfc/results.txt,newly_run,paper_ready
+no_fg_guard,coco_object,ok,31.99,45.75,68.6,28.84,3.1499999999999986,1,1007.09,/home/wwww/hzl/results/paper_ablation_single_seed_20260708_130036/guard_ablation_8datasets/no_fg_guard/coco_object/minimal_cfc/results.txt,newly_run,paper_ready

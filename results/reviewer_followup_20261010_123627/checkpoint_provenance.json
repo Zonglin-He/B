@@ -1,0 +1,8 @@
+{
+  "checkpoint": "/home/wwww/.cache/clip/ViT-L-14.pt",
+  "sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+  "verification": "sha256sum read on 2026-10-10 before regular queue results were interpreted; baseline loader also checks its published checkpoint hash",
+  "backend": "/home/wwww/hzl/results/reviewer_response_20260929/baseline_source/ovss",
+  "source_hashes": "manifest.json",
+  "config_selection": "existing released per-dataset configurations; no new search in this package"
+}

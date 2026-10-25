@@ -1,0 +1,907 @@
+{
+  "status": "sealed_before_label_scoring",
+  "records": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000011401.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/bf56b154284fa7aeaa5721ceb32ca71ac18b3036f804e163bfb8053a8d63ff06.npz",
+      "sha256": "83e09861a2920900a059c5400796b394fe420d804d8662881bf3693f0ad87e20",
+      "before_sha256": "ba7f8af4843a25a99579f98bdf8a1a03402b9759127155e492f08f5d0d09ff07",
+      "after_sha256": "81e3bb1c34a6d8c54c3f72a33e044c41f7ab8fb36a74be97b117ff70b2cb11e1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000025989.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/22e6f0748c30a5c89da2d2e4ed10b8c8cf8837e9fbb499b4a6b40736a0ac0bc5.npz",
+      "sha256": "b336551e85b93d8bb57723e3e5b07ac7b7895c8c2559d1a1dae1ab69179377d4",
+      "before_sha256": "3debdde049b1915afc0b3d2c3c3ec09f1864c5eb0d06c9da557e5292c7826d0b",
+      "after_sha256": "8918b2c2683ce8dfee296a051b1703fb4b210ced1ef34084a866951f22f50c86"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000031090.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/5351b31151b1485f363e8963e60c74b459fe2b3b064d5dd2c74c32dba3f82d55.npz",
+      "sha256": "8bc51fff2b7468434b31b9ecab719c3d4a48aeb2a9f012c66e009ca5b858c014",
+      "before_sha256": "147fa41abce3c9ba12dc45351f78e4ecce86285c2b3e442f3f04158b5987a4f3",
+      "after_sha256": "9ece564926dc56951e509ea87ac47a5129c138cf14a9d340bb33314f530ccce4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/636b27b9fa5e3ec92052e8071fb87e55d6c754e49d1d5db4a9fe233051876095.npz",
+      "sha256": "c1821e61149aa5df764a9a3d1e2834acccc913ce7dcf8b125b3a5aed9e0f8f50",
+      "before_sha256": "8bdb3b7342e057444dee45c0be247dd71ecbdf5f210dbfaffd17de4a2a265127",
+      "after_sha256": "951e585c593187ee5b22aa6fdf802a0edbec1607a2866a7db4ca7eaae07489e2"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000045208.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/6203f60d545d359d833394bcc14a142c3a5c432b7f1adfc6d4df4e181f7a11c3.npz",
+      "sha256": "809899c8ebc84c1f2dc4e21b7536130e9a7c4b45a93f77e83828fbe1cb02dd51",
+      "before_sha256": "2418fcb22646c007ed10325485f34312933d075acc66dbb1c3d7683632d1d2fb",
+      "after_sha256": "1715b2645cb80180087ceff4e9fe6308178d92a80ca86b7289ee59e6e6819483"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000048126.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/82693797597ff830b91c17bd3ec9fbf715762c5f4698856418840e718dfd8a62.npz",
+      "sha256": "500aecf908de27f3acaf21afb8e2037abb906464c064259ba50e774af836850b",
+      "before_sha256": "99825bbe4a110c1c4e4890cccf3ee96ff1361cf8f0a7de7a855f56e25211fb81",
+      "after_sha256": "80da9e0ce852d304499cb2543de00251e248792dab09645f1700565798f69eca"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000053484.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/c60d65d61d3bbf06ef3d6af608a3d990a22224652ea998abe00b391c4108c5c1.npz",
+      "sha256": "beb3551fec9cad1844c5b8c22944b19dd1fe44ba2c611077a8b59e15db5bc9ec",
+      "before_sha256": "8ae7da8a067f2edd7e6e3f092211473076f086b608cf9b64ae1cdc92f6eca2d6",
+      "after_sha256": "957f2cc8f03bc6c1e0524000fa580a65e133918efaa5d1663fccdc76dff3f556"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000053864.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/28680dc9c93b357c5df41092fbe827a92d24eac4e61100ed81d334af82814210.npz",
+      "sha256": "f16c6af87dc340f67d4d6d3aa7792e2f437ffd24bd618e7dea9636c4f98aa68f",
+      "before_sha256": "240e4b183e653b2f88a293509d11adb89af694e0a2fb52817be81c51e832f44d",
+      "after_sha256": "a1c6192024414bac5e891d9792a82dc7070668b1bbff0ebc0bb91a42618784b5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000056898.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/057eec4c1439533013cd339847b7e3f5925b752cbb0e47cc7a9578e041cc3f42.npz",
+      "sha256": "a7f21757ebdd491071d44424c2a6b802b052628cd36396ef8a9f500d8678edc5",
+      "before_sha256": "62e7a3b2d6f14159e4c0c9fb03e6145ab08e40a7bf9b3da6442475d8d5378bd9",
+      "after_sha256": "a49183aaf90b1859e531726fdbdaecb04bb352d88efe43db413f4759a6bb9947"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000060952.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/a802780d02ac69fbb4db3dc285acc637ebedb681ee7558de259de4a66ff29db0.npz",
+      "sha256": "46bd41f21ed618d5180b3deaf3c218be11d563a85b5182a8aa25ac8bcdb1347e",
+      "before_sha256": "007f391f2a500a31160d2a16d447a41561f343d78ea75904a736ec96fb613cb5",
+      "after_sha256": "84f7099a7a82b1de33588b2aa4cf7a5ce9a3c255683108c3a5d75330f012957a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000070387.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/c38790836ef8b2e127c60a3315eb33079e8939e30537a7f55637e28ef37fc119.npz",
+      "sha256": "39b2570e430abae3039457fae7925bf7cf89138800ec79136def90d506f946b6",
+      "before_sha256": "ae51f2bf2cd3b1dab29c7c7e5f5b822987d31c18a5aed064a63d05e66acd0d50",
+      "after_sha256": "965ec81a79bb405402f92f7f0510ebc5173896a347a1339fa9003006e6a432d2"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000072556.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/850591e7e0b6423323e21f45814c51b548ab4f28b0e549a9c2b3c54535b44e87.npz",
+      "sha256": "a5308a010a212686a487f6fae089632b3874e3184e649bc9e9f822a880da0e63",
+      "before_sha256": "0e394dd1d96b3c53a532be58fda3150998944d46daacb4dd443c5ec53bcfadce",
+      "after_sha256": "af4682c721c0eb81ee125ab0b3f6f3658f85e03382c27c9294c0574a3f322095"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000075591.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/614f9904a3999d75869e51e1b01eb3bbe007285ef39a597d87a6f0f1917247a7.npz",
+      "sha256": "f3b372a48605e239e916342dc8b4141df23c5f79ac12caf32253b36ce97e522c",
+      "before_sha256": "646cafed1b9ae5b4fc8afc5c9fc048c23bf4ba7b272b71323e1a0230f4a17b5e",
+      "after_sha256": "871f7cba4089f30bfef43bdb490225d8da8bf6220821e4b851698f491955cf7d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000090367.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/115a2d5bf5289a9e81dcfc1dd5a3972df6c43af0bfa4bf466b28b298b4ec033e.npz",
+      "sha256": "938cbaa3cbcf6b3444aaadf6121233b8682380f1858158bbf932d9e6a217a175",
+      "before_sha256": "fca1fd19c5883641f5248779c32d1b883b248fe1ad76f1754868e238ea4d192f",
+      "after_sha256": "85c948cd56dad33f58676a796e9db76aeeb4ef284a7f9f108098958dd20012f3"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000101497.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/3b8ecc3fd548868a3ba63eef8351b41df0ef73c9ae0429cffb470b86e080cba2.npz",
+      "sha256": "5a002544ad72d07b7c1d57f440db27706aec1adbe491d176e4d8ecfb8a3b8b2c",
+      "before_sha256": "3d004233b29f1fd7ac1d00879fd910fe01ed0c394f2da09d1424aa03bf6c2ea2",
+      "after_sha256": "b5d33a04d1a0feaed3d16fec383c21ea5d59efa3a5d7e4278a5f219e6e0e3182"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000105192.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/5a52c9f170348c152308fa8f7b512e455f315601561287f9213f686aed84a81f.npz",
+      "sha256": "80a506859e31f5d0d155db4b61a6b54bfe0050536de85ae7db3e6139e2cfd95a",
+      "before_sha256": "95dbdb18d67feac39b99b37a78d6797d1743e48077a1a6a8ae3d1fbb121ccd31",
+      "after_sha256": "02b6ee85136597f8789f739f38aa98e738f68a827a164d98c81dc91ee67cbee7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000105282.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/7d09ab88db790dcd8dd1ce61e74ec151b2276a7e66488d1b3ee68d1f26365612.npz",
+      "sha256": "04400c08afd90c406b3d0caf9147aa12b95a45e52cf30abd2e62a77aebba48e9",
+      "before_sha256": "8eb0150380465335c0626487bd176053f708b9e6658288f504ec8f0a87e1b905",
+      "after_sha256": "7edce223c7c3d5636ccf77e39caff452b2a6feac1766b53514f29884608036e9"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000105994.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/81cdbe672f5dcb3ea67d812d93800ef6c8794aaaeab30873721dde07da41a3f5.npz",
+      "sha256": "a0dc14512874a643f3b3b4cbf5ee7e5f89f7d2a18238104df887aa6cc444fcd6",
+      "before_sha256": "be420178eb117c4d45202eeb196229933023cce2224a6ddb59dda4ce1f7cd860",
+      "after_sha256": "82c1fc33081f191535de7c37e23a0af1873cf934d512a143fbc0d3306120e066"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000112011.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/b6d94efc8543324f01b9ffce040baa95e8aba017a640194f79f7fb64a11b981e.npz",
+      "sha256": "58efe1ba96b672de49bb442f502c33cb3fc457293a966e09bfdbb5684fdfedd1",
+      "before_sha256": "f678c31f1915a0e4d613cba52077ff4464fface610b6c0489c77a374db009fd6",
+      "after_sha256": "8396400beda6120fc094c76696343bf303dcccbeb36fe16dcb94077b9f2c5e46"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000114521.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/c5430874be5c160801e386001fffd60af3b5c50e39659e8b125caee0aaf7ffde.npz",
+      "sha256": "57b47cea1eeb98801f81ca19ef4182c35d47684c0bbdac565e6d4be1417dfd47",
+      "before_sha256": "281a07ac21e96323ee0193588e8b4e72dbb5c60d1b6718decf083121e229fe03",
+      "after_sha256": "d0a8dcd8a7c2892bf028a324ad03fc5a7cbaae891ee8b65141cbe80db778fe7e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000120703.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/e38bcd83383d16984776aaaaf6539b5f03cb7fd56df887fffe0f42b8201f8dfc.npz",
+      "sha256": "d73624670a08e0e47ecfd63c7bd76897b17742d0ffaf3fe3a2c85f7510e467ca",
+      "before_sha256": "a8b98dd2d5f62bc4a6763a2e20e1dad4c3bb0c4691ba0483242a6365609764bf",
+      "after_sha256": "0701103537a42d9e687f3c0a628db4475f52fc2dd7ec91538b0c577c86d439d1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000120874.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/f5a5aa991fceb3aa1b67ba87e7dc2b551041bc44ed2f6874993cc1f676ea864b.npz",
+      "sha256": "f3627fa55cef0af1896a3ce3a49137f6e6ca2b2e70d2a162baf1774dcb577207",
+      "before_sha256": "a5c905e72c7ed6417df28bc8286eccb76285a99ae80656decec0990be9da767c",
+      "after_sha256": "1f67afecae20cb55127270ecded8b82bfb24dbcf8a1e7f89bd05bd8bdec42a54"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000122726.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/7bb7700477092915e2c6f326d3aa2208818b4e5150d7f0b537fcb203d9712bdb.npz",
+      "sha256": "21170ddb61b082794da5a880bf067969933004e9c642b89bbcb8ac0d30387cd8",
+      "before_sha256": "ef5cdb092289261312d2fb4ba140c5e9eee59445381da3c32c082226d451d15a",
+      "after_sha256": "eb36ad110197160a7d9ee137665158330c77f640245bd0424e1d10f9baaf70cc"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000123413.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/0d8924cd7f6904722b4eb2558142e66e47c93ee3a002bd167e128fa1ae6126b7.npz",
+      "sha256": "bbb496addc3731401d18ab335da42b808d2cc15d232a99f418e876425b9136c5",
+      "before_sha256": "fd41ecfaa21b417b8e2501f2a922a85ecb98cbc7549d0d24a1cda7ab1fc3bbcf",
+      "after_sha256": "ba3761d0928ed5b5a0209b0a93455b32e2fc89e07a898f903be6aa72bd73ae68"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000130834.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/cf3db78598c53a8707080c19ffa5c7619f13bf2f5111bfee7ead248e3d145597.npz",
+      "sha256": "73802f2798dd1873a10b390cf9507131a67c9a36cd8ea4f43f689ddd6393226f",
+      "before_sha256": "58e6e4c5eba5f95becb92c767e5039a8afbc4a01d4002ef6e7b0f41687e031f0",
+      "after_sha256": "7e0ee394272ca14a139e382a9ea1401833b4d3698046a4b0677dde12ae35737c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000130872.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/ac86adf5336477c9cf16e3ed1df431de30f391d1ecfac7d57117aba9bd265c61.npz",
+      "sha256": "702b61ee42f62b25cebfe00aa02859aca79e9e1fa7c7ef3efb483e88a4150600",
+      "before_sha256": "9719f623577d348b3dfc3e11f69dc333fe7aa88b91b7a359bb919bad1a5c1464",
+      "after_sha256": "4a4c432044d6b83f6902d9977745642fdef6120029f3b635418ece6204ccaac6"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000132165.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/1a496ea65080895a3a5a6db2799cf1f69879538b03a6547de7eb9c6c48799d4d.npz",
+      "sha256": "b50a3fadacf704c3ba08665896579a3f7ce7106e84024b88bd03ab27cf8fd7f5",
+      "before_sha256": "332ee1fa6a547135524de0e520092add493b40046a9f8fbfc22115b386149d99",
+      "after_sha256": "67692231d62138c680926aa78999a974e8b139f762cf8ffbba6a86a01a142dd1"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000132752.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/b566992ee99803b4adda62c043c58d4732b6088786237ceb18db42cb3ab53a45.npz",
+      "sha256": "596b6201e3611a542a2ed8496cafbe5926cfe1234551e70e5e7c07624f3b000d",
+      "before_sha256": "a11d75ebd2e4807c3cd4e3122f1910025fbf1f5124f53065b05ca9f9250492da",
+      "after_sha256": "844b08a2cd2693c25e01b5e1f3d5bf49b69180613f15b8e319cd53208bb86e64"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000134548.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/4b298592866b6616f4215918557baf36c54f2a3ab1e03befb35cb1a222135098.npz",
+      "sha256": "69d2f30ba9eb9ed67b1e056f406f655206654b15a093daef1a0b8c30cbb4ac59",
+      "before_sha256": "cdabdcfadd1da8bea61cf90129841bb342fd644f5db44b1b1b98cbac4d022e46",
+      "after_sha256": "bd26584841a0e7a8c97d952e71aaa72d49a200f77931ab3c1ec87cc244badf3d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000137238.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/94c7ab8ebad5137e9c8f9c3d3d2acc6ceb31dcee61076c865ed2cbd463c53ac0.npz",
+      "sha256": "0400e792fe3427a3518271caf0f07e1cd876db85146735dcec23bdeb4ab178e3",
+      "before_sha256": "d1cb6b0cdd3e22b7916aaaff92b44481d865427f608c5d446d4e9a7f9ea13cba",
+      "after_sha256": "838c440534804fd865d1b9ab65b065b507aa08317cc619d7eafa1dcda97905ca"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000143123.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/bca1ee60dc42c0b3032f2e376eef2ce4ce9afd5314798c8eff9ab4188008f569.npz",
+      "sha256": "7520d3205d7adb9664debac70949109c02cae896162917fd9c307779ac940742",
+      "before_sha256": "16173699b8582a114a328980da6e1d570c803470854d11a24ddc7e5daad0a387",
+      "after_sha256": "dca3a16e57b1f32cc5fe3d0af7ee0a1bd69ba6825d2b273641fd712379170735"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000143665.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/56fa169e9b34194a4a3ed2bdd3f1ff3d056d33f2cb835d11c054f4a1fa6392b6.npz",
+      "sha256": "b5405fd82236959d15876e12b025a92d0eedc0bf69af1a47e3e52e51e724898d",
+      "before_sha256": "4ef06e6cf0ba799f48bf7f1090759ea7e15a75bba45c338afb7d55b996ef82c0",
+      "after_sha256": "9b250ab1a3db095a990db40831a5a721b0a329669ee8e342e58019a24840cdcf"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000146398.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/4a264da0c5d8290228e197ed51e9d72d9b9ba767fa9fda0ca0a252b0f7171724.npz",
+      "sha256": "471c3861c1fd6e3288b4a386b0a8208424620d5fabaaa663c144ad353d0607b3",
+      "before_sha256": "7593068c4772aee190e4a5c328ab0a5df0481c350283153e6b5986dfada51813",
+      "after_sha256": "25af85217923d954fb1694a8a921805f11fc55f5e159b31d90f6b20789361344"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000148458.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/3719f38094d8634607085a93f9eaca1b1149e133e104334dc06d48dc60c1bb20.npz",
+      "sha256": "256cd2061cf20a0efbbd3c77c0e9050076839f134c31e720b21690f113cf69b0",
+      "before_sha256": "67ab58ffdac53f9b5a2bdc9e0f58de513834c1d1867ee29097e9363e63bd10c9",
+      "after_sha256": "41ce5aa350ca3405c5d95e49a54f1137a4d0a70a18805e8d1d15a409a291bb4c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000168356.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/7f626e7b3d4b78f932f97dc53f93e77db7211ef5fef44fd9249afa69e8a6e619.npz",
+      "sha256": "3a9bc82eb96e51554d3471a2230374f00b08676a943f09123b47fe06022a335a",
+      "before_sha256": "d1a1b73b6cb804aa299163b22de49e621663e12068d12d9149b7b741ea037781",
+      "after_sha256": "6aa5eae96fa00d2ef2ddf9296dcb4fb669e874ebc85bed255d4f5a8f61ee7ae2"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000171809.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/8da2b84df413a0450d9767c37ba5c429b8283c16d07c8aaff2634e70abef5a41.npz",
+      "sha256": "d4d563fb269b914270bc44f8e86ac85c0fa1f8185304619cdfcc05f8641c8280",
+      "before_sha256": "89bda2e638ea80905f77537d8f1434f56e11dba9ddb718488a7c4a5476309a84",
+      "after_sha256": "99408c1b37e8bacb0286fad9cd760c6ac2e5871e9b9d7684fa52fdbeeceeacba"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000179034.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/b74c916591e691bfe3aff1c61e5d3fbc6aec145c826d4a6f86d1e23b16ce81d1.npz",
+      "sha256": "c2ae8f91b0471c4de2e5103d6707bb3d3b7bed25cede1f80f2a5e583249e93f9",
+      "before_sha256": "6eea9ed8cd13a3e02ecf6695d9ab088e1e57325b63cc38c0e6bb30aba2924449",
+      "after_sha256": "e6cbf05ad1b2602619ffdf3163de6b3b32fe7b23eb429717ba8199aa0172912f"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000186034.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/e02c7375b9a84f07edc9ac5ab899c50f58647cf6555e8e29a49f2154ce8a113d.npz",
+      "sha256": "201f5e0ad21c14a40a3fdbc5b7bea336cdc435735e8368574c3caa1dbae99cd1",
+      "before_sha256": "f471a9dff4312946a4cb38c3f4368bbbce72dfde1547afa0c100e08f44c6e733",
+      "after_sha256": "553d973d805e0e9d5babe7e5c748f01f6f664208f127a8486b81dcb7d91fb462"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000190601.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/a82205180f7a033814376a8256844038bc33cbece7aaeba1b38fd75ca02004c5.npz",
+      "sha256": "a962e8b5eaf5e6c2cfb036af45ae2a6145cd7e435ea809a37bf899911e910af2",
+      "before_sha256": "1c6996dae84b098471a624aa15ddaf83be3f4c7e9da88437ee792825a178f6b4",
+      "after_sha256": "fc64968af03b4bfa66e7458b137f7b17be5c5ac5655cc000e0b5bcfcdbe4c830"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000194120.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/f423c8308d86f0ff94c78f1a1045c87d666c6b25bd2793284f015ec987110759.npz",
+      "sha256": "e6851fae65c01fd88aa3bc3faefc3b3c0ed49cd7ab63e013df9e045191aee3c9",
+      "before_sha256": "de5b39748afdad37c922e44d62708338638762f1c2a2472acf260ee83d6071df",
+      "after_sha256": "959ad518b2d18a56a7859f032cfd6b03edb85f40de741df0e9dd23121546e866"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000206542.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/08950a8344db5f47bba7bca4c6623b4fe447b09701592a0017894c92b75190aa.npz",
+      "sha256": "cccc36063b67e42d2013287c6e3d21e24cbe639aed577f52bf083e26a60dbefc",
+      "before_sha256": "261055f70c16642777e3d22a0d006d2f6a36251ea4dc0455cd4825ece21e7301",
+      "after_sha256": "a993d821eec70f7ea0d571ee3dd8124af3e4ce3b5bd71cdf27eff7a112f4dfb7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000208011.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/977556a76d0b71f33a43668d4c44fa451a8b2743e7a91670fdd61f284e611b7c.npz",
+      "sha256": "1edef506191e8b7f6bca1c52b8a5246f9686e6ae5b71fb004593dcdaf7ebecf9",
+      "before_sha256": "5c00b0d5e5cff17d1249f5036d58218d06fad5cf4060e36f5f5373206fdc7b63",
+      "after_sha256": "717ed95c6db7285331878c358fb15f87ecfaf126628392bbe59e797771bf546a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000209289.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/413cb71df4337c18fe0da14ae0b7fc06086964b18e002cc18c3e85a73b9303b7.npz",
+      "sha256": "d4719e4903b10878fc196e45c9a37a18d2d67fc7912e35461e5a80612d338ccc",
+      "before_sha256": "8e1cddf540ffbacf8039fef06caa801f6900bc453264bd09272052491e1d6d61",
+      "after_sha256": "48ffcd34727a3a74e1108a07babbfbcc970ed8092fd26331dffbe51ceb6b0c0e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000210060.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/4d9bc18f1dcd658ce7af9f3ab0dc4ac8c7f1ee81249013fd87d5f9511c4faf67.npz",
+      "sha256": "36b28e77ae1dcbe0e47391868b49af1b0b6d2cefdf4b24796c48083b50b52efa",
+      "before_sha256": "5a767c0ba4d3ca07b101d94e395b47f7ff9079fc9b3fc5566454cf8cc3be85f0",
+      "after_sha256": "7644d891daeabe352b973d9067cdf409ab55f337203a6a02c7e93c247c2f7b31"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000227909.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/9f6fb3f70786f2b4224a69ead8a9b9fc94efee3a3dea3d9ad70c76cf43ecc13d.npz",
+      "sha256": "a08995160463b019da66884c0ccc2b1a755b2473229c987c625a823895191e83",
+      "before_sha256": "4dc3e703bdf76e757590e74b4d17ffe9c5c1ee7450da4a119e75364ebf1004c7",
+      "after_sha256": "fcfa7d02417a21376b568ebef6338cf783e005e482560e4ddc51ec786413e02c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000229387.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/b1a554e3a4516e989aa83794f5f9a7efd327df56a91f625bb2101969ae557b02.npz",
+      "sha256": "fc2c99c83c000949b98dd70b787091c54ebec87a79c35ae2accfa74430b43e56",
+      "before_sha256": "5aca5407f29b62c1797b25fd5a34dfa1945109e862a334316426673d60878840",
+      "after_sha256": "3fa4a0f8887b4c56af173cd846de98a8065ea64e4fbbe13720a38acf3cd455ef"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000236747.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/e9a798743cc2481f9a85dc3b115e7473377c392e01d7b244340830fa7cb33d0a.npz",
+      "sha256": "5e907f15d085c609ca574cdd0ebbe0ccc8067b6c28fd6c337144af1bb2219aa5",
+      "before_sha256": "83fc4e87e45cd5e8c11a65ce9cd41b54c9b2a7b2179ab84149321d464144c0da",
+      "after_sha256": "a0a36e2a6a69da58863d26cc57992731277a4be29d492f05d6f16067d396c4bc"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000237994.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/70b45d9d61aece331a48678e154b7ac7ee9f1e258c101ce1b2626c06e7a24e45.npz",
+      "sha256": "0444eb498dba4a4ec63f76daac40cd3a7abca8ee079d4db1e43f7a5913402f9d",
+      "before_sha256": "608b2bc076e87a57f67b9d8261f1cad785844b071af552c9ccc41929a4b90c6e",
+      "after_sha256": "48419b0d9b1faccba9b394f211484a22c087eb67370b1b50bf8d9a01731e1eaa"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000256481.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/4c9e3c9fb2b48024fac977c7de0b90ac55872b7cb40153837ad6eb72253a1e80.npz",
+      "sha256": "3ef990713d7f3d4250172a5e308b77c162847bee2132195e607976991797e19b",
+      "before_sha256": "003ff0c4b18f20fb74b4ac7d0e8ac48dc89ac8698767277cf4a63dbab315ec57",
+      "after_sha256": "35fc7dda3a705b8a709de03716e0406d852739aeefec3d8defb82578ef746ef4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000258789.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/eff5b6ebc9128d25eb743cc959c0fb07f8938d4af6a7eeaffac9cac3949f3e44.npz",
+      "sha256": "89c9a8011a3916646887bd3ba6aea4eac7a60fffee2fdc4fbe65f2f7ecf4b9d9",
+      "before_sha256": "cdb10a582c590e6481f361171f0dd975020b379bbd0edcbde84d27c239170844",
+      "after_sha256": "5ef253a39dd087edcd8104ff08a6b95cdd68fd43f9a3fb4ecd68dee59feb92a3"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000259475.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/89e9d593c7640b3689e504f0f3723aa519360e4494236958c75f55b3c5407bdf.npz",
+      "sha256": "c4699c5f0e2bded7fcde83787dc7e2d985b891a18ed6838f138a384b0d6947a2",
+      "before_sha256": "1674be1f2eb869954b666c594fd7592a432cef62f8e713958036328b09339995",
+      "after_sha256": "973eaefe22805ebc57d2f1804b218039770c6bbe79d3b34accbff14a4cf32744"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000267611.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/a043f14340d1a5fff2fcb45acc4cb8b272cd1906dc1f7886a174966a6c8e0954.npz",
+      "sha256": "746b94867039001f13e9dc84f6b61b92f70d8e3fc56378e0348f3c016d42c826",
+      "before_sha256": "4ffcedadd136f91fda1ebc37314fbf51233b9f8bf0f01c8f874ac71d3a809019",
+      "after_sha256": "2e1081233f504f9eb87473c138c2166ce89d34537fd4f3b2421ecbdb72d417f3"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000276951.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/9e457a4acbc35726a4bce83e5b93d3adce25e804835e339ac73124b4256bee40.npz",
+      "sha256": "34bbfe738c4db180bc8820d52b21b8ddc5e055c385e466f41d074e048f7af68c",
+      "before_sha256": "1d9d7b2e20e781186d07fa83ed4803727c93640ca75ecb966f85b820f4f712b1",
+      "after_sha256": "8f484f4b07795493acc5b82c49da8a3afccb6dceaef8f8641a12df824e72d370"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000276986.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/2ca373e59aef7375ee5d2d965f051d330964fde02ea8b8f59ab93c1f0e40038d.npz",
+      "sha256": "5391d318b15ea02b36ee5bdb8b7b35b75ec0f7e0cf6bf400c274223321a67ea9",
+      "before_sha256": "6f90145ea361a921063ad16994d3ec3b91d282afe6b5ba735b1b4f7353357fdb",
+      "after_sha256": "962a39f825b27577405701f3e825bc4529a859a1d4e770edf391447b7da76b29"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000278776.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/2a0cdbe8ec788e967a8a0b78fe88c2d625c227a686a2126ea958458624cc87cc.npz",
+      "sha256": "2621b239d13e076d657198e0b6b784f9e8398210d14740d69bd57cd5a5400079",
+      "before_sha256": "4ee446621a4e327d3f26c80abb483a0148d950701f209279210e64b82fd1acfd",
+      "after_sha256": "6ec2cadda0348fb7e0abf58356d6e23d695f4a5771cb44ba0f98f0446063c9df"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000279899.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/088cf08547c8785e2a506961e7c98508195b7edbdcf534239b182f6e12f53f79.npz",
+      "sha256": "dd9dc5b305d3c36a15806004c958a064ef1642613933a3deb5d8eaeea1a595ff",
+      "before_sha256": "cd1d86584cd7a6cba690b7e75421c5d87c1ad8e9d980c72ea0186cf4b5da24fe",
+      "after_sha256": "884c201e7629666934bd3fb2a883f2db20bef3b0edb1d98bd7c58655c4d00c13"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000285958.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/2449999e8b09f91eac7186501ac857b0f11e1a9d4f719c2f96514e84a6edf715.npz",
+      "sha256": "b909c7a3cc9b4742b0e76fb6a0edd84758a1830784713d2546685a743c9e9f64",
+      "before_sha256": "955e9dd7c5e39a869fde71f95bb888d0176e1377109585e46258c7f52101b953",
+      "after_sha256": "7e87d4dab8595a46435b62d731a73f8fcf22a6b49b0fce78ad9ff338fa77c251"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000288770.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/70760ba69f81ca52e2f3b92b9936c79d81bea2070d6bd76cbc8492793be81c89.npz",
+      "sha256": "f043c56a674756c11b7a26dead867a8ebd53716b75f2f32b2f28346fa1f189d4",
+      "before_sha256": "6b0b969440f26a4031d39530a1530b3ec97057a0821ca99a812bf7b3d912f300",
+      "after_sha256": "aa426dcbd3479ae98853892100484c968d8d0aca108f4a979544ac16078252f3"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000291412.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/a4e3db063eeb7467fdc07c15fd12d0a944454fd1b98eb4579da06b0d13615bb1.npz",
+      "sha256": "c9d91a253bd7e3906824516a35855deee6f5c165cdf66e5c14fc2c527094a551",
+      "before_sha256": "d6f5a8642c9ce328066d0230073c4ce3471188c2119dcaafa1b5af5549d7e14c",
+      "after_sha256": "ca9822fb77ec2adf5adf7c1dcf387e57bc37aec098e7a6a5353107b0d5f16341"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000292970.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/7bd6e55f0cebdb996837d9c6806023b20ec9f1898cb600f47e876144665333b1.npz",
+      "sha256": "9736235fc3a879183906ee07f414f1dba7495074514e37f2b43fbdee7af6dad6",
+      "before_sha256": "9ce3dbe5c90494b32ab0a5a11ce800bfa8cae44a73b9721e57d85ece8a8c5c52",
+      "after_sha256": "a8e65b7af1fa5db168b0c2c9e4e10b0a4770551952226c1a930c11ccec24b19e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000300170.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/d8607d0a524b9c2c917939c94e0283113b8f274febbfd0ba2ebbccd6b602a6d6.npz",
+      "sha256": "9530abca59d846a9f0ec19b8c93ddc2676be37c26ba0aef66c9c4a3b9c5a2280",
+      "before_sha256": "08eff1b12f8f0e4b2e51c1bddb81e1e5dfe390e2d47959b74991299d2be79d40",
+      "after_sha256": "c543e60cd739152d28c4a8465c8843e63cc7dfb62e56a26ec3062dfdf91ed994"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000311783.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/0f5c9fbbe2322cb2848b73af71ba4775f0bb124f3ccd7aeea622e460e8d470ec.npz",
+      "sha256": "eb8cf354e74b90b68f17df3969a491695f57982878b6a0f698937772b832b7d7",
+      "before_sha256": "ae5be9827cb0690a92472c69bf0f7304fdd0d654a3ee6f325038e7ddc05e57b7",
+      "after_sha256": "c4386227d589e0b41bb8c0fd9bc28ff155cbdcb6f3d8a826136ecad00c45da68"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000312450.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/8837887daf6000f8e360de79200dbf1a6abfed6e1d9079a9bf04a23bea72e594.npz",
+      "sha256": "5d6166afd1919b2969e761017624660f6f071bfbd19e1044dddbacef57ff4ab5",
+      "before_sha256": "1733b115a45181aaa9d1e70549c15a079fef605751fad13e426053e1b4fc1f20",
+      "after_sha256": "585da2c8aeb469e972fbf24099e63a2101ba8f2cde5f033822e8705f7713b947"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000315383.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/bb6401c0ca0676d158b304a6782026b173f0425d754ed28635a9b3e7d62fb41c.npz",
+      "sha256": "f4f1b24c44f826066136adc4bf15bc3c5501dc928872b33de0c1901d23dd3974",
+      "before_sha256": "84fa819fe9438d97bf1a779797a6bced493a5989265f8e59c70a31e929441e3e",
+      "after_sha256": "28402bb7f5a4d2b118adb42d13f114b6f7ff21d431c79e590e5ecfed6fb55b5e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000327354.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/025011eadd1694c775b8e0970420bd5a47bb2aa3ebc2eb4050bacb0c7e364e36.npz",
+      "sha256": "1889b9153891e82737f619e9594872845230f6045562a9bdd50843049435ce17",
+      "before_sha256": "5a462ce4b779713c9d54a56a4be5ced12516840461e1d4e8290189f9669f3bb3",
+      "after_sha256": "9389143474e96f5969507db79716d889576af84afb928b45369082729b0b0fbb"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000329528.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/f29dfa27d70e8a71de8827721e14dd537a033ab9938162c724f8be4f56ee4643.npz",
+      "sha256": "349f153153e45496ac54b8f41c204a84cd86c1a91c20ed1c04d0399dbdd6880d",
+      "before_sha256": "6a88324818ae9933cc684361dcd5d23d32313379d99d5be2391e1e61dc41552e",
+      "after_sha256": "ef935e874fd48b3f0fa004f4ca6666192b459eedf0b4d3a2b989f31390b30785"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000330164.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/bf790ddbfcf40de332cbcb20a11b6c51e61c7e084f7e4ab63520dfb6c95416be.npz",
+      "sha256": "25340e4ce1170c4c0d3b12031e27b60ad6b6723659b1fd146d40f2acc226faba",
+      "before_sha256": "001e2f60170e0e6992a25898d0118ad589ecdf61381443e15c6cdf8260ab12a6",
+      "after_sha256": "3b0e409544753d0d1dd08a539d863f71757393a081d4a40081807b2851485894"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000336372.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/29eb117901b44a4accf0042ab967c38545c6579098daf427c4cee59cc865a931.npz",
+      "sha256": "46d9a5da5c4cc111dd114c3e8cd142138bfd36c4e229a85a22a8bee9b89bf7b1",
+      "before_sha256": "e85431c5ba98cc67b156972239a234d4be508a32d03527eb35a9bc7ab03fbebb",
+      "after_sha256": "14b3f7f1a38e1f703fc282d320e98d3f0011fc6936d0b0b4da327937faafc24c"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000336459.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/5d3bd5cd96d30a48d2418ffc9fb69513bd077049290cff1e118854ce79753de3.npz",
+      "sha256": "910d2cc91b3de8d889f928726075707e1a0d9ce36f93235c79a514447cf177f2",
+      "before_sha256": "aa2a34af6a0299c27b622d6cb34616afa0b9132b06d9446c6050a9cd00fffef3",
+      "after_sha256": "94f67ed3f341865248163b71660f4f0527cfbf3dfa92f3b2f80477b1b06acc54"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000336804.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/940f4e485fca5b8163749777a57415ae256865b4a7d7345df1369842b44a21f2.npz",
+      "sha256": "d17ad734dd84dc47cd7587047efc265f9c48bdbbadfd137eaedab54e569c1eeb",
+      "before_sha256": "e188b7e9f7fdd4cd5b7b78be5d6dcf6416b40c3bf80632fd6782bae9d8a995b0",
+      "after_sha256": "f1b1dd24c5f6421234a1997e4df9568e7dd8cb40893bc7e843a1613719fe4994"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000337044.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/ed1ea129c6265e100eebdcfdc7134532a227c7ee35cc62397ea91771fa4fd3da.npz",
+      "sha256": "5f452c66cbea5fb63fe394600a04e86268bae3b94e133b00e881ec4cb85f4950",
+      "before_sha256": "6b6fc2cfd7153f083fe61e1193c6707e72a6547076e07542361a682464781147",
+      "after_sha256": "18a0058728dc4e755231b8c8e87f4bad374d321d8d46ab08b8fbd6e179919c58"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000340276.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/a4c29274dc4e687e49e4cf3678eec574980cd80f6cfa4c8ec3c76476e0793003.npz",
+      "sha256": "0daac8a5e4359506e04a43fb44753c1745efd0e5365db4ee0a57ac469371a005",
+      "before_sha256": "5e4dfb78d09c366cf6d5810b157769376467ceca75716ad8cea4bf85ea4878e0",
+      "after_sha256": "7a6ea652e8e001e09e85fd9a4738de76d56f3e928edf33227e315b316f23ed4e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000345855.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/e5438d8f40435300a48d03d9af5f0d904f748db2ee0bfd2c953968d574067422.npz",
+      "sha256": "cc2f1333c397a74200fa4878874c7f46c90664276a0c1454e88864520592ce17",
+      "before_sha256": "8d108075d3672220636b5b16d88934994c0202916e65a28d400d798af4026465",
+      "after_sha256": "5d89b0eac653281ebd704b5e2445be19f4cfbb477b6e412648f56d37a09e660a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000353149.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/8ed0253632283e08a61c481801a8c8aa6d45c21de4045bd9c880a0b87b1f77fe.npz",
+      "sha256": "3c0037d22709daacef66ab207bcbbb95f07f3282ec92670edce6a753633721a0",
+      "before_sha256": "86e7e2546c0d1a36493824b616480f01ce3e21f0815121c506cf5667c859b9d5",
+      "after_sha256": "a0080c5a53dcbd26808bbbf22fa2ceb3edd0d50b44b3cd785d10810f123fcd16"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000360805.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/b554f3df92b663846372043990a45662131716e7dacab1d84f87bff797a6a992.npz",
+      "sha256": "84ec21a451aefdcf4f931f942df3cca1a708fdb0df3228c126b4564a500a3563",
+      "before_sha256": "d24456049cff3019b76d457d2ed1e3d06c82c54d3cf38b8b9f1362ef25131c22",
+      "after_sha256": "ec899ba70fd1ed72456fb10751de0991dcf3aa547b56f1bbfda42fa90bdceec0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000361127.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/9fadd1320fddf2fd0c77757d01537f19bba61b62d9a9b6a65142a61076587606.npz",
+      "sha256": "b10199fa6b1eb9dcff4a3a75e2f73927e8f9f2856c5871e2ef5d3bb9b8b24cc3",
+      "before_sha256": "ba6f97773fe4c999f308ee0b0aa2c25f673f34a32fc88ae4260d640210dc767e",
+      "after_sha256": "7c14d229a33944580996352243d9d7df0b545c6f5eaac632f9974ebed4289b3f"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000373679.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/ae287de340a61e7a82c6ebac54a81d6beea081d0d4ed9a5b94c4a6970d81c410.npz",
+      "sha256": "47b1dfb2e973fcb3421343be68ab9883273d83d843e63a01741675532ab624e8",
+      "before_sha256": "5269566a5c9b64b3217ed7835af7166b462b62d8fa8ea9177b9ff1b4a3b14758",
+      "after_sha256": "f30fac394b3198ab86e8ecea912f29d408984bb19d63daadb5a543faf4f87b13"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000376643.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/c5031df82cbf54dfb71fe34c874c00b47a7132eb944b1f1a4ac50eaf4a566962.npz",
+      "sha256": "af4fb16ca7127937439ea74391d68f64491b92e147f1df89397ce843d204b4ba",
+      "before_sha256": "731a2c3dee84c08a6f5ae1f520f92f111b161dea14b46fc8c410f7e78789f0e0",
+      "after_sha256": "717adac8ccfd0da437297804db419fd7cf68b4e3496b6b73214d93aa56851120"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000396217.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/af8be82a1cd7512ce7695dd9585cd12f69f2e5e86cc46dd9d575677416cac94f.npz",
+      "sha256": "19d828800d046c50b3c77f200fb792bf0fe352e8640c163afc76c58bd5e94a0b",
+      "before_sha256": "3cc4ceb54fd3b15a1b6f1f1792c596c5f291a235e200d63e1e25a81b6c6498e1",
+      "after_sha256": "934870192f14c0f4a244a2bd2f6169dc441d21c8ac0fc784a338d83df3145650"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000403754.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/011e891ebbde1b299756bb69f146fd7d10807145bceec0326d17b947c56e221a.npz",
+      "sha256": "cbf0b3a4d1b7ecc9fcc54d632919a8407dbd12823c49d225bf50433d20b89781",
+      "before_sha256": "80db03bc902a105571e3e78f3e94e0cbff91176e42f381b329dda90fc79fba45",
+      "after_sha256": "d02003616be199f87bcefd47a783dbe5dff264fae8088b415c3a68e4cb122515"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000425027.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/601583d808e5a17f7e34975f4e2dde4b292d308255c16f174ba363abe0d8a529.npz",
+      "sha256": "dcde20ceff5f3178714227506ecc27a973f2a3435914d910d60bcfb013c4a4fb",
+      "before_sha256": "11c102cd4a3cb846dfe124c5db323b520faace73371b6af6281dadc296497ff9",
+      "after_sha256": "ec6d27e9e0ecbf4a4ab8e4d652cd5619195e608a6b8d3832d6abfda2230f1500"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000425788.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/4e8cbf76089d208300870b2aa6153a37605d82306c1896fbb7f923103a5b428f.npz",
+      "sha256": "dbfb7edd59be28efeb1021ce301a46a4f373609b1dc180c312362f0d59397da1",
+      "before_sha256": "bb126a89f2655c6c756710b36b8f8eceae9595d1d5c25f9aaf97b916bf6e0046",
+      "after_sha256": "5b9bd3b9c96e6abfec4b68f587b79d80ec13473218236454730a79352fdedef8"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000430501.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/1230c29a72519f9bc8c3a0089f551adf77e62996775fb1bcf6ff0f4e5f14dbb7.npz",
+      "sha256": "67308c64a1e7d4f29586936b8f17a955bb0a9484cf0bb09e5d3193a120371671",
+      "before_sha256": "65872d3cc71ac1d8a5f11cea0c94488435c79a45d15693bb37bd44689ee88346",
+      "after_sha256": "b08c6f1986b381687f6a8d1b3c4647680922fe7f2c8cf706d036b89243253eba"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000442214.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/f15f067ff9687302a485561197e745b36215dcf8bca741c5357c316ff1fb11b6.npz",
+      "sha256": "5776c9a3832384b792bd072df5d0a358d88c9aab36759707e3f927fa94a61947",
+      "before_sha256": "425554d374e8c6fb03dd85d84a6096ffd5eb5ea732e7b1a25835ebf3f7c1704d",
+      "after_sha256": "6f6bbca404b60c5843c8c893a5451dd8e707aca2925e4c784c2ad83504947b65"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000446512.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/2b8092d361449d661d235b6a06ff1a7a285689c6496c028a528a412ba988140d.npz",
+      "sha256": "481f0bec99599c9c33cb3ac9bbf1b3e58f2aaa8ec02181fe4a109008517e9bbc",
+      "before_sha256": "dd66b058c65866554b2d33d6d7053920b0d82f775f0ef64a06d8b1705535dac0",
+      "after_sha256": "94c09dfec71b99cbc2d36728eef715909c365e606379f8f84b5a62adb4b5db90"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000446829.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/fd3bf47da8bd4e3d6cd92c0a2d10ffa20b3b3ee401aeb5819c53a209d2d13b38.npz",
+      "sha256": "9a9d2f09547d1ef6a35b989f50af48f6d4d68ba5f7229969769b11cd48c54b9e",
+      "before_sha256": "ac8f2a1e7d4c62f6d03d1addd28a3f149982a63f0a627c5a2fc32f931bcb57fb",
+      "after_sha256": "f00df81aed22a857088369090e292d41abe87c8064a3ddccd6e9fb2d95b2fa98"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000446899.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/9441133b266698a4d519b8cf29c0beee79cd2a82f59381cb5c8e4d79b9887be8.npz",
+      "sha256": "462d34fa708004d94f48198fdd949ded6c3f98b6554155ca04167dd8782f6948",
+      "before_sha256": "2f412a5478e4c846f4a41c4e4b69903e460e8af4898e03c0d906d9878060aed6",
+      "after_sha256": "3bcbf94d322aa77ff785f3b981aec9058e8f12ce504c0d49439fdf34d747f541"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000448255.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/b8070b2b34b11638df8f40159bf0eedbcfaf1d0c351046bbda45dce906d09d09.npz",
+      "sha256": "38d7d6bde40a6d25dcf50727b6cfa6dae3258a8607cad5e2942a12a4bc7db990",
+      "before_sha256": "77e74dd0412ff39072548afe7839e760bc45a359aaa76951b1fbcc3f4c87ef1e",
+      "after_sha256": "317fa4cd67f20b4bd16f2b5fbc9a64f02bcaece0c536d5ca90aa0378b104a183"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000450247.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/ac12073b3fa208f0d033f5bca617bf3f2b59ab481501e3b831e6329b4ef06f1b.npz",
+      "sha256": "1d6c3808d1800b8968f12ec4653a49775e17313a6838a284d275df925821bd35",
+      "before_sha256": "46a2b1ab22275f2b232ac25cdf60a244400509a3cf12de66a930db05c610b96e",
+      "after_sha256": "176dce14cb30945abd054e1349b5e994dc9e6311bd2a6cb92685ac3752f5d037"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000455198.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/11355dbd090fafa50fcb510e72ab2b45806aec164ff8ce22f8d8f56b2f939472.npz",
+      "sha256": "595dbb873b839913af5178d7641695e04eed72f38ee10ff7d8d7b7cb7b5639a5",
+      "before_sha256": "0eeaa01691d88218e9526b3e32298c4b33b5af7e024377054ca2511528206e45",
+      "after_sha256": "3ae96e09dff7e50af3c6f8eb2c54bbd777835c67d745586414bac07d92d30ffc"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000457791.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/9c04e899d50a1012d373791e420aff303b7334b0b01e1848750cec4aaafad38b.npz",
+      "sha256": "0280ed4f58c17da17bc9f33a97aa507b380b7584d844b8581d8505c0550d78ad",
+      "before_sha256": "973a58b8eb51cd506215e5320262738fd3ca9926d303af44f1c7097f9ea2169e",
+      "after_sha256": "4de7cf53cfe524f080147e501016d69a498e31e51da9ae1fbd347cde2b5fa713"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000458424.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/c219eb9a78bcbc54c2e1ff08ca4f4d5a80796996eb55c5026e4847ea0ed019c4.npz",
+      "sha256": "89f02be31cc51b7071f7a60390f547609847190cc7b7779e7fd0f5bb930041a5",
+      "before_sha256": "710bee1c802507e15d85d622f0616c1755b89ac9ff9f4d9a66647191e2ad8a12",
+      "after_sha256": "6ec22a86c1dbface1d4ef9a865ce63a6c0cd59bc4438823ed968fda9615c11c9"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000460222.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/e030802666d708baecf0d37920241c244510dec9f2c2321b1ac96c9fa7b0c101.npz",
+      "sha256": "3a047b86370b777ce652fb8898ca51b5bfde95c747dff381649229c1e94a0b2e",
+      "before_sha256": "6a3d2bfdcb922f5634a6296c30f07548db5cd662439398fc9a2bc704d5d6a755",
+      "after_sha256": "a9459127d3fe5bddef699f372bb38c25df3261629733527b34470e999fbdf349"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000465868.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/faed3f77337a0e4db925ecd3f45797cab3729e6d0058d970474fd1e7d556e8f7.npz",
+      "sha256": "76bdbe577d418bd370152c94e4ad35721177108d1a2681832bd68f9a8a791731",
+      "before_sha256": "81b6fec597957b286d42f25ebd710f97c986f8ac9a0732df3ec3025de6ba4f32",
+      "after_sha256": "66bd2ad76522c71215fc4b30a470160837f5c9c71ef24154825dfac6acce6716"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000469281.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/cbd2b01e086bd5d29b992741e1b30bee65962dd29a9032c7ed9d6602bbf5fd71.npz",
+      "sha256": "55b61a3b82f5515c69c1c15fd10d75bd6215d8973c58599017552fd76d6161f4",
+      "before_sha256": "f83ada37e6ef1f83e4f9f82ec3096ebd818dbece99d63be987bc15c50522d1a5",
+      "after_sha256": "3c4849393ea9defb7146351bfb33fe441c85b9d0a1ef2fcfa310258f4871735d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000470862.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/edc407baf2f467abbe77b2649e5eeaaf639e40a1da0f918031fef51d6e02b28b.npz",
+      "sha256": "0f7d4a8758cd37110dd8e0fd20c5e698f52593d817c722f4198f2d49885c7d76",
+      "before_sha256": "ecd2bfc441e0e59b9447f127ea27788ab4a818bcffd1d5b089a15cb5108cb5b3",
+      "after_sha256": "0515ae6e4b78f26b61794201d3850e0d1b1933c849c75491fb82225e91b98be4"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000473955.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/d1b901df710f52219004aa2879842404efb3ae2438c650d54273ce4a56d6109a.npz",
+      "sha256": "3c0c6246b0585f79ae1a11bec1b01d5db9278e018f41046a2ba4285dd4ae448f",
+      "before_sha256": "95fe7c32752b8e1829444f518e8d767bbe0c9eb9f64d77b2cbb3d8f2c3a81eb5",
+      "after_sha256": "5947d36f68a2877dbdf77bce91ec7124137cf72af30ecf318f704c5f2cd76ad9"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000474233.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/6d6958ec23cdd92b2241ea64e601cac76206a510ff9634acb418b6fd0a35d88a.npz",
+      "sha256": "1b71e5e7ee8dd5e67577cfce8e9c2d72927a99b7de5b407c76044fd91bdeed20",
+      "before_sha256": "a9eae95f6e771130cf27492de2d3052993b843414add47fac8bd539415b4a0af",
+      "after_sha256": "2744de98c5d9b567cd7b5529bbec02e56fe368ea143a843a6b9daed02062e33e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000475928.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/85f5cab2fb71864f22bacdfc4f58ec5274f2a6b9d8e0ff9aee62f92617bb16a9.npz",
+      "sha256": "d533f34d384013dde3b7e6d495c3d0facff10e2ff288e408d0b32e1624ce0a4a",
+      "before_sha256": "c8e4b91d1231ec599993d8af784a62c07254e5d48e0318c337720dff41e06aa6",
+      "after_sha256": "65ca0b2d5be6e3ec2b151dfd1972443d44abb41ea707518e6082bcf3fe859d00"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000477106.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/c7c41b638991f8fc0465b015785caeb62bb337de9698d8374778b04d5f5bbb2b.npz",
+      "sha256": "fafd1453ea96085ca5c83a899c0c6dc6361dbb2bd7ece73bc0656d77eab5c25d",
+      "before_sha256": "eaedc624e5be7ef935cac16b0e16edc6af3d7d048b4a55cff995e1d5b588797f",
+      "after_sha256": "7e0be0f65e6e26563225465a7fcf7f3420762c83a16c789e928b35cd63dea90a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000479780.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/cef157c6d5054289865c43a27ace095fc16386588a65efaa2323388cb0facc6d.npz",
+      "sha256": "3a348c6d13132da03361e1e82557f5467c775f156c44fb8e8f4be629d907102c",
+      "before_sha256": "f2bf8318e88701b3dbfe49a8274f110889105da3eaeaba13bff52cbc52403d4d",
+      "after_sha256": "4109aef22bfadc1bc0517a8000518d599b668e5389b5f2f633fe3b2875e78f2a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000483867.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/8b2f111ef6ec62bcdf614cf22f51060b35c2ce0e93d10044ccecd29e316901d5.npz",
+      "sha256": "4b2ac11c08e0fa7bd6125dfe03270d3c0f1e76ebadb9c223fa1686d1c887df93",
+      "before_sha256": "34b7f060616fbe31637ad2b7d2d574fb3973513823fea60c3382c23c6f9517c1",
+      "after_sha256": "fa3fce154e73e44b075db4c2c776384e45761f3b0c73a21b0943b2075c89a647"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000487995.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/fd98863dfe30d07285e3978a6483d62a259c36ffe4b69fb7c951e078100e2d41.npz",
+      "sha256": "1289bf088f58ff3053538ada75a9913f32eb4b3ea0bcc2a9f0f2f2d152e2ce3e",
+      "before_sha256": "7fed3d09d52b404558db3cae0aa4aa914679946a4a7fffe0da39b5d413ee45f3",
+      "after_sha256": "983a5ee5f3e101673da2bd4fb44b84623eb3de26ec76eee89c6aa7e7166082da"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000496300.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/886c73534ae89ed4d8a2bb6975e86d7135f00d47bf2465310196b9c155a84ed7.npz",
+      "sha256": "d58da8c0211b2d6bf08a5539d8ed428705fa035a47366a320a87e9f616367887",
+      "before_sha256": "ddb938600869da01c32b52ec03f76c8651c0a8526448d82b3771ba641ac37ad7",
+      "after_sha256": "ca68710cc37db002d004f88b8608e08e5285bdb1cb01c4258d73ddeb34895b45"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000503235.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/dce826feb8c6da938cebb539e6ad70c4d0cdfcef9185d5192a13b6bf30eed86c.npz",
+      "sha256": "02e1d371069dc3c75980b4e31ca350355048d4fc7f8f19f2fac28601bb23a55f",
+      "before_sha256": "2b83530cdee2ba19a0b973cf7d9cc39bfbd84b1d9e118df38cb930bfcdbd83d3",
+      "after_sha256": "19853119cabe0233e9ba06407a009d2817165e9fdf3194eb02cbb15e19a89dc0"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000507421.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/590e9f49781a6c41baebb0fb795683536fa9f059f719d612e03f2b2a8360b67e.npz",
+      "sha256": "593e84c0458ca381f8fee1e41c0c439525615536babfeb70954ec5e36fd25690",
+      "before_sha256": "8e0a56f0be072e86859386146337841a324603e2d5220184dda41566277ccc2f",
+      "after_sha256": "152087d4c6335ed2fc66aedab3737cd6ba1f4c4d06bd9bf918c0ce6a6aefa556"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000510484.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/6548b276623466d04dc96f22f2f663a85df5a728e182d7aa8c7c9d066a300425.npz",
+      "sha256": "0557ec219895cb61c2562958f7095166d269939d73e65c52bdd6aad2bf73b386",
+      "before_sha256": "a6f4801d8b5d29040b8717c35802734e6ea68dc984f5849fe6637c791d95cb0f",
+      "after_sha256": "bc8ca1b8a909b600fef0ac44cf16282769f0209070a13d0457df48a114bd9850"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000510695.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/e460833008fee844e7ba0da06a7bc47663d5b6efe52ab83e9cba54fd6fdc7f68.npz",
+      "sha256": "facef5609f3a5ab87aecbf7270ae026c90f17b464694a89107920f0abfa27d82",
+      "before_sha256": "e801f8b69aa463aa20847019773a05bb141acff6f0fda075777ee52e73f09cb3",
+      "after_sha256": "1857d4502af6f06e2440a52e2423363ab916bc183d6b1df8f75fe6f77ae65a34"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000517213.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/84a1e15230ac888e826de417381db34f2716b61cf4a69c17a879dcdc07e5bf0f.npz",
+      "sha256": "67b79c6c4f7ca1822c39d1e977e3cbe6e36fe47f3fffcd16ca5a7f76236c18c2",
+      "before_sha256": "badb47992e8283ef4d76b6646cd93dd6f9d8e0753ed655c7a059be53f42e9d71",
+      "after_sha256": "4b497a7148b473537115d713a1185b8f83ccb6891940ca34d9ca425091bec96a"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000519094.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/ff95f2d1540ca803bbcb7544e6f36f61821c04bf17c94864537a8d333539f3fc.npz",
+      "sha256": "ecdba3a77da12fc3abf4b41803a1faa1567baa0e7562419aa546d351af12050f",
+      "before_sha256": "de154d7a0451d27ae6451ff414b9306fbdeb06e65789ee9872a8083b75298669",
+      "after_sha256": "1594d17a2457104b3567fc440c137d324682d739d1235c795eef9ce9f7580929"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000526225.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/3b0ab3d0afb1dbf9a46d3fe3ca7b3dedc6e0d6d7ba08183d7f16a018fd65c25c.npz",
+      "sha256": "a33f189b962cb1bb726b0f5bfa28d041a55acac353f83af0f3610f1766ffb1ff",
+      "before_sha256": "c3ee79fef7b6a1e20e4d994ad0da4ef991592a35f0df3890a3d7e4d1a7721a96",
+      "after_sha256": "e60ce2aad9f7e7b1338526bd0cf18bc44cac9b9abe0a0aab840ca88a672dddf2"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000531076.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/59eaf51d75550b251e95020ac3e7deec11f3d9af3c43fb0c28ef9e66b52ade16.npz",
+      "sha256": "330bf68da9d046ef0bf4c014341973648db395b146b6d84421a4a38e3f9c13b9",
+      "before_sha256": "37b6d866e118691b51f91239534c2788f27fa5c8e0734d649b9ecca7368de4fc",
+      "after_sha256": "aecfeea5baf82b869b45cd7c08ebc444864e5f18ae1cbcc3d275cb9e66891fb7"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000543210.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/e2d2fb31560cb59b8a9c04c2da26e5200c117bb1e7a833e322a88a23cf69a2f8.npz",
+      "sha256": "f695554f9d8ee6bcf425228f9122e99d5b887be1336e4df0ee4fec03337d7503",
+      "before_sha256": "c040d1a30164859340a3015e86a39c5b93ef1fe77bf82ebb578b144ac07639f3",
+      "after_sha256": "64e609cd48fcf5ebde0e86353a60134c78741026d1b2db16893a247d290529dd"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000562370.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/2b29fdeb146b66a557085c3998bb2e4cfc682e94c00b28ada2885cba458e729f.npz",
+      "sha256": "965f0a9ba6927222ceb940193b3ad1d60fa68e9fbb2d28e6e626c67879c9e6e3",
+      "before_sha256": "a498337e630787e99fa78a5ecd6b11e3de6097f0e5deaae9870bd1dcd7f93df9",
+      "after_sha256": "2c40fa42918cfb020754172f038d37c16ff073b854cb1216d1a595219cf1b23d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000563494.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/efd2627507b6338ef89ccb695943437c635741879458dff75014391677c728c6.npz",
+      "sha256": "b119c671594d8dc3beff651ebd3f5ec965fbb5d00e5b841ddc5d2aaa9e094678",
+      "before_sha256": "87cec713991e08ba1cdac230e2cca15167cdbc5171eed0809190a482f1013ee9",
+      "after_sha256": "6d1c39ea0eb7e320a36aab78d65b20261e28a2383a8fddd7a4ceef30c8174407"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000566514.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/0ebab164d980d28a80f4a057e5c877567fba528f90be50a2e9603b96e6d1ac35.npz",
+      "sha256": "08058f8979c09b3badc52ae0ba418465b4c2a338281a008fff363e9256da30b6",
+      "before_sha256": "2bb49744377f3014a75b0ba072c256549163bc8aa6256c6231f507dab8d5f013",
+      "after_sha256": "d7dcd52d741764fe2d001dbd10d2637785303d5f85357cfafaab75918778db7d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000566724.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/8e3ded9933411199a174b65f12f3dc749292e583430507bfc24cbd7d46d3db18.npz",
+      "sha256": "6bf18477942682acd530c98327e0ff1aee2d38c0ebe799bc9d6cccbdc5b29d73",
+      "before_sha256": "e8b3703330d1464af4c5bc65c383bcbffe3ec9a146a2ba8ab121a89a4d45d7d4",
+      "after_sha256": "58a0f19c66431f30499edbf50a95e30396881dd066138956c4bfa2ce01b945ac"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000567224.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/6c68962f1c5592d8f7041ab75c5decda5246d6bd2c04e5f1392e9258899c529f.npz",
+      "sha256": "83ec2ac0af186c3f077baba54b20d7750eaa1c81e4f928d342c0320c7b491806",
+      "before_sha256": "fdd5a9f1c2b5a02bc4969bf12d03c299ef6d29d423638ba4666130b4d7d46628",
+      "after_sha256": "486620497fa061ae2a3abd0969955b7cd1793ff7c5fca51e94d1ba94b676d686"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000572042.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/f84d35b27bf90c1ea2c63e1f5e590558084b24b80b28f94570ae37e6b14569a1.npz",
+      "sha256": "1f3cfb2d9799319fb4158e77c2c0b68276f807272c94cf470876c76341ff0883",
+      "before_sha256": "8da03c389c49dcc208961d009837d95722749028fa5f731f61311ad8f057f0e2",
+      "after_sha256": "e1f5f3173ecabef017432f03f05d82b061abc4adc843d6394949e32c3d7bc1f9"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000572243.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/87b08921885866520d9c2ef93681c2178bacdb85c8869a043df4f621b3a3f6aa.npz",
+      "sha256": "af553e7b94959f46edf99fe7a3f700d64bf639ef4c628713320aba248aeeec1f",
+      "before_sha256": "e6152a9dd00e8a16652d07b8779167e2a7ac881d2e3b6d715ebe0c4d0521b0a2",
+      "after_sha256": "b3fbc8f5185ef78027142a5ef13bfd1921b9ea39bf5fdaaa678cc4448018bfc6"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000068078.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/d279319c800ad83dba11c55b206ed80b1ca22181fbdc57e7b73b3232f0fe2fb5.npz",
+      "sha256": "3146cf4521a33af5adb265f1fee04ac9c93b9ebd027804a8affd0fb9488de8cc",
+      "before_sha256": "3bea308e4de4d8ce723b2c6a121eb8a99a97855d1dbec4ad4355f96802407023",
+      "after_sha256": "1271df734a101bcd06c14f9d385d9a4e3c7c82181f07647fb2c9bdd09d01b73b"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000118515.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/1ddc43b59f7483639b62442a54289c36d1aa25b86a5828c86796d3e4a742db63.npz",
+      "sha256": "344571ffaa04656e04bb1e4cf31028fa287399ad078530e4b48f1f9501525419",
+      "before_sha256": "3958678cf8bcc414f18fe295de8981040aed37ce4cb7ec687fb07171484079d9",
+      "after_sha256": "232c69297a2cb5c62e4fa67e07d91080c019ddacd94ac35522171b7095011969"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000172330.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/817b03385fff7699fa1ceee56c816195863f7d935bd84ea10a43ffd9ef4280e6.npz",
+      "sha256": "7b130328fd3d466d43de8233bdac5e674ec3fb33481802b8cb9ac26bb75701b3",
+      "before_sha256": "abdf96268bd795e4899cc42a7720f1d9c996f5e43839d87539a8b026f9956415",
+      "after_sha256": "ed51c5c2bb68c97a7b0299b49cf54a2d2167be7f0838453b458ce720c2fa1901"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000222235.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/d035a3c9a5a5b72a505c269e8a4c8f875883e45f4a6879530a40c4126cc75ae1.npz",
+      "sha256": "87857c1dcac895f556407c7f9cb2ba36624ca119692079a20055cafdafa08146",
+      "before_sha256": "ac8533cd31e4cd85e7532a4e505223ab0c8868b7b70b72809076bb2bea7471a3",
+      "after_sha256": "d13d3d9b7feadef36efa867dbc45798f681a48f0b4d5a6079d02b68a1fa9472d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000236784.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/19538da5862f552b8c5e7c52e8ced325d62cfaa16a9e170b2674cea02b35f647.npz",
+      "sha256": "1994540d1a382a5a8875759b759a30311e3278ab41d4d04f64743fe25ef34083",
+      "before_sha256": "3df22ff8d9bf41d4c2a5a7db8539ef64cf3645568d6a9cf0239a21124437fa73",
+      "after_sha256": "e583be9408a4bbd3e7b8e3315e3a571063369622ed2af29ce31d85d3bfd514d5"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000405306.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/54602db5d30697f108871eade9ff0c94f93c852ab29a33b645d1e11a99749361.npz",
+      "sha256": "eaffaa08758b08a49e5428742e209ca06410352b0717756135cd58ad01c7835a",
+      "before_sha256": "8259b7af1c5e66c9e14c743238b73e65a9f2e6d276a37d317f7f78bb13805c29",
+      "after_sha256": "b0b53fc84734bad3d722d5685340d1c0bd264bb65d7a2eda9a462b266cf3141d"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000505573.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/ea0ef9d35e3c211ba1d3972c6642f65f5c04afe00729b578eb5b4ceed789a1a3.npz",
+      "sha256": "854a336cda84cc801e7f6e7edd460ba2946f42406eaa43007aacbedbe4363eeb",
+      "before_sha256": "91d4caaf07f7fe7ed70282d376da11d8d84cb5c373677cc803c153a826d9ff04",
+      "after_sha256": "77c0986f831e843ef12fc301b87ffc82394b8b065b96d81dcaf199612005eebf"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/val2017/000000565391.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/gaussian_noise/gaussian_noise/predictions/9e8a5d30546513c74dd29b2309a6a6540395ebe01229760ab1eca0c9c822ac35.npz",
+      "sha256": "b2d19a8ce3613c00172bf2ad1cc9d38b6712de4df955719dd9921dac2e9b02b1",
+      "before_sha256": "b195ecc69749eecd97f411b8a448d45133f2716b55e1a96cd3f58b6af72dc365",
+      "after_sha256": "b8f7621d9d08c0c2f47661390af45a68884a716bb1f36f9a8893c980bf2c69ac"
+    }
+  ],
+  "labels_in_artifact": false,
+  "classes": [
+    "background",
+    "cat",
+    "dog"
+  ]
+}

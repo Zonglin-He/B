@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "name": "evaluation/coco_cd/quality_staged",
+  "dataset": "coco_cd",
+  "variant": "full",
+  "images": 128,
+  "algorithm": "quality_staged",
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 74.34,
+    "mDice": 84.7,
+    "mAcc": 90.02,
+    "aAcc": 92.76
+  },
+  "miou_unrounded": 74.34043910135463,
+  "intersection": [
+    5045131.0,
+    509118.0,
+    403197.0
+  ],
+  "union": [
+    5503099.0,
+    733363.0,
+    651148.0
+  ],
+  "ms_per_image": 32.818640349432826,
+  "peak_allocated_mib": 6820.40673828125,
+  "diagnostic_views_per_image": 8.0,
+  "warmup_episodes": 2,
+  "wall_seconds": 4.951575538143516,
+  "protocol_sha256": "874705a6d27cf26a5d619e7e361cef4800629f09bf05abb70c5523d00e30c701"
+}

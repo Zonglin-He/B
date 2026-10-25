@@ -1,0 +1,112 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "groups/waterbirds_seg/trace",
+    "dataset": "waterbirds_seg",
+    "task": "evaluate",
+    "method": "trace",
+    "config": {
+      "dataset": "WaterbirdsSegDataset",
+      "data_subdir": "waterbirds_seg/correlation_0.95",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 16,
+      "lr": 0.003,
+      "steps": 4,
+      "trace_max_regions": 7,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95"
+    },
+    "dependencies": [
+      "smoke/controls/coco_cd",
+      "smoke/controls/coco_object",
+      "smoke/groups/noadapt",
+      "smoke/groups/tent",
+      "smoke/groups/tpt",
+      "smoke/groups/mlmp"
+    ]
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "waterbirds_seg",
+      "policy": "trace",
+      "label": "trace",
+      "images": 5322,
+      "full_split": true,
+      "metrics": {
+        "mIoU": 55.33707897245148,
+        "intersection": [
+          202758025,
+          13267697,
+          12333256
+        ],
+        "union": [
+          238112445,
+          25854749,
+          41747172
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 47.459141516473395,
+        "intersection": [
+          181943392,
+          13279934,
+          13214078
+        ],
+        "union": [
+          234216749,
+          31013115,
+          60406076
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 267036672,
+      "initially_correct_pixels": 208437404,
+      "correct_to_wrong_pixels": 3300369,
+      "initially_wrong_pixels": 58599268,
+      "wrong_to_correct_pixels": 23221943,
+      "correct_to_wrong_pct": 1.5833861565460678,
+      "wrong_to_correct_pct": 39.62838409517334,
+      "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/groups/waterbirds_seg/trace/trace/prediction_seal.json",
+      "prediction_seal_sha256": "091ed979087fb20228ce10acbe91bc971d0954ae88b988bcfe1129612ef1b886",
+      "worst_group_mIoU": 35.97899172328159,
+      "foreground_errors": {
+        "foreground_pixels": 36103818,
+        "identity_flip_pixels": 3323274,
+        "foreground_to_background_pixels": 7179591,
+        "identity_flip_pct": 9.20477163938728,
+        "foreground_to_background_pct": 19.885960537470027
+      },
+      "split_counts": {
+        "2": 2568,
+        "0": 2458,
+        "1": 296
+      },
+      "evaluation_scope": "original 5322-image loader; internal comparison, not test-only"
+    }
+  ],
+  "duration_seconds": 494.1197665845975,
+  "reset_checks": 333,
+  "all_resets_exact": true,
+  "native_cache_equivalence": [],
+  "image_set_sha256": "ffb413d031004bc885b7aae1e7b5e28b37d3886e00d9a01f873c837af8dfb15e",
+  "image_order_sha256": "bc0ac6f7a2c5395b753bd936609b3acbdbd9d04ac55aa5d0e6322acb935ddd69"
+}

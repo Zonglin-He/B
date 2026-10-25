@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/03_efficiency/efficiency/cityscapes/cfctta_deployment",
+  "duration_sec": 2023.512,
+  "evidence_type": "newly_run",
+  "results": {
+    "original": {
+      "mAcc": 52.31,
+      "mAcc_std": 0.0,
+      "mDice": 45.87,
+      "mDice_std": 0.0,
+      "mIoU": 33.32,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

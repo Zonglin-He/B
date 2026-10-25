@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "name": "smoke/coco_cd/no_reliability_weighting",
+  "dataset": "coco_cd",
+  "variant": "no_reliability_weighting",
+  "images": 56,
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 67.27,
+    "mDice": 79.37,
+    "mAcc": 91.28,
+    "aAcc": 88.84
+  },
+  "miou_unrounded": 67.27088489669558,
+  "intersection": [
+    2089597.0,
+    184885.0,
+    221761.0
+  ],
+  "union": [
+    2387527.0,
+    282994.0,
+    452948.0
+  ],
+  "ms_per_image": 38.38908885206495,
+  "peak_allocated_mib": 6819.82470703125,
+  "diagnostic_views_per_image": 12.0,
+  "warmup_episodes": 1,
+  "wall_seconds": 2.6408657217398286,
+  "protocol_sha256": "3625f44088515e6e3ce0371c12fe30d45dbe2fb642cca6b1c59d80f68c6e263c"
+}

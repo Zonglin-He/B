@@ -1,0 +1,4 @@
+dataset,variant,seed,batch_idx,image_index,class_idx,class_name,component_area,component_area_frac,area_bin,component_recall,component_iou_global_class_union,class_pred_area,detected_at_50,loss_last
+voc20,fg_guard,0,0,0,7,cat,14500,0.9997931462456043,04_large_>5pct,0.9758620689655172,0.5190755685986794,26910,1,0.05571086332201958
+voc20,fg_guard,0,0,0,7,cat,2,0.00013790250293042817,01_tiny_<=0.5pct,1.0,7.432181345224824e-05,26910,1,0.05571086332201958
+voc20,fg_guard,0,0,0,7,cat,1,6.895125146521409e-05,01_tiny_<=0.5pct,1.0,3.716090672612412e-05,26910,1,0.05571086332201958

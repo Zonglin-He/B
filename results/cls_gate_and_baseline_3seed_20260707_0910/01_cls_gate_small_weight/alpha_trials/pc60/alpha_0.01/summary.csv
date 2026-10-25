@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+pc60,ok,30.41,42.96,54.95,27.99,2.4200000000000017,1,1114.35,/home/wwww/hzl/results/cls_gate_and_baseline_3seed_20260707_0910/01_cls_gate_small_weight/alpha_trials/pc60/alpha_0.01/pc60/minimal_cfc/results.txt,newly_run,paper_ready

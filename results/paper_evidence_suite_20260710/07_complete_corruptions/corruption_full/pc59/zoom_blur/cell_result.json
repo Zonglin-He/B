@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/pc59/zoom_blur",
+  "duration_sec": 2043.406,
+  "evidence_type": "newly_run",
+  "results": {
+    "zoom_blur": {
+      "mAcc": 36.86,
+      "mAcc_std": 0.0,
+      "mDice": 31.53,
+      "mDice_std": 0.0,
+      "mIoU": 20.86,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

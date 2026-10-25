@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/cityscapes/zoom_blur",
+  "duration_sec": 6121.347,
+  "evidence_type": "newly_run",
+  "results": {
+    "zoom_blur": {
+      "mAcc": 21.87,
+      "mAcc_std": 0.0,
+      "mDice": 20.05,
+      "mDice_std": 0.0,
+      "mIoU": 12.97,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

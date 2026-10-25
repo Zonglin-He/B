@@ -1,0 +1,39 @@
+{
+  "status": "sealed_before_label_scoring",
+  "records": [
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000032892.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/refresh/gaussian_noise_s3/midpoint/midpoint/predictions/636b27b9fa5e3ec92052e8071fb87e55d6c754e49d1d5db4a9fe233051876095.npz",
+      "sha256": "277c845349c989079d291005a5748a7c06e2cdd5595ca1df02047a13b2606d99",
+      "before_sha256": "51fbe113697a4d6cbf564172c81580b58c33d791a6759d309c74f6bfad0c383e",
+      "after_sha256": "e62f675429f5628769ac0359fe1a83cede60739c3033bc57472ecb4bedd9237e"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000048126.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/refresh/gaussian_noise_s3/midpoint/midpoint/predictions/82693797597ff830b91c17bd3ec9fbf715762c5f4698856418840e718dfd8a62.npz",
+      "sha256": "b9573ed1ee4d428ff1603f7e85e7487b15f9f554e064c2294e3360051abfac1e",
+      "before_sha256": "7681ab91dd2ec3fcfd7e4a18deecfeb42354f09012dadb9f58911ec210bf4a1b",
+      "after_sha256": "d4e02abfca8f3a29976a68e0daa6f7958f26cec769c7a6a752934b6ddcecf5c2"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000132165.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/refresh/gaussian_noise_s3/midpoint/midpoint/predictions/1a496ea65080895a3a5a6db2799cf1f69879538b03a6547de7eb9c6c48799d4d.npz",
+      "sha256": "afb4add5dc6193bf5c6ce29b5f9eae02ceda8e6eac097002201fa13f4180fa6f",
+      "before_sha256": "09d78d3cdbe81de227ad48129242ba6d3063f95afb0532969c67441165d034a7",
+      "after_sha256": "b82e3b7f61fe705315b39b17c73cf23b0543b5bc48b51f4542aa3f802ff97085"
+    },
+    {
+      "image_id": "/home/wwww/hzl/data/coco/train2017/000000311783.jpg",
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/refresh/gaussian_noise_s3/midpoint/midpoint/predictions/0f5c9fbbe2322cb2848b73af71ba4775f0bb124f3ccd7aeea622e460e8d470ec.npz",
+      "sha256": "1a18ea8fdc7872968b0e0dc3cd5b1960c80335d9ece761dd4cab5d01818e3825",
+      "before_sha256": "16eb1d2471574a2df6f4e8ce087685fdead44929a46621d982e5384cf3c0a6d8",
+      "after_sha256": "360612d803d9fad83e517a3131ee4249592f53653a94252e631790ee808fd2ca"
+    }
+  ],
+  "labels_in_artifact": false,
+  "classes": [
+    "background",
+    "cat",
+    "dog"
+  ]
+}

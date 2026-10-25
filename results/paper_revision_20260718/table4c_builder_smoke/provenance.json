@@ -1,0 +1,38 @@
+{
+  "evidence_type": "newly_run_matched_candidate_analysis",
+  "reference_root": "/home/wwww/hzl/results/paper_revision_20260718/table4c_per_dataset_smoke2",
+  "extra_root": "/home/wwww/hzl/results/paper_revision_20260718/table4c_per_dataset_smoke2",
+  "datasets": [
+    "voc20"
+  ],
+  "methods": [
+    "tpt",
+    "watt",
+    "clipartt"
+  ],
+  "candidate_protocol": "exact frozen candidate-key and reliability match across runs",
+  "quartile_protocol": "within dataset and semantic role; never pooled across datasets",
+  "diagnostics": [
+    {
+      "dataset": "voc20",
+      "diagnostic_candidates": 7,
+      "shared_valid_candidates": 1,
+      "shared_fraction": 0.14285714285714285,
+      "role_counts": {
+        "thing": 1,
+        "stuff": 0,
+        "background": 0
+      }
+    }
+  ],
+  "alignment": [
+    {
+      "dataset": "voc20",
+      "reference_candidates": 7,
+      "extra_candidates": 7,
+      "shared_candidates": 7,
+      "max_abs_reliability_delta": 0.0,
+      "exact_candidate_match": true
+    }
+  ]
+}

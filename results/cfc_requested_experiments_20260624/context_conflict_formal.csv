@@ -1,0 +1,5 @@
+evidence_type,input_dir,dataset,method,num_samples,prediction_flip_rate,harmful_update_rate,object_mIoU,correct_to_harm_rate,correct_to_worse_rate,correct_to_wrong_rate,mean_accuracy_delta
+newly_run_model_eval,/home/wwww/hzl/results/synthetic_cfc_voc_formal_flip_20260624,Synthetic VOC Context-Conflict,NoAdapt,240,0.0,0.0,44.965156291329365,0.0,0.0,0.0,0.0
+newly_run_model_eval,/home/wwww/hzl/results/synthetic_cfc_voc_formal_flip_20260624,Synthetic VOC Context-Conflict,TENT,240,0.17083333333333334,0.6833333333333333,42.83531513655132,0.6378378378378379,0.6756756756756757,0.16756756756756758,-0.07303106526338204
+newly_run_model_eval,/home/wwww/hzl/results/synthetic_cfc_voc_formal_flip_20260624,Synthetic VOC Context-Conflict,MLMP,240,0.2708333333333333,0.625,40.96228488417754,0.5297297297297298,0.5567567567567567,0.20540540540540542,-0.09375769674591851
+newly_run_model_eval,/home/wwww/hzl/results/synthetic_cfc_voc_formal_flip_20260624,Synthetic VOC Context-Conflict,CFC-TTA,240,0.30416666666666664,0.4875,33.71165045786002,0.3783783783783784,0.41621621621621624,0.21081081081081082,-0.08958423431025822

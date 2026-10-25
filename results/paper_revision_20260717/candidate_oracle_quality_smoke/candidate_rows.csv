@@ -1,0 +1,9 @@
+evidence_type,dataset,candidate_source,batch_idx,patch_batch_idx,role,class_idx,real_class_idx,area,purity,class_iou,proposal_conf
+newly_run,voc20,prediction,0,0,thing,0,0,1,0.0,0.0,0.9808792471885681
+newly_run,voc20,prediction,0,0,thing,0,0,1,0.0,0.0,0.9418652653694153
+newly_run,voc20,prediction,0,0,thing,20,14,2,0.0,0.0,0.7769914269447327
+newly_run,voc20,prediction,0,0,thing,0,0,1,0.0,0.0,0.9123865365982056
+newly_run,voc20,prediction,0,0,thing,20,14,2,0.0,0.0,0.741066575050354
+newly_run,voc20,prediction,0,0,thing,20,14,1,0.0,0.0,0.8273718953132629
+newly_run,voc20,oracle_gt,0,0,thing,0,0,43,1.0,0.9772727272727273,0.6972538232803345
+newly_run,voc20,oracle_gt,0,0,thing,0,0,1,1.0,0.022727272727272728,0.9416983127593994

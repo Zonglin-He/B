@@ -1,0 +1,6 @@
+suite,dataset,variant,method,status,result_path
+efficiency,voc20,mlmp_official,mlmp,failed:0,results/paper_evidence_suite_20260710/smoke_efficiency/efficiency/voc20/mlmp_official/run.log
+efficiency,voc20,cfctta_deployment,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_efficiency/efficiency/voc20/cfctta_deployment/run.log
+efficiency,voc20,cfctta_controlled_r2,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_efficiency/efficiency/voc20/cfctta_controlled_r2/run.log
+efficiency,voc20,cfctta_controlled_r4,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_efficiency/efficiency/voc20/cfctta_controlled_r4/run.log
+efficiency,voc20,cfctta_controlled_r8,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_efficiency/efficiency/voc20/cfctta_controlled_r8/run.log

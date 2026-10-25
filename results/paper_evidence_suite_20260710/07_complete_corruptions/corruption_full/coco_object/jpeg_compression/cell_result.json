@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_object/jpeg_compression",
+  "duration_sec": 1012.777,
+  "evidence_type": "newly_run",
+  "results": {
+    "jpeg_compression": {
+      "mAcc": 60.16,
+      "mAcc_std": 0.0,
+      "mDice": 43.37,
+      "mDice_std": 0.0,
+      "mIoU": 29.9,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

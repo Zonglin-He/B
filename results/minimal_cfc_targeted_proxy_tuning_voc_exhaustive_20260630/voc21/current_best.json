@@ -1,0 +1,20 @@
+{
+  "dataset": "voc21",
+  "fixed_method_params": {
+    "cfc_max_regions": 8
+  },
+  "fixed_cfg_params": {},
+  "stage_best_param": "cfc_max_regions",
+  "stage_best_value": 8,
+  "stage_best_mIoU": 45.55,
+  "global_best": {
+    "dataset": "voc21",
+    "best_mIoU": 45.55,
+    "best_stage": 1,
+    "best_channel": "param",
+    "best_param": "cfc_max_regions",
+    "best_value": 8,
+    "best_summary": ""
+  },
+  "mlmp_mIoU": 50.78
+}

@@ -1,0 +1,67 @@
+{
+  "status": "completed",
+  "dataset": "waterbirds_seg",
+  "policy": "mlmp",
+  "label": "mlmp",
+  "images": 5322,
+  "full_split": true,
+  "metrics": {
+    "mIoU": 53.37090559595288,
+    "intersection": [
+      206713775,
+      13034316,
+      10096948
+    ],
+    "union": [
+      238737496,
+      27954028,
+      37536781
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "pre_metrics": {
+    "mIoU": 47.459141516473395,
+    "intersection": [
+      181943392,
+      13279934,
+      13214078
+    ],
+    "union": [
+      234216749,
+      31013115,
+      60406076
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "valid_pixels": 267036672,
+  "initially_correct_pixels": 208437404,
+  "correct_to_wrong_pixels": 5303714,
+  "initially_wrong_pixels": 58599268,
+  "wrong_to_correct_pixels": 26711349,
+  "correct_to_wrong_pct": 2.544511636692616,
+  "wrong_to_correct_pct": 45.58307622545729,
+  "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/groups/waterbirds_seg/mlmp/mlmp/prediction_seal.json",
+  "prediction_seal_sha256": "f1f740cfee118c5efc29f68fbd3129fc0b984a1d811c11f2d6f5215e62a93a5c",
+  "worst_group_mIoU": 35.38223757099235,
+  "foreground_errors": {
+    "foreground_pixels": 36103818,
+    "identity_flip_pixels": 5167912,
+    "foreground_to_background_pixels": 7804642,
+    "identity_flip_pct": 14.31403182898828,
+    "foreground_to_background_pct": 21.617220649627694
+  },
+  "split_counts": {
+    "2": 2568,
+    "0": 2458,
+    "1": 296
+  },
+  "evaluation_scope": "original 5322-image loader; internal comparison, not test-only"
+}

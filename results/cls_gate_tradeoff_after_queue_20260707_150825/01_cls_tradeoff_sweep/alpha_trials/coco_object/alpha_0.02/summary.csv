@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_object,ok,32.22,46.03,67.62,28.84,3.379999999999999,1,1004.86,/home/wwww/hzl/results/cls_gate_tradeoff_after_queue_20260707_150825/01_cls_tradeoff_sweep/alpha_trials/coco_object/alpha_0.02/coco_object/minimal_cfc/results.txt,newly_run,paper_ready

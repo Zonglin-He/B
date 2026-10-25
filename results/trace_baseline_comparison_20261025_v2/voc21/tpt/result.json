@@ -1,0 +1,103 @@
+{
+  "status": "completed",
+  "method": "tpt",
+  "dataset": "voc21",
+  "images": 128,
+  "full_split": false,
+  "metrics": {
+    "mIoU": 49.71,
+    "mDice": 64.96,
+    "mAcc": 78.47,
+    "aAcc": 75.28
+  },
+  "miou_unrounded": 49.71318216662481,
+  "method_settings": {
+    "constructor": {
+      "lr": 0.001,
+      "steps": 10,
+      "ovss_type": "naclip",
+      "ovss_backbone": "ViT-L/14",
+      "n_ctx": 4
+    },
+    "optimizer": "Adam",
+    "betas": [
+      0.9,
+      0.999
+    ],
+    "weight_decay": 0.0,
+    "update_steps": 10,
+    "reset": "model and optimizer at each episode",
+    "backend": "archived MLMP NaCLIP",
+    "prompt_scope": "four learned context tokens, initialized from a photo of a",
+    "backend_equivalence_claim": false,
+    "comparison_scope": "Matched checkpoint/queries/data/episodes; backend and method-specific prompts retained. native_noadapt versus noadapt is not a pure backend-equivalence test; legacy_trace_noadapt matches native prompts/layers for an inference-path control.",
+    "prompt_templates": [
+      "a photo of a {}"
+    ]
+  },
+  "optimizer_parameters": [
+    "ctx"
+  ],
+  "intersection": [
+    3140684.0,
+    60958.0,
+    22647.0,
+    41388.0,
+    37110.0,
+    46452.0,
+    152025.0,
+    66153.0,
+    111672.0,
+    23229.0,
+    85767.0,
+    62641.0,
+    105414.0,
+    82176.0,
+    28039.0,
+    254318.0,
+    43718.0,
+    42663.0,
+    59034.0,
+    88896.0,
+    34056.0
+  ],
+  "union": [
+    4433151.0,
+    141758.0,
+    84154.0,
+    62598.0,
+    120190.0,
+    108379.0,
+    223673.0,
+    123388.0,
+    163849.0,
+    69598.0,
+    154844.0,
+    160507.0,
+    156625.0,
+    119730.0,
+    52144.0,
+    607012.0,
+    87052.0,
+    76072.0,
+    390519.0,
+    196706.0,
+    71521.0
+  ],
+  "wall_seconds": 9.461794598028064,
+  "warmup_episodes": 2,
+  "measured_images": 96,
+  "ms_per_image": 66.64377052220516,
+  "adaptation_ms_per_image": 64.63042047107592,
+  "inference_ms_per_image": 2.013350051129237,
+  "peak_allocated_mib": 9697.1943359375,
+  "visual_inputs_per_image": 11.0,
+  "visual_calls_per_image": 0.6875,
+  "all_visual_inputs": 1408,
+  "all_visual_calls": 88,
+  "source_input_checks": "pre/post passed",
+  "adapter_sha256": "03e8fe606fece98d42b7824ca8f9ebe42bffeec335fe0a0a17af8ea70e1c6f9f",
+  "protocol_sha256": "a0cc9b70ae591397fa3f88e58be5f664818793dfcc2ab3c73f339ca15a011b81",
+  "per_image_counts_sha256": "912a224b7339f4041ebf147ae62dbd7b3c4dd11dece248ad0bd22f6d11e286a5",
+  "cost_sha256": "0eef2f7f26f22c6e54c43b0c5a8994824998712bcc7793f06fcf2f826434858e"
+}

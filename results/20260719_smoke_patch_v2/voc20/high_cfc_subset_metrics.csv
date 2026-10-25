@@ -1,0 +1,7 @@
+evidence_type,subset,frac,num_images,method,mIoU_mean_image,mDice_mean_image,mAcc_mean_image,prediction_flip_rate,region_accuracy,harmful_update_rate,num_regions
+newly_run,top_10pct_high_cfc,0.1,1,cfctta,45.552799105644226,47.67290949821472,91.10559821128845,0.07996692508459091,nan,nan,0
+newly_run,top_10pct_high_cfc,0.1,1,tent,100.0,100.0,100.0,0.014528702944517136,nan,nan,0
+newly_run,top_20pct_high_cfc,0.2,1,cfctta,45.552799105644226,47.67290949821472,91.10559821128845,0.07996692508459091,nan,nan,0
+newly_run,top_20pct_high_cfc,0.2,1,tent,100.0,100.0,100.0,0.014528702944517136,nan,nan,0
+newly_run,top_30pct_high_cfc,0.3,1,cfctta,45.552799105644226,47.67290949821472,91.10559821128845,0.07996692508459091,nan,nan,0
+newly_run,top_30pct_high_cfc,0.3,1,tent,100.0,100.0,100.0,0.014528702944517136,nan,nan,0

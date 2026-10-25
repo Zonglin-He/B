@@ -1,0 +1,9 @@
+variant,description,mIoU,mDice,mAcc,result_file
+full_cfc,Full CFC-TTA,84.19,90.97,92.1,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/full_cfc/results.txt
+no_object_support,Remove object-only support from reliability score,84.23,91.01,92.14,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/no_object_support/results.txt
+no_background_penalty,Remove background-only leakage penalty,84.18,90.98,92.11,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/no_background_penalty/results.txt
+no_counterfactual,Remove background-counterfactual stability,84.19,90.98,92.12,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/no_counterfactual/results.txt
+no_ambiguity,Remove ambiguity risk suppression,84.22,91.0,92.13,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/no_ambiguity/results.txt
+no_redundancy,Remove class redundancy term,84.17,90.97,92.09,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/no_redundancy/results.txt
+topk_regions,Use top-k region selection instead of threshold gate,83.8,90.75,91.86,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/topk_regions/results.txt
+all_regions_entropy,Adapt on all pixels after CFC diagnostics,83.25,90.43,91.47,/home/wwww/hzl/results/cfctta_paper_ablations_voc20/all_regions_entropy/results.txt

@@ -1,0 +1,52 @@
+{
+  "status": "completed",
+  "dataset": "coco_stuff",
+  "method": "trace",
+  "variant": "full",
+  "backend": "shared_legacy",
+  "protocol": "released",
+  "seed": 0,
+  "images": 5000,
+  "corruption": null,
+  "severity": 0,
+  "formula": "native",
+  "gamma": null,
+  "blur_kernel": null,
+  "full_split": true,
+  "calibration": false,
+  "metrics": {
+    "mIoU": 21.51,
+    "mDice": 32.27,
+    "mAcc": 43.61,
+    "aAcc": 37.96
+  },
+  "condition_metrics": {},
+  "config": {
+    "dataset": "COCOStuffDataset",
+    "data_subdir": "coco_stuff",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 5,
+    "lr": 0.0034,
+    "steps": 12,
+    "trace_max_regions": 33,
+    "trace_view_batch_size": 8,
+    "class_extensions": true,
+    "data_dir": "/home/wwww/hzl/data/coco_stuff"
+  },
+  "warmup_batches": 5,
+  "ms_per_image": 342.34211088846155,
+  "images_per_second": 2.9210546064717406,
+  "adaptation_ms_per_image": 338.27755356422773,
+  "visual_calls_per_image": 22.95316582914573,
+  "visual_inputs_per_image": 172.643216080402,
+  "peak_allocated_mib": 2364.03271484375,
+  "metric_scope": "dataset classwise intersection/union; timing excludes loading and scoring"
+}

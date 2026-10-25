@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+voc21,ok,50.81,66.02,84.11,50.78,0.030000000000001137,1,432.0,/home/wwww/hzl/results/minimal_cfc_full_targeted_voc_refine_20260630/v21_proxy_lr0007/voc21/minimal_cfc/results.txt,newly_run,paper_ready

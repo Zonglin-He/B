@@ -1,0 +1,2 @@
+variant,dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+no_fg_guard,voc20,ok,84.29,90.96,92.55,83.76,0.5300000000000011,1,303.92,/home/wwww/hzl/results/final_protocol_suite_20260630/04_complete_ablation_representative_no_bgcap/no_fg_guard/voc20/minimal_cfc/results.txt,newly_run,paper_ready

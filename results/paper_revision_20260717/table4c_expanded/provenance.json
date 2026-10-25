@@ -1,0 +1,16 @@
+{
+  "evidence_type": "newly_run_analysis_of_preexisting_run",
+  "input": "/home/wwww/hzl/results/requested_experiments_20260703_1020/07_qualitative_current_method/region_diagnostics.csv",
+  "output": "/home/wwww/hzl/results/paper_revision_20260717/table4c_expanded",
+  "eligible_regions": 1366,
+  "datasets": [
+    "voc20",
+    "pc60",
+    "coco_cd",
+    "waterbirds_seg"
+  ],
+  "variant": "full_soft",
+  "initially_correct_threshold": 0.5,
+  "bootstrap_replicates": 10000,
+  "bootstrap_seed": 20260717
+}

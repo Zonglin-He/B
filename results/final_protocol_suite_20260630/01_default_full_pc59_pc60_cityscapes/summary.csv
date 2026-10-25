@@ -1,0 +1,4 @@
+variant,dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+fg_guard,pc59,ok,32.49,45.61,55.34,31.95,0.5400000000000027,1,1254.85,/home/wwww/hzl/results/final_protocol_suite_20260630/01_default_full_pc59_pc60_cityscapes/fg_guard/pc59/minimal_cfc/results.txt,newly_run,paper_ready
+fg_guard,pc60,ok,29.8,42.35,54.8,27.99,1.8100000000000023,1,1397.15,/home/wwww/hzl/results/final_protocol_suite_20260630/01_default_full_pc59_pc60_cityscapes/fg_guard/pc60/minimal_cfc/results.txt,newly_run,paper_ready
+fg_guard,cityscapes,ok,33.78,46.69,51.12,33.35,0.4299999999999997,1,5620.16,/home/wwww/hzl/results/final_protocol_suite_20260630/01_default_full_pc59_pc60_cityscapes/fg_guard/cityscapes/minimal_cfc/results.txt,newly_run,paper_ready

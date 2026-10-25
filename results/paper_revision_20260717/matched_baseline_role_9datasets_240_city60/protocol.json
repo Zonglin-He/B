@@ -1,0 +1,39 @@
+{
+  "evidence_type": "newly_run",
+  "timestamp": "2026-07-17 20:55:51",
+  "protocol": "same clean image prefix, NaCLIP ViT-L/14 backbone, and frozen CFC-TTA candidate masks",
+  "baseline_optimization": "official/default TENT and MLMP settings from the public implementation",
+  "trace_optimization": "canonical dataset-specific settings from cfc_tta.configs.best_clean",
+  "candidate_source": "pre-adaptation CFC-TTA dense predictions",
+  "aggregation": "region-level statistics plus subset-level confusion-matrix mIoU",
+  "datasets": [
+    "voc20",
+    "pc60",
+    "coco_object",
+    "coco_stuff",
+    "coco_cd",
+    "waterbirds_seg",
+    "voc21",
+    "pc59",
+    "cityscapes"
+  ],
+  "methods": [
+    "noadapt",
+    "tent",
+    "mlmp",
+    "cfctta"
+  ],
+  "max_images": 240,
+  "max_images_by_dataset": {
+    "voc20": 240,
+    "pc60": 240,
+    "coco_object": 240,
+    "coco_stuff": 240,
+    "coco_cd": 240,
+    "waterbirds_seg": 240,
+    "voc21": 240,
+    "pc59": 240,
+    "cityscapes": 60
+  },
+  "seed": 0
+}

@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+waterbirds_seg,ok,47.54,61.17,75.35,52.18,-4.640000000000001,0,1364.78,/home/wwww/hzl/results/minimal_cfc_full_targeted_shortcut_refine_20260630/waterbirds_seg_cover20_alpha0_conf025/waterbirds_seg/minimal_cfc/results.txt,newly_run,paper_ready

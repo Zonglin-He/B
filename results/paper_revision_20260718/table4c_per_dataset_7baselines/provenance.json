@@ -1,0 +1,110 @@
+{
+  "evidence_type": "newly_run_matched_candidate_analysis",
+  "reference_root": "/home/wwww/hzl/results/paper_revision_20260717/matched_baseline_role_9datasets_240_city60",
+  "extra_root": "/home/wwww/hzl/results/paper_revision_20260718/table4c_per_dataset_extra_baselines",
+  "datasets": [
+    "voc20",
+    "pc60",
+    "coco_cd",
+    "waterbirds_seg"
+  ],
+  "methods": [
+    "noadapt",
+    "tent",
+    "tpt",
+    "watt",
+    "clipartt",
+    "mlmp",
+    "cfctta"
+  ],
+  "baseline_protocol": {
+    "lr": 0.001,
+    "steps": 10,
+    "tpt_n_ctx": 4,
+    "watt_l": 2,
+    "watt_m": 5,
+    "clipartt_k": 3
+  },
+  "candidate_protocol": "exact frozen candidate-key and reliability match across runs",
+  "quartile_protocol": "within dataset and semantic role; never pooled across datasets",
+  "diagnostics": [
+    {
+      "dataset": "voc20",
+      "diagnostic_candidates": 1328,
+      "shared_valid_candidates": 841,
+      "shared_fraction": 0.6332831325301205,
+      "role_counts": {
+        "thing": 841,
+        "stuff": 0,
+        "background": 0
+      }
+    },
+    {
+      "dataset": "pc60",
+      "diagnostic_candidates": 1920,
+      "shared_valid_candidates": 1920,
+      "shared_fraction": 1.0,
+      "role_counts": {
+        "thing": 790,
+        "stuff": 1129,
+        "background": 1
+      }
+    },
+    {
+      "dataset": "coco_cd",
+      "diagnostic_candidates": 240,
+      "shared_valid_candidates": 240,
+      "shared_fraction": 1.0,
+      "role_counts": {
+        "thing": 61,
+        "stuff": 0,
+        "background": 179
+      }
+    },
+    {
+      "dataset": "waterbirds_seg",
+      "diagnostic_candidates": 480,
+      "shared_valid_candidates": 480,
+      "shared_fraction": 1.0,
+      "role_counts": {
+        "thing": 240,
+        "stuff": 0,
+        "background": 240
+      }
+    }
+  ],
+  "alignment": [
+    {
+      "dataset": "voc20",
+      "reference_candidates": 1328,
+      "extra_candidates": 1328,
+      "shared_candidates": 1328,
+      "max_abs_reliability_delta": 0.0,
+      "exact_candidate_match": true
+    },
+    {
+      "dataset": "pc60",
+      "reference_candidates": 1920,
+      "extra_candidates": 1920,
+      "shared_candidates": 1920,
+      "max_abs_reliability_delta": 0.0,
+      "exact_candidate_match": true
+    },
+    {
+      "dataset": "coco_cd",
+      "reference_candidates": 240,
+      "extra_candidates": 240,
+      "shared_candidates": 240,
+      "max_abs_reliability_delta": 0.0,
+      "exact_candidate_match": true
+    },
+    {
+      "dataset": "waterbirds_seg",
+      "reference_candidates": 480,
+      "extra_candidates": 480,
+      "shared_candidates": 480,
+      "max_abs_reliability_delta": 0.0,
+      "exact_candidate_match": true
+    }
+  ]
+}

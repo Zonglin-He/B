@@ -1,0 +1,771 @@
+{
+  "status": "complete",
+  "created_utc": "2026-10-25T04:27:57.993967+00:00",
+  "output": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/offline",
+  "audit_root": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit",
+  "episode_root": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls",
+  "runtime": {
+    "executable": "/home/wwww/miniconda3/envs/mlmp/bin/python",
+    "python": "3.10.13",
+    "numpy": "1.26.4",
+    "pandas": "2.3.3",
+    "sklearn": "1.7.2",
+    "gpu_imports_required": false
+  },
+  "sources": [
+    {
+      "path": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/tools/reviewer_original/offline.py",
+      "roles": [
+        "offline_analysis_implementation"
+      ],
+      "status": "hashed",
+      "bytes": 45783,
+      "sha256": "cf5ed532f381c7e775f22018af30ee9ba6b7461d4a0a8e9ce01965102880fc5c"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/voc21/seed0/candidate_outcomes.csv",
+      "roles": [
+        "frozen_isolated_candidate_seed0_outcomes"
+      ],
+      "status": "hashed",
+      "bytes": 8115500,
+      "sha256": "dcab6ab0584759afcf5334bad89d5992bdcca8b39a7cc03b9b6f577a3a100e5e"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/pc60/seed0/candidate_outcomes.csv",
+      "roles": [
+        "frozen_isolated_candidate_seed0_outcomes"
+      ],
+      "status": "hashed",
+      "bytes": 5691468,
+      "sha256": "6f105268cf750e62379781840ea7bd5355f30b2568ffb0a34f7c2ffc8ee31212"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_object/seed0/candidate_outcomes.csv",
+      "roles": [
+        "frozen_isolated_candidate_seed0_outcomes"
+      ],
+      "status": "hashed",
+      "bytes": 8914584,
+      "sha256": "fc36e6d09047886ee9a9ebdd096ff36eb108073aad9b7ca3e6ea7a34085130b0"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_response_20260929/cells/supplement/audit/coco_cd/seed0/candidate_outcomes.csv",
+      "roles": [
+        "frozen_isolated_candidate_seed0_outcomes"
+      ],
+      "status": "hashed",
+      "bytes": 1043374,
+      "sha256": "c453bc143c81d81de8809f01f4b5279fce12e3bedb48e3d92d2a4a7bb2eb69b3"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/result.json",
+      "roles": [
+        "complete_episode_panel_result"
+      ],
+      "status": "hashed",
+      "bytes": 17052,
+      "sha256": "82117234f535dced21a953ef20449e4158d5cc5bf672238d13078be0cb6f74a0"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/image_order.json",
+      "roles": [
+        "frozen_episode_image_order"
+      ],
+      "status": "hashed",
+      "bytes": 101433,
+      "sha256": "11623a00d9a47db170460f62f831a0e589e1d517e6bbd3cb6f05446946c1036f"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/episodes.csv",
+      "roles": [
+        "paired_episode_membership"
+      ],
+      "status": "hashed",
+      "bytes": 551038,
+      "sha256": "35d9bc691a0ba52748534a38506ed9e589c5fd545867730fa5c09730c174530e"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/uniform/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 2528,
+      "sha256": "e7e5c58cea8cf015700d45bb211f354b531cc02ae5c4dfcf93ed7ff8af39a049"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/uniform/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 793014,
+      "sha256": "5e1ef7cf1ac567afba37be7b1f1571ddf0cf833dd302910ddddb353e2e04d197"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/uniform/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 16636691,
+      "sha256": "db06093c38eb0cd3214b8dc8eb68ac6b73ce534eb9f0be2ea5ab6f97ffaa8ff4"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/confidence/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 2537,
+      "sha256": "7fd192d188be42db80076920a546b23ce2a38db7a4939827e344396670f8c004"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/confidence/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 797361,
+      "sha256": "d87c13895331338b2e5ea241b34d8d5a0122c7ba19dd645ca0a1219f93197ec1"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/confidence/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 16639409,
+      "sha256": "bab90ff19fabf20b1cfaeaaea55b36449741e02358c66867465e303c21f44310"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/augmentation_consistency/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 2573,
+      "sha256": "0abf3d6e45b7bf659601b10e2acec4faa5ac352bc3c59d5bad57f3fb6e9f4fc6"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/augmentation_consistency/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 817647,
+      "sha256": "ba08c6e3b809b8b3a5a15e4edfb1cf48a86f5e1336f2c4ef278ce3cc1bf14dfe"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/augmentation_consistency/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 16636360,
+      "sha256": "958b4739d0cab1e4a20cc0c75096a8376c6d6c891c4bc96d045d9235d439b475"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/quality/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 2531,
+      "sha256": "4f56e2d9773c4a5a82887ebbc5bb2051d05e5ba945c9409e412114a78773660f"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/quality/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 793014,
+      "sha256": "66ccffa5e8684a740eba3ad553d7939138fece66593a441c9aa11d4eaa224b46"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/quality/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 16641997,
+      "sha256": "bfbf956f999417ab7a9b2383c286057f5a7467a2186e928712e1dd632d45c5d4"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/full/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 2516,
+      "sha256": "87f69e4cbfdbaa391306214140ba1e33b5fcfe2ca58ddeaa280c1e2575fca4f1"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/full/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 788667,
+      "sha256": "12ccd56d1edeaa5703d8d21c342b384c8bc01b8608b407494ee3c76d8632ba99"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/full/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 16641617,
+      "sha256": "a214c4c9644283d336c4c3495de69212281e905d949362427e1e080b7c18d539"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/result.json",
+      "roles": [
+        "complete_episode_panel_result"
+      ],
+      "status": "hashed",
+      "bytes": 37215,
+      "sha256": "22ef950f79bee81da753287f40aea3084417e080cf9d33089bea4611a27e1ca7"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/image_order.json",
+      "roles": [
+        "frozen_episode_image_order"
+      ],
+      "status": "hashed",
+      "bytes": 357353,
+      "sha256": "f66b50139dab98be60d8f5334e711067df6ad01cfb145b0bfe8db0e23a731722"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/episodes.csv",
+      "roles": [
+        "paired_episode_membership"
+      ],
+      "status": "hashed",
+      "bytes": 2057217,
+      "sha256": "00d4362cdf8597e21b277fdcee23db59ad2bf87b6917d54e8a5d7a6d1533a76d"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/uniform/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 5623,
+      "sha256": "ebdb32033684da0540ebbbd7a47154e255283f8360761e891dee74d8620fb9f7"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/uniform/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2788255,
+      "sha256": "9b4f217e3a0294489e1f454a36eb692e36ca80334100ce807147d6fff62edb96"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/uniform/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 424410148,
+      "sha256": "c5c1d8f88f11cef135eb7d0addf56732b0114affcf974e2b3752844669227cee"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/confidence/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 5633,
+      "sha256": "5653727d236bc86601e2ee50e885b1b90a9bc0221f458cc0ae042acb9e122f7d"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/confidence/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2803570,
+      "sha256": "979219b86b1bf703dc7702e0b723dc15c7d6c2f11c4ec81b7cbe7ef72ddaf3a1"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/confidence/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 424420857,
+      "sha256": "f22edb8eb92b6eb876f45af3cbcb85b2f252170e15463f58fac74db23022cc53"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/augmentation_consistency/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 5669,
+      "sha256": "6f273c0c9d107d95f117114a13b1c4ff5ad67b157b7c54f212ef8754d0769148"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/augmentation_consistency/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2875040,
+      "sha256": "6ad26a9418b4ef223f2f80eab822921909dc5acd404778e64ad3f465a4b2356a"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/augmentation_consistency/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 424402827,
+      "sha256": "8182f4dceae9347627cfa9448e71783d4305db60bad5fbdc2a7980d34e51be84"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/quality/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 5628,
+      "sha256": "438f32633f03adb666a025b74c9431fa4d27a6df67271599225428307b62ef94"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/quality/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2788255,
+      "sha256": "ed6089991b6f1cb209c3ee72eba55f12a43f31b4effa1e11b1f87cec0672669b"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/quality/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 424375971,
+      "sha256": "fbf542027f728dfb8124bd5d08e6572320f3de6b415ccbcadd816cbdc98013aa"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/full/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 5613,
+      "sha256": "ec52f84082d89006d37d6ac020587de82118586a6a9d29f053cbbb0c09a75903"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/full/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2772940,
+      "sha256": "4e99fbcecd8258857d245935152fa247c02e03d38a1ea83e389e234235b99306"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/full/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 424375443,
+      "sha256": "2b35dfe788881a10d1eb784ecd543d6cdd16269dd5e22dd0104c4918a9643517"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/result.json",
+      "roles": [
+        "complete_episode_panel_result"
+      ],
+      "status": "hashed",
+      "bytes": 47267,
+      "sha256": "2d139bf8799160aa062a0400dbf415046d76394d3e1ddecac4b947078ae2c1f7"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/image_order.json",
+      "roles": [
+        "frozen_episode_image_order"
+      ],
+      "status": "hashed",
+      "bytes": 275003,
+      "sha256": "b9f0118e083829aa09a752ba929061cb5664bbe98bbfe7fe4c0cc6f3c1bebe10"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/episodes.csv",
+      "roles": [
+        "paired_episode_membership"
+      ],
+      "status": "hashed",
+      "bytes": 1848867,
+      "sha256": "0b337b9a1cd96306f044f943b8be3337ee07796933da89a24c551babfc3d7311"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/uniform/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 7127,
+      "sha256": "9be088851168f110fb21d8dee2cf26ff7ff1b451fced702ca2203753260a46c3"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/uniform/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2691314,
+      "sha256": "06107f093a939dbf700e69637c01de17fa8e18be334a18dfa252cc06541a3928"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/uniform/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 745863536,
+      "sha256": "d0f393dc76c1c3961adf81bb7a2ded097f9459e969a1cd7ec2e787a7ffce6b28"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/confidence/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 7139,
+      "sha256": "890e3f982ab419384682a62c5d57ad115ac33b0c3b22248b97d797b40892151b"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/confidence/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2706314,
+      "sha256": "d14d60ca20ff2c6c7f29c6de1d6cfe80f4d6ce37a5ea3900dccc83b810675002"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/confidence/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 745912584,
+      "sha256": "4b7bd22ba03e964687a324fb1a4d481a89f188778a76d29f7f2610de9d91b3c3"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/augmentation_consistency/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 7172,
+      "sha256": "0fd67f2fc5c1c5d7f0abdea982b070b12709ef6772aaa3d13fbed09fc8b59e5c"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/augmentation_consistency/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2776314,
+      "sha256": "e9751e234b852e378bd7996e8b886f5c34f2b5c87d3704d8757df76cbec5aa08"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/augmentation_consistency/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 745863683,
+      "sha256": "aa42f11cb8d802fe9641b667e4cfa5ce4059f5c97f26fc1682ae202e69a98a9b"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/quality/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 7141,
+      "sha256": "1aaa3200da66ff082f91c1f1b499df37ea0915f84ba784bc772a53f99ada094c"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/quality/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2691314,
+      "sha256": "056a317a11cce0d826d6b5df7fb77e47f7bffe29f5d43a012c42290e5c32ba52"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/quality/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 745932387,
+      "sha256": "e73016f60e364fdedd8881792e2c215d5a2f600433e8a936b773d8338d34a543"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/full/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 7127,
+      "sha256": "6e40d57c2b20832d7862ab55047ea0e11d5e1994d75c71b5c12c045389b114c3"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/full/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 2676314,
+      "sha256": "84e718298e4656612be0b90955ba38863f94e39f75b81a936016d92f3157d8c5"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/full/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 745934770,
+      "sha256": "b0fd4c0044df3cba53d62a9f591c8919737d2a9429aaa39445174b1c602a27b8"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/result.json",
+      "roles": [
+        "complete_episode_panel_result"
+      ],
+      "status": "hashed",
+      "bytes": 9959,
+      "sha256": "934da5d35ed941e7b450d33c0e02aee5e73f6e303452e33dfff7d96a2335dd3d"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/image_order.json",
+      "roles": [
+        "frozen_episode_image_order"
+      ],
+      "status": "hashed",
+      "bytes": 28465,
+      "sha256": "55ccf9157b9eba12318a2a73d3ea37f014bb6128a9db5a40b4118f6e17693a5d"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/episodes.csv",
+      "roles": [
+        "paired_episode_membership"
+      ],
+      "status": "hashed",
+      "bytes": 188427,
+      "sha256": "b84a1be0d94bc0e9d0b33fc96d9d68b77106c461cfda9c2f163e51f3c0412b07"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/uniform/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 1504,
+      "sha256": "0f5da8d26118e720041909f75a60e4a847d53f96baeda13b0c2d614dd00f2d84"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/uniform/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 268117,
+      "sha256": "fc04488f1cd78fdf4615c6e55d20a76cd184322c64b8e7621c4957a527dc0954"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/uniform/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 520362,
+      "sha256": "09916b926a477b8c5a42065ecbbef68d0060255a683d71881b1de093b21c3146"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/confidence/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 1515,
+      "sha256": "f2cad88d71fc9ac672b747ab11600abb6b1d146de71318b2932d77d2450ab8d4"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/confidence/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 269617,
+      "sha256": "813c14167db41829076b6ac5f120d1cf152fb9d3166ce1d7e191fb7ec81c1f47"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/confidence/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 520230,
+      "sha256": "2c720c81eb3469a0dd10afbe9b9808059347fb9984b4602ab798913680e792e2"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/augmentation_consistency/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 1548,
+      "sha256": "64b86c4fc1fc45ed54ac7128608c8aa4f4d0099d0849dec68847fc6199541b20"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/augmentation_consistency/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 276617,
+      "sha256": "4d0d8e0e589353140bd530a39821843590f587b3bf5231fdf2ebc54786b082cc"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/augmentation_consistency/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 519761,
+      "sha256": "f68d571c675447fe9df98683786efc0f7d89c07462366724de08fd7b2a4f5c66"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/quality/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 1509,
+      "sha256": "9c7394d604a1ef0607cb45782e5e50cc73b4fe25c481865dfd5aa36fa742b845"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/quality/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 268117,
+      "sha256": "dd5a0d45659eb18633c5ae5979a0c3d752bd9e4c73bad05faace315313c392b3"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/quality/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 518475,
+      "sha256": "49c8079528dde8f0bc0bfcda6867e9252841a4be35532ce43d11816400bfeda6"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/full/result.json",
+      "roles": [
+        "policy_result_crosscheck"
+      ],
+      "status": "hashed",
+      "bytes": 1491,
+      "sha256": "da391f59abe1c17a3a5b45c4ba6b7b24a12ac0598fda9297ab5376020a82c4ac"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/full/prediction_seal.json",
+      "roles": [
+        "historical_pre_label_prediction_seal"
+      ],
+      "status": "hashed",
+      "bytes": 266617,
+      "sha256": "b38f14d59c8b901e1af8985e5cede3219fbcd880227cbca8d6aa5f99582485c1"
+    },
+    {
+      "path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/full/per_image_counts.json",
+      "roles": [
+        "actual_pixel_transition_and_confusion_cache"
+      ],
+      "status": "hashed",
+      "bytes": 518487,
+      "sha256": "5be17c24e4d6acc7e7aa577179317ea5594f017b3359e3a74f79e67332a4ca09"
+    }
+  ],
+  "changed_inputs": [],
+  "candidate_issues": [],
+  "events": {
+    "region_accuracy_drop": {
+      "definition": "pre_region_accuracy - post_region_accuracy > 0 (strict; no tolerance)",
+      "eligibility": "finite pre/post region accuracy in [0,1]",
+      "unit": "isolated candidate; net regional segmentation accuracy loss"
+    },
+    "region_majority_crossing": {
+      "definition": "pre_region_accuracy >= 0.5 AND post_region_accuracy < 0.5",
+      "eligibility": "finite pre/post region accuracy in [0,1] AND pre >= 0.5",
+      "unit": "isolated candidate; majority-correct to majority-wrong region"
+    },
+    "historical_probability_drop": {
+      "definition": "cached gt_probability_drop >= 0.001 (fixed historical endpoint)",
+      "eligibility": "finite cached GT probability drop in [-1,1]",
+      "unit": "isolated candidate; probability proxy, NOT an actual correctness transition"
+    }
+  },
+  "risk_scores": {
+    "confidence": "1 - confidence; higher predicts deterioration",
+    "quality": "1 - quality; higher predicts deterioration",
+    "reliability": "1 - reliability; higher predicts deterioration"
+  },
+  "risk_denominator": "event-eligible candidates with all three finite raw scores in [0,1]",
+  "metrics": "AUROC and sklearn average precision only when positive and negative classes both exist",
+  "matching": {
+    "keys": {
+      "confidence_role": [
+        "confidence_bin",
+        "role"
+      ],
+      "strict_class_area_pre_accuracy": [
+        "confidence_bin",
+        "role",
+        "class_idx",
+        "area_bin",
+        "pre_accuracy_bin"
+      ]
+    },
+    "confidence_width": 0.02,
+    "pre_accuracy_width": 0.2,
+    "area": "floor(log2(area)); cached feature-grid units",
+    "min_stratum": 20,
+    "tails": "equal floor(n/4) low/high raw score; reject constant or overlapping tied tails",
+    "learned_model": false,
+    "outcome_selected_membership": false,
+    "threshold_selection": false
+  },
+  "candidate_pixel_linkage": "unavailable: follow-up candidate CSV has no masks; no inferred per-candidate pixel transitions",
+  "available_heterogeneity": "whole-candidate size and pre-accuracy stratification only",
+  "unavailable_heterogeneity": [
+    "boundary/interior",
+    "within-token variance",
+    "within-candidate sub-region variation"
+  ],
+  "pixel_aggregation": "sum cached actual C->W/W->C and confusion matrices; dataset-level mIoU; no GT reread",
+  "episode_path_identity": "Path.resolve() for episode metadata aliases and frozen image order; aliases recorded in episode_checks.csv; no basename matching or candidate-mask association",
+  "prediction_payloads_rehashed": false,
+  "policy_cells_expected": 20,
+  "policy_cells_verified": 20
+}

@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_stuff,ok,18.23,27.09,39.85,21.25,-3.0199999999999996,0,123.83,/home/wwww/hzl/results/cocostuff_optuna_coordinate_20260717_2252_fair240/01_coordinate_proxy/stage_01_batch_size/trial_00_4434222e3911/coco_stuff/minimal_cfc/results.txt,newly_run,paper_ready

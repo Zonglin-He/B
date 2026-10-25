@@ -1,0 +1,113 @@
+evidence_type,dataset,dataset_label,method,method_label,quartile,quartile_label,num_regions,num_initially_correct,mean_reliability,correct_to_harm_rate,flip_incidence_initially_correct
+newly_run_matched_candidate_analysis,voc20,VOC20,noadapt,No Adapt,1,Q1 lowest,211,148,9.83223591373875e-06,0.0,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,noadapt,No Adapt,2,Q2,210,169,0.017427231203326194,0.0,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,noadapt,No Adapt,3,Q3,210,181,0.20289156291852228,0.0,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,noadapt,No Adapt,4,Q4 highest,210,188,0.4758614855731862,0.0,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,tent,TENT,1,Q1 lowest,211,143,9.83223591373875e-06,0.35664335664335667,0.5384615384615384
+newly_run_matched_candidate_analysis,voc20,VOC20,tent,TENT,2,Q2,210,169,0.017427231203326194,0.3254437869822485,0.42011834319526625
+newly_run_matched_candidate_analysis,voc20,VOC20,tent,TENT,3,Q3,210,180,0.20289156291852228,0.2,0.3388888888888889
+newly_run_matched_candidate_analysis,voc20,VOC20,tent,TENT,4,Q4 highest,210,187,0.4758614855731862,0.2192513368983957,0.36363636363636365
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,1,Q1 lowest,211,143,9.83223591373875e-06,0.4405594405594406,0.5944055944055944
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,2,Q2,210,169,0.017427231203326194,0.5088757396449705,0.5680473372781065
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,3,Q3,210,180,0.20289156291852228,0.45,0.5277777777777778
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,4,Q4 highest,210,187,0.4758614855731862,0.5187165775401069,0.5935828877005348
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,1,Q1 lowest,211,149,9.83223591373875e-06,0.48322147651006714,0.6778523489932886
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,2,Q2,210,168,0.017427231203326194,0.27380952380952384,0.40476190476190477
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,3,Q3,210,181,0.20289156291852228,0.30386740331491713,0.4088397790055249
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,4,Q4 highest,210,187,0.4758614855731862,0.25133689839572193,0.34759358288770054
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,1,Q1 lowest,211,143,9.83223591373875e-06,0.36363636363636365,0.5594405594405595
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,2,Q2,210,169,0.017427231203326194,0.28402366863905326,0.42011834319526625
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,3,Q3,210,180,0.20289156291852228,0.2388888888888889,0.3333333333333333
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,4,Q4 highest,210,187,0.4758614855731862,0.27807486631016043,0.37433155080213903
+newly_run_matched_candidate_analysis,voc20,VOC20,mlmp,MLMP,1,Q1 lowest,211,148,9.83223591373875e-06,0.24324324324324326,0.4391891891891892
+newly_run_matched_candidate_analysis,voc20,VOC20,mlmp,MLMP,2,Q2,210,169,0.017427231203326194,0.14201183431952663,0.3254437869822485
+newly_run_matched_candidate_analysis,voc20,VOC20,mlmp,MLMP,3,Q3,210,181,0.20289156291852228,0.09392265193370165,0.2430939226519337
+newly_run_matched_candidate_analysis,voc20,VOC20,mlmp,MLMP,4,Q4 highest,210,188,0.4758614855731862,0.05851063829787234,0.13829787234042554
+newly_run_matched_candidate_analysis,voc20,VOC20,cfctta,CFC-TTA,1,Q1 lowest,211,148,9.83223591373875e-06,0.2972972972972973,0.5135135135135135
+newly_run_matched_candidate_analysis,voc20,VOC20,cfctta,CFC-TTA,2,Q2,210,169,0.017427231203326194,0.14792899408284024,0.33727810650887574
+newly_run_matched_candidate_analysis,voc20,VOC20,cfctta,CFC-TTA,3,Q3,210,181,0.20289156291852228,0.08287292817679558,0.22099447513812154
+newly_run_matched_candidate_analysis,voc20,VOC20,cfctta,CFC-TTA,4,Q4 highest,210,188,0.4758614855731862,0.06914893617021277,0.16489361702127658
+newly_run_matched_candidate_analysis,pc60,PC60,noadapt,No Adapt,1,Q1 lowest,482,133,0.00124840053507838,0.0,0.0
+newly_run_matched_candidate_analysis,pc60,PC60,noadapt,No Adapt,2,Q2,479,221,0.06302674699182695,0.0,0.0
+newly_run_matched_candidate_analysis,pc60,PC60,noadapt,No Adapt,3,Q3,480,296,0.24769027679348615,0.0,0.0
+newly_run_matched_candidate_analysis,pc60,PC60,noadapt,No Adapt,4,Q4 highest,479,334,0.5537180866028916,0.0,0.0
+newly_run_matched_candidate_analysis,pc60,PC60,tent,TENT,1,Q1 lowest,482,141,0.00124840053507838,0.19858156028368795,0.524822695035461
+newly_run_matched_candidate_analysis,pc60,PC60,tent,TENT,2,Q2,479,197,0.06302674699182695,0.24873096446700507,0.6040609137055838
+newly_run_matched_candidate_analysis,pc60,PC60,tent,TENT,3,Q3,480,263,0.24769027679348615,0.17490494296577946,0.5019011406844106
+newly_run_matched_candidate_analysis,pc60,PC60,tent,TENT,4,Q4 highest,479,318,0.5537180866028916,0.16037735849056603,0.49056603773584906
+newly_run_matched_candidate_analysis,pc60,PC60,tpt,TPT,1,Q1 lowest,482,140,0.00124840053507838,0.5142857142857142,0.7357142857142858
+newly_run_matched_candidate_analysis,pc60,PC60,tpt,TPT,2,Q2,479,197,0.06302674699182695,0.5177664974619289,0.8020304568527918
+newly_run_matched_candidate_analysis,pc60,PC60,tpt,TPT,3,Q3,480,263,0.24769027679348615,0.40304182509505704,0.7642585551330798
+newly_run_matched_candidate_analysis,pc60,PC60,tpt,TPT,4,Q4 highest,479,318,0.5537180866028916,0.33647798742138363,0.7169811320754716
+newly_run_matched_candidate_analysis,pc60,PC60,watt,WATT,1,Q1 lowest,482,138,0.00124840053507838,0.6159420289855072,0.8260869565217391
+newly_run_matched_candidate_analysis,pc60,PC60,watt,WATT,2,Q2,479,212,0.06302674699182695,0.7830188679245284,0.9009433962264151
+newly_run_matched_candidate_analysis,pc60,PC60,watt,WATT,3,Q3,480,284,0.24769027679348615,0.6830985915492958,0.8697183098591549
+newly_run_matched_candidate_analysis,pc60,PC60,watt,WATT,4,Q4 highest,479,336,0.5537180866028916,0.7172619047619048,0.8214285714285714
+newly_run_matched_candidate_analysis,pc60,PC60,clipartt,CLIPArTT,1,Q1 lowest,482,140,0.00124840053507838,0.42142857142857143,0.65
+newly_run_matched_candidate_analysis,pc60,PC60,clipartt,CLIPArTT,2,Q2,479,197,0.06302674699182695,0.4619289340101523,0.700507614213198
+newly_run_matched_candidate_analysis,pc60,PC60,clipartt,CLIPArTT,3,Q3,480,262,0.24769027679348615,0.3473282442748092,0.5954198473282443
+newly_run_matched_candidate_analysis,pc60,PC60,clipartt,CLIPArTT,4,Q4 highest,479,318,0.5537180866028916,0.39308176100628933,0.5786163522012578
+newly_run_matched_candidate_analysis,pc60,PC60,mlmp,MLMP,1,Q1 lowest,482,133,0.00124840053507838,0.12030075187969924,0.44360902255639095
+newly_run_matched_candidate_analysis,pc60,PC60,mlmp,MLMP,2,Q2,479,221,0.06302674699182695,0.18099547511312217,0.4751131221719457
+newly_run_matched_candidate_analysis,pc60,PC60,mlmp,MLMP,3,Q3,480,296,0.24769027679348615,0.14189189189189189,0.34459459459459457
+newly_run_matched_candidate_analysis,pc60,PC60,mlmp,MLMP,4,Q4 highest,479,334,0.5537180866028916,0.08682634730538923,0.20658682634730538
+newly_run_matched_candidate_analysis,pc60,PC60,cfctta,CFC-TTA,1,Q1 lowest,482,133,0.00124840053507838,0.15789473684210525,0.5263157894736842
+newly_run_matched_candidate_analysis,pc60,PC60,cfctta,CFC-TTA,2,Q2,479,221,0.06302674699182695,0.2171945701357466,0.5384615384615384
+newly_run_matched_candidate_analysis,pc60,PC60,cfctta,CFC-TTA,3,Q3,480,296,0.24769027679348615,0.10135135135135136,0.48986486486486486
+newly_run_matched_candidate_analysis,pc60,PC60,cfctta,CFC-TTA,4,Q4 highest,479,334,0.5537180866028916,0.03592814371257485,0.31137724550898205
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,noadapt,No Adapt,1,Q1 lowest,61,58,0.6213272055551224,0.0,0.0
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,noadapt,No Adapt,2,Q2,60,60,0.6894923490982744,0.0,0.0
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,noadapt,No Adapt,3,Q3,60,60,0.72362776077271,0.0,0.0
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,noadapt,No Adapt,4,Q4 highest,59,57,0.7807352548165519,0.0,0.0
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tent,TENT,1,Q1 lowest,61,58,0.6213272055551224,0.0,0.5
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tent,TENT,2,Q2,60,58,0.6894923490982744,0.0,0.3103448275862069
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tent,TENT,3,Q3,60,60,0.72362776077271,0.0,0.26666666666666666
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tent,TENT,4,Q4 highest,59,56,0.7807352548165519,0.0,0.14285714285714285
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tpt,TPT,1,Q1 lowest,61,58,0.6213272055551224,0.10344827586206896,0.603448275862069
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tpt,TPT,2,Q2,60,58,0.6894923490982744,0.08620689655172414,0.5172413793103449
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tpt,TPT,3,Q3,60,60,0.72362776077271,0.1,0.48333333333333334
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tpt,TPT,4,Q4 highest,59,56,0.7807352548165519,0.07142857142857142,0.375
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,watt,WATT,1,Q1 lowest,61,60,0.6213272055551224,0.5666666666666667,0.7333333333333333
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,watt,WATT,2,Q2,60,60,0.6894923490982744,0.5333333333333333,0.6833333333333333
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,watt,WATT,3,Q3,60,60,0.72362776077271,0.38333333333333336,0.55
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,watt,WATT,4,Q4 highest,59,57,0.7807352548165519,0.3508771929824561,0.47368421052631576
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,clipartt,CLIPArTT,1,Q1 lowest,61,58,0.6213272055551224,0.1896551724137931,0.25862068965517243
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,clipartt,CLIPArTT,2,Q2,60,58,0.6894923490982744,0.22413793103448276,0.3448275862068966
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,clipartt,CLIPArTT,3,Q3,60,60,0.72362776077271,0.15,0.23333333333333334
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,clipartt,CLIPArTT,4,Q4 highest,59,56,0.7807352548165519,0.125,0.14285714285714285
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,mlmp,MLMP,1,Q1 lowest,61,58,0.6213272055551224,0.0,0.1724137931034483
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,mlmp,MLMP,2,Q2,60,60,0.6894923490982744,0.0,0.13333333333333333
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,mlmp,MLMP,3,Q3,60,60,0.72362776077271,0.0,0.1
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,mlmp,MLMP,4,Q4 highest,59,57,0.7807352548165519,0.0,0.017543859649122806
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,cfctta,CFC-TTA,1,Q1 lowest,61,58,0.6213272055551224,0.034482758620689655,0.3275862068965517
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,cfctta,CFC-TTA,2,Q2,60,60,0.6894923490982744,0.016666666666666666,0.2
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,cfctta,CFC-TTA,3,Q3,60,60,0.72362776077271,0.016666666666666666,0.23333333333333334
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,cfctta,CFC-TTA,4,Q4 highest,59,57,0.7807352548165519,0.0,0.12280701754385964
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,noadapt,No Adapt,1,Q1 lowest,120,94,0.41168779256939725,0.0,0.0
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,noadapt,No Adapt,2,Q2,120,102,0.5633829238149158,0.0,0.0
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,noadapt,No Adapt,3,Q3,120,84,0.6483548296045937,0.0,0.0
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,noadapt,No Adapt,4,Q4 highest,120,84,0.7233705561290777,0.0,0.0
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tent,TENT,1,Q1 lowest,120,83,0.41168779256939725,0.08433734939759036,0.8674698795180723
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tent,TENT,2,Q2,120,102,0.5633829238149158,0.029411764705882353,0.7941176470588235
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tent,TENT,3,Q3,120,85,0.6483548296045937,0.0,0.6705882352941176
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tent,TENT,4,Q4 highest,120,84,0.7233705561290777,0.011904761904761904,0.5
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tpt,TPT,1,Q1 lowest,120,83,0.41168779256939725,0.10843373493975904,0.9518072289156626
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tpt,TPT,2,Q2,120,102,0.5633829238149158,0.1568627450980392,0.8333333333333334
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tpt,TPT,3,Q3,120,84,0.6483548296045937,0.05952380952380952,0.7738095238095238
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tpt,TPT,4,Q4 highest,120,84,0.7233705561290777,0.08333333333333333,0.6190476190476191
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,watt,WATT,1,Q1 lowest,120,92,0.41168779256939725,0.7065217391304348,0.9239130434782609
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,watt,WATT,2,Q2,120,103,0.5633829238149158,0.6601941747572816,0.9514563106796117
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,watt,WATT,3,Q3,120,91,0.6483548296045937,0.8021978021978022,0.9230769230769231
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,watt,WATT,4,Q4 highest,120,88,0.7233705561290777,0.625,0.8181818181818182
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,clipartt,CLIPArTT,1,Q1 lowest,120,83,0.41168779256939725,0.7590361445783133,0.8192771084337349
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,clipartt,CLIPArTT,2,Q2,120,102,0.5633829238149158,0.6372549019607843,0.8529411764705882
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,clipartt,CLIPArTT,3,Q3,120,85,0.6483548296045937,0.5529411764705883,0.6823529411764706
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,clipartt,CLIPArTT,4,Q4 highest,120,84,0.7233705561290777,0.47619047619047616,0.5952380952380952
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,mlmp,MLMP,1,Q1 lowest,120,94,0.41168779256939725,0.2765957446808511,0.8297872340425532
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,mlmp,MLMP,2,Q2,120,102,0.5633829238149158,0.14705882352941177,0.5588235294117647
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,mlmp,MLMP,3,Q3,120,84,0.6483548296045937,0.09523809523809523,0.38095238095238093
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,mlmp,MLMP,4,Q4 highest,120,84,0.7233705561290777,0.047619047619047616,0.23809523809523808
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,cfctta,CFC-TTA,1,Q1 lowest,120,94,0.41168779256939725,0.09574468085106383,0.8617021276595744
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,cfctta,CFC-TTA,2,Q2,120,102,0.5633829238149158,0.10784313725490197,0.696078431372549
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,cfctta,CFC-TTA,3,Q3,120,84,0.6483548296045937,0.023809523809523808,0.5119047619047619
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,cfctta,CFC-TTA,4,Q4 highest,120,84,0.7233705561290777,0.03571428571428571,0.30952380952380953

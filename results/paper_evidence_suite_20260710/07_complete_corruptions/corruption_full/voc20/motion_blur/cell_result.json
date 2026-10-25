@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc20/motion_blur",
+  "duration_sec": 442.904,
+  "evidence_type": "newly_run",
+  "results": {
+    "motion_blur": {
+      "mAcc": 88.56,
+      "mAcc_std": 0.0,
+      "mDice": 86.99,
+      "mDice_std": 0.0,
+      "mIoU": 78.2,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

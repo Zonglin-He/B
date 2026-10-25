@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc20/defocus_blur",
+  "duration_sec": 423.392,
+  "evidence_type": "newly_run",
+  "results": {
+    "defocus_blur": {
+      "mAcc": 87.91,
+      "mAcc_std": 0.0,
+      "mDice": 86.41,
+      "mDice_std": 0.0,
+      "mIoU": 77.11,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

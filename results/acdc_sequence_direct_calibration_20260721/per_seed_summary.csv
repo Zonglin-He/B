@@ -1,0 +1,8 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,lr,steps,batch_size,config_override,result_path,evidence_type
+all,noadapt,0,ok,22.46,32.33,53.02,18.953,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/all/noadapt/seed0/results.txt,newly_run
+all,tent,0,ok,25.66,36.19,51.8,189.748,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/all/tent/seed0/results.txt,newly_run
+all,tpt,0,ok,22.85,33.39,36.39,257.264,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/all/tpt/seed0/results.txt,newly_run
+all,watt,0,ok,17.08,25.8,32.23,2150.053,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/all/watt/seed0/results.txt,newly_run
+all,clipartt,0,failed:1,,,,8.165,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/all/clipartt/seed0/results.txt,newly_run
+all,mlmp,0,ok,29.24,40.7,52.22,195.088,0.001,10,1,{},/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/all/mlmp/seed0/results.txt,newly_run
+all,trace,0,ok,29.87,41.66,50.85,2092.633,0.00063,16,1,{},/home/wwww/hzl/results/acdc_sequence_direct_calibration_20260721/all/trace/seed0/results.txt,newly_run

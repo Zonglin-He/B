@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/smoke_corruption_fixed/corruption_full/voc20/fog",
+  "duration_sec": 6.846,
+  "evidence_type": "newly_run",
+  "results": {
+    "fog": {
+      "mAcc": 52.5,
+      "mAcc_std": 0.0,
+      "mDice": 23.56,
+      "mDice_std": 0.0,
+      "mIoU": 18.85,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

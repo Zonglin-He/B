@@ -1,0 +1,37 @@
+{
+  "status": "completed",
+  "task": "isolated_audit",
+  "dataset": "pc60",
+  "seed": 0,
+  "candidates": 11223,
+  "full_panel": true,
+  "reference": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/16_harmful_update_audit/isolated_full/pc60/candidate_outcomes.csv",
+  "cache": "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/11_final_diagnostics/pc60/trace_candidate_cache.pkl.gz",
+  "reference_sha256": "877a4260051d39a3f63343d9f08de11c478b6b6fe60288eef6d8210e260a24d5",
+  "cache_sha256": "d2d8bfbcada773520713ba59ff709c8ca19016d457e7f5b5ca07397483e808d1",
+  "duration_seconds": 256.2279053768143,
+  "max_null_probability_difference": 0.0,
+  "update_policy": "one unit-weight candidate, one step, fresh model and optimizer reset; no GT in loss",
+  "endpoint": "mean per-location GT probability; max-collapse class extensions then renormalize; pre/post batch size 1",
+  "config": {
+    "dataset": "PascalContext60Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 9,
+    "lr": 0.00225,
+    "steps": 11,
+    "trace_max_regions": 22,
+    "trace_view_batch_size": 8,
+    "class_extensions": true,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "historical_warning": "same previously analyzed masks; fresh outcomes, not an untouched confirmation panel"
+}

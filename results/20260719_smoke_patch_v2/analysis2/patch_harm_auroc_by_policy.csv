@@ -1,0 +1,25 @@
+task,method,method_label,signal,AUROC,AUPRC,valid_datasets
+correct_to_wrong,cfctta,TRACE,1-Confidence,0.4907407407407407,0.017857142857142856,1
+correct_to_wrong,cfctta,TRACE,1-Margin,0.4722222222222222,0.017241379310344827,1
+correct_to_wrong,cfctta,TRACE,Entropy,0.5185185185185186,0.018867924528301886,1
+correct_to_wrong,cfctta,TRACE,MLMP-D,0.6203703703703703,0.023809523809523808,1
+correct_to_wrong,cfctta,TRACE,TRACE calibrated risk,0.4722222222222222,0.017241379310344827,1
+correct_to_wrong,cfctta,TRACE,TRACE source risk,0.5,0.009174311926605505,1
+correct_to_wrong,tent,TENT,1-Confidence,,,0
+correct_to_wrong,tent,TENT,1-Margin,,,0
+correct_to_wrong,tent,TENT,Entropy,,,0
+correct_to_wrong,tent,TENT,MLMP-D,,,0
+correct_to_wrong,tent,TENT,TRACE calibrated risk,,,0
+correct_to_wrong,tent,TENT,TRACE source risk,,,0
+probability_drop,cfctta,TRACE,1-Confidence,0.4907407407407407,0.017857142857142856,1
+probability_drop,cfctta,TRACE,1-Margin,0.4722222222222222,0.017241379310344827,1
+probability_drop,cfctta,TRACE,Entropy,0.5185185185185186,0.018867924528301886,1
+probability_drop,cfctta,TRACE,MLMP-D,0.6203703703703703,0.023809523809523808,1
+probability_drop,cfctta,TRACE,TRACE calibrated risk,0.4722222222222222,0.017241379310344827,1
+probability_drop,cfctta,TRACE,TRACE source risk,0.5,0.009174311926605505,1
+probability_drop,tent,TENT,1-Confidence,,,0
+probability_drop,tent,TENT,1-Margin,,,0
+probability_drop,tent,TENT,Entropy,,,0
+probability_drop,tent,TENT,MLMP-D,,,0
+probability_drop,tent,TENT,TRACE calibrated risk,,,0
+probability_drop,tent,TENT,TRACE source risk,,,0

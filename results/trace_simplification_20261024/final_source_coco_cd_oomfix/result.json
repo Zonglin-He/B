@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "name": "final_full_oomfix",
+  "dataset": "coco_cd",
+  "images": 500,
+  "split": "evaluation",
+  "full_split": true,
+  "metrics": {
+    "mIoU": 75.05,
+    "mDice": 85.19,
+    "mAcc": 89.12,
+    "aAcc": 93.18
+  },
+  "miou_unrounded": 75.04507664009084,
+  "intersection": [
+    19922289.0,
+    1853947.0,
+    1599551.0
+  ],
+  "union": [
+    21610948.0,
+    2652465.0,
+    2536800.0
+  ],
+  "ms_per_image": 36.2023352687289,
+  "peak_allocated_mib": 6820.41455078125,
+  "diagnostic_views_per_image": 11.986486486486486,
+  "warmup_episodes": 2,
+  "wall_seconds": 19.141374772414565,
+  "protocol_sha256": "60bd409e12ca1011d0fef2337e2b5202942303b31539e585291bbb24b5b83ada"
+}

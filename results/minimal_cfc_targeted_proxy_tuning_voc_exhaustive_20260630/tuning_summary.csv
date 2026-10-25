@@ -1,0 +1,2 @@
+dataset,best_mIoU,mlmp_mIoU,delta_vs_mlmp,fixed_method_params,fixed_cfg_params,tuning_kind,evidence_type
+voc20,66.84,83.76,-16.92,"{""cfc_max_regions"": 8, ""cfc_min_region_conf"": 0.7067493263341561, ""alpha_cls"": 2.479211148358474, ""cfc_rho_min"": 0.1, ""cfc_max_regions_per_class"": 7}","{""lr"": 0.001, ""steps"": 30}",background_object_heavy,newly_run_proxy

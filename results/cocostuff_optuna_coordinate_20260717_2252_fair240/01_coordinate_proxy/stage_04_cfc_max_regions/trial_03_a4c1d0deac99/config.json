@@ -1,0 +1,12 @@
+{
+  "method_params": {
+    "cfc_max_regions": 24
+  },
+  "cfg_params": {
+    "batch_size": 16,
+    "lr": 0.003,
+    "steps": 24
+  },
+  "max_images": 240,
+  "evidence_type": "newly_run_proxy"
+}

@@ -1,0 +1,2 @@
+suite,dataset,variant,method,ovss_type,ovss_backbone,corruption,status,mIoU,mIoU_std,mDice,mDice_std,mAcc,mAcc_std,duration_sec,result_path,evidence_type
+corruption_full,voc20,fog,cfctta,naclip,ViT-L/14,fog,ok,18.85,0.0,23.56,0.0,52.5,0.0,6.846,/home/wwww/hzl/results/paper_evidence_suite_20260710/smoke_corruption_fixed/corruption_full/voc20/fog/results.txt,newly_run

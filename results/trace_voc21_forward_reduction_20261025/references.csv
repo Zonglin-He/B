@@ -1,0 +1,6 @@
+dataset,method,images,mIoU,ms_per_image,peak_allocated_mib,result_path
+voc21,mlmp,1449,50.29280278364298,40.90965265012494,6135.28125,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/mlmp/result.json
+voc21,tent,1449,45.71697526261856,37.10406137421338,5755.0830078125,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tent/result.json
+voc21,tpt,1449,47.987552396268335,67.19278818654946,9701.4599609375,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tpt/result.json
+voc21,noadapt,1449,45.200430951642495,1.5100081028625758,2126.34130859375,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/noadapt/result.json
+voc21,quality_only,1449,52.3964894036109,291.9999433861455,4463.22802734375,/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/voc21/quality_only/attempt_001/result.json

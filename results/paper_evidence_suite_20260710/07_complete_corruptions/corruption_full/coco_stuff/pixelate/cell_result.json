@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_stuff/pixelate",
+  "duration_sec": 2388.831,
+  "evidence_type": "newly_run",
+  "results": {
+    "pixelate": {
+      "mAcc": 40.6,
+      "mAcc_std": 0.0,
+      "mDice": 31.65,
+      "mDice_std": 0.0,
+      "mIoU": 21.07,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

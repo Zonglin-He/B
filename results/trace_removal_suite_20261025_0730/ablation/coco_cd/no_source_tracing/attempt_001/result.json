@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "name": "ablation/coco_cd/no_source_tracing",
+  "dataset": "coco_cd",
+  "variant": "no_source_tracing",
+  "images": 500,
+  "split": "evaluation",
+  "full_split": true,
+  "metrics": {
+    "mIoU": 67.17,
+    "mDice": 79.24,
+    "mAcc": 90.61,
+    "aAcc": 89.05
+  },
+  "miou_unrounded": 67.16567714763583,
+  "intersection": [
+    18692611.0,
+    1894456.0,
+    1754342.0
+  ],
+  "union": [
+    21307266.0,
+    2891653.0,
+    3635672.0
+  ],
+  "ms_per_image": 19.873796265807236,
+  "peak_allocated_mib": 6820.41455078125,
+  "diagnostic_views_per_image": 0.0,
+  "warmup_episodes": 2,
+  "wall_seconds": 11.039789728820324,
+  "protocol_sha256": "0d157943b064492e59531e058bb48a6a7ff19ba827a554fa51c76b46b94f42ad"
+}

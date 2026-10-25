@@ -1,0 +1,1860 @@
+{
+  "version": 1,
+  "created_at": "2026-10-25T04:46:20.303103+00:00",
+  "output_root": "/home/wwww/hzl/results/rebuttal_backbone_vitb16_20261025_1238",
+  "original_suite": "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+  "original_manifest_sha256": "4e8cbc3dc1addcf81202ca14db0668d3e4a6ff4a0b8ae482416a65157c30817f",
+  "source_root": "/home/wwww/hzl/results/reviewer_followup_20261010_123627",
+  "original_source_manifest_sha256": "494e407c614791ae15afb2d96dcc98f67031bfd84c219ad736189b8b6cde5a7d",
+  "source_archive_sha256": "4dd3a31272c351c1aee238a3ea530778c38aa680183b7369e972b492ac49f976",
+  "source_hashes": {
+    "source/backbone.py": "d3b82fd5fe209541b7a6a6a16587ade89b325d6f188e1d4a93114b193cf3da1c",
+    "source/test_backbone.py": "cfec7836a1ef90e57c687c6f86f4445d373f248989b177fc79e54e5bfec759ee"
+  },
+  "inputs": {
+    "voc21": {
+      "path": "/home/wwww/hzl/results/rebuttal_backbone_vitb16_20261025_1238/inputs/voc21.json",
+      "sha256": "91aa98c3bc701fada991ff28a5a14677116f1053a8562881b57aed4d99e0daea"
+    },
+    "pc60": {
+      "path": "/home/wwww/hzl/results/rebuttal_backbone_vitb16_20261025_1238/inputs/pc60.json",
+      "sha256": "f5726040b939170be1f1433016ccb37c4d4623529b282d1c6fa1a59db3b3b9ae"
+    },
+    "coco_object": {
+      "path": "/home/wwww/hzl/results/rebuttal_backbone_vitb16_20261025_1238/inputs/coco_object.json",
+      "sha256": "9566fe4036bb12f364bbd6269a9ac52e5b825064985ba23db14dec1cb678dcbb"
+    }
+  },
+  "checkpoint_provenance": {
+    "checkpoint": "/home/wwww/.cache/clip/ViT-B-16.pt",
+    "sha256": "5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f",
+    "published_url": "https://openaipublic.azureedge.net/clip/models/5806e77cd80f8b59890b7e101eabd078d9fb84e6937f9e85e4ecb61988df416f/ViT-B-16.pt",
+    "loader": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/runtime/results/reviewer_response_20260929/baseline_source/ovss/clip/clip.py",
+    "loader_sha256": "4ab4d5187823792c14997808854fe219dc485042606d439757a704a20d57aaf4",
+    "validation": "published URL SHA256; loader revalidates on native load"
+  },
+  "python": "/home/wwww/miniconda3/envs/mlmp/bin/python",
+  "backbone": "ViT-B/16",
+  "readouts": {
+    "trace": {
+      "vision_outputs": [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6,
+        -7,
+        -8,
+        -9,
+        -10,
+        -11,
+        -12
+      ],
+      "adaptation": "mean",
+      "evaluation": "adaptive_weighted_mean",
+      "binding": "explicit constructor"
+    },
+    "mlmp": {
+      "vision_outputs": [
+        -1,
+        -2,
+        -3,
+        -4,
+        -5,
+        -6,
+        -7,
+        -8,
+        -9,
+        -10,
+        -11,
+        -12
+      ],
+      "adaptation": "mean",
+      "evaluation": "adaptive_weighted_mean",
+      "binding": "explicit constructor"
+    },
+    "tent": {
+      "vision_outputs": [
+        -1
+      ],
+      "adaptation": "mean",
+      "evaluation": "mean",
+      "binding": "unchanged native defaults"
+    },
+    "tpt": {
+      "vision_outputs": [
+        -1
+      ],
+      "adaptation": "mean",
+      "evaluation": "mean",
+      "binding": "unchanged native encode_image defaults"
+    },
+    "noadapt": {
+      "vision_outputs": [
+        -1
+      ],
+      "adaptation": null,
+      "evaluation": "mean",
+      "binding": "unchanged native TENT evaluate"
+    }
+  },
+  "primary_configs": {
+    "voc21": {
+      "dataset": "PascalVOC21Dataset",
+      "data_subdir": "VOCdevkit/VOC2012",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 16,
+      "lr": 0.00063,
+      "steps": 36,
+      "trace_max_regions": 33,
+      "trace_view_batch_size": 8,
+      "class_extensions": true,
+      "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+    },
+    "pc60": {
+      "dataset": "PascalContext60Dataset",
+      "data_subdir": "VOCdevkit/VOC2012",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 9,
+      "lr": 0.00225,
+      "steps": 11,
+      "trace_max_regions": 22,
+      "trace_view_batch_size": 8,
+      "class_extensions": true,
+      "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+    },
+    "coco_object": {
+      "dataset": "COCOObjectDataset",
+      "data_subdir": "coco_stuff",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 14,
+      "lr": 0.003,
+      "steps": 29,
+      "trace_max_regions": 34,
+      "trace_view_batch_size": 8,
+      "class_extensions": true,
+      "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+    }
+  },
+  "jobs": [
+    {
+      "id": "smoke/voc21/trace",
+      "dataset": "voc21",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/voc21/noadapt",
+      "dataset": "voc21",
+      "method": "noadapt",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": null,
+        "evaluation": "mean",
+        "binding": "unchanged native TENT evaluate"
+      }
+    },
+    {
+      "id": "smoke/voc21/tent",
+      "dataset": "voc21",
+      "method": "tent",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native defaults"
+      }
+    },
+    {
+      "id": "smoke/voc21/tpt",
+      "dataset": "voc21",
+      "method": "tpt",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native encode_image defaults"
+      }
+    },
+    {
+      "id": "smoke/voc21/mlmp",
+      "dataset": "voc21",
+      "method": "mlmp",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/voc21/train_trace",
+      "dataset": "voc21",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "calibration",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/pc60/trace",
+      "dataset": "pc60",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/pc60/noadapt",
+      "dataset": "pc60",
+      "method": "noadapt",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": null,
+        "evaluation": "mean",
+        "binding": "unchanged native TENT evaluate"
+      }
+    },
+    {
+      "id": "smoke/pc60/tent",
+      "dataset": "pc60",
+      "method": "tent",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native defaults"
+      }
+    },
+    {
+      "id": "smoke/pc60/tpt",
+      "dataset": "pc60",
+      "method": "tpt",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native encode_image defaults"
+      }
+    },
+    {
+      "id": "smoke/pc60/mlmp",
+      "dataset": "pc60",
+      "method": "mlmp",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/pc60/train_trace",
+      "dataset": "pc60",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "smoke",
+      "split": "calibration",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/coco_object/trace",
+      "dataset": "coco_object",
+      "method": "trace",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/coco_object/noadapt",
+      "dataset": "coco_object",
+      "method": "noadapt",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": null,
+        "evaluation": "mean",
+        "binding": "unchanged native TENT evaluate"
+      }
+    },
+    {
+      "id": "smoke/coco_object/tent",
+      "dataset": "coco_object",
+      "method": "tent",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native defaults"
+      }
+    },
+    {
+      "id": "smoke/coco_object/tpt",
+      "dataset": "coco_object",
+      "method": "tpt",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native encode_image defaults"
+      }
+    },
+    {
+      "id": "smoke/coco_object/mlmp",
+      "dataset": "coco_object",
+      "method": "mlmp",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "smoke",
+      "split": "evaluation",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "smoke/coco_object/train_trace",
+      "dataset": "coco_object",
+      "method": "trace",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "smoke",
+      "split": "calibration",
+      "max_images": 4,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "full/voc21/trace_direct",
+      "dataset": "voc21",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "direct",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "full/pc60/trace_direct",
+      "dataset": "pc60",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "direct",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "full/coco_object/trace_direct",
+      "dataset": "coco_object",
+      "method": "trace",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "direct",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "full/voc21/noadapt",
+      "dataset": "voc21",
+      "method": "noadapt",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": null,
+        "evaluation": "mean",
+        "binding": "unchanged native TENT evaluate"
+      }
+    },
+    {
+      "id": "full/voc21/tent",
+      "dataset": "voc21",
+      "method": "tent",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native defaults"
+      }
+    },
+    {
+      "id": "full/voc21/tpt",
+      "dataset": "voc21",
+      "method": "tpt",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native encode_image defaults"
+      }
+    },
+    {
+      "id": "full/voc21/mlmp",
+      "dataset": "voc21",
+      "method": "mlmp",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "full/pc60/noadapt",
+      "dataset": "pc60",
+      "method": "noadapt",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": null,
+        "evaluation": "mean",
+        "binding": "unchanged native TENT evaluate"
+      }
+    },
+    {
+      "id": "full/pc60/tent",
+      "dataset": "pc60",
+      "method": "tent",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native defaults"
+      }
+    },
+    {
+      "id": "full/pc60/tpt",
+      "dataset": "pc60",
+      "method": "tpt",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native encode_image defaults"
+      }
+    },
+    {
+      "id": "full/pc60/mlmp",
+      "dataset": "pc60",
+      "method": "mlmp",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "full/coco_object/noadapt",
+      "dataset": "coco_object",
+      "method": "noadapt",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": null,
+        "evaluation": "mean",
+        "binding": "unchanged native TENT evaluate"
+      }
+    },
+    {
+      "id": "full/coco_object/tent",
+      "dataset": "coco_object",
+      "method": "tent",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native defaults"
+      }
+    },
+    {
+      "id": "full/coco_object/tpt",
+      "dataset": "coco_object",
+      "method": "tpt",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1
+        ],
+        "adaptation": "mean",
+        "evaluation": "mean",
+        "binding": "unchanged native encode_image defaults"
+      }
+    },
+    {
+      "id": "full/coco_object/mlmp",
+      "dataset": "coco_object",
+      "method": "mlmp",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 2,
+        "lr": 0.001,
+        "steps": 10,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "baseline",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "calibration/voc21",
+      "dataset": "voc21",
+      "phase": "calibration"
+    },
+    {
+      "id": "full/voc21/trace_tuned",
+      "dataset": "voc21",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "tuned",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "calibration/pc60",
+      "dataset": "pc60",
+      "phase": "calibration"
+    },
+    {
+      "id": "full/pc60/trace_tuned",
+      "dataset": "pc60",
+      "method": "trace",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "phase": "tuned",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    },
+    {
+      "id": "calibration/coco_object",
+      "dataset": "coco_object",
+      "phase": "calibration"
+    },
+    {
+      "id": "full/coco_object/trace_tuned",
+      "dataset": "coco_object",
+      "method": "trace",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "phase": "tuned",
+      "split": "evaluation",
+      "max_images": 0,
+      "seed": 0,
+      "selection_seed": 2027,
+      "backbone": "ViT-B/16",
+      "readout": {
+        "vision_outputs": [
+          -1,
+          -2,
+          -3,
+          -4,
+          -5,
+          -6,
+          -7,
+          -8,
+          -9,
+          -10,
+          -11,
+          -12
+        ],
+        "adaptation": "mean",
+        "evaluation": "adaptive_weighted_mean",
+        "binding": "explicit constructor"
+      }
+    }
+  ],
+  "training_inputs": {},
+  "training_inputs_source": null,
+  "coverage": {
+    "datasets": [
+      "voc21",
+      "pc60",
+      "coco_object"
+    ],
+    "excluded": [],
+    "complete_representative_coverage": true
+  },
+  "calibration": {
+    "count": 256,
+    "selection_seed": 2027,
+    "split": "train",
+    "order": [
+      "batch_size",
+      "lr",
+      "steps",
+      "trace_max_regions"
+    ],
+    "batch_size": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16
+    ],
+    "lr": "current*{0.5,1,2}, plus .001/.003; [1e-5,1e-2]",
+    "steps": [
+      5,
+      8,
+      12,
+      16,
+      24,
+      32,
+      36
+    ],
+    "trace_max_regions": [
+      4,
+      8,
+      16,
+      24,
+      32,
+      "originalK"
+    ],
+    "selection": "max train mIoU; within .02 percentage points of stage max prefer lower model_seconds/image, then earlier trial",
+    "passes": 1,
+    "expansion": false,
+    "oom": "skip only calibration CUDA OOM; retain failed trial"
+  },
+  "baseline_defaults": {
+    "lr": 0.001,
+    "steps": 10,
+    "batch_size": 2,
+    "other_args": "archived native constructor defaults; frozen prompts"
+  },
+  "method": "ARCHIVED ORIGINAL Oct10 TRACE; q=min(T,C); thing rho=q*(1-max(D-T,0)); stuff rho=q",
+  "reporting": "all baselines/direct/tuned full seed0; calibration and 4-image smoke are not full results",
+  "serial_gpu": true,
+  "automatic_retry": false,
+  "excluded": [
+    "WATT",
+    "CLIPArTT",
+    "validation/test label selection"
+  ]
+}

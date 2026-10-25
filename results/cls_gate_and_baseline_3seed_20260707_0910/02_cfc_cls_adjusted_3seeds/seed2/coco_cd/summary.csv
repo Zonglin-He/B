@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_cd,ok,74.21,84.58,88.3,72.1,2.1099999999999994,1,29.83,/home/wwww/hzl/results/cls_gate_and_baseline_3seed_20260707_0910/02_cfc_cls_adjusted_3seeds/seed2/coco_cd/coco_cd/minimal_cfc/results.txt,newly_run,paper_ready

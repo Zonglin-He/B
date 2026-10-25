@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_stuff/snow",
+  "duration_sec": 2424.174,
+  "evidence_type": "newly_run",
+  "results": {
+    "snow": {
+      "mAcc": 30.84,
+      "mAcc_std": 0.0,
+      "mDice": 24.89,
+      "mDice_std": 0.0,
+      "mIoU": 15.86,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

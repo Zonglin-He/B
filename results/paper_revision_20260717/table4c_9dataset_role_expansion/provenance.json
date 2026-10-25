@@ -1,0 +1,21 @@
+{
+  "evidence_type": "newly_run_20260717",
+  "input": "results/paper_revision_20260717/role_diagnosis_9datasets_240/region_diagnostics.csv",
+  "output": "results/paper_revision_20260717/table4c_9dataset_role_expansion",
+  "eligible_regions": 75762,
+  "datasets": [
+    "voc20",
+    "voc21",
+    "pc59",
+    "pc60",
+    "coco_object",
+    "coco_stuff",
+    "cityscapes",
+    "coco_cd",
+    "waterbirds_seg"
+  ],
+  "variant": "full_soft",
+  "initially_correct_threshold": 0.5,
+  "bootstrap_replicates": 0,
+  "bootstrap_seed": 20260717
+}

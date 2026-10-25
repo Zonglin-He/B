@@ -1,0 +1,27 @@
+\begin{table*}[t]
+\centering
+\small
+\caption{Controlled update-risk analysis over initially correct regions. Panel (c1) compares risk-ranking signals within raw-confidence bands, so the CFC score cannot win merely by selecting lower-confidence candidates. Panel (c2) forms reliability quartiles independently within every dataset and semantic-role stratum before pooling, reducing dataset/role composition bias. AUC treats a correct-to-harm transition as positive; higher is better. C$\rightarrow$H and flip are percentages; lower is better.}
+\label{tab:source-risk-expanded}
+\begin{tabular}{lrrrrr}
+\toprule
+\multicolumn{6}{l}{\textbf{(c1) Harm-detection AUC within confidence bands}}\\
+Confidence & Regions / harms & CFC risk & Entropy & $1-$confidence & CFC--best \\
+\midrule
+$[0.00,0.70)$ & 84 / 32 & 0.523 & 0.480 & 0.507 & +0.016 \\
+$[0.70,0.80)$ & 223 / 40 & 0.701 & 0.521 & 0.604 & +0.097 \\
+$[0.80,0.90)$ & 544 / 45 & 0.699 & 0.393 & 0.490 & +0.209 \\
+$[0.90,1.00]$ & 515 / 22 & 0.745 & 0.489 & 0.578 & +0.166 \\
+\midrule
+\multicolumn{6}{l}{\textbf{(c2) Reliability quartiles controlled within dataset and role}}\\
+Quartile & Regions & Reliability & Acc. $\Delta$ & C$\rightarrow$H (\%) & Flip (\%) \\
+\midrule
+Q1 lowest & 344 & 0.169 & -0.0663 & 15.7 & 18.6 \\
+Q2 & 340 & 0.292 & -0.0295 & 12.1 & 18.2 \\
+Q3 & 343 & 0.453 & -0.0181 & 9.0 & 16.0 \\
+Q4 highest & 339 & 0.644 & -0.0098 & 3.8 & 10.0 \\
+\midrule
+\multicolumn{6}{l}{\footnotesize At confidence $\geq0.90$, CFC AUC 0.745 (image-clustered 95\% CI: 0.601--0.852).}\\
+\bottomrule
+\end{tabular}
+\end{table*}

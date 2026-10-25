@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/06_counterfactual_robustness/counterfactual_robustness/waterbirds_seg/no_cf",
+  "duration_sec": 351.159,
+  "evidence_type": "newly_run",
+  "results": {
+    "original": {
+      "mAcc": 70.13,
+      "mAcc_std": 0.0,
+      "mDice": 68.07,
+      "mDice_std": 0.0,
+      "mIoU": 55.21,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

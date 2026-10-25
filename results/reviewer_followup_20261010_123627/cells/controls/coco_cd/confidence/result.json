@@ -1,0 +1,63 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "policy": "confidence",
+  "label": "Original confidence",
+  "images": 500,
+  "full_split": true,
+  "metrics": {
+    "mIoU": 67.28632781454414,
+    "intersection": [
+      18745939,
+      1867502,
+      1756930
+    ],
+    "union": [
+      21317880,
+      2839818,
+      3647931
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "pre_metrics": {
+    "mIoU": 62.81389682422072,
+    "intersection": [
+      17700608,
+      1973725,
+      1799778
+    ],
+    "union": [
+      21197920,
+      3065041,
+      4438928
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "valid_pixels": 25088000,
+  "initially_correct_pixels": 21474111,
+  "correct_to_wrong_pixels": 486779,
+  "initially_wrong_pixels": 3613889,
+  "wrong_to_correct_pixels": 1383039,
+  "correct_to_wrong_pct": 2.2668179371895767,
+  "wrong_to_correct_pct": 38.270101821057594,
+  "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/confidence/prediction_seal.json",
+  "prediction_seal_sha256": "813c14167db41829076b6ac5f120d1cf152fb9d3166ce1d7e191fb7ec81c1f47",
+  "worst_group_mIoU": 44.67494641947172,
+  "foreground_errors": {
+    "foreground_pixels": 3996906,
+    "identity_flip_pixels": 145688,
+    "foreground_to_background_pixels": 226786,
+    "identity_flip_pct": 3.6450194225233217,
+    "foreground_to_background_pct": 5.674038869065222
+  },
+  "split_counts": {},
+  "evaluation_scope": "balanced 500-image test"
+}

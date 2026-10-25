@@ -1,0 +1,3 @@
+evidence_type,dataset,candidate_source,role,candidate_regions,gt_components,mean_candidate_purity,area_weighted_purity,mean_candidate_class_iou,mean_role_mask_coverage,mean_same_class_pixel_coverage,component_recall_iou_0_25,component_recall_iou_0_50
+newly_run,voc20,oracle_gt,thing,2,2,1.0,1.0,0.5,1.0,1.0,1.0,1.0
+newly_run,voc20,prediction,thing,6,2,0.0,0.0,0.0,0.0,0.0,0.0,0.0

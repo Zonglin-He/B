@@ -1,0 +1,14 @@
+{
+  "dependency_protocol_sha256": "2b34fddffb8588d2c60ee9f9d1fac221ec2001c077b80e3d3d7641843e87d930",
+  "completion_seals": {
+    "wait_for": "331e3635496663ed760a6a2c131df34d7298087f4120f18db9439d1104369e53",
+    "baseline_suite": "9f2e49486bc4a10ea824bc59f3c08ec7d1dc7b76398f52c28a3f431ed03f9c93",
+    "parent_suite": "f200e58ac3e1b45abd1b94bf7a309450d629086a61ebe3514435a6247b7d3408"
+  },
+  "completed": true,
+  "lock_order": [
+    "wait_for",
+    "baseline_suite",
+    "parent_suite"
+  ]
+}

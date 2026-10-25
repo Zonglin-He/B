@@ -1,0 +1,62 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "policy": "frozen",
+  "label": "frozen",
+  "images": 4,
+  "full_split": false,
+  "metrics": {
+    "mIoU": 74.04598551622689,
+    "intersection": [
+      153160,
+      0,
+      28197
+    ],
+    "union": [
+      172507,
+      0,
+      47544
+    ],
+    "present_classes": [
+      0,
+      2
+    ]
+  },
+  "pre_metrics": {
+    "mIoU": 48.086596525373956,
+    "intersection": [
+      151104,
+      0,
+      28090
+    ],
+    "union": [
+      172614,
+      77,
+      49523
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "valid_pixels": 200704,
+  "initially_correct_pixels": 179194,
+  "correct_to_wrong_pixels": 2665,
+  "initially_wrong_pixels": 21510,
+  "wrong_to_correct_pixels": 4828,
+  "correct_to_wrong_pct": 1.4872149737156377,
+  "wrong_to_correct_pct": 22.445374244537426,
+  "prediction_seal": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/smoke/refresh/clean/frozen/frozen/prediction_seal.json",
+  "prediction_seal_sha256": "d81f480bb281edf06fd801b8b51e320827c78d629bc0f260ee02b8a444566047",
+  "worst_group_mIoU": 50.31387380438657,
+  "foreground_errors": {
+    "foreground_pixels": 28426,
+    "identity_flip_pixels": 0,
+    "foreground_to_background_pixels": 229,
+    "identity_flip_pct": 0.0,
+    "foreground_to_background_pct": 0.8056005065784845
+  },
+  "split_counts": {},
+  "evaluation_scope": "balanced 500-image test"
+}

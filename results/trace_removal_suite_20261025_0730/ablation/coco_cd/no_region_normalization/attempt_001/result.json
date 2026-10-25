@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "name": "ablation/coco_cd/no_region_normalization",
+  "dataset": "coco_cd",
+  "variant": "no_region_normalization",
+  "images": 500,
+  "split": "evaluation",
+  "full_split": true,
+  "metrics": {
+    "mIoU": 72.45,
+    "mDice": 83.28,
+    "mAcc": 80.18,
+    "aAcc": 93.22
+  },
+  "miou_unrounded": 72.45353864342727,
+  "intersection": [
+    20528875.0,
+    1519789.0,
+    1338382.0
+  ],
+  "union": [
+    22218758.0,
+    2381562.0,
+    2188634.0
+  ],
+  "ms_per_image": 38.797803724453125,
+  "peak_allocated_mib": 6820.41455078125,
+  "diagnostic_views_per_image": 11.986486486486486,
+  "warmup_episodes": 2,
+  "wall_seconds": 20.724459608085454,
+  "protocol_sha256": "0820164ad48313a64c1e3bd333c00e20b46d0714ecbd56e38363a4016dc76f2d"
+}

@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+coco_cd,ok,66.14,78.35,91.15,72.1,-5.959999999999994,0,146.34,/home/wwww/hzl/results/minimal_cfc_full_targeted_shortcut_refine_20260630/coco_cd_cover32_alpha0_conf0_lr001_steps5/coco_cd/minimal_cfc/results.txt,newly_run,paper_ready

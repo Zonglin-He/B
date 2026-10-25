@@ -1,0 +1,5 @@
+evidence_type,batch_idx,image_index,image_path,cfc_score_max,cfc_score_mean,num_regions,object_dominant_regions,background_dominant_regions,mixed_regions
+newly_run,0,0,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000033.jpg,0.4950608519544377,0.36912902144642734,6,6,0,0
+newly_run,1,1,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000042.jpg,0.21467547118663788,0.21467547118663788,1,1,0,0
+newly_run,2,2,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000061.jpg,0.4999697505573926,0.3256363985323176,4,4,0,0
+newly_run,3,3,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000123.jpg,0.19941088557243347,0.19941088557243347,1,1,0,0

@@ -1,0 +1,8 @@
+artifact,evidence_type,used_for,risk
+/home/wwww/hzl/results/cfc_p0_voc20_full_20260623_193022,preexisting_artifact,"VOC20 overall, High-CFC subset, correct-prediction harm analysis",Analysis uses serialized region/image metrics from a single run.
+/home/wwww/hzl/results/synthetic_cfc_voc_formal_flip_20260624,newly_run_model_eval,Formal context-conflict table with flip rate and object mIoU,formal_flip_metrics_available
+/home/wwww/hzl/results/synthetic_cfc_voc_optimized_20260624_0920,preexisting_artifact,Fallback context-conflict harmful-update table if formal run is incomplete,Previous run lacks formal flip/object-mIoU columns.
+/home/wwww/hzl/results/cfc_p0_coco_cd_formal_20260624_0920,preexisting_artifact,Strong shortcut dataset diagnostic,Negative result for current CFC-TTA implementation.
+/home/wwww/hzl/results/cfc_p0_waterbirds_formal_20260624_0928,newly_run_model_eval,Waterbirds-Seg shortcut benchmark,Full derived set evaluation is available.
+/home/wwww/hzl/results/cfctta_voc21_best_non_strict_corruptions_20260623_1320/v21_corruptions_full,preexisting_artifact,VOC21-C per-corruption CFC-TTA detail,Baseline values are transcribed from MLMP paper Appendix Table 21.
+/home/wwww/hzl/results/cfctta_default_pc_context_corruptions_20260623_1911,preexisting_artifact,PascalContext-C per-corruption CFC-TTA detail,Baseline values are transcribed from MLMP paper Appendix Tables 22 and 23.

@@ -1,0 +1,6 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+voc21,ok,53.48,68.45,80.89,50.78,2.6999999999999957,1,1242.87,results/config_precision_round4_remaining_20260709_182822/voc21/minimal_cfc/run.log,newly_run,paper_ready
+pc59,ok,33.3,46.36,55.7,31.95,1.3499999999999979,1,2118.34,results/config_precision_round4_remaining_20260709_182822/pc59/minimal_cfc/run.log,newly_run,paper_ready
+pc60,ok,30.42,42.98,55.06,27.99,2.4300000000000033,1,1114.18,results/config_precision_round4_remaining_20260709_182822/pc60/minimal_cfc/run.log,newly_run,paper_ready
+coco_object,ok,32.15,45.95,67.48,28.84,3.3099999999999987,1,1006.23,results/config_precision_round4_remaining_20260709_182822/coco_object/minimal_cfc/run.log,newly_run,paper_ready
+cityscapes,ok,34.55,47.5,53.35,33.35,1.1999999999999957,1,8275.89,results/config_precision_round4_remaining_20260709_182822/cityscapes/minimal_cfc/run.log,newly_run,paper_ready

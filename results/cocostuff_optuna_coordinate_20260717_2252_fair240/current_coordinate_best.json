@@ -1,0 +1,20 @@
+{
+  "stage": 10,
+  "parameter": "cfc_fg_guard_eta",
+  "best_value": 0.1,
+  "best_proxy_mIoU": 18.68,
+  "fixed_method_params": {
+    "cfc_max_regions": 12,
+    "cfc_max_regions_per_class": 10,
+    "cfc_tau_cf": 0.32762,
+    "cfc_rho_min": 0.5,
+    "cfc_min_region_conf": 0.0,
+    "alpha_cls": 0.0,
+    "cfc_fg_guard_eta": 0.1
+  },
+  "fixed_cfg_params": {
+    "batch_size": 16,
+    "lr": 0.003,
+    "steps": 24
+  }
+}

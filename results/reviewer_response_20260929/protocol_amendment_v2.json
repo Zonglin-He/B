@@ -1,0 +1,1897 @@
+{
+  "created": 1790694082.1957853,
+  "original_sha256": "12b4f497aae8adb1bc5a8989837ca21e32d2302e51d8bab0916a3c5cb00f20c6",
+  "request": "Cancel further tuning-fairness experiments; use existing dataset configurations; W9 corruption on existing datasets",
+  "changes": [
+    {
+      "id": "waterbirds_strict/trace/seed0",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/trace/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/mlmp/seed0",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/mlmp/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/tent/seed0",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/tent/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/tpt/seed0",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/tpt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/watt/seed0",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/watt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/clipartt/seed0",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/clipartt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/noadapt/seed0",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/noadapt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/trace/seed1",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/trace/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/mlmp/seed1",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/mlmp/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/tent/seed1",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/tent/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/tpt/seed1",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/tpt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/watt/seed1",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/watt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/clipartt/seed1",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/clipartt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/trace/seed2",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/trace/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/mlmp/seed2",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/mlmp/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/tent/seed2",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/tent/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/tpt/seed2",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/tpt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/watt/seed2",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/watt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "waterbirds_strict/clipartt/seed2",
+      "action": "replaced",
+      "replacement": "waterbirds_test_released/clipartt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/trace/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/trace/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/mlmp/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/mlmp/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/tent/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/tent/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/tpt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/tpt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/watt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/watt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/clipartt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/clipartt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/noadapt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/noadapt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/trace_released/seed0",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/voc21/trace/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/trace/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/mlmp/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/mlmp/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/tent/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/tent/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/tpt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/tpt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/watt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/watt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/clipartt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/clipartt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/noadapt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/noadapt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/trace_released/seed0",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/pc59/trace/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/trace/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/mlmp/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/mlmp/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/tent/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/tent/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/tpt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/tpt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/watt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/watt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/clipartt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/clipartt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/noadapt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/noadapt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/trace_released/seed0",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/pc60/trace/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/trace/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/mlmp/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/mlmp/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/tent/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/tent/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/tpt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/tpt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/watt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/watt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/clipartt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/clipartt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/noadapt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/noadapt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/trace_released/seed0",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/coco_object/trace/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/trace/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/mlmp/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/mlmp/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/tent/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/tent/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/tpt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/tpt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/watt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/watt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/clipartt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/clipartt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/noadapt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/noadapt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/trace_released/seed0",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/coco_stuff/trace/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/trace/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/mlmp/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/mlmp/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/tent/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/tent/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/tpt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/tpt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/watt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/watt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/clipartt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/clipartt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/noadapt/seed0",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/noadapt/seed0",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/trace_released/seed0",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/voc20/trace/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/trace/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/mlmp/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/mlmp/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/tent/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/tent/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/tpt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/tpt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/watt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/watt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/clipartt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/clipartt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/trace_released/seed1",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/voc21/trace/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/trace/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/mlmp/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/mlmp/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/tent/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/tent/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/tpt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/tpt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/watt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/watt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/clipartt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/clipartt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/trace_released/seed1",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/pc59/trace/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/trace/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/mlmp/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/mlmp/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/tent/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/tent/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/tpt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/tpt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/watt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/watt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/clipartt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/clipartt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/trace_released/seed1",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/pc60/trace/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/trace/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/mlmp/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/mlmp/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/tent/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/tent/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/tpt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/tpt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/watt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/watt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/clipartt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/clipartt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/trace_released/seed1",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/coco_object/trace/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/trace/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/mlmp/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/mlmp/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/tent/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/tent/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/tpt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/tpt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/watt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/watt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/clipartt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/clipartt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/trace_released/seed1",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/coco_stuff/trace/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/trace/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/mlmp/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/mlmp/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/tent/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/tent/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/tpt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/tpt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/watt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/watt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/clipartt/seed1",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/clipartt/seed1",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/trace_released/seed1",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/voc20/trace/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/trace/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/mlmp/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/mlmp/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/tent/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/tent/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/tpt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/tpt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/watt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/watt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/clipartt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc20/clipartt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc20/trace_released/seed2",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/voc21/trace/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/trace/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/mlmp/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/mlmp/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/tent/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/tent/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/tpt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/tpt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/watt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/watt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/clipartt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/voc21/clipartt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/voc21/trace_released/seed2",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/pc59/trace/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/trace/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/mlmp/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/mlmp/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/tent/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/tent/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/tpt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/tpt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/watt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/watt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/clipartt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc59/clipartt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc59/trace_released/seed2",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/pc60/trace/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/trace/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/mlmp/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/mlmp/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/tent/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/tent/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/tpt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/tpt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/watt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/watt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/clipartt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/pc60/clipartt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/pc60/trace_released/seed2",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/coco_object/trace/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/trace/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/mlmp/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/mlmp/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/tent/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/tent/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/tpt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/tpt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/watt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/watt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/clipartt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_object/clipartt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_object/trace_released/seed2",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "matched/coco_stuff/trace/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/trace/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/mlmp/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/mlmp/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/tent/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/tent/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/tpt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/tpt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/watt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/watt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/clipartt/seed2",
+      "action": "replaced",
+      "replacement": "matched_released/coco_stuff/clipartt/seed2",
+      "reason": "existing dataset/method configuration"
+    },
+    {
+      "id": "matched/coco_stuff/trace_released/seed2",
+      "action": "superseded",
+      "reason": "single released TRACE arm replaces uniform/released duplicate"
+    },
+    {
+      "id": "natural_shift/trace/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/mlmp/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/tent/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/tpt/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/watt/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/clipartt/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/noadapt/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/trace/seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/mlmp/seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/tent/seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/tpt/seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/watt/seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/clipartt/seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/trace/seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/mlmp/seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/tent/seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/tpt/seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/watt/seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/clipartt/seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "natural_shift/trace_cityscapes_transfer/seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/trace/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tent/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/tpt/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/watt/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial00",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial01",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial02",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial03",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial04",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial05",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial06",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial07",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial08",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial09",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial10",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial11",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/selected_seed0",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/selected_seed1",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/selected_seed2",
+      "action": "cancelled",
+      "reason": "user amendment: no fairness search; corruption replaces new ACDC runs"
+    }
+  ],
+  "historical_results": "Retained under original paths/protocols, not relabeled",
+  "fairness_status": "new experiments cancelled by user; existing audit preserved, not resolved"
+}

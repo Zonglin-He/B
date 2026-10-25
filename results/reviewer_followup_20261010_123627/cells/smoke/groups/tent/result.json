@@ -1,0 +1,101 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "smoke/groups/tent",
+    "dataset": "coco_cd",
+    "task": "evaluate",
+    "method": "tent",
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 2,
+    "smoke": true
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "tent",
+      "label": "tent",
+      "images": 2,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 81.42851157351163,
+        "intersection": [
+          85294,
+          0,
+          10266
+        ],
+        "union": [
+          90086,
+          0,
+          15058
+        ],
+        "present_classes": [
+          0,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 46.392117581144625,
+        "intersection": [
+          76208,
+          0,
+          12561
+        ],
+        "union": [
+          87681,
+          219,
+          24035
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 100352,
+      "initially_correct_pixels": 88769,
+      "correct_to_wrong_pixels": 2409,
+      "initially_wrong_pixels": 11583,
+      "wrong_to_correct_pixels": 9200,
+      "correct_to_wrong_pct": 2.7137852178125246,
+      "wrong_to_correct_pct": 79.42674609341276,
+      "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/smoke/groups/tent/tent/prediction_seal.json",
+      "prediction_seal_sha256": "cb7190f26308cbba992012c798a279ef6e291166241146c3757047263c7149f2",
+      "worst_group_mIoU": 63.93401153789122,
+      "foreground_errors": {
+        "foreground_pixels": 12681,
+        "identity_flip_pixels": 0,
+        "foreground_to_background_pixels": 2415,
+        "identity_flip_pct": 0.0,
+        "foreground_to_background_pct": 19.044239413295482
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 0.26034277910366654,
+  "reset_checks": 1,
+  "all_resets_exact": true,
+  "native_cache_equivalence": [],
+  "image_set_sha256": "03fa2ed8e5f00e962fc4afe1ca8d54ac9db8dd7dbc5fabbb19b11b3b32ff511d",
+  "image_order_sha256": "58422f64f52965f8a6fa0104de906edff241e04bb2d36d7954ceab42b2e6bd2c"
+}

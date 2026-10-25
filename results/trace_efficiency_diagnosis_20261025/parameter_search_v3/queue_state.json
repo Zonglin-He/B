@@ -1,0 +1,6 @@
+{
+  "status": "superseded_before_execution",
+  "dependency": "/home/wwww/hzl/results/voc21_batch_refine_20261025_0820",
+  "replacement": "/home/wwww/hzl/results/trace_efficiency_diagnosis_20261025/parameter_search_final",
+  "reason": "Added binding to the upstream selected full-validation seal; this snapshot never launched GPU work."
+}

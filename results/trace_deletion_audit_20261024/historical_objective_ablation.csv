@@ -1,0 +1,17 @@
+dataset,variant,mIoU,mDice,mAcc,status,result_path,evidence_type
+coco_cd,full_trace,75.13,85.24,88.11,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/coco_cd/full_trace/results.txt,newly_run
+coco_cd,pixel_normalized_update,70.11,81.5,76.87,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/coco_cd/pixel_normalized_update/results.txt,newly_run
+coco_cd,shared_quality_only,75.2,85.3,88.43,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/coco_cd/shared_quality_only/results.txt,newly_run
+coco_cd,uniform_reliability,66.39,78.58,89.94,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/coco_cd/uniform_reliability/results.txt,newly_run
+pc60,full_trace,30.37,43.05,55.23,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/pc60/full_trace/results.txt,newly_run
+pc60,pixel_normalized_update,29.78,42.49,54.78,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/pc60/pixel_normalized_update/results.txt,newly_run
+pc60,shared_quality_only,30.39,43.07,55.23,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/pc60/shared_quality_only/results.txt,newly_run
+pc60,uniform_reliability,30.12,42.81,54.72,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/pc60/uniform_reliability/results.txt,newly_run
+voc20,full_trace,83.96,90.91,92.27,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/voc20/full_trace/results.txt,newly_run
+voc20,pixel_normalized_update,84.85,91.41,92.72,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/voc20/pixel_normalized_update/results.txt,newly_run
+voc20,shared_quality_only,83.92,90.89,92.25,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/voc20/shared_quality_only/results.txt,newly_run
+voc20,uniform_reliability,81.92,89.69,90.97,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/voc20/uniform_reliability/results.txt,newly_run
+waterbirds_seg,full_trace,55.34,68.47,76.78,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/waterbirds_seg/full_trace/results.txt,newly_run
+waterbirds_seg,pixel_normalized_update,55.12,67.94,69.9,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/waterbirds_seg/pixel_normalized_update/results.txt,newly_run
+waterbirds_seg,shared_quality_only,55.28,68.43,76.95,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/waterbirds_seg/shared_quality_only/results.txt,newly_run
+waterbirds_seg,uniform_reliability,45.97,60.09,74.43,ok,/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/final_experiment_suite/03_ablation/waterbirds_seg/uniform_reliability/results.txt,newly_run

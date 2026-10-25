@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+voc20,ok,66.03,71.42,86.52,83.76,-17.730000000000004,0,16.46,/home/wwww/hzl/results/minimal_cfc_targeted_proxy_tuning_voc_exhaustive_r2_20260630/voc20/stage03_alpha_cls/3.9268908389303903/voc20/minimal_cfc/results.txt,newly_run,paper_ready

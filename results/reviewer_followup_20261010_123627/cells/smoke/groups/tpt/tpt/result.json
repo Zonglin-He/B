@@ -1,0 +1,62 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "policy": "tpt",
+  "label": "tpt",
+  "images": 2,
+  "full_split": false,
+  "metrics": {
+    "mIoU": 52.011756148556486,
+    "intersection": [
+      87170,
+      0,
+      2026
+    ],
+    "union": [
+      98326,
+      0,
+      13182
+    ],
+    "present_classes": [
+      0,
+      2
+    ]
+  },
+  "pre_metrics": {
+    "mIoU": 46.44363947686052,
+    "intersection": [
+      76248,
+      0,
+      12561
+    ],
+    "union": [
+      87681,
+      229,
+      23985
+    ],
+    "present_classes": [
+      0,
+      1,
+      2
+    ]
+  },
+  "valid_pixels": 100352,
+  "initially_correct_pixels": 88809,
+  "correct_to_wrong_pixels": 10627,
+  "initially_wrong_pixels": 11543,
+  "wrong_to_correct_pixels": 11014,
+  "correct_to_wrong_pct": 11.966129558941098,
+  "wrong_to_correct_pct": 95.41713592653556,
+  "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/smoke/groups/tpt/tpt/prediction_seal.json",
+  "prediction_seal_sha256": "748d38a7135fb3cfa9a274600a734ebdb496d7eb00cbcab31356d265deb99f05",
+  "worst_group_mIoU": 45.01514741974958,
+  "foreground_errors": {
+    "foreground_pixels": 12681,
+    "identity_flip_pixels": 0,
+    "foreground_to_background_pixels": 10655,
+    "identity_flip_pct": 0.0,
+    "foreground_to_background_pct": 84.0233420077281
+  },
+  "split_counts": {},
+  "evaluation_scope": "balanced 500-image test"
+}

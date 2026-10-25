@@ -1,0 +1,3 @@
+evidence_type,method,num_images,mIoU,mDice,mAcc,before_added_label_fp_area,after_added_label_fp_area
+newly_run,tent,2,100.0,100.0,100.0,0.0,0.0
+newly_run,cfctta,2,47.748756408691406,48.82262349128723,95.49751281738281,0.0,0.0

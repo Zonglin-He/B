@@ -1,0 +1,19 @@
+{
+  "status": "completed",
+  "dataset": "pc60",
+  "images": 32,
+  "operators": [
+    "gray_blur",
+    "gaussian",
+    "mean",
+    "noise",
+    "shuffle",
+    "identity"
+  ],
+  "recognition_records": 6264,
+  "candidate_records": 6336,
+  "sampling_seed": 20270929,
+  "gt_usage": "offline probe definition/scoring only; no adaptation in this diagnostic",
+  "suppression": "all roles exported for matched diagnostic comparisons, not production policy",
+  "recognition_mapping": "sum extension probabilities into base classes, identical for original and all views"
+}

@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/01_bridge/bridge_attribution/waterbirds_seg/05_counterfactual_stability",
+  "duration_sec": 383.765,
+  "evidence_type": "newly_run",
+  "results": {
+    "original": {
+      "mAcc": 73.78,
+      "mAcc_std": 0.0,
+      "mDice": 67.39,
+      "mDice_std": 0.0,
+      "mIoU": 54.31,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

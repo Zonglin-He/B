@@ -1,0 +1,16 @@
+{
+  "algorithm": "selective_05",
+  "config_fixed": true,
+  "source_verified": true,
+  "environment_verified": true,
+  "data_cohort_verified": true,
+  "per_image_metrics_verified": true,
+  "synchronized_costs_verified": true,
+  "artifact_sha256": {
+    "result.json": "f352fc7d1593a90d4ffe6f0f91857b2053b96b609949a8c347717927ded5789d",
+    "protocol.json": "a7c59f5c8ece0ec1fbcb69aeea4bd8a8868bbeb583faa70b1e2d72048698c929",
+    "per_image_counts.json": "aac86346a282d8ebc9dbfce83d93543064b890a5f35353a970a0d1dd14abf3b5",
+    "cost.csv": "bd2df5a90d11ebe8460d2af99bf8b46fb0e46fb4a7d36144e9b89a589ea2a738",
+    "candidate_diagnostics.csv": "2cfe1f5a4bff0bb4fe6bcc44d15062ecbee5a927826e7a396f57f35b05bd9fff"
+  }
+}

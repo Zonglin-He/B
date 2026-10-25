@@ -1,0 +1,20 @@
+{
+  "evidence_type": "newly_run",
+  "timestamp": "2026-07-17 20:15:25",
+  "protocol": "same clean image prefix, NaCLIP ViT-L/14 backbone, and frozen CFC-TTA candidate masks",
+  "baseline_optimization": "official/default TENT and MLMP settings from the public implementation",
+  "trace_optimization": "canonical dataset-specific settings from cfc_tta.configs.best_clean",
+  "candidate_source": "pre-adaptation CFC-TTA dense predictions",
+  "aggregation": "region-level statistics plus subset-level confusion-matrix mIoU",
+  "datasets": [
+    "voc20"
+  ],
+  "methods": [
+    "noadapt",
+    "tent",
+    "mlmp",
+    "cfctta"
+  ],
+  "max_images": 8,
+  "seed": 0
+}

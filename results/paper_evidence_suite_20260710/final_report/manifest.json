@@ -1,0 +1,15 @@
+{
+  "evidence_type": "newly_run_summary_of_newly_run_artifacts",
+  "root": "/home/wwww/hzl/results/paper_evidence_suite_20260710",
+  "tables": [
+    "bridge_attribution.csv",
+    "corruption_aggregate.csv",
+    "counterfactual_aggregate.csv",
+    "counterfactual_detail.csv",
+    "efficiency_formal.csv",
+    "paired_bootstrap.csv",
+    "same_class_paired_deltas.csv",
+    "same_class_summary.csv",
+    "second_backbone.csv"
+  ]
+}

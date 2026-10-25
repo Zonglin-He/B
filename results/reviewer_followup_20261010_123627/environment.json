@@ -1,0 +1,9 @@
+{
+  "kernel_driver": "NVRM version: NVIDIA UNIX Open Kernel Module for x86_64  580.173.02  Release Build  (dvs-builder@U22-I3-AK02-24-4)  Tue Jun 23 08:17:01 UTC 2026\nGCC version:  gcc version 13.3.0 (Ubuntu 13.3.0-6ubuntu2~24.04.1) \n",
+  "library_override": "/home/wwww/hzl/results/driver_compat_58017302/nvidia_driver-linux-x86_64-580.173.02-archive/lib",
+  "driver_archive_url": "https://developer.download.nvidia.com/compute/nvidia-driver/redist/nvidia_driver/linux-x86_64/nvidia_driver-linux-x86_64-580.173.02-archive.tar.xz",
+  "driver_archive_sha256": "18e19ffca091473ac5e81c63436ef2911dd2485be4b8770c2ee124ece3a3a5f7",
+  "python": "/home/wwww/miniconda3/envs/mlmp/bin/python",
+  "git_commit": "3c619a4ac0e3373789a793625903881cca420c41",
+  "git_status": " M README.md\n M trace_ovss/cli.py\n M trace_ovss/data/datasets.py\n M trace_ovss/evaluation/patches.py\n M trace_ovss/method/adapter.py\n M trace_ovss/method/trace/candidates.py\n M trace_ovss/method/trace/engine.py\n M trace_ovss/method/trace/estimator.py\n M trace_ovss/method/trace/interventions.py\n M trace_ovss/method/trace/objective.py\n M trace_ovss/models/dense_clip.py\n?? Agent/\n?? agent_tta/\n?? cfc_tta_paper_draft/\n?? docs/\n?? tests/test_runtime_optimizations.py\n?? time/\n?? tools/\n?? trace_ovss/method/trace/indexing.py\n"
+}

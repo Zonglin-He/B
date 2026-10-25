@@ -1,0 +1,33 @@
+{
+  "status": "completed",
+  "name": "evaluation/coco_cd/quality_only",
+  "dataset": "coco_cd",
+  "variant": "full",
+  "images": 128,
+  "algorithm": "quality_only",
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 74.31,
+    "mDice": 84.68,
+    "mAcc": 90.0,
+    "aAcc": 92.75
+  },
+  "miou_unrounded": 74.31064438037745,
+  "intersection": [
+    5045301.0,
+    507885.0,
+    403728.0
+  ],
+  "union": [
+    5503658.0,
+    734193.0,
+    650291.0
+  ],
+  "ms_per_image": 32.5608023106017,
+  "peak_allocated_mib": 6820.40673828125,
+  "diagnostic_views_per_image": 8.0,
+  "warmup_episodes": 2,
+  "wall_seconds": 5.00739164557308,
+  "protocol_sha256": "b08e852cf02c97e8df5dfd19f537669fe3c2eaa1f6d50fd3e81765beb4eb8a3f"
+}

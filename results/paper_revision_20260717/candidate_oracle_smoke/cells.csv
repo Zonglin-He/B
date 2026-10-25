@@ -1,0 +1,5 @@
+evidence_type,dataset,cell,candidate_source,reliability,mIoU,mDice,mAcc,status,duration_sec,result_path
+newly_run,voc20,pred_uniform,prediction,uniform,45.75,58.15,59.58,ok,6.96,results/paper_revision_20260717/candidate_oracle_smoke/voc20/pred_uniform/run.log
+newly_run,voc20,pred_trace,prediction,trace,22.62,26.95,49.99,ok,6.95,results/paper_revision_20260717/candidate_oracle_smoke/voc20/pred_trace/run.log
+newly_run,voc20,oracle_uniform,oracle_gt,uniform,33.92,40.42,50.0,ok,6.94,results/paper_revision_20260717/candidate_oracle_smoke/voc20/oracle_uniform/run.log
+newly_run,voc20,oracle_trace,oracle_gt,trace,42.15,53.31,56.7,ok,7.01,results/paper_revision_20260717/candidate_oracle_smoke/voc20/oracle_trace/run.log

@@ -1,0 +1,23 @@
+{
+  "evidence_type": "newly_run",
+  "dataset": "voc20",
+  "grounding_mode": "current_soft",
+  "split": "test",
+  "seed": 0,
+  "images": 2,
+  "patches": 147,
+  "regions": 9,
+  "candidates": 7,
+  "before": {
+    "mIoU": 0.4112597547380156,
+    "mAcc": 0.8032520325203252
+  },
+  "after": {
+    "mIoU": 0.48999870951090463,
+    "mAcc": 0.6910569105691057
+  },
+  "duration_sec": 1.086,
+  "patch_path": "/home/wwww/hzl/results/_smoke_trace_patch_region/voc20/current_soft/patch_diagnostics.csv",
+  "region_path": "/home/wwww/hzl/results/_smoke_trace_patch_region/voc20/current_soft/region_recognition.csv",
+  "candidate_path": "/home/wwww/hzl/results/_smoke_trace_patch_region/voc20/current_soft/candidate_diagnostics.csv"
+}

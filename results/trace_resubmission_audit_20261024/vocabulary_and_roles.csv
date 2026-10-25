@@ -1,0 +1,10 @@
+dataset,classes,queries,thing,stuff,background,repeated_query_strings,cross_class_query_collisions,role_inheritance_passed
+PascalVOC20Dataset,20,30,20,0,0,0,0,True
+PascalVOC21Dataset,21,56,20,0,1,0,0,True
+PascalContext59Dataset,59,59,30,29,0,0,0,True
+PascalContext60Dataset,60,60,30,29,1,0,0,True
+COCOObjectDataset,81,113,80,0,1,1,1,True
+COCOStuffDataset,171,171,80,91,0,0,0,True
+CityscapesDataset,19,19,8,11,0,0,0,True
+COCOCDDataset,3,3,2,0,1,0,0,True
+WaterbirdsSegDataset,3,3,2,0,1,0,0,True

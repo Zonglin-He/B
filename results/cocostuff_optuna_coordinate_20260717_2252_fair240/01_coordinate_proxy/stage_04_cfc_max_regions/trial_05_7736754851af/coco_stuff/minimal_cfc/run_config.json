@@ -1,0 +1,43 @@
+{
+  "dataset": "COCOStuffDataset",
+  "data_dir": "/home/wwww/hzl/data/coco_stuff",
+  "resize": [
+    "224",
+    "224"
+  ],
+  "patch": [
+    "224",
+    "224"
+  ],
+  "stride": "112",
+  "batch_size": 16,
+  "lr": 0.003,
+  "steps": 24,
+  "class_extensions": true,
+  "params": {
+    "alpha_cls": 0.0,
+    "cfc_max_regions": 48,
+    "cfc_max_regions_per_class": 10,
+    "cfc_region_selection": "threshold",
+    "cfc_min_region_conf": 0.0,
+    "cfc_view_batch_size": 8,
+    "cfc_blur_kernel": 9,
+    "cfc_tau_cf": 0.32762,
+    "cfc_rho_min": 0.1,
+    "cfc_use_source_tracing": true,
+    "cfc_use_target_support": true,
+    "cfc_use_source_diagnosis": true,
+    "cfc_use_cf_stability": true,
+    "cfc_use_valid_mask": false,
+    "cfc_real_class_grouping": false,
+    "cfc_local_grouping": false,
+    "cfc_fg_guard": true,
+    "cfc_fg_guard_mode": "semantic_area",
+    "cfc_fg_guard_eta": 0.5,
+    "cfc_fg_area_a0": 4.0,
+    "cfc_fg_area_tau": 0.75,
+    "cfc_bg_budget_cap": 0.0,
+    "cfc_bg_cap_min_fg": 0.0,
+    "cfc_region_normalized_loss": true
+  }
+}

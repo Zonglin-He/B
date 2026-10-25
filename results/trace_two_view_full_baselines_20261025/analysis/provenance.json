@@ -1,0 +1,27 @@
+{
+  "sources": {
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/pc60/quality_only/attempt_001/result.json": "caa13d248a972585fe386c3da7a44d1c3428907158f0f495fb84ec867e52e6ee",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/mlmp/result.json": "70cb762676a83dbfe867816bbec7f6a96a59ce719dbde774ba02bb8b0d8e8ba4",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/pc60/quality_only/attempt_001/candidate_diagnostics.csv": "967f40b3f76405121c3056d9c5397729426f0f16c3810fd91ee0ba702fe26ea6",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/voc21/quality_only/attempt_001/result.json": "c04ae10b0c27f877d3df7d3a4df9a1d5c7eaf45f6922d45dd29257b7a6c3aeae",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/mlmp/result.json": "f43560e35841f7d30c7664c74d747c11a5b61be2fb7bd8f6197062cba53d3ed5",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/voc21/quality_only/attempt_001/candidate_diagnostics.csv": "981517ed05cfaad412663cb480d8ab72a5ca41284c8fc5635e90288e0dd32c01",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_cd/quality_only/attempt_001/result.json": "0a065f3b683b8406cb55877e1a27f3a2fe860ed14945f1319e34f0d6502053c7",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/tent/result.json": "06d1e6405127a2e7e8953e40460bfbec1ceec29574995899b6006412c6b3ce28",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_cd/quality_only/attempt_001/candidate_diagnostics.csv": "33678c7a5abffa6a3db1af7c5bf4cf25245b77829a31c76ca8c4d0008e2d0156",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_object/quality_only/attempt_001/result.json": "6693bc2685ba14bb37c4dd21f3cd84ad15882754eb1208872f57f2c4cdd0e43d",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/mlmp/result.json": "c26b591a502eb83c4034b0297ca9c54dd2c20d77a5e99c29a23c645735dd2ce1",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_object/quality_only/attempt_001/candidate_diagnostics.csv": "40ac2c604a2242bd130d90b1066f317af9bd141815559d007eb3bc08bbd614bd"
+  },
+  "vocabulary_sha256": {
+    "pc60": "d1965510c2b9e76ea4e327047ecba4d21522655f5ee8bcf7dbc313241c4afa18",
+    "voc21": "e46091f3903b486b985a17f19dc7abc243a21db1969e32d9e1e2f187176051bc",
+    "coco_cd": "3bc5698c02579de6833fcb6a037c5070a7206a315a0b7b7f53a64c194a938c6b",
+    "coco_object": "64505e94887dbdc7888aeffe3683ff7c1dd65a03616cf193f71388782dde83ea"
+  },
+  "trace_seal_sha256": "f200e58ac3e1b45abd1b94bf7a309450d629086a61ebe3514435a6247b7d3408",
+  "baseline_seal_sha256": "9f2e49486bc4a10ea824bc59f3c08ec7d1dc7b76398f52c28a3f431ed03f9c93",
+  "meaning": "IoU is pooled over the full split. Allocation columns average normalized coefficients over episodes containing candidates, not gradient attribution. Target-only shares are offline counterfactual coefficients, not adaptation results.",
+  "parameter_selection": false,
+  "calibration_required_before_tuning": true
+}

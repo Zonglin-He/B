@@ -1,0 +1,7506 @@
+{
+  "version": 1,
+  "created": 1790689222.9489856,
+  "jobs": [
+    {
+      "id": "controls/voc21",
+      "weaknesses": [
+        3,
+        4,
+        5
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "task": "probes",
+        "max_images": 32
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "controls/pc60",
+      "weaknesses": [
+        3,
+        4,
+        5
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "task": "probes",
+        "max_images": 32
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "controls/coco_object",
+      "weaknesses": [
+        3,
+        4,
+        5
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "task": "probes",
+        "max_images": 32
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "controls/coco_stuff",
+      "weaknesses": [
+        3,
+        4,
+        5
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "task": "probes",
+        "max_images": 32
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "controls/coco_cd",
+      "weaknesses": [
+        3,
+        4,
+        5
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "task": "probes",
+        "max_images": 32
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "controls/waterbirds_seg",
+      "weaknesses": [
+        3,
+        4,
+        5
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "trace",
+      "settings": {
+        "task": "probes",
+        "max_images": 32
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/k1",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "k": 1,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/k4",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "k": 4,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/k8",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "k": 8,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/k16",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "k": 16,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/k32",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "k": 32,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/mlmp",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/tent",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/tpt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/watt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/clipartt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/voc20/noadapt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "voc20",
+      "method": "noadapt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/k1",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "k": 1,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/k4",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "k": 4,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/k8",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "k": 8,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/k16",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "k": 16,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/k32",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "k": 32,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/mlmp",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/tent",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/tpt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/watt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/clipartt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_stuff/noadapt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "noadapt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/k1",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "k": 1,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/k4",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "k": 4,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/k8",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "k": 8,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/k16",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "k": 16,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/k32",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "k": 32,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/mlmp",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "mlmp",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/tent",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "tent",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/tpt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "tpt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/watt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "watt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/clipartt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "clipartt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "cost/coco_object/noadapt",
+      "weaknesses": [
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "noadapt",
+      "settings": {
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/voc21/full",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "variant": "full"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/voc21/quality_only",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "variant": "quality_only"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/voc21/all_dominance",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "variant": "all_dominance"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/pc60/full",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "variant": "full"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/pc60/quality_only",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "variant": "quality_only"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/pc60/all_dominance",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "variant": "all_dominance"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_object/full",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "variant": "full"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_object/quality_only",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "variant": "quality_only"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_object/all_dominance",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "variant": "all_dominance"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_cd/full",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "variant": "full"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_cd/quality_only",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "variant": "quality_only"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_cd/all_dominance",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "variant": "all_dominance"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_stuff/full",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "variant": "full"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_stuff/quality_only",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "variant": "quality_only"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "role_free/coco_stuff/all_dominance",
+      "weaknesses": [
+        7
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "variant": "all_dominance"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/voc21/gaussian",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "weakening": "gaussian"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/voc21/mean",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "weakening": "mean"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/voc21/noise",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "weakening": "noise"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/voc21/shuffle",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "weakening": "shuffle"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/pc60/gaussian",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "weakening": "gaussian"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/pc60/mean",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "weakening": "mean"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/pc60/noise",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "weakening": "noise"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/pc60/shuffle",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "weakening": "shuffle"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_cd/gaussian",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "weakening": "gaussian"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_cd/mean",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "weakening": "mean"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_cd/noise",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "weakening": "noise"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_cd/shuffle",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_cd",
+      "method": "trace",
+      "settings": {
+        "weakening": "shuffle"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_stuff/gaussian",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "weakening": "gaussian"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_stuff/mean",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "weakening": "mean"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_stuff/noise",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "weakening": "noise"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "weakening_full/coco_stuff/shuffle",
+      "weaknesses": [
+        3,
+        5
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "weakening": "shuffle"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/trace/seed0",
+      "weaknesses": [
+        1,
+        2,
+        9
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/mlmp/seed0",
+      "weaknesses": [
+        1,
+        2,
+        9
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "mlmp",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/tent/seed0",
+      "weaknesses": [
+        1,
+        2,
+        9
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "tent",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/tpt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        9
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "tpt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/watt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        9
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "watt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/clipartt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        9
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "clipartt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/noadapt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        9
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "noadapt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/trace/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/mlmp/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/tent/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/tpt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/watt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/clipartt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/trace/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/mlmp/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/tent/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/tpt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/watt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "waterbirds_strict/clipartt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "waterbirds_seg",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/trace/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/mlmp/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/tent/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/tpt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/watt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/clipartt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/noadapt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc20",
+      "method": "noadapt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/trace_released/seed0",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/trace/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/mlmp/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc21",
+      "method": "mlmp",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/tent/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc21",
+      "method": "tent",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/tpt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc21",
+      "method": "tpt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/watt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc21",
+      "method": "watt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/clipartt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc21",
+      "method": "clipartt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/noadapt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "voc21",
+      "method": "noadapt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/trace_released/seed0",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/trace/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc59",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/mlmp/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc59",
+      "method": "mlmp",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/tent/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc59",
+      "method": "tent",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/tpt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc59",
+      "method": "tpt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/watt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc59",
+      "method": "watt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/clipartt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc59",
+      "method": "clipartt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/noadapt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc59",
+      "method": "noadapt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/trace_released/seed0",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "pc59",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/trace/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/mlmp/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc60",
+      "method": "mlmp",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/tent/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc60",
+      "method": "tent",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/tpt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc60",
+      "method": "tpt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/watt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc60",
+      "method": "watt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/clipartt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc60",
+      "method": "clipartt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/noadapt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "pc60",
+      "method": "noadapt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/trace_released/seed0",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/trace/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/mlmp/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "mlmp",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/tent/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "tent",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/tpt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "tpt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/watt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "watt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/clipartt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "clipartt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/noadapt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_object",
+      "method": "noadapt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/trace_released/seed0",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/trace/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/mlmp/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/tent/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/tpt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/watt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/clipartt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/noadapt/seed0",
+      "weaknesses": [
+        1,
+        2,
+        6
+      ],
+      "dataset": "coco_stuff",
+      "method": "noadapt",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/trace_released/seed0",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/trace/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/mlmp/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/tent/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/tpt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/watt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/clipartt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/trace_released/seed1",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/trace/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/mlmp/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/tent/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/tpt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/watt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/clipartt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/trace_released/seed1",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/trace/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/mlmp/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/tent/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/tpt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/watt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/clipartt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/trace_released/seed1",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "pc59",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/trace/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/mlmp/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/tent/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/tpt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/watt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/clipartt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/trace_released/seed1",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/trace/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/mlmp/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/tent/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/tpt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/watt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/clipartt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/trace_released/seed1",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/trace/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/mlmp/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/tent/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/tpt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/watt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/clipartt/seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/trace_released/seed1",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/trace/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/mlmp/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/tent/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/tpt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/watt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/clipartt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc20/trace_released/seed2",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/trace/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/mlmp/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/tent/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/tpt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/watt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/clipartt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc21",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/voc21/trace_released/seed2",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "voc21",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/trace/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/mlmp/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/tent/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/tpt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/watt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/clipartt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc59",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc59/trace_released/seed2",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "pc59",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/trace/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/mlmp/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/tent/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/tpt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/watt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/clipartt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "pc60",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/pc60/trace_released/seed2",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "pc60",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/trace/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/mlmp/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/tent/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/tpt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/watt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/clipartt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_object",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_object/trace_released/seed2",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "coco_object",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/trace/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/mlmp/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/tent/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/tpt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/watt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/clipartt/seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "matched/coco_stuff/trace_released/seed2",
+      "weaknesses": [
+        1
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/trace/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "trace",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/mlmp/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "mlmp",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/tent/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "tent",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/tpt/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "tpt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/watt/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "watt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/clipartt/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "clipartt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/noadapt/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "noadapt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/trace/seed1",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/mlmp/seed1",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/tent/seed1",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/tpt/seed1",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/watt/seed1",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/clipartt/seed1",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/trace/seed2",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/mlmp/seed2",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/tent/seed2",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/tpt/seed2",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/watt/seed2",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/clipartt/seed2",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "natural_shift/trace_cityscapes_transfer/seed0",
+      "weaknesses": [
+        9
+      ],
+      "dataset": "acdc",
+      "method": "trace",
+      "settings": {
+        "backend": "shared_legacy",
+        "protocol": "released"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/trace/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/trace/trial00",
+        "equal_budget/voc20/trace/trial01",
+        "equal_budget/voc20/trace/trial02",
+        "equal_budget/voc20/trace/trial03",
+        "equal_budget/voc20/trace/trial04",
+        "equal_budget/voc20/trace/trial05",
+        "equal_budget/voc20/trace/trial06",
+        "equal_budget/voc20/trace/trial07",
+        "equal_budget/voc20/trace/trial08",
+        "equal_budget/voc20/trace/trial09",
+        "equal_budget/voc20/trace/trial10",
+        "equal_budget/voc20/trace/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/trace/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/trace/trial00",
+        "equal_budget/voc20/trace/trial01",
+        "equal_budget/voc20/trace/trial02",
+        "equal_budget/voc20/trace/trial03",
+        "equal_budget/voc20/trace/trial04",
+        "equal_budget/voc20/trace/trial05",
+        "equal_budget/voc20/trace/trial06",
+        "equal_budget/voc20/trace/trial07",
+        "equal_budget/voc20/trace/trial08",
+        "equal_budget/voc20/trace/trial09",
+        "equal_budget/voc20/trace/trial10",
+        "equal_budget/voc20/trace/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/trace/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/trace/trial00",
+        "equal_budget/voc20/trace/trial01",
+        "equal_budget/voc20/trace/trial02",
+        "equal_budget/voc20/trace/trial03",
+        "equal_budget/voc20/trace/trial04",
+        "equal_budget/voc20/trace/trial05",
+        "equal_budget/voc20/trace/trial06",
+        "equal_budget/voc20/trace/trial07",
+        "equal_budget/voc20/trace/trial08",
+        "equal_budget/voc20/trace/trial09",
+        "equal_budget/voc20/trace/trial10",
+        "equal_budget/voc20/trace/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/mlmp/trial00",
+        "equal_budget/voc20/mlmp/trial01",
+        "equal_budget/voc20/mlmp/trial02",
+        "equal_budget/voc20/mlmp/trial03",
+        "equal_budget/voc20/mlmp/trial04",
+        "equal_budget/voc20/mlmp/trial05",
+        "equal_budget/voc20/mlmp/trial06",
+        "equal_budget/voc20/mlmp/trial07",
+        "equal_budget/voc20/mlmp/trial08",
+        "equal_budget/voc20/mlmp/trial09",
+        "equal_budget/voc20/mlmp/trial10",
+        "equal_budget/voc20/mlmp/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/mlmp/trial00",
+        "equal_budget/voc20/mlmp/trial01",
+        "equal_budget/voc20/mlmp/trial02",
+        "equal_budget/voc20/mlmp/trial03",
+        "equal_budget/voc20/mlmp/trial04",
+        "equal_budget/voc20/mlmp/trial05",
+        "equal_budget/voc20/mlmp/trial06",
+        "equal_budget/voc20/mlmp/trial07",
+        "equal_budget/voc20/mlmp/trial08",
+        "equal_budget/voc20/mlmp/trial09",
+        "equal_budget/voc20/mlmp/trial10",
+        "equal_budget/voc20/mlmp/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/mlmp/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/mlmp/trial00",
+        "equal_budget/voc20/mlmp/trial01",
+        "equal_budget/voc20/mlmp/trial02",
+        "equal_budget/voc20/mlmp/trial03",
+        "equal_budget/voc20/mlmp/trial04",
+        "equal_budget/voc20/mlmp/trial05",
+        "equal_budget/voc20/mlmp/trial06",
+        "equal_budget/voc20/mlmp/trial07",
+        "equal_budget/voc20/mlmp/trial08",
+        "equal_budget/voc20/mlmp/trial09",
+        "equal_budget/voc20/mlmp/trial10",
+        "equal_budget/voc20/mlmp/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tent/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/tent/trial00",
+        "equal_budget/voc20/tent/trial01",
+        "equal_budget/voc20/tent/trial02",
+        "equal_budget/voc20/tent/trial03",
+        "equal_budget/voc20/tent/trial04",
+        "equal_budget/voc20/tent/trial05",
+        "equal_budget/voc20/tent/trial06",
+        "equal_budget/voc20/tent/trial07",
+        "equal_budget/voc20/tent/trial08",
+        "equal_budget/voc20/tent/trial09",
+        "equal_budget/voc20/tent/trial10",
+        "equal_budget/voc20/tent/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/tent/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/tent/trial00",
+        "equal_budget/voc20/tent/trial01",
+        "equal_budget/voc20/tent/trial02",
+        "equal_budget/voc20/tent/trial03",
+        "equal_budget/voc20/tent/trial04",
+        "equal_budget/voc20/tent/trial05",
+        "equal_budget/voc20/tent/trial06",
+        "equal_budget/voc20/tent/trial07",
+        "equal_budget/voc20/tent/trial08",
+        "equal_budget/voc20/tent/trial09",
+        "equal_budget/voc20/tent/trial10",
+        "equal_budget/voc20/tent/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/tent/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/tent/trial00",
+        "equal_budget/voc20/tent/trial01",
+        "equal_budget/voc20/tent/trial02",
+        "equal_budget/voc20/tent/trial03",
+        "equal_budget/voc20/tent/trial04",
+        "equal_budget/voc20/tent/trial05",
+        "equal_budget/voc20/tent/trial06",
+        "equal_budget/voc20/tent/trial07",
+        "equal_budget/voc20/tent/trial08",
+        "equal_budget/voc20/tent/trial09",
+        "equal_budget/voc20/tent/trial10",
+        "equal_budget/voc20/tent/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/tpt/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/tpt/trial00",
+        "equal_budget/voc20/tpt/trial01",
+        "equal_budget/voc20/tpt/trial02",
+        "equal_budget/voc20/tpt/trial03",
+        "equal_budget/voc20/tpt/trial04",
+        "equal_budget/voc20/tpt/trial05",
+        "equal_budget/voc20/tpt/trial06",
+        "equal_budget/voc20/tpt/trial07",
+        "equal_budget/voc20/tpt/trial08",
+        "equal_budget/voc20/tpt/trial09",
+        "equal_budget/voc20/tpt/trial10",
+        "equal_budget/voc20/tpt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/tpt/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/tpt/trial00",
+        "equal_budget/voc20/tpt/trial01",
+        "equal_budget/voc20/tpt/trial02",
+        "equal_budget/voc20/tpt/trial03",
+        "equal_budget/voc20/tpt/trial04",
+        "equal_budget/voc20/tpt/trial05",
+        "equal_budget/voc20/tpt/trial06",
+        "equal_budget/voc20/tpt/trial07",
+        "equal_budget/voc20/tpt/trial08",
+        "equal_budget/voc20/tpt/trial09",
+        "equal_budget/voc20/tpt/trial10",
+        "equal_budget/voc20/tpt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/tpt/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/tpt/trial00",
+        "equal_budget/voc20/tpt/trial01",
+        "equal_budget/voc20/tpt/trial02",
+        "equal_budget/voc20/tpt/trial03",
+        "equal_budget/voc20/tpt/trial04",
+        "equal_budget/voc20/tpt/trial05",
+        "equal_budget/voc20/tpt/trial06",
+        "equal_budget/voc20/tpt/trial07",
+        "equal_budget/voc20/tpt/trial08",
+        "equal_budget/voc20/tpt/trial09",
+        "equal_budget/voc20/tpt/trial10",
+        "equal_budget/voc20/tpt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/watt/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/watt/trial00",
+        "equal_budget/voc20/watt/trial01",
+        "equal_budget/voc20/watt/trial02",
+        "equal_budget/voc20/watt/trial03",
+        "equal_budget/voc20/watt/trial04",
+        "equal_budget/voc20/watt/trial05",
+        "equal_budget/voc20/watt/trial06",
+        "equal_budget/voc20/watt/trial07",
+        "equal_budget/voc20/watt/trial08",
+        "equal_budget/voc20/watt/trial09",
+        "equal_budget/voc20/watt/trial10",
+        "equal_budget/voc20/watt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/watt/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/watt/trial00",
+        "equal_budget/voc20/watt/trial01",
+        "equal_budget/voc20/watt/trial02",
+        "equal_budget/voc20/watt/trial03",
+        "equal_budget/voc20/watt/trial04",
+        "equal_budget/voc20/watt/trial05",
+        "equal_budget/voc20/watt/trial06",
+        "equal_budget/voc20/watt/trial07",
+        "equal_budget/voc20/watt/trial08",
+        "equal_budget/voc20/watt/trial09",
+        "equal_budget/voc20/watt/trial10",
+        "equal_budget/voc20/watt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/watt/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/watt/trial00",
+        "equal_budget/voc20/watt/trial01",
+        "equal_budget/voc20/watt/trial02",
+        "equal_budget/voc20/watt/trial03",
+        "equal_budget/voc20/watt/trial04",
+        "equal_budget/voc20/watt/trial05",
+        "equal_budget/voc20/watt/trial06",
+        "equal_budget/voc20/watt/trial07",
+        "equal_budget/voc20/watt/trial08",
+        "equal_budget/voc20/watt/trial09",
+        "equal_budget/voc20/watt/trial10",
+        "equal_budget/voc20/watt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/clipartt/trial00",
+        "equal_budget/voc20/clipartt/trial01",
+        "equal_budget/voc20/clipartt/trial02",
+        "equal_budget/voc20/clipartt/trial03",
+        "equal_budget/voc20/clipartt/trial04",
+        "equal_budget/voc20/clipartt/trial05",
+        "equal_budget/voc20/clipartt/trial06",
+        "equal_budget/voc20/clipartt/trial07",
+        "equal_budget/voc20/clipartt/trial08",
+        "equal_budget/voc20/clipartt/trial09",
+        "equal_budget/voc20/clipartt/trial10",
+        "equal_budget/voc20/clipartt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/clipartt/trial00",
+        "equal_budget/voc20/clipartt/trial01",
+        "equal_budget/voc20/clipartt/trial02",
+        "equal_budget/voc20/clipartt/trial03",
+        "equal_budget/voc20/clipartt/trial04",
+        "equal_budget/voc20/clipartt/trial05",
+        "equal_budget/voc20/clipartt/trial06",
+        "equal_budget/voc20/clipartt/trial07",
+        "equal_budget/voc20/clipartt/trial08",
+        "equal_budget/voc20/clipartt/trial09",
+        "equal_budget/voc20/clipartt/trial10",
+        "equal_budget/voc20/clipartt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/voc20/clipartt/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "voc20",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/voc20/clipartt/trial00",
+        "equal_budget/voc20/clipartt/trial01",
+        "equal_budget/voc20/clipartt/trial02",
+        "equal_budget/voc20/clipartt/trial03",
+        "equal_budget/voc20/clipartt/trial04",
+        "equal_budget/voc20/clipartt/trial05",
+        "equal_budget/voc20/clipartt/trial06",
+        "equal_budget/voc20/clipartt/trial07",
+        "equal_budget/voc20/clipartt/trial08",
+        "equal_budget/voc20/clipartt/trial09",
+        "equal_budget/voc20/clipartt/trial10",
+        "equal_budget/voc20/clipartt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/trace/trial00",
+        "equal_budget/coco_stuff/trace/trial01",
+        "equal_budget/coco_stuff/trace/trial02",
+        "equal_budget/coco_stuff/trace/trial03",
+        "equal_budget/coco_stuff/trace/trial04",
+        "equal_budget/coco_stuff/trace/trial05",
+        "equal_budget/coco_stuff/trace/trial06",
+        "equal_budget/coco_stuff/trace/trial07",
+        "equal_budget/coco_stuff/trace/trial08",
+        "equal_budget/coco_stuff/trace/trial09",
+        "equal_budget/coco_stuff/trace/trial10",
+        "equal_budget/coco_stuff/trace/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/trace/trial00",
+        "equal_budget/coco_stuff/trace/trial01",
+        "equal_budget/coco_stuff/trace/trial02",
+        "equal_budget/coco_stuff/trace/trial03",
+        "equal_budget/coco_stuff/trace/trial04",
+        "equal_budget/coco_stuff/trace/trial05",
+        "equal_budget/coco_stuff/trace/trial06",
+        "equal_budget/coco_stuff/trace/trial07",
+        "equal_budget/coco_stuff/trace/trial08",
+        "equal_budget/coco_stuff/trace/trial09",
+        "equal_budget/coco_stuff/trace/trial10",
+        "equal_budget/coco_stuff/trace/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/trace/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "trace",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/trace/trial00",
+        "equal_budget/coco_stuff/trace/trial01",
+        "equal_budget/coco_stuff/trace/trial02",
+        "equal_budget/coco_stuff/trace/trial03",
+        "equal_budget/coco_stuff/trace/trial04",
+        "equal_budget/coco_stuff/trace/trial05",
+        "equal_budget/coco_stuff/trace/trial06",
+        "equal_budget/coco_stuff/trace/trial07",
+        "equal_budget/coco_stuff/trace/trial08",
+        "equal_budget/coco_stuff/trace/trial09",
+        "equal_budget/coco_stuff/trace/trial10",
+        "equal_budget/coco_stuff/trace/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/mlmp/trial00",
+        "equal_budget/coco_stuff/mlmp/trial01",
+        "equal_budget/coco_stuff/mlmp/trial02",
+        "equal_budget/coco_stuff/mlmp/trial03",
+        "equal_budget/coco_stuff/mlmp/trial04",
+        "equal_budget/coco_stuff/mlmp/trial05",
+        "equal_budget/coco_stuff/mlmp/trial06",
+        "equal_budget/coco_stuff/mlmp/trial07",
+        "equal_budget/coco_stuff/mlmp/trial08",
+        "equal_budget/coco_stuff/mlmp/trial09",
+        "equal_budget/coco_stuff/mlmp/trial10",
+        "equal_budget/coco_stuff/mlmp/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/mlmp/trial00",
+        "equal_budget/coco_stuff/mlmp/trial01",
+        "equal_budget/coco_stuff/mlmp/trial02",
+        "equal_budget/coco_stuff/mlmp/trial03",
+        "equal_budget/coco_stuff/mlmp/trial04",
+        "equal_budget/coco_stuff/mlmp/trial05",
+        "equal_budget/coco_stuff/mlmp/trial06",
+        "equal_budget/coco_stuff/mlmp/trial07",
+        "equal_budget/coco_stuff/mlmp/trial08",
+        "equal_budget/coco_stuff/mlmp/trial09",
+        "equal_budget/coco_stuff/mlmp/trial10",
+        "equal_budget/coco_stuff/mlmp/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/mlmp/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "mlmp",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/mlmp/trial00",
+        "equal_budget/coco_stuff/mlmp/trial01",
+        "equal_budget/coco_stuff/mlmp/trial02",
+        "equal_budget/coco_stuff/mlmp/trial03",
+        "equal_budget/coco_stuff/mlmp/trial04",
+        "equal_budget/coco_stuff/mlmp/trial05",
+        "equal_budget/coco_stuff/mlmp/trial06",
+        "equal_budget/coco_stuff/mlmp/trial07",
+        "equal_budget/coco_stuff/mlmp/trial08",
+        "equal_budget/coco_stuff/mlmp/trial09",
+        "equal_budget/coco_stuff/mlmp/trial10",
+        "equal_budget/coco_stuff/mlmp/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/tent/trial00",
+        "equal_budget/coco_stuff/tent/trial01",
+        "equal_budget/coco_stuff/tent/trial02",
+        "equal_budget/coco_stuff/tent/trial03",
+        "equal_budget/coco_stuff/tent/trial04",
+        "equal_budget/coco_stuff/tent/trial05",
+        "equal_budget/coco_stuff/tent/trial06",
+        "equal_budget/coco_stuff/tent/trial07",
+        "equal_budget/coco_stuff/tent/trial08",
+        "equal_budget/coco_stuff/tent/trial09",
+        "equal_budget/coco_stuff/tent/trial10",
+        "equal_budget/coco_stuff/tent/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/tent/trial00",
+        "equal_budget/coco_stuff/tent/trial01",
+        "equal_budget/coco_stuff/tent/trial02",
+        "equal_budget/coco_stuff/tent/trial03",
+        "equal_budget/coco_stuff/tent/trial04",
+        "equal_budget/coco_stuff/tent/trial05",
+        "equal_budget/coco_stuff/tent/trial06",
+        "equal_budget/coco_stuff/tent/trial07",
+        "equal_budget/coco_stuff/tent/trial08",
+        "equal_budget/coco_stuff/tent/trial09",
+        "equal_budget/coco_stuff/tent/trial10",
+        "equal_budget/coco_stuff/tent/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/tent/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tent",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/tent/trial00",
+        "equal_budget/coco_stuff/tent/trial01",
+        "equal_budget/coco_stuff/tent/trial02",
+        "equal_budget/coco_stuff/tent/trial03",
+        "equal_budget/coco_stuff/tent/trial04",
+        "equal_budget/coco_stuff/tent/trial05",
+        "equal_budget/coco_stuff/tent/trial06",
+        "equal_budget/coco_stuff/tent/trial07",
+        "equal_budget/coco_stuff/tent/trial08",
+        "equal_budget/coco_stuff/tent/trial09",
+        "equal_budget/coco_stuff/tent/trial10",
+        "equal_budget/coco_stuff/tent/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/tpt/trial00",
+        "equal_budget/coco_stuff/tpt/trial01",
+        "equal_budget/coco_stuff/tpt/trial02",
+        "equal_budget/coco_stuff/tpt/trial03",
+        "equal_budget/coco_stuff/tpt/trial04",
+        "equal_budget/coco_stuff/tpt/trial05",
+        "equal_budget/coco_stuff/tpt/trial06",
+        "equal_budget/coco_stuff/tpt/trial07",
+        "equal_budget/coco_stuff/tpt/trial08",
+        "equal_budget/coco_stuff/tpt/trial09",
+        "equal_budget/coco_stuff/tpt/trial10",
+        "equal_budget/coco_stuff/tpt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/tpt/trial00",
+        "equal_budget/coco_stuff/tpt/trial01",
+        "equal_budget/coco_stuff/tpt/trial02",
+        "equal_budget/coco_stuff/tpt/trial03",
+        "equal_budget/coco_stuff/tpt/trial04",
+        "equal_budget/coco_stuff/tpt/trial05",
+        "equal_budget/coco_stuff/tpt/trial06",
+        "equal_budget/coco_stuff/tpt/trial07",
+        "equal_budget/coco_stuff/tpt/trial08",
+        "equal_budget/coco_stuff/tpt/trial09",
+        "equal_budget/coco_stuff/tpt/trial10",
+        "equal_budget/coco_stuff/tpt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/tpt/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "tpt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/tpt/trial00",
+        "equal_budget/coco_stuff/tpt/trial01",
+        "equal_budget/coco_stuff/tpt/trial02",
+        "equal_budget/coco_stuff/tpt/trial03",
+        "equal_budget/coco_stuff/tpt/trial04",
+        "equal_budget/coco_stuff/tpt/trial05",
+        "equal_budget/coco_stuff/tpt/trial06",
+        "equal_budget/coco_stuff/tpt/trial07",
+        "equal_budget/coco_stuff/tpt/trial08",
+        "equal_budget/coco_stuff/tpt/trial09",
+        "equal_budget/coco_stuff/tpt/trial10",
+        "equal_budget/coco_stuff/tpt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/watt/trial00",
+        "equal_budget/coco_stuff/watt/trial01",
+        "equal_budget/coco_stuff/watt/trial02",
+        "equal_budget/coco_stuff/watt/trial03",
+        "equal_budget/coco_stuff/watt/trial04",
+        "equal_budget/coco_stuff/watt/trial05",
+        "equal_budget/coco_stuff/watt/trial06",
+        "equal_budget/coco_stuff/watt/trial07",
+        "equal_budget/coco_stuff/watt/trial08",
+        "equal_budget/coco_stuff/watt/trial09",
+        "equal_budget/coco_stuff/watt/trial10",
+        "equal_budget/coco_stuff/watt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/watt/trial00",
+        "equal_budget/coco_stuff/watt/trial01",
+        "equal_budget/coco_stuff/watt/trial02",
+        "equal_budget/coco_stuff/watt/trial03",
+        "equal_budget/coco_stuff/watt/trial04",
+        "equal_budget/coco_stuff/watt/trial05",
+        "equal_budget/coco_stuff/watt/trial06",
+        "equal_budget/coco_stuff/watt/trial07",
+        "equal_budget/coco_stuff/watt/trial08",
+        "equal_budget/coco_stuff/watt/trial09",
+        "equal_budget/coco_stuff/watt/trial10",
+        "equal_budget/coco_stuff/watt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/watt/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "watt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/watt/trial00",
+        "equal_budget/coco_stuff/watt/trial01",
+        "equal_budget/coco_stuff/watt/trial02",
+        "equal_budget/coco_stuff/watt/trial03",
+        "equal_budget/coco_stuff/watt/trial04",
+        "equal_budget/coco_stuff/watt/trial05",
+        "equal_budget/coco_stuff/watt/trial06",
+        "equal_budget/coco_stuff/watt/trial07",
+        "equal_budget/coco_stuff/watt/trial08",
+        "equal_budget/coco_stuff/watt/trial09",
+        "equal_budget/coco_stuff/watt/trial10",
+        "equal_budget/coco_stuff/watt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial00",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial01",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial02",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial03",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.0003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial04",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial05",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial06",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial07",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.001,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial08",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial09",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 5,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial10",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 1,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/trial11",
+      "weaknesses": [
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "lr": 0.003,
+        "steps": 10,
+        "batch_size": 2,
+        "calibration": true,
+        "max_images": 128,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": []
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/selected_seed0",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "seed": 0,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/clipartt/trial00",
+        "equal_budget/coco_stuff/clipartt/trial01",
+        "equal_budget/coco_stuff/clipartt/trial02",
+        "equal_budget/coco_stuff/clipartt/trial03",
+        "equal_budget/coco_stuff/clipartt/trial04",
+        "equal_budget/coco_stuff/clipartt/trial05",
+        "equal_budget/coco_stuff/clipartt/trial06",
+        "equal_budget/coco_stuff/clipartt/trial07",
+        "equal_budget/coco_stuff/clipartt/trial08",
+        "equal_budget/coco_stuff/clipartt/trial09",
+        "equal_budget/coco_stuff/clipartt/trial10",
+        "equal_budget/coco_stuff/clipartt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/selected_seed1",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "seed": 1,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/clipartt/trial00",
+        "equal_budget/coco_stuff/clipartt/trial01",
+        "equal_budget/coco_stuff/clipartt/trial02",
+        "equal_budget/coco_stuff/clipartt/trial03",
+        "equal_budget/coco_stuff/clipartt/trial04",
+        "equal_budget/coco_stuff/clipartt/trial05",
+        "equal_budget/coco_stuff/clipartt/trial06",
+        "equal_budget/coco_stuff/clipartt/trial07",
+        "equal_budget/coco_stuff/clipartt/trial08",
+        "equal_budget/coco_stuff/clipartt/trial09",
+        "equal_budget/coco_stuff/clipartt/trial10",
+        "equal_budget/coco_stuff/clipartt/trial11"
+      ]
+    },
+    {
+      "id": "equal_budget/coco_stuff/clipartt/selected_seed2",
+      "weaknesses": [
+        1,
+        2
+      ],
+      "dataset": "coco_stuff",
+      "method": "clipartt",
+      "settings": {
+        "seed": 2,
+        "backend": "shared_legacy",
+        "protocol": "uniform"
+      },
+      "dependencies": [],
+      "select_from": [
+        "equal_budget/coco_stuff/clipartt/trial00",
+        "equal_budget/coco_stuff/clipartt/trial01",
+        "equal_budget/coco_stuff/clipartt/trial02",
+        "equal_budget/coco_stuff/clipartt/trial03",
+        "equal_budget/coco_stuff/clipartt/trial04",
+        "equal_budget/coco_stuff/clipartt/trial05",
+        "equal_budget/coco_stuff/clipartt/trial06",
+        "equal_budget/coco_stuff/clipartt/trial07",
+        "equal_budget/coco_stuff/clipartt/trial08",
+        "equal_budget/coco_stuff/clipartt/trial09",
+        "equal_budget/coco_stuff/clipartt/trial10",
+        "equal_budget/coco_stuff/clipartt/trial11"
+      ]
+    }
+  ],
+  "gpu_policy": "one cell at a time, no parallel seeds; no automatic outcome-dependent search expansion",
+  "stopping": "all manifest cells completed or explicitly failed; no thresholds selected to favor TRACE",
+  "exclusion": "CLIPArTT passed the two-image compatibility smoke; failures on larger cells remain explicit, never numeric substitutes",
+  "limitations": "Historical calibration choices cannot be made label-free retroactively. Uniform protocol is a new sensitivity analysis, not untouched deployment confirmation."
+}

@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/voc20/impulse_noise",
+  "duration_sec": 444.566,
+  "evidence_type": "newly_run",
+  "results": {
+    "impulse_noise": {
+      "mAcc": 87.5,
+      "mAcc_std": 0.0,
+      "mDice": 85.24,
+      "mDice_std": 0.0,
+      "mIoU": 75.84,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

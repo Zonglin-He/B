@@ -1,0 +1,108 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "groups/coco_cd/mlmp",
+    "dataset": "coco_cd",
+    "task": "evaluate",
+    "method": "mlmp",
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "dependencies": [
+      "smoke/controls/coco_cd",
+      "smoke/controls/coco_object",
+      "smoke/groups/noadapt",
+      "smoke/groups/tent",
+      "smoke/groups/tpt",
+      "smoke/groups/mlmp"
+    ]
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "mlmp",
+      "label": "mlmp",
+      "images": 500,
+      "full_split": true,
+      "metrics": {
+        "mIoU": 71.94295861428182,
+        "intersection": [
+          20454111,
+          1499866,
+          1379593
+        ],
+        "union": [
+          22186531,
+          2381251,
+          2274648
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 62.81389682422072,
+        "intersection": [
+          17700608,
+          1973725,
+          1799778
+        ],
+        "union": [
+          21197920,
+          3065041,
+          4438928
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 25088000,
+      "initially_correct_pixels": 21474111,
+      "correct_to_wrong_pixels": 906701,
+      "initially_wrong_pixels": 3613889,
+      "wrong_to_correct_pixels": 2766160,
+      "correct_to_wrong_pct": 4.222298189666618,
+      "wrong_to_correct_pct": 76.54247266587325,
+      "prediction_seal": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/groups/coco_cd/mlmp/mlmp/prediction_seal.json",
+      "prediction_seal_sha256": "5d8d190927faa45ea1ae1d853613e42eb1828f48fdce813f4f9b0668b7a0162b",
+      "worst_group_mIoU": 50.62365782205687,
+      "foreground_errors": {
+        "foreground_pixels": 3996906,
+        "identity_flip_pixels": 22010,
+        "foreground_to_background_pixels": 1095437,
+        "identity_flip_pct": 0.5506759478456587,
+        "foreground_to_background_pct": 27.4071244107317
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 15.9517434341833,
+  "reset_checks": 18,
+  "all_resets_exact": true,
+  "native_cache_equivalence": [],
+  "image_set_sha256": "e6f0934f74ce9bbc480336aad1ee7fa99073308a6e683988c8871f7907d6d61b",
+  "image_order_sha256": "55ccf9157b9eba12318a2a73d3ea37f014bb6128a9db5a40b4118f6e17693a5d"
+}

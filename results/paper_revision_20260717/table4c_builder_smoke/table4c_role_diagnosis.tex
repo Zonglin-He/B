@@ -1,0 +1,15 @@
+\begin{table}[t]
+\centering
+\small
+\caption{Role-specific confidence-source diagnosis over initially correct candidates. C$\rightarrow$H is the correct-to-harm rate. AUC ranks such harmful updates using $1-\rho$.}
+\label{tab:role-source-diagnosis}
+\begin{tabular}{lrrrrrr}
+\toprule
+Role & Regions & $s_{\rm keep}$ & $s_{\rm leak}$ & $s_{\rm cf}$ & C$\rightarrow$H & AUC \\
+\midrule
+Background & 281 & 0.799 & 0.742 & 0.919 & 0.0 & -- \\
+Stuff & 397 & 0.566 & 0.205 & 0.377 & 16.4 & 0.612 \\
+Thing & 688 & 0.562 & 0.431 & 0.495 & 10.8 & 0.656 \\
+\bottomrule
+\end{tabular}
+\end{table}

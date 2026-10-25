@@ -1,0 +1,133 @@
+{
+  "status": "completed",
+  "job": {
+    "id": "context_perturbation/coco_cd/seed1/random_mask",
+    "dataset": "coco_cd",
+    "task": "robustness",
+    "variant": "random_mask",
+    "display_name": "Context random masking",
+    "seed": 1,
+    "config": {
+      "dataset": "COCOCDDataset",
+      "data_subdir": "coco_cd_ovss",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 28,
+      "lr": 0.0086,
+      "steps": 5,
+      "trace_max_regions": 4,
+      "trace_view_batch_size": 8,
+      "class_extensions": false,
+      "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+    },
+    "max_images": 128,
+    "smoke": false,
+    "selection_seed": 20271010
+  },
+  "outcomes": [
+    {
+      "status": "completed",
+      "dataset": "coco_cd",
+      "policy": "random_mask",
+      "label": "random_mask",
+      "images": 128,
+      "full_split": false,
+      "metrics": {
+        "mIoU": 76.23558678147208,
+        "intersection": [
+          5035991,
+          552547,
+          402872
+        ],
+        "union": [
+          5460661,
+          774705,
+          618280
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "pre_metrics": {
+        "mIoU": 64.11029097857158,
+        "intersection": [
+          4446805,
+          605171,
+          466379
+        ],
+        "union": [
+          5322497,
+          920369,
+          1083835
+        ],
+        "present_classes": [
+          0,
+          1,
+          2
+        ]
+      },
+      "valid_pixels": 6422528,
+      "initially_correct_pixels": 5518355,
+      "correct_to_wrong_pixels": 131077,
+      "initially_wrong_pixels": 904173,
+      "wrong_to_correct_pixels": 604132,
+      "correct_to_wrong_pct": 2.3752911873194096,
+      "wrong_to_correct_pct": 66.81597437658502,
+      "prediction_seal": "/home/wwww/hzl/results/rebuttal_original_20261025_122642/cells/context_perturbation/coco_cd/seed1/random_mask/random_mask/prediction_seal.json",
+      "prediction_seal_sha256": "afd5d7d921d41c13d6f8d192a257d0a39306f87a8b75d5c4a100b730ec28e76a",
+      "worst_group_mIoU": 49.718422241645285,
+      "foreground_errors": {
+        "foreground_pixels": 1133768,
+        "identity_flip_pixels": 6448,
+        "foreground_to_background_pixels": 171901,
+        "identity_flip_pct": 0.5687230544520572,
+        "foreground_to_background_pct": 15.161920251762265
+      },
+      "split_counts": {},
+      "evaluation_scope": "balanced 500-image test"
+    }
+  ],
+  "duration_seconds": 25.113607097417116,
+  "native_cache_equivalence": {
+    "exact": true,
+    "update_steps": 5,
+    "parameter_sha256": "232dbb7851dc9be72c0169b173e725453e8985f4db9cfd0889669d1ffc5fdd9c",
+    "optimizer_sha256": "959494283d71c2470149828d406f8df77b0df2ca9db98ac2118386227646c6ac",
+    "diagnostics_enabled": true
+  },
+  "source_checks_sha256": "8d30f84e2cb331fdae56c356f1ce3daaf3a41d5b2b4d7ad4e7c4418c652e78a8",
+  "source_model_parameters_sha256": "e98788d30cd2a2a7e377b2919763add5c152a81e9cec7b442d2d7be38accb5c9",
+  "K": 4,
+  "actual_stepcounts": [
+    5,
+    5,
+    5,
+    5,
+    5
+  ],
+  "configured_steps": 5,
+  "module_variants": [
+    "full",
+    "without_region_construction",
+    "without_source_tracing",
+    "without_reliability_weighting"
+  ],
+  "selected_variant": "random_mask",
+  "image_order_sha256": "dc01b378e4cc434224b904ced95aad4ac9251d838d526fca922fe12041201685",
+  "timing": {
+    "estimate_seconds": 5.625428542494774,
+    "update_seconds": 2.3877344839274883,
+    "diagnostic_seconds": 0.0
+  },
+  "evidence_scope": "fixed diagnostic subset",
+  "full_unfavorable_results_retained": true
+}

@@ -1,0 +1,64 @@
+# Per-Dataset Table 4(c) Baseline Expansion
+
+## Protocol
+
+- Evidence type: newly run matched-candidate analysis plus reused matched runs for NoAdapt/TENT/MLMP/CFC-TTA.
+- Datasets are reported separately; no cross-dataset pooling is used.
+- Candidate masks and CFC reliability are frozen before adaptation.
+- Quartiles are assigned within each dataset and semantic role, then shared across methods.
+- Correct-to-harm is conditioned on each method's own initially correct candidate prediction.
+- AUC is undefined when a method creates no harmful transitions, as for No Adapt.
+
+## Compact Results
+
+### VOC20
+
+| Method | mIoU | Q1 C->H | Q2 | Q3 | Q4 | CFC-risk AUC | Entropy AUC | Flip |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| No Adapt | 75.79 | 0.0% | 0.0% | 0.0% | 0.0% | -- | -- | 0.0% |
+| TENT | 70.89 | 35.7% | 32.5% | 20.0% | 21.9% | 0.585 | 0.687 | 16.3% |
+| MLMP | 81.96 | 24.3% | 14.2% | 9.4% | 5.9% | 0.662 | 0.709 | 11.6% |
+| CFC-TTA | 83.49 | 29.7% | 14.8% | 8.3% | 6.9% | 0.685 | 0.704 | 14.1% |
+
+### PC60
+
+| Method | mIoU | Q1 C->H | Q2 | Q3 | Q4 | CFC-risk AUC | Entropy AUC | Flip |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| No Adapt | 27.47 | 0.0% | 0.0% | 0.0% | 0.0% | -- | -- | 0.0% |
+| TENT | 25.68 | 19.9% | 24.9% | 17.5% | 16.0% | 0.481 | 0.671 | 15.8% |
+| MLMP | 28.40 | 12.0% | 18.1% | 14.2% | 8.7% | 0.495 | 0.667 | 9.0% |
+| CFC-TTA | 28.83 | 15.8% | 21.7% | 10.1% | 3.6% | 0.655 | 0.679 | 13.2% |
+
+### COCO-CD
+
+| Method | mIoU | Q1 C->H | Q2 | Q3 | Q4 | CFC-risk AUC | Entropy AUC | Flip |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| No Adapt | 62.76 | 0.0% | 0.0% | 0.0% | 0.0% | -- | -- | 0.0% |
+| TENT | 71.76 | 0.0% | 0.0% | 0.0% | 0.0% | -- | -- | 5.8% |
+| MLMP | 71.17 | 0.0% | 0.0% | 0.0% | 0.0% | -- | -- | 2.9% |
+| CFC-TTA | 73.04 | 3.4% | 1.7% | 1.7% | 0.0% | 0.934 | 0.517 | 5.3% |
+
+### Waterbirds-Seg
+
+| Method | mIoU | Q1 C->H | Q2 | Q3 | Q4 | CFC-risk AUC | Entropy AUC | Flip |
+|---|---:|---:|---:|---:|---:|---:|---:|---:|
+| No Adapt | 39.96 | 0.0% | 0.0% | 0.0% | 0.0% | -- | -- | 0.0% |
+| TENT | 45.36 | 8.4% | 2.9% | 0.0% | 1.2% | 0.703 | 0.783 | 14.8% |
+| MLMP | 42.59 | 27.7% | 14.7% | 9.5% | 4.8% | 0.863 | 0.804 | 17.3% |
+| CFC-TTA | 49.26 | 9.6% | 10.8% | 2.4% | 3.6% | 0.884 | 0.770 | 18.9% |
+
+## Alignment Audit
+
+| Dataset | Diagnostic candidates | Shared valid candidates | Shared fraction | Max reliability delta |
+|---|---:|---:|---:|---:|
+| VOC20 | 1328 | 841 | 63.3% | 0 |
+| PC60 | 1920 | 1920 | 100.0% | 0 |
+| COCO-CD | 240 | 240 | 100.0% | 0 |
+| Waterbirds-Seg | 480 | 480 | 100.0% | 0 |
+
+## Artifacts
+
+- Detailed quartiles: `/home/wwww/hzl/results/paper_revision_20260718/table4c_existing4_builder_check/per_dataset_method_quartiles.csv`
+- Method summaries and AUC: `/home/wwww/hzl/results/paper_revision_20260718/table4c_existing4_builder_check/per_dataset_method_summary.csv`
+- LaTeX table: `/home/wwww/hzl/results/paper_revision_20260718/table4c_existing4_builder_check/table4c_per_dataset_baselines.tex`
+- Provenance: `/home/wwww/hzl/results/paper_revision_20260718/table4c_existing4_builder_check/provenance.json`

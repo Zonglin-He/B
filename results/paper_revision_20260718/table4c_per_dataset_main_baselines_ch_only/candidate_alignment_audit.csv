@@ -1,0 +1,5 @@
+dataset,reference_candidates,extra_candidates,shared_candidates,max_abs_reliability_delta,exact_candidate_match
+voc20,1328,1328,1328,0.0,True
+pc60,1920,1920,1920,0.0,True
+coco_cd,240,240,240,0.0,True
+waterbirds_seg,480,480,480,0.0,True

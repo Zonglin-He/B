@@ -1,0 +1,29 @@
+evidence_type,dataset,dataset_label,method,method_label,num_shared_regions,num_initially_correct,num_correct_to_harm,correct_to_harm_rate,flip_incidence_initially_correct,mean_flipped_pixel_rate_initially_correct
+newly_run_matched_candidate_analysis,voc20,VOC20,noadapt,No Adapt,841,686,0,0.0,0.0,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,tent,TENT,841,679,183,0.2695139911634757,0.40795287187039764,0.1308153715379936
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,841,679,327,0.48159057437407954,0.5699558173784978,0.24055904792388344
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,841,685,220,0.32116788321167883,0.44963503649635034,0.2559992418308567
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,841,679,195,0.28718703976435933,0.41384388807069217,0.17583743212654368
+newly_run_matched_candidate_analysis,voc20,VOC20,mlmp,MLMP,841,686,88,0.1282798833819242,0.27696793002915454,0.07223668472112768
+newly_run_matched_candidate_analysis,voc20,VOC20,cfctta,CFC-TTA,841,686,97,0.141399416909621,0.29737609329446063,0.08745447278482063
+newly_run_matched_candidate_analysis,pc60,PC60,noadapt,No Adapt,1920,984,0,0.0,0.0,0.0
+newly_run_matched_candidate_analysis,pc60,PC60,tent,TENT,1920,919,174,0.1893362350380849,0.5233949945593036,0.10725422766761676
+newly_run_matched_candidate_analysis,pc60,PC60,tpt,TPT,1920,918,387,0.4215686274509804,0.7516339869281046,0.2557337025302137
+newly_run_matched_candidate_analysis,pc60,PC60,watt,WATT,1920,970,686,0.7072164948453609,0.8536082474226804,0.5279059602033777
+newly_run_matched_candidate_analysis,pc60,PC60,clipartt,CLIPArTT,1920,917,366,0.39912758996728465,0.6205016357688113,0.1834447348916584
+newly_run_matched_candidate_analysis,pc60,PC60,mlmp,MLMP,1920,984,127,0.1290650406504065,0.3404471544715447,0.06189588339439957
+newly_run_matched_candidate_analysis,pc60,PC60,cfctta,CFC-TTA,1920,984,111,0.11280487804878049,0.4451219512195122,0.08686695130795928
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,noadapt,No Adapt,240,235,0,0.0,0.0,0.0
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tent,TENT,240,232,0,0.0,0.30603448275862066,0.05082073396148064
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,tpt,TPT,240,232,21,0.09051724137931035,0.4956896551724138,0.126570525092418
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,watt,WATT,240,237,109,0.459915611814346,0.6118143459915611,0.23989986288675622
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,clipartt,CLIPArTT,240,232,40,0.1724137931034483,0.24568965517241378,0.05552161820930356
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,mlmp,MLMP,240,235,0,0.0,0.10638297872340426,0.025978420248770333
+newly_run_matched_candidate_analysis,coco_cd,COCO-CD,cfctta,CFC-TTA,240,235,4,0.01702127659574468,0.22127659574468084,0.048484537348230466
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,noadapt,No Adapt,480,364,0,0.0,0.0,0.0
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tent,TENT,480,354,11,0.031073446327683617,0.711864406779661,0.1125570013717943
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,tpt,TPT,480,353,37,0.1048158640226629,0.7960339943342776,0.2006831444251132
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,watt,WATT,480,374,261,0.6978609625668449,0.9064171122994652,0.42283448039300064
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,clipartt,CLIPArTT,480,354,215,0.6073446327683616,0.7429378531073446,0.28008087950569216
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,mlmp,MLMP,480,364,53,0.14560439560439561,0.5137362637362637,0.13869510316622577
+newly_run_matched_candidate_analysis,waterbirds_seg,Waterbirds-Seg,cfctta,CFC-TTA,480,364,25,0.06868131868131869,0.6071428571428571,0.12601813765442266

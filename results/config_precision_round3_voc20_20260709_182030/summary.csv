@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+voc20,ok,85.04,91.46,92.89,83.76,1.2800000000000011,1,460.49,results/config_precision_round3_voc20_20260709_182030/voc20/minimal_cfc/run.log,newly_run,paper_ready

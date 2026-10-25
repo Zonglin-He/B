@@ -1,0 +1,3289 @@
+{
+  "version": 1,
+  "created_at": "2026-10-25T04:26:46.603327+00:00",
+  "project_root": "/home/wwww/hzl",
+  "output_root": "/home/wwww/hzl/results/rebuttal_original_20261025_122642",
+  "source_root": "/home/wwww/hzl/results/reviewer_followup_20261010_123627",
+  "source_archive_sha256": "4dd3a31272c351c1aee238a3ea530778c38aa680183b7369e972b492ac49f976",
+  "source_hashes": {
+    "data/waterbirds_seg/correlation_0.95/images/metadata.csv": "307165f782c614a8f30397990eed9a160dc93b381ca1f98cdaac3792362915e0",
+    "external/label-flips/annotations/coco_cd/instances_test_balanced.json": "05e56f9e0145778cc2d6d8921c7c8bc4ee383449b5bd27dba42473eecc9c585f",
+    "external/label-flips/src/segshort/dataset_generation/generate_coco_cd.py": "1e2840a9893f37ff77c38a6a6869477ce13d442b39bcf30878f36b0577fb11ad",
+    "results/reviewer_response_20260929/baseline_source/adapt/__init__.py": "d512346fd528d3ceeac7a99949187736ca136b8e305f7f2683d954f425dc014f",
+    "results/reviewer_response_20260929/baseline_source/adapt/cfctta.py": "b47e4cb63a409256fd8ebf56bbcd84c6ee1be71252cb7437800c0d7fd0a503e9",
+    "results/reviewer_response_20260929/baseline_source/adapt/clipartt.py": "48950b5444d8a39f8666a1102078f013c3992c41f69cca1a968f246d3568e574",
+    "results/reviewer_response_20260929/baseline_source/adapt/mlmp.py": "e9d9fa10a48315e826723b771c37226970339bee2ec3dee3dcf0beb9d35f50b4",
+    "results/reviewer_response_20260929/baseline_source/adapt/tent.py": "83ca3e8c3680c7b4233dffdc3716721610b37aa33ed71fce3d901563e81ce555",
+    "results/reviewer_response_20260929/baseline_source/adapt/tpt.py": "7e5fd6dc3760edde84f2bb152da3acabe61b2fabeafe4c5d922fa65b448a70eb",
+    "results/reviewer_response_20260929/baseline_source/adapt/watt.py": "a6a05a69c03b897b4503b056c8ee5dbaa9736f2d9a3a371c5f28a272d8e2235c",
+    "results/reviewer_response_20260929/baseline_source/main.py": "9df7e5a3cfbf742defd6dda9521e82281974b47206e240dc1b01364aa07750b3",
+    "results/reviewer_response_20260929/baseline_source/mmcv/__init__.py": "cd4cedc8a4a0e732defff93a7c49d873649c324b71e60792df5d1c18c5b0b980",
+    "results/reviewer_response_20260929/baseline_source/mmcv/transforms/__init__.py": "a49f78682e3780b3bedf5ec04ba41955843aa722e48336c47622f3ec1f4f4da9",
+    "results/reviewer_response_20260929/baseline_source/mmcv/transforms/loading.py": "90d6a0634465a0423fc61db2bdbde2c5bbaec6644dd06023a77cca1441059911",
+    "results/reviewer_response_20260929/baseline_source/mmcv/transforms/processing.py": "994497a9e54c123df9220a7dfc6cea5b351445a362937e2b371492ce8d7dba62",
+    "results/reviewer_response_20260929/baseline_source/mmengine/__init__.py": "3e22d6f298a33ef12541738359f30de8df116f3d58eca03898de110d922378f8",
+    "results/reviewer_response_20260929/baseline_source/mmengine/fileio.py": "923f5fc2c5cd00c5e746e78e49ecb153413a48503522603ad7fce36b2a3858b2",
+    "results/reviewer_response_20260929/baseline_source/mmengine/registry.py": "454d0f6ae1b9befdf5f83d3705c8695e8bfc9e097c324b7c1d4cd7510704f459",
+    "results/reviewer_response_20260929/baseline_source/ovss/__init__.py": "42d5698372dcfce0466afac079579b9294d23628bcbead80db0a7ed8697105b5",
+    "results/reviewer_response_20260929/baseline_source/ovss/clip/__init__.py": "d7930eb290ebed432116795c91473200d098451a94c0aedd4ae0f934f97955e8",
+    "results/reviewer_response_20260929/baseline_source/ovss/clip/clip.py": "4ab4d5187823792c14997808854fe219dc485042606d439757a704a20d57aaf4",
+    "results/reviewer_response_20260929/baseline_source/ovss/clip/model.py": "439b1aa1742eeb2d925c56fc533d69029217e09cd386803a500952b3a81e0d82",
+    "results/reviewer_response_20260929/baseline_source/ovss/clip/simple_tokenizer.py": "d1b09f10ed3d1e2c343619cb98cbfacb92363dd8607526a43aa7fe2d60d15bad",
+    "results/reviewer_response_20260929/baseline_source/prompts.yaml": "22ce4f928f024acc16195be5509bf53ca39dd5d1e66c18cda7fc860336a6bcdf",
+    "results/reviewer_response_20260929/baseline_source/utils/corruption_cache.py": "b37a99e7fc05ccb79cc12def83e39b19901f21866b301ea0df281f865313a0d8",
+    "results/reviewer_response_20260929/baseline_source/utils/imagecorruptions/__init__.py": "6dc44de7c0ec9079493a66a3a2eb17392eed6ca3eba2b0306012488ec874d755",
+    "results/reviewer_response_20260929/baseline_source/utils/imagecorruptions/corruptions.py": "6b35d2062301d779c0f042c7c11e0f7752ac5661a48d3d64962a3fcfdc40f86a",
+    "results/reviewer_response_20260929/baseline_source/utils/metrics.py": "61b1c9cd1af02e94e12a33b85938db761ddfd4681af02876f9c661477e1ad347",
+    "results/reviewer_response_20260929/baseline_source/utils/misc.py": "d74059c41b2113736ecbaf74c89626d704b7f6cc4ab64ca88402b006e9c50769",
+    "results/reviewer_response_20260929/baseline_source/utils/mm_transforms.py": "5721a746635152af8d2124f75fc8295d05adc44e0cebccbae507e60be35e8245",
+    "results/reviewer_response_20260929/baseline_source/utils/pamr.py": "b7b9d59049fac6c74f38538930f8785adbc65c7ecc1ff3d0bd13f8e5975fde96",
+    "results/reviewer_response_20260929/baseline_source/utils/segmentation_datasets.py": "869a5b22ee5e1ffbf5b5d09eec33d1fd5aec7260b9c284746cedf9bff821370c",
+    "results/reviewer_response_20260929/baseline_source/utils/simple_seg_dataset.py": "5b7b5d38c7666eeb2d91e3e05a013c9836b5df9c748668c091e906a0edcddf7f",
+    "tools/reviewer_followup/README.md": "95107ccf20e278c0487c841d14a2dca044b974d7e0d356fb279816294206c902",
+    "tools/reviewer_followup/metrics.py": "1b8f56e8faa042a84b99eb29c63570ab0506726a2731ed2c169aa478e1df480c",
+    "tools/reviewer_followup/offline.py": "dafc772e66ccf23bad89db139eaae0c5e807d532d27643d55f3c3a8b1ba3dc8e",
+    "tools/reviewer_followup/policies.py": "dfce5952cdfa2e1987251795212f173bcdfc19cfe449274348a3f22c12379948",
+    "tools/reviewer_followup/run_cell.py": "f351a54e3e2f2e12391b21e3edbc1abe48841c4f61d4c884fa230b30b1178103",
+    "tools/reviewer_followup/run_queue.py": "56e4188973a1a103d49d64ff751c633612b704172fe62a82ece1935893346333",
+    "tools/reviewer_followup/test_followup.py": "301aded2e4da2c877485b33369af0f63cd04c9b9cf3421a4f4568857e830fa8b",
+    "tools/reviewer_response/common.py": "033956fc1f7f8e6d519cd4c761a8b73a9036da2d348eb776baa2cc052cdbfffa",
+    "trace_ovss/__init__.py": "ea5f30edfa17048af7f081eee752e2fb720de5021f29e6da121d115f5e547c5c",
+    "trace_ovss/cli.py": "8f2adeb3c1a2fc3e04266726288530d38ce4880cb525ed802cf0a1fdae1adad5",
+    "trace_ovss/configs/__init__.py": "e964f921b4a240681f559ac61bc3ff828be9a63dca974325242c00f3f313d14b",
+    "trace_ovss/configs/trace.py": "f73610a4641f99dde910762a729dc5f508a391b97efaf5964396509ddd9e2d83",
+    "trace_ovss/data/__init__.py": "13da85dd130c0d3ce9915d834efc59dbdf4cfbadeb708fe3ac077a5e2e1e5ada",
+    "trace_ovss/data/datasets.py": "5e9472080c11d110a468c76c108d67e267aae79ebd35682edcd3890f2ab64830",
+    "trace_ovss/data/roles.py": "6dd3233db198b98b9b4053eda5122ad176c142bd25a8f350e0a30e4cec81eadf",
+    "trace_ovss/data/vocabulary.py": "96fadcd04a2a60d9261e34649b53fc94beef79978e4d21f787ce0adf86c4f3e0",
+    "trace_ovss/evaluation/__init__.py": "955d8d114124550ab94e75652e6a8936a0a58f3c386620b079874e7954a6b016",
+    "trace_ovss/evaluation/metrics.py": "a1bb3eda1fddb15e73c70d7e3b20568c431283b8dad2d3977c4ef5bce32021ff",
+    "trace_ovss/evaluation/patches.py": "a53fc59b7cef866bcd0f38ca2b7f68a321e55b5d3388033d075886277acdb78e",
+    "trace_ovss/method/__init__.py": "d46a2071aa2ff0aaf7b17c2313d241856fdf15c3c0e5222062b3b173d328aa0a",
+    "trace_ovss/method/adapter.py": "9c4b7229c1c999c7f75bc7b252c20575f7f49638d7bf5290d30d0a754df58068",
+    "trace_ovss/method/trace/__init__.py": "0704d39c5e467a68d97832b437c45b2b418dc7a4572234096f225f68b0dd1453",
+    "trace_ovss/method/trace/candidates.py": "4be2a5b6fdaf22607c9e637e4ec03b8d1048f2aa26741f8c69fbe690c80dea7e",
+    "trace_ovss/method/trace/constants.py": "51d2c616f8aa82d217ceaf681e83b27e79dc8412d3ab681b6b5350db3f269508",
+    "trace_ovss/method/trace/engine.py": "5b93d48345b53850898dca8053b32ffecca9533f2c972e0132db65f232b781e1",
+    "trace_ovss/method/trace/estimator.py": "5526406f2fd24ea7ee307dc490bdd027d896b1f631995b4c545e307cd14ef35a",
+    "trace_ovss/method/trace/indexing.py": "514bca2f55c41d3be6ffce4cbb2dc682df9190413d8e7d6382c0ee00c2a04dc6",
+    "trace_ovss/method/trace/interventions.py": "12b777fb0a66ba0bb3d960e8f144def33dfe52c0a3c6bb9c0896bda0bab12cd9",
+    "trace_ovss/method/trace/objective.py": "d1dce2a27de03a371b8d00716609c49676b6a444c6d0f4e39b3c09963c8af589",
+    "trace_ovss/method/trace/reliability.py": "584655e594f3851aa860537709ad394fbf9e7d9c75721722de672fdbd80bdfda",
+    "trace_ovss/models/__init__.py": "2ec2a907ab7a5794a7723c83d0d046a2612ae7373eeebf95516066913d022901",
+    "trace_ovss/models/_vendor_clip/__init__.py": "c6c2be395aa9cacedb0c243a1a2a8dcc74300029d813aa9e1bd97d6f8bef4916",
+    "trace_ovss/models/_vendor_clip/clip.py": "7e7725c8210f5bbb83eb05d094e9470ed65639c671138c1217b5fa3368ef58dd",
+    "trace_ovss/models/_vendor_clip/model.py": "e4411cfbad17b7c531c60cb860ae4aeac826d73092ce00243f25d6eb7f020c17",
+    "trace_ovss/models/_vendor_clip/simple_tokenizer.py": "51df5371fe5ac7ad9e3d49219496fe403384ef610aec22f9a0fe9fd60ca1ba69",
+    "trace_ovss/models/dense_clip.py": "cbaaaf66fe9e4fe5fb0d6a96d38e081ad9b5ed9eda67a6bcddbb066e5716d6c2",
+    "trace_ovss/resources/__init__.py": "1cd6233658739b1bf45c1bbd39ab4502d6798a2fcdca46e7f983186b79ea245b",
+    "trace_ovss/resources/class_names/__init__.py": "7052da937da40ea8a30e343760c0064f9d70993d598ff178a0765321264fd68f"
+  },
+  "experiment_hashes": {
+    "tools/reviewer_original/run_queue.py": "a05939a223ce04ef1929667369b03bd0e79ff4c3e1a657e211ffedd3b03387c1",
+    "tools/reviewer_original/run_cell.py": "d58a6c343407a6ccf35699786c2b9941db9d78c4991473720cc4dea2e9376776",
+    "tools/reviewer_original/test_offline.py": "5aa79c7061d707e72439903ece57e4570ce10a9c3a7cd0cd432e08066ed4ae28",
+    "tools/reviewer_original/test_queue.py": "011c6e8b5f42f2b0d2c1ff7998d64ad3a5ce8f737bcadc871d367f409488e88e",
+    "tools/reviewer_original/offline.py": "cf5ed532f381c7e775f22018af30ee9ba6b7461d4a0a8e9ce01965102880fc5c",
+    "tools/reviewer_original/test_cells.py": "3d15f27a8ffee4a603443a359ac3588c39c43d5af45ca872ac6ef7018fa42bf9"
+  },
+  "resource_hashes": {
+    "trace_ovss/resources/prompts.txt": "6d182bb38a67d27a488498fba48ded6a884cc244696114ff25b4f342a703d433",
+    "trace_ovss/resources/NOTICE.md": "8986eb77f6ddc38ec91418445828089c0712a82d94435842650af1ffdd888b05",
+    "trace_ovss/resources/class_names/cls_voc20.txt": "c68f65a2b342397cdfe05ff5289517e1e370b1d574a218ff1a17db27f2576db1",
+    "trace_ovss/resources/class_names/cls_coco_stuff.txt": "fb98709b9ab1baff4fd930bac4a77772a0458c7d534911de545f9a4081e14a3e",
+    "trace_ovss/resources/class_names/waterbirds_seg.txt": "3b06e13e8fb22d42fd52bcc378ed06a18de293cdb5afa47e3650b41f8d5ac8fb",
+    "trace_ovss/resources/class_names/cls_context60.txt": "c8278f9257ab2ed0d7499b99bd6c69485d15881768e26c64b01ee6cefad39eac",
+    "trace_ovss/resources/class_names/coco_cd.txt": "6919f57f710db460f52caeceb9b035cb55aac0496caa151adeb280629888d9e7",
+    "trace_ovss/resources/class_names/cls_coco_object.txt": "3475d03d61f85ce03812ce62d019de8f2ea51053885374629d29a17fbd3f02a6",
+    "trace_ovss/resources/class_names/cls_city_scapes.txt": "6f6782fc1bf92bfd9f5562192e92045e0e093870e613f387f6c98fc66d4ceba4",
+    "trace_ovss/resources/class_names/cls_voc21.txt": "80e643a9a143966800cd4a49324fd0be2f94c0d7bac817ea16a5f66ed706bc38",
+    "trace_ovss/resources/class_names/cls_context59.txt": "cd808465f06a16169edc25580073f0eda347e64f06cc1c2e24acd0b237f6497d",
+    "trace_ovss/resources/licenses/NACLIP_LICENSE.txt": "a929829742b07fb590d0cd8f0dbf437565fc559ee481ba8121ffa962730822db",
+    "results/reviewer_response_20260929/baseline_source/ovss/clip/bpe_simple_vocab_16e6.txt.gz": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+    "trace_ovss/models/_vendor_clip/bpe_simple_vocab_16e6.txt.gz": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a"
+  },
+  "jobs": [
+    {
+      "id": "smoke/ablation/full",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "smoke/ablation/without_region_construction",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "smoke/ablation/without_source_tracing",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "smoke/ablation/without_reliability_weighting",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "smoke/robustness/gaussian_noise",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "gaussian_noise",
+      "display_name": "Context Gaussian noise",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "smoke/robustness/random_mask",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "random_mask",
+      "display_name": "Context random masking",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "smoke/robustness/color_style",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "color_style",
+      "display_name": "Context color transform",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "smoke/refresh/clean/frozen",
+      "dataset": "coco_cd",
+      "task": "refresh",
+      "variant": "frozen",
+      "display_name": "Fixed source-model weights",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010,
+      "condition": "clean"
+    },
+    {
+      "id": "smoke/refresh/clean/midpoint",
+      "dataset": "coco_cd",
+      "task": "refresh",
+      "variant": "midpoint",
+      "display_name": "One midpoint refresh",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010,
+      "condition": "clean"
+    },
+    {
+      "id": "smoke/refresh/gaussian_noise_s3/midpoint",
+      "dataset": "coco_cd",
+      "task": "refresh",
+      "variant": "midpoint",
+      "display_name": "One midpoint refresh",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010,
+      "condition": "gaussian_noise_s3"
+    },
+    {
+      "id": "smoke/selection/top_confidence",
+      "dataset": "coco_object",
+      "task": "selection",
+      "variant": "top_confidence",
+      "display_name": "Confidence top-K",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010,
+      "audit_all": true
+    },
+    {
+      "id": "smoke/selection/random",
+      "dataset": "coco_object",
+      "task": "selection",
+      "variant": "random",
+      "display_name": "Random K",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010,
+      "audit_all": false
+    },
+    {
+      "id": "smoke/selection/spatial",
+      "dataset": "coco_object",
+      "task": "selection",
+      "variant": "spatial",
+      "display_name": "Spatially spread K",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 4,
+      "smoke": true,
+      "selection_seed": 20271010,
+      "audit_all": false
+    },
+    {
+      "id": "refresh/coco_cd/clean/frozen",
+      "dataset": "coco_cd",
+      "task": "refresh",
+      "variant": "frozen",
+      "display_name": "Fixed source-model weights",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "clean"
+    },
+    {
+      "id": "refresh/coco_cd/clean/midpoint",
+      "dataset": "coco_cd",
+      "task": "refresh",
+      "variant": "midpoint",
+      "display_name": "One midpoint refresh",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "clean"
+    },
+    {
+      "id": "refresh/coco_cd/gaussian_noise_s3/frozen",
+      "dataset": "coco_cd",
+      "task": "refresh",
+      "variant": "frozen",
+      "display_name": "Fixed source-model weights",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "gaussian_noise_s3"
+    },
+    {
+      "id": "refresh/coco_cd/gaussian_noise_s3/midpoint",
+      "dataset": "coco_cd",
+      "task": "refresh",
+      "variant": "midpoint",
+      "display_name": "One midpoint refresh",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "gaussian_noise_s3"
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed0/default",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "default",
+      "display_name": "Default context perturbation",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed0/gaussian_noise",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "gaussian_noise",
+      "display_name": "Context Gaussian noise",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed0/random_mask",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "random_mask",
+      "display_name": "Context random masking",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed0/color_style",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "color_style",
+      "display_name": "Context color transform",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed1/default",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "default",
+      "display_name": "Default context perturbation",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed1/gaussian_noise",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "gaussian_noise",
+      "display_name": "Context Gaussian noise",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed1/random_mask",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "random_mask",
+      "display_name": "Context random masking",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed1/color_style",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "color_style",
+      "display_name": "Context color transform",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed2/default",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "default",
+      "display_name": "Default context perturbation",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed2/gaussian_noise",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "gaussian_noise",
+      "display_name": "Context Gaussian noise",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed2/random_mask",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "random_mask",
+      "display_name": "Context random masking",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/coco_cd/seed2/color_style",
+      "dataset": "coco_cd",
+      "task": "robustness",
+      "variant": "color_style",
+      "display_name": "Context color transform",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "refresh/pc60/clean/frozen",
+      "dataset": "pc60",
+      "task": "refresh",
+      "variant": "frozen",
+      "display_name": "Fixed source-model weights",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "clean"
+    },
+    {
+      "id": "refresh/pc60/clean/midpoint",
+      "dataset": "pc60",
+      "task": "refresh",
+      "variant": "midpoint",
+      "display_name": "One midpoint refresh",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "clean"
+    },
+    {
+      "id": "refresh/pc60/gaussian_noise_s3/frozen",
+      "dataset": "pc60",
+      "task": "refresh",
+      "variant": "frozen",
+      "display_name": "Fixed source-model weights",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "gaussian_noise_s3"
+    },
+    {
+      "id": "refresh/pc60/gaussian_noise_s3/midpoint",
+      "dataset": "pc60",
+      "task": "refresh",
+      "variant": "midpoint",
+      "display_name": "One midpoint refresh",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "condition": "gaussian_noise_s3"
+    },
+    {
+      "id": "context_perturbation/pc60/seed0/default",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "default",
+      "display_name": "Default context perturbation",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed0/gaussian_noise",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "gaussian_noise",
+      "display_name": "Context Gaussian noise",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed0/random_mask",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "random_mask",
+      "display_name": "Context random masking",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed0/color_style",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "color_style",
+      "display_name": "Context color transform",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed1/default",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "default",
+      "display_name": "Default context perturbation",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed1/gaussian_noise",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "gaussian_noise",
+      "display_name": "Context Gaussian noise",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed1/random_mask",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "random_mask",
+      "display_name": "Context random masking",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed1/color_style",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "color_style",
+      "display_name": "Context color transform",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed2/default",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "default",
+      "display_name": "Default context perturbation",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed2/gaussian_noise",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "gaussian_noise",
+      "display_name": "Context Gaussian noise",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed2/random_mask",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "random_mask",
+      "display_name": "Context random masking",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "context_perturbation/pc60/seed2/color_style",
+      "dataset": "pc60",
+      "task": "robustness",
+      "variant": "color_style",
+      "display_name": "Context color transform",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "selection/pc60/top_confidence",
+      "dataset": "pc60",
+      "task": "selection",
+      "variant": "top_confidence",
+      "display_name": "Confidence top-K",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "selection/pc60/random",
+      "dataset": "pc60",
+      "task": "selection",
+      "variant": "random",
+      "display_name": "Random K",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "selection/pc60/spatial",
+      "dataset": "pc60",
+      "task": "selection",
+      "variant": "spatial",
+      "display_name": "Spatially spread K",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "selection_audit/pc60/all_candidates",
+      "dataset": "pc60",
+      "task": "selection",
+      "variant": "top_confidence",
+      "display_name": "Confidence top-K",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 64,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "audit_all": true
+    },
+    {
+      "id": "selection/coco_object/top_confidence",
+      "dataset": "coco_object",
+      "task": "selection",
+      "variant": "top_confidence",
+      "display_name": "Confidence top-K",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "selection/coco_object/random",
+      "dataset": "coco_object",
+      "task": "selection",
+      "variant": "random",
+      "display_name": "Random K",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "selection/coco_object/spatial",
+      "dataset": "coco_object",
+      "task": "selection",
+      "variant": "spatial",
+      "display_name": "Spatially spread K",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 128,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "selection_audit/coco_object/all_candidates",
+      "dataset": "coco_object",
+      "task": "selection",
+      "variant": "top_confidence",
+      "display_name": "Confidence top-K",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 64,
+      "smoke": false,
+      "selection_seed": 20271010,
+      "audit_all": true
+    },
+    {
+      "id": "ablation/coco_cd/seed0/without_region_construction",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed0/without_source_tracing",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed0/without_reliability_weighting",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed1/full",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed1/without_region_construction",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed1/without_source_tracing",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed1/without_reliability_weighting",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed2/full",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed2/without_region_construction",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed2/without_source_tracing",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_cd/seed2/without_reliability_weighting",
+      "dataset": "coco_cd",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed0/without_region_construction",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed0/without_source_tracing",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed0/without_reliability_weighting",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed1/full",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed1/without_region_construction",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed1/without_source_tracing",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed1/without_reliability_weighting",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed2/full",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed2/without_region_construction",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed2/without_source_tracing",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/pc60/seed2/without_reliability_weighting",
+      "dataset": "pc60",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed0/without_region_construction",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed0/without_source_tracing",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed0/without_reliability_weighting",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 0,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed1/full",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed1/without_region_construction",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed1/without_source_tracing",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed1/without_reliability_weighting",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 1,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed2/full",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed2/without_region_construction",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed2/without_source_tracing",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/voc21/seed2/without_reliability_weighting",
+      "dataset": "voc21",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 2,
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed0/without_region_construction",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed0/without_source_tracing",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed0/without_reliability_weighting",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 0,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed1/full",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed1/without_region_construction",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed1/without_source_tracing",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed1/without_reliability_weighting",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 1,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed2/full",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "full",
+      "display_name": "Full TRACE",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed2/without_region_construction",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_region_construction",
+      "display_name": "w/o Region Construction",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed2/without_source_tracing",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_source_tracing",
+      "display_name": "w/o Confidence-Source Tracing",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    },
+    {
+      "id": "ablation/coco_object/seed2/without_reliability_weighting",
+      "dataset": "coco_object",
+      "task": "ablation",
+      "variant": "without_reliability_weighting",
+      "display_name": "w/o Reliability-Weighted Adaptation",
+      "seed": 2,
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "max_images": 0,
+      "smoke": false,
+      "selection_seed": 20271010
+    }
+  ],
+  "checkpoint_provenance": {
+    "checkpoint": "/home/wwww/.cache/clip/ViT-L-14.pt",
+    "sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+    "verification": "sha256sum read on 2026-10-10 before regular queue results were interpreted; baseline loader also checks its published checkpoint hash",
+    "backend": "/home/wwww/hzl/results/reviewer_response_20260929/baseline_source/ovss",
+    "source_hashes": "manifest.json",
+    "config_selection": "existing released per-dataset configurations; no new search in this package"
+  },
+  "reference_full_seed0": [
+    {
+      "dataset": "voc21",
+      "variant": "full",
+      "seed": 0,
+      "display_name": "Full TRACE",
+      "result_path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/voc21/full/result.json",
+      "sha256": "87f69e4cbfdbaa391306214140ba1e33b5fcfe2ca58ddeaa280c1e2575fca4f1",
+      "prediction_seal_sha256": "12ccd56d1edeaa5703d8d21c342b384c8bc01b8608b407494ee3c76d8632ba99",
+      "config": {
+        "dataset": "PascalVOC21Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 16,
+        "lr": 0.00063,
+        "steps": 36,
+        "trace_max_regions": 33,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "source_snapshot_sha256": "4dd3a31272c351c1aee238a3ea530778c38aa680183b7369e972b492ac49f976",
+      "evidence": "reused_original_full_seed0"
+    },
+    {
+      "dataset": "pc60",
+      "variant": "full",
+      "seed": 0,
+      "display_name": "Full TRACE",
+      "result_path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/pc60/full/result.json",
+      "sha256": "ec52f84082d89006d37d6ac020587de82118586a6a9d29f053cbbb0c09a75903",
+      "prediction_seal_sha256": "4e99fbcecd8258857d245935152fa247c02e03d38a1ea83e389e234235b99306",
+      "config": {
+        "dataset": "PascalContext60Dataset",
+        "data_subdir": "VOCdevkit/VOC2012",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 9,
+        "lr": 0.00225,
+        "steps": 11,
+        "trace_max_regions": 22,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+      },
+      "source_snapshot_sha256": "4dd3a31272c351c1aee238a3ea530778c38aa680183b7369e972b492ac49f976",
+      "evidence": "reused_original_full_seed0"
+    },
+    {
+      "dataset": "coco_object",
+      "variant": "full",
+      "seed": 0,
+      "display_name": "Full TRACE",
+      "result_path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_object/full/result.json",
+      "sha256": "6e40d57c2b20832d7862ab55047ea0e11d5e1994d75c71b5c12c045389b114c3",
+      "prediction_seal_sha256": "84e718298e4656612be0b90955ba38863f94e39f75b81a936016d92f3157d8c5",
+      "config": {
+        "dataset": "COCOObjectDataset",
+        "data_subdir": "coco_stuff",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 14,
+        "lr": 0.003,
+        "steps": 29,
+        "trace_max_regions": 34,
+        "trace_view_batch_size": 8,
+        "class_extensions": true,
+        "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+      },
+      "source_snapshot_sha256": "4dd3a31272c351c1aee238a3ea530778c38aa680183b7369e972b492ac49f976",
+      "evidence": "reused_original_full_seed0"
+    },
+    {
+      "dataset": "coco_cd",
+      "variant": "full",
+      "seed": 0,
+      "display_name": "Full TRACE",
+      "result_path": "/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/controls/coco_cd/full/result.json",
+      "sha256": "da391f59abe1c17a3a5b45c4ba6b7b24a12ac0598fda9297ab5376020a82c4ac",
+      "prediction_seal_sha256": "b38f14d59c8b901e1af8985e5cede3219fbcd880227cbca8d6aa5f99582485c1",
+      "config": {
+        "dataset": "COCOCDDataset",
+        "data_subdir": "coco_cd_ovss",
+        "resize": [
+          224,
+          224
+        ],
+        "patch_size": [
+          224,
+          224
+        ],
+        "patch_stride": 112,
+        "batch_size": 28,
+        "lr": 0.0086,
+        "steps": 5,
+        "trace_max_regions": 4,
+        "trace_view_batch_size": 8,
+        "class_extensions": false,
+        "data_dir": "/home/wwww/hzl/data/coco_cd_ovss"
+      },
+      "source_snapshot_sha256": "4dd3a31272c351c1aee238a3ea530778c38aa680183b7369e972b492ac49f976",
+      "evidence": "reused_original_full_seed0"
+    }
+  ],
+  "dependency": "/home/wwww/hzl/results/trace_voc21_forward_reduction_20261025",
+  "reviewer_request_path": "/home/wwww/.codex/attachments/f6b8def3-e107-4b79-b065-e4944da448cc/\u5df2\u7c98\u8d34\u7684\u6587\u672c.txt",
+  "reviewer_request_sha256": "9d76b7a0c0bb9615875285c02000fe816b182858840ef9527dc8aac9380fa951",
+  "method": "Original submitted role-aware three-view TRACE: q=min(T,C); rho=q*(1-max(D-T,0)) for things, q otherwise",
+  "protocol": "Frozen original per-dataset settings. No hyperparameter search or metric threshold selection.",
+  "full_counts": {
+    "voc21": 1449,
+    "pc60": 5105,
+    "coco_object": 5000,
+    "coco_cd": 500
+  },
+  "serial_gpu": true,
+  "automatic_retry": false,
+  "comparison_policy": "Retain all cells. Strong baselines and all stated ablations remain visible. Subset diagnostics are not full validation.",
+  "engineering": "Frozen implementation for attribution. Equivalent batching/cache changes require numerical validation and separate provenance.",
+  "excluded": [
+    "new two-view method",
+    "cached-prefix parameter freezing",
+    "new backbone runs",
+    "new ACDC runs",
+    "WATT/CLIPArTT reruns",
+    "new tuning-fairness sweep",
+    "figure edits"
+  ],
+  "reporting": "Foreground strongest supported mechanism and scenario. Do not redefine outcomes or select comparators based on observed rank."
+}

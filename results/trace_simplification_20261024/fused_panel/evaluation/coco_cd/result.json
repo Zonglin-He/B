@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "name": "fused16",
+  "dataset": "coco_cd",
+  "images": 500,
+  "split": "evaluation",
+  "full_split": true,
+  "metrics": {
+    "mIoU": 75.04,
+    "mDice": 85.18,
+    "mAcc": 89.19,
+    "aAcc": 93.17
+  },
+  "miou_unrounded": 75.03592738328155,
+  "intersection": [
+    19917947.0,
+    1852621.0,
+    1604790.0
+  ],
+  "union": [
+    21603727.0,
+    2655492.0,
+    2541423.0
+  ],
+  "ms_per_image": 36.029496412673915,
+  "peak_allocated_mib": 6820.41455078125,
+  "diagnostic_views_per_image": 11.986486486486486,
+  "warmup_episodes": 2,
+  "wall_seconds": 19.075703457929194,
+  "protocol_sha256": "155a3d1fcc64a55c7d29893484dea4e005e4a6e9a7de6ff6ac5c9679f4d8418c"
+}

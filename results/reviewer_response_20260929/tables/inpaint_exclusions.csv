@@ -1,0 +1,13 @@
+dataset,kind,excluded_units,reason
+coco_cd,gt_component,0,Full-mask inpainting has no known boundary pixels; cannot interpret as removal
+coco_cd,predicted_candidate,0,Full 16x16 mask has no known boundary pixels for inpainting
+coco_object,gt_component,0,Full-mask inpainting has no known boundary pixels; cannot interpret as removal
+coco_object,predicted_candidate,0,Full 16x16 mask has no known boundary pixels for inpainting
+coco_stuff,gt_component,0,Full-mask inpainting has no known boundary pixels; cannot interpret as removal
+coco_stuff,predicted_candidate,0,Full 16x16 mask has no known boundary pixels for inpainting
+pc60,gt_component,0,Full-mask inpainting has no known boundary pixels; cannot interpret as removal
+pc60,predicted_candidate,0,Full 16x16 mask has no known boundary pixels for inpainting
+voc21,gt_component,0,Full-mask inpainting has no known boundary pixels; cannot interpret as removal
+voc21,predicted_candidate,0,Full 16x16 mask has no known boundary pixels for inpainting
+waterbirds_seg,gt_component,0,Full-mask inpainting has no known boundary pixels; cannot interpret as removal
+waterbirds_seg,predicted_candidate,0,Full 16x16 mask has no known boundary pixels for inpainting

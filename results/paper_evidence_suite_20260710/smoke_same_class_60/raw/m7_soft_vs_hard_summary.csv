@@ -1,0 +1,3 @@
+dataset,variant,count,mean_gt_iou_lowres,mean_after_gt_acc,mean_gt_acc_delta,mean_harmful_update,mean_correct_to_harm,mean_reliability
+coco_object,self_only_drop,256,0.16147303333997445,0.6174631195536977,0.003667613578003274,0.81640625,0.109375,0.3294642207129267
+coco_object,sibling_aware_drop,256,0.16147303333997445,0.611641618661157,-0.0021538873145374397,0.81640625,0.10546875,0.32946347249479707

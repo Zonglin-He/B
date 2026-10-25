@@ -1,0 +1,5 @@
+evidence_type,method,batch_idx,image_index,image_path,image_mIoU,image_mDice,image_mAcc,before_image_mIoU,before_image_mDice,before_image_mAcc,prediction_flip_rate,before_added_label_fp_area,after_added_label_fp_area
+newly_run,tpt,0,0,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000033.jpg,100.0,100.0,100.0,32.841166853904724,33.0854207277298,98.52350354194641,0.014764942228794098,0.0,0.0
+newly_run,tpt,1,1,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000042.jpg,100.0,100.0,100.0,18.827852606773376,19.396233558654785,94.13926005363464,0.05860740691423416,0.0,0.0
+newly_run,tpt,2,2,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000061.jpg,48.64780008792877,49.31463301181793,97.29560017585754,49.779874086380005,49.88969564437866,99.55974817276001,0.022641509771347046,0.0,0.0
+newly_run,tpt,3,3,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000123.jpg,100.0,100.0,100.0,15.143147110939026,15.868422389030457,90.85888266563416,0.09141119569540024,0.0,0.0

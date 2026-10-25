@@ -1,0 +1,32 @@
+{
+  "status": "completed",
+  "name": "smoke/coco_cd/no_connected_regions",
+  "dataset": "coco_cd",
+  "variant": "no_connected_regions",
+  "images": 56,
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 75.26,
+    "mDice": 85.31,
+    "mAcc": 83.67,
+    "aAcc": 93.95
+  },
+  "miou_unrounded": 75.25791569827614,
+  "intersection": [
+    2303305.0,
+    157020.0,
+    179584.0
+  ],
+  "union": [
+    2472714.0,
+    242356.0,
+    264733.0
+  ],
+  "ms_per_image": 31.880641422633612,
+  "peak_allocated_mib": 6819.84326171875,
+  "diagnostic_views_per_image": 8.25,
+  "warmup_episodes": 1,
+  "wall_seconds": 2.3188032442703843,
+  "protocol_sha256": "5b4add4b1a96907b75943306ee44bbd96746ed34b31465dca8914be44b8e3ae8"
+}

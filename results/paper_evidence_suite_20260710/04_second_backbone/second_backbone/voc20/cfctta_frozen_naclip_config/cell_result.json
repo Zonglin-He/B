@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/04_second_backbone/second_backbone/voc20/cfctta_frozen_naclip_config",
+  "duration_sec": 323.754,
+  "evidence_type": "newly_run",
+  "results": {
+    "original": {
+      "mAcc": 82.94,
+      "mAcc_std": 0.0,
+      "mDice": 82.29,
+      "mDice_std": 0.0,
+      "mIoU": 71.77,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

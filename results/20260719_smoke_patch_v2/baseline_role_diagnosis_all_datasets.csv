@@ -1,0 +1,5 @@
+dataset,evidence_type,method,semantic_role,num_regions,num_initially_correct,mean_before_region_accuracy,mean_after_region_accuracy,mean_region_accuracy_delta,correct_to_harm_rate,mean_region_prediction_flip_rate,region_flip_incidence,subset_mIoU
+voc20,newly_run,cfctta,thing,1,1,0.998563289642334,0.9998146295547485,0.0012513399124145508,0.0,0.0016220975667238235,0.0,47.748756408691406
+voc20,newly_run,cfctta,all,1,1,0.998563289642334,0.9998146295547485,0.0012513399124145508,0.0,0.0016220975667238235,0.0,47.748756408691406
+voc20,newly_run,tent,thing,1,1,0.9986096024513245,1.0,0.0013903975486755371,0.0,0.001390369376167655,0.0,100.0
+voc20,newly_run,tent,all,1,1,0.9986096024513245,1.0,0.0013903975486755371,0.0,0.001390369376167655,0.0,100.0

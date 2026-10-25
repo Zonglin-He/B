@@ -1,0 +1,8 @@
+condition,method,status,mIoU,mDice,mAcc,evidence_type,result_path,display_method
+all,noadapt,ok,23.96,34.89,54.64,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/01_all_methods/all/noadapt/seed0/results.txt,No Adapt
+all,tent,ok,27.53,39.08,54.62,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/01_all_methods/all/tent/seed0/results.txt,TENT
+all,tpt,ok,24.11,35.61,37.64,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/01_all_methods/all/tpt/seed0/results.txt,TPT
+all,watt,ok,17.85,27.47,33.04,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/watt/seed0/results.txt,WATT
+all,clipartt,failed:1,,,,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/clipartt/seed0/results.txt,
+all,mlmp,ok,31.46,44.22,54.35,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/mlmp/seed0/results.txt,MLMP
+all,trace,ok,31.48,44.48,51.9,newly_run,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/trace/seed0/results.txt,TRACE

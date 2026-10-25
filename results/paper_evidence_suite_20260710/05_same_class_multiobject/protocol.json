@@ -1,0 +1,9 @@
+{
+  "comparison": [
+    "self_only_drop",
+    "sibling_aware_drop"
+  ],
+  "evidence_type": "newly_run_analysis_of_newly_run_region_diagnostics",
+  "subset": "regions with a non-touching same-class sibling candidate",
+  "unit": "candidate region"
+}

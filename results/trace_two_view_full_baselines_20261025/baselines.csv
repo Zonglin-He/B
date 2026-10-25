@@ -1,0 +1,17 @@
+dataset,method,images,status,mIoU,ms_per_image,visual_inputs_per_image,visual_calls_per_image,result_path,returncode
+pc60,mlmp,5105,completed,29.600177293296742,40.488448482631455,12.0,1.3351680754865343,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/mlmp/result.json,0
+pc60,tent,5105,completed,27.596062164024143,36.433694686455766,11.0,1.2239040691959897,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/tent/result.json,0
+pc60,tpt,5105,completed,25.948881325016494,82.64274789646183,11.0,1.2239040691959897,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/tpt/result.json,0
+pc60,noadapt,5105,completed,26.92681326364667,1.5861764956644295,1.0,0.11126400629054453,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/noadapt/result.json,0
+voc21,mlmp,1449,completed,50.29280278364298,40.90965265012494,12.0,0.7537050105857446,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/mlmp/result.json,0
+voc21,tent,1449,completed,45.71697526261856,37.10406137421338,11.0,0.6908962597035991,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tent/result.json,0
+voc21,tpt,1449,completed,47.987552396268335,67.19278818654946,11.0,0.6908962597035991,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tpt/result.json,0
+voc21,noadapt,1449,completed,45.200430951642495,1.5100081028625758,1.0,0.06280875088214538,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/noadapt/result.json,0
+coco_cd,mlmp,500,completed,71.00717681177846,40.94676621602261,12.0,0.43243243243243246,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/mlmp/result.json,0
+coco_cd,tent,500,completed,72.20029853468192,37.24705802511659,11.0,0.3963963963963964,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/tent/result.json,0
+coco_cd,tpt,500,completed,64.27195385834406,52.40464901660678,11.0,0.3963963963963964,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/tpt/result.json,0
+coco_cd,noadapt,500,completed,61.14434758192533,1.480965797478954,1.0,0.036036036036036036,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/noadapt/result.json,0
+coco_object,mlmp,5000,completed,30.355801198839377,42.45594387112765,12.0,0.8592115848753017,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/mlmp/result.json,0
+coco_object,tent,5000,completed,26.321593402851118,38.37210793431761,11.0,0.7876106194690266,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/tent/result.json,0
+coco_object,tpt,5000,completed,25.534975703697143,87.05500408850479,11.0,0.7876106194690266,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/tpt/result.json,0
+coco_object,noadapt,5000,completed,25.409873711140225,1.6067803830615666,1.0,0.07160096540627514,/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/noadapt/result.json,0

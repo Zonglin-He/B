@@ -1,0 +1,53 @@
+{
+  "status": "completed",
+  "dataset": "coco_object",
+  "method": "mlmp",
+  "variant": "full",
+  "backend": "shared_legacy",
+  "protocol": "released",
+  "seed": 0,
+  "images": 256,
+  "corruption": "clean",
+  "severity": 0,
+  "formula": "native",
+  "gamma": null,
+  "blur_kernel": null,
+  "full_split": false,
+  "calibration": false,
+  "metrics": {
+    "mIoU": 28.76,
+    "mDice": 41.38,
+    "mAcc": 69.22,
+    "aAcc": 66.31
+  },
+  "condition_metrics": {},
+  "config": {
+    "dataset": "COCOObjectDataset",
+    "data_subdir": "coco_stuff",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 2,
+    "lr": 0.001,
+    "steps": 10,
+    "trace_max_regions": 34,
+    "trace_view_batch_size": 8,
+    "class_extensions": true,
+    "data_dir": "/home/wwww/hzl/data/coco_mlmp",
+    "alpha_cls": 1.0
+  },
+  "warmup_batches": 5,
+  "ms_per_image": 77.90172464835148,
+  "images_per_second": 12.836686280233227,
+  "adaptation_ms_per_image": 71.39413172522998,
+  "visual_calls_per_image": 6.0,
+  "visual_inputs_per_image": 12.0,
+  "peak_allocated_mib": 2410.6201171875,
+  "metric_scope": "dataset classwise intersection/union; timing excludes loading and scoring"
+}

@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/coco_object/fog",
+  "duration_sec": 1022.895,
+  "evidence_type": "newly_run",
+  "results": {
+    "fog": {
+      "mAcc": 60.58,
+      "mAcc_std": 0.0,
+      "mDice": 42.27,
+      "mDice_std": 0.0,
+      "mIoU": 28.77,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

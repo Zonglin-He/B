@@ -1,0 +1,9 @@
+evidence_type,signal,field,num_regions,num_harmful,auc,precision_top10
+newly_run_analysis_of_preexisting_run,CFC reliability,reliability,1366,139,0.6793899843450423,0.17518248175182483
+newly_run_analysis_of_preexisting_run,Entropy,entropy_before,1366,139,0.5982715050453524,0.0948905109489051
+newly_run_analysis_of_preexisting_run,Inverse confidence,confidence_before,1366,139,0.7153084378462999,0.35036496350364965
+newly_run_analysis_of_preexisting_run,Inverse target support,s_keep,1366,139,0.6685956857985494,0.1678832116788321
+newly_run_analysis_of_preexisting_run,Context leakage,s_leak,1366,139,0.35060655631973636,0.014598540145985401
+newly_run_analysis_of_preexisting_run,Context instability,s_cf,1366,139,0.6931921455500636,0.1897810218978102
+newly_run_analysis_of_preexisting_run,Inverse source ratio,r_src,1366,139,0.5006303026038826,0.08759124087591241
+newly_run_analysis_of_preexisting_run,Inverse fragment quality,fg_quality,1366,139,0.5540066724126811,0.18248175182481752

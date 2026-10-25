@@ -1,0 +1,44 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\caption{Per-dataset matched-candidate update-risk comparison. Reliability quartiles are formed independently within each dataset and semantic role; no result pools regions across datasets. Q1--Q4 report correct-to-harm percentages among each method's initially correct regions (lower is better). AUC ranks those harmful transitions with inverse CFC reliability (higher is better). mIoU is measured on the same diagnostic image prefix.}
+\label{tab:source-risk-per-dataset}
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Method & mIoU $\uparrow$ & Q1 $\downarrow$ & Q2 $\downarrow$ & Q3 $\downarrow$ & Q4 $\downarrow$ & AUC $\uparrow$ \\
+\midrule
+VOC20 & No Adapt & 75.79 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & TENT & 70.89 & 35.7 & 32.5 & 20.0 & 21.9 & 0.585 \\
+ & TPT & 60.15 & 44.1 & 50.9 & 45.0 & 51.9 & 0.487 \\
+ & WATT & 69.88 & 48.3 & 27.4 & 30.4 & 25.1 & 0.589 \\
+ & CLIPArTT & 68.89 & 36.4 & 28.4 & 23.9 & 27.8 & 0.539 \\
+ & MLMP & 81.96 & 24.3 & 14.2 & 9.4 & 5.9 & 0.662 \\
+ & \textbf{CFC-TTA} & 83.49 & 29.7 & 14.8 & 8.3 & 6.9 & 0.685 \\
+\midrule
+PC60 & No Adapt & 27.47 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & TENT & 25.68 & 19.9 & 24.9 & 17.5 & 16.0 & 0.481 \\
+ & TPT & 24.46 & 51.4 & 51.8 & 40.3 & 33.6 & 0.542 \\
+ & WATT & 16.20 & 61.6 & 78.3 & 68.3 & 71.7 & 0.388 \\
+ & CLIPArTT & 23.03 & 42.1 & 46.2 & 34.7 & 39.3 & 0.420 \\
+ & MLMP & 28.40 & 12.0 & 18.1 & 14.2 & 8.7 & 0.495 \\
+ & \textbf{CFC-TTA} & 28.83 & 15.8 & 21.7 & 10.1 & 3.6 & 0.655 \\
+\midrule
+COCO-CD & No Adapt & 62.76 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & TENT & 71.76 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & TPT & 69.20 & 10.3 & 8.6 & 10.0 & 7.1 & 0.922 \\
+ & WATT & 39.31 & 56.7 & 53.3 & 38.3 & 35.1 & 0.518 \\
+ & CLIPArTT & 55.86 & 19.0 & 22.4 & 15.0 & 12.5 & 0.434 \\
+ & MLMP & 71.17 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & \textbf{CFC-TTA} & 73.04 & 3.4 & 1.7 & 1.7 & 0.0 & 0.934 \\
+\midrule
+Waterbirds-Seg & No Adapt & 39.96 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & TENT & 45.36 & 8.4 & 2.9 & 0.0 & 1.2 & 0.703 \\
+ & TPT & 44.67 & 10.8 & 15.7 & 6.0 & 8.3 & 0.812 \\
+ & WATT & 22.99 & 70.7 & 66.0 & 80.2 & 62.5 & 0.506 \\
+ & CLIPArTT & 25.95 & 75.9 & 63.7 & 55.3 & 47.6 & 0.542 \\
+ & MLMP & 42.59 & 27.7 & 14.7 & 9.5 & 4.8 & 0.863 \\
+ & \textbf{CFC-TTA} & 49.26 & 9.6 & 10.8 & 2.4 & 3.6 & 0.884 \\
+\bottomrule
+\end{tabular}
+\end{table*}

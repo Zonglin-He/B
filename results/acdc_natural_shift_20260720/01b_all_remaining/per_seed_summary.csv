@@ -1,0 +1,5 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,result_path,evidence_type
+all,watt,0,ok,17.85,27.47,33.04,6439.615,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/watt/seed0/results.txt,newly_run
+all,clipartt,0,failed:1,,,,8.136,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/clipartt/seed0/results.txt,newly_run
+all,mlmp,0,ok,31.46,44.22,54.35,567.479,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/mlmp/seed0/results.txt,newly_run
+all,trace,0,ok,31.48,44.48,51.9,6438.473,/home/wwww/hzl/results/acdc_natural_shift_20260720/01b_all_remaining/all/trace/seed0/results.txt,newly_run

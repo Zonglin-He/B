@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\scriptsize
+\setlength{\tabcolsep}{3.2pt}
+\caption{Matched-candidate reliability analysis on VOC20. Each quartile cell reports $\Delta$ region accuracy / correct-to-harm percentage; higher is better for $\Delta$Acc and lower is better for C$\rightarrow$H. Quartiles are role controlled within this dataset only.}
+\label{tab:source-risk-voc20}
+\begin{tabular}{lrrrrrr}
+\toprule
+Method & mIoU $\uparrow$ & Q1 $\Delta$Acc / C$\rightarrow$H & Q2 & Q3 & Q4 & AUC $\uparrow$ \\
+\midrule
+No Adapt & 75.79 & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 & 0.0 / 0.0 & -- \\
+TENT & 70.89 & -4.6 / 35.7 & -7.0 / 32.5 & -3.5 / 20.0 & -5.7 / 21.9 & 0.585 \\
+TPT & 60.15 & -11.2 / 44.1 & -18.0 / 50.9 & -13.7 / 45.0 & -13.1 / 51.9 & 0.487 \\
+WATT & 69.88 & -12.4 / 48.3 & -10.8 / 27.4 & -11.1 / 30.4 & -10.0 / 25.1 & 0.589 \\
+CLIPArTT & 68.89 & -4.1 / 36.4 & -7.5 / 28.4 & -7.5 / 23.9 & -8.3 / 27.8 & 0.539 \\
+MLMP & 81.96 & 4.1 / 24.3 & 2.8 / 14.2 & 0.3 / 9.4 & -0.0 / 5.9 & 0.662 \\
+\textbf{CFC-TTA} & 83.49 & 7.9 / 29.7 & 3.1 / 14.8 & -0.5 / 8.3 & -0.9 / 6.9 & 0.685 \\
+\bottomrule
+\end{tabular}
+\end{table*}

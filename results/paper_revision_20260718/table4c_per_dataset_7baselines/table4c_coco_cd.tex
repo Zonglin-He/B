@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{4.5pt}
+\caption{Per-dataset matched-candidate update-risk comparison. Reliability quartiles are formed independently within each dataset and semantic role; no result pools regions across datasets. Q1--Q4 report correct-to-harm percentages among each method's initially correct regions (lower is better). AUC ranks those harmful transitions with inverse CFC reliability (higher is better). mIoU is measured on the same diagnostic image prefix.}
+\label{tab:source-risk-per-dataset}
+\begin{tabular}{llrrrrrr}
+\toprule
+Dataset & Method & mIoU $\uparrow$ & Q1 $\downarrow$ & Q2 $\downarrow$ & Q3 $\downarrow$ & Q4 $\downarrow$ & AUC $\uparrow$ \\
+\midrule
+COCO-CD & No Adapt & 62.76 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & TENT & 71.76 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & TPT & 69.20 & 10.3 & 8.6 & 10.0 & 7.1 & 0.922 \\
+ & WATT & 39.31 & 56.7 & 53.3 & 38.3 & 35.1 & 0.518 \\
+ & CLIPArTT & 55.86 & 19.0 & 22.4 & 15.0 & 12.5 & 0.434 \\
+ & MLMP & 71.17 & 0.0 & 0.0 & 0.0 & 0.0 & -- \\
+ & \textbf{CFC-TTA} & 73.04 & 3.4 & 1.7 & 1.7 & 0.0 & 0.934 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,18 @@
+{
+  "num_patches": 96,
+  "mean_attn_reliable_cond": 0.4766343544012663,
+  "mean_attn_bg_cond": 0.0006694445433098557,
+  "mean_attn_rejected_cond": 0.0006694445433098557,
+  "median_attn_reliable_cond": 0.4840547933080599,
+  "median_attn_bg_cond": 0.0,
+  "mean_reliable_area_frac": 0.4339599609375,
+  "mean_bg_area_frac": 0.0003662109375,
+  "patches_with_reliable_mask": 96,
+  "patches_with_bg_mask": 6,
+  "mean_trust_margin": 0.47596490985795636,
+  "fraction_reliable_attention_gt_bg": 1.0,
+  "mean_attn_reliable_cond_when_present": 0.4766343544012663,
+  "mean_attn_bg_cond_when_present": 0.010711112692957691,
+  "corr_reliable_area_attention": 0.9009276400092505,
+  "corr_bg_area_attention": 0.7142112413235872
+}

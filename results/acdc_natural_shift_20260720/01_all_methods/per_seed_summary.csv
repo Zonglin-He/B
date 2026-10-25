@@ -1,0 +1,4 @@
+condition,method,seed,status,mIoU,mDice,mAcc,duration_sec,result_path,evidence_type
+all,noadapt,0,ok,23.96,34.89,54.64,33.499,/home/wwww/hzl/results/acdc_natural_shift_20260720/01_all_methods/all/noadapt/seed0/results.txt,newly_run
+all,tent,0,ok,27.53,39.08,54.62,527.862,/home/wwww/hzl/results/acdc_natural_shift_20260720/01_all_methods/all/tent/seed0/results.txt,newly_run
+all,tpt,0,ok,24.11,35.61,37.64,730.566,/home/wwww/hzl/results/acdc_natural_shift_20260720/01_all_methods/all/tpt/seed0/results.txt,newly_run

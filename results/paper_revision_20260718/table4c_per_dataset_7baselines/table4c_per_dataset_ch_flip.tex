@@ -1,0 +1,22 @@
+\begin{table*}[t]
+\centering
+\small
+\setlength{\tabcolsep}{5pt}
+\caption{Per-dataset matched-region adaptation safety. C$\rightarrow$H is the percentage of initially correct candidate regions whose accuracy decreases by more than five percentage points after adaptation. Flip is the percentage of the same initially correct regions for which more than 5\% of pixels change predicted labels. Lower is better. No Adapt is zero by definition and is included only as a reference. No statistic pools regions across datasets.}
+\label{tab:baseline-ch-flip-per-dataset}
+\begin{tabular}{lrrrrrrrr}
+\toprule
+Method & \multicolumn{2}{c}{VOC20} & \multicolumn{2}{c}{PC60} & \multicolumn{2}{c}{COCO-CD} & \multicolumn{2}{c}{Waterbirds-Seg} \\
+\cmidrule(lr){2-3} \cmidrule(lr){4-5} \cmidrule(lr){6-7} \cmidrule(lr){8-9}
+ & C$\rightarrow$H $\downarrow$ & Flip $\downarrow$ & C$\rightarrow$H $\downarrow$ & Flip $\downarrow$ & C$\rightarrow$H $\downarrow$ & Flip $\downarrow$ & C$\rightarrow$H $\downarrow$ & Flip $\downarrow$ \\
+\midrule
+No Adapt & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 & 0.0 \\
+TENT & 27.0 & 40.8 & 18.9 & 52.3 & 0.0 & 30.6 & 3.1 & 71.2 \\
+TPT & 48.2 & 57.0 & 42.2 & 75.2 & 9.1 & 49.6 & 10.5 & 79.6 \\
+WATT & 32.1 & 45.0 & 70.7 & 85.4 & 46.0 & 61.2 & 69.8 & 90.6 \\
+CLIPArTT & 28.7 & 41.4 & 39.9 & 62.1 & 17.2 & 24.6 & 60.7 & 74.3 \\
+MLMP & 12.8 & 27.7 & 12.9 & 34.0 & 0.0 & 10.6 & 14.6 & 51.4 \\
+\textbf{CFC-TTA} & 14.1 & 29.7 & 11.3 & 44.5 & 1.7 & 22.1 & 6.9 & 60.7 \\
+\bottomrule
+\end{tabular}
+\end{table*}

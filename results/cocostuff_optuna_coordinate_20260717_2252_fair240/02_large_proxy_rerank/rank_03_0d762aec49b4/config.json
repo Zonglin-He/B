@@ -1,0 +1,15 @@
+{
+  "method_params": {
+    "cfc_max_regions": 12,
+    "cfc_max_regions_per_class": 10,
+    "cfc_rho_min": 0.5,
+    "cfc_tau_cf": 0.32762
+  },
+  "cfg_params": {
+    "batch_size": 16,
+    "lr": 0.003,
+    "steps": 24
+  },
+  "max_images": 960,
+  "evidence_type": "newly_run_proxy"
+}

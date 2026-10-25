@@ -1,0 +1,5 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+voc20,ok,83.27,90.35,92.35,83.76,-0.4900000000000091,0,474.32,/home/wwww/hzl/results/final_protocol_suite_20260630/02_unified_config_8datasets/voc20/minimal_cfc/results.txt,newly_run,paper_ready
+voc21,ok,46.31,61.85,86.73,50.78,-4.469999999999999,0,378.72,/home/wwww/hzl/results/final_protocol_suite_20260630/02_unified_config_8datasets/voc21/minimal_cfc/results.txt,newly_run,paper_ready
+pc59,ok,32.86,45.94,55.87,31.95,0.9100000000000001,1,1282.34,/home/wwww/hzl/results/final_protocol_suite_20260630/02_unified_config_8datasets/pc59/minimal_cfc/results.txt,newly_run,paper_ready
+pc60,ok,29.94,42.52,54.96,27.99,1.9500000000000028,1,1280.36,/home/wwww/hzl/results/final_protocol_suite_20260630/02_unified_config_8datasets/pc60/minimal_cfc/results.txt,newly_run,paper_ready

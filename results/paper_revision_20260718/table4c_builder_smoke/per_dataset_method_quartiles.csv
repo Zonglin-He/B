@@ -1,0 +1,13 @@
+evidence_type,dataset,dataset_label,method,method_label,quartile,quartile_label,num_regions,num_initially_correct,mean_reliability,mean_confidence,mean_region_accuracy_delta_all,mean_region_accuracy_delta_initially_correct,correct_to_harm_rate,mean_region_prediction_flip_rate,region_flip_incidence
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,1,Q1 lowest,1,1,0.47418409013803164,0.8587018847465515,0.0013440251350402832,0.0013440251350402832,0.0,0.0013440237380564213,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,2,Q2,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,3,Q3,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,tpt,TPT,4,Q4 highest,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,1,Q1 lowest,1,1,0.47418409013803164,0.8587018847465515,0.0012513399124145508,0.0012513399124145508,0.0,0.0012513324618339539,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,2,Q2,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,3,Q3,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,watt,WATT,4,Q4 highest,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,1,Q1 lowest,1,1,0.47418409013803164,0.8587018847465515,0.0013440251350402832,0.0013440251350402832,0.0,0.0013440237380564213,0.0
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,2,Q2,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,3,Q3,0,0,nan,nan,nan,nan,nan,nan,nan
+newly_run_matched_candidate_analysis,voc20,VOC20,clipartt,CLIPArTT,4,Q4 highest,0,0,nan,nan,nan,nan,nan,nan,nan

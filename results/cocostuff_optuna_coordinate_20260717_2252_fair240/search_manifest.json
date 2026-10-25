@@ -1,0 +1,143 @@
+{
+  "evidence_type": "newly_run",
+  "dataset": "coco_stuff",
+  "dataset_profile": {
+    "num_classes": 171,
+    "stuff_pixel_fraction": 0.6924,
+    "mean_classes_per_image": 8.419,
+    "same_thing_multi_component_image_fraction": 0.7174
+  },
+  "proxy_images": 240,
+  "refine_images": 960,
+  "search_plan": [
+    {
+      "channel": "cfg",
+      "parameter": "batch_size",
+      "choices": [
+        4,
+        6,
+        8,
+        10,
+        12,
+        16
+      ]
+    },
+    {
+      "channel": "cfg",
+      "parameter": "lr",
+      "choices": [
+        0.001,
+        0.002,
+        0.003,
+        0.004,
+        0.006,
+        0.008,
+        0.01
+      ]
+    },
+    {
+      "channel": "cfg",
+      "parameter": "steps",
+      "choices": [
+        6,
+        8,
+        12,
+        16,
+        24,
+        32,
+        40
+      ]
+    },
+    {
+      "channel": "param",
+      "parameter": "cfc_max_regions",
+      "choices": [
+        8,
+        12,
+        18,
+        24,
+        32,
+        48,
+        64
+      ]
+    },
+    {
+      "channel": "param",
+      "parameter": "cfc_max_regions_per_class",
+      "choices": [
+        3,
+        4,
+        6,
+        8,
+        10,
+        16,
+        24
+      ]
+    },
+    {
+      "channel": "param",
+      "parameter": "cfc_tau_cf",
+      "choices": [
+        0.1,
+        0.2,
+        0.32762,
+        0.5,
+        0.75,
+        1.0,
+        2.0
+      ]
+    },
+    {
+      "channel": "param",
+      "parameter": "cfc_rho_min",
+      "choices": [
+        0.0,
+        0.05,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    },
+    {
+      "channel": "param",
+      "parameter": "cfc_min_region_conf",
+      "choices": [
+        0.0,
+        0.1,
+        0.2,
+        0.3,
+        0.478,
+        0.6
+      ]
+    },
+    {
+      "channel": "param",
+      "parameter": "alpha_cls",
+      "choices": [
+        0.0,
+        0.01,
+        0.03,
+        0.05,
+        0.1,
+        0.2
+      ]
+    },
+    {
+      "channel": "param",
+      "parameter": "cfc_fg_guard_eta",
+      "choices": [
+        0.0,
+        0.1,
+        0.25,
+        0.5,
+        0.75,
+        1.0
+      ]
+    }
+  ],
+  "baseline_current_mIoU_3seed_mean": 21.61,
+  "mlmp_reference_mIoU": 21.25,
+  "timestamp": "2026-07-17 22:43:00"
+}

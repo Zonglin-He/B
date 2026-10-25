@@ -1,0 +1,4 @@
+order_seed,images,native_mIoU,regroup_mIoU,delta_mIoU,post_disagreement_pct,pre_disagreement_pct,images_with_changed_predictions,result
+202710100,5000,31.99722385433239,31.904051520142545,-0.09317233418984472,17.35329081632653,0.0001953125,4998,/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/regroup/coco_object/order202710100/trace/result.json
+202710101,5000,31.99722385433239,31.671313460621946,-0.32591039371044417,17.405938695790816,0.0001873405612244898,4998,/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/regroup/coco_object/order202710101/trace/result.json
+202710102,5000,31.99722385433239,31.718326456290868,-0.27889739804152214,17.378904257015307,0.0001793686224489796,4999,/home/wwww/hzl/results/reviewer_followup_20261010_123627/cells/regroup/coco_object/order202710102/trace/result.json

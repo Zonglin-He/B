@@ -1,0 +1,8 @@
+suite,dataset,variant,method,status,result_path
+bridge_attribution,voc20,01_mlmp_matched,mlmp,failed:0,results/paper_evidence_suite_20260710/smoke_bridge/bridge_attribution/voc20/01_mlmp_matched/run.log
+bridge_attribution,voc20,02_uniform_regions,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_bridge/bridge_attribution/voc20/02_uniform_regions/run.log
+bridge_attribution,voc20,03_target_support,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_bridge/bridge_attribution/voc20/03_target_support/run.log
+bridge_attribution,voc20,04_source_diagnosis,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_bridge/bridge_attribution/voc20/04_source_diagnosis/run.log
+bridge_attribution,voc20,05_counterfactual_stability,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_bridge/bridge_attribution/voc20/05_counterfactual_stability/run.log
+bridge_attribution,voc20,06_fragment_guard,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_bridge/bridge_attribution/voc20/06_fragment_guard/run.log
+bridge_attribution,voc20,07_full_gated_cls,cfctta,failed:0,results/paper_evidence_suite_20260710/smoke_bridge/bridge_attribution/voc20/07_full_gated_cls/run.log

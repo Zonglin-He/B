@@ -1,0 +1,2 @@
+dataset,status,mIoU,mDice,mAcc,mlmp_mIoU,delta_vs_mlmp,beats_mlmp,duration_sec,result_path,evidence_type,claim_readiness
+pc59,ok,32.14,44.45,53.19,31.95,0.19000000000000128,1,184.43,/home/wwww/hzl/results/main_clean_tuning_push_20260701_1728/pc59/stage01_cfc_max_regions/14/pc59/minimal_cfc/results.txt,newly_run,paper_ready

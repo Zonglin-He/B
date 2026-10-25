@@ -1,0 +1,31 @@
+{
+  "status": "completed",
+  "name": "fused_reference",
+  "dataset": "coco_cd",
+  "images": 56,
+  "split": "evaluation",
+  "full_split": false,
+  "metrics": {
+    "mIoU": 76.23,
+    "mDice": 86.05,
+    "mAcc": 91.46,
+    "aAcc": 93.48
+  },
+  "miou_unrounded": 76.23006330638816,
+  "intersection": [
+    2232881.0,
+    187678.0,
+    206154.0
+  ],
+  "union": [
+    2414485.0,
+    273418.0,
+    305096.0
+  ],
+  "ms_per_image": 36.10131217698966,
+  "peak_allocated_mib": 6819.82470703125,
+  "diagnostic_views_per_image": 12.0,
+  "warmup_episodes": 1,
+  "wall_seconds": 2.4907005028799176,
+  "protocol_sha256": "87a1313d15978d5a829fe1bc6d57c3c4153fad8225e2270577d24ae9bdb286e3"
+}

@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/06_counterfactual_robustness/counterfactual_robustness/coco_cd/channel_shift",
+  "duration_sec": 30.125,
+  "evidence_type": "newly_run",
+  "results": {
+    "original": {
+      "mAcc": 88.15,
+      "mAcc_std": 0.0,
+      "mDice": 84.91,
+      "mDice_std": 0.0,
+      "mIoU": 74.67,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}

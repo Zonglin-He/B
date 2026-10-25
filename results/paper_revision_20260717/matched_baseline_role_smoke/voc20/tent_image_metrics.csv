@@ -1,0 +1,2 @@
+evidence_type,method,batch_idx,image_index,image_path,image_mIoU,image_mDice,image_mAcc,before_image_mIoU,before_image_mDice,before_image_mAcc,prediction_flip_rate
+newly_run,tent,0,0,/home/wwww/hzl/data/VOCdevkit/VOC2012/JPEGImages/2007_000033.jpg,5.000000074505806,5.000000074505806,5.000000074505806,4.927356541156769,4.963412508368492,4.927356541156769,0.014528702944517136

@@ -1,0 +1,5 @@
+condition,method,seed,images,mIoU,mDice,mAcc,stats_path,evidence_type
+fog,trace,0,78,33.25419148291861,45.63980214013723,56.95116103498344,/home/wwww/hzl/results/acdc_sequence_heldout_tuned_trace_20260721/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats
+night,trace,0,56,23.905070536213092,35.22218130472893,43.740133611230405,/home/wwww/hzl/results/acdc_sequence_heldout_tuned_trace_20260721/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats
+rain,trace,0,71,32.68015788599139,44.731736162705296,51.257221664133525,/home/wwww/hzl/results/acdc_sequence_heldout_tuned_trace_20260721/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats
+snow,trace,0,77,31.488245283214088,44.08446119932486,50.24394413617985,/home/wwww/hzl/results/acdc_sequence_heldout_tuned_trace_20260721/all/trace/seed0/per_image_stats/original_s0.npz,newly_run_derived_from_pooled_per_image_stats

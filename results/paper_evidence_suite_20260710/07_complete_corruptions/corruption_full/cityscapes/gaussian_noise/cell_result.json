@@ -1,0 +1,16 @@
+{
+  "cell_dir": "/home/wwww/hzl/results/paper_evidence_suite_20260710/07_complete_corruptions/corruption_full/cityscapes/gaussian_noise",
+  "duration_sec": 6735.63,
+  "evidence_type": "newly_run",
+  "results": {
+    "gaussian_noise": {
+      "mAcc": 30.23,
+      "mAcc_std": 0.0,
+      "mDice": 30.27,
+      "mDice_std": 0.0,
+      "mIoU": 20.3,
+      "mIoU_std": 0.0
+    }
+  },
+  "status": "ok"
+}
