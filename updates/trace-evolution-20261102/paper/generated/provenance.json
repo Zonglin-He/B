@@ -1,0 +1,262 @@
+{
+  "algorithm": "quality_only",
+  "cost_snapshot": {
+    "coco_cd": {
+      "diagnostic_views_per_image": 7.990990990990991,
+      "measured_images": 444,
+      "ms_per_image": 32.47713494357896,
+      "peak_allocated_mib": 6820.41455078125,
+      "warmup_episodes": 2
+    },
+    "coco_object": {
+      "diagnostic_views_per_image": 67.46580852775543,
+      "measured_images": 4972,
+      "ms_per_image": 263.6914161775315,
+      "peak_allocated_mib": 4183.59130859375,
+      "warmup_episodes": 2
+    },
+    "pc60": {
+      "diagnostic_views_per_image": 43.68704540986829,
+      "measured_images": 5087,
+      "ms_per_image": 118.1876359715053,
+      "peak_allocated_mib": 2927.61181640625,
+      "warmup_episodes": 2
+    },
+    "voc21": {
+      "diagnostic_views_per_image": 64.72547635850388,
+      "measured_images": 1417,
+      "ms_per_image": 291.9999433861455,
+      "peak_allocated_mib": 4463.22802734375,
+      "warmup_episodes": 2
+    }
+  },
+  "dedicated_entrypoint_gpu_validated": false,
+  "excluded_claims": [
+    "GPU equivalence of dedicated entry point",
+    "equal tuning budgets",
+    "calibrated reliability",
+    "causal identification",
+    "new mechanism results"
+  ],
+  "native_deltas": {
+    "coco_cd": 2.9892622777801847,
+    "coco_object": 2.3224683903339596,
+    "pc60": 0.984147935406039,
+    "voc21": 2.103686619967924
+  },
+  "published_reference": {
+    "backbone": "NACLIP ViT-L/14",
+    "citation_key": "noori2025mlmp",
+    "datasets": {
+      "coco_object": {
+        "CLIPArTT": [
+          21.34,
+          0.03
+        ],
+        "MLMP": [
+          28.84,
+          0.01
+        ],
+        "No Adapt": [
+          23.8,
+          null
+        ],
+        "TENT": [
+          24.88,
+          0.01
+        ],
+        "TPT": [
+          23.84,
+          0.01
+        ],
+        "WATT": [
+          14.14,
+          0.06
+        ]
+      },
+      "coco_stuff": {
+        "CLIPArTT": [
+          15.48,
+          0.01
+        ],
+        "MLMP": [
+          21.25,
+          0.01
+        ],
+        "No Adapt": [
+          18.34,
+          null
+        ],
+        "TENT": [
+          18.76,
+          0.01
+        ],
+        "TPT": [
+          18.35,
+          0.01
+        ],
+        "WATT": [
+          9.49,
+          0.02
+        ]
+      },
+      "pc60": {
+        "CLIPArTT": [
+          21.88,
+          0.03
+        ],
+        "MLMP": [
+          27.99,
+          0.03
+        ],
+        "No Adapt": [
+          24.95,
+          null
+        ],
+        "TENT": [
+          25.29,
+          0.01
+        ],
+        "TPT": [
+          24.98,
+          0.01
+        ],
+        "WATT": [
+          14.77,
+          0.03
+        ]
+      },
+      "voc21": {
+        "CLIPArTT": [
+          39.5,
+          0.04
+        ],
+        "MLMP": [
+          50.78,
+          0.02
+        ],
+        "No Adapt": [
+          45.12,
+          null
+        ],
+        "TENT": [
+          45.65,
+          0.02
+        ],
+        "TPT": [
+          45.17,
+          0.01
+        ],
+        "WATT": [
+          28.58,
+          0.05
+        ]
+      }
+    },
+    "extraction_evidence": "/tmp/mlmp-reference.txt lines 660-695; manually verified in this authoring turn",
+    "methods": [
+      "No Adapt",
+      "TENT",
+      "TPT",
+      "WATT",
+      "CLIPArTT",
+      "MLMP"
+    ],
+    "new_method_completed": [
+      "pc60",
+      "voc21",
+      "coco_cd",
+      "coco_object"
+    ],
+    "reported_adaptation": {
+      "batch_size": 2,
+      "episodic_reset": true,
+      "lr": 0.001,
+      "optimizer": "Adam",
+      "steps": 10
+    },
+    "source_pdf": "/home/wwww/.codex/attachments/25b85770-f761-4f32-a2e0-b41621a491c0/Test-Time Adaptation of Vision-Language Models for Open-Vocabulary Semantic Segmentation.pdf",
+    "source_table": "Main-paper Table 5, Original rows, OVSS Backbone: NACLIP",
+    "source_url": "https://arxiv.org/abs/2505.21844",
+    "std_policy": "Use main Table 5 standard deviations only; do not mix appendix variants",
+    "unasserted_equivalence": [
+      "exact checkpoint",
+      "loader",
+      "query extension mapping",
+      "episode size",
+      "optimization budget",
+      "tuning exposure"
+    ]
+  },
+  "reported_deltas": {
+    "coco_object": 3.8382695891733327,
+    "pc60": 2.594325228702786,
+    "voc21": 1.616489403610906
+  },
+  "scope": "CPU-only manuscript export; no inference or experiment execution",
+  "source_sha256": {
+    "/home/wwww/.codex/attachments/25b85770-f761-4f32-a2e0-b41621a491c0/Test-Time Adaptation of Vision-Language Models for Open-Vocabulary Semantic Segmentation.pdf": "30911a11e6b890b2bf466adb8e33e6f1ac53b82c50b56efb7d8749cef1c82ac7",
+    "/home/wwww/.codex/worktrees/trace-simplification/hzl/paper_evolution/reported_baselines.json": "5633c79029a58c3995e968b218001c8f86b7bc3b8692e41a9681f83be9ad0e74",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/SUITE_SEALED.json": "f200e58ac3e1b45abd1b94bf7a309450d629086a61ebe3514435a6247b7d3408",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/fixed_configs.json": "d31b0fc4965a8ad0739ea2039f3ae03a3ba841627a8d09f35be46faf7efa2ef0",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_cd/quality_only/attempt_001/cost.csv": "f9a9e602999c5f71f113f78709f2fc891b0e87cf08a1daabd3fffd256c706734",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_cd/quality_only/attempt_001/protocol.json": "95ac7749389a7cff4a8496e810112ba46eb70b080cbaeba3a926c944010abf1c",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_cd/quality_only/attempt_001/result.json": "0a065f3b683b8406cb55877e1a27f3a2fe860ed14945f1319e34f0d6502053c7",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_object/quality_only/attempt_001/cost.csv": "54a3a5f7e909b43efc5a306f4b0a97a00c54a06be44ef5e2dc51994c557cc2b8",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_object/quality_only/attempt_001/protocol.json": "70dda179e45a824170247aa1e36bbcede60b20a60ad407516b3d84cbc49db570",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/coco_object/quality_only/attempt_001/result.json": "6693bc2685ba14bb37c4dd21f3cd84ad15882754eb1208872f57f2c4cdd0e43d",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/pc60/quality_only/attempt_001/cost.csv": "445069c2de2dc3cec840d2d424898a9b4fd565d55a4d00549d44a47e22fa57f2",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/pc60/quality_only/attempt_001/protocol.json": "ff2e5cfbe7476b2b97aa5d04963194e83bcaa37b7dd626a9916643dfafab5372",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/pc60/quality_only/attempt_001/result.json": "caa13d248a972585fe386c3da7a44d1c3428907158f0f495fb84ec867e52e6ee",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/voc21/quality_only/attempt_001/cost.csv": "58203ead975bfda6de32fbf8c323a30d5d76d2aa2529508c80d405e3ea853f13",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/voc21/quality_only/attempt_001/protocol.json": "358617eb1b00022f2edee95ae835a693e63288cda4ecac1f4378e86fe10b4fb7",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/full_validation/voc21/quality_only/attempt_001/result.json": "c04ae10b0c27f877d3df7d3a4df9a1d5c7eaf45f6922d45dd29257b7a6c3aeae",
+    "/home/wwww/hzl/results/trace_two_view_full_20261025/suite_protocol.json": "efbc13ab766dab99d657a2ef1c7384a79f71347968b328f960388d837038cae7",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/SUITE_SEALED.json": "9f2e49486bc4a10ea824bc59f3c08ec7d1dc7b76398f52c28a3f431ed03f9c93",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/mlmp/protocol.json": "23d3b3b2a0c3dfa14df6472dc8ad0ff1ece4286b8d594968c1feff6dd8cc5c63",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/mlmp/result.json": "98908f2579c798ff650cdd4d30ed704c53f5ca627eda7fdc49dbe6e407915eed",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/noadapt/protocol.json": "fd9e8f471d2632cf9ed17dc572bf6cfe1b9f34796aee6c9af65ccc9fc78f0ef2",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/noadapt/result.json": "6f364560ea9c15105275315e783d18ae756801aaeddc0442a52523ceed6e6e75",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/tent/protocol.json": "309d8200baa19050fe7cd38c9087dd5f4f0e1ec668f4b1ee7b1e4884665dc052",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/tent/result.json": "06d1e6405127a2e7e8953e40460bfbec1ceec29574995899b6006412c6b3ce28",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/tpt/protocol.json": "c412ca1cdf45c1ff0d7af8d3d65914199974258f8d6105dcfefc1ce473c607b6",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd/tpt/result.json": "b428a05f4414a14eba5639612d9df778c561a074c078b0f4af14e3fb289f411e",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/mlmp/protocol.json": "596095f81c45f01e272a3094970d415dd154b41910caff3bf8dc57f83cce32f5",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/mlmp/result.json": "c26b591a502eb83c4034b0297ca9c54dd2c20d77a5e99c29a23c645735dd2ce1",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/noadapt/protocol.json": "bad9f98f868f67ab9182ba25c93d19511c00a6d94287efe389d4c75d04b33dc8",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/noadapt/result.json": "9cedb4584354da57934c4e8fb953a8ec18ad73b09ab4720383f78c6d15b308de",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/tent/protocol.json": "3bb87817fd43cad35c1d082f480b7625fc7502a1f0fbeccea3ad305f9d1dc53b",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/tent/result.json": "81697ad3cd98c2d1df6b5351e3dbfafe26e34b88097a96fd74f6900aa0460063",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/tpt/protocol.json": "8e5f685b866d3df879fe0cc957c895c6ca68bc2a62fb7a2ba04888dc14b573c2",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_object/tpt/result.json": "dfc13c797db6563f991c1ec5af2705788259b54c9beb7aa9317228bd4426ffe6",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/mlmp/protocol.json": "8ad9142ef551f1ddfdabd4948bf5c24573a403eb3814f424401fc7d7efc5931e",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/mlmp/result.json": "70cb762676a83dbfe867816bbec7f6a96a59ce719dbde774ba02bb8b0d8e8ba4",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/noadapt/protocol.json": "55c56f42143d4102fabeeda9e12d6274d66c7668fbef460d8081872866614b1f",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/noadapt/result.json": "9e7fba3f4d589cf0373fa696a34d864e69cfa20272f43e33f5a8b65a229b7d8c",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/tent/protocol.json": "39440004ad0558fe5222ea29d93dba281a54b0fbafdebbbea577975d20c7ad93",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/tent/result.json": "5f6984c1161a2ddb6f16910da4df4f82645fceb982eee940b6c499b2a7503b4c",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/tpt/protocol.json": "e35702a0152f42e61c1e3dfa35b1811ada0080472d496414a6f136f312a772e3",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/pc60/tpt/result.json": "a5e14105733029ff8be025a7c490a9abff3277286a511e3d7e01a16c4a4e20bf",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/mlmp/protocol.json": "8d2521abcfb10354781600b51b8fc55640f14763f1b5ab6600af1637215084a3",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/mlmp/result.json": "f43560e35841f7d30c7664c74d747c11a5b61be2fb7bd8f6197062cba53d3ed5",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/noadapt/protocol.json": "5907afc2a8024bf875ff2ad4cbce72a876ac76fbbb8979d5187d8cccf6edfc1b",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/noadapt/result.json": "f6f37d6cd053b48ec528064fef0abc301680b52dcc3f55c97a8c0670ea2c1281",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tent/protocol.json": "452607c68341a2200fa0bfa9c613e2884d986f1f8edd9645447662eb5316b763",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tent/result.json": "86269632c3e00b34fddf2758a5a16a826df9796b5b23920ff4f9468855a527dd",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tpt/protocol.json": "c5874a86da40b998bc7e3eef7962d34018eab10f3c5f7c514f21ca373c554f68",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/voc21/tpt/result.json": "143ee7e018bbe8f365014bb5b65664537929307e55a743d8f0ee387648e20193"
+  },
+  "trace_scores": {
+    "coco_cd": 75.1895608124621,
+    "coco_object": 32.67826958917333,
+    "pc60": 30.584325228702784,
+    "voc21": 52.39648940361091
+  },
+  "validation": [
+    "Referenced artifacts match owning seals",
+    "Protocol hash links match",
+    "Pooled mIoU reconstructed from class counts",
+    "Native input panels and vocabulary match",
+    "Two diagnostic inputs per candidate in all cost rows"
+  ]
+}

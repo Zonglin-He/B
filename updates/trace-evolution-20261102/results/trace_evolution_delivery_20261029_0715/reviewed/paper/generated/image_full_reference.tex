@@ -1,0 +1,38 @@
+\begin{table*}[t]
+\caption{R: means and reported standard deviations from main Table~5 (Original NACLIP rows) of \citet{noori2025mlmp}, freshly cross-checked against the source PDF; not rerun. No Adapt has no reported standard deviation. L: newly measured TRACE(C), one deterministic seed, no standard deviation. R and L are reference operating points, not matched checkpoint/loader/query/episode/budget/tuning protocols. The negative VOC20 difference is retained.}
+\label{tab:image-full-reference}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Method & VOC20 & VOC21 & PC60 & Object & Stuff \\
+\midrule
+No Adapt (R) & $75.91$ & $45.12$ & $24.95$ & $23.80$ & $18.34$ \\
+TENT (R) & $77.00 \pm 0.04$ & $45.65 \pm 0.02$ & $25.29 \pm 0.01$ & $24.88 \pm 0.01$ & $18.76 \pm 0.01$ \\
+TPT (R) & $75.93 \pm 0.01$ & $45.17 \pm 0.01$ & $24.98 \pm 0.01$ & $23.84 \pm 0.01$ & $18.35 \pm 0.01$ \\
+WATT (R) & $57.73 \pm 0.06$ & $28.58 \pm 0.05$ & $14.77 \pm 0.03$ & $14.14 \pm 0.06$ & $9.49 \pm 0.02$ \\
+CLIPArTT (R) & $72.77 \pm 0.14$ & $39.50 \pm 0.04$ & $21.88 \pm 0.03$ & $21.34 \pm 0.03$ & $15.48 \pm 0.01$ \\
+MLMP (R) & $83.76 \pm 0.00$ & $50.78 \pm 0.02$ & $27.99 \pm 0.03$ & $28.84 \pm 0.01$ & $21.25 \pm 0.01$ \\
+\midrule
+TRACE(C) (L) & 83.49 & 52.62 & 30.69 & 32.59 & 21.84 \\
+$\Delta$ vs. best R (pp) & -0.27 & +1.84 & +2.70 & +3.75 & +0.59 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\caption{COCO-CD local reference operating points. Historical native baselines are sealed existing measurements, not rerun or part of the new matched three-arm experiment. Checkpoint and full input order match recorded metadata; method backends, prompts and optimization budgets retain their own protocols. TENT is the best historical native baseline. The historical No Adapt row is not a certified reset readout of the new method.}
+\label{tab:image-full-cd-reference}
+\centering\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Method / protocol & COCO-CD \\
+\midrule
+No Adapt (L, historical native) & 61.14 \\
+TENT (L, historical native) & 72.20 \\
+TPT (L, historical native) & 64.27 \\
+MLMP (L, historical native) & 71.01 \\
+\midrule
+TRACE(C) (L, new) & 74.98 \\
+$\Delta$ vs. native TENT (pp) & +2.78 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,8 @@
+{
+  "source_sha256": {
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/baselines.csv": "6d126a089269d8fdbaef9b60b6194b072d887358c7b746ba2294c610d4c0a339",
+    "/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/comparison.csv": "3498b173cac5963fd565897786d684266a3ecf457de9e844f992717f2d5374e0"
+  },
+  "scope": "Sealed historical full seed0, method-native backends and inherited settings; not equal tuning or optimization budgets.",
+  "pipeline": "Explicit TwoViewTRACE; no residual/dominance/semantic-role branch."
+}

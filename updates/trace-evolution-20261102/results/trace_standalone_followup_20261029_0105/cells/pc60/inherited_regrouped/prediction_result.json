@@ -1,0 +1,55 @@
+{
+  "status": "predicted",
+  "full_split": false,
+  "images": 128,
+  "timings": {
+    "Uniform": {
+      "measured_episodes": 14,
+      "measured_images": 119,
+      "seconds": 8.270185679197311,
+      "seconds_per_image": 0.06949735864871691,
+      "images_per_second": 14.389036064731973,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "Confidence": {
+      "measured_episodes": 14,
+      "measured_images": 119,
+      "seconds": 8.245265916921198,
+      "seconds_per_image": 0.06928794888169074,
+      "images_per_second": 14.432524214383966,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "T": {
+      "measured_episodes": 14,
+      "measured_images": 119,
+      "seconds": 12.593186090700328,
+      "seconds_per_image": 0.10582509319916242,
+      "images_per_second": 9.449554635572149,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "C": {
+      "measured_episodes": 14,
+      "measured_images": 119,
+      "seconds": 12.608870055526495,
+      "seconds_per_image": 0.10595689122291173,
+      "images_per_second": 9.437800490920441,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "min": {
+      "measured_episodes": 14,
+      "measured_images": 119,
+      "seconds": 16.931209930218756,
+      "seconds_per_image": 0.1422790750438551,
+      "images_per_second": 7.02844040623519,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "timing_scope": "Synchronized CUDA wallclock per independent arm: episodic reset, initial readout, candidate construction/selection, requested diagnostic views, LayerNorm optimization, final inference and reconstruction/CPU prediction transfer. Includes accounting hooks. Excludes model setup/loading, RGB decode/H2D/geometry preparation common to arms, post-run provenance checks, prediction/receipt disk writes, and offline scoring. Exclude only first complete episode (episode 0) per arm from timing aggregates; retain every prediction, count and accuracy observation including warmup.",
+  "accuracy_includes_warmup": true,
+  "measurements": "Fresh independent standalone arms; not shared-arm costs"
+}

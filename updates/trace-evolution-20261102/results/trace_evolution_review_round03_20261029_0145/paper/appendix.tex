@@ -1,0 +1,246 @@
+\section{Implementation and Protocol}
+\label{app:protocol}
+\subsection{Implementation Identity and Deterministic Runtime}
+The evaluated method is \texttt{trace\_ovss.method.two\_view.TwoViewTRACE}, with candidate-preserving views and $\rho=\min(T,C)$. The prediction worker is \texttt{tools/evolution/run\_cell.py}; score-aggregation and spatial-normalization controls use \texttt{tools/evolution\_replay/run\_cell.py} to replay sealed initial diagnostics. The method has no candidate-suppressed view, semantic-role branch, dominance attenuation, fragment guard, or CLS loss. The complete candidate, probe, optimization, and reconstruction pipeline is retained.
+
+All matched evaluations use deterministic PyTorch algorithms with errors, rather than warnings, on nondeterministic operations, \texttt{CUBLAS\_WORKSPACE\_CONFIG=:4096:8}, deterministic cuDNN, and disabled cuDNN benchmarking. Default attention dispatch remains enabled. Runtime flags, checkpoint identity, software/hardware metadata, source hashes, and ordered image IDs are recorded in each prediction protocol. Small-panel reference checks establish implementation agreement; the reported accuracy values come from the separate full-split predictions.
+
+Seeds 1 and 2 reproduce the seed-0 full-split scores exactly on VOC20 and the four core splits (VOC21, PC60, COCO Object, and COCO-CD). COCO-Stuff has only seed 0. The fixed order and deterministic probes make these numerical replay checks, not independent samples of robustness or episode-composition variability. No seed standard deviation or significance interval is inferred from them.
+
+\input{generated/seed_replay.tex}
+
+\subsection{Candidate Geometry and Query Extensions}
+The diagnostic vocabulary $\mathcal C$ is the input text-query vocabulary, not a pre-collapsed category vocabulary. Extension queries participate individually in the token softmax and argmax. For example, if two different queries map to the same evaluation category, their adjacent argmax regions are still different query components. The method makes no synonym-merging claim.
+
+Four-connected component labeling is crop-local. For each source image, proposals from all its crops are collected, then ranked together by descending mean query probability and descending token area, followed by ascending query index and component index. Enumeration order resolves any remaining exact ties. The first $K$ are retained. There is no cross-crop component stitching, no geometric union of overlapping proposals, and no fragmentation or minimum-area guard beyond requiring a nonempty component. A valid-token mask excludes geometric padding; it is not a ground-truth foreground mask.
+
+The source images in the present evaluations are resized to $224\times224$. The loader's input crop size is also $224\times224$ with stride 112. These settings generally yield one crop for each resized image, but the selection definition still pools proposals per source image. The ViT-L/14 patch size of 14 is an encoder property, not the loader's crop size. A $224$-pixel input gives a $16\times16$ spatial-token grid.
+
+Final prediction follows a different order from candidate construction. Crop logits are spatially reconstructed and combined into pixel scores. Pixel query probabilities are then collapsed by taking the maximum over extensions of each category, followed by the category argmax. Candidates are not retroactively relabeled or merged using that map; collapsing before the diagnostic argmax would define a different method.
+
+Concretely, let $e(c)$ map query $c$ to its evaluation category. Resources in \texttt{trace\_ovss/resources/class\_names/} contain one category per nonempty line and comma-separated query extensions within that line: \texttt{cls\_voc20.txt}, \texttt{cls\_voc21.txt}, \texttt{cls\_context60.txt}, \texttt{cls\_coco\_object.txt}, \texttt{coco\_cd.txt}, and \texttt{cls\_coco\_stuff.txt}. When extensions are enabled, each query enters the softmax separately. After bilinear upsampling, logits from overlapping crops are averaged at each covered pixel, and a query softmax gives $s_c(u)$. The category scores and final labels are
+\begin{equation}
+g_y(u)=\max_{c:e(c)=y}s_c(u),\qquad
+\widehat Y(u)=\arg\max_y g_y(u).
+\end{equation}
+This is a maximum over extensions, not a sum of their probabilities. If extensions are disabled, $e$ is the identity map. Neither category collapsing nor ground-truth categories are used to construct candidates.
+
+\subsection{Pixel Transforms and Diagnostic Readout}
+Inputs use RGB values on $[0,255]$, normalized with mean $(122.7709,116.7460,104.0937)$ and standard deviation $(68.5005,66.6322,70.3232)$. Each diagnostic transform first inverts this normalization. Grayscale conversion uses channel weights $(0.2989,0.5870,0.1140)$, followed by stride-one $9\times9$ average pooling with padding four and the library's default padded averaging behavior. The single grayscale channel is broadcast to the three normalization channels.
+
+The context transform computes the crop's full-image spatial channel means, reduces contrast by 0.35, cyclically permutes channels $(r,g,b)\mapsto(g,b,r)$, and clips to $[0,255]$. It is fixed rather than randomly sampled or optimized. The candidate mask is a nearest-neighbor upsampling of its token mask; inside it, the original pixels are unchanged in both views. Since full-image means and blurred values can depend on candidate pixels, these operations do not isolate statistically independent information sources.
+
+Each normalized view passes through \texttt{forward\_eval\_logits} with no score interpolation. The output softmax is over the full text-query vocabulary. The probability of $c_R$ is averaged at $\Omega_R$ from the \emph{original} candidate, not at the view's new argmax region. There is no query-probability ratio, no view-specific candidate matching, and no CLS-token diagnostic. Internal compatibility names such as \texttt{counterfactual\_support} denote this fixed context-perturbed response; they do not imply causal counterfactual identification.
+
+\subsection{Prompt Entropy and Episodic Optimization}
+The model uses the last 18 visual outputs of NACLIP ViT-L/14. Diagnostics and final inference use normalized mean prompt embeddings and entropy-weighted layer aggregation. Optimization uses \texttt{forward\_adapt\_logits}, separate prompt embeddings, and uniform mean-layer aggregation. Thus diagnostic supports and gradient-bearing probabilities are related model outputs, not interchangeable tensors.
+
+\subsubsection{Explicit Dense Readout}
+\label{app:readout}
+Let $h_{\ell,b,i}$ be the pre-projection dense output of selected block $\ell$ at spatial token $i$ of crop $b$. We use blocks 7--24, indexed from one, with the reduced NACLIP architecture and neighborhood standard deviation 5. The selected outputs are attention-branch outputs, while the ordinary residual and MLP path propagates between blocks. Define $\psi_\theta(h)=\mathrm{LN}_{\mathrm{post},\theta}(h)W_{\mathrm{proj}}$ and let a hat denote unit-length normalization. For prompt $j$ and query $c$, $t_{j,c}$ is the normalized frozen text embedding, and $\bar t_c=\widehat{J^{-1}\sum_j t_{j,c}}$ is its normalized prompt mean. The logit multiplier $\lambda=\exp(\ell_{\mathrm{CLIP}})$ is the frozen pretrained logit-scale parameter; it is not a tuned diagnostic temperature.
+
+For inference and diagnosis, each selected layer first produces query logits
+\begin{equation}
+a_{\ell,b,i}(c)=\lambda\left\langle
+\widehat{\psi_\theta(h_{\ell,b,i})},\bar t_c\right\rangle.
+\end{equation}
+With $N$ spatial tokens, its mean query entropy determines its crop-specific layer weight:
+\begin{align}
+v_{\ell,b}&=\frac1N\sum_i H\!\left(\operatorname{softmax}_c a_{\ell,b,i}\right),\\
+w_{\ell,b}&=\frac{\exp(-v_{\ell,b})}{\sum_m\exp(-v_{m,b})}.
+\end{align}
+The CLS token is excluded from this entropy. Raw layer outputs are then combined before post-normalization and projection:
+\begin{equation}
+z^{\mathrm{eval}}_{b,i}(c)=\lambda\left\langle
+\widehat{\psi_\theta\!\left(\sum_\ell w_{\ell,b}h_{\ell,b,i}\right)},\bar t_c\right\rangle.
+\end{equation}
+Thus this operation is not an average of per-layer class probabilities. Diagnosis uses $\theta_0$; final inference uses the adapted parameters. For optimization, replace the weighted layer sum with its uniform mean and retain the separate prompt embeddings:
+\begin{equation}
+z^{j,\mathrm{adapt}}_{b,i}(c)=\lambda\left\langle
+\widehat{\psi_\theta\!\left(\frac1{18}\sum_\ell h_{\ell,b,i}\right)},t_{j,c}\right\rangle.
+\end{equation}
+The resulting query softmax is the $p^j_{\theta,b,i}$ used in the main loss. These formulas follow \texttt{ModelAdapterMixin} and \texttt{DenseCLIP.forward}: per-layer projection and query entropy determine layer weights, but raw layer outputs are combined before the final post-normalization and projection. The backbone and adapter sources are byte-identical to their frozen experiment copies. These readouts are shared across allocation controls, not additional learned components of the score.
+
+The checkpoint is the official OpenAI CLIP \texttt{ViT-L-14.pt}. Its SHA-256 is the concatenation of these two lines:
+\begin{quote}\small\ttfamily
+b8cca3fd41ae0c99ba7e8951adf17d26\\
+7cdb84cd88be6f7c2e0eca1737a03836
+\end{quote}
+Each experiment verifies this identity before loading the local checkpoint. Query and prompt resource hashes, actual optimizer parameter names, runtime flags, and episode image IDs are included in the experiment artifacts.
+
+The seven fixed prompt templates are:
+\begin{quote}\small
+\texttt{itap of a \{\}}\\
+\texttt{a bad photo of the \{\}.}\\
+\texttt{a origami \{\}.}\\
+\texttt{a photo of the large \{\}.}\\
+\texttt{a \{\} in a video game.}\\
+\texttt{art of the \{\}.}\\
+\texttt{a photo of the small \{\}.}
+\end{quote}
+These are fixed text templates, not trainable prompts. Only visual LayerNorm affine scale and bias are optimizer parameters; text encoding and other visual parameters remain frozen. No CLS-token entropy or global image-level objective is added. This does not assert that the backbone architecture has no global token or no contextual interactions.
+
+The optimizer includes the visual input and output LayerNorms and the normalization layers along the executed visual blocks. The final selected block's unused MLP normalization is frozen under the reduced architecture. Earlier executed blocks remain differentiable even when their outputs are not selected for the readout. The stored trainable-parameter names therefore specify the actual update set rather than equating output-layer selection with parameter-layer selection.
+
+Before each episode, the adapted parameters and optimizer state are restored to their initial values. Adam uses $\beta_1=0.9$, $\beta_2=0.999$, and zero weight decay. The initial candidates and diagnostics are computed once under no-gradient evaluation. All subsequent steps reuse these indices and detached scores on the unmodified input crops. Empty active candidate sets cause adaptation to be skipped. Probabilities, logits, and entropy are subject to the implementation's numerical-finiteness guards; the algebra below describes the finite active-score case.
+
+\input{generated/configurations.tex}
+
+Table~\ref{tab:configurations} gives the frozen settings for all six splits. VOC20 uses batch size 1, learning rate 0.001105, 9 steps, and $K=8$; COCO-Stuff uses batch size 5, learning rate 0.0034, 12 steps, and $K=33$. Both enable query extensions and use diagnostic view-batch size 16. All matched arms on a split retain its settings. These fixed configurations are not equal optimization budgets across datasets or methods, and previously evaluated full splits are not fresh held-out calibration data.
+
+\subsubsection{Parameter Selection History}
+The four optimization settings are inherited from development of the earlier role-aware method, not retuned for this final two-view evaluation. Historical search records use seed-2027, class-covered training subsets of 512 images per dataset; VOC20 additionally uses a 128-image subset before its 512-image refinement. These are documented selection subsets, not a claim that no evaluation result was visible during development. Table~\ref{tab:selection-history} summarizes the surviving links.
+
+\begin{table*}[t]
+\caption{Historical parameter origin. Counts describe surviving linked ledger rows, not exhaustive attempts or independent replicates. Current method evaluations reuse the configurations without a new search; that freeze does not erase earlier full-evaluation exposure.}
+\label{tab:selection-history}
+\centering\small
+\begin{tabular}{@{}lp{0.36\textwidth}p{0.44\textwidth}@{}}
+\toprule
+Dataset & Documented development selection & Subsequent exposure or uncertainty \\
+\midrule
+VOC20 & 128-image screen/refine and 512-image refinement; 88 linked rows. & Full-validation comparison retained lr 0.001105 over 0.00110 and 0.00111. Earlier fixed-$K$ origin is not established. \\
+VOC21 & Early freeze after 35 recorded $K$/batch/partial-lr trials. & No recorded step search; the source selecting 36 steps is unknown. Earlier full scores were available. \\
+PC60 & Seven training-subset coordinate stages; 59 ledger rows. & Current tuple matches the selected record; earlier full evaluation exists. \\
+COCO Object & Seven training-subset coordinate stages; 60 ledger rows. & Current tuple matches the selected record; earlier full evaluation exists. \\
+COCO-Stuff & Initial and fine training-subset searches; 120 linked rows. & Full evaluation preceded fine search; replacing lr 0.003375 with 0.0034 used full-validation mIoU. \\
+COCO-CD & Initial and fine training-subset searches; 114 linked rows. & Earlier full evaluations exist; replacing lr 0.008625 with 0.0086 used full-validation mIoU. \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+The provenance audit retains ordered calibration IDs, stage ranges, selection-record links, source hashes, and unknown fields. Its record is \path{trace_parameter_provenance_20261029_0030/audit.json} under the experiment results directory. Known evaluation-conditioned choices mean the present full-split numbers are development-exposed, fixed-configuration evidence rather than an untouched confirmation set. Matched controls identify differences at those configurations; they do not establish equal tuning opportunity. No new baseline search is performed. The older copied flag declaring no held-out selection was written unconditionally and is not used as evidence of historical isolation.
+
+\subsection{Evaluation and Provenance}
+Scores use the complete ordered evaluation panels: 1,449 images each for VOC20 and VOC21, 5,105 for PC60, 500 for COCO-CD, and 5,000 each for COCO Object and COCO-Stuff. VOC20 and VOC21 use different category protocols on the same source split. Evaluation labels are resized to $224\times224$ by nearest-neighbor interpolation; these results do not use native-resolution annotation grids. The numbers of evaluated categories with positive union are respectively 20, 21, 60, 3, 81, and 171. VOC21, PC60, COCO-CD, and COCO Object include their explicit background category; VOC20 excludes background and COCO-Stuff uses its 171 object/stuff classes. Intersections and unions are pooled before averaging over classes with positive union; ignore label 255 is excluded. The metric is
+\begin{equation}
+\operatorname{mIoU}=\frac{100}{|\mathcal Y_+|}
+\sum_{y\in\mathcal Y_+}\frac{I_y}{U_y},\qquad
+\mathcal Y_+=\{y:U_y>0\}.
+\end{equation}
+It is not an average of candidate IoUs or per-image mIoU. The prediction loader opens RGB images but not label pixels. Image IDs, query resources, source hashes, checkpoint identity, configurations, and runtime flags are frozen before adaptation. Candidate responses and pre/post predictions are sealed before the separate scoring phase reads labels and pools class counts.
+
+The sealed experiment roots are \path{trace_self_evolution_20261028_1338} (five-split controls and four-split replay), \path{trace_evolution_product_pixel_recovery_20261028_2215} (PC60/Object product and spatial controls), and \path{trace_evolution_voc20_cli_recovery_20261028_2312} (VOC20), under the experiment results directory. Each root contains its manifest and frozen runtime; each cell binds \texttt{prediction\_protocol.json}, \texttt{PREDICTIONS\_SEALED.json}, \texttt{result.json}, and \texttt{SCORED\_SEALED.json}. Source hashes identify the executed versions rather than an unspecified live checkout.
+
+The worker separates \texttt{--phase predict} from \texttt{--phase score}. A full-split invocation specifies \texttt{--package-root}, \texttt{--data-root}, \texttt{--checkpoint}, \texttt{--dataset}, \texttt{--seed}, \texttt{--policies}, and a fresh \texttt{--output}, without \texttt{--max-images}; the manifests preserve the exact panel and policy variants. The CPU-only table exporter validates sealed records, recomputes pooled mIoU, and records source hashes without model inference. Published reference rows are marked R and local measurements L; literature statistics are not pooled with deterministic replay values.
+
+\section{Mathematical Interpretation}
+\label{app:theory}
+\subsection{Conservative Common Support}
+The minimum is a parameter-free way to require support in both measured views. The following characterization explains that criterion; it is not a design proof of superior segmentation or update safety.
+
+For $T,C\in[0,1]$, consider
+\begin{equation}
+\begin{aligned}
+&\underset{r}{\operatorname{maximize}}\quad r\\
+&\text{subject to}\quad 0\leq r\leq T,\quad r\leq C.
+\end{aligned}
+\end{equation}
+Every feasible $r$ is at most $\min(T,C)$, and $\min(T,C)$ itself is feasible. Therefore it is the unique maximal value. This proves the characterization in Eq.~\mainref{eq:minimum}. It is an ordering property of the measured supports, not a learned or statistically calibrated reliability guarantee.
+
+The score is symmetric in the two measured values, nondecreasing in each, and no larger than either. It is 1-Lipschitz under the maximum norm:
+\begin{equation}
+|\min(T,C)-\min(T',C')|
+\leq\max(|T-T'|,|C-C'|).
+\end{equation}
+These properties describe numerical score behavior. They do not show that the two transforms are optimal, that the score ranks true candidates correctly, or that a minimum outperforms another aggregation in adaptation.
+
+\subsection{Relative Allocation, Not Absolute Safety}
+For a fixed nonempty active set with positive scores, define $Z=\sum_R\rho_R$. Because all diagnostics are detached,
+\begin{equation}
+\nabla_\theta\mathcal L
+=\sum_R\frac{\rho_R}{Z}\nabla_\theta\overline H_R.
+\end{equation}
+The normalized coefficients sum to one; they are not gradient-attribution percentages. Region gradients can have different norms or directions, and Adam further transforms their joint update. A large coefficient does not guarantee a large beneficial parameter change.
+
+Multiplying every active score by a common positive scalar leaves the normalized objective unchanged, provided threshold membership does not change. Consequently, the method does not implement an absolute low-support safety gate. If all candidates have equally low but active scores, their normalized coefficients are still uniform. A small total raw support does not automatically reduce the update count or learning rate.
+
+If there is only one active candidate in the \emph{entire episode}, then $\alpha_R=1$ and $\rho_R$ cancels exactly. One candidate per image is not this case when the episode contains multiple images. This normalization property is important for experiment design: a separately normalized isolated-candidate update cannot test whether the numerical value of $\rho_R$ changes that candidate's update. Such a test can examine candidate geometry or other diagnostics, but it cannot establish causal effectiveness of the normalized weighting rule. An isolated-score intervention would need an explicitly different, fixed normalization protocol and must be labeled as such.
+
+\subsection{Region-Uniform and Token-Confidence Controls}
+Setting $\rho_R=1$ on a fixed selected candidate set gives region-uniform entropy,
+\begin{equation}
+\mathcal L_{\mathrm{reg}}=\frac{1}{|\mathcal S|}
+\sum_{R\in\mathcal S}\frac{1}{J|\Omega_R|}
+\sum_{j,i\in\Omega_R}H(p^j_{\theta,b_R,i}).
+\end{equation}
+A token in region $R$ then has coefficient $1/(J|\mathcal S||\Omega_R|)$. This differs from uniform-token entropy, whose coefficients are constant across selected tokens, and from token-confidence entropy, whose coefficients vary with token confidence. Initial \emph{candidate}-confidence weighting, $\rho_R=\kappa_R$, is a fourth, separately defined control. Calling these objectives interchangeable would confound score construction with spatial normalization.
+
+Region averaging removes the explicit area multiplier of a region's summed entropy. It does not equalize gradients, prevent the same image area from contributing through overlapping crops, or make top-$K$ selection independent of confidence. Coefficients are normalized across all active candidates in the episode; changing the episode composition can change every candidate's relative coefficient even with identical per-candidate diagnostics.
+
+\subsection{Limits of the Probe Interpretation}
+Two high responses can arise from a shared error, retained contextual structure, a large mask, or an uninformative perturbation. Two low responses can reflect color sensitivity introduced by the transform rather than incorrect localization. The score cannot identify these cases from two scalar values. Fixed channel shifting also defines only one context transformation, not an expectation or a worst case over arbitrary environments. The minimum should not be described as a calibrated probability, a lower bound on correctness, or a causal attribution measure.
+
+\section{Control Definitions and Diagnostic Scope}
+\label{app:mechanism}
+\subsection{Controlled Allocation Comparisons}
+The five-split controls hold candidate proposals, input episodes, readouts, visual parameters, learning rate, optimizer, and update count fixed. Their unnormalized weights are $1$, $\kappa_R$, $T_R$, $C_R$, $(T_R+C_R)/2$, and $q_R=\min(T_R,C_R)$. The same initial diagnostic responses are shared across arms. Each policy uses the implementation's positive-weight threshold before normalization; no candidate mask is regenerated from an adapted prediction.
+
+\input{generated/cd_mechanism.tex}
+
+The product and spatial controls on PC60/Object replay the parent diagnostics with admission fixed by $q_R>10^{-8}$. Product uses $T_RC_R$ without imposing a second threshold on that product. Spatial normalization uses effective region weights $q_R|\Omega_R|$, yielding
+\begin{equation}
+\mathcal L_{\mathrm{pix}}=
+\frac{\sum_{R\in\mathcal S_+}q_R\sum_{j,i\in\Omega_R}H(p^j_{\theta,b_R,i})}
+{J\sum_{R\in\mathcal S_+}q_R|\Omega_R|}.
+\end{equation}
+This is $q$-weighted token-normalized entropy, not uniform-token entropy. It changes the area factor while retaining candidate geometry and the initial score. Exact replay gates bind the reused initial state and parent candidates. None of these comparisons isolates the effect of connected-component selection, top-$K$, or a changed encoder.
+
+The permutation control reassigns the episode's $q$ values to its candidates using three fixed permutation seeds, preserving the raw score multiset. It does not preserve a class-, confidence-, or area-matched assignment and is not a semantic-role shuffle. Its full-split differences measure sensitivity to candidate-specific assignment under joint adaptation. Three permutations are controls, not independent estimates of uncertainty.
+
+\subsection{Probe Complementarity}
+The CPU-only audit uses all 493,616 saved candidates in 2,035 episodes across the five control splits. Candidate-level limiting counts use tolerance $10^{-6}$. For normalized allocation vectors $\alpha^{\min}$ and $\alpha^a$, where $a$ is $T$ only or $C$ only, total variation is $\tfrac12\sum_R|\alpha_R^{\min}-\alpha_R^a|$. Each arm independently excludes weights at most $10^{-8}$. All episodes contain at least two active candidates; no undefined comparison is silently dropped. Table~\ref{tab:probe-complementarity} pools limiting counts over candidates and averages TV equally over episodes. Both limiting directions appear in every episode, while 44.98--61.11\% of candidates have $|T-C|\geq0.05$. These existing-cache statistics describe different score assignments, not an independent experiment, a causal effect, or proof that a second view improves mIoU.
+
+\input{generated/probe_complementarity.tex}
+
+\subsection{Offline Update-Risk Analysis}
+Fixed initial support and realized update outcomes are different quantities. The analysis reports category-label transitions over the original candidate footprints after joint episode adaptation. For group $G$, let $n_G^{\mathrm C}$ and $n_G^{\mathrm W}$ count initially correct and initially wrong valid pixels. Let $n_G^{\mathrm{CW}}$ count initially correct pixels that become wrong, and $n_G^{\mathrm{WC}}$ initially wrong pixels that become correct. Then
+\begin{equation}
+\mathrm{CW}_G=100\frac{n_G^{\mathrm{CW}}}{n_G^{\mathrm C}},\qquad
+\mathrm{WC}_G=100\frac{n_G^{\mathrm{WC}}}{n_G^{\mathrm W}}.
+\end{equation}
+Undefined zero-denominator rates are omitted, not set to zero. Pixel counts are pooled within the fixed-threshold group. These are not candidate-level Bernoulli outcomes, named-class IoU, or full-split mIoU, and their difference is not a net accuracy change. Saved category masks support this transition analysis, not a correct-class probability-drop metric. A candidate's outcome under a joint update does not isolate the causal effect of its own coefficient.
+
+\input{generated/risk_group_counts.tex}
+
+The high-confidence/low-support group is fixed at $\kappa_R\geq0.9$ and $q_R<0.25$. Separately, the stratified analysis groups candidates by predicted evaluation class, initial-confidence bin (edges 0, 0.7, 0.9, 0.95, 0.99, and 1.000001), and token-area bin (edges 1, 4, 16, 64, and 257). In each stratum with at least eight candidates, the lowest and highest rank quartiles of initial $q$ are compared; strata with overlapping $q$ tails are excluded. For each transition, both tails must have a nonzero relevant pixel denominator. Within-stratum rates are averaged using the number of candidates in each tail, $\lfloor n_s/4\rfloor$, as the common stratum weight. This rank-tail comparison is not restricted to $\kappa_R\geq0.9$, $q_R<0.25$.
+
+Bins and thresholds are not selected from the transition outcomes. The stratification is nevertheless descriptive rather than a prospectively untouched test: earlier aggregate diagnostics were visible before its computation. Label-based outcomes come from sealed predictions and do not alter adaptation or candidate admission. The unstratified score-permutation experiment is also distinct from this covariate-stratified association. The analysis artifacts are \texttt{summary.json} and \texttt{strata\_*/summary.json} under \path{trace_evolution_final_analysis_20261028_2342}, with separate transition and stratification seals.
+
+\input{generated/risk_strata.tex}
+
+Candidates, tokens, and pixels updated jointly are not independent replicates. Neither deterministic replay nor the three score permutations supply an independent uncertainty estimate. No mIoU bootstrap, paired interval, or significance claim is attached to the descriptive differences reported here. Any inference beyond these finite panels would need to preserve complete adaptation episodes rather than treating candidate pixels as independent trials.
+
+\subsection{Qualitative Examples}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/two_view_qualitative.pdf}
+\caption{Four selected candidate-preserving probe examples, named by predicted classes: COCO Object donut/dog and PC60 grass/snow. Columns show actual inputs and both transformed views; $T_R$, $C_R$, and $q_R=\min(T_R,C_R)$ are stored reset-model measurements at the original candidate tokens, rounded for display. Candidate pixels remain unchanged. These are selected illustrations, not representative samples; high-support cases use an offline ground-truth purity filter solely for display selection, never adaptation.}
+\label{fig:probe-cases}
+\end{figure*}
+
+The four probe examples display actual candidate inputs and both transformed views, with stored reset-model supports at the original token positions. Their names are predicted classes, not ground-truth labels. Cases are COCO Object image 2582/candidate 204 (donut), Object 4768/277 (dog), PC60 3508/160 (grass), and PC60 996/140 (snow), indexed within the frozen input panels. They are high-confidence masks of 32--192 tokens selected by common support. High-support illustrations additionally require offline semantic ground-truth purity of at least 0.7; this display filter never enters adaptation. Views are rendered through the intervention helper, while displayed scores come from the stored GPU diagnostics.
+
+The two-case Introduction teaser reuses the same PC60 grass and COCO Object dog cases and measurements, rather than adding data or another diagnostic. Its case subset is recorded as \texttt{teaser\_cases} in the same figure provenance.
+
+Segmentation examples are named-class IoU extremes among the first 400 images per dataset: CD image 394 (cat), Object image 38 (person/skateboard), PC60 image 285 (tree), and VOC21 image 154 (train, negative). Each annotation is IoU of the named class, or mean IoU of the two explicitly named classes, in that image only. Exact cases and source seals are recorded in \texttt{figure/final\_figure\_provenance.json}. Selected extremes illustrate both directions of change; they are not frequency estimates or representative samples.
+
+The Confidence column denotes $\rho_R=\kappa_R$ in the same candidate and optimization pipeline, not MLMP. The existing native MLMP artifacts do not contain prediction masks suitable for these illustrations, so no fresh MLMP qualitative prediction is represented. Ground truth is used only after sealing, for scoring and illustration; selection of informative examples does not make them independent validation samples.
+
+\subsection{Computation and Generalization}
+A nonempty episode uses $2N_{\mathrm{cand}}$ diagnostic inputs; batching can reduce encoder calls without changing that count. Shared diagnostic execution in the matched suite is an experimental economy, not a standalone end-to-end timing result. Latency comparisons require the same candidates, update budget, warmup policy, synchronization boundaries, and hardware. No latency speedup follows solely from the number of views.
+
+The standalone comparison instead independently reconstructs the candidates, computes the requested zero/one/two views, adapts, and predicts for every arm. All six conditions use the same 128 selected image IDs per dataset (selection seed 20261029, model seed 0). Regrouping permutes only their order with seed 20261030. Arm order alternates by episode. Two four-image GPU gates check native versus standalone minimum adaptation before any formal prediction: candidate identity is exact, support/loss difference is at most $10^{-5}$, encoder counts agree, and final labels are identical. All six conditions' predictions are sealed before any of their labels are opened for scoring.
+
+\input{generated/standalone_cost.tex}
+
+Model-side times include episodic reset, candidate construction, requested diagnostics, adaptation, final reconstruction, and CPU prediction transfer. They exclude setup/model loading, shared RGB decoding/H2D/geometry preparation, artifact writes, and offline scoring. Episode 0 is excluded from time alone; its predictions remain in mIoU. Actual input/call counters retain all 128 images, so their denominator differs from timing. The current cost tables replace the historical profiler as this manuscript's timing evidence. The completed suite is \path{trace_standalone_followup_20261029_0105}; its frozen configuration and ordered-ID manifests, all-arm prediction barrier, per-episode counters, 30-row result table, and successful service terminal are bound in the import provenance.
+
+All results use the specified ViT-L/14 backbone and fixed perturbations. The diagnostic compares two episode orderings on reused images; it is neither an independent population sample nor a distribution over all compositions. Alternative context transformations, corruptions, vocabularies, and backbones remain outside this evaluation.
+
+\section{Reported and Local Native Comparison Protocols}
+\label{app:native}
+The main reported comparison uses the clean NACLIP ViT-L/14 values from MLMP's main Table 5, marked R, for VOC20, VOC21, PC60, COCO Object, and COCO-Stuff. The MLMP references are 83.76, 50.78, 27.99, 28.84, and 21.25, respectively. Local TRACE measurements are marked L. Published dispersion statistics remain attributed to the source; they are not combined with local deterministic replays. A common backbone family does not certify identical checkpoints, query extensions, loaders, or adaptation budgets.
+
+COCO-CD uses a separate completed local native comparison on the same ordered input panel and episode composition. Baselines retain method-native backend behavior and prompts and use learning rate 0.001 with 10 steps; TRACE uses Table~\ref{tab:configurations}. The best local native baseline is TENT at 72.200299, compared with 75.104794 for deterministic TRACE. This local difference is not interchangeable with a reported-reference difference. No additional MLMP evaluation is performed for the literature comparison, and neither comparison is presented as equal-budget attribution of the minimum.
+

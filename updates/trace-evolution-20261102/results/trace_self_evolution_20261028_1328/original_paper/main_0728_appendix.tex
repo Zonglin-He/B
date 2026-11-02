@@ -1,0 +1,195 @@
+\documentclass[letterpaper]{article}
+\usepackage[submission]{aaai2027}
+\usepackage{graphicx}
+\usepackage{natbib}
+\usepackage{caption}
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{xspace}
+\frenchspacing
+
+\pdfinfo{
+    /TemplateVersion (2027.1)
+}
+
+\newcommand{\method}{TRACE\xspace}
+\newcommand{\Description}[1]{}
+
+\begin{document}
+\begin{center}
+    {\LARGE\bfseries Supplementary Material for \method\par}
+    \vspace{0.4em}
+    {\normalsize Anonymous Submission\par}
+\end{center}
+\vspace{0.8em}
+
+\setcounter{secnumdepth}{2}
+\appendix
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{A\arabic{figure}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{A\arabic{table}}
+
+\section{Supplementary Experiments and Analyses}
+
+\subsection{Additional Confidence-Source Examples}
+
+Figure~\ref{fig:source-ambiguity-appendix} contains the remaining diagnostic examples omitted from main-paper Figure~2. The examples use the candidate-preserved and candidate-suppressed views defined in the Method. As in the candidate-level analysis, candidate-supported and context-dominated denote the equal-size bottom and top quartiles of residual-context dominance $d_R$ among thing candidates; they are diagnostic groups, not additional semantic roles.
+
+\subsection{Qualitative Comparison}
+
+Figure~\ref{fig:qualitative-main} provides the qualitative cases referenced in the Benchmark Results subsection of the main paper.
+
+\subsection{Diagnostic-View Recognition Check}
+
+Table~\ref{tab:direct-recognition} examines whether each diagnostic view retains the predicted class semantics at the original probe-region locations. Ground-truth connected components define these regions only for this offline recognition check; they do not replace the predicted candidates used by \method during adaptation. The candidate-preserved and context-perturbed views achieve $57.73\%$ and $61.56\%$ macro top-1 accuracy, respectively. The candidate-suppressed view is evaluated only for thing components, so the three columns provide a semantic sanity check rather than a matched comparison. The relatively high suppression accuracy on PC60 indicates substantial evidence from surrounding context or co-occurring objects.
+
+\noindent\begin{minipage}{\columnwidth}
+    \centering
+    \captionof{table}{Diagnostic-view recognition accuracy at the original probe-region locations (\%). Ground-truth connected components are used only as offline probes; the candidate-suppressed view is evaluated only for thing components.}
+    \label{tab:direct-recognition}
+    \small
+    \setlength{\tabcolsep}{3.6pt}
+    \begin{tabular}{lrrr}
+        \toprule
+        Dataset & \shortstack{Candidate-\\preserved} & \shortstack{Candidate-\\suppressed} & \shortstack{Context-\\perturbed} \\
+        \midrule
+        VOC20 & 61.83 & 50.19 & 68.85 \\
+        PC60 & 41.63 & 55.95 & 44.02 \\
+        COCO Object & 48.76 & 40.27 & 54.92 \\
+        COCO-Stuff & 31.34 & 31.12 & 34.11 \\
+        COCO-CD & 86.71 & 59.40 & 89.28 \\
+        Waterbirds-Seg & 76.13 & 50.52 & 78.22 \\
+        \midrule
+        Macro & 57.73 & 47.91 & 61.56 \\
+        \bottomrule
+    \end{tabular}
+\end{minipage}
+
+\subsection{Context-Perturbation Sensitivity}
+
+Using seed 0, Table~\ref{tab:cf-robustness} compares the channel-shift context perturbation defined in the Method with a blur-based perturbation and the removal of context-perturbed support $s_{\mathrm{cf}}(R)$. Channel shift performs best on VOC20 and COCO-CD and ties with blur shift on PC60; blur shift is $0.10$ mIoU higher on Waterbirds-Seg. Removing context-perturbed support lowers performance on all four datasets relative to channel shift, with the largest reduction on COCO-CD. These results support using the context-perturbed view as a stability check, although no perturbation performs best on every dataset.
+
+\noindent\begin{minipage}{\columnwidth}
+    \centering
+    \captionof{table}{Context-perturbation sensitivity using seed 0 (mIoU). CP denotes context perturbation; ``No CP'' removes $s_{\mathrm{cf}}(R)$ from candidate reliability.}
+    \label{tab:cf-robustness}
+    \small
+    \setlength{\tabcolsep}{3.6pt}
+    \begin{tabular}{lrrrr}
+        \toprule
+        Dataset & No CP & Blur shift & Channel shift & Spread \\
+        \midrule
+        VOC20 & 83.60 & 83.77 & \textbf{83.96} & 0.36 \\
+        PC60 & 30.28 & \textbf{30.37} & \textbf{30.37} & 0.09 \\
+        COCO-CD & 73.50 & 74.93 & \textbf{75.13} & 1.63 \\
+        Waterbirds-Seg & 54.92 & \textbf{55.44} & 55.34 & 0.52 \\
+        \bottomrule
+    \end{tabular}
+\end{minipage}
+
+\subsection{Semantic-Role Configuration}
+
+The vocabulary-level semantic-role map supplies the fixed role $r_R\in\{\mathrm{thing},\mathrm{stuff},\mathrm{background}\}$ used by the Method. Table~\ref{tab:role-counts} reports its composition for each benchmark. Explicit background labels are assigned the background role where available, while COCO-Stuff and Pascal Context use fixed benchmark-level thing/stuff partitions. Semantic-role assignment does not use test-image annotations.
+
+\noindent\begin{minipage}{\columnwidth}
+    \centering
+    \captionof{table}{Number of vocabulary entries assigned to each fixed semantic role $r_R$. The assignments are not inferred from test images.}
+    \label{tab:role-counts}
+    \small
+    \setlength{\tabcolsep}{4.5pt}
+    \begin{tabular}{lrrr}
+        \toprule
+        Dataset & Thing & Stuff & Background \\
+        \midrule
+        VOC20 & 20 & 0 & 0 \\
+        VOC21 & 20 & 0 & 1 \\
+        PC59 & 30 & 29 & 0 \\
+        PC60 & 30 & 29 & 1 \\
+        COCO Object & 80 & 0 & 1 \\
+        COCO-Stuff & 80 & 91 & 0 \\
+        COCO-CD & 2 & 0 & 1 \\
+        Waterbirds-Seg & 2 & 0 & 1 \\
+        \bottomrule
+    \end{tabular}
+\end{minipage}
+
+\subsection{Experimental Details}
+\label{sec:experimental-details}
+
+\paragraph{Benchmarks and evaluation splits.}
+The six standard benchmarks cover object-only and object-plus-background vocabularies at different semantic granularities: VOC20/21~\cite{everingham2015pascal}, PC59/60~\cite{mottaghi2014context}, COCO Object~\cite{lin2014coco}, and COCO-Stuff~\cite{caesar2018cocostuff}. COCO-CD and Waterbirds-Seg are public segmentation benchmarks with controlled object--context associations~\cite{sagawa2020dro,achara2026rightregions}. All reported evaluations use complete clean splits without shuffled subsampling. VOC20/21 use the VOC2012 segmentation validation list, PC59/60 use the Pascal Context validation list, COCO Object/Stuff use \texttt{val2017}, COCO-CD uses its balanced test list, and Waterbirds-Seg uses all matched image--mask pairs in the released correlation-$0.95$ evaluation directory.
+
+\paragraph{Preprocessing and model configuration.}
+Every image and mask is resized to $224\times224$; images use bilinear interpolation and masks use nearest-neighbor interpolation. RGB values on the $[0,255]$ scale are normalized with mean $(122.7709,116.7460,104.0937)$ and standard deviation $(68.5005,66.6322,70.3232)$. Model inputs use $224\times224$ patches with stride $112$. \method uses NACLIP ViT-L/14, the final 18 visual-transformer outputs, and seven fixed prompt templates. Class-name extensions follow the fixed vocabulary setting of each benchmark. Ignore label 255 is excluded from evaluation.
+
+\paragraph{Episodic adaptation.}
+Each test batch is one adaptation episode. Before every batch, the visual weights and optimizer state are reset to their pretrained states. Only the affine scale and bias of visual-encoder LayerNorm modules are updated. Optimization uses Adam with $\beta_1=0.9$, $\beta_2=0.999$, and zero weight decay. Candidate reliability is computed once with the fixed pre-update model and remains detached during all update steps. At most $K$ candidates are retained per image, and diagnostic views are evaluated in bounded batches of at most $B_{\mathrm{view}}$ views. The final prediction is obtained from the original, unmodified input.
+
+\paragraph{Final evaluation configurations.}
+Table~\ref{tab:final-configurations} summarizes the dataset-specific \method settings used for clean-split evaluation. They were selected on fixed training-split calibration subsets and fixed before evaluation. Image size, patch size, patch stride, optimizer, backbone, visual outputs, and prompt ensemble are shared across datasets. All datasets also use the same reliability rule, diagnostic interventions, and region-normalized objective.
+
+\noindent\begin{minipage}{\columnwidth}
+    \centering
+    \captionof{table}{Final dataset-specific \method settings. Batch is the episode batch size; Steps is the number of adaptation steps; $K$ and $B_{\mathrm{view}}$ are the candidate and diagnostic-view batch limits. Ext. marks fixed class-name extensions.}
+    \label{tab:final-configurations}
+    \footnotesize
+    \setlength{\tabcolsep}{2.2pt}
+    \begin{tabular}{@{}lrrrrrc@{}}
+        \toprule
+        Dataset & Batch & Learning rate & Steps & $K$ & $B_{\mathrm{view}}$ & Ext. \\
+        \midrule
+        VOC20 & 1 & 0.001105 & 9 & 8 & 24 & Yes \\
+        VOC21 & 16 & 0.000630 & 36 & 33 & 8 & Yes \\
+        PC59 & 7 & 0.001500 & 11 & 24 & 8 & Yes \\
+        PC60 & 9 & 0.002250 & 11 & 22 & 8 & Yes \\
+        COCO Object & 14 & 0.003000 & 29 & 34 & 8 & Yes \\
+        COCO-Stuff & 5 & 0.003375 & 12 & 33 & 8 & Yes \\
+        COCO-CD & 28 & 0.008625 & 5 & 4 & 8 & No \\
+        Waterbirds-Seg & 16 & 0.003000 & 4 & 7 & 8 & No \\
+        \bottomrule
+    \end{tabular}
+\end{minipage}
+
+\paragraph{Randomness and aggregation.}
+Main-paper Table~1 uses three runs for each stochastic local result, with seeds 0, 1, and 2; locally reproduced lower-block baselines follow the same protocol. The upper-block baseline means and standard deviations are the cited three-run MLMP results, and their No Adapt entries are deterministic single evaluations. In the locally reproduced lower block, No Adapt follows the same three-seed reporting protocol as the other methods and has zero standard deviation at the reported precision. The candidate audits in main-paper Table~2 use one fixed run. Each variant in the module ablation of main-paper Table~3 and the context-perturbation sensitivity study in Appendix A.4 is evaluated once with seed 0. The diagnostic-view recognition study in Appendix A.3 uses one inference pass over each complete split. The qualitative figures and semantic-role counts are descriptive outputs from the fixed evaluation protocol.
+
+Each stochastic local run applies its seed to Python's \texttt{random} module, NumPy, PyTorch, and all CUDA devices. For base seed $s$, trial $t$ uses $s+t$; therefore, three trials from $s=0$ use seeds 0, 1, and 2. Local summaries report the mean and NumPy population standard deviation across these runs.
+
+\paragraph{Evaluation metric.}
+For each evaluated class $c$, intersections $I_c$ and unions $U_c$ are accumulated over every valid pixel in the complete split. Classes with $U_c=0$ are omitted, and
+\begin{equation}
+    \operatorname{mIoU}
+    =
+    \frac{100}{|\mathcal C_{\mathrm{valid}}|}
+    \sum_{c\in\mathcal C_{\mathrm{valid}}}
+    \frac{I_c}{U_c}.
+\end{equation}
+Class mIoU is used because it is the standard class-balanced segmentation measure for the compared OVSS benchmarks; it prevents frequent classes from determining the score solely through pixel count.
+
+\paragraph{Computing infrastructure and software.}
+The reported local runs use a workstation with an Intel Core i5-14600KF CPU (14 cores and 20 threads), 32 GB of system memory, approximately 1 TB of NVMe storage, and one NVIDIA GeForce RTX 5090 GPU with 32,607 MiB of device memory. The operating system is Ubuntu 24.04.4 LTS with Linux kernel 7.0.0-28-generic and NVIDIA driver 580.173.02. The software environment comprises Python 3.13.12, PyTorch 2.7.0+cu128, torchvision 0.22.0+cu128, cuDNN 9.7.0, NumPy 2.3.5, SciPy 1.17.1, and Pillow 12.0.0. PyTorch is built against CUDA 12.8, while the installed driver reports CUDA capability 13.0.
+
+\clearpage
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=\textwidth]{figure/TRACE_v2_source_ambiguity_appendix.pdf}
+    \caption{Additional confidence-source examples from the \method diagnostics. Each group contains a selected candidate region, its candidate-preserved view, and its candidate-suppressed view. Candidate-supported examples retain strong candidate support $s_{\mathrm{tar}}(R)$ and little residual support $s_{\mathrm{res}}(R)$, whereas context-dominated examples retain substantial residual support after candidate suppression.}
+    \Description{Additional thing-candidate examples from the candidate-supported and context-dominated groups are shown with candidate-preserved and candidate-suppressed views.}
+    \label{fig:source-ambiguity-appendix}
+\end{figure*}
+
+\begin{figure*}[t]
+    \centering
+    \includegraphics[width=0.78\textwidth]{figure/TRACE_v2_qualitative_current.pdf}
+    \caption{Representative improvements obtained with \method. White contours in the MLMP and \method columns denote ground-truth boundaries. Values report image-level mIoU and the corresponding \method-minus-MLMP improvement. The rows cover multiple objects, a stuff-rich scene, COCO-CD, and Waterbirds-Seg; full-validation results are reported in main-paper Table~1.}
+    \Description{Four examples compare the input image, MLMP prediction, \method prediction, and ground truth. The examples include multiple zebras, an orange with surrounding stuff, a COCO-CD image, and a Waterbirds-Seg image.}
+    \label{fig:qualitative-main}
+\end{figure*}
+
+\clearpage
+\bibliography{references}
+
+\end{document}

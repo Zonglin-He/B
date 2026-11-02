@@ -1,0 +1,172 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "seed": 0,
+  "images": 4,
+  "full_split": false,
+  "policy_results": [
+    {
+      "policy": "trace",
+      "policy_label": "trace",
+      "permutation_seed": null,
+      "miou_unrounded": 66.07110251272435,
+      "intersection": [
+        99678,
+        11522,
+        44688
+      ],
+      "union": [
+        144343,
+        14893,
+        86284
+      ]
+    },
+    {
+      "policy": "uniform",
+      "policy_label": "uniform",
+      "permutation_seed": null,
+      "miou_unrounded": 40.860807403983124,
+      "intersection": [
+        30066,
+        11583,
+        45621
+      ],
+      "union": [
+        143069,
+        16057,
+        155012
+      ]
+    },
+    {
+      "policy": "confidence",
+      "policy_label": "confidence",
+      "permutation_seed": null,
+      "miou_unrounded": 41.407668789529076,
+      "intersection": [
+        33968,
+        11727,
+        45595
+      ],
+      "union": [
+        143095,
+        16717,
+        150306
+      ]
+    },
+    {
+      "policy": "target",
+      "policy_label": "target",
+      "permutation_seed": null,
+      "miou_unrounded": 55.57473729942465,
+      "intersection": [
+        73449,
+        11636,
+        45307
+      ],
+      "union": [
+        143489,
+        15495,
+        112032
+      ]
+    },
+    {
+      "policy": "counterfactual",
+      "policy_label": "counterfactual",
+      "permutation_seed": null,
+      "miou_unrounded": 58.00087980412658,
+      "intersection": [
+        79400,
+        11782,
+        45277
+      ],
+      "union": [
+        143524,
+        15517,
+        105908
+      ]
+    },
+    {
+      "policy": "mean",
+      "policy_label": "mean",
+      "permutation_seed": null,
+      "miou_unrounded": 56.656794121128804,
+      "intersection": [
+        77516,
+        11635,
+        45246
+      ],
+      "union": [
+        143605,
+        15729,
+        107677
+      ]
+    },
+    {
+      "policy": "permuted",
+      "policy_label": "permuted_0",
+      "permutation_seed": 0,
+      "miou_unrounded": 40.30896553925686,
+      "intersection": [
+        27457,
+        11335,
+        45621
+      ],
+      "union": [
+        143069,
+        15542,
+        158384
+      ]
+    },
+    {
+      "policy": "permuted",
+      "policy_label": "permuted_1",
+      "permutation_seed": 1,
+      "miou_unrounded": 32.937297380376904,
+      "intersection": [
+        55,
+        11742,
+        45621
+      ],
+      "union": [
+        143069,
+        15841,
+        185080
+      ]
+    },
+    {
+      "policy": "permuted",
+      "policy_label": "permuted_2",
+      "permutation_seed": 2,
+      "miou_unrounded": 25.69964498455965,
+      "intersection": [
+        3123,
+        11948,
+        45621
+      ],
+      "union": [
+        143069,
+        24609,
+        173038
+      ]
+    }
+  ],
+  "pre_result": {
+    "policy": "pre",
+    "policy_label": "pre",
+    "permutation_seed": null,
+    "miou_unrounded": 67.00951034288774,
+    "intersection": [
+      107631,
+      11518,
+      44663
+    ],
+    "union": [
+      144233,
+      16949,
+      76414
+    ]
+  },
+  "prediction_seal_sha256": "24ed234fa6500fa3759255af0c7c5632301bfd12786f2b977815e6abcd21b938",
+  "label_contents_first_opened_after_prediction_seal": true,
+  "timing_scope": "Shared pre/diagnosis once; separate policy adaptation/evaluation. Not standalone formal cost."
+}

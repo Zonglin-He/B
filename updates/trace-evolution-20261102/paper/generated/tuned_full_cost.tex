@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\caption{Model-side time per image (ms), excluding the first episode as warmup. Timing includes reset, candidate admission, diagnostic views, optimization, and final readout; it excludes data loading, disk writes, and offline scoring. Extra time is relative to Confidence under the same TRACE-selected configuration.}
+\label{tab:tuned-full-cost}
+\centering\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+Dataset & Confidence (ms) & TRACE (ms) & Extra time \\
+\midrule
+VOC20 & 153.46 & 165.99 & +8.17\% \\
+VOC21 & 273.45 & 343.73 & +25.70\% \\
+PC59 & 115.71 & 186.77 & +61.41\% \\
+PC60 & 51.90 & 84.43 & +62.68\% \\
+Object & 261.11 & 320.36 & +22.69\% \\
+Stuff & 101.68 & 159.09 & +56.45\% \\
+COCO-CD & 23.98 & 30.56 & +27.45\% \\
+Waterbirds & 26.46 & 37.99 & +43.58\% \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\caption{Global C was sealed from calibration before confirmation; no reselection. Prospective training-source cohorts under partial documented history only; July candidate pools remain uncertified. Not independent-unseen or full-split evidence. All orders are dependent reorderings, not confidence intervals or significance evidence. Synchronized model-side ms/image; $N$ excludes only episode 0. Includes reset, candidates, requested views, adaptation, final inference and CPU prediction transfer. Excludes model loading, RGB decode, H2D/geometry preparation, disk writes and scoring; not end-to-end throughput.}
+\centering\scriptsize
+\begin{tabular}{@{}lllrrrrrrr@{}}
+\toprule
+Dataset & Stage & Order & $N$ & Old min & Image uniform & Image confidence & Image T & Image C & Image min \\
+\midrule
+PC60 & Calibration & Sorted & 119 & 142.189 & 69.796 & 69.663 & 106.605 & 106.839 & 142.796 \\
+Object & Calibration & Sorted & 114 & 327.658 & 216.959 & 216.465 & 270.054 & 271.848 & 326.164 \\
+PC60 & Confirmation & Sorted & 247 & 136.390 & 66.483 & 66.448 & 101.829 & 102.030 & 136.874 \\
+PC60 & Confirmation & 20261030 & 247 & 136.450 & 66.446 & 66.487 & 101.851 & 102.141 & 136.939 \\
+PC60 & Confirmation & 20261031 & 247 & 136.319 & 66.588 & 66.424 & 101.655 & 101.789 & 136.771 \\
+Object & Confirmation & Sorted & 242 & 314.542 & 209.470 & 209.574 & 261.083 & 264.232 & 316.154 \\
+Object & Confirmation & 20261030 & 242 & 314.703 & 209.650 & 209.782 & 261.031 & 264.567 & 315.874 \\
+Object & Confirmation & 20261031 & 242 & 315.985 & 210.886 & 210.439 & 261.734 & 265.267 & 317.099 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\caption{Actual diagnostic encoder inputs / total encoder inputs per source image. $N$ includes all images including warmup, unlike timing. Calls and all totals are retained in provenance.}
+\centering\scriptsize
+\begin{tabular}{@{}lllrrrrrrr@{}}
+\toprule
+Dataset & Stage & Order & $N$ & Old min & Image uniform & Image confidence & Image T & Image C & Image min \\
+\midrule
+PC60 & Calibration & Sorted & 128 & 43.688 / 56.688 & 0.000 / 13.000 & 0.000 / 13.000 & 21.844 / 34.844 & 21.844 / 34.844 & 43.688 / 56.688 \\
+Object & Calibration & Sorted & 128 & 67.609 / 98.609 & 0.000 / 31.000 & 0.000 / 31.000 & 33.805 / 64.805 & 33.805 / 64.805 & 67.609 / 98.609 \\
+PC60 & Confirmation & Sorted & 256 & 43.703 / 56.703 & 0.000 / 13.000 & 0.000 / 13.000 & 21.852 / 34.852 & 21.852 / 34.852 & 43.703 / 56.703 \\
+PC60 & Confirmation & 20261030 & 256 & 43.703 / 56.703 & 0.000 / 13.000 & 0.000 / 13.000 & 21.852 / 34.852 & 21.852 / 34.852 & 43.703 / 56.703 \\
+PC60 & Confirmation & 20261031 & 256 & 43.703 / 56.703 & 0.000 / 13.000 & 0.000 / 13.000 & 21.852 / 34.852 & 21.852 / 34.852 & 43.703 / 56.703 \\
+Object & Confirmation & Sorted & 256 & 67.680 / 98.680 & 0.000 / 31.000 & 0.000 / 31.000 & 33.840 / 64.840 & 33.840 / 64.840 & 67.680 / 98.680 \\
+Object & Confirmation & 20261030 & 256 & 67.680 / 98.680 & 0.000 / 31.000 & 0.000 / 31.000 & 33.840 / 64.840 & 33.840 / 64.840 & 67.680 / 98.680 \\
+Object & Confirmation & 20261031 & 256 & 67.680 / 98.680 & 0.000 / 31.000 & 0.000 / 31.000 & 33.840 / 64.840 & 33.840 / 64.840 & 67.680 / 98.680 \\
+\bottomrule
+\end{tabular}
+\end{table*}

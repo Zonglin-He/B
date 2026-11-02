@@ -1,0 +1,34 @@
+\begin{table*}[t]
+\caption{Fixed 128-image diagnostic per dataset using reused, development-exposed evaluation images; not full-split or independent generalization evidence. Retained uses inherited settings, Common uses prelocked batch 2, LR 0.001, 10 steps, $K=16$, view batch 16, and Regrouped changes episode ordering at retained settings. Vocabulary is retained in every condition. (a) Model-side synchronized ms/image for independent standalone arms. Only episode 0 is excluded from time: $N_t=128-\mathrm{batch}$ is shown explicitly. Includes reset, candidate construction, required diagnostics, adaptation, final prediction and CPU prediction transfer; excludes setup/model loading, RGB decode, H2D/geometry preparation, artifact writes and offline scoring. Not end-to-end throughput or a full-split speedup claim.}
+\label{tab:standalone-cost}
+\centering\small
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Dataset & Condition & $N_t$ & Uniform & Confidence & T & C & TRACE (min) \\
+\midrule
+PC60 & Retained & 119 & 69.20 & 69.24 & 105.96 & 106.39 & 142.08 \\
+PC60 & Common & 126 & 128.23 & 128.52 & 154.38 & 154.19 & 180.98 \\
+PC60 & Regrouped & 119 & 69.50 & 69.29 & 105.83 & 105.96 & 142.28 \\
+COCO Object & Retained & 114 & 217.77 & 218.21 & 272.40 & 274.29 & 329.13 \\
+COCO Object & Common & 126 & 128.33 & 128.40 & 154.91 & 156.71 & 182.18 \\
+COCO Object & Regrouped & 114 & 218.36 & 217.69 & 272.47 & 275.05 & 329.69 \\
+\bottomrule
+\end{tabular}
+
+\par\medskip
+\caption{(b) Actual diagnostic-forward inputs / total encoder inputs per source image. Work denominators are all 128 images, including episode 0, unlike timing. Counters are summed from the bounded sealed cost stream, not inferred from nominal view schedules. Encoder and diagnostic call totals are retained separately in provenance.}
+\label{tab:standalone-work}
+\centering\small
+\begin{tabular}{@{}llrrrrr@{}}
+\toprule
+Dataset & Condition & Uniform & Confidence & T & C & TRACE (min) \\
+\midrule
+PC60 & Retained & 0.00 / 13.00 & 0.00 / 13.00 & 21.88 / 34.88 & 21.88 / 34.88 & 43.75 / 56.75 \\
+PC60 & Common & 0.00 / 12.00 & 0.00 / 12.00 & 15.93 / 27.93 & 15.93 / 27.93 & 31.86 / 43.86 \\
+PC60 & Regrouped & 0.00 / 13.00 & 0.00 / 13.00 & 21.88 / 34.88 & 21.88 / 34.88 & 43.75 / 56.75 \\
+COCO Object & Retained & 0.00 / 31.00 & 0.00 / 31.00 & 33.79 / 64.79 & 33.79 / 64.79 & 67.58 / 98.58 \\
+COCO Object & Common & 0.00 / 12.00 & 0.00 / 12.00 & 15.98 / 27.98 & 15.98 / 27.98 & 31.97 / 43.97 \\
+COCO Object & Regrouped & 0.00 / 31.00 & 0.00 / 31.00 & 33.79 / 64.79 & 33.79 / 64.79 & 67.58 / 98.58 \\
+\bottomrule
+\end{tabular}
+\end{table*}

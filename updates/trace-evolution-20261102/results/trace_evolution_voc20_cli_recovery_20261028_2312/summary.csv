@@ -1,0 +1,5 @@
+cell,dataset,full_split,images,miou_unrounded,permutation_seed,policy,result_path,seed
+smoke/voc20,voc20,False,4,39.176243564753584,,trace,/home/wwww/hzl/results/trace_evolution_voc20_cli_recovery_20261028_2312/cells/smoke/voc20/result.json,0
+mechanism/voc20,voc20,True,1449,83.94251405671336,,trace,/home/wwww/hzl/results/trace_evolution_voc20_cli_recovery_20261028_2312/cells/mechanism/voc20/result.json,0
+repetition/voc20/seed1,voc20,True,1449,83.94251405671336,,trace,/home/wwww/hzl/results/trace_evolution_voc20_cli_recovery_20261028_2312/cells/repetition/voc20/seed1/result.json,1
+repetition/voc20/seed2,voc20,True,1449,83.94251405671336,,trace,/home/wwww/hzl/results/trace_evolution_voc20_cli_recovery_20261028_2312/cells/repetition/voc20/seed2/result.json,2

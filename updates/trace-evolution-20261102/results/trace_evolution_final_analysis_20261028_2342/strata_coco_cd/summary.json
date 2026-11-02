@@ -1,0 +1,169 @@
+{
+  "dataset": "coco_cd",
+  "images": 500,
+  "full_split": true,
+  "candidates": 1998,
+  "eligible_strata": 42,
+  "selected_candidates": 962,
+  "results": [
+    {
+      "policy": "confidence",
+      "cw": {
+        "low_quality_pct": 16.92458718246809,
+        "high_quality_pct": 10.231283319540688,
+        "high_minus_low_pp": -6.693303862927403,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 30.80511676949872,
+        "high_quality_pct": 29.321913411042356,
+        "high_minus_low_pp": -1.4832033584563646,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "counterfactual",
+      "cw": {
+        "low_quality_pct": 3.9469162260344817,
+        "high_quality_pct": 3.5236164274907424,
+        "high_minus_low_pp": -0.4232997985437392,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 62.2264593037536,
+        "high_quality_pct": 55.30525414909148,
+        "high_minus_low_pp": -6.921205154662118,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "mean",
+      "cw": {
+        "low_quality_pct": 4.846460762312105,
+        "high_quality_pct": 4.0220358876511675,
+        "high_minus_low_pp": -0.824424874660938,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 57.342987201347476,
+        "high_quality_pct": 52.14912475498231,
+        "high_minus_low_pp": -5.193862446365166,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "permuted_0",
+      "cw": {
+        "low_quality_pct": 18.970803404057285,
+        "high_quality_pct": 12.806740065580252,
+        "high_minus_low_pp": -6.164063338477034,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 30.205195138611423,
+        "high_quality_pct": 28.6684541266549,
+        "high_minus_low_pp": -1.5367410119565221,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "permuted_1",
+      "cw": {
+        "low_quality_pct": 26.334903822220074,
+        "high_quality_pct": 13.499043660603089,
+        "high_minus_low_pp": -12.835860161616985,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 30.24345440403458,
+        "high_quality_pct": 28.76515744202769,
+        "high_minus_low_pp": -1.4782969620068904,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "permuted_2",
+      "cw": {
+        "low_quality_pct": 20.591221586849926,
+        "high_quality_pct": 14.816194163490556,
+        "high_minus_low_pp": -5.77502742335937,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 28.788217470924113,
+        "high_quality_pct": 24.666451715359432,
+        "high_minus_low_pp": -4.121765755564681,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "target",
+      "cw": {
+        "low_quality_pct": 7.580904392792554,
+        "high_quality_pct": 4.587434721830089,
+        "high_minus_low_pp": -2.9934696709624653,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 53.37285407210068,
+        "high_quality_pct": 48.54704326078403,
+        "high_minus_low_pp": -4.82581081131665,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "trace",
+      "cw": {
+        "low_quality_pct": 4.821656917666204,
+        "high_quality_pct": 4.007061711035642,
+        "high_minus_low_pp": -0.8145952066305622,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 63.43980900787124,
+        "high_quality_pct": 55.45579723696811,
+        "high_minus_low_pp": -7.98401177090313,
+        "strata": 42
+      }
+    },
+    {
+      "policy": "uniform",
+      "cw": {
+        "low_quality_pct": 18.738860997903682,
+        "high_quality_pct": 10.29370023887792,
+        "high_minus_low_pp": -8.445160759025763,
+        "strata": 42
+      },
+      "wc": {
+        "low_quality_pct": 28.62090984172531,
+        "high_quality_pct": 28.311308757494494,
+        "high_minus_low_pp": -0.3096010842308168,
+        "strata": 42
+      }
+    }
+  ],
+  "protocol": {
+    "confidence_edges": [
+      0,
+      0.7,
+      0.9,
+      0.95,
+      0.99,
+      1.000001
+    ],
+    "area_edges": [
+      1,
+      4,
+      16,
+      64,
+      257
+    ],
+    "min_candidates_per_stratum": 8,
+    "groups": "Lowest/highest rank quartile of initial q within each stratum; skip overlapping q tails.",
+    "covariates": "Predicted semantic class, initial confidence bin, original candidate token area bin.",
+    "uncertainty": "Descriptive finite-panel association; no candidate-independent significance test.",
+    "outcomes": "Pixel C-to-W and W-to-C after joint episode adaptation.",
+    "exposure": "Fixed bins before this stratified computation, not a prospectively untouched test: earlier overall diagnostics were visible."
+  },
+  "source_analysis_sha256": "925553643f9d37bf63e2b789c4f172d03b456bdb7462c1bfb8a62a16a20507be"
+}

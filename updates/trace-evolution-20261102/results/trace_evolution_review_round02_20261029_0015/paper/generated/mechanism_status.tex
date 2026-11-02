@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\caption{Deterministic full-split fixed-candidate controls, seed 0, mIoU ($\uparrow$). Full uses the minimum; Uniform and Confidence use region-level weights. Shuffled is mean $\pm$ population SD across fixed permutation seeds 0, 1, 2 (not independent training seeds or a confidence interval). Bold marks the highest actual column value; diagnostics are shared, so this is not standalone latency evidence. Product and pixel-normalized controls reuse sealed initial diagnostics on PC60/Object only. VOC20 has only Full evaluated; -- means genuinely unrun, not zero or a tied result.}
+\label{tab:mechanism}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Method & VOC20 & VOC21 & PC60 & COCO Object & COCO-Stuff \\
+\midrule
+Full (min) & $\mathbf{83.94}$ & $52.38$ & $30.57$ & $\mathbf{32.70}$ & $21.75$ \\
+Uniform & -- & $52.44$ & $30.38$ & $29.86$ & $21.77$ \\
+Confidence & -- & $52.44$ & $30.35$ & $30.76$ & $21.80$ \\
+T-only & -- & $52.63$ & $30.50$ & $32.63$ & $21.85$ \\
+C-only & -- & $52.70$ & $\mathbf{30.69}$ & $32.42$ & $21.82$ \\
+Mean & -- & $\mathbf{52.76}$ & $30.69$ & $32.64$ & $\mathbf{21.91}$ \\
+Shuffled & -- & $52.37\pm0.17$ & $29.99\pm0.05$ & $29.99\pm0.16$ & $21.22\pm0.07$ \\
+Product & -- & -- & $30.47$ & $32.41$ & -- \\
+Pixel-normalized & -- & -- & $29.88$ & $32.37$ & -- \\
+\bottomrule
+\end{tabular}
+\end{table*}

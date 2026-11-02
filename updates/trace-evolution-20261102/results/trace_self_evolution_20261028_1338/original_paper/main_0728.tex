@@ -1,0 +1,1445 @@
+\documentclass[letterpaper]{article}
+\usepackage[submission]{aaai2027}
+\usepackage[hyphens]{url}
+\usepackage{graphicx}
+\urlstyle{rm}
+\def\UrlFont{\rm}
+\usepackage{natbib}
+\usepackage{caption}
+\frenchspacing
+\usepackage{booktabs}
+\usepackage{amsmath}
+\usepackage{array}
+\usepackage{xspace}
+\usepackage{amssymb} 
+
+\pdfinfo{
+	/TemplateVersion (2027.1)
+}
+
+\setcounter{secnumdepth}{0}
+
+\newcommand{\method}{TRACE\xspace}
+\newcommand{\keywords}[1]{\noindent\textbf{Keywords:} #1\par}
+\newcommand{\Description}[1]{}
+
+\title{\method: Tracing Confidence Sources for Reliable Test-Time Adaptation in Open-Vocabulary Semantic Segmentation}
+
+\author{Anonymous Submission}
+\affiliations{}
+
+\begin{document}
+	
+	\maketitle
+	
+	% \begin{abstract}
+		% 	Open-vocabulary semantic segmentation (OVSS) uses text-specified categories to label every image region, while test-time adaptation (TTA) improves the model from its own unlabeled test predictions. Existing OVSS-TTA methods commonly treat low-entropy predictions as reliable self-supervision. Confidence alone, however, does not reveal whether a local response is supported by the predicted candidate or sustained by surrounding content. This distinction matters because context may help the current prediction while remaining an unsafe basis for updating the model. We introduce \method, a candidate-centric framework that traces confidence sources before adaptation. Target-preserved and context-perturbed views measure candidate support under controlled surroundings; for thing candidates, candidate suppression additionally measures residual support from outside the candidate. TRACE combines these responses into detached reliability weights and uses them in a single region-normalized entropy objective. Across eight clean segmentation benchmarks, TRACE consistently improves over the strongest compared baseline, while controlled analyses show that its reliability separates candidates with different risks of harmful self-supervision. These results support a simple principle: prediction confidence and update reliability should not be treated as the same quantity.
+		% \end{abstract}
+	
+	%     \begin{abstract}
+		% Open-vocabulary semantic segmentation (OVSS) uses text-specified categories to label every image region, while test-time adaptation (TTA) improves the model from its own unlabeled test predictions. Existing OVSS-TTA methods commonly treat low-entropy predictions as reliable self-supervision. Confidence alone, however, does not reveal whether a local response is supported by the predicted region or sustained by its surrounding context. This distinction matters because context may help the current prediction while remaining an unsafe basis for updating the model. We introduce \method, a candidate-centric framework that traces confidence sources before adaptation. Controlled views test whether each prediction is supported by the candidate region, its surrounding context, or both. TRACE combines these responses into reliability weights and uses them to control the entropy-based update. Across eight clean segmentation benchmarks, TRACE consistently improves over the strongest compared baseline, while controlled analyses show that its reliability separates candidate regions with different risks of harmful updates. These results support a simple principle: prediction confidence and update reliability should not be treated as the same quantity.
+		% \end{abstract}
+	
+	\begin{abstract}
+		Open-vocabulary semantic segmentation (OVSS) predicts text-specified categories, while test-time adaptation (TTA) adjusts the model using unlabeled test data. Existing OVSS-TTA methods mainly rely on entropy minimization, implicitly treating confident local predictions as reliable self-supervision. However, confidence does not reveal whether a prediction is supported by its corresponding region or by surrounding context. Context may help the current prediction yet provide unsafe supervision for updating the model. We call this problem \emph{confidence-source ambiguity}. To address it, we propose \method, a candidate-centric framework that probes each predicted region under controlled region and context changes. The resulting responses estimate candidate reliability and weight region-level entropy during adaptation. Across six standard OVSS benchmarks and two context-sensitive segmentation datasets, TRACE improves over the strongest compared baseline by $0.20$--$3.16$ mIoU. Candidate-level analysis further shows that its reliability distinguishes predictions with substantially different harmful-update risks, demonstrating that prediction confidence and update reliability should be treated separately.
+	\end{abstract}
+	
+	
+	% \keywords{Open-vocabulary semantic segmentation, test-time adaptation, confidence source, candidate reliability, contextual bias}
+	
+	\section{Introduction}
+	
+	
+	
+	% Semantic segmentation assigns a semantic category to every image location, but conventional models are limited to categories fixed during training. Open-vocabulary semantic segmentation (OVSS) relaxes this restriction by using a text-specified vocabulary, allowing vision--language models such as CLIP to support dense prediction beyond the training label set~\cite{radford2021clip,ghiasi2022openseg,liang2023ovseg,cho2024catseg}. This flexibility is valuable in open-world applications, where the categories and visual conditions encountered after deployment cannot always be anticipated. However, an open vocabulary does not make the model robust to shifts in appearance, sensors, scene composition, or object--context relations, which can alter both visual features and local visual--text matching. Test-time adaptation (TTA) addresses such shifts by updating a pretrained model from unlabeled test data~\cite{wang2021tent,wang2022cotta,niu2022eata}. OVSS and TTA therefore address complementary needs: OVSS expands what the model can recognize, whereas TTA adapts how those categories appear in the current environment. Their combination raises a central question: which parts of an unlabeled dense prediction are reliable enough to supervise the model that produced them?
+	
+	% 	\begin{figure}[t]
+		% 		\centering
+		% 		\includegraphics[width=\columnwidth]{figure/M1_low_entropy_local_evidence_trace_v2.pdf}
+		% 		\caption{Low entropy does not ensure reliable local evidence. Each point is one predicted candidate; red points are confident ($\geq0.7$) but poorly localized (ground-truth class IoU $<0.3$). Sharp predictions include both well-localized and poorly localized regions.}
+		% 		\Description{A scatter plot shows candidate entropy against ground-truth class IoU. Many low-entropy candidates have confidence above 0.7 but IoU below 0.3.}
+		% 		\label{fig:entropy-diagnostic}
+		% 	\end{figure}
+	
+	
+	% Entropy minimization is a widely used basis for TTA. TENT adapts a model by minimizing the entropy of its current test predictions~\cite{wang2021tent}. Subsequent general TTA methods improve this process through teacher-based consistency~\cite{wang2022cotta}, reliable sample selection~\cite{niu2022eata}, or more stable optimization~\cite{niu2023sar}. TTA has also been extended to vision--language models, mainly by adapting text prompts or model parameters to preserve zero-shot recognition under distribution shifts~\cite{shu2022tpt,osowiechi2024watt}. More recently, several studies have explored adaptation directly in the OVSS setting. Seg-TTO introduces a segmentation-oriented test-time objective~\cite{desilva2025segtto}, while SemLA adapts OVSS models by retrieving and combining domain-relevant adapters~\cite{qorbani2025semla}. MLMP instead develops an entropy-based OVSS-TTA framework that combines information from multiple prompts and visual levels, including both global and local predictions~\cite{noori2025mlmp}.
+	
+	% However, these methods do not reveal what visual evidence sustains a confident local class response. This missing information has a particular origin in the OVSS pipeline. A typical OVSS model represents an image as a low-resolution grid of spatial-token features, compares each feature with the text embeddings of the supplied classes, and decodes or upsamples the resulting token-grid scores into a pixel-level segmentation. Yet CLIP-style representations originate from image-level image--text alignment, whereas segmentation requires precise local region--text correspondence. Patch-aligned training, local self-distillation, and modified token interactions improve this global-to-local transfer~\cite{mukhoti2023pacl,wu2024clipself,hajimiri2025naclip,shao2024cliptrase}, but a spatial token is still not an isolated image patch after transformer interaction. Its feature can incorporate information from the predicted region, nearby objects, surrounding stuff, and scene background. Region--language studies likewise show that object and context representations can be intertwined and that background regions may align with co-occurring object labels~\cite{kim2025cass,li2025densevlm}. Consequently, a high token--text similarity at one location tells us which class the model prefers, but not whether that response is supported by visual content inside the predicted region or imported from its surroundings. We call this uncertainty about the evidence sustaining a local response \emph{confidence-source ambiguity}; Figure~\ref{fig:ambiguity-comparison}(a) illustrates how the OVSS dense-alignment pipeline can produce it.
+	
+	
+	% However, these methods indicate how confident or stable a prediction is, but not which image content supports it. This issue is particularly relevant to OVSS. A ViT divides an image into patches and represents them as a grid of spatial tokens. Through self-attention, each spatial token contains information from its own local image region while also receiving information from other regions, which we refer to as its \emph{surrounding context}. OVSS compares each spatial token with the text embedding of every class and then upsamples the resulting token-level class scores to obtain the pixel-level segmentation. This local token--text alignment differs from CLIP pretraining, which aligns the representation of an entire image with text. Although existing studies improve the transfer from global image--text alignment to local token--text alignment~\cite{mukhoti2023pacl,wu2024clipself,hajimiri2025naclip,shao2024cliptrase}, a spatial token can still match a class because of its local image region, its surrounding context, or both. Previous analyses have also shown that object and contextual information can become intertwined in vision--language representations~\cite{kim2025cass,li2025densevlm}. Therefore, a high token-level class score reveals which class the model prefers, but not where the supporting evidence comes from. We call this uncertainty \emph{confidence-source ambiguity}, as illustrated in Figure~\ref{fig:ambiguity-comparison}(a).
+	
+	
+	
+	% This confidence-source ambiguity makes confidence alone an incomplete guide for TTA. To examine this limitation, we group neighboring locations with the same predicted class into one predicted region. Across 2,024 test images, we find 12,085 predicted regions with confidence above $0.7$ but an IoU below $0.3$ with the corresponding ground-truth class. As shown in Figure~\ref{fig:entropy-diagnostic}, low-entropy predictions include both well-localized and poorly localized regions, indicating that prediction sharpness alone cannot determine which local predictions provide reliable self-supervision. This distinction is particularly important during adaptation. Surrounding context can legitimately help the model recognize an object or assign a semantic label~\cite{xiao2021backgrounds,kim2025cass}. During ordinary inference, such information only affects the current prediction; during entropy-based TTA, the same prediction is also used to update the model. If a high-confidence region is supported mainly by its surrounding context, adaptation may further strengthen its predicted class even when the corresponding local region contains insufficient evidence, thereby reinforcing incorrect spatial predictions or accidental object--context associations. A prediction that is useful for the current output is therefore not necessarily reliable for adaptation: \emph{prediction utility is not update reliability}.
+	
+	
+	
+	% The key question is therefore not only whether a predicted region is confident, but also where the evidence for that confidence comes from. We examine this question by separately controlling the predicted region and its surrounding context. The intuition involves three simple tests. First, if the predicted class score remains high when the region is preserved and its surroundings are weakened, the region itself provides useful evidence for the prediction. Second, if the same class score remains high after the region is weakened and only its surroundings are retained, much of the evidence may come from the surrounding context. Third, if the region is preserved but its surroundings are changed, the stability of the class score indicates whether the prediction depends on a particular context. Together, these tests reveal whether a confident prediction is mainly supported by the predicted region, by its surrounding context, or by both. Figure~\ref{fig:source-ambiguity} illustrates these different behaviors: some predictions follow the visual content of the region itself, whereas others remain confident even after that content is weakened.
+	
+	% 	\begin{figure*}[t]
+		% 			\centering
+		% 			\includegraphics[width=\textwidth]{figure/TRACE_v2_source_ambiguity_current.pdf}
+		% 			\caption{Confidence-source ambiguity under the current \method implementation. Each row shows a selected candidate and the corresponding target-preserved and candidate-suppressed views. Target-supported candidates retain a strong response when preserved and little residual response when suppressed; context-dominated candidates show the opposite pattern. The examples and scores are taken from the frozen \method diagnostics used in our experiments.}
+		% 			\Description{Four target-supported and four context-dominated candidates are shown with target-preserved and candidate-suppressed views. The two groups exhibit opposite patterns of target and residual support.}
+		% 			\label{fig:source-ambiguity}
+		% 		\end{figure*}
+	
+	% Based on this intuition, we introduce \method, short for \emph{Tracing Confidence Sources}. TRACE first groups connected locations with the same predicted class into candidate regions and then constructs diagnostic views corresponding to the three tests above. These views are evaluated by the same OVSS model, and the changes in the predicted class score are used to estimate the reliability of each candidate. A candidate receives higher reliability when its own region provides strong evidence and its prediction remains stable after the surrounding context changes. For a localized object, TRACE further lowers its reliability when the surrounding context provides stronger evidence than the object region itself. This comparison is not applied to spatially distributed classes, such as road or sky, because weakening one connected part does not remove their complete visual evidence. Finally, TRACE uses candidate reliability to control how strongly each region contributes to entropy-based adaptation. In this way, locally supported and stable predictions guide the update more strongly, while context-dominated predictions are prevented from having the same influence. TRACE changes only the allocation of self-supervision and leaves the original OVSS prediction pipeline unchanged.
+	
+	% Experiments validate both the effectiveness of TRACE and the motivation behind its design. Across six standard OVSS benchmarks, TRACE improves over the strongest compared baseline by $0.20$--$3.16$ mIoU; on two context-sensitive segmentation datasets, the improvement ranges from $1.01$ to $1.81$ mIoU. Controlled ablations further show that candidate construction, confidence-source diagnosis, and reliability-weighted adaptation each contribute to the overall performance. More importantly, our candidate-level analysis shows that candidates assigned low reliability are $17.89$ percentage points more likely than high-reliability candidates to produce harmful updates that reduce the model's support for the correct class. These results indicate that candidate reliability does more than rescale the original confidence: it captures meaningful differences in how safely each predicted region can be used for test-time adaptation.
+	
+	% Our contributions are threefold:
+	% \begin{itemize}
+		%     \item We identify and study \emph{confidence-source ambiguity} as a distinct challenge in OVSS-TTA: predictions with similar confidence can be supported by different amounts of evidence from the predicted region and its surrounding context, making them unequally reliable for model adaptation.
+		
+		%     \item We propose \method, which diagnoses the confidence source of each candidate region through three controlled tests. It accounts for the different spatial properties of localized objects and distributed semantic regions, then converts the diagnostic responses into candidate reliability that controls entropy-based adaptation.
+		
+		%     \item We demonstrate consistent improvements across six standard OVSS benchmarks and two context-sensitive segmentation datasets. Candidate-level analysis further shows that the estimated reliability reflects the risk of harmful test-time updates, providing direct evidence for the problem and the proposed solution.
+		% \end{itemize}
+	
+	
+	Semantic segmentation assigns a semantic category to every image location, but conventional models are limited to categories fixed during training. Open-vocabulary semantic segmentation (OVSS) relaxes this restriction by using a text-specified vocabulary, allowing vision--language models such as CLIP to support dense prediction beyond the training label set~\cite{radford2021clip,ghiasi2022openseg,liang2023ovseg,cho2024catseg}. This flexibility is valuable in open-world applications, where the categories and visual conditions encountered after deployment cannot always be anticipated. However, an open vocabulary alone does not make the model robust to shifts in appearance, sensors, scene composition, or object--context relations. Test-time adaptation (TTA) addresses such shifts by updating a pretrained model from unlabeled test data~\cite{wang2021tent,wang2022cotta,niu2022eata}. OVSS and TTA therefore address complementary needs: OVSS expands what the model can recognize, whereas TTA adjusts the model to the current visual environment. Their combination raises a central question: which parts of an unlabeled dense prediction are reliable enough to supervise the model that produced them?
+	
+	Entropy minimization is a widely used basis for TTA. TENT adapts a model by minimizing the entropy of its current test predictions~\cite{wang2021tent}. Subsequent general TTA methods improve this process through teacher-based consistency~\cite{wang2022cotta}, reliable sample selection~\cite{niu2022eata}, or more stable optimization~\cite{niu2023sar}. TTA has also been extended to vision--language models, mainly by adapting text prompts or model parameters to preserve zero-shot recognition under distribution shifts~\cite{shu2022tpt,osowiechi2024watt}. More recently, several studies have explored adaptation directly for OVSS. Seg-TTO introduces a segmentation-oriented test-time objective~\cite{desilva2025segtto}, while SemLA retrieves and combines domain-relevant adapters~\cite{qorbani2025semla}. MLMP develops an entropy-based OVSS-TTA framework that combines multiple prompts and visual levels, including both global and local predictions~\cite{noori2025mlmp}.
+	
+	\begin{figure}[t]
+		\centering
+		\begin{minipage}[t]{0.35\textwidth}
+			\vspace{0pt}
+			\includegraphics[width=\linewidth,trim=0 190bp 0 0,clip]{figure/M1_low_entropy_local_evidence_trace_v2.pdf}
+		\end{minipage}\hfill
+		\begin{minipage}[t]{0.35\textwidth}
+			\vspace{0pt}
+			\includegraphics[width=\linewidth,trim=0 0 0 189bp,clip]{figure/M1_low_entropy_local_evidence_trace_v2.pdf}
+		\end{minipage}
+		\caption{Low entropy does not identify reliable local predictions. (a) Each point denotes one connected predicted region. Red points have high confidence ($\geq0.7$) but low overlap with the corresponding ground-truth class (IoU $<0.3$). (b) Both well-localized regions and high-confidence, low-IoU regions appear across entropy quantiles, including among the sharpest predictions.}
+		\Description{Panel (a) plots prediction entropy against ground-truth class IoU for connected predicted regions. Panel (b) compares the rates of well-localized and high-confidence, low-IoU regions across entropy quantiles.}
+		\label{fig:entropy-diagnostic}
+	\end{figure}
+	% 485
+	
+	These methods estimate how confident or stable a prediction is, but do not identify which image content supports it. This distinction is important in OVSS because of how local predictions are produced. A ViT divides an image into patches and represents them as a grid of spatial tokens. Through self-attention, each spatial token contains information from its own local image region as well as from other regions, which we refer to as its \emph{surrounding context}. OVSS compares each spatial token with the text embedding of every class and upsamples the resulting token-level class scores to obtain the pixel-level segmentation. This local token--text alignment differs from CLIP pretraining, which aligns the representation of an entire image with text. Although previous studies improve the transfer from global image--text alignment to local token--text alignment~\cite{mukhoti2023pacl,wu2024clipself,hajimiri2025naclip,shao2024cliptrase}, a spatial token may still match a class because of its local image region, its surrounding context, or both. Object and contextual information can therefore become intertwined in vision--language representations~\cite{kim2025cass,li2025densevlm}. A high token-level class score reveals which class the model prefers, but not where its supporting evidence comes from. We call this uncertainty \emph{confidence-source ambiguity}.
+	
+	This ambiguity makes confidence alone an incomplete guide for TTA. To examine this limitation, we group neighboring locations with the same predicted class into one connected predicted region. Across 2,024 test images, we find 12,085 predicted regions with confidence above $0.7$ but an IoU below $0.3$ with the corresponding ground-truth class. As shown in Figure~\ref{fig:entropy-diagnostic}, low-entropy predictions include both well-localized and poorly localized regions, indicating that prediction sharpness alone cannot determine which local predictions provide reliable self-supervision. This distinction is especially important during adaptation. Surrounding context can legitimately help the model recognize an object or assign a semantic label~\cite{xiao2021backgrounds,kim2025cass}. During ordinary inference, this information only affects the current prediction; during entropy-based TTA, the same prediction is also used to update the model. If a high-confidence region is supported mainly by its surrounding context, adaptation may strengthen its predicted class even when the corresponding local region contains insufficient evidence. This can reinforce incorrect spatial predictions or accidental object--context associations. A prediction that is useful for the current output is therefore not necessarily reliable for adaptation: \emph{prediction utility is not update reliability}.
+	
+	
+	\begin{figure}[t]
+		\centering
+		\makebox[\columnwidth][c]{%
+			\includegraphics[
+			width=.85\columnwidth,
+			trim=0 331bp 253.6bp 0,
+			clip
+			]{figure/TRACE_v2_source_ambiguity_current.pdf}%
+		}\par\nointerlineskip
+		\makebox[\columnwidth][c]{%
+			\includegraphics[
+			width=.85\columnwidth,
+			trim=0 89bp 253.6bp 192bp,
+			clip
+			]{figure/TRACE_v2_source_ambiguity_current.pdf}%
+		}\par\smallskip
+		\makebox[\columnwidth][c]{%
+			\includegraphics[
+			width=.85\columnwidth,
+			trim=253.6bp 331bp 0 0,
+			clip
+			]{figure/TRACE_v2_source_ambiguity_current.pdf}%
+		}\par\nointerlineskip
+		\makebox[\columnwidth][c]{%
+			\includegraphics[
+			width=.85\columnwidth,
+			trim=253.6bp 89bp 0 192bp,
+			clip
+			]{figure/TRACE_v2_source_ambiguity_current.pdf}%
+		}
+		\caption{Different sources can sustain confident local predictions, illustrated by one representative pair. Each row shows a selected candidate region, its candidate-preserved view, and its candidate-suppressed view. The candidate-supported example retains a strong response when preserved and leaves little residual response when suppressed. The context-dominated example retains substantial residual response after suppression. Additional frozen-diagnostic examples are provided in Appendix A.1.}
+		\Description{A candidate-supported example and a context-dominated example are shown with candidate-preserved and candidate-suppressed views. The two candidates exhibit opposite response patterns.}
+		\label{fig:source-ambiguity}
+	\end{figure}
+	
+	
+	
+	The key question is therefore not only whether a predicted region is confident, but also where the evidence for that confidence comes from. We use each connected predicted region as a diagnostic unit, referred to as a \emph{candidate region}, and separately control the candidate and its surrounding context. The intuition involves three simple tests. First, if the predicted class score remains high when the candidate is preserved and its surroundings are weakened, the candidate itself provides useful evidence. Second, if the same score remains high after the candidate is weakened and its surroundings are retained, much of the evidence may come from the surrounding context. Third, if the candidate is preserved but its surroundings are changed, the stability of the class score indicates whether the prediction depends on a particular context. Together, these tests reveal whether a confident prediction is supported mainly by the candidate, by its surrounding context, or by both. Figure~\ref{fig:source-ambiguity} illustrates the first two tests: some predictions follow the visual content of the candidate itself, whereas others remain confident after that content is weakened.
+	
+	% \begin{figure}[t]
+		%     \centering
+		%     \makebox[\textwidth][c]{\includegraphics[width=.4\textwidth,trim=0 331bp 253.6bp 0,clip]{figure/TRACE_v2_source_ambiguity_current.pdf}}\par\nointerlineskip
+		%     \makebox[\textwidth][c]{\includegraphics[width=.4\textwidth,trim=0 89bp 253.6bp 192bp,clip]{figure/TRACE_v2_source_ambiguity_current.pdf}}\par\smallskip
+		%     \makebox[\textwidth][c]{\includegraphics[width=.4\textwidth,trim=253.6bp 331bp 0 0,clip]{figure/TRACE_v2_source_ambiguity_current.pdf}}\par\nointerlineskip
+		%     \makebox[\textwidth][c]{\includegraphics[width=.4\textwidth,trim=253.6bp 89bp 0 192bp,clip]{figure/TRACE_v2_source_ambiguity_current.pdf}}
+		%     \caption{Different sources can sustain confident local predictions, illustrated by one representative pair. Each row shows a selected candidate region, its candidate-preserved view, and its candidate-suppressed view. The target-supported candidate retains a strong response when preserved and leaves little residual response when suppressed. The context-dominated candidate retains substantial residual response after suppression. Additional frozen-diagnostic examples are provided in Appendix A.1.}
+		%     \Description{A target-supported candidate and a context-dominated candidate are shown with candidate-preserved and candidate-suppressed views. The two candidates exhibit opposite response patterns.}
+		%     \label{fig:source-ambiguity}
+		% \end{figure}
+	
+	Based on this intuition, we introduce \method, short for \emph{Tracing Confidence Sources}. TRACE extracts candidate regions from the initial prediction and constructs diagnostic views corresponding to the three tests above. These views are evaluated by the same OVSS model, and changes in the predicted class score are used to estimate the reliability of each candidate. A candidate receives higher reliability when its own region provides strong evidence and its prediction remains stable after the surrounding context changes. For a localized object, TRACE further lowers its reliability when the surrounding context provides stronger evidence than the object region itself. This comparison is not applied to spatially distributed classes such as road or sky, because weakening one connected part does not remove their complete visual evidence. TRACE then uses candidate reliability to control how strongly each region contributes to entropy-based adaptation. Locally supported and stable predictions guide the update more strongly, while context-dominated predictions receive less influence. TRACE changes only the allocation of self-supervision and leaves the original OVSS prediction pipeline unchanged.
+	
+	Experiments validate both the effectiveness of \method and its underlying motivation. Across six standard OVSS benchmarks, \method improves over the best compared baseline by $0.20$--$3.16$ mIoU; on two context-sensitive segmentation datasets, the improvement ranges from $1.01$ to $1.81$ mIoU. Controlled ablations show that connected-candidate separation, confidence-source diagnosis, and reliability control each contribute to the overall performance. More importantly, updates driven by low-reliability candidates reduce the model's support for the correct class $17.89$ percentage points more often than those driven by high-reliability candidates. Candidate reliability therefore does more than rescale the original confidence: it distinguishes candidates that produce different effects when used for adaptation.
+	
+	Our contributions are threefold:
+	\begin{itemize}
+		\item We identify and study \emph{confidence-source ambiguity} as a distinct challenge in OVSS-TTA: predictions with similar confidence may be supported by different amounts of evidence from the candidate region and its surrounding context, making them unequally reliable for adaptation.
+		
+		\item We propose \method, which constructs connected candidate regions and diagnoses their confidence sources through controlled candidate and context changes. It accounts for the different spatial properties of localized objects and distributed semantic regions, then converts the diagnostic responses into candidate reliability that controls entropy-based adaptation.
+		
+		\item We demonstrate consistent improvements across six standard OVSS benchmarks and two context-sensitive segmentation datasets. Candidate-level analysis further shows that the estimated reliability distinguishes candidates whose updates have different effects on the model's support for the correct class, providing evidence for both the identified problem and the proposed solution.
+	\end{itemize}
+	
+	\section{Related Work}
+	
+	
+	
+	% \paragraph{Open-vocabulary dense alignment.} OVSS transfers the recognition vocabulary of vision--language models to dense prediction. Existing approaches obtain local labels through pixel--text matching, region proposals, mask classification, prompt-aware classifiers, or CLIP-derived segmentation heads~\cite{ghiasi2022openseg,xu2022simple,zegformer2022,liang2023ovseg,ding2023maskclip,cho2024catseg}. Although these designs differ in how they decode local predictions, they share the need to turn representations learned largely from image--text supervision into spatially precise semantic evidence. PACL introduces patch-aligned contrastive learning, CLIPSelf distills local visual features, and NACLIP and CLIPtrase modify or analyze token interactions to improve localization~\cite{mukhoti2023pacl,wu2024clipself,hajimiri2025naclip,shao2024cliptrase}. Region-centric studies further reveal that object and contextual representations are not cleanly separated: CASS exploits contextual consistency for segmentation, while DenseVLM analyzes biased foreground/background language alignment~\cite{kim2025cass,li2025densevlm}. These methods improve or analyze the representations from which a dense prediction is produced. TRACE addresses a subsequent online decision: given an already-confident test-time candidate, should that response be trusted to update the model?
+	
+	% \paragraph{Test-time adaptation for vision--language segmentation.} Entropy minimization adapts a model by sharpening its current unlabeled predictions~\cite{grandvalet2004entropy,wang2021tent}. Its simplicity makes it broadly applicable, but an incorrect prediction can become stronger once it is treated as supervision. CoTTA stabilizes adaptation through teacher and augmentation consistency, EATA selects reliable non-redundant samples, and SAR combines sample filtering with sharpness-aware optimization~\cite{wang2022cotta,niu2022eata,niu2023sar}. These methods reduce update risk using output confidence, prediction stability, or optimization geometry. For vision--language models, TPT adapts prompts, WATT combines weights adapted under multiple templates, and CLIPArTT uses cross-modal feedback~\cite{shu2022tpt,osowiechi2024watt,zhao2024clipartt}. SegTTO and SemLA further tailor test-time optimization to semantic segmentation~\cite{desilva2025segtto,qorbani2025semla}. Most closely related, MLMP performs OVSS-TTA by aggregating entropy signals across prompts, ViT layers, local spatial tokens, and the global CLS token~\cite{noori2025mlmp}. TRACE retains this entropy-based OVSS-TTA setting but contributes information absent from these adaptation criteria: whether a local response is sustained by the predicted candidate or by residual context.
+	
+	% \paragraph{Context dependence and intervention.} Models often exploit environmental and co-occurrence cues, and these shortcuts can fail when the relation between a target and its surroundings changes~\cite{geirhos2020shortcut,beery2018terra,singh2020dontjudge,zhang2021context}. At the same time, background is not intrinsically spurious; it may provide legitimate evidence that improves recognition~\cite{xiao2021backgrounds}. This dual role is particularly important in OVSS-TTA. Context propagated into a spatial token can strengthen its similarity to a class text embedding, after which entropy minimization may reinforce that response as if it were candidate-local supervision. Preservation, deletion, and context replacement have been used to expose feature dependence, and CONTA introduces causal intervention during training for weakly supervised localization~\cite{fong2019extremal,zhang2020conta}. TRACE draws methodological inspiration from these controlled changes but serves a narrower test-time purpose. It neither forbids contextual prediction nor claims formal causal identification; it uses soft interventions as behavioral tests to determine how much update authority each predicted candidate should receive.
+	
+	% \paragraph{Open-vocabulary dense alignment.}
+	% OVSS methods convert vision--language representations into dense labels through pixel matching, region proposals, prompt-aware classifiers, or CLIP-derived segmentation heads~\cite{ghiasi2022openseg,xu2022simple,zegformer2022,liang2023ovseg,ding2023maskclip,cho2024catseg}. This family makes open-vocabulary recognition spatial, but its predictions inherit the mismatch between globally trained image--text features and locally required region--text evidence. A second family attacks that mismatch directly: PACL aligns patches during training, CLIPSelf distills local features, and NACLIP or CLIPtrase modifies or analyzes local token interactions~\cite{mukhoti2023pacl,wu2024clipself,hajimiri2025naclip,shao2024cliptrase}. These methods improve the representation from which a prediction is produced; they do not determine whether an already confident test-time region is suitable for updating the model. Region-centric work such as CASS and DenseVLM further demonstrates that object and context representations are intertwined and that foreground/background alignment can be biased~\cite{kim2025cass,li2025densevlm}. TRACE addresses the resulting online decision problem rather than proposing another segmentation backbone.
+	
+	% \paragraph{Test-time adaptation for vision-language segmentation.}
+	% Entropy minimization adapts a model by sharpening its current unlabeled predictions~\cite{grandvalet2004entropy,wang2021tent}. Its central strength is simplicity, but the same mechanism can amplify a wrong or weakly grounded response. CoTTA, EATA, and SAR reduce this risk through teacher averaging, sample selection, or sharpness-aware optimization~\cite{wang2022cotta,niu2022eata,niu2023sar}; their safeguards still operate mainly on output confidence, stability, or loss geometry. Vision--language TTA instead adapts prompts, averages adapted weights, or uses cross-modal feedback~\cite{shu2022tpt,osowiechi2024watt,zhao2024clipartt}, while SegTTO and SemLA specialize optimization to segmentation~\cite{desilva2025segtto,qorbani2025semla}. Most closely, MLMP aggregates entropy across prompts, ViT layers, patch tokens, and the CLS token for OVSS~\cite{noori2025mlmp}. TRACE keeps the same entropy-based adaptation setting but adds information absent from these criteria: whether a local response is sustained by the candidate or by residual context.
+	
+	% \paragraph{Context dependence and intervention.}
+	% Shortcut-learning studies show that models exploit environment and co-occurrence, and that these cues may fail when their relation to the target changes~\cite{geirhos2020shortcut,beery2018terra,singh2020dontjudge,zhang2021context}. Background is not intrinsically harmful: it can also provide legitimate recognition evidence~\cite{xiao2021backgrounds}. This dual role is especially important in OVSS-TTA. Global context can induce a local text match, and entropy adaptation can then strengthen that response as if it were candidate-local evidence. Preservation, deletion, and context replacement have been used to expose feature dependence, while CONTA uses causal intervention during training for weakly supervised localization~\cite{fong2019extremal,zhang2020conta}. TRACE adopts soft interventions for a narrower test-time purpose. It does not claim causal identification or forbid contextual prediction; it estimates how much authority a candidate should receive when producing an online update.
+	
+	\paragraph{Open-vocabulary dense alignment.}
+	OVSS methods convert vision--language representations into dense labels through pixel--text matching, region or mask prediction, and CLIP-derived segmentation heads~\cite{ghiasi2022openseg,xu2022simple,zegformer2022,liang2023ovseg,ding2023maskclip,cho2024catseg}. Another line of work improves the transfer from global image--text alignment to local token--text alignment by learning better local representations or refining spatial-token interactions~\cite{mukhoti2023pacl,wu2024clipself,hajimiri2025naclip,shao2024cliptrase}. CASS and DenseVLM further show that object and contextual information can become intertwined~\cite{kim2025cass,li2025densevlm}. These studies improve how dense predictions are produced, whereas TRACE asks whether an existing candidate region provides reliable supervision for test-time adaptation.
+	
+	\paragraph{Test-time adaptation for vision--language segmentation.}
+	Entropy minimization adapts a model by sharpening its current test predictions~\cite{grandvalet2004entropy,wang2021tent}. Later TTA methods improve this process through teacher-based consistency~\cite{wang2022cotta}, reliable sample selection~\cite{niu2022eata}, or more stable optimization~\cite{niu2023sar}. Vision--language TTA mainly adapts text prompts~\cite{shu2022tpt} or model weights~\cite{osowiechi2024watt}. Within OVSS, Seg-TTO introduces a segmentation-specific test-time objective~\cite{desilva2025segtto}, SemLA retrieves and combines domain-relevant adapters~\cite{qorbani2025semla}, and MLMP applies multi-level and multi-prompt entropy minimization to global and local predictions~\cite{noori2025mlmp}. TRACE follows the entropy-based OVSS-TTA setting but additionally examines whether a candidate's confidence is supported by the candidate region or its surrounding context.
+	
+	\paragraph{Context dependence and intervention.}
+	Models can rely on environmental and co-occurrence cues that may fail when the relation between an object and its surroundings changes~\cite{geirhos2020shortcut,beery2018terra,singh2020dontjudge,zhang2020context}. At the same time, surrounding context can provide legitimate recognition evidence~\cite{xiao2021backgrounds}. In OVSS-TTA, this context may support a local class score and then be strengthened through entropy minimization. Preservation, deletion, and context replacement have been used to examine such dependence, while CONTA uses causal intervention for weakly supervised localization~\cite{fong2019extremal,zhang2020conta}. TRACE instead uses soft changes to the candidate and its surroundings as behavioral tests for candidate reliability; it neither rejects contextual evidence nor claims formal causal identification.
+	
+	% \begin{figure*}[!t]
+		% 	\centering
+		% 	\includegraphics[width=0.99\textwidth]{figure/TRACE_v2_open_flow_pipeline_scripted.pdf}
+		% 	\caption{Overview of \method. The current dense prediction is decomposed into connected thing, stuff, and background candidates. Target-preserved and context-perturbed views are evaluated for every candidate; a candidate-suppressed view additionally measures residual contextual support for thing candidates. The weaker of target-preserved and context-perturbed support forms shared candidate quality. Residual support attenuates thing reliability only when it dominates target support. The detached reliability weights one region-normalized spatial entropy objective. Candidate views are defined independently but evaluated in bounded batches, and only visual-encoder LayerNorm affine parameters are updated.}
+		% 	\Description{TRACE pipeline from a dense OVSS prediction to connected semantic candidates, role-dependent candidate intervention views, detached candidate reliability, region-normalized entropy, and visual LayerNorm affine-parameter updates.}
+		% 	\label{fig:method-pipeline}
+		% \end{figure*}
+	
+	
+	% A high candidate confidence $\kappa_R$ indicates that the model strongly predicts class $c_R$ within candidate region $R$. However, it does not reveal whether this response is supported by the visual content inside the candidate or by its surrounding context. This distinction is important for TTA because a prediction that relies mainly on context may not provide reliable self-supervision. To examine the relationship between a predicted target and its context, TRACE uses the candidate region as the diagnostic unit. A single spatial token contains too little semantic structure, whereas the entire model input may contain several unrelated objects and regions. A connected candidate region provides a suitable intermediate unit around which the target and its surrounding context can be controlled separately.
+	
+	%%%%%%%%%%%%%%%%
+	
+	% 	\section{Method}
+	% We build on the basic OVSS-TTA pipeline used by MLMP~\cite{noori2025mlmp}. Given a model input $x$, the visual encoder represents the image as a low-resolution grid of spatial tokens, where each token corresponds to one image patch. The text encoder maps the supplied vocabulary $\mathcal C$ into class text embeddings. By comparing each spatial-token feature with the class text embeddings, the model obtains a class distribution $\pi_i(c)$ at each token-grid location $i$. This token-grid distribution provides the local semantic prediction used by the following method. During TTA, the entropy objective is computed on the token grid and updates the visual encoder, while the subsequent score upsampling and image reconstruction procedures remain unchanged. For the final segmentation, the token-grid class-score maps are bilinearly upsampled to the input resolution, followed by a pixel-wise argmax. When overlapping model inputs are used, their score maps are combined using the original baseline reconstruction procedure. In implementation, we further follow MLMP in its multi-prompt adaptation and multi-layer feature aggregation, which are described later with the adaptation details.
+	
+	% Standard entropy-based TTA directly uses the current token-grid prediction as self-supervision, but it does not determine whether a local response is supported by the predicted target region or by its surrounding context. TRACE therefore inserts a reliability-estimation branch after the initial token-grid prediction and before the entropy-based update. Its goal is to determine how strongly each local prediction should influence test-time adaptation. TRACE does not change the visual--text matching, score upsampling, or pixel-level inference pipeline; it changes only how token-grid self-supervision is allocated during adaptation. Figure~\ref{fig:method-pipeline} shows where this reliability branch is inserted and summarizes how its output is returned to the token-level adaptation objective.
+	
+	% \subsection{Candidate-Specific Confidence-Source Tracing}
+	% \label{sec:source-tracing}
+	
+	% In the OVSS-TTA pipeline, a single spatial token contains little semantic structure, whereas the entire model input may contain several unrelated objects and context regions. TRACE therefore uses a connected candidate region as its diagnostic unit. This candidate-centered design allows the predicted target and its surrounding context to be controlled separately. More importantly, a strong prediction within a candidate does not reveal whether its supporting evidence comes from the candidate itself or from its surroundings. This distinction matters for TTA because a prediction that relies mainly on context may not provide reliable self-supervision.
+	
+	% \subsubsection{Candidate--Context Separation}
+	
+	% Starting from the fixed initial distribution $\pi_i(c)$, we assign each token-grid location the label $\widehat y_i=\operatorname*{argmax}_{c\in\mathcal C}\pi_i(c)$. We then group horizontally or vertically adjacent locations with the same label into a candidate region $R=(\Omega_R,c_R,r_R)$, where $\Omega_R$ contains its spatial-token locations, $c_R$ is its predicted class, and $r_R\in\{\mathrm{thing},\mathrm{stuff},\mathrm{background}\}$ is its semantic role. The class-to-role map is fixed before testing and does not use test annotations. We define the initial confidence of candidate $R$ as
+	% \begin{equation}
+		%     \kappa_R
+		%     =
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i(c_R).
+		% \end{equation}
+	% Candidates are ranked by $\kappa_R$, and the top $K$ candidates per image form the selected set $\mathcal S$. This ranking only limits the number of candidates that require additional diagnostic views. A high-confidence candidate is admitted for source analysis, but its reliability is determined only after examining how its prediction responds to candidate and context interventions.
+	
+	% For a selected candidate region $R$, its spatial extent is defined by the spatial-token locations $\Omega_R$ on the low-resolution token grid. We first convert these locations into a binary token-grid mask:
+	% \begin{equation}
+		%     G_R(i)
+		%     =
+		%     \mathbf{1}
+		%     \left[
+		%         i\in\Omega_R
+		%     \right].
+		% \end{equation}
+	% Because the candidate-specific views are constructed in the input-pixel space, we map $G_R$ to the spatial resolution of model input $x$ using nearest-neighbor interpolation:
+	% \begin{equation}
+		%     M_R
+		%     =
+		%     \operatorname{NNUp}
+		%     \left(
+		%         G_R
+		%     \right).
+		% \end{equation}
+	% The resulting binary mask $M_R$ separates the candidate region from its surrounding context and allows the two parts to be controlled independently.
+	
+	
+	% \subsubsection{Diagnostic View Construction}
+	
+	% With the candidate region and its surrounding context separated by $M_R$, we assume that the response to class $c_R$ may be supported by the candidate itself, by its surrounding context, or by both. If the model still supports $c_R$ after the content outside the candidate is weakened, the candidate itself provides useful class evidence; this motivates the target-preserved view. If the model still produces a strong response to $c_R$ after the candidate is weakened, substantial class evidence remains in its surroundings; this motivates the candidate-suppressed view. Finally, we keep the candidate unchanged but perturb its surrounding content to examine whether its class support remains stable under a controlled context change; this gives the context-perturbed view.
+	
+	
+	% Following these diagnostic assumptions, let $W(x)$ denote a weakened version of the input obtained through grayscale conversion and local average blur. Let
+	% \begin{equation}
+		%     C(x)
+		%     =
+		%     \operatorname{Shift}
+		%     \bigl(
+		%         \mu+\gamma(x-\mu)
+		%     \bigr)
+		% \end{equation}
+	% denote a fixed context perturbation, where $\mu$ is the spatial mean of each image channel, $0<\gamma<1$ reduces contrast, and $\operatorname{Shift}$ cyclically permutes the image channels. We then construct
+	% \begin{align}
+		%     x_R^{\mathrm{pres}}
+		%     &=
+		%     M_R\odot x
+		%     +
+		%     (1-M_R)\odot W(x),
+		%     \\
+		%     x_R^{\mathrm{supp}}
+		%     &=
+		%     (1-M_R)\odot x
+		%     +
+		%     M_R\odot W(x),
+		%     \\
+		%     x_R^{\mathrm{cf}}
+		%     &=
+		%     M_R\odot x
+		%     +
+		%     (1-M_R)\odot C(x),
+		% \end{align}
+	% where $\odot$ denotes element-wise multiplication. The target-preserved view keeps the candidate unchanged and weakens its surroundings. The candidate-suppressed view weakens the candidate and keeps its surroundings unchanged. The context-perturbed view keeps the candidate unchanged and transforms only its surroundings. All three views preserve the size and spatial layout of the original model input. Figure~\ref{fig:single-candidate-views} illustrates their construction.
+	
+	% The required views depend on the semantic role of the candidate. A thing candidate usually represents a localized and countable entity. Weakening such a candidate provides a meaningful way to examine how much class evidence remains outside it. We therefore construct all three views for thing candidates. In contrast, stuff and background classes may be distributed across a large part of the model input. Weakening one connected component may remove only part of their legitimate class evidence, so the remaining response cannot be interpreted in the same way. We therefore construct only the target-preserved and context-perturbed views for stuff and background candidates.
+	
+	% \subsubsection{Support Score Extraction}
+	
+	
+	% Each constructed view is then passed through the fixed pre-update OVSS model. The model produces a new token-grid class distribution for that view. Because the candidate is already defined on the token grid, these diagnostic predictions do not need to be upsampled to the pixel level. Instead, we directly read the probability of class $c_R$ at the candidate's original spatial-token locations $\Omega_R$. The three support scores are
+	% \begin{align}
+		%     s_{\mathrm{tar}}(R)
+		%     &=
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i
+		%     \left(
+		%         c_R
+		%         \mid
+		%         x_R^{\mathrm{pres}}
+		%     \right),
+		%     \\
+		%     s_{\mathrm{res}}(R)
+		%     &=
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i
+		%     \left(
+		%         c_R
+		%         \mid
+		%         x_R^{\mathrm{supp}}
+		%     \right),
+		%     % \qquad
+		%     r_R=\mathrm{thing},
+		%     \\
+		%     s_{\mathrm{cf}}(R)
+		%     &=
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i
+		%     \left(
+		%         c_R
+		%         \mid
+		%         x_R^{\mathrm{cf}}
+		%     \right).
+		% \end{align}
+	% The target support $s_{\mathrm{tar}}(R)$ measures how strongly the preserved candidate supports its predicted class. The residual support $s_{\mathrm{res}}(R)$ measures how much response to the same class remains after a thing candidate is weakened. The perturbed-context support $s_{\mathrm{cf}}(R)$ measures how much class support remains when the candidate is preserved but its surroundings are changed.
+	
+	% The views of different candidates can be evaluated together for computational efficiency. Specifically, each view is treated as an independent sample, and views from several candidates are stacked along the model's batch dimension. A single encoder forward pass then produces one separate token-grid prediction for every view. The outputs are matched back to their corresponding candidate regions and view types according to their batch positions. Thus, the views of candidate A are used only to compute the support scores of candidate A, and the same applies to candidate B. Batched evaluation reduces repeated encoder calls without combining different candidates into one diagnostic unit, as illustrated in Figure~\ref{fig:multi-candidate-views}. This module produces $\bigl(
+	%         s_{\mathrm{tar}}(R),
+	%         s_{\mathrm{res}}(R),
+	%         s_{\mathrm{cf}}(R)
+	%     \bigr)$ 
+	% for a thing candidate and
+	%     $\bigl(
+	%         s_{\mathrm{tar}}(R),
+	%         s_{\mathrm{cf}}(R)
+	%    \bigr)$
+	% for a stuff or background candidate. The next section converts these support scores into the candidate reliability weight $\rho_R$ used to control test-time adaptation.
+	
+	% \subsection{Role-Aware Reliability-Weighted Adaptation}
+	% \label{sec:reliability-adaptation}
+	
+	
+	% The preceding section provides three support scores that describe how each candidate region responds to controlled changes of its target and context. We now use these scores to determine how strongly the candidate should influence TTA. Our first intuition is that a reliable candidate should be supported under both target preservation and context perturbation. A high target support $s_{\mathrm{tar}}(R)$ indicates that the candidate can support its predicted class when the surrounding content is weakened. A high perturbed-context support $s_{\mathrm{cf}}(R)$ indicates that this support remains when the surrounding context is changed. Both conditions are necessary, so we define the shared candidate quality as
+	% \begin{equation}
+		%     q_R
+		%     =
+		%     \min
+		%     \bigl(
+		%         s_{\mathrm{tar}}(R),
+		%         s_{\mathrm{cf}}(R)
+		%     \bigr).
+		% \end{equation}
+	% The minimum acts as a conservative bottleneck: $q_R$ is high only when both support scores are high, while failure under either condition lowers the candidate quality.
+	
+	
+	% The shared quality $q_R$ measures whether the candidate remains supported under two controlled conditions, but it does not determine whether a thing candidate is supported more strongly by its surroundings than by its own visual content. Context is not necessarily harmful, because it may reasonably assist recognition. We therefore do not penalize a candidate simply because its residual support is high. Instead, we compare the response remaining after candidate suppression with the response obtained when the candidate is preserved. We define residual-context dominance as
+	% \begin{equation}
+		%     d_R
+		%     =
+		%     \max
+		%     \left\{
+		%         0,\;
+		%         s_{\mathrm{res}}(R)
+		%         -
+		%         s_{\mathrm{tar}}(R)
+		%     \right\}.
+		% \end{equation}
+	% If $s_{\mathrm{res}}(R)\leq s_{\mathrm{tar}}(R)$, then $d_R=0$: the surrounding context may assist the prediction, but it does not provide stronger evidence than the preserved candidate. If $s_{\mathrm{res}}(R)>s_{\mathrm{tar}}(R)$, the positive difference measures how much outside-candidate evidence dominates the candidate-local response.
+	
+	
+	% We combine candidate quality and residual-context dominance according to the semantic role of the candidate:
+	% \begin{equation}
+		%     \rho_R
+		%     =
+		%     \begin{cases}
+			%         q_R\bigl(1-d_R\bigr),
+			%         & r_R=\mathrm{thing},
+			%         \\[2pt]
+			%         q_R,
+			%         & r_R\in
+			%         \{\mathrm{stuff},\mathrm{background}\}.
+			%     \end{cases}
+		%     \label{eq:trace-reliability}
+		% \end{equation}
+	% For a thing candidate, $q_R$ provides its basic support quality, while $1-d_R$ reduces its reliability only when residual context is stronger than the preserved candidate. Stuff and background classes may have spatially distributed evidence, so a strong response outside one connected component does not necessarily indicate context dominance. We therefore use only $q_R$ for these roles. The resulting $\rho_R$ is not the probability that candidate $R$ is correctly classified. It represents the candidate's update authority, namely how strongly it should influence test-time adaptation. All support scores and reliability weights are computed using the fixed pre-update model and remain unchanged during optimization.
+	
+	
+	% We use $\rho_R$ to control the contribution of each candidate to entropy minimization. For prompt $j$, we first compute the mean entropy within candidate region $R$:
+	% \begin{equation}
+		%     \overline H_R^j
+		%     =
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     H\bigl(p_i^j\bigr).
+		% \end{equation}
+	% Averaging within each candidate prevents a large stuff or background region from receiving more update weight simply because it contains more spatial tokens. Spatial tokens outside the selected candidate set $\mathcal S$ do not enter the loss. The final TRACE objective is
+	% \begin{equation}
+		%     \mathcal L_{\method}
+		%     =
+		%     \frac{1}{|\mathcal J|}
+		%     \sum_{j\in\mathcal J}
+		%     \frac{
+			%         \displaystyle
+			%         \sum_{R\in\mathcal S}
+			%         \mathrm{sg}(\rho_R)\,
+			%         \overline H_R^j
+			%     }{
+			%         \displaystyle
+			%         \sum_{R\in\mathcal S}
+			%         \mathrm{sg}(\rho_R)
+			%     },
+		% \end{equation}
+	% where $\mathrm{sg}(\cdot)$ denotes stop-gradient. Candidates with high reliability have a larger influence on the TTA update, while candidates with low reliability are suppressed. The stop-gradient operation keeps the diagnostic weights fixed and prevents the model from changing its own reliability during optimization. If no candidate has a positive reliability weight, the update is skipped. Following the baseline adaptation protocol, optimization updates only the LayerNorm parameters of the visual encoder. The score upsampling, reconstruction, and pixel-level prediction procedures remain unchanged.
+	
+	
+	
+	%%% 术语统一
+	% 	\section{Method}
+	% We build on the basic OVSS-TTA pipeline used by MLMP~\cite{noori2025mlmp}. Given a model input $x$, the visual encoder represents the image as a low-resolution grid of spatial tokens, where each token originates from one image patch. The text encoder maps the supplied vocabulary $\mathcal C$ into class text embeddings. By comparing each spatial-token feature with the class text embeddings, the model obtains a class distribution $\pi_i(c)$ at each spatial-token location $i$. Together, these distributions form the token-grid prediction used by the following method. During TTA, the entropy objective is computed on the token grid and updates the visual encoder, while the subsequent score upsampling and image reconstruction procedures remain unchanged. For the final segmentation, the token-grid class-score maps are bilinearly upsampled to the input resolution, followed by a pixel-wise argmax. When overlapping model inputs are used, their score maps are combined using the original baseline reconstruction procedure. In implementation, we further follow MLMP in its multi-prompt adaptation and multi-layer feature aggregation, which are described later with the adaptation details.
+	
+	% Standard entropy-based TTA directly uses the current token-grid prediction as self-supervision, but it does not determine whether a local response is supported by the predicted candidate region or by its surrounding context. TRACE therefore inserts a reliability-estimation branch after the initial token-grid prediction and before the entropy-based update. Its goal is to determine how strongly each local prediction should influence test-time adaptation. TRACE does not change the visual--text matching, score upsampling, or pixel-level inference pipeline; it changes only how token-grid self-supervision is allocated during adaptation. Figure~\ref{fig:method-pipeline} shows where this reliability branch is inserted and summarizes how its output is returned to the token-level adaptation objective.
+	
+	% \subsection{Candidate-Specific Confidence-Source Tracing}
+	% \label{sec:source-tracing}
+	
+	% In the OVSS-TTA pipeline, a single spatial token contains little semantic structure, whereas the entire model input may contain several unrelated objects and surrounding context. TRACE therefore uses a connected candidate region as its diagnostic unit. This candidate-centered design allows the candidate region and its surrounding context to be controlled separately. More importantly, a strong prediction within a candidate does not reveal whether its supporting evidence comes from the candidate region itself or from its surrounding context. This distinction matters for TTA because a prediction that relies mainly on context may not provide reliable self-supervision.
+	
+	% \subsubsection{Candidate Construction and Separation}
+	
+	% Starting from the fixed initial distribution $\pi_i(c)$, we assign each spatial-token location the label $\widehat y_i=\operatorname*{argmax}_{c\in\mathcal C}\pi_i(c)$. We then group horizontally or vertically adjacent locations with the same label into a candidate region $R=(\Omega_R,c_R,r_R)$, where $\Omega_R$ contains its spatial-token locations, $c_R$ is its predicted class, and $r_R\in\{\mathrm{thing},\mathrm{stuff},\mathrm{background}\}$ is its semantic role. The class-to-role map is fixed before testing and does not use test annotations. We define the initial confidence of candidate $R$ as
+	% \begin{equation}
+		%     \kappa_R
+		%     =
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i(c_R).
+		% \end{equation}
+	% Candidates are ranked by $\kappa_R$, and the top $K$ candidates per image form the selected candidate set $\mathcal S$. This ranking only limits the number of candidates that require additional diagnostic views. A high-confidence candidate is admitted for confidence-source tracing, but its reliability is determined only after examining how its prediction responds to candidate and context interventions.
+	
+	% For a selected candidate region $R$, its spatial extent is defined by the spatial-token locations $\Omega_R$ on the low-resolution token grid. We first convert these locations into a binary token-grid mask:
+	% \begin{equation}
+		%     G_R(i)
+		%     =
+		%     \mathbf{1}
+		%     \left[
+		%         i\in\Omega_R
+		%     \right].
+		% \end{equation}
+	% Because the candidate-specific views are constructed in the pixel space of model input $x$, we map $G_R$ to the spatial resolution of $x$ using nearest-neighbor interpolation:
+	% \begin{equation}
+		%     M_R
+		%     =
+		%     \operatorname{NNUp}
+		%     \left(
+		%         G_R
+		%     \right).
+		% \end{equation}
+	% The resulting binary mask $M_R$ separates the candidate region from its surrounding context and allows the two parts to be controlled independently.
+	
+	
+	% \subsubsection{Diagnostic View Construction}
+	
+	% With the candidate region and its surrounding context separated by $M_R$, we assume that the response to class $c_R$ may be supported by the candidate region itself, by its surrounding context, or by both. If the model still supports $c_R$ after the surrounding context is weakened, the candidate region itself provides useful class evidence; this motivates the target-preserved view. If the model still produces a strong response to $c_R$ after the candidate region is weakened, substantial class evidence remains in its surrounding context; this motivates the candidate-suppressed view. Finally, we keep the candidate region unchanged but perturb its surrounding context to examine whether its class support remains stable under a controlled context change; this gives the context-perturbed view.
+	
+	
+	% Following these diagnostic assumptions, let $W(x)$ denote a weakened version of the model input obtained through grayscale conversion and local average blur. Let
+	% \begin{equation}
+		%     C(x)
+		%     =
+		%     \operatorname{Shift}
+		%     \bigl(
+		%         \mu+\gamma(x-\mu)
+		%     \bigr)
+		% \end{equation}
+	% denote a fixed context perturbation, where $\mu$ is the spatial mean of each image channel, $0<\gamma<1$ reduces contrast, and $\operatorname{Shift}$ cyclically permutes the image channels. We then construct
+	% \begin{align}
+		%     x_R^{\mathrm{pres}}
+		%     &=
+		%     M_R\odot x
+		%     +
+		%     (1-M_R)\odot W(x),
+		%     \\
+		%     x_R^{\mathrm{supp}}
+		%     &=
+		%     (1-M_R)\odot x
+		%     +
+		%     M_R\odot W(x),
+		%     \\
+		%     x_R^{\mathrm{cf}}
+		%     &=
+		%     M_R\odot x
+		%     +
+		%     (1-M_R)\odot C(x),
+		% \end{align}
+	% where $\odot$ denotes element-wise multiplication. The target-preserved view keeps the candidate region unchanged and weakens its surrounding context. The candidate-suppressed view weakens the candidate region and keeps its surrounding context unchanged. The context-perturbed view keeps the candidate region unchanged and transforms only its surrounding context. All three views preserve the size and spatial layout of the original model input. Figure~\ref{fig:single-candidate-views} illustrates their construction.
+	
+	% The required views depend on the semantic role of the candidate. A thing candidate usually represents a localized and countable entity. Weakening such a candidate provides a meaningful way to examine how much class evidence remains outside it. We therefore construct all three views for thing candidates. In contrast, stuff and background candidates may represent classes whose evidence is distributed across a large part of the model input. Weakening one connected component may remove only part of their legitimate class evidence, so the remaining response cannot be interpreted in the same way. We therefore construct only the target-preserved and context-perturbed views for stuff and background candidates.
+	
+	% \subsubsection{Support Score Extraction}
+	
+	
+	% Each constructed view is then passed through the fixed pre-update OVSS model. The model produces a new token-grid class distribution for that view. Because the candidate is already defined on the token grid, these diagnostic predictions do not need to be upsampled to the pixel level. Instead, we directly read the probability of class $c_R$ at the candidate's original spatial-token locations $\Omega_R$. The support scores are
+	% \begin{align}
+		%     s_{\mathrm{tar}}(R)
+		%     &=
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i
+		%     \left(
+		%         c_R
+		%         \mid
+		%         x_R^{\mathrm{pres}}
+		%     \right),
+		%     \\
+		%     s_{\mathrm{res}}(R)
+		%     &=
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i
+		%     \left(
+		%         c_R
+		%         \mid
+		%         x_R^{\mathrm{supp}}
+		%     \right),
+		%     % \qquad
+		%     r_R=\mathrm{thing},
+		%     \\
+		%     s_{\mathrm{cf}}(R)
+		%     &=
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     \pi_i
+		%     \left(
+		%         c_R
+		%         \mid
+		%         x_R^{\mathrm{cf}}
+		%     \right).
+		% \end{align}
+	% The target support $s_{\mathrm{tar}}(R)$ measures how strongly the preserved candidate supports its predicted class. The residual support $s_{\mathrm{res}}(R)$ measures how much response to the same class remains after a thing candidate is weakened. The context-perturbed support $s_{\mathrm{cf}}(R)$ measures how much class support remains when the candidate is preserved but its surrounding context is changed.
+	
+	% The views of different candidates can be evaluated together for computational efficiency. Specifically, each view is treated as an independent sample, and views from several candidates are stacked along the model's batch dimension. A single encoder forward pass then produces one separate token-grid prediction for every view. The outputs are matched back to their corresponding candidate regions and view types according to their batch positions. Thus, the views of candidate A are used only to compute the support scores of candidate A, and the same applies to candidate B. Batched evaluation reduces repeated encoder calls without combining different candidates into one diagnostic unit, as illustrated in Figure~\ref{fig:multi-candidate-views}. This module produces $\bigl(
+	%         s_{\mathrm{tar}}(R),
+	%         s_{\mathrm{res}}(R),
+	%         s_{\mathrm{cf}}(R)
+	%     \bigr)$ 
+	% for a thing candidate and
+	%     $\bigl(
+	%         s_{\mathrm{tar}}(R),
+	%         s_{\mathrm{cf}}(R)
+	%    \bigr)$
+	% for a stuff or background candidate. The next section converts these support scores into the candidate reliability weight $\rho_R$ used to control test-time adaptation.
+	
+	% \subsection{Role-Aware Reliability-Weighted Adaptation}
+	% \label{sec:reliability-adaptation}
+	
+	
+	% The preceding section provides role-dependent support scores that describe how each candidate region responds to controlled changes of the candidate region and its surrounding context. We now use these scores to determine how strongly the candidate should influence TTA. Our first intuition is that a reliable candidate should be supported under both target preservation and context perturbation. A high target support $s_{\mathrm{tar}}(R)$ indicates that the candidate can support its predicted class when the surrounding context is weakened. A high context-perturbed support $s_{\mathrm{cf}}(R)$ indicates that this support remains when the surrounding context is changed. Both conditions are necessary, so we define the shared candidate quality as
+	% \begin{equation}
+		%     q_R
+		%     =
+		%     \min
+		%     \bigl(
+		%         s_{\mathrm{tar}}(R),
+		%         s_{\mathrm{cf}}(R)
+		%     \bigr).
+		% \end{equation}
+	% The minimum acts as a conservative bottleneck: $q_R$ is high only when both support scores are high, while failure under either condition lowers the candidate quality.
+	
+	
+	% The shared quality $q_R$ measures whether the candidate remains supported under two controlled conditions, but it does not determine whether a thing candidate is supported more strongly by its surrounding context than by its own visual content. Context is not necessarily harmful, because it may reasonably assist recognition. We therefore do not penalize a candidate simply because its residual support is high. Instead, we compare the response remaining after candidate suppression with the response obtained when the candidate is preserved. We define residual-context dominance as
+	% \begin{equation}
+		%     d_R
+		%     =
+		%     \max
+		%     \left\{
+		%         0,\;
+		%         s_{\mathrm{res}}(R)
+		%         -
+		%         s_{\mathrm{tar}}(R)
+		%     \right\}.
+		% \end{equation}
+	% If $s_{\mathrm{res}}(R)\leq s_{\mathrm{tar}}(R)$, then $d_R=0$: the surrounding context may assist the prediction, but it does not provide stronger evidence than the preserved candidate. If $s_{\mathrm{res}}(R)>s_{\mathrm{tar}}(R)$, the positive difference measures how much outside-candidate evidence dominates the candidate-local response.
+	
+	
+	% We combine candidate quality and residual-context dominance according to the semantic role of the candidate:
+	% \begin{equation}
+		%     \rho_R
+		%     =
+		%     \begin{cases}
+			%         q_R\bigl(1-d_R\bigr),
+			%         & r_R=\mathrm{thing},
+			%         \\[2pt]
+			%         q_R,
+			%         & r_R\in
+			%         \{\mathrm{stuff},\mathrm{background}\}.
+			%     \end{cases}
+		%     \label{eq:trace-reliability}
+		% \end{equation}
+	% For a thing candidate, $q_R$ provides its basic support quality, while $1-d_R$ reduces its reliability weight only when residual context is stronger than the preserved candidate. Stuff and background candidates may have spatially distributed class evidence, so a strong response outside one connected component does not necessarily indicate residual-context dominance. We therefore use only $q_R$ for these roles. The resulting $\rho_R$ is not the probability that candidate $R$ is correctly classified. It represents the candidate's update authority, namely how strongly it should influence test-time adaptation. All support scores and reliability weights are computed using the fixed pre-update model and remain unchanged during optimization.
+	
+	
+	% We use $\rho_R$ to control the contribution of each candidate to entropy minimization. For prompt $j$, we first compute the mean entropy within candidate region $R$:
+	% \begin{equation}
+		%     \overline H_R^j
+		%     =
+		%     \frac{1}{|\Omega_R|}
+		%     \sum_{i\in\Omega_R}
+		%     H\bigl(p_i^j\bigr).
+		% \end{equation}
+	% Averaging within each candidate prevents a large stuff or background candidate from receiving more update weight simply because it contains more spatial tokens. Spatial tokens outside the selected candidate set $\mathcal S$ do not enter the loss. The final TRACE objective is
+	% \begin{equation}
+		%     \mathcal L_{\method}
+		%     =
+		%     \frac{1}{|\mathcal J|}
+		%     \sum_{j\in\mathcal J}
+		%     \frac{
+			%         \displaystyle
+			%         \sum_{R\in\mathcal S}
+			%         \mathrm{sg}(\rho_R)\,
+			%         \overline H_R^j
+			%     }{
+			%         \displaystyle
+			%         \sum_{R\in\mathcal S}
+			%         \mathrm{sg}(\rho_R)
+			%     },
+		% \end{equation}
+	% where $\mathrm{sg}(\cdot)$ denotes stop-gradient. Candidates with high reliability weights have a larger influence on the TTA update, while candidates with low reliability weights are suppressed. The stop-gradient operation keeps the reliability weights fixed and prevents the model from changing these weights during optimization. If no candidate has a positive reliability weight, the update is skipped. Following the baseline adaptation protocol, optimization updates only the LayerNorm parameters of the visual encoder. The score upsampling, reconstruction, and pixel-level inference procedures remain unchanged.
+	
+	
+	
+	
+	
+	
+	\section{Method}
+	
+	\subsection{OVSS-TTA Overview}
+	\label{sec:ovss-tta-overview}
+	
+	We build on the OVSS-TTA pipeline of MLMP~\cite{noori2025mlmp}. Consider one model input $x\in\mathbb{R}^{H\times W\times3}$. A ViT with patch size $s$ represents $x$ on a spatial-token grid of size $H_t\times W_t$, giving $N=H_tW_t$ spatial tokens. After visual projection and the unchanged MLMP layer-combination rule, their features form $F\in\mathbb{R}^{N\times D}$. Let $\mathcal C$ be the supplied class vocabulary, with $C=|\mathcal C|$, and let $\mathcal J$ contain $J$ prompt templates. Each template inserts a class name into a natural-language prompt and produces a class-text matrix $T^j\in\mathbb{R}^{C\times D}$~\cite{radford2021clip}. For inference, the prompt-specific matrices are aggregated according to the baseline rule, yielding $\overline T\in\mathbb{R}^{C\times D}$.
+	
+	The normalized similarities between spatial-token features and class-text embeddings form the token--class logits
+	$
+	Z
+	=
+	\frac{
+		\operatorname{norm}(F)
+		\operatorname{norm}(\overline T)^\top
+	}{\tau}
+	\in
+	\mathbb{R}^{N\times C},
+	$
+	where $\tau$ is the temperature. Row $i$ corresponds to one spatial-token location and column $c$ to one vocabulary class. The $C$ score columns are reshaped to the token grid, producing $S\in\mathbb{R}^{H_t\times W_t\times C}$. The unchanged baseline decoder upsamples these class-score maps to the input resolution. When overlapping model inputs are used, their reconstructed scores are combined before a pixel-wise argmax produces $\widehat Y\in\{1,\ldots,C\}^{H\times W}$. Thus, token--text alignment occurs on the low-resolution token grid, while the reported segmentation is produced at the pixel level.
+	
+	TRACE uses two related token-grid distributions. Before adaptation, the prompt-aggregated inference branch produces
+	\begin{equation}
+		\Pi
+		=
+		\operatorname{softmax}_{C}(Z)
+		\in
+		\mathbb{R}^{N\times C},
+	\end{equation}
+	where $\pi_i(c)=\Pi_{i,c}$ is the probability of class $c$ at spatial-token location $i$. TRACE computes $\Pi$ once with the reset source model and uses it as a fixed reference for candidate construction and diagnosis. During adaptation, MLMP keeps prompt templates separate. For prompt $j$, the current visual model produces $P^j\in\mathbb{R}^{N\times C}$, where $p_i^j(c)$ is the probability of class $c$ at location $i$. Stacking all prompt-specific distributions gives $P\in\mathbb{R}^{J\times N\times C}$. Keeping the prompts separate provides multiple linguistic views of the same class during adaptation.
+	
+	For a class distribution $a$, let $H(a)=-\sum_{c\in\mathcal C}a(c)\log a(c)$. The uniformly averaged spatial-token entropy component can be written as
+	\begin{equation}
+		\mathcal L_{\mathrm{token}}
+		=
+		\frac{1}{J}
+		\sum_{j=1}^{J}
+		\frac{1}{N}
+		\sum_{i=1}^{N}
+		H(p_i^j).
+	\end{equation}
+	This entropy is computed before score upsampling and pixel-level reconstruction. Hence, $\Pi$ is the fixed distribution used for diagnosis, whereas $P^j$ is the gradient-bearing distribution used for adaptation. TRACE keeps the same token-level adaptation point but replaces uniform spatial allocation with candidate-specific reliability weighting.
+	
+	As discussed in the Introduction, confidence alone does not reveal whether a local prediction is supported by its candidate region or its surrounding context. TRACE therefore adds a diagnostic branch between the initial token-grid prediction and the entropy update. Starting from $\Pi$, it constructs candidate regions, examines where their supporting evidence comes from, and assigns each candidate a reliability weight. This weight controls how strongly the candidate contributes to adaptation; it does not change the candidate's predicted class. Figure~\ref{fig:method-pipeline} summarizes the complete flow. TRACE leaves token--text alignment, score upsampling, overlap reconstruction, and pixel-level prediction unchanged.
+	
+	\begin{figure*}[!t]
+		\centering
+		\includegraphics[width=0.95\textwidth]{figure/TRACE_pipeline_final.pdf}
+		\caption{Overview of \method within the OVSS-TTA pipeline. The initial token-grid prediction is first divided into connected candidate regions. TRACE constructs candidate-preserved and context-perturbed views for every selected candidate, and an additional candidate-suppressed view for localized thing candidates. The same OVSS model evaluates these views to obtain candidate support, residual support, and context-perturbed support. TRACE combines the responses into one detached reliability per candidate and uses it to weight region-averaged token entropy. After adaptation, the original unmodified input is evaluated by the adapted encoder, and the unchanged baseline reconstruction produces the final pixel-level segmentation.}
+		\Description{The OVSS model produces an initial token-grid prediction. TRACE constructs role-dependent diagnostic views, extracts support scores, estimates candidate reliability, and uses it to weight token-level entropy. The adapted model then predicts the final segmentation from the original input.}
+		\label{fig:method-pipeline}
+	\end{figure*}
+	
+	\subsection{Candidate-Specific Confidence-Source Tracing}
+	\label{sec:source-tracing}
+	
+	A spatial token is contextualized by ViT self-attention and may contain information from its local image region and surrounding context. To determine where a confident prediction is supported, TRACE needs a diagnostic unit that can separate these two sources. One spatial token contains limited semantic structure, while an entire input may contain several unrelated objects and regions. We therefore use each connected predicted region as one candidate region and diagnose it independently.
+	
+	\subsubsection{Candidate Construction and Separation}
+	
+	Starting from the fixed distribution $\Pi$, we assign each spatial-token location the label $\widehat y_i=\operatorname*{argmax}_{c\in\mathcal C}\pi_i(c)$. We reshape these labels to the $H_t\times W_t$ token grid and group horizontally or vertically adjacent locations with the same predicted class. Each connected component defines one candidate
+	\begin{equation}
+		R=(\Omega_R,c_R,r_R),
+	\end{equation}
+	where $\Omega_R$ contains its spatial-token locations, $c_R$ is its predicted class, and $r_R\in\{\mathrm{thing},\mathrm{stuff},\mathrm{background}\}$ is the fixed semantic role of that class. Thing classes describe localized, countable objects, whereas stuff and background classes may be spatially distributed.
+	We define the initial confidence of candidate $R$ as
+	\begin{equation}
+		\kappa_R
+		=
+		\frac{1}{|\Omega_R|}
+		\sum_{i\in\Omega_R}
+		\pi_i(c_R).
+	\end{equation}
+	Candidates are ranked by $\kappa_R$, and the top $K$ candidates per image form the selected set $\mathcal S$. This ranking only limits the number of diagnostic views; it does not determine candidate reliability.
+	
+	Candidates are defined on the token grid, whereas diagnostic views are constructed in the input image. We therefore form a binary token-grid mask and map it to the input resolution:
+	\begin{align}
+		G_R(i)
+		&=
+		\mathbf{1}[i\in\Omega_R],
+		\\
+		M_R
+		&=
+		\operatorname{NNUp}(G_R).
+	\end{align}
+	Here $G_R\in\{0,1\}^{H_t\times W_t}$ and $M_R\in\{0,1\}^{H\times W}$. The input-space mask $M_R$ separates the candidate from its surrounding context while preserving their spatial alignment.
+	
+	\subsubsection{Diagnostic View Construction}
+	
+	Following the three diagnostic questions introduced earlier, TRACE controls the candidate and its surrounding context separately. Let $W(x)$ be a weakened version of the input obtained by grayscale conversion and local average blur. To test whether the candidate itself supports class $c_R$, we preserve the candidate and weaken its surroundings:
+	\begin{equation}
+		x_R^{\mathrm{pres}}
+		=
+		M_R\odot x
+		+
+		(1-M_R)\odot W(x).
+	\end{equation}
+	To test how much support remains in the surrounding context, we weaken the candidate and retain its surroundings:
+	\begin{equation}
+		x_R^{\mathrm{supp}}
+		=
+		(1-M_R)\odot x
+		+
+		M_R\odot W(x).
+	\end{equation}
+	Finally, to test whether the prediction remains stable when the surroundings change, we preserve the candidate and apply a fixed transformation to its context. We define
+	\begin{equation}
+		C(x)
+		=
+		\operatorname{Shift}
+		\bigl(
+		\mu+\gamma(x-\mu)
+		\bigr),
+	\end{equation}
+	where $\mu$ is the spatial mean of each image channel, $0<\gamma<1$ reduces contrast, and $\operatorname{Shift}$ cyclically permutes the channels. The context-perturbed view is
+	\begin{equation}
+		x_R^{\mathrm{cf}}
+		=
+		M_R\odot x
+		+
+		(1-M_R)\odot C(x).
+	\end{equation}
+	Here $\odot$ denotes element-wise multiplication. All three views preserve the input size and spatial layout, allowing their responses to be compared at the candidate's original token locations. Their construction is illustrated in Figure~\ref{fig:method-pipeline}.
+	
+	The required views depend on the semantic role of the candidate. For a localized thing candidate, weakening the candidate provides a meaningful test of how much class evidence remains outside it, so all three views are used. For stuff and background, one connected component may contain only part of the class's valid evidence. Suppressing that component would therefore make the remaining response difficult to interpret. TRACE uses only the candidate-preserved and context-perturbed views for these spatially distributed roles.
+	
+	\subsubsection{Support Score Extraction}
+	
+	The diagnostic views are evaluated by the fixed pre-update OVSS model. For efficiency, views from different candidates are stacked along the batch dimension and processed together. Each view still produces its own $N\times C$ token--class distribution, which is mapped back to the corresponding candidate and view type. Batching therefore reduces encoder calls without merging candidates into one diagnostic unit.
+	
+	Because the candidates and diagnostic responses are both defined on the token grid, pixel-level decoding is unnecessary. For each view, we select the probability of class $c_R$ at the original candidate locations $\Omega_R$ and average these values:
+	\begin{align}
+		s_{\mathrm{tar}}(R)
+		&=
+		\frac{1}{|\Omega_R|}
+		\sum_{i\in\Omega_R}
+		\pi_i
+		\left(
+		c_R\mid x_R^{\mathrm{pres}}
+		\right),
+		\\
+		s_{\mathrm{res}}(R)
+		&=
+		\frac{1}{|\Omega_R|}
+		\sum_{i\in\Omega_R}
+		\pi_i
+		\left(
+		c_R\mid x_R^{\mathrm{supp}}
+		\right), r_R=\mathrm{thing},
+		\\
+		s_{\mathrm{cf}}(R)
+		&=
+		\frac{1}{|\Omega_R|}
+		\sum_{i\in\Omega_R}
+		\pi_i
+		\left(
+		c_R\mid x_R^{\mathrm{cf}}
+		\right).
+	\end{align}
+	The candidate support $s_{\mathrm{tar}}(R)$ measures how strongly the preserved candidate supports its predicted class. The residual support $s_{\mathrm{res}}(R)$ measures how much support remains outside a suppressed thing candidate. The context-perturbed support $s_{\mathrm{cf}}(R)$ measures whether the candidate remains supported after its surroundings change. A high residual response is not automatically harmful, because surrounding context may legitimately assist recognition.
+	
+	A thing candidate yields all three scores, while a stuff or background candidate yields $s_{\mathrm{tar}}(R)$ and $s_{\mathrm{cf}}(R)$. These scores describe the candidate's behavior under the controlled views; they are not yet reliability values and are not interpreted as identified causal effects. The next subsection combines them into the candidate reliability used for adaptation.
+	
+	\subsection{Reliability-Controlled Adaptation}
+	\label{sec:reliability-adaptation}
+	
+	A reliable candidate should satisfy two shared conditions: its own region should support the predicted class, and that support should remain when the surrounding context changes. Because failure under either condition should lower reliability, we define the shared candidate quality as
+	\begin{equation}
+		q_R
+		=
+		\min
+		\bigl(
+		s_{\mathrm{tar}}(R),
+		s_{\mathrm{cf}}(R)
+		\bigr).
+	\end{equation}
+	The minimum acts as a conservative bottleneck: $q_R$ is high only when both candidate support and context-perturbed support are high.
+	
+	For a thing candidate, $q_R$ alone does not show whether the surrounding context provides stronger evidence than the candidate itself. Since context may legitimately assist recognition, TRACE does not penalize every high residual response. It applies a penalty only when residual support exceeds candidate support. We define this excess as residual-context dominance:
+	\begin{equation}
+		d_R
+		=
+		\max
+		\left\{
+		0,
+		s_{\mathrm{res}}(R)
+		-
+		s_{\mathrm{tar}}(R)
+		\right\}.
+	\end{equation}
+	If $s_{\mathrm{res}}(R)\leq s_{\mathrm{tar}}(R)$, then $d_R=0$: the context may help, but it does not dominate the candidate. If $s_{\mathrm{res}}(R)>s_{\mathrm{tar}}(R)$, $d_R$ measures how much more strongly the class is supported outside the candidate. This comparison is used only for localized thing candidates.
+	
+	TRACE combines shared quality and the role-dependent dominance test as
+	\begin{equation}
+		\rho_R
+		=
+		\begin{cases}
+			q_R(1-d_R),
+			& r_R=\mathrm{thing},
+			\\[2pt]
+			q_R,
+			& r_R\in\{\mathrm{stuff},\mathrm{background}\}.
+		\end{cases}
+	\end{equation}
+	For thing candidates, reliability is reduced only when surrounding context provides stronger support than the preserved candidate. For stuff and background, strong evidence outside one connected component does not necessarily indicate context dominance, so TRACE uses $q_R$ without the dominance term. The resulting $\rho_R$ is not the probability that candidate $R$ is correctly classified. It represents the candidate's update authority: how strongly it should influence adaptation. All diagnostic scores and reliability weights are computed by the fixed initial model and detached before optimization.
+	
+	We now return to the prompt-specific distributions $P^j$ introduced in the Overview. For prompt $j$, the mean entropy within candidate $R$ is
+	\begin{equation}
+		\overline H_R^j
+		=
+		\frac{1}{|\Omega_R|}
+		\sum_{i\in\Omega_R}
+		H(p_i^j).
+	\end{equation}
+	Averaging within each candidate prevents a large stuff or background region from receiving more update weight merely because it contains more spatial tokens. Tokens outside the selected candidate set $\mathcal S$ do not enter the loss.
+	
+	The final objective uses detached candidate reliability to weight region-averaged entropy:
+	\begin{equation}
+		\mathcal L_{\mathrm{TRACE}}
+		=
+		\frac{1}{|\mathcal J|}
+		\sum_{j\in\mathcal J}
+		\frac{
+			\displaystyle
+			\sum_{R\in\mathcal S}
+			\operatorname{sg}(\rho_R)
+			\overline H_R^j
+		}{
+			\displaystyle
+			\sum_{R\in\mathcal S}
+			\operatorname{sg}(\rho_R)
+		},
+	\end{equation}
+	where $\operatorname{sg}(\cdot)$ denotes stop-gradient. High-reliability candidates contribute more strongly to adaptation, while low-reliability candidates have less influence. Stop-gradient prevents the model from changing its diagnostic weights during optimization. If the reliability sum is zero, the update is skipped.
+	
+	Following the baseline protocol, TRACE updates only the affine scale and bias of visual-encoder LayerNorm modules; the text encoder and all other visual parameters remain frozen. After adaptation, the model processes the original unmodified input again. Diagnostic views never enter the reported prediction, and the final token scores are converted to pixel labels through the unchanged score upsampling, overlap reconstruction, and pixel-wise argmax.
+	
+	
+	% \section{Method}
+	
+	
+	% We build on the OVSS-TTA pipeline used by MLMP~\cite{noori2025mlmp}. For clarity, consider one model input $x\in \mathbb{R}^{H\times W\times3}$. A ViT with patch size $s$ represents the input on a regular spatial-token grid of size $H_t\times W_t$, giving $N=H_tW_t$ spatial tokens. After visual projection and the unchanged MLMP layer-combination rule, their features form $F\in\mathbb{R}^{N\times D}$. Let $\mathcal C$ be the supplied open-vocabulary class taxonomy, with $C=|\mathcal C|$, and let $\mathcal J$ contain $J$ prompt templates. Because CLIP is pretrained on natural-language image--text pairs, a bare class name is inserted into a prompt such as ``a photo of a \{class\}'' before text encoding~\cite{radford2021clip}. Each template $j$ therefore produces a complete class-text matrix $T^j\in\mathbb{R}^{C\times D}$ rather than one text vector. For inference, these matrices are aggregated over the prompt dimension according to the baseline rule, yielding $\overline T\in\mathbb{R}^{C\times D}$.
+	
+	% The normalized similarities between the spatial-token features and the aggregated class-text embeddings form the token--class logit matrix
+	% $$
+	% Z
+	% =
+	% \frac{
+		% \operatorname{norm}(F)
+		% \operatorname{norm}(\overline T)^\top
+		% }{\tau}
+	% \in
+	% \mathbb{R}^{N\times C},
+	% $$
+	% where $\tau$ is the temperature. Thus, row $i$ describes one spatial-token location and column $c$ describes one vocabulary class. The $C$ columns are reshaped to the $H_t\times W_t$ token grid, producing $S\in\mathbb{R}^{H_t\times W_t\times C}$, a collection of $C$ low-resolution class-score maps. The unchanged baseline decoder upsamples every score channel to the input resolution and, when overlapping model inputs are used, combines their reconstructed scores before a pixel-wise argmax. The final output is therefore a pixel-level map $\widehat Y\in\{1,\ldots,C\}^{H\times W}$. Visual--text semantic alignment is performed on the token grid, whereas the reported segmentation is obtained only after dense score reconstruction.
+	
+	% We use two related token-grid distributions in this pipeline. Before adaptation, the prompt-aggregated inference branch produces
+	
+	% $$
+	% \Pi
+	% =
+	% \operatorname{softmax}_{C}(Z)
+	% \in
+	% \mathbb{R}^{N\times C},
+	% $$
+	% where $\pi_i(c)=\Pi_{i,c}$ and $\pi_i=\{\pi_i(c)\}_{c\in\mathcal C}$ is the class distribution at spatial-token location $i$. TRACE computes this initial distribution once using the reset source model and uses it as a fixed diagnostic reference. During adaptation, MLMP instead keeps prompt templates separate. For prompt $j$, the current visual model produces $P^j\in\mathbb{R}^{N\times C}$, whose element $p_i^j(c)$ is the probability of class $c$ at token $i$ under that prompt. Keeping prompts separate exposes the model to different linguistic formulations of the same class and provides complementary entropy signals rather than relying on one wording. Stacking the prompt-specific matrices gives $P\in\mathbb{R}^{J\times N\times C}$. For a class distribution $a$, let $H(a)=-\sum_{c\in\mathcal C}a(c)\log a(c)$. The uniform spatial entropy used by the baseline can then be written as
+	
+	% $$
+	% \mathcal L_{\mathrm{token}}
+	% =
+	% \frac{1}{J}
+	% \sum_{j=1}^{J}
+	% \frac{1}{N}
+	% \sum_{i=1}^{N}
+	% H(p_i^j).
+	% $$
+	% This loss is computed after class softmax but before score reshaping, dense decoding, and pixel-level upsampling. Hence, $\Pi$ is the fixed distribution used for diagnosis, whereas $P^j$ is the gradient-bearing distribution used for adaptation. TRACE retains this token-level entropy signal but replaces its uniform spatial allocation with candidate-specific reliability control.
+	
+	% Standard entropy-based TTA directly treats the current token-grid prediction as self-supervision. It can sharpen the classes that the model already prefers, but it does not determine whether a local response is supported by the predicted region itself or by its surrounding context. Contextual support may be useful for the current prediction, yet its presence alone does not tell us whether the candidate is safe for unrestricted self-supervision. TRACE addresses this missing information by inserting a candidate-specific diagnostic branch after the initial token-grid prediction and before the entropy update. This branch does not predict a different semantic label; it estimates how much authority each candidate should have when the model is updated. As summarized in Figure~\ref{fig:method-pipeline}, the first row is the unchanged OVSS path, the second row traces candidate confidence sources, and the third row converts the resulting reliability into an entropy update. TRACE leaves visual--text matching, dense decoding, and pixel-level inference unchanged.
+	
+	
+	% 	\begin{figure*}[!t]
+		% 		\centering
+		% 		\includegraphics[width=0.95\textwidth]{figure/TRACE_pipeline_final.png}
+		% 		\caption{Overview of \method. In the adaptation phase, the initial dense prediction is decomposed into connected thing, stuff, and background candidates. Candidate-preserved and context-perturbed views are constructed for every selected candidate, while candidate suppression is used only for things. The views are evaluated in bounded batches by the shared OVSS encoder, producing one detached reliability per candidate. These weights modulate a region-normalized entropy objective that updates only visual-encoder LayerNorm affine parameters. Prediction then reuses the original, unmodified input patches with the adapted encoder and the baseline overlap reconstruction. Image, candidate, and intervention panels show a concrete example; the feature and similarity heatmaps in the lower row are schematic summaries of the baseline prediction path.}
+		% 		\Description{Two-stage TRACE overview. Candidate-specific diagnostic views produce reliability-weighted region entropy for visual LayerNorm adaptation, after which original image patches pass through the adapted encoder and overlap reconstruction to form the final segmentation.}
+		% 		\label{fig:method-pipeline}
+		% 	\end{figure*}
+	
+	% \subsection{Candidate-Specific Confidence-Source Tracing}
+	% \label{sec:source-tracing}
+	
+	
+	% Segmentation predictions are spatially related rather than independent. Neighboring regions often exhibit spatial continuity and semantic co-occurrence, while ViT self-attention allows one spatial token to aggregate information beyond its originating image patch. Consequently, a confident response can be sustained by the predicted region, another object, surrounding stuff, scene background, or a mixture of these sources. Confidence reveals how strongly the model prefers a class, but not where the supporting evidence comes from. Diagnosing this source requires a spatial unit around which target and contextual evidence can be controlled separately. A single spatial token contains too little semantic structure, whereas the entire model input may contain several unrelated objects and regions. TRACE therefore uses a connected candidate region as an intermediate diagnostic unit.
+	
+	% \subsubsection{Candidate Construction and Separation}
+	
+	
+	
+	% Starting from the fixed initial matrix $\Pi$, we assign each spatial-token location the label
+	% $
+	% \widehat y_i
+	% =
+	% \operatorname*{argmax}_{c\in\mathcal C}
+	% \pi_i(c).
+	% $
+	% We reshape these labels to the $H_t\times W_t$ token grid and group horizontally or vertically adjacent locations that predict the same class. Each connected component defines one candidate
+	% $
+	% R=(\Omega_R,c_R,r_R),
+	% $
+	% where $\Omega_R$ contains its spatial-token locations, $c_R$ is its predicted class, and $r_R\in\{\mathrm{thing},\mathrm{stuff},\mathrm{background}\}$ is the semantic role inherited from that class. Its initial confidence is the mean probability assigned to $c_R$ inside the component:
+	
+	% $$
+	% \kappa_R
+	% =
+	% \frac{1}{|\Omega_R|}
+	% \sum_{i\in\Omega_R}
+	% \pi_i(c_R).
+	% $$
+	% Candidates are ranked by $\kappa_R$, and the top $K$ candidates per image form the selected set $\mathcal S$. This ranking only limits how many candidates require additional diagnostic views; at this stage, it does not yet diagnose the source of their confidence.
+	
+	% A candidate is defined on the low-resolution token grid, whereas the following interventions modify the pixels of model input $x$. We therefore convert $\Omega_R$ into a binary token-grid mask
+	% $
+	% G_R(i)
+	% =
+	% \mathbf{1}[i\in\Omega_R],
+	% $
+	% and map it to the input resolution using nearest-neighbor interpolation:
+	% $
+	% M_R
+	% =
+	% \operatorname{NNUp}(G_R).
+	% $
+	% Here $G_R\in\{0,1\}^{H_t\times W_t}$ and $M_R\in\{0,1\}^{H\times W}$. The resulting input-space mask separates the candidate from its surrounding context while preserving their original spatial alignment. It provides the boundary needed to modify candidate and contextual evidence independently.
+	
+	
+	% \subsubsection{Diagnostic View Construction}
+	
+	
+	
+	% With the two regions separated by $M_R$, TRACE considers three complementary questions. First, can the candidate itself sustain class $c_R$ when surrounding evidence is weakened? Let $W(x)$ denote a weakened input obtained through grayscale conversion and local average blur. The target-preserved view is
+	% $$
+	% x_R^{\mathrm{pres}}
+	% =
+	% M_R\odot x
+	% +
+	% (1-M_R)\odot W(x),
+	% $$
+	% which leaves the candidate unchanged and weakens non-candidate pixels. Second, how much support for $c_R$ remains when localized candidate evidence is weakened but the original surroundings are retained? The candidate-suppressed view is
+	% $$
+	% x_R^{\mathrm{supp}}
+	% =
+	% (1-M_R)\odot x
+	% +
+	% M_R\odot W(x).
+	% $$
+	% Third, does the preserved candidate remain supported after a controlled change of its surroundings? We use the fixed context transformation
+	% $
+	% C(x)
+	% =
+	% \operatorname{Shift}
+	% \bigl(
+	% \mu+\gamma(x-\mu)
+	% \bigr),
+	% $
+	% where $\mu$ is the spatial mean of each image channel, $0<\gamma<1$ reduces contrast, and $\operatorname{Shift}$ cyclically permutes the channels. This gives the context-perturbed view
+	% $$
+	% x_R^{\mathrm{cf}}
+	% =
+	% M_R\odot x
+	% +
+	% (1-M_R)\odot C(x).
+	% $$
+	% Here $\odot$ denotes element-wise multiplication. The three views respectively test candidate-local support, residual support outside the candidate, and support under a controlled context change. All preserve the same input size and spatial layout, so their responses can be compared at the candidate's original token locations. Figure~\ref{fig:single-candidate-views} visualizes the candidate mask and the corresponding view construction.
+	
+	% The required views depend on the semantic role of the candidate, as also summarized in Figure~\ref{fig:single-candidate-views}. A thing candidate usually represents a localized and countable entity. Weakening it therefore provides a meaningful way to examine how much class evidence remains outside the candidate, so thing candidates use all three views. In contrast, stuff and background may have evidence distributed across a large part of the input. Weakening one connected component may remove only part of their legitimate class evidence, and the remaining response cannot be interpreted as residual-context dominance in the same way. We therefore construct only the target-preserved and context-perturbed views for stuff and background candidates.
+	
+	
+	% \subsubsection{Support Score Extraction}
+	
+	
+	% Each selected candidate produces two or three diagnostic images, but these images do not require one serial encoder call per candidate. Views from different candidates are treated as independent samples and stacked along the model batch dimension. The resulting view batch is passed through the fixed pre-update OVSS model: the visual encoder produces view-specific spatial-token features, and the unchanged prompt-aggregated inference branch converts them into one $N\times C$ token--class distribution per view. The outputs are then unstacked and mapped back to their candidate and view type according to their batch positions. Candidate A and candidate B may therefore share one bounded encoder batch, while their masks, predictions, and scores remain separate. Batched evaluation reduces repeated model calls without combining several candidates into one diagnostic unit, as illustrated in Figure~\ref{fig:multi-candidate-views}.
+	
+	% Because candidates are already defined on the token grid, diagnostic predictions do not need to pass through the pixel decoder. Each view produces a full token--class distribution, but the diagnostic question concerns one predicted class inside one candidate. We therefore select column $c_R$, gather the original candidate rows $\Omega_R$, and average the corresponding probabilities. The three responses are
+	% $$
+	% \begin{aligned}
+		% s_{\mathrm{tar}}(R)
+		% &=
+		% \frac{1}{|\Omega_R|}
+		% \sum_{i\in\Omega_R}
+		% \pi_i
+		% \left(
+		% c_R\mid x_R^{\mathrm{pres}}
+		% \right),
+		% \\
+		% s_{\mathrm{res}}(R)
+		% &=
+		% \frac{1}{|\Omega_R|}
+		% \sum_{i\in\Omega_R}
+		% \pi_i
+		% \left(
+		% c_R\mid x_R^{\mathrm{supp}}
+		% \right),
+		% \qquad r_R=\mathrm{thing},
+		% \\
+		% s_{\mathrm{cf}}(R)
+		% &=
+		% \frac{1}{|\Omega_R|}
+		% \sum_{i\in\Omega_R}
+		% \pi_i
+		% \left(
+		% c_R\mid x_R^{\mathrm{cf}}
+		% \right).
+		% \end{aligned}
+	% $$
+	% The target support $s_{\mathrm{tar}}(R)$ measures whether the preserved candidate can sustain its predicted class when surrounding evidence is weakened; a high value indicates strong candidate-local support. The residual support $s_{\mathrm{res}}(R)$ measures how much response to the same class remains after a thing candidate is weakened, thereby describing support available outside the candidate. A high residual response is not automatically harmful, because reasonable context can assist recognition. The context-perturbed support $s_{\mathrm{cf}}(R)$ measures how much class support remains when the candidate is preserved but its surroundings are changed. It tests stability under this controlled perturbation rather than claiming invariance to arbitrary context transformations.
+	
+	% A thing candidate therefore yields $\bigl(s_{\mathrm{tar}}(R),s_{\mathrm{res}}(R),s_{\mathrm{cf}}(R)\bigr)$: the first and third responses describe candidate support and context stability, while the second enables a relative comparison between candidate and outside-candidate evidence. Stuff and background candidates yield $\bigl(s_{\mathrm{tar}}(R),s_{\mathrm{cf}}(R)\bigr)$ because candidate suppression is not used for their spatially distributed semantics. These values are controlled behavioral responses, not reliability scores by themselves and not identified causal effects. The remaining question is how to combine them into one candidate-specific authority for adaptation.
+	
+	% \subsection{Reliability-Controlled Adaptation}
+	% \label{sec:reliability-adaptation}
+	
+	% All semantic roles share two basic requirements. A candidate should contain evidence for its predicted class, and that evidence should remain supported after a controlled change of its surroundings. Target support and context-perturbed support capture these requirements, respectively. The two terms are complementary and non-substitutable: a high value under one condition should not compensate for failure under the other. We therefore define the shared candidate quality
+	% $$
+	% q_R
+	% =
+	% \min
+	% \bigl(
+	% s_{\mathrm{tar}}(R),
+	% s_{\mathrm{cf}}(R)
+	% \bigr).
+	% $$
+	% The minimum acts as a conservative, weakest-condition bottleneck. Candidate quality is high only when both controlled environments preserve the predicted class, while failure under either condition lowers $q_R$.
+	
+	% % \subsection{Residual-Context Dominance}
+	
+	% The shared quality $q_R$ does not determine whether a thing candidate is supported more strongly by its surroundings than by its own visual content. Context is not necessarily harmful, because it may reasonably assist recognition. We therefore do not penalize a candidate simply because its residual support is high. Instead, we compare the response remaining after candidate suppression with the response obtained when the candidate is preserved. Residual-context dominance is defined as
+	% $$
+	% d_R
+	% =
+	% \max
+	% \left\{
+	% 0,
+	% s_{\mathrm{res}}(R)
+	% -
+	% s_{\mathrm{tar}}(R)
+	% \right\}.
+	% $$
+	% If $s_{\mathrm{res}}(R)\leq s_{\mathrm{tar}}(R)$, then $d_R=0$: the surroundings may assist the prediction, but they do not provide stronger evidence than the preserved candidate, so no context penalty is applied. If $s_{\mathrm{res}}(R)>s_{\mathrm{tar}}(R)$, the positive difference measures how much outside-candidate evidence dominates the candidate-local response. This comparison is used only for thing candidates, for which suppression has a localized interpretation.
+	
+	% % \subsection{Candidate Reliability}
+	
+	% We combine the shared quality and the role-specific dominance test as
+	
+	% $$
+	% \rho_R
+	% =
+	% \begin{cases}
+		% q_R(1-d_R),
+		% & r_R=\mathrm{thing},
+		% \\[2pt]
+		% q_R,
+		% & r_R\in\{\mathrm{stuff},\mathrm{background}\}.
+		% \end{cases}
+	% $$
+	
+	% For a thing candidate, $q_R$ provides its basic support quality, while $1-d_R$ lowers its weight only when residual context becomes stronger than the preserved candidate. Stuff and background candidates may have spatially distributed class evidence, so a strong response outside one connected component does not necessarily indicate context dominance; these roles therefore use $q_R$ without the dominance term. The resulting $\rho_R$ is not interpreted as the probability that candidate $R$ is correctly classified. It represents update authority: how strongly that candidate should influence test-time adaptation. All support scores and reliability weights are computed using the fixed initial model and are detached before optimization.
+	
+	% % \subsection{Candidate-Level Entropy Allocation}
+	
+	% We now return to the prompt-specific distributions introduced in the Overview. For every prompt $j$, the current model produces $P^j\in\mathbb{R}^{N\times C}$, and the entropy at token $i$ is
+	% $
+	% H(p_i^j)
+	% =
+	% -\sum_{c\in\mathcal C}
+	% p_i^j(c)
+	% \log p_i^j(c).
+	% $
+	% TRACE operates at this same spatial-token probability level as MLMP; it changes how token entropies are allocated rather than changing the pixel decoder. Before applying reliability, we average entropy within each selected candidate:
+	% $
+	% \overline H_R^j
+	% =
+	% \frac{1}{|\Omega_R|}
+	% \sum_{i\in\Omega_R}
+	% H(p_i^j).
+	% $
+	% This region mean is important. Without it, a large stuff or background candidate would receive more update mass merely because it contains more spatial tokens. Averaging first makes each connected candidate one adaptation unit, while spatial tokens outside the selected set $\mathcal S$ do not enter the loss.
+	
+	% The final objective uses the detached reliability to allocate candidate-level entropy:
+	
+	% $$
+	% \mathcal L_{\mathrm{TRACE}}
+	% =
+	% \frac{1}{|\mathcal J|}
+	% \sum_{j\in\mathcal J}
+	% \frac{
+		% \displaystyle
+		% \sum_{R\in\mathcal S}
+		% \operatorname{sg}(\rho_R)
+		% \overline H_R^j
+		% }{
+		% \displaystyle
+		% \sum_{R\in\mathcal S}
+		% \operatorname{sg}(\rho_R)
+		% },
+	% $$
+	% where $\operatorname{sg}(\cdot)$ denotes stop-gradient. Candidates with high reliability have greater influence on the update, whereas candidates with low reliability are suppressed. Stop-gradient prevents the model from changing its own diagnostic weights to reduce the objective. If no candidate has positive reliability, the update is skipped. Following the baseline protocol, optimization updates only the affine scale and bias of visual-encoder LayerNorm modules; the text encoder and all other visual parameters remain frozen. After adaptation, the original unmodified input is evaluated again through the unchanged green OVSS path. Diagnostic views never enter the reported prediction, and the final token scores are converted to pixel labels by the same dense decoding, upsampling, overlap reconstruction, and pixel-wise argmax used by the baseline.
+	
+	
+	
+	
+	
+	
+	
+	%     \section{Experiments}
+	
+	%         We evaluate \method from three perspectives. First, does the estimated candidate reliability reflect how a candidate behaves when used for adaptation? Second, does \method improve OVSS-TTA performance across benchmarks with different label spaces? Third, how much do the three main design choices---candidate separation, confidence-source diagnosis, and reliability control---contribute to the final performance? Additional intervention and sensitivity analyses are reported in the appendix.
+	
+	% \subsection{Experimental Setup}
+	
+	% We evaluate on six standard OVSS benchmarks using clean validation data: PASCAL VOC with and without an explicit background class (VOC20/21), Pascal Context with 59/60 classes (PC59/60), COCO Object, and COCO-Stuff~\cite{everingham2015pascal,mottaghi2014context,lin2014coco,caesar2018cocostuff}. We additionally evaluate on COCO-CD and Waterbirds-Seg, two context-sensitive segmentation datasets with strong object--context correlations~\cite{lin2014coco,caesar2018cocostuff,sagawa2020dro}. Performance is measured by mean intersection over union (mIoU) over the evaluated classes.
+	
+	% We compare No Adapt, TENT~\cite{wang2021tent}, TPT~\cite{shu2022tpt}, WATT~\cite{osowiechi2024watt}, CLIPArTT~\cite{hakim2025clipartt}, and MLMP~\cite{noori2025mlmp}. For the six standard OVSS benchmarks, Table~\ref{tab:main-results} transcribes the three-seed results reported in Table~4 of MLMP. COCO-CD and Waterbirds-Seg are not included in that table, so all baselines in the lower block are our local full-validation results over three seeds. Controlled ablations retain each dataset's frozen \method configuration and change only the stated design choice.
+	
+	
+	%        \subsection{Candidate-Level Reliability Analysis}
+	
+	% A candidate reliability score is useful only if it reflects what happens when the candidate participates in adaptation. Table~\ref{tab:reliability-audit} therefore presents two complementary analyses.
+	
+	% Panel (a) examines whether residual-context dominance is associated with candidate degradation under the full \method adaptation. For a candidate $R$, region correctness is the fraction of locations in $\Omega_R$ whose ground-truth class equals $c_R$. We compare equal-size bottom and top dominance quartiles among thing candidates. Context-dominated candidates can still be useful for prediction: their mean pre-update correctness is $29.6\%$. However, among candidates that are majority-correct before adaptation, $11.7\%$ of context-dominated candidates lose at least five correctness points after the full update, compared with $8.1\%$ of target-supported candidates. This difference supports soft attenuation rather than hard removal: surrounding context may help a prediction without making the corresponding candidate equally suitable for adaptation.
+	
+	% Panel (b) directly examines the effect of using one candidate for adaptation. After a fresh model reset, one candidate at a time receives unit update authority, and its original region is evaluated afterward. We record a negative update when the mean probability assigned to each location's ground-truth class decreases by at least $0.001$. Ground-truth labels are used only to evaluate this offline outcome and never enter adaptation. Reliability quartiles are formed within each dataset and semantic role. Across 46,746 exactly matched candidates, the macro negative-update rate decreases from $39.82\%$ in the lowest-reliability quartile to $21.93\%$ in the highest. The same ordering holds on all four datasets, showing that $\rho_R$ distinguishes candidates with different candidate-level update effects.
+	
+	% \begin{table}[t]
+		%     \centering
+		%     {
+			%     \small
+			
+			%     \textbf{(a) Full-Update Candidate Groups}\\[3pt]
+			%     \setlength{\tabcolsep}{3.3pt}
+			%     \begin{tabular}{lrrr}
+				%         \toprule
+				%         Group & Candidates & Eligible & Degraded $\downarrow$ \\
+				%         \midrule
+				%         Target-supported & 2,426 & 950 & 8.1\% \\
+				%         Context-dominated & 2,426 & 763 & 11.7\% \\
+				%         \bottomrule
+				%     \end{tabular}
+			
+			%     \par\medskip
+			
+			%     \textbf{(b) Isolated Updates by Reliability}\\[3pt]
+			%     \setlength{\tabcolsep}{3.4pt}
+			%     \begin{tabular}{lrrr}
+				%         \toprule
+				%         Dataset & Low rel. & High rel. & Reduction $\uparrow$ \\
+				%         \midrule
+				%         VOC21 & 27.59\% & 15.71\% & 11.87 \\
+				%         PC60 & 42.15\% & 24.33\% & 17.82 \\
+				%         COCO Object & 31.32\% & 24.27\% & 7.05 \\
+				%         COCO-CD & 58.23\% & 23.40\% & 34.83 \\
+				%         \midrule
+				%         Macro & 39.82\% & 21.93\% & 17.89 \\
+				%         \bottomrule
+				%     \end{tabular}
+			%     }
+		%     \caption{Candidate-level reliability analysis.
+			%     (a) Target-supported and context-dominated groups are the equal-size
+			%     bottom and top quartiles of residual-context dominance, respectively.
+			%     ``Eligible'' denotes candidates that are majority-correct before the
+			%     full \method update; ``degraded'' denotes an eligible candidate whose
+			%     region correctness decreases by at least $0.05$.
+			%     (b) After a fresh reset, each candidate alone receives unit update
+			%     authority. A negative update is recorded when the mean
+			%     ground-truth-class probability decreases by at least $0.001$.
+			%     Low- and high-reliability groups are formed within each dataset and
+			%     semantic role. Reduction is the low-minus-high negative-update rate
+			%     in percentage points. Rates are rounded, and reductions are computed
+			%     before rounding.}
+		%     \label{tab:reliability-audit}
+		% \end{table}
+	
+	
+	% 		\subsection{Results}
+	
+	
+	% Table~\ref{tab:main-results} shows that \method outperforms the best compared baseline on all eight datasets. Across the six standard OVSS benchmarks, the improvements range from $+0.20$ on VOC20 to $+3.16$ on COCO Object, with a gain of $+2.38$ on PC60. The improvements are not limited to object-only vocabularies: \method gains $+0.25$ on COCO-Stuff and $+1.46$ on PC59. On the two context-sensitive segmentation datasets, \method exceeds the best locally reproduced baseline, TENT, by $+1.81$ on COCO-CD and $+1.01$ on Waterbirds-Seg.
+	
+	
+	
+	% 	\begin{table*}[t]
+		% 		\centering
+		% 		\small
+		% 		\setlength{\tabcolsep}{2.35pt}
+		% 		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrrrr}
+			% 			\toprule
+			% 			Dataset & No Adapt & TENT & TPT & WATT & CLIPArTT & MLMP & \method{} & $\Delta$ vs. best \\
+			% 			\midrule
+			% 			VOC20 & 75.91 & $77.00{\pm}.04$ & $75.93{\pm}.01$ & $57.73{\pm}.06$ & $72.77{\pm}.14$ & $83.76{\pm}.00$ & $\mathbf{83.96{\pm}.00}$ & $\mathbf{+0.20}$ \\
+			% 			VOC21 & 45.12 & $45.65{\pm}.02$ & $45.17{\pm}.01$ & $28.58{\pm}.05$ & $39.50{\pm}.04$ & $50.78{\pm}.02$ & $\mathbf{52.16{\pm}.00}$ & $\mathbf{+1.38}$ \\
+			% 			PC59 & 28.23 & $28.73{\pm}.02$ & $28.26{\pm}.01$ & $16.55{\pm}.04$ & $24.60{\pm}.03$ & $31.95{\pm}.02$ & $\mathbf{33.41{\pm}.00}$ & $\mathbf{+1.46}$ \\
+			% 			PC60 & 24.95 & $25.29{\pm}.01$ & $24.98{\pm}.01$ & $14.77{\pm}.03$ & $21.88{\pm}.03$ & $27.99{\pm}.03$ & $\mathbf{30.37{\pm}.00}$ & $\mathbf{+2.38}$ \\
+			% 			COCO Obj. & 23.80 & $24.88{\pm}.01$ & $23.84{\pm}.01$ & $14.14{\pm}.06$ & $21.34{\pm}.03$ & $28.84{\pm}.01$ & $\mathbf{32.00{\pm}.00}$ & $\mathbf{+3.16}$ \\
+			% 			COCO Stuff & 18.34 & $18.76{\pm}.01$ & $18.35{\pm}.01$ & $9.49{\pm}.02$ & $15.48{\pm}.01$ & $21.25{\pm}.01$ & $\mathbf{21.50{\pm}.00}$ & $\mathbf{+0.25}$ \\
+			% 			\midrule
+			% 			COCO-CD$^\dagger$ & $61.14{\pm}.00$ & $73.32{\pm}.11$ & $68.56{\pm}.41$ & $39.13{\pm}.38$ & $55.63{\pm}.17$ & $71.75{\pm}.12$ & $\mathbf{75.13{\pm}.00}$ & $\mathbf{+1.81}$ \\
+			% 			Waterbirds-Seg$^\dagger$ & $46.57{\pm}.00$ & $54.33{\pm}.02$ & $54.19{\pm}.16$ & $22.23{\pm}.03$ & $28.29{\pm}.05$ & $51.21{\pm}.02$ & $\mathbf{55.34{\pm}.00}$ & $\mathbf{+1.01}$ \\
+			% 			\bottomrule
+			% 		\end{tabular*}
+		% \caption{Full-validation mIoU on clean data using NACLIP ViT-L/14. Values in the upper block are the three-seed results reported in Table~4 of MLMP~\cite{noori2025mlmp}; No Adapt is deterministic. $^\dagger$ marks datasets for which all baselines were reproduced locally using seeds 0, 1, and 2. All \method entries are local three-seed results obtained with the frozen experimental configuration. $\Delta$ denotes the improvement of \method over the best non-\method baseline in each row. PC and COCO Obj. denote Pascal Context and COCO Object, respectively.}
+		% 			\label{tab:main-results}
+		% 		\end{table*}
+	
+	
+	
+	
+	% Figure~\ref{fig:qualitative-main} presents four representative improvements obtained with the frozen \method configuration. The COCO Object example contains multiple zebras and illustrates how connected candidate construction and separation keep spatially distinct instances as separate diagnostic units. The remaining examples cover a stuff-rich scene, COCO-CD, and Waterbirds-Seg. These examples provide qualitative illustrations of the improvements, while the full-validation results are reported in Table~\ref{tab:main-results}.
+	
+	
+	
+	% 		\begin{figure*}[t]
+		% 			\centering
+		% 			\includegraphics[width=0.78\textwidth]{figure/TRACE_v2_qualitative_current.pdf}
+		% 			\caption{Representative improvements obtained with the frozen \method configuration. White contours in the MLMP and \method columns denote ground-truth boundaries. Values report image-level mIoU and the corresponding \method-minus-MLMP improvement. The rows cover multiple objects, a stuff-rich scene, COCO-CD, and Waterbirds-Seg; full-validation results are reported in Table~\ref{tab:main-results}.}
+		% 			\Description{Four examples compare the input image, MLMP prediction, \method prediction, and ground truth. The examples include multiple zebras, an orange with surrounding stuff, a COCO-CD image, and a Waterbirds-Seg image.}
+		% 			\label{fig:qualitative-main}
+		% 		\end{figure*}
+	
+	
+	
+	% 	\subsection{Ablation Study}
+	
+	
+	% Table~\ref{tab:module-ablation} evaluates three design choices in \method: connected candidate separation, confidence-source diagnosis, and reliability weighting. Without candidate separation, connected candidates are replaced by one class-union region per model input. Without confidence-source diagnosis, connected candidates are retained, but their initial confidence $\kappa_R$ is used directly as the candidate weight instead of the diagnostic support responses. Without reliability weighting, all selected candidates receive equal weight in the same region-normalized entropy loss. These three variants reduce the four-dataset macro average by $0.92$, $2.56$, and $2.98$ mIoU, respectively. The largest reductions occur on COCO-CD, whereas the changes on VOC21 are smaller, showing that the contribution of each design choice varies across benchmarks.
+	
+	% \begin{table}[t]
+		%     \centering
+		%     {
+			%     \small
+			%     \setlength{\tabcolsep}{1.0pt}
+			%     \begin{tabular}{@{}lrrrrr@{}}
+				%         \toprule
+				%         Variant & VOC21 & PC60 & COCO Obj. & COCO-CD & Macro \\
+				%         \midrule
+				%         Full \method{} & 52.16 & 30.37 & 32.00 & 75.13 & \textbf{47.42} \\
+				%         w/o Sep. & 51.87 & 30.30 & 31.60 & 72.21 & 46.50 \\
+				%         w/o Diag. & 52.14 & 30.13 & 29.94 & 67.21 & 44.86 \\
+				%         w/o RW & 52.16 & 30.12 & 29.07 & 66.39 & 44.44 \\
+				%         \bottomrule
+				%     \end{tabular}
+			%     }
+		%     \caption{Ablation of three \method design choices on full clean validation sets (mIoU). Sep. denotes connected candidate construction and separation; Diag. denotes diagnostic view construction and support-score extraction; and RW denotes reliability weighting. Without Sep., connected candidates are replaced by one class-union region per model input. Without Diag., the initial confidence $\kappa_R$ is used directly as the candidate weight. Without RW, all selected candidates receive equal weight in the same region-normalized entropy loss. Macro averages the four datasets.}
+		%     \label{tab:module-ablation}
+		% \end{table}
+	
+	
+	
+	% \section{Discussion}
+	
+	% \paragraph{Prediction utility is not update reliability.}
+	% The results do not imply that surrounding context should be removed from OVSS inference. Context-dominated candidates still predict many locations correctly, and spatially distributed stuff and background categories may legitimately depend on surrounding context. \method instead controls a different decision: how strongly each candidate should influence adaptation. This distinction explains why \method uses soft candidate reliability rather than hard removal and why residual-context dominance is applied only to localized thing candidates.
+	
+	% \paragraph{The design choices contribute differently across label spaces.}
+	% The ablation results are not monotonic in every dataset. Connected-candidate separation has its largest effect on COCO-CD, confidence-source diagnosis is especially important on COCO Object and COCO-CD, and equal candidate weighting causes the largest reductions on the same two datasets. Nevertheless, removing any of the three design choices lowers the macro score. This pattern is consistent with a shared mechanism whose practical value depends on how often a benchmark contains multiple objects, spatially distributed stuff, or strongly predictive surrounding context; it does not require a dataset-specific reliability formula.
+	
+	% \paragraph{Behavioral diagnosis, not causal identification.}
+	% Candidate preservation, candidate suppression, and context perturbation measure how a fixed pre-update model responds to controlled views, but they do not identify a unique causal source. Soft weakening introduces a view shift, nearby objects of the same class may remain in the surrounding context, and the examined context is limited to the current model input. We therefore interpret $\rho_R$ as an operational candidate-reliability score that controls update authority, not as causal attribution. The diagnostic-view recognition and context-perturbation sensitivity analyses in the appendix further clarify this boundary.
+	
+	% \paragraph{Limitations.}
+	% \method requires a predefined thing/stuff/background semantic-role map when it is applied to a new vocabulary. It also constructs two diagnostic views for stuff and background candidates and three for thing candidates, so its computational cost grows with $K$, although bounded batching avoids a separate serial forward pass for every candidate. The current experiments use one NACLIP backbone and clean benchmark data; they do not yet establish cross-backbone transfer or robustness under an evolving deployment distribution. Future work could distill the diagnostic responses into a one-pass candidate-reliability predictor and automatically determine semantic roles for unrestricted vocabularies.
+	
+	\section{Experiments}
+	
+	\paragraph{Experimental setup.}
+	
+	We report class mIoU on clean validation sets from VOC20/21, PC59/60, COCO Object/Stuff~\cite{everingham2015pascal,mottaghi2014context,lin2014coco,caesar2018cocostuff}, COCO-CD, and Waterbirds-Seg~\cite{achara2026rightregions,sagawa2020dro}. Baselines are No Adapt, TENT~\cite{wang2021tent}, TPT~\cite{shu2022tpt}, WATT~\cite{osowiechi2024watt}, CLIPArTT~\cite{hakim2025clipartt}, and MLMP~\cite{noori2025mlmp}. In the first six rows of Table~\ref{tab:main-results}, the baseline entries are the reported MLMP results and the \method entries are local evaluations. The lower two rows contain local three-seed full-validation evaluations for every method, so comparisons are made within each row rather than pooled across the two provenance blocks. Reported predictions re-evaluate the original input after adaptation; diagnostic views provide detached support scores and are not evaluation outputs. Ablations use seed 0; Appendix A.5 gives the fixed semantic-role assignments, and Appendix A.6 provides the remaining experimental details.
+	
+	\paragraph{Main results.}
+	The gains are heterogeneous rather than a constant offset. They are smallest on VOC20 ($+0.20$) and COCO-Stuff ($+0.25$), but increase to $+2.38$ on PC60 and $+3.16$ on COCO Object; the locally controlled comparisons remain positive on COCO-CD ($+1.81$) and Waterbirds-Seg ($+1.01$). Within the paired label spaces, the margin rises from $+0.20$ on VOC20 to $+1.38$ on VOC21 and from $+1.46$ on PC59 to $+2.38$ on PC60. COCO Object and COCO-Stuff also differ by $2.91$ points in their improvement margins. These contrasts show that the benefit varies with the evaluated vocabulary and scene composition rather than acting as a uniform calibration shift. Because each pair changes the evaluation label space, the table does not isolate any one semantic role; the candidate audits and component interventions below provide more direct evidence. Appendix A.2 provides qualitative cases.
+	
+	\begin{table*}[!t]
+		\centering
+		\small
+		\setlength{\tabcolsep}{2.35pt}
+		\begin{tabular*}{\textwidth}{@{\extracolsep{\fill}}lrrrrrrrr}
+			\toprule
+			Dataset & No Adapt & TENT & TPT & WATT & CLIPArTT & MLMP & \method{} & $\Delta$ vs. best \\
+			\midrule
+			VOC20 & 75.91 & $77.00{\pm}.04$ & $75.93{\pm}.01$ & $57.73{\pm}.06$ & $72.77{\pm}.14$ & $83.76{\pm}.00$ & $\mathbf{83.96{\pm}.00}$ & $\mathbf{+0.20}$ \\
+			VOC21 & 45.12 & $45.65{\pm}.02$ & $45.17{\pm}.01$ & $28.58{\pm}.05$ & $39.50{\pm}.04$ & $50.78{\pm}.02$ & $\mathbf{52.16{\pm}.00}$ & $\mathbf{+1.38}$ \\
+			PC59 & 28.23 & $28.73{\pm}.02$ & $28.26{\pm}.01$ & $16.55{\pm}.04$ & $24.60{\pm}.03$ & $31.95{\pm}.02$ & $\mathbf{33.41{\pm}.00}$ & $\mathbf{+1.46}$ \\
+			PC60 & 24.95 & $25.29{\pm}.01$ & $24.98{\pm}.01$ & $14.77{\pm}.03$ & $21.88{\pm}.03$ & $27.99{\pm}.03$ & $\mathbf{30.37{\pm}.00}$ & $\mathbf{+2.38}$ \\
+			COCO Obj. & 23.80 & $24.88{\pm}.01$ & $23.84{\pm}.01$ & $14.14{\pm}.06$ & $21.34{\pm}.03$ & $28.84{\pm}.01$ & $\mathbf{32.00{\pm}.00}$ & $\mathbf{+3.16}$ \\
+			COCO-Stuff & 18.34 & $18.76{\pm}.01$ & $18.35{\pm}.01$ & $9.49{\pm}.02$ & $15.48{\pm}.01$ & $21.25{\pm}.01$ & $\mathbf{21.50{\pm}.00}$ & $\mathbf{+0.25}$ \\
+			\midrule
+			COCO-CD$^\dagger$ & $61.14{\pm}.00$ & $73.32{\pm}.11$ & $68.56{\pm}.41$ & $39.13{\pm}.38$ & $55.63{\pm}.17$ & $71.75{\pm}.12$ & $\mathbf{75.13{\pm}.00}$ & $\mathbf{+1.81}$ \\
+			Waterbirds-Seg$^\dagger$ & $46.57{\pm}.00$ & $54.33{\pm}.02$ & $54.19{\pm}.16$ & $22.23{\pm}.03$ & $28.29{\pm}.05$ & $51.21{\pm}.02$ & $\mathbf{55.34{\pm}.00}$ & $\mathbf{+1.01}$ \\
+			\bottomrule
+		\end{tabular*}
+		\caption{Full-validation clean-data mIoU with NACLIP ViT-L/14; entries are mean$\pm$standard deviation over three seeds where reported. Upper-block baselines are from MLMP Table~5~\cite{noori2025mlmp}; $^\dagger$ marks local reproductions. All \method results are local; $\Delta$ is the gain over the best non-\method baseline.}
+		\label{tab:main-results}
+	\end{table*}
+	% \FloatBarrier
+	
+	\paragraph{Candidate reliability.}
+	
+	Region correctness is the fraction of candidate locations whose ground-truth class equals the candidate class; ground truth labels offline outcomes only. Panel (a) of Table~\ref{tab:reliability-audit} examines the joint full update. Mean pre-update correctness across all context-dominated candidates is $29.6\%$. Although the two dominance groups contain the same number of candidates, 950 candidates in the candidate-supported group and 763 in the context-dominated group exceed the $0.5$ correctness threshold, corresponding to $39.2\%$ and $31.5\%$ of their groups. Among these eligible candidates, the degradation rate increases from $8.1\%$ to $11.7\%$. This result separates prediction utility from update authority: most eligible context-dominated candidates remain non-degraded, so \method does not hard-filter them and reduces only their contribution to adaptation. In role-aware source tracing, excess residual support indicates context dominance only for localized things; outside-component support may remain valid for stuff or background.
+	
+	Using one-candidate resets, Panel (b) isolates update authority. Across 46,746 matched candidates, the high-$\rho_R$ group has a lower negative-update rate on all four datasets; the reduction ranges from $7.05$ points on COCO Object to $34.83$ points on COCO-CD, and the macro rate falls from $39.82\%$ to $21.93\%$. The high-reliability rates still range from $15.71\%$ to $24.33\%$, so $\rho_R$ ranks update risk rather than certifying that a candidate is safe. The two panels operate at different scales: Panel (a) measures candidate groups within the joint full update, whereas Panel (b) grants one candidate unit authority after a model reset. Their common ordering supports an operational risk ranking without treating either audit as an end-to-end causal decomposition. Together, they support soft weighting while keeping prediction correctness distinct from adaptation reliability.
+	
+	\begin{table}[!b]
+		\centering
+		{
+			\footnotesize
+			
+			\textbf{(a) Full-Update Candidate Groups}\\[1pt]
+			\setlength{\tabcolsep}{3.3pt}
+			\begin{tabular}{lrrr}
+				\toprule
+				Group & Candidates & Eligible & Degraded $\downarrow$ \\
+				\midrule
+				Candidate-supported & 2,426 & 950 & 8.1\% \\
+				Context-dominated & 2,426 & 763 & 11.7\% \\
+				\bottomrule
+			\end{tabular}
+			
+			\par\smallskip
+			
+			\textbf{(b) Isolated Updates by Reliability}\\[1pt]
+			\setlength{\tabcolsep}{3.4pt}
+			\begin{tabular}{lrrr}
+				\toprule
+				Dataset & Low $\rho_R$ & High $\rho_R$ & Reduction $\uparrow$ \\
+				\midrule
+				VOC21 & 27.59\% & 15.71\% & 11.87 \\
+				PC60 & 42.15\% & 24.33\% & 17.82 \\
+				COCO Object & 31.32\% & 24.27\% & 7.05 \\
+				COCO-CD & 58.23\% & 23.40\% & 34.83 \\
+				\midrule
+				Macro & 39.82\% & 21.93\% & 17.89 \\
+				\bottomrule
+			\end{tabular}
+		}
+		\caption{Candidate audits. (a) Full-update bottom/top $d_R$ quartiles; eligible: correctness $>0.5$; degraded: decrease $\geq0.05$. (b) One-candidate resets in within-dataset/role bottom/top $\rho_R$ quartiles; negative: probability decrease $\geq0.001$. Reduction is low minus high before rate rounding.}
+		\label{tab:reliability-audit}
+	\end{table}
+	
+	\paragraph{Ablation.}
+	The variants map directly to the three \method stages in Figure~\ref{fig:method-pipeline}. Without separation, connected candidates are replaced by one class-union region per model input. Without diagnosis, connected candidates are retained, but their initial confidence $\kappa_R$ replaces the role-aware support scores as the candidate weight. Without reliability weighting, all selected candidates receive equal authority in the same region-normalized entropy objective. The variants therefore remove, respectively, the diagnostic unit, the source-tracing signal, and the use of estimated reliability in the update.
+	
+	The one-at-a-time effects in Table~\ref{tab:module-ablation} vary by dataset. Removing separation, diagnostic scoring, or reliability weighting costs $2.92$, $7.92$, and $8.74$ mIoU on COCO-CD, versus $0.40$, $2.06$, and $2.93$ on COCO Object. VOC21 changes by at most $0.29$, with no rounded change without reliability weighting. Reliability weighting gives the largest drop on PC60, COCO Object, and COCO-CD, while candidate separation gives the largest drop on VOC21. Thus, the datasets with larger main-result gains are also more sensitive to scoring and weighting, but these variants do not identify additivity or interactions.
+	\noindent\begin{minipage}{\columnwidth}
+		\centering
+		{
+			\footnotesize
+			\setlength{\tabcolsep}{3.2pt}
+			\begin{tabular}{@{}lrrrr@{}}
+				\toprule
+				Variant & VOC21 & PC60 & COCO Obj. & COCO-CD \\
+				\midrule
+				Full \method{} & 52.16 & 30.37 & 32.00 & 75.13 \\
+				w/o Sep. & 51.87 & 30.30 & 31.60 & 72.21 \\
+				w/o Diag. & 52.14 & 30.13 & 29.94 & 67.21 \\
+				w/o RW & 52.16 & 30.12 & 29.07 & 66.39 \\
+				\bottomrule
+			\end{tabular}
+		}
+		\captionof{table}{Ablation of the three main components of \method{} on full clean validation sets (mIoU). Sep., Diag., and RW denote candidate separation, diagnostic scoring, and reliability weighting, respectively.}
+		\label{tab:module-ablation}
+	\end{minipage}
+	
+	\paragraph{Limitations.}
+	The controlled views are behavioral diagnostics, not unique causal identification: surrounding context may retain same-class evidence, and weakening introduces its own view shift. Thus, $\rho_R$ ranks update authority rather than calibrated correctness or causal attribution; Appendix A.3 and Appendix A.4 report the recognition and perturbation checks. The method also requires a predefined role map and multiple diagnostic views whose number grows with the candidate budget despite batching. 
+	
+	\section{Conclusion}
+	
+	We introduced \method, a candidate-centric method for reliable test-time adaptation in open-vocabulary semantic segmentation. \method measures candidate support, residual support, and context-perturbed support, then converts these diagnostic responses into detached candidate reliability that controls candidate-level entropy during adaptation. Across six standard OVSS benchmarks and two context-sensitive segmentation datasets, \method improves over the best compared baseline.
+	
+	\section{Generative AI Use Disclosure}
+	Generative AI tools assisted with language editing. All content was verified by the authors.
+	
+	
+	\bibliography{references}
+	
+	
+\end{document}

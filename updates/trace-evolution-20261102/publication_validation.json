@@ -1,0 +1,26 @@
+{
+  "scope": "Publication-copy checks, not scientific recertification or an import repair",
+  "source_files_sha256_verified": 466,
+  "python_files_ast_parsed": 185,
+  "source_hash_mismatches": 0,
+  "round05_frozen_files_verified": 62,
+  "round05_manifest_sha256": "386ae89c92a21329dcef08d21262071dac27e71788da07879170885943c8fb23",
+  "cpu_tests": {
+    "passed": 753,
+    "elapsed_seconds": 6.17,
+    "CUDA_VISIBLE_DEVICES": "",
+    "from": "Uploaded code snapshot",
+    "targets": [
+      "tests/test_local_baseline_queue.py",
+      "tests/test_local_baseline_worker.py",
+      "tests/test_allocation_controls.py",
+      "tests/test_allocation_queue.py",
+      "tests/test_allocation_runtime.py",
+      "tests/test_allocation_worker.py"
+    ],
+    "does_not_establish": ["native package import fix", "real GPU gate pass", "new baseline score"]
+  },
+  "new_gpu_work_started": false,
+  "new_manuscript_revision_claimed": false,
+  "raw_result_archive_integrity": "See verification.json after export completion"
+}

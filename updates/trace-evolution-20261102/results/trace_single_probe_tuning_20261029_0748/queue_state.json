@@ -1,0 +1,19 @@
+{
+  "phase": "awaiting_all_eight_calibrations",
+  "updated_at": "2026-10-29T06:23:39.890961+00:00",
+  "pid": 3790576,
+  "completed_selections": [
+    "voc20",
+    "voc21",
+    "pc59",
+    "pc60",
+    "coco_cd",
+    "coco_object",
+    "coco_stuff"
+  ],
+  "blocked": {
+    "waterbirds_seg": "All existing Waterbirds training IDs overlap original full. Remaining CUB training IDs are not materialized Waterbirds examples. No exact provenance-justified original CUB/Places compositing builder is available in the bounded archived source inventory; the existing calibration builder only selects existing training examples and reads their masks."
+  },
+  "unique_trials": 401,
+  "full_scoring_started": false
+}

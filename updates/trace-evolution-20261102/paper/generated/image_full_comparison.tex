@@ -1,0 +1,17 @@
+\begin{table}[t]
+\caption{Effect of regional weighting on full-split mIoU (seed 0). Candidates, readouts, and optimization settings are shared within each dataset. Results use inherited configurations and development-exposed splits, as detailed in the setup. Object/Stuff denote COCO Object/COCO-Stuff. $\Delta$ is TRACE(C) minus Confidence in percentage points.}
+\label{tab:image-full-comparison}
+\centering\small\setlength{\tabcolsep}{4pt}
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Dataset & Uniform & Confidence & TRACE(C) & $\Delta$ \\
+\midrule
+PC60 & 30.38 & 30.34 & 30.69 & +0.36 \\
+Object & 29.81 & 30.83 & 32.59 & +1.77 \\
+VOC21 & 52.44 & 52.33 & 52.62 & +0.30 \\
+VOC20 & 81.78 & 82.18 & 83.49 & +1.31 \\
+COCO-CD & 66.22 & 67.66 & 74.98 & +7.32 \\
+Stuff & 21.74 & 21.79 & 21.84 & +0.04 \\
+\bottomrule
+\end{tabular}
+\end{table}

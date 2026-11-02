@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\caption{Descriptive risk stratification under the fixed confidence-weighted update policy. Candidates are stratified by predicted semantic category, initial confidence, and token area; within each stratum, the lowest and highest common-support quartiles are compared. Values are candidate-count-weighted means of stratum-level C$\to$W rates, using strata with initially correct pixels in both groups. The difference is high minus low support (percentage points); it is not a causal effect or a candidate-independent significance test.}
+\label{tab:risk-strata}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Dataset & Valid strata & Low support & High support & Difference \\
+\midrule
+VOC21 & 265 & $5.27$ & $4.73$ & $-0.54$ \\
+PC60 & 719 & $16.70$ & $12.86$ & $-3.84$ \\
+COCO Object & 909 & $16.45$ & $14.22$ & $-2.23$ \\
+COCO-CD & 42 & $16.92$ & $10.23$ & $-6.69$ \\
+COCO-Stuff & 1526 & $26.78$ & $22.28$ & $-4.50$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

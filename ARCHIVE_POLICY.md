@@ -1,5 +1,14 @@
 # Archive Policy
 
+## November 2 Code And Paper Authorization
+
+The explicit 2026-11-02 request extends this repository beyond its original
+results-only policy. `updates/trace-evolution-20261102/code/` contains a separately
+hashed current implementation snapshot, and `paper/` plus `paper-round05/`
+contain manuscript sources/assets/PDFs. Earlier result snapshots and their
+exclusions are unchanged. Dataset payloads, model weights and credentials remain
+excluded. See the update README and its source/result manifests for exact scope.
+
 ## Source and Non-Interference
 
 The source is `/home/wwww/hzl/results`. The exporter reads artifacts without

@@ -1,0 +1,20 @@
+\begin{table}[t]
+\caption{COCO-CD full-split mIoU ($\uparrow$). TRACE uses the deterministic mechanism suite; local native baselines are the previously completed sealed runs. Ordered panels, vocabulary and episode boundaries are checked to match. Backends and settings remain method-specific, not equal-budget or equal-tuning; no additional MLMP run is used.}
+\label{tab:cd-local}
+\centering\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Method & COCO-CD \\
+\midrule
+No Adapt (L) & $61.14$ \\
+TENT (L) & $72.20$ \\
+TPT (L) & $64.27$ \\
+MLMP (L) & $71.01$ \\
+\midrule
+No Adapt, current readout (L) & $62.82$ \\
+\method{} (L, seed 0) & $\mathbf{75.10}$ \\
+$\Delta$ vs. current No Adapt (pp) & $+12.29$ \\
+$\Delta$ vs. best local (pp) & $+2.90$ \\
+\bottomrule
+\end{tabular}
+\end{table}

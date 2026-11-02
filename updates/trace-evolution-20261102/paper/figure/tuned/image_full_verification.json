@@ -1,0 +1,57 @@
+{
+  "suite_prepared_sha256": "4f3e54226f99230af48b2105372300d06f31651515324b3ab99dbe138ff3cfa3",
+  "provenance_sha256": "190708d834ac3ce3e14a509dc2dd6b8bce68e55dd4b56d94b816dad1ac348da8",
+  "script_sha256": "2456fb5c34c11263fc0ac1e96a2401937d1bb166c8b05968084660d73e37b2eb",
+  "test_sha256": "caa18b93570482a11fde414e594785c3f0a9cff01ae0c1544d4890865e4c06a3",
+  "cpu_environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1"
+  },
+  "tests": [
+    {
+      "command": "/home/wwww/miniconda3/envs/mlmp/bin/python -B -m pytest -q -p no:cacheprovider tests/test_tuned_full_figures.py tests/test_image_full_figures.py -k 'not full_suite and not provenance and not metrics'",
+      "passed": 30,
+      "failed": 0,
+      "skipped": 0,
+      "deselected": 1,
+      "seconds": 3.01
+    },
+    {
+      "command": "/home/wwww/miniconda3/envs/mlmp/bin/python -B -m pytest -q -p no:cacheprovider tests/test_image_full_figures.py -k 'native_mask or mask_corruption or counterfactual or label_conventions or query_category'",
+      "passed": 7,
+      "failed": 0,
+      "skipped": 0,
+      "deselected": 5,
+      "seconds": 1.78
+    }
+  ],
+  "visual_inspection": {
+    "method": "Author sidecar inspected initial four PDF rasterizations at 150/72 dpi. After compact allocation redesign, main agent inspected all 16 combined manuscript pages and eight supplement pages at 60 dpi, with pipeline/allocation/table pages viewed individually; mathematical geometry tests also passed.",
+    "figures": ["image_full_teaser", "image_full_pipeline", "image_full_segmentation", "image_full_allocation"],
+    "text_overlap": "none observed; pairwise bounding-box validation also passed",
+    "clipping": "none observed; canvas-bound text validation also passed",
+    "minimum_text_pt": 9,
+    "pdf_fonts": "Embedded TrueType; no CID or Type3 fonts",
+    "pipeline": "Shared static math unchanged, verified against AST-extracted formula strings; height increased to 6.0in after original layout failed overlap validation",
+    "allocation": "3.375in wide by 4.1in high; three C-minus-control deltas for all eight datasets. The companion canonical table and provenance retain all 32 scores."
+  },
+  "validation_scope": {
+    "metadata_chains": 8,
+    "pooled_scores_recomputed_from_canonical_aggregate_counts": 32,
+    "frozen_runtime_files_hashed": 161,
+    "unique_bounded_gt_images": 1600,
+    "unique_bounded_prediction_payloads": 3184,
+    "bounded_c_receipt_files": 62,
+    "teaser_gt_used": false,
+    "segmentation_strict_signs_met": [true, true, true, true],
+    "null_cases": 0,
+    "model_forwards": 0,
+    "support_remeasurements": 0,
+    "full_prediction_payload_rehash_or_rescore": false,
+    "per_image_count_scan": false,
+    "waterbirds_evaluation_scope": "development_overlap",
+    "independent_test_claim": false
+  },
+  "scope_boundary": "This receipt records author-sidecar bounded payload verification and main-agent compact allocation redesign/CPU test/compiled-page inspection. It does not certify a new exhaustive payload audit, full-population score run, statistical significance, representative qualitative sample, or independent review. Frozen experimental results were not changed."
+}

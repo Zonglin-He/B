@@ -1,0 +1,59 @@
+{
+  "comparisons": [
+    {
+      "left": "default_0",
+      "right": "default_1",
+      "max_loss_abs_difference": 0.013302609324455261,
+      "gradients_equal": false,
+      "trainable_equal": false,
+      "supports_equal": true,
+      "changed_labels": 14464
+    },
+    {
+      "left": "default_2",
+      "right": "default_3",
+      "max_loss_abs_difference": 0.002959050238132477,
+      "gradients_equal": false,
+      "trainable_equal": false,
+      "supports_equal": true,
+      "changed_labels": 4023
+    },
+    {
+      "left": "default_0",
+      "right": "default_2",
+      "max_loss_abs_difference": 0.01016455888748169,
+      "gradients_equal": false,
+      "trainable_equal": false,
+      "supports_equal": true,
+      "changed_labels": 6763
+    },
+    {
+      "left": "deterministic_math_0",
+      "right": "deterministic_math_1",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    },
+    {
+      "left": "deterministic_math_2",
+      "right": "deterministic_math_3",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    },
+    {
+      "left": "deterministic_math_0",
+      "right": "deterministic_math_2",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    }
+  ],
+  "gt_contents_opened": false
+}

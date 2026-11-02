@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\caption{Clean full-split mIoU ($\uparrow$), NACLIP ViT-L/14. R: means and standard deviations reported in main Table~5 of \citet{noori2025mlmp}, not rerun locally. L: deterministic full seed-0 TRACE result. A missing reported SD is omitted, not replaced with zero. Published baselines use batch 2, lr 0.001, 10 steps; TRACE retains dataset settings. Not equal optimization/tuning budgets or an exact checkpoint/query-extension equivalence claim. Bold marks the highest unrounded value in each column.}
+\label{tab:reported}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Method & VOC20 & VOC21 & PC60 & COCO Object & COCO-Stuff \\
+\midrule
+No Adapt (R) & $75.91$ & $45.12$ & $24.95$ & $23.80$ & $18.34$ \\
+TENT (R) & $77.00\pm0.04$ & $45.65\pm0.02$ & $25.29\pm0.01$ & $24.88\pm0.01$ & $18.76\pm0.01$ \\
+TPT (R) & $75.93\pm0.01$ & $45.17\pm0.01$ & $24.98\pm0.01$ & $23.84\pm0.01$ & $18.35\pm0.01$ \\
+WATT (R) & $57.73\pm0.06$ & $28.58\pm0.05$ & $14.77\pm0.03$ & $14.14\pm0.06$ & $9.49\pm0.02$ \\
+CLIPArTT (R) & $72.77\pm0.14$ & $39.50\pm0.04$ & $21.88\pm0.03$ & $21.34\pm0.03$ & $15.48\pm0.01$ \\
+MLMP (R) & $83.76\pm0.00$ & $50.78\pm0.02$ & $27.99\pm0.03$ & $28.84\pm0.01$ & $21.25\pm0.01$ \\
+\midrule
+\method{} (L, seed 0) & $\mathbf{83.94}$ & $\mathbf{52.38}$ & $\mathbf{30.57}$ & $\mathbf{32.70}$ & $\mathbf{21.75}$ \\
+$\Delta$ vs. best reported (pp) & $+0.18$ & $+1.60$ & $+2.58$ & $+3.86$ & $+0.50$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

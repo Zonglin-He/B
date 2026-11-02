@@ -1,0 +1,157 @@
+{
+  "status": "predicted",
+  "images": 5105,
+  "arms": [
+    "image_region",
+    "episode_region",
+    "image_token",
+    "episode_token",
+    "image_shuffled"
+  ],
+  "config": {
+    "dataset": "PascalContext60Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 13,
+    "lr": 0.00375,
+    "steps": 7,
+    "trace_max_regions": 20,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "timings": {
+    "image_region": {
+      "measured_episodes": 392,
+      "measured_images": 5092,
+      "seconds": 443.0140480976552,
+      "seconds_per_image": 0.08700197331061571,
+      "images_per_second": 11.493992169922233,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "episode_region": {
+      "measured_episodes": 392,
+      "measured_images": 5092,
+      "seconds": 451.5186686133966,
+      "seconds_per_image": 0.0886721658706592,
+      "images_per_second": 11.277496046038173,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_token": {
+      "measured_episodes": 392,
+      "measured_images": 5092,
+      "seconds": 452.797409940511,
+      "seconds_per_image": 0.08892329338973115,
+      "images_per_second": 11.245647365052271,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "episode_token": {
+      "measured_episodes": 392,
+      "measured_images": 5092,
+      "seconds": 451.0573018575087,
+      "seconds_per_image": 0.08858155967350917,
+      "images_per_second": 11.289031302742526,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_shuffled": {
+      "measured_episodes": 392,
+      "measured_images": 5092,
+      "seconds": 452.8443318726495,
+      "seconds_per_image": 0.0889325082232226,
+      "images_per_second": 11.24448213571102,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "costs": {
+    "image_region": {
+      "diagnostic_forward_calls": 6617,
+      "diagnostic_forward_inputs": 101505,
+      "eval_forward_calls": 786,
+      "eval_forward_inputs": 10210,
+      "adapt_forward_calls": 2751,
+      "adapt_forward_inputs": 35735,
+      "encoder_calls": 10154,
+      "encoder_inputs": 147450,
+      "diagnostic_encoder_calls": 6617,
+      "diagnostic_encoder_inputs": 101505
+    },
+    "episode_region": {
+      "diagnostic_forward_calls": 6617,
+      "diagnostic_forward_inputs": 101505,
+      "eval_forward_calls": 786,
+      "eval_forward_inputs": 10210,
+      "adapt_forward_calls": 2751,
+      "adapt_forward_inputs": 35735,
+      "encoder_calls": 10154,
+      "encoder_inputs": 147450,
+      "diagnostic_encoder_calls": 6617,
+      "diagnostic_encoder_inputs": 101505
+    },
+    "image_token": {
+      "diagnostic_forward_calls": 6617,
+      "diagnostic_forward_inputs": 101505,
+      "eval_forward_calls": 786,
+      "eval_forward_inputs": 10210,
+      "adapt_forward_calls": 2751,
+      "adapt_forward_inputs": 35735,
+      "encoder_calls": 10154,
+      "encoder_inputs": 147450,
+      "diagnostic_encoder_calls": 6617,
+      "diagnostic_encoder_inputs": 101505
+    },
+    "episode_token": {
+      "diagnostic_forward_calls": 6617,
+      "diagnostic_forward_inputs": 101505,
+      "eval_forward_calls": 786,
+      "eval_forward_inputs": 10210,
+      "adapt_forward_calls": 2751,
+      "adapt_forward_inputs": 35735,
+      "encoder_calls": 10154,
+      "encoder_inputs": 147450,
+      "diagnostic_encoder_calls": 6617,
+      "diagnostic_encoder_inputs": 101505
+    },
+    "image_shuffled": {
+      "diagnostic_forward_calls": 6617,
+      "diagnostic_forward_inputs": 101505,
+      "eval_forward_calls": 786,
+      "eval_forward_inputs": 10210,
+      "adapt_forward_calls": 2751,
+      "adapt_forward_inputs": 35735,
+      "encoder_calls": 10154,
+      "encoder_inputs": 147450,
+      "diagnostic_encoder_calls": 6617,
+      "diagnostic_encoder_inputs": 101505
+    }
+  },
+  "shuffle_coverage": {
+    "active_candidates": 101002,
+    "active_sources": 5105,
+    "eligible_candidates": 101002,
+    "eligible_sources": 5105,
+    "moved_candidates": 95885,
+    "moved_sources": 5105,
+    "changed_score_candidates": 95885,
+    "changed_score_sources": 5105
+  },
+  "timing_scope": "Synchronized model-side wallclock: reset/state check, candidate admission, C diagnostic, allocation preparation/metadata, optimization, final inference/reconstruction/CPU transfer, finite and operation-count hooks. Excludes model setup, shared RGB decode/H2D/geometry, receipt serialization/disk writes and offline scoring. Episode 0 excluded only from timings.",
+  "algorithm": "TRACE:C-allocation-controls:v1",
+  "dataset": "pc60",
+  "stage": "full",
+  "seed": 0,
+  "permutation_seed": 20261029,
+  "full_split": true
+}

@@ -1,0 +1,18 @@
+\begin{table*}[t]
+\caption{Actual label transitions on high-confidence, low-common-support candidate footprints ($\kappa_R\geq0.9$, $\rho_R<0.25$), complete seed-0 evaluation splits. C$\to$W is the percentage of initially correct valid footprint pixels that become wrong; W$\to$C uses initially wrong valid pixels as its denominator. Policies share the same initial candidates. Outcomes follow joint episode adaptation, not isolated candidate updates. Bold marks the better transition rate in each pair.}
+\label{tab:update-risk}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+ & & \multicolumn{2}{c}{Confidence weighting} & \multicolumn{2}{c}{TRACE} \\
+\cmidrule(lr){3-4}\cmidrule(lr){5-6}
+Dataset & Candidates & C$\to$W $\downarrow$ & W$\to$C $\uparrow$ & C$\to$W $\downarrow$ & W$\to$C $\uparrow$ \\
+\midrule
+VOC21 & 8,235 & $2.39$ & $15.08$ & $\mathbf{2.16}$ & $\mathbf{15.46}$ \\
+PC60 & 30,079 & $8.06$ & $6.44$ & $\mathbf{6.87}$ & $\mathbf{9.32}$ \\
+COCO Object & 34,560 & $\mathbf{7.10}$ & $20.03$ & $8.03$ & $\mathbf{22.99}$ \\
+COCO-CD & 474 & $18.98$ & $25.86$ & $\mathbf{7.24}$ & $\mathbf{68.52}$ \\
+COCO-Stuff & 34,727 & $\mathbf{8.93}$ & $6.01$ & $9.70$ & $\mathbf{8.59}$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,15 @@
+\begin{table}[t]
+\caption{Recorded two-view research-run cost, not dedicated-entry-point validation or a speedup comparison. The first two episodes are excluded from timing, not from mIoU. Inputs and latency are per measured image; memory is peak allocated MiB. Synchronized adaptation and final inference exclude loading, scoring, and model setup. Source environment: RTX 5090, PyTorch 2.7.0+cu128. Settings differ across datasets.}
+\label{tab:cost}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Dataset & Images & \shortstack{Diag. inputs/\\image} & ms/img & MiB \\
+\midrule
+PC60 & 5,087 & 43.69 & 118.19 & 2927.6 \\
+VOC21 & 1,417 & 64.73 & 292.00 & 4463.2 \\
+COCO-CD & 444 & 7.99 & 32.48 & 6820.4 \\
+COCO Object & 4,972 & 67.47 & 263.69 & 4183.6 \\
+\bottomrule
+\end{tabular}
+\end{table}

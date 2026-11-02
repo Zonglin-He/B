@@ -1,0 +1,13 @@
+{
+  "format_version": 1,
+  "status": "passed",
+  "artifact_sha256": {
+    "source_inventory.json": "bcead0dd00b121ffc5df96bf06900a8d7258e876ca10d254112d92e9ba1bab11",
+    "episodes.jsonl": "8c6c4f07614c5da8bc23901662ab0431a28775ac150aeff44ebd1041a387cfc4",
+    "summary.json": "87430e3e70cb2efb1020f7b0b938c45ab9b16f684bc606527cd1ee3bb40cd29c",
+    "RESULTS.md": "73ef8f06f25de088f68a189896003d70fba7dcf2a12878ec13320bddc492e58a",
+    "AUDIT_SEALED.json": "54271e13b820216c698038cb9629e39c2114723bfd595eb2c1a6141398f2287f",
+    "VERIFICATION.json": "d69abc657b19e713024565a582de03d5c8caaf3a5510bdd22749cb66b3668161"
+  },
+  "scope": "Append-only verification receipt binds original immutable audit outputs and records resource-accounting limitation; original audit seal remains unchanged."
+}

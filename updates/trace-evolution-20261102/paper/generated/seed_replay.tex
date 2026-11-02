@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\caption{Deterministic seed replay checks, full-split mIoU. Seeds 1/2 replay the fixed protocol and are not independent uncertainty samples; no seed SD or confidence interval is estimated. Differences are replay minus seed 0 in percentage points. -- means no replay was run. Eight decimals are shown to expose numerical agreement.}
+\label{tab:seed-replay}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Dataset & Seed 0 & Seed 1 & Seed 2 & $\Delta_1$ & $\Delta_2$ \\
+\midrule
+COCO-CD & $75.10479395$ & $75.10479395$ & $75.10479395$ & $+0.00000000$ & $+0.00000000$ \\
+PC60 & $30.56548225$ & $30.56548225$ & $30.56548225$ & $+0.00000000$ & $+0.00000000$ \\
+VOC21 & $52.37917593$ & $52.37917593$ & $52.37917593$ & $+0.00000000$ & $+0.00000000$ \\
+COCO Object & $32.70112821$ & $32.70112821$ & $32.70112821$ & $+0.00000000$ & $+0.00000000$ \\
+COCO-Stuff & $21.74549502$ & -- & -- & -- & -- \\
+VOC20 & $83.94251406$ & $83.94251406$ & $83.94251406$ & $+0.00000000$ & $+0.00000000$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

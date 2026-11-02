@@ -1,0 +1,11 @@
+{
+  "status": "predicted",
+  "images": 5105,
+  "dataset": "pc60",
+  "seed": 2,
+  "full_split": true,
+  "policy_labels": [
+    "trace"
+  ],
+  "timing_scope": "Shared pre/diagnosis once; separate policy adaptation/evaluation. Not standalone formal cost."
+}

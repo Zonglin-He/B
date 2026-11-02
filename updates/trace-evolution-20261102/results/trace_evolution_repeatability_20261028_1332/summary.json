@@ -1,0 +1,86 @@
+{
+  "comparisons": [
+    {
+      "left": "default_0",
+      "right": "default_1",
+      "max_loss_abs_difference": 0.018973201513290405,
+      "gradients_equal": false,
+      "trainable_equal": false,
+      "supports_equal": true,
+      "changed_labels": 11024
+    },
+    {
+      "left": "default_2",
+      "right": "default_3",
+      "max_loss_abs_difference": 0.0019092559814453125,
+      "gradients_equal": false,
+      "trainable_equal": false,
+      "supports_equal": true,
+      "changed_labels": 4583
+    },
+    {
+      "left": "default_0",
+      "right": "default_2",
+      "max_loss_abs_difference": 0.019519545137882233,
+      "gradients_equal": false,
+      "trainable_equal": false,
+      "supports_equal": true,
+      "changed_labels": 12263
+    },
+    {
+      "left": "deterministic_default_0",
+      "right": "deterministic_default_1",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    },
+    {
+      "left": "deterministic_default_2",
+      "right": "deterministic_default_3",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    },
+    {
+      "left": "deterministic_default_0",
+      "right": "deterministic_default_2",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    },
+    {
+      "left": "deterministic_math_0",
+      "right": "deterministic_math_1",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    },
+    {
+      "left": "deterministic_math_2",
+      "right": "deterministic_math_3",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    },
+    {
+      "left": "deterministic_math_0",
+      "right": "deterministic_math_2",
+      "max_loss_abs_difference": 0.0,
+      "gradients_equal": true,
+      "trainable_equal": true,
+      "supports_equal": true,
+      "changed_labels": 0
+    }
+  ],
+  "gt_contents_opened": false
+}

@@ -1,0 +1,438 @@
+{
+  "started_at_utc": "2026-11-02T03:40:21.417786+00:00",
+  "finished_at_utc": "2026-11-02T03:47:08.991794+00:00",
+  "source_root": "/home/wwww/hzl/results",
+  "snapshot_type": "read_only_live_file_snapshot",
+  "atomic": false,
+  "source_modified": false,
+  "gpu_work_started": false,
+  "included_files": 689669,
+  "logical_bytes": 71594242619,
+  "unique_objects": 585799,
+  "git_result_bytes": 25296118,
+  "excluded_counts": {
+    "runtime_parent_or_dataset_dependency_excluded": 30,
+    "not_a_result_artifact_or_excluded_weight_source_archive": 62
+  },
+  "suite_count": 31,
+  "run_index_rows": 512,
+  "archives": [
+    {
+      "name": "results-objects-001.tar.gz",
+      "objects": 1280,
+      "bytes": 154626135,
+      "sha256": "56f3aeaf57cca6633ddafb301f96e58e6be7a73b4971072e337f08022a3aad6f"
+    },
+    {
+      "name": "results-objects-002.tar.gz",
+      "objects": 6489,
+      "bytes": 102007145,
+      "sha256": "6b7bb954bcd8b3650fcbfb3a78da369b87fa9e204ba17ce4132b9e6508638853"
+    },
+    {
+      "name": "results-objects-003.tar.gz",
+      "objects": 12522,
+      "bytes": 41408659,
+      "sha256": "6f3303268d659f1737617b35c5bbeb7be1e4045100bf2a1297756d6e848788c2"
+    },
+    {
+      "name": "results-objects-004.tar.gz",
+      "objects": 7605,
+      "bytes": 96922614,
+      "sha256": "d2afa12a1862ff3b972c8e7ad3b0cf1e665d2391e6a15e540de82e3a254206ee"
+    },
+    {
+      "name": "results-objects-005.tar.gz",
+      "objects": 8184,
+      "bytes": 98597180,
+      "sha256": "a1eb9f5367b1be01525b9575e281431d04aecd7dcb81d76bc1ede6648d848dc8"
+    },
+    {
+      "name": "results-objects-006.tar.gz",
+      "objects": 12522,
+      "bytes": 57557399,
+      "sha256": "f63652ef059f78f29f1f01f05cd4527ce7395dd9f363a13e9ddb95ffb4239ae5"
+    },
+    {
+      "name": "results-objects-007.tar.gz",
+      "objects": 5882,
+      "bytes": 137960820,
+      "sha256": "af85d16f3d7a004f98c49edafde65d6cdb73b494328df2c4faf941ecea682ba2"
+    },
+    {
+      "name": "results-objects-008.tar.gz",
+      "objects": 11249,
+      "bytes": 102188130,
+      "sha256": "49e72f2f2a33d87ffbb1e2c719ca109205985197508ce312f35d39677d634637"
+    },
+    {
+      "name": "results-objects-009.tar.gz",
+      "objects": 14521,
+      "bytes": 63894062,
+      "sha256": "eaeb942a41ba3574141fbaa3710c4a9ea7c423c7ada056999d3021aa4806c511"
+    },
+    {
+      "name": "results-objects-010.tar.gz",
+      "objects": 17545,
+      "bytes": 79981044,
+      "sha256": "4da460f25dad681ad5928d3cd2e97e2401fda2ed4d0ad42cfd69f13ade9e366a"
+    },
+    {
+      "name": "results-objects-011.tar.gz",
+      "objects": 12839,
+      "bytes": 60949910,
+      "sha256": "19b8e9416a011f2496a78c53d31e7c07f052cc63500b893a01f33cb4b95ac421"
+    },
+    {
+      "name": "results-objects-012.tar.gz",
+      "objects": 9305,
+      "bytes": 67318274,
+      "sha256": "0df7b9256f30f429b1c10fa44f9adea1eb23d08d9e388f995a68ab9ed429efbe"
+    },
+    {
+      "name": "results-objects-013.tar.gz",
+      "objects": 11263,
+      "bytes": 71375706,
+      "sha256": "44fc18472e2ff196263f9a69af70358cbc3cee3f2693fcfe28e1189dde8bc072"
+    },
+    {
+      "name": "results-objects-014.tar.gz",
+      "objects": 12522,
+      "bytes": 68098791,
+      "sha256": "b93de5d75f3dec5e0e035e52b5fd154116cadb0e5fee77b0d89f68ba94a2f302"
+    },
+    {
+      "name": "results-objects-015.tar.gz",
+      "objects": 11361,
+      "bytes": 72398981,
+      "sha256": "90d17df1caa007b847c61a49a5fab61e4f3e58377368cad02277f4e53d9d837c"
+    },
+    {
+      "name": "results-objects-016.tar.gz",
+      "objects": 15677,
+      "bytes": 61565793,
+      "sha256": "2430aabf667f90d0931194015c6ac447f79c49a7dbd6c66cb96107ca9054d3af"
+    },
+    {
+      "name": "results-objects-017.tar.gz",
+      "objects": 11813,
+      "bytes": 59364680,
+      "sha256": "182d9f790603e4e5d8b2ef3d586c0ed5487ed9067f81e47e291d54683726b780"
+    },
+    {
+      "name": "results-objects-018.tar.gz",
+      "objects": 12522,
+      "bytes": 44596464,
+      "sha256": "734af976eb484d1f83793d9b84d6135df1adeb4d9b1c34bb1667f9ced7663ff9"
+    },
+    {
+      "name": "results-objects-019.tar.gz",
+      "objects": 12522,
+      "bytes": 43975883,
+      "sha256": "8e505e9e4073eab39c1e9c4e244f0609536eb4b19aafd453ed887a3d1d99a8fc"
+    },
+    {
+      "name": "results-objects-020.tar.gz",
+      "objects": 12522,
+      "bytes": 44141632,
+      "sha256": "f4d3cb39f358f9254b6d774bdf33adbadec89c5b1c7536e75e76d77f69a6f63e"
+    },
+    {
+      "name": "results-objects-021.tar.gz",
+      "objects": 13992,
+      "bytes": 80394707,
+      "sha256": "279c154a488e1f85fcb002574ca25a180fbff440cb26aa0e036869d6df37a8fb"
+    },
+    {
+      "name": "results-objects-022.tar.gz",
+      "objects": 12522,
+      "bytes": 68483351,
+      "sha256": "f0becfb2033780e91a03db1158761cc1582f1e2a9c7ae2a8a59c9bdf1e16c52e"
+    },
+    {
+      "name": "results-objects-023.tar.gz",
+      "objects": 12522,
+      "bytes": 73152176,
+      "sha256": "d6eaecec69e006fef4963dc1fcd27102b91d9cb254925f7bf9fb7a75d040d1bf"
+    },
+    {
+      "name": "results-objects-024.tar.gz",
+      "objects": 12522,
+      "bytes": 66911371,
+      "sha256": "dff9f53d5dac431c2346bcbc2d3984b967d822044da2d640440cff10a71be48a"
+    },
+    {
+      "name": "results-objects-025.tar.gz",
+      "objects": 12858,
+      "bytes": 63828347,
+      "sha256": "310eb042838da81897fdba45eb94825a5ec255930f49bb5b10dffe8dfaabfec2"
+    },
+    {
+      "name": "results-objects-026.tar.gz",
+      "objects": 12522,
+      "bytes": 58386591,
+      "sha256": "4857f8c8f5b6066ff6e93817773241b95ee87715b8ef36b3159bc16a4c9d9e1e"
+    },
+    {
+      "name": "results-objects-027.tar.gz",
+      "objects": 12522,
+      "bytes": 58391047,
+      "sha256": "d7e54ac65f8e895c1a69b218083c0a18a04240f09d8216169e511faff1352c4f"
+    },
+    {
+      "name": "results-objects-028.tar.gz",
+      "objects": 12628,
+      "bytes": 51542877,
+      "sha256": "52c53dedeb45a4ef9b2d873b6db3eab0c31d2756e7dac424dd3d6217953bf76f"
+    },
+    {
+      "name": "results-objects-029.tar.gz",
+      "objects": 16256,
+      "bytes": 64570982,
+      "sha256": "9427c8b80498307d4b736a942b8d9eca7fa520a8db219405043dca211ea00eef"
+    },
+    {
+      "name": "results-objects-030.tar.gz",
+      "objects": 12829,
+      "bytes": 33876620,
+      "sha256": "c97864ffda0eb391559c6f268d3b0f0d0bc6f365b1ed830f427b67d0ccbe670c"
+    },
+    {
+      "name": "results-objects-031.tar.gz",
+      "objects": 11401,
+      "bytes": 67429598,
+      "sha256": "b51ad95646593a764e38799582442b548b6abb7c9e3a962a08d74a728cf5dcbd"
+    },
+    {
+      "name": "results-objects-032.tar.gz",
+      "objects": 11551,
+      "bytes": 77352390,
+      "sha256": "74d44b5f8aea960c2641fa01733fe6747cf1d2cc2c0cfd80661e7536416df819"
+    },
+    {
+      "name": "results-objects-033.tar.gz",
+      "objects": 11662,
+      "bytes": 85705091,
+      "sha256": "97a4984f017308452d9eb7eb984384c19ba76850f30d64c8304f06119da94954"
+    },
+    {
+      "name": "results-objects-034.tar.gz",
+      "objects": 12517,
+      "bytes": 76564138,
+      "sha256": "6452a05d680b08b05825a15ef1a2e3300627058d9f5863c468d9dc85e9c648e5"
+    },
+    {
+      "name": "results-objects-035.tar.gz",
+      "objects": 12394,
+      "bytes": 76349120,
+      "sha256": "19f12e6b5ebb285d055536a80ac42859d9bdc7e752c268227ec56b5cbf1f048e"
+    },
+    {
+      "name": "results-objects-036.tar.gz",
+      "objects": 12547,
+      "bytes": 71416941,
+      "sha256": "3763db48a039c0f912180fbbe6ab783d56f1dc919423e57c4e61185fcc1e2162"
+    },
+    {
+      "name": "results-objects-037.tar.gz",
+      "objects": 16879,
+      "bytes": 60231635,
+      "sha256": "e12d37a9d19f9d82c3aaf0793f4d25d1e069ae797f351515d08942c4f71a27e2"
+    },
+    {
+      "name": "results-objects-038.tar.gz",
+      "objects": 11208,
+      "bytes": 62830282,
+      "sha256": "c751b5617e7ac7b562eb631f4f7696196ba6c99b4df5b2cfa249880c99f61890"
+    },
+    {
+      "name": "results-objects-039.tar.gz",
+      "objects": 8751,
+      "bytes": 76406369,
+      "sha256": "2c118936c9948246115c29fc5a04a55514838dbe6e463013d493c72a23fa53b9"
+    },
+    {
+      "name": "results-objects-040.tar.gz",
+      "objects": 11309,
+      "bytes": 57469116,
+      "sha256": "7d327d4ec8ce959768ed8bb814acb7e6d872a0f3ffb5b04897b98a222556f2d7"
+    },
+    {
+      "name": "results-objects-041.tar.gz",
+      "objects": 11708,
+      "bytes": 77879741,
+      "sha256": "ee3a2a56836d8eee3144f32a776607500a187932ec22477d0556c67de310d606"
+    },
+    {
+      "name": "results-objects-042.tar.gz",
+      "objects": 11506,
+      "bytes": 82498339,
+      "sha256": "43a899c629558d30a8af61f2846a43b0ed5ca8e15a75b10db6c19d7542e55294"
+    },
+    {
+      "name": "results-objects-043.tar.gz",
+      "objects": 11245,
+      "bytes": 70637092,
+      "sha256": "5ba7b265bd17ca57260956e9c62cec57d5b998bfc15c332d8f9c05a7a2627076"
+    },
+    {
+      "name": "results-objects-044.tar.gz",
+      "objects": 11960,
+      "bytes": 67262971,
+      "sha256": "abfa51adc85c77a7399f111edebb688c2038d2bec0378871c22e019ead518e12"
+    },
+    {
+      "name": "results-objects-045.tar.gz",
+      "objects": 14572,
+      "bytes": 66888828,
+      "sha256": "c5393b0f6c64ab31464737fa5dbae6b4ee6d15f75693bc3ba4c1db13ca6a6983"
+    },
+    {
+      "name": "results-objects-046.tar.gz",
+      "objects": 11979,
+      "bytes": 59319390,
+      "sha256": "038f3e320a518103fcfc38805e3d1157941f915e50667ca8dc16a9095da71b15"
+    },
+    {
+      "name": "results-objects-047.tar.gz",
+      "objects": 12522,
+      "bytes": 34229420,
+      "sha256": "e02326c27cc01e140002aa7667042c132443bc3a91b35d183821bf0d450c643c"
+    },
+    {
+      "name": "results-objects-048.tar.gz",
+      "objects": 13339,
+      "bytes": 41692585,
+      "sha256": "e8476499338edc0d21f3aebf22ffaf9ced766e1b582191d3c278d14c55890d28"
+    },
+    {
+      "name": "results-objects-049.tar.gz",
+      "objects": 13514,
+      "bytes": 45467714,
+      "sha256": "5ce562be2947db561b96c353ba176663115a8d6e1f0066e6217df4c5723d5f04"
+    },
+    {
+      "name": "results-objects-050.tar.gz",
+      "objects": 1917,
+      "bytes": 9100006,
+      "sha256": "2b6d16896fa4f241213faa94ae64b9bb5e0c5191010d0863e965d0e39121f348"
+    }
+  ],
+  "files_manifest_sha256": "d70bcdb76c0effc631472894c97c17e830c13b35706ce95905a2a43b89a3935a",
+  "queue_snapshots": {
+    "trace_evolution_product_pixel_recovery_20261028_2215": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 2
+    },
+    "trace_evolution_voc20_cli_recovery_20261028_2312": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 4
+    },
+    "trace_allocation_controls_20261029_1946": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_single_probe_waterbirds_full_20261029_0817": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_self_evolution_20261028_1338": {
+      "status": "completed",
+      "active": null,
+      "counts": {},
+      "total": 18
+    },
+    "trace_evolution_product_pixel_20261028_1403": {
+      "status": "failed",
+      "active": null,
+      "counts": {},
+      "total": 2
+    },
+    "trace_self_evolution_20261028_1328": {
+      "status": "failed",
+      "active": null,
+      "counts": {},
+      "total": 18
+    },
+    "trace_local_baselines_20261030_0008": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_allocation_controls_20261029_1958": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_evolution_voc20_20261028_1428": {
+      "status": "failed",
+      "active": null,
+      "counts": {},
+      "total": 4
+    },
+    "trace_image_budget_20261029_0233": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_evolution_voc20_recovery_20261028_2215": {
+      "status": "failed",
+      "active": null,
+      "counts": {},
+      "total": 4
+    },
+    "trace_image_full_20261029_0333": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_single_probe_tuning_20261029_0746": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_evolution_voc20_recovery2_20261028_2220": {
+      "status": "failed",
+      "active": null,
+      "counts": {},
+      "total": 4
+    },
+    "trace_allocation_controls_20261029_2055": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_single_probe_waterbirds_full_20261029_0816": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_single_probe_tuning_20261029_0748": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    },
+    "trace_standalone_followup_20261029_0105": {
+      "status": null,
+      "active": null,
+      "counts": {},
+      "total": null
+    }
+  }
+}

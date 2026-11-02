@@ -1,0 +1,332 @@
+{
+  "dataset": "waterbirds_seg",
+  "config": {
+    "dataset": "WaterbirdsSegDataset",
+    "data_subdir": "waterbirds_seg/correlation_0.95",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 12,
+    "lr": 0.005,
+    "steps": 4,
+    "trace_max_regions": 7,
+    "class_extensions": false,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95"
+  },
+  "selected_trial": {
+    "dataset": "waterbirds_seg",
+    "stage": "lr/coarse",
+    "trial": 23,
+    "status": "completed",
+    "config": {
+      "dataset": "WaterbirdsSegDataset",
+      "data_subdir": "waterbirds_seg/correlation_0.95",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 12,
+      "lr": 0.005,
+      "steps": 4,
+      "trace_max_regions": 7,
+      "class_extensions": false,
+      "trace_view_batch_size": 16,
+      "data_dir": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95"
+    },
+    "mIoU": 56.92550809526558,
+    "ms_per_image": 38.04625656654234,
+    "images": 256,
+    "full_split": false,
+    "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/023_3a43b102fc73b5e610e0ad6f/result.json",
+    "scored_seal_sha256": "38c27660e4409438eaa620800310d8515be9dd2e14f1ce55bf021310216dabb3"
+  },
+  "unique_trials": 54,
+  "all_trials": [
+    {
+      "key": "b92875bdb8566c3f501c600d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/000_b92875bdb8566c3f501c600d/result.json"
+    },
+    {
+      "key": "56ad6ff74334f93e4e342931",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/001_56ad6ff74334f93e4e342931/result.json"
+    },
+    {
+      "key": "c8f4a62a7df1d19c05487445",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/002_c8f4a62a7df1d19c05487445/result.json"
+    },
+    {
+      "key": "ee278902054f2f237eec8914",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/003_ee278902054f2f237eec8914/result.json"
+    },
+    {
+      "key": "14a56c0c378f883b47639747",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/004_14a56c0c378f883b47639747/result.json"
+    },
+    {
+      "key": "635e6caf44243792b1f42d81",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/005_635e6caf44243792b1f42d81/result.json"
+    },
+    {
+      "key": "f0f63d4b154c8c9f151ed356",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/006_f0f63d4b154c8c9f151ed356/result.json"
+    },
+    {
+      "key": "195c15ed736960bb897af6d1",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/007_195c15ed736960bb897af6d1/result.json"
+    },
+    {
+      "key": "971f8b98ad376b58af4e79bf",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/008_971f8b98ad376b58af4e79bf/result.json"
+    },
+    {
+      "key": "dfb6e7967e945cb334412cfa",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/009_dfb6e7967e945cb334412cfa/result.json"
+    },
+    {
+      "key": "c4c0ea0fc547a35328311b3b",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/010_c4c0ea0fc547a35328311b3b/result.json"
+    },
+    {
+      "key": "9c4761e92c45ff97fdaf66cb",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/011_9c4761e92c45ff97fdaf66cb/result.json"
+    },
+    {
+      "key": "c6ff7bbd8497c090f643e92f",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/012_c6ff7bbd8497c090f643e92f/result.json"
+    },
+    {
+      "key": "095189056f04eca4d421c961",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/013_095189056f04eca4d421c961/result.json"
+    },
+    {
+      "key": "6583268cc288301d725e1e3d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/014_6583268cc288301d725e1e3d/result.json"
+    },
+    {
+      "key": "8eea0ce9acf43c14deccd6ab",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/015_8eea0ce9acf43c14deccd6ab/result.json"
+    },
+    {
+      "key": "fcac260b286fd078b9467d64",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/016_fcac260b286fd078b9467d64/result.json"
+    },
+    {
+      "key": "f9d069d205ef233790b4b0cc",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/017_f9d069d205ef233790b4b0cc/result.json"
+    },
+    {
+      "key": "8a6f337e1da6efa797d4f45b",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/018_8a6f337e1da6efa797d4f45b/result.json"
+    },
+    {
+      "key": "171fc5c8b73a8b92b79c4f47",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/019_171fc5c8b73a8b92b79c4f47/result.json"
+    },
+    {
+      "key": "6147833ac60e697d7e8da6c5",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/020_6147833ac60e697d7e8da6c5/result.json"
+    },
+    {
+      "key": "fbbc54867d6b49ff4281bc65",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/021_fbbc54867d6b49ff4281bc65/result.json"
+    },
+    {
+      "key": "1b1b45cbb72470e238df211d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/022_1b1b45cbb72470e238df211d/result.json"
+    },
+    {
+      "key": "3a43b102fc73b5e610e0ad6f",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/023_3a43b102fc73b5e610e0ad6f/result.json"
+    },
+    {
+      "key": "bd76785a795d4b26c6a0df7a",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/024_bd76785a795d4b26c6a0df7a/result.json"
+    },
+    {
+      "key": "244cdcf0c74613b493c2c56d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/025_244cdcf0c74613b493c2c56d/result.json"
+    },
+    {
+      "key": "0ea09bc6933d7964f56c1541",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/026_0ea09bc6933d7964f56c1541/result.json"
+    },
+    {
+      "key": "7b6446049237eb94b2d0c079",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/027_7b6446049237eb94b2d0c079/result.json"
+    },
+    {
+      "key": "0c59ef2aa9fdc4a9822a4840",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/028_0c59ef2aa9fdc4a9822a4840/result.json"
+    },
+    {
+      "key": "09bfa7319d429bd347204e55",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/029_09bfa7319d429bd347204e55/result.json"
+    },
+    {
+      "key": "4535641e55044b05a1d3ace8",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/030_4535641e55044b05a1d3ace8/result.json"
+    },
+    {
+      "key": "9a63f1e69f50062ec230ca25",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/031_9a63f1e69f50062ec230ca25/result.json"
+    },
+    {
+      "key": "1e33752504641d06d91f21b1",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/032_1e33752504641d06d91f21b1/result.json"
+    },
+    {
+      "key": "62f76c1dbacec2d2dc70614d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/033_62f76c1dbacec2d2dc70614d/result.json"
+    },
+    {
+      "key": "e16919c7d83bfef51c3eb690",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/034_e16919c7d83bfef51c3eb690/result.json"
+    },
+    {
+      "key": "a236ecff953df098268a3710",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/035_a236ecff953df098268a3710/result.json"
+    },
+    {
+      "key": "bc575a7558dd89e6d69d7341",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/036_bc575a7558dd89e6d69d7341/result.json"
+    },
+    {
+      "key": "746083156029d3775e0d6093",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/037_746083156029d3775e0d6093/result.json"
+    },
+    {
+      "key": "21bc2b37f68f1ed1cc501c23",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/038_21bc2b37f68f1ed1cc501c23/result.json"
+    },
+    {
+      "key": "b8a5dcf723cdf4401d5180d7",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/039_b8a5dcf723cdf4401d5180d7/result.json"
+    },
+    {
+      "key": "3d73dcfbb723be5ffedda420",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/040_3d73dcfbb723be5ffedda420/result.json"
+    },
+    {
+      "key": "591fabaa2548bfbab8a9411f",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/041_591fabaa2548bfbab8a9411f/result.json"
+    },
+    {
+      "key": "3113f62034a3b9177edb2f11",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/042_3113f62034a3b9177edb2f11/result.json"
+    },
+    {
+      "key": "a6578dfa76f965f022e82767",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/043_a6578dfa76f965f022e82767/result.json"
+    },
+    {
+      "key": "a29e5bbd9feaee6380384e1f",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/044_a29e5bbd9feaee6380384e1f/result.json"
+    },
+    {
+      "key": "6c31b43a44d64790c4aba54b",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/045_6c31b43a44d64790c4aba54b/result.json"
+    },
+    {
+      "key": "58e015fdddc1a2c098036afc",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/046_58e015fdddc1a2c098036afc/result.json"
+    },
+    {
+      "key": "5f584ad5d82a9fddabecaff2",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/047_5f584ad5d82a9fddabecaff2/result.json"
+    },
+    {
+      "key": "ee31aa319e2b416720dd2753",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/048_ee31aa319e2b416720dd2753/result.json"
+    },
+    {
+      "key": "9ac501575a16b001ac252aa2",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/049_9ac501575a16b001ac252aa2/result.json"
+    },
+    {
+      "key": "e5b742cf1e7c2b8c86a15b22",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/050_e5b742cf1e7c2b8c86a15b22/result.json"
+    },
+    {
+      "key": "a237c691085fb44c4fd31423",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/051_a237c691085fb44c4fd31423/result.json"
+    },
+    {
+      "key": "e6a90ce66dd52aabce520b82",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/052_e6a90ce66dd52aabce520b82/result.json"
+    },
+    {
+      "key": "1c60af89bfc7790d739eddf4",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/trials/waterbirds_seg/053_1c60af89bfc7790d739eddf4/result.json"
+    }
+  ],
+  "calibration_only": true,
+  "full_evaluation_used_for_selection": false,
+  "calibration_panel_sha256": "58b0a6d56f53af286712f56f80e2de578018cf6da6973c8165df15260d7bbce0",
+  "suite_prepared_sha256": "4f3e54226f99230af48b2105372300d06f31651515324b3ab99dbe138ff3cfa3"
+}

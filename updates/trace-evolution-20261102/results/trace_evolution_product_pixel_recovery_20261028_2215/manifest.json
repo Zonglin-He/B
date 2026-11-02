@@ -1,0 +1,36 @@
+{
+  "parent": "/home/wwww/hzl/results/trace_self_evolution_20261028_1338",
+  "parent_service": "trace-self-evolution-20261028-1338.service",
+  "parent_manifest_sha256": "98b3f2adeb0d10b2f8eb72c751dc34abf9b007dcefe498d54e55d3830fffa20a",
+  "source_sha256": {
+    "README.md": "550f2725d82f7b43fc1d8fbc6abe561f49c8e5c783aab38697c4146dba30b09f",
+    "__init__.py": "fad94868a469f43ea2b6f184b8a994881e94338da7c9afc1e7c24888d390b676",
+    "controller.py": "4750492ca29b466bc12aa5b513ade05a79dff4a1b8f34ce8bc1ce49e28bb3d7c",
+    "evolution_completion.py": "c5f837e7d70a183c35979807e9aca901becd0d2ccf7b5379f56184c908e475e8",
+    "run_cell.py": "81117cef54a7f9dc80515c671d52acf3f39af51c63e03bea9fb3bfda8973d3f4",
+    "test_controller.py": "5ebc29b07a1e9c1c53ac215e80997af4c3d494f18df67dc3a9f93b73c395f9b0",
+    "test_run_cell.py": "a6e8789bd345f8447e14c2d69d1d4c09b144a34721c7fa1908bd3b3b0f4a40f5"
+  },
+  "datasets": {
+    "pc60": 5105,
+    "coco_object": 5000
+  },
+  "controls": [
+    "product",
+    "pixel_normalized"
+  ],
+  "parameter_search": false,
+  "automatic_retry": false,
+  "candidate_cache_reuse": true,
+  "scope": "Matched source-tracing aggregation and region-normalization controls, not standalone cost.",
+  "parent_completion_receipt": {
+    "path": "/home/wwww/hzl/results/trace_evolution_recovery_audit_20261028_2215/completion.json",
+    "sha256": "3d907952dcb3058ea2372585b9fb964c0d2990df5d9735ae1db62aa2e7ea7c3b"
+  },
+  "supersedes": {
+    "path": "/home/wwww/hzl/results/trace_evolution_product_pixel_20261028_1403",
+    "manifest_sha256": "30a8d364823374d5a3e8f4e3946efc64c26322688c5cff4b84dfe2d2be056336",
+    "failure_state_sha256": "3ee234aad9e73c1d0842736e6f9d9e81bfd1c61c16823e306a94b37ac50a198b",
+    "reason": "New controller admits an explicitly audited complete artifact suite after unit reclamation; worker unchanged."
+  }
+}

@@ -1,0 +1,15 @@
+\documentclass[letterpaper]{article}
+\input{preamble}
+\nocopyright
+\usepackage{xr}
+\IfFileExists{build/main.aux}{\externaldocument[main-]{build/main}}{\externaldocument[main-]{main}}
+\renewcommand{\mainref}[1]{\ref{main-#1}}
+\title{Supplementary Material for TRACE:\\Tracing Confidence Sources for Reliable Test-Time Adaptation\\in Open-Vocabulary Semantic Segmentation}
+\author{Anonymous Authors}
+\affiliations{}
+\begin{document}
+\raggedbottom
+\maketitle
+\appendix
+\input{appendix}
+\end{document}

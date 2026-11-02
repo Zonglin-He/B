@@ -1,0 +1,25 @@
+{
+  "complete": true,
+  "suite_prepared_sha256": "c3b9e5d1548655e6225e41f2b8def91007ecb6b4904343388958b14ba2f42dd4",
+  "datasets": [
+    "coco_object",
+    "pc60"
+  ],
+  "arms": [
+    "image_region",
+    "episode_region",
+    "image_token",
+    "episode_token",
+    "image_shuffled"
+  ],
+  "full_outcomes": 10,
+  "score_seals": {
+    "coco_object": "8efb84f329eaf4c493584f75905341374c1ebe18e190188658d2d7b6244313c7",
+    "pc60": "23ee39cbfeb46afd4ba4c7ad442342cc6b84768560ecc59c72386ee40b49b893"
+  },
+  "full_metrics_sha256": "e616f5bd0fd9c66c526406f0c7cd0fcc998547559cd7e6a34d5e7ca70f0bf081",
+  "barrier_sha256": "14a33045b3713374581c384a9a999cabfec5d1a2ef2e74fcfbf9fa58025cceb5",
+  "execution_started_sha256": "6895652f7781648fe1a6fc8419880f68a5a7449a1733e2c063a6595abdfb4cf9",
+  "service_exit_certified": false,
+  "finished_at": "2026-10-29T16:02:56.734895+00:00"
+}

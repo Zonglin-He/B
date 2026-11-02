@@ -1,0 +1,14 @@
+{
+  "status": "predicted",
+  "images": 5000,
+  "dataset": "coco_object",
+  "seed": 0,
+  "full_split": true,
+  "parent_replay": {
+    "parent_cell": "/home/wwww/hzl/results/trace_self_evolution_20261028_1338/cells/mechanism/coco_object",
+    "parent_suite": "/home/wwww/hzl/results/trace_self_evolution_20261028_1338",
+    "parent_prediction_seal_sha256": "63e7b5e08963ee82a1a5f519cdf658b07509c68a5baef64f54f3c936e8d74e1e",
+    "parent_suite_seal_sha256": "b2c28c41ded424043ff00de5c02a4c988f5aeeb301a920e8913b42bec79a998a",
+    "parent_manifest_sha256": "98b3f2adeb0d10b2f8eb72c751dc34abf9b007dcefe498d54e55d3830fffa20a"
+  }
+}

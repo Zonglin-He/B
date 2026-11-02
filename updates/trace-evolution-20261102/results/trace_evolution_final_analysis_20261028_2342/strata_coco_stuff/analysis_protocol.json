@@ -1,0 +1,23 @@
+{
+  "confidence_edges": [
+    0,
+    0.7,
+    0.9,
+    0.95,
+    0.99,
+    1.000001
+  ],
+  "area_edges": [
+    1,
+    4,
+    16,
+    64,
+    257
+  ],
+  "min_candidates_per_stratum": 8,
+  "groups": "Lowest/highest rank quartile of initial q within each stratum; skip overlapping q tails.",
+  "covariates": "Predicted semantic class, initial confidence bin, original candidate token area bin.",
+  "uncertainty": "Descriptive finite-panel association; no candidate-independent significance test.",
+  "outcomes": "Pixel C-to-W and W-to-C after joint episode adaptation.",
+  "exposure": "Fixed bins before this stratified computation, not a prospectively untouched test: earlier overall diagnostics were visible."
+}

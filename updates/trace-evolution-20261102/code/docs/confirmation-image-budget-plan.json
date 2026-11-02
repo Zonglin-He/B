@@ -1,0 +1,38 @@
+{
+  "status": "design_locked_before_new_cohort_predictions",
+  "purpose": "Test source-image-normalized candidate allocation and select one global probe mode on disjoint training calibration, then confirm once on an excluded-history training-source cohort.",
+  "new_method": true,
+  "new_algorithm": "Normalize detached region weights within each source image, average active source-image objectives; retain candidates, transforms, optimizer, reset, and inherited dataset settings.",
+  "datasets": ["pc60", "coco_object"],
+  "calibration_images_per_dataset": 128,
+  "confirmation_images_per_dataset": 256,
+  "cohort_selection_seed": 20261029,
+  "model_seed": 0,
+  "confirmation_order_seeds": [null, 20261030, 20261031],
+  "arms": ["episode_min", "image_uniform", "image_confidence", "image_T", "image_C", "image_min"],
+  "probe_mode_candidates": ["T", "C", "min"],
+  "selection": {
+    "uses": "Only the two new calibration results, never any confirmation labels or scores.",
+    "primary": "Maximize the worst-dataset mIoU difference versus image_confidence across PC60 and COCO Object.",
+    "tie_band_pp": 0.02,
+    "tie_order": ["fewer actual diagnostic encoder inputs over calibration images", "larger unweighted mean mIoU difference", "fixed mode ordering T then C then min"],
+    "global": true,
+    "freeze_before_confirmation_prediction": true,
+    "no_reselection_after_confirmation": true
+  },
+  "protocol": {
+    "configuration": "Inherited sealed dataset tuple for every arm; no new lr/steps/K/batch search.",
+    "calibration": "Predict both datasets/all six arms and seal all before reading calibration labels; score, select, and seal exactly one global mode.",
+    "confirmation": "Predict all six arms for both datasets and all three orders before any confirmation label read; all outcomes retained, not only selected mode.",
+    "images": "Official training pools excluding all identifiable historical method/configuration-development IDs and official evaluation identities. Hash-ranked without labels; calibration and confirmation disjoint.",
+    "exposure_scope": "Prospective confirmation relative to the documented exclusion inventory; missing historical records are disclosed, not silently certified absent.",
+    "scoring": "Existing pooled class intersection/union,224-grid nearest labels and query/category mapping; no candidate GT or new metric/threshold.",
+    "cost": "Independent zero/one/two-probe execution and actual encoder counts, synchronized model-side timing; no setup/decode/H2D/scoring in timing, only episode0 omitted from time, all images in accuracy/counters.",
+    "gates": "CPU numeric/gradient/reset tests and two real four-image GT-free gates; one-source-image balanced-min equals old min within fixed1e-5 loss/support tolerance and zero changed labels; count all view schedules.",
+    "runtime": "Frozen new source snapshot/manifest, deterministic default attention, shared single-GPU lock,systemd12GiB RAM/1GiB swap,RemainAfterExit=yes,no retry/resume/overwrite.",
+    "bound": "Two calibration cells and six confirmation cells,48 arm results plus two four-image GT-free gates. No automatic dataset/backbone expansion or subsequent full search.",
+    "statistics": "All three order-specific contrasts/ranges retained; no pixel/candidate independence or deterministic-seed uncertainty claim. No bootstrap added against prior user instruction."
+  },
+  "adoption_gate": "Do not replace current full-split paper with partial cohort evidence. Inspect fixed selected mode on both confirmation datasets and all orders; no test-based mode switch. Any further full split or new algorithm is a separately frozen next stage.",
+  "comparison_instruction": "Do not rerun MLMP where published values exist, in accordance with user instruction; this stage isolates algorithm allocation and cost, not matched external-method superiority."
+}

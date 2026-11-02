@@ -1,0 +1,233 @@
+\section{Implementation and Reproduction Protocol}
+\label{app:protocol}
+\subsection{Method Identity and Execution}
+The evaluated method is \texttt{ImageBalancedTRACE} with the single global mode \texttt{C}. It measures one candidate-preserving context-perturbed response, normalizes detached region weights within each source image, and averages the resulting objectives over active source images. The implementation is \path{trace_ovss/method/image_balanced.py}; the full-split worker is \path{tools/evolution_tuning/worker.py}, using the same model, candidate, optimization, and reconstruction code. There is no second probe in the selected mode, semantic-role branch, candidate deletion, dominance attenuation, fragment guard, or CLS loss.
+
+An episode starts from the pretrained parameters and a reset optimizer. The reset model constructs candidates and measures their supports once without gradients. Adaptation reuses fixed candidate locations and weights on unmodified crops, followed by final inference on those crops. Only visual LayerNorm affine parameters change. The four full-split settings execute independently from the same initial model and RNG state; their execution order rotates by episode. Uniform and Confidence use the source-image-normalized objective with weights one and initial confidence, respectively, and compute no diagnostic views. No Adapt performs reset-model inference without candidate diagnosis or optimization.
+
+The runtime uses deterministic PyTorch algorithms with errors on nondeterministic operations, \texttt{CUBLAS\_WORKSPACE\_CONFIG=:4096:8}, deterministic cuDNN, and disabled cuDNN benchmarking. Default attention dispatch remains enabled. Model seed 0 and the original complete evaluation order are fixed. Deterministic execution is not an independent replication or an uncertainty estimate.
+
+\subsection{Images, Crops, Tokens, and Candidates}
+A source image is the unit of objective normalization; a crop is an encoder input; a token is a spatial encoder output. The general loader extracts complete sliding-window crops of size $224\times224$ with stride 112, using row-major grid positions and no cross-crop component stitching. Crops retain their source-image IDs. The evaluated configuration first bilinearly resizes every RGB image to $224\times224$, so it yields one crop per source image. This one-crop setting is an evaluation configuration, not the definition of the multi-crop algorithm. ViT-L/14 uses $14\times14$-pixel patches, giving a $16\times16$ spatial-token grid for each crop; 14 is not the crop size.
+
+Let $\mathcal C$ be the supplied text-query vocabulary, including enabled query extensions, and let $\mathcal Y$ be the evaluation-category set. These sets need not coincide. On crop $b$, the reset-model distribution is
+\begin{equation}
+\pi^0_{b,i}(c\mid x_b)=
+\operatorname{softmax}_{c\in\mathcal C}
+z^{\mathrm{eval}}_{\theta_0}(x_b)_{i,c}.
+\end{equation}
+Four-connected components of its token-wise query argmax define proposals $R=(b_R,\Omega_R,c_R)$, with crop index $b_R$, nonempty token set $\Omega_R$, and predicted query $c_R$. Let $j(b)$ map a crop to its source image, and write $j_R=j(b_R)$ for bookkeeping; this is not an additional candidate component. The initial confidence is
+\begin{equation}
+\kappa_R=\frac{1}{|\Omega_R|}\sum_{i\in\Omega_R}
+\pi^0_{b_R,i}(c_R\mid x_{b_R}).
+\end{equation}
+Proposals from all crops of source image $j$ compete for its first $K$ positions, forming the selected set $\mathcal R_j$. Ranking uses descending $\kappa_R$, descending token area, ascending query index, and ascending component index; stable crop/component enumeration resolves remaining exact ties. There is no overlap union, cross-crop stitching, or minimum-area filter beyond nonemptiness. A valid-token mask excludes geometric padding, not ground-truth background. Distinct query extensions remain distinct components even if they map to the same category.
+
+\subsection{Exact Context Transform and Support}
+The C probe changes only the complement of a candidate's input-space mask. Denormalize crop $x_b$ to RGB pixels $u_b\in[0,255]^{3\times224\times224}$ using mean $(122.7709,116.7460,104.0937)$ and standard deviation $(68.5005,66.6322,70.3232)$. For channel $k$, let $\mu_{b,k}$ be its mean over the \emph{entire crop}, including candidate pixels. Define
+\begin{align}
+A(u_b)&=\operatorname{clip}_{[0,255]}
+\left(\operatorname{Shift}\bigl(\mu_b+0.35(u_b-\mu_b)\bigr)\right),\\
+\operatorname{Shift}(r,g,b)&=(g,b,r),\\
+u_R^{\mathrm{ctx}}&=M_R\odot u_{b_R}
+ +(1-M_R)\odot A(u_{b_R}),
+\end{align}
+where $M_R$ is nearest-neighbor upsampling of the original binary token mask. The view is renormalized before encoding. There is no random transform sampling or learned transform parameter.
+
+The detached C weight is the mean probability of the original query at its original token locations:
+\begin{equation}
+\rho_R=\frac{1}{|\Omega_R|}
+\sum_{i\in\Omega_R}\pi^0_{b_R,i}
+\bigl(c_R\mid\operatorname{Norm}(u_R^{\mathrm{ctx}})\bigr).
+\label{eq:app-C}
+\end{equation}
+The diagnostic branch returns token-grid logits without pixel interpolation. It does not re-extract components, match transformed masks, use a probability ratio, or measure a CLS response. Each selected candidate schedules exactly one diagnostic input; view batching changes calls, not that input count. The selected C branch never constructs the unused T view.
+
+Candidate preservation is geometric, not causal isolation. Candidate pixels remain unchanged, but the full-crop channel means depend on them, and the encoder's contextual interactions can mix information inside and outside the mask. The code's compatibility name \texttt{counterfactual\_support} denotes this specified perturbed response, not an identified causal counterfactual or a calibrated probability of update correctness.
+
+\subsection{Dense Readouts and Prompt Entropy}
+\label{app:readout}
+Diagnosis and final inference use entropy-weighted visual-layer aggregation and normalized mean prompt embeddings. Optimization instead uses uniform mean-layer aggregation and separate prompt embeddings. Both readouts use the last 18 visual outputs of reduced NACLIP ViT-L/14, blocks 7--24 indexed from one, with neighborhood standard deviation 5~\cite{hajimiri2025naclip}. The selected tensors are attention-branch outputs; the ordinary residual and MLP path propagates between blocks.
+
+Let $h_{\ell,b,i}$ be the selected pre-projection output, $\psi_\theta(h)=\mathrm{LN}_{\mathrm{post},\theta}(h)W_{\mathrm{proj}}$, and a hat denote unit-length normalization. For prompt $a\in\{1,\ldots,J\}$ and query $c$, $t_{a,c}$ is the normalized frozen text embedding, and $\bar t_c=\widehat{J^{-1}\sum_at_{a,c}}$, with $J=7$. The multiplier $\lambda=\exp(\ell_{\mathrm{CLIP}})$ is the frozen pretrained logit scale, not a tuned diagnostic temperature. Using $H(p)=-\sum_cp(c)\log p(c)$, inference first computes per-layer query logits and crop-specific entropy weights:
+\begin{align}
+d_{\ell,b,i}(c)&=\lambda\left\langle
+\widehat{\psi_\theta(h_{\ell,b,i})},\bar t_c\right\rangle,\\
+v_{\ell,b}&=\frac1N\sum_iH\!\left(
+\operatorname{softmax}_c d_{\ell,b,i}\right),\\
+w_{\ell,b}&=\frac{\exp(-v_{\ell,b})}{\sum_m\exp(-v_{m,b})}.
+\end{align}
+Here $N=256$ spatial tokens and the CLS token is excluded. Raw layer outputs are then combined before post-normalization and projection:
+\begin{equation}
+z^{\mathrm{eval}}_{b,i}(c)=\lambda\left\langle
+\widehat{\psi_\theta\!\left(\sum_\ell w_{\ell,b}h_{\ell,b,i}\right)},
+\bar t_c\right\rangle.
+\end{equation}
+This is not an average of per-layer probabilities. Diagnosis uses $\theta_0$; final inference uses the adapted parameters. For optimization, $p^a_{\theta,b,i}=\operatorname{softmax}_c z^{a,\mathrm{adapt}}_{b,i}$, with gradient-bearing prompt-specific logits
+\begin{equation}
+z^{a,\mathrm{adapt}}_{b,i}(c)=\lambda\left\langle
+\widehat{\psi_\theta\!\left(\frac1{18}\sum_\ell h_{\ell,b,i}\right)},
+t_{a,c}\right\rangle.
+\end{equation}
+Thus diagnostic probabilities and adaptation probabilities are related readouts, not interchangeable tensors.
+
+The seven fixed templates are:
+\begin{quote}\small
+\texttt{itap of a \{\}}\\
+\texttt{a bad photo of the \{\}.}\\
+\texttt{a origami \{\}.}\\
+\texttt{a photo of the large \{\}.}\\
+\texttt{a \{\} in a video game.}\\
+\texttt{art of the \{\}.}\\
+\texttt{a photo of the small \{\}.}
+\end{quote}
+Prompts and text parameters are frozen. The official OpenAI CLIP \texttt{ViT-L-14.pt} checkpoint~\cite{radford2021clip} has SHA-256 given by concatenating
+\begin{quote}\small\ttfamily
+b8cca3fd41ae0c99ba7e8951adf17d26\\
+7cdb84cd88be6f7c2e0eca1737a03836
+\end{quote}
+Resource hashes and the exact executed parameter names are retained with the frozen protocols.
+
+\subsection{Source-Image-Normalized Optimization}
+Let $\mathcal R_j^+=\{R\in\mathcal R_j:|\Omega_R|>0,\ \rho_R>\epsilon\}$, with $\epsilon=10^{-8}$, and $\mathcal I_+=\{j:\mathcal R_j^+\ne\varnothing\}$. The region entropy and objective are
+\begin{align}
+\overline H_R(\theta)&=\frac{1}{J|\Omega_R|}
+ \sum_{a=1}^J\sum_{i\in\Omega_R}H(p^a_{\theta,b_R,i}),\\
+Z_j&=\sum_{Q\in\mathcal R_j^+}\sg(\rho_Q),\\
+\alpha_{R\mid j}&=\frac{\sg(\rho_R)}{Z_j},\qquad R\in\mathcal R_j^+,\\
+\mathcal L_{\mathrm{TRACE}}(\theta)
+ &=\frac1{|\mathcal I_+|}\sum_{j\in\mathcal I_+}
+ \sum_{R\in\mathcal R_j^+}\alpha_{R\mid j}\,\overline H_R(\theta).
+\label{eq:app-image-loss}
+\end{align}
+The stop-gradient operator $\sg$ emphasizes that neither supports nor their normalizers are differentiated. Candidate indices, source IDs, and weights remain fixed throughout the episode. Entropy is averaged over prompts and tokens \emph{within each region}, not pooled over all candidate pixels. The original query defines the support measurement but is not a cross-entropy pseudo-label.
+
+Only images with an active nonempty region enter the outer denominator. With none, the tensor helper returns the graph-connected zero $0\sum H$ and the engine skips adaptation. The implementation groups terms by source ID, converts detached scalar weights to the entropy dtype, and uses a double-precision comparison of each summed denominator against $\epsilon$, falling back to one when the denominator does not exceed it. Equation~\ref{eq:app-image-loss} describes the finite active-score case. Crops of one image must share their source ID; treating each crop as a separate image would implement a different objective.
+
+Adam uses $\beta_1=0.9$, $\beta_2=0.999$, and zero weight decay. Trainable parameters include visual input/output LayerNorms and the normalization layers along the executed visual blocks. The final selected block's unused MLP normalization is frozen in the reduced architecture; earlier executed blocks remain differentiable even when their outputs are not selected for readout. Text encoding, projection weights, and the remaining backbone parameters stay frozen. No global image-level or CLS-token objective is added.
+
+\input{generated/tuned_full_configurations.tex}
+
+Table~\ref{tab:tuned-full-configurations} specifies the calibration-selected settings. Uniform, Confidence, and TRACE retain the same batch size, learning rate, steps, candidate limit, view batch size, and query-extension flag within each dataset. Only TRACE's settings are searched; the matched controls reuse them, so the comparison tests the effect of replacing its weighting signal at that operating point. Configurations and budgets need not match across datasets or external methods.
+
+\subsection{Pixel Reconstruction and Category Evaluation}
+Final reconstruction operates on query logits before category collapsing. For each crop, bilinearly upsample its adapted $16\times16$ query-logit grid to $224\times224$ with \texttt{align\_corners=False}. Place the crop logits at their sliding-window offsets, sum overlaps, and divide by the pixelwise coverage count (clamped below by one). The general implementation uses complete windows, does not add a forced terminal crop, and leaves uncovered positions at zero logits; the present one-crop square configuration covers every evaluated pixel. Crops from one source are reconstructed together, not scored as independent images.
+
+After reconstruction, apply the pixelwise query softmax to obtain $s_c(u)$. If $e(c)$ maps an extension query to its evaluation category, prediction is
+\begin{equation}
+g_y(u)=\max_{c:e(c)=y}s_c(u),\qquad
+\widehat Y(u)=\arg\max_{y\in\mathcal Y}g_y(u).
+\end{equation}
+This is a maximum after pixel softmax, not a sum of extension probabilities, a category softmax before reconstruction, or a category collapse before candidate construction. Without extensions, $e$ is the identity. Vocabulary files under \path{trace_ovss/resources/class_names/} define categories by nonempty lines and comma-separated extensions within a line: \texttt{cls\_voc20.txt}, \texttt{cls\_voc21.txt}, \texttt{cls\_context59.txt}, \texttt{cls\_context60.txt}, \texttt{cls\_coco\_object.txt}, \texttt{coco\_cd.txt}, \texttt{cls\_coco\_stuff.txt}, and \texttt{waterbirds\_seg.txt}.
+
+The complete evaluation populations are 1,449 images each for VOC20/VOC21, 5,105 each for PC59/PC60, 5,000 each for COCO Object/Stuff, 500 for COCO-CD, and 5,322 for Waterbirds-Seg. The VOC and PC pairs respectively use different category protocols on shared images. Labels are nearest-neighbor resized to the $224\times224$ evaluation grid. The category counts with positive union are 20, 21, 59, 60, 81, 171, 3, and 3 in the order VOC20, VOC21, PC59, PC60, Object, Stuff, CD, and Waterbirds. VOC21, PC60, Object, CD, and Waterbirds include background; VOC20/PC59 exclude background and Stuff uses 171 object/stuff categories. Ignore label 255 is excluded. Pooling intersections $I_y$ and unions $U_y$ over the complete split gives
+\begin{equation}
+\operatorname{mIoU}=\frac{100}{|\mathcal Y_+|}
+\sum_{y\in\mathcal Y_+}\frac{I_y}{U_y},
+\qquad \mathcal Y_+=\{y:U_y>0\}.
+\end{equation}
+This is not an average of per-image or candidate IoUs.
+
+\subsection{Frozen Evidence and Label Separation}
+The full evaluation is \path{trace_single_probe_waterbirds_full_20261029_0817} under \path{/home/wwww/hzl/results/}. It imports seven completed calibration selections from \path{trace_single_probe_tuning_20261029_0748}, then selects Waterbirds settings with the same search rule. Eight four-image RGB-only gates across the two stages compare the worker with direct \texttt{ImageBalancedTRACE(view\_mode="C")}; these check implementation identity, not segmentation accuracy. The runtime snapshots, checkpoint, inputs, and selected configurations are bound by their prepared manifests.
+
+All eight complete four-setting prediction sets are sealed before full-evaluation scoring. Prediction processes open RGB inputs but never annotation contents. Separate CPU scoring pools the saved final predictions. Per-dataset prediction/scoring records and the global barrier bind the 32 outcomes. The full continuation's prepared identity is the concatenation
+\begin{quote}\small\ttfamily
+4f3e54226f99230af48b2105372300d0\\
+6f31651515324b3ab99dbe138ff3cfa3
+\end{quote}
+The fixed C objective and transform are unchanged by parameter search. Saved source snapshots and selected configurations define each full result.
+
+These datasets and inherited starting settings have historical development exposure, including earlier validation-informed choices. New training-source parameter selection does not erase that history. Waterbirds additionally uses 256 existing training examples that also belong to its unchanged 5,322-image evaluation population. Its manifests, selection, and full table explicitly mark \texttt{development\_overlap} with overlap count 256. Thus, prediction-before-scoring separation prevents label access during adaptation, but does not make these experiments untouched held-out evaluations.
+
+\subsection{Per-Dataset Parameter Selection}
+For each dataset, a fixed 256-image training-source panel is selected with seed 2027. The C probe, transform, backbone, prompts, readouts, image geometry, and selected visual layers are fixed. Search varies only batch size, learning rate, update steps, and $K$, with at most 80 unique configurations per dataset. Coordinate search proceeds through those four quantities with coarse then local fine candidates; inherited configurations remain eligible. All completed, ineligible, positive, and negative outcomes are retained.
+
+Batch size tests integers 1--16 and its inherited setting, followed by local integer neighbors within three, bounded by 1--32. Learning-rate coarse choices are $10^{-5},3\times10^{-5},10^{-4},3\times10^{-4},5\times10^{-4},0.001,0.002,0.003,0.005,0.008,0.01,0.015,0.02$ plus the inherited value; fine candidates multiply the selected rate by $0.5,0.75,1,1.25,1.5,2$ within $[10^{-6},0.04]$. Steps test $1,3,5,8,12,16,24,32,48$ plus the inherited value, then neighbors within two, bounded by 1--64. $K$ tests $1,2,4,8,16,24,32,48$ plus the inherited value, then neighbors within two, bounded by 1--64. Duplicate configurations are evaluated once.
+
+Selection maximizes pooled calibration mIoU; configurations within 0.02 percentage points of the best prefer lower measured model-side time, then a fixed configuration tuple. Calibration predictions are sealed before each trial score. The seven-dataset stage evaluates 401 configurations; Waterbirds evaluates 54, for 455 in total. All eight selections are fixed before any new full scoring. No full score triggers further search, and Uniform/Confidence are not independently tuned. Historical exposure and Waterbirds overlap remain as stated above.
+
+\section{Objective Algebra and Interpretation}
+\label{app:theory}
+\subsection{Equal Source Budgets}
+Source-image normalization fixes each active image's total objective-coefficient mass. For a finite fixed active set, the within-image weights satisfy
+\begin{equation}
+\sum_{R\in\mathcal R_j^+}\alpha_{R\mid j}=1,\qquad
+\sum_{R\in\mathcal R_j^+}\frac{\alpha_{R\mid j}}{|\mathcal I_+|}
+=\frac1{|\mathcal I_+|}.
+\end{equation}
+In contrast, episode normalization assigns source image $j$ the mass $Z_j/\sum_{k\in\mathcal I_+}Z_k$. Equal image budgets therefore remove this explicit competition through a shared sum-of-support denominator. They do not equalize candidate counts, region areas, gradient norms, Adam updates, or segmentation accuracy. Relative weights and the number of selected regions still affect allocation within an image.
+
+\subsection{Rescaling and Singleton Limits}
+Within-image positive rescaling cancels only while the active set and numerical behavior remain unchanged. Replacing every $\rho_R$ in source image $j$ by $\gamma_j\rho_R$, $\gamma_j>0$, leaves $\alpha_{R\mid j}$ and the objective unchanged under those conditions. If an image has exactly one active region, its within-image weight is one and its full objective coefficient is $1/|\mathcal I_+|$, regardless of that region's positive support; other images can still have multiple active regions. With a single active source image, the objective equals the episode-normalized objective for the same candidates and weights. These identities concern normalization, not empirical equivalence between a single probe and two probes.
+
+A low absolute support does not by itself suppress an active image's normalized contribution. Threshold crossings change the active set, and changing the number of active images changes the outer factor. Thus the C score supplies relative allocation within an image, not an absolute rejection or update-safety guarantee.
+
+\subsection{Gradient and Area Boundaries}
+Detached coefficients give
+\begin{equation}
+\nabla_\theta\mathcal L_{\mathrm{TRACE}}
+=\frac1{|\mathcal I_+|}\sum_{j\in\mathcal I_+}
+\sum_{R\in\mathcal R_j^+}\alpha_{R\mid j}
+\nabla_\theta\overline H_R(\theta).
+\end{equation}
+A token in region $R$ has explicit entropy coefficient
+$\alpha_{R\mid j_R}/(|\mathcal I_+|J|\Omega_R|)$.
+Region averaging removes a direct area multiplier on the region's total coefficient; it does not remove area-dependent features, candidate selection, or shared-parameter interactions. Across overlapping crops, distinct proposals can also describe overlapping source pixels.
+
+Equal source budgets do not imply batch invariance. Gradients still interact through common visual parameters, and Adam applied to a joint objective is not equivalent to independent per-image updates. Changing episode composition changes those interactions even when all sources retain equal coefficient mass. Neither this algebra nor a high C response establishes that an update improves unknown ground-truth labels.
+
+\section{Global Mode Selection and Training-Source Confirmation}
+\label{app:selection}
+\subsection{Cohorts and Locked Selection Rule}
+One global probe mode is selected using PC60 and COCO Object training-source calibration only. For each dataset, a label-free hash ranking with selection seed 20261029 partitions 128 calibration images and 256 distinct confirmation images, after excluding identifiable historical development IDs and official evaluation identities. Confirmation uses the original sorted order and two permutations with seeds 20261030 and 20261031. Model seed 0 and inherited dataset settings remain unchanged. The three orders reuse the same images and are not independent replicates.
+
+The six arms are episode-normalized minimum (\emph{Old min}), image-normalized Uniform, Confidence, T, C, and minimum. In this comparison, $C_R$ denotes exactly the support $\rho_R$ in Eq.~\ref{eq:app-C}, not an additional score. T measures the original query after replacing context with replicated grayscale followed by $9\times9$ stride-one average blur with padding four and the library's default padded averaging; grayscale weights are $(0.2989,0.5870,0.1140)$. Candidate pixels remain unchanged. Calling that response $T_R$, the minimum alternatives use $\min(T_R,C_R)$. Only Old min uses episode normalization. T and C require one diagnostic input per candidate; either minimum arm requires both. These are fixed alternatives for selection/comparison, not components of the selected C method.
+
+For mode $m\in\{T,C,\min\}$ and calibration dataset $d$, let $\Delta_{d,m}$ be mIoU minus image Confidence. The locked rule maximizes $\min_d\Delta_{d,m}$. Modes within 0.02 percentage points of the best worst-dataset margin are tied; ties prefer fewer actual calibration diagnostic encoder inputs, then larger unweighted mean margin, then the fixed order T, C, minimum. Both datasets and all calibration arms are prediction-sealed before calibration scoring. The selected mode is sealed before any confirmation prediction, and all confirmation arms/orders are sealed before confirmation scoring.
+
+\subsection{Selection Outcome and Scope}
+C is selected despite a negative calibration margin on PC60. Its calibration differences from image Confidence are $-0.272957$ pp on PC60 and $+0.579561$ pp on Object; its worst-dataset margin exceeds T's $-0.518667$ and minimum's $-0.308598$. The latter difference is outside the 0.02-pp tie band. Confirmation does not reselect the mode.
+
+\input{generated/image_budget_comparison.tex}
+
+Selected C exceeds image Confidence in all three confirmation orders on both datasets: $+0.069026$ to $+0.176377$ pp on PC60 and $+2.100626$ to $+2.924691$ pp on Object. This is not best-arm superiority. Old min is higher than C in all three PC60 orders, and T is higher than C in all three Object orders. The tables retain every arm and signed difference, including negative results.
+
+The cohort evidence is prospective only relative to the documented exclusion inventory. Exact membership of historical July 4,096-image candidate pools remains uncertified because surviving loader/train-split records do not establish the necessary mapping. Neither global never-seen status nor exhaustive historical exclusion is established. The cohort source is \path{trace_image_budget_20261029_0233}, including \texttt{SELECTION\_SEALED.json}, under the results directory above. The selection seal is pinned by the new full suite. Neither these dependent reorderings nor the full seed-0 run supplies independent confidence intervals, seed dispersion, bootstrap inference, or significance.
+
+The common C mode is retained during subsequent per-dataset parameter search and all eight full evaluations. The probe-selection tables above retain their own fixed configurations and training-source populations. They are not the tuned full results in main-paper Table~\mainref{tab:tuned-full-comparison}, and do not select a different probe for each dataset.
+
+\section{Computation and Timing Scope}
+\label{app:cost}
+The selected C method independently constructs candidates, evaluates one context view per selected candidate, adapts, and reconstructs predictions. Uniform and Confidence omit diagnostic forwards but retain candidate construction and optimization. For $P$ input crops, $S$ executed update steps, and $n$ selected candidates in a nonempty episode, the standard encoder-input schedules are $(S+2)P+n$ for C and $(S+2)P$ for its zero-view controls: one initial candidate pass, $S$ adaptation passes, and one final inference pass. T has the same diagnostic-input count as C; a two-view minimum adds $2n$ instead. Actual counters, rather than this nonempty-episode formula, govern empty or skipped episodes.
+
+Diagnostic inputs and batched encoder calls are different costs. A one-probe design halves diagnostic inputs relative to a two-probe design with identical candidates, not total model work or wall time. The full suite contains No Adapt, Uniform, Confidence, and C, but no minimum arm; it therefore provides no full-split two-probe timing comparison. No Adapt uses one reset inference pass and no adaptation. Historical cohort timing ratios are not transferred to the tuned full results.
+
+Full-split costs use synchronized model-side timers around reset, candidate construction, requested diagnostics, adaptation, final reconstruction, and CPU prediction transfer. They include the full worker's observation-only finite-value checks and accounting hooks; these checks abort on nonfinite logits, gradients, parameters, or Adam state without changing the objective, adding encoder passes, or certifying semantic safety. Hook setup and artifact serialization are outside the timer. Model loading, RGB decode, H2D/geometry preparation, disk writes, and offline scoring are excluded. This is not end-to-end throughput. Episode 0 is omitted from timing only; all its predictions, accuracy counts, and encoder work are retained. The timing denominator is therefore total source images minus the first episode, whereas work counts use all source images.
+
+\input{generated/tuned_full_cost.tex}
+
+The calibration/confirmation cost tables below retain all six independently executed arms and every order on their own cohorts. Their timing scope and warmup convention match the definitions above, but they are separate measurements from the guarded full-split worker. They do not establish equal-budget comparisons with external methods.
+
+\input{generated/image_budget_cost.tex}
+
+\section{Qualitative Evidence and Selection Limits}
+\label{app:figures}
+A candidate illustration is an input-space view paired with a stored token-space measurement. The full C artifacts retain candidate query/category identity, source/crop IDs, confidence, measured C, detached objective coefficient, and lossless original token masks. Candidate-preserving context views can be rendered from these masks and source RGB inputs without a new diagnostic inference. Display names denote predicted queries or their recorded category mapping, not ground-truth identification. The original token footprint, not a newly segmented region in the transformed image, defines the displayed support.
+
+Unmeasured T is unavailable in the C full suite, not zero. The independently executed No Adapt setting supplies complete reset-model category predictions; the candidate receipt itself is not such a map. The figures use the saved matched Confidence/C outputs and measured C supports. No old two-view score or segmentation is substituted into these examples.
+
+The teaser selects two support extremes without ground truth. Within the first 400 images of each frozen dataset order, eligible candidates are non-background predictions with $\kappa_R\geq0.9$ and 16--192 native tokens. The highest C response in PC60 and lowest in Object are selected, breaking ties by source-image index then receipt candidate index. Image indices are zero-based; candidate indices refer to the recorded episode receipt. Exact identities and supports are retained in \path{figure/tuned/image_full_provenance.json}. The rendered context views use the float32 transform and original $16\times16$ masks; displayed supports are saved measurements, not new model evaluations.
+
+Segmentation cases are offline named-class IoU extremes among the first 400 images per dataset. For each image, choose its largest non-background ground-truth category with at least 128 valid pixels, breaking area ties by the lowest category ID. Compute that single category's IoU for saved Confidence and C predictions. Select the largest C-minus-Confidence difference for CD, Object, and PC60, and the smallest for VOC21; ties use the lowest image index. These values are per-image named-class IoUs, not image-averaged or dataset mIoU. The Confidence column is the matched allocation control, not MLMP.
+
+Selected extremes illustrate both directions of change, not their frequency. Ground truth enters segmentation-display selection only after the global prediction seal and never enters adaptation or mode selection. Exact identities, selection rules, stored measurements, rendering checks, and source seals are in \path{figure/tuned/image_full_provenance.json}. The displays do not establish a causal effect of an individual region's coefficient under the joint update.
+
+\section{Reported and Local Reference Protocols}
+\label{app:native}
+Reported operating points (R) and local measurements (L) have different evidential roles. For VOC20, VOC21, PC60, COCO Object, and COCO-Stuff, MLMP's main Table 5 reports clean NACLIP ViT-L/14 values 83.76, 50.78, 27.99, 28.84, and 21.25~\cite{noori2025mlmp}. TRACE scores are 83.614345, 53.380927, 30.782843, 32.671159, and 21.911536. Four exceed the reported values, while VOC20 is lower by 0.145655 pp. A shared backbone family does not certify identical checkpoints, query vocabularies, loaders, readouts, optimization budgets, or tuning histories.
+
+COCO-CD has a separate completed local native reference. The adapting native baselines retain their backend behavior and prompts with learning rate 0.001 and 10 updates, whereas C uses Table~\ref{tab:tuned-full-configurations}. The best retained native baseline is TENT~\cite{wang2021tent} at 72.200299, compared with C at 74.231207. These runs share the ordered image population, but differ in episode composition and native protocols; the 2.030908-pp difference is not an equal-budget attribution. The matched No Adapt in main-paper Table~\mainref{tab:tuned-full-comparison}, rather than the historical native No Adapt, establishes the current method's adaptation gain.
+
+Published statistics remain attributed to their sources and are not pooled with local deterministic results. Existing published MLMP values are used without additional MLMP reruns. No local WATT or CLIPArTT evaluation is claimed. The within-implementation Uniform/Confidence/C controls, training-source selection comparisons, cross-paper operating points, and local native CD reference answer different questions and are not interchangeable.
+

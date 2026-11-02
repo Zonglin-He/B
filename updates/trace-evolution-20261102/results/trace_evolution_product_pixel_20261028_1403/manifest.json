@@ -1,0 +1,25 @@
+{
+  "parent": "/home/wwww/hzl/results/trace_self_evolution_20261028_1338",
+  "parent_service": "trace-self-evolution-20261028-1338.service",
+  "parent_manifest_sha256": "98b3f2adeb0d10b2f8eb72c751dc34abf9b007dcefe498d54e55d3830fffa20a",
+  "source_sha256": {
+    "README.md": "550f2725d82f7b43fc1d8fbc6abe561f49c8e5c783aab38697c4146dba30b09f",
+    "__init__.py": "fad94868a469f43ea2b6f184b8a994881e94338da7c9afc1e7c24888d390b676",
+    "controller.py": "fc1435f35bf739ea89046e1c8844b887c12c33d23dbec29b7af46080383350c8",
+    "run_cell.py": "81117cef54a7f9dc80515c671d52acf3f39af51c63e03bea9fb3bfda8973d3f4",
+    "test_controller.py": "5ebc29b07a1e9c1c53ac215e80997af4c3d494f18df67dc3a9f93b73c395f9b0",
+    "test_run_cell.py": "a6e8789bd345f8447e14c2d69d1d4c09b144a34721c7fa1908bd3b3b0f4a40f5"
+  },
+  "datasets": {
+    "pc60": 5105,
+    "coco_object": 5000
+  },
+  "controls": [
+    "product",
+    "pixel_normalized"
+  ],
+  "parameter_search": false,
+  "automatic_retry": false,
+  "candidate_cache_reuse": true,
+  "scope": "Matched source-tracing aggregation and region-normalization controls, not standalone cost."
+}

@@ -1,0 +1,73 @@
+{
+  "status": "predicted",
+  "images": 5000,
+  "full_split": true,
+  "timings": {
+    "image_uniform": {
+      "measured_episodes": 357,
+      "measured_images": 4986,
+      "seconds": 1183.366094934754,
+      "seconds_per_image": 0.23733776472818974,
+      "images_per_second": 4.213404475032646,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_confidence": {
+      "measured_episodes": 357,
+      "measured_images": 4986,
+      "seconds": 1183.7447461299598,
+      "seconds_per_image": 0.23741370760729238,
+      "images_per_second": 4.21205670927016,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_C": {
+      "measured_episodes": 357,
+      "measured_images": 4986,
+      "seconds": 1455.9149827593938,
+      "seconds_per_image": 0.2920005982269141,
+      "images_per_second": 3.4246505180886597,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "costs": {
+    "image_uniform": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 716,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 10382,
+      "adapt_forward_inputs": 145000,
+      "encoder_calls": 11098,
+      "encoder_inputs": 155000,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_confidence": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 716,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 10382,
+      "adapt_forward_inputs": 145000,
+      "encoder_calls": 11098,
+      "encoder_inputs": 155000,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_C": {
+      "diagnostic_forward_calls": 10662,
+      "diagnostic_forward_inputs": 168669,
+      "eval_forward_calls": 716,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 10382,
+      "adapt_forward_inputs": 145000,
+      "encoder_calls": 21760,
+      "encoder_inputs": 323669,
+      "diagnostic_encoder_calls": 10662,
+      "diagnostic_encoder_inputs": 168669
+    }
+  },
+  "timing_scope": "Synchronized CUDA wallclock per independent arm: episodic reset, initial readout, candidate construction/selection, requested diagnostic views, LayerNorm optimization, final inference and reconstruction/CPU prediction transfer. Includes accounting hooks. Excludes model setup/loading, RGB decode/H2D/geometry preparation common to arms, post-run provenance checks, prediction/receipt disk writes, and offline scoring. Exclude only first complete episode (episode 0) per arm from timing aggregates; retain every prediction, count and accuracy observation including warmup."
+}

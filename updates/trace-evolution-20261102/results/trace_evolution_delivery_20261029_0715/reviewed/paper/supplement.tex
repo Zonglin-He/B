@@ -1,0 +1,16 @@
+\documentclass[letterpaper]{article}
+\input{preamble}
+\nocopyright
+\usepackage{xr}
+\IfFileExists{build/main.aux}{\externaldocument[main-]{build/main}}{\externaldocument[main-]{main}}
+\renewcommand{\mainref}[1]{\ref{main-#1}}
+\title{Supplementary Material for TRACE:\\Context-Probed Region Allocation for Test-Time Adaptation\\in Open-Vocabulary Semantic Segmentation}
+\author{Anonymous Authors}
+\affiliations{}
+\begin{document}
+\raggedbottom
+\maketitle
+\appendix
+\input{appendix}
+\bibliography{references}
+\end{document}

@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\caption{Fixed 128-image diagnostic per dataset using reused, development-exposed evaluation images; not full-split or independent generalization evidence. Retained uses inherited settings, Common uses prelocked batch 2, LR 0.001, 10 steps, $K=16$, view batch 16, and Regrouped changes episode ordering at retained settings. Vocabulary is retained in every condition. Pooled mIoU ($\uparrow$) includes every image, including warmup; bold marks the actual unrounded row maximum. $\Delta$ is min minus Confidence in percentage points. All conditions were locked before outcomes; no significance, necessity, or full-split claim.}
+\label{tab:standalone-comparison}
+\centering\small
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+Dataset & Condition & Uniform & Confidence & T & C & TRACE (min) & $\Delta$ \\
+\midrule
+PC60 & Retained & $29.90$ & $\mathbf{30.14}$ & $30.00$ & $29.95$ & $30.12$ & $-0.03$ \\
+PC60 & Common & $29.21$ & $29.23$ & $29.46$ & $\mathbf{29.59}$ & $29.55$ & $+0.32$ \\
+PC60 & Regrouped & $30.16$ & $30.28$ & $30.72$ & $30.30$ & $\mathbf{30.89}$ & $+0.61$ \\
+COCO Object & Retained & $26.33$ & $26.74$ & $\mathbf{28.11}$ & $27.65$ & $27.46$ & $+0.72$ \\
+COCO Object & Common & $26.40$ & $\mathbf{26.41}$ & $26.06$ & $26.07$ & $25.96$ & $-0.45$ \\
+COCO Object & Regrouped & $25.66$ & $26.39$ & $\mathbf{27.71}$ & $27.09$ & $27.44$ & $+1.05$ \\
+\bottomrule
+\end{tabular}
+\end{table*}

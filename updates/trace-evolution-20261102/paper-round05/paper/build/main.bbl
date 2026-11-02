@@ -1,0 +1,155 @@
+\begin{thebibliography}{22}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Cho et~al.(2024)}]{cho2024catseg}
+Cho, S.; et~al. 2024.
+\newblock CAT-Seg: Cost Aggregation for Open-Vocabulary Semantic Segmentation.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}.
+
+\bibitem[{De~Silva et~al.(2025)De~Silva, Samaraweera, Wanigathunga,
+  Kariyawasam, Ranasinghe, Naseer, and Rodrigo}]{desilva2025segtto}
+De~Silva, U.; Samaraweera, D.; Wanigathunga, S.; Kariyawasam, K.; Ranasinghe,
+  K.; Naseer, M.; and Rodrigo, R. 2025.
+\newblock Test-Time Optimization for Domain Adaptive Open Vocabulary
+  Segmentation.
+\newblock \emph{arXiv preprint arXiv:2501.04696}.
+
+\bibitem[{Fong, Patrick, and Vedaldi(2019)}]{fong2019extremal}
+Fong, R.; Patrick, M.; and Vedaldi, A. 2019.
+\newblock Understanding Deep Networks via Extremal Perturbations and Smooth
+  Masks.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision},
+  2950--2958.
+
+\bibitem[{Ghiasi et~al.(2022)Ghiasi, Gu, Cui, and Lin}]{ghiasi2022openseg}
+Ghiasi, G.; Gu, X.; Cui, Y.; and Lin, T.-Y. 2022.
+\newblock Scaling Open-Vocabulary Image Segmentation with Image-Level Labels.
+\newblock In \emph{European Conference on Computer Vision}.
+
+\bibitem[{Hajimiri, Ben~Ayed, and Dolz(2025)}]{hajimiri2025naclip}
+Hajimiri, S.; Ben~Ayed, I.; and Dolz, J. 2025.
+\newblock Pay Attention to Your Neighbours: Training-Free Open-Vocabulary
+  Semantic Segmentation.
+\newblock In \emph{IEEE/CVF Winter Conference on Applications of Computer
+  Vision}.
+
+\bibitem[{Kim et~al.(2025)Kim, Ju, Han, Yang, and Hwang}]{kim2025cass}
+Kim, C.; Ju, D.; Han, W.; Yang, M.-H.; and Hwang, S.~J. 2025.
+\newblock Distilling Spectral Graph for Object-Context Aware Open-Vocabulary
+  Semantic Segmentation.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, 15033--15042.
+
+\bibitem[{Li et~al.(2025)Li, Li, Zeng, Wang, Hou, and Cheng}]{li2025densevlm}
+Li, Y.; Li, Y.; Zeng, Q.; Wang, W.; Hou, Q.; and Cheng, M.-M. 2025.
+\newblock Unbiased Region-Language Alignment for Open-Vocabulary Dense
+  Prediction.
+\newblock In \emph{IEEE/CVF International Conference on Computer Vision}.
+
+\bibitem[{Liang et~al.(2023)Liang, Wu, Dai, Li, Zhao, Zhang, Zhang, Vajda, and
+  Marculescu}]{liang2023ovseg}
+Liang, F.; Wu, B.; Dai, X.; Li, K.; Zhao, Y.; Zhang, H.; Zhang, P.; Vajda, P.;
+  and Marculescu, D. 2023.
+\newblock Open-Vocabulary Semantic Segmentation with Mask-Adapted CLIP.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}.
+
+\bibitem[{Mukhoti et~al.(2023)Mukhoti, Lin, Poursaeed, Wang, Shah, Torr, and
+  Lim}]{mukhoti2023pacl}
+Mukhoti, J.; Lin, T.-Y.; Poursaeed, O.; Wang, R.; Shah, A.; Torr, P. H.~S.; and
+  Lim, S.-N. 2023.
+\newblock Open Vocabulary Semantic Segmentation with Patch Aligned Contrastive
+  Learning.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}, 19413--19423.
+
+\bibitem[{Niu et~al.(2022)Niu, Wu, Zhang, Chen, Zheng, Zhao, and
+  Tan}]{niu2022eata}
+Niu, S.; Wu, J.; Zhang, Y.; Chen, Y.; Zheng, S.; Zhao, P.; and Tan, M. 2022.
+\newblock Efficient Test-Time Model Adaptation without Forgetting.
+\newblock In \emph{International Conference on Machine Learning}, 16888--16905.
+
+\bibitem[{Niu et~al.(2023)Niu, Wu, Zhang, Wen, Chen, Zhao, and
+  Tan}]{niu2023sar}
+Niu, S.; Wu, J.; Zhang, Y.; Wen, Z.; Chen, Y.; Zhao, P.; and Tan, M. 2023.
+\newblock Towards Stable Test-Time Adaptation in Dynamic Wild World.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Noori et~al.(2025)Noori, Osowiechi, Vargas~Hakim, Bahri, Yazdanpanah,
+  Dastani, Beizaee, Ben~Ayed, and Desrosiers}]{noori2025mlmp}
+Noori, M.; Osowiechi, D.; Vargas~Hakim, G.~A.; Bahri, A.; Yazdanpanah, M.;
+  Dastani, S.; Beizaee, F.; Ben~Ayed, I.; and Desrosiers, C. 2025.
+\newblock Test-Time Adaptation of Vision-Language Models for Open-Vocabulary
+  Semantic Segmentation.
+\newblock In \emph{Advances in Neural Information Processing Systems}.
+
+\bibitem[{Osowiechi et~al.(2024)Osowiechi, Noori, Vargas~Hakim, Yazdanpanah,
+  Bahri, Cheraghalikhani, Dastani, Beizaee, Ben~Ayed, and
+  Desrosiers}]{osowiechi2024watt}
+Osowiechi, D.; Noori, M.; Vargas~Hakim, G.~A.; Yazdanpanah, M.; Bahri, A.;
+  Cheraghalikhani, M.; Dastani, S.; Beizaee, F.; Ben~Ayed, I.; and Desrosiers,
+  C. 2024.
+\newblock WATT: Weight Average Test-Time Adaptation of CLIP.
+\newblock In \emph{Advances in Neural Information Processing Systems}.
+
+\bibitem[{Qorbani et~al.(2025)}]{qorbani2025semla}
+Qorbani, R.; et~al. 2025.
+\newblock Semantic Library Adaptation: LoRA Retrieval and Fusion for
+  Open-Vocabulary Semantic Segmentation.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}.
+
+\bibitem[{Radford et~al.(2021)Radford, Kim, Hallacy, Ramesh, Goh, Agarwal,
+  Sastry, Askell, Mishkin, Clark, Krueger, and Sutskever}]{radford2021clip}
+Radford, A.; Kim, J.~W.; Hallacy, C.; Ramesh, A.; Goh, G.; Agarwal, S.; Sastry,
+  G.; Askell, A.; Mishkin, P.; Clark, J.; Krueger, G.; and Sutskever, I. 2021.
+\newblock Learning Transferable Visual Models From Natural Language
+  Supervision.
+\newblock In \emph{International Conference on Machine Learning}.
+
+\bibitem[{Shao et~al.(2024)Shao, Tian, Zhao, and Su}]{shao2024cliptrase}
+Shao, T.; Tian, Z.; Zhao, H.; and Su, J. 2024.
+\newblock Explore the Potential of {CLIP} for Training-Free Open Vocabulary
+  Semantic Segmentation.
+\newblock In \emph{European Conference on Computer Vision}.
+
+\bibitem[{Shu et~al.(2022)Shu, Nie, Huang, Yu, Goldstein, Anandkumar, and
+  Xiao}]{shu2022tpt}
+Shu, M.; Nie, W.; Huang, D.-A.; Yu, Z.; Goldstein, T.; Anandkumar, A.; and
+  Xiao, C. 2022.
+\newblock Test-Time Prompt Tuning for Zero-Shot Generalization in
+  Vision-Language Models.
+\newblock In \emph{Advances in Neural Information Processing Systems}.
+
+\bibitem[{Wang et~al.(2021)Wang, Shelhamer, Liu, Olshausen, and
+  Darrell}]{wang2021tent}
+Wang, D.; Shelhamer, E.; Liu, S.; Olshausen, B.; and Darrell, T. 2021.
+\newblock Tent: Fully Test-Time Adaptation by Entropy Minimization.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Wang et~al.(2022)Wang, Fink, Van~Gool, and Dai}]{wang2022cotta}
+Wang, Q.; Fink, O.; Van~Gool, L.; and Dai, D. 2022.
+\newblock Continual Test-Time Domain Adaptation.
+\newblock In \emph{IEEE/CVF Conference on Computer Vision and Pattern
+  Recognition}.
+
+\bibitem[{Wu et~al.(2024)Wu, Zhang, Xu, Jin, Li, Liu, and Loy}]{wu2024clipself}
+Wu, S.; Zhang, W.; Xu, L.; Jin, S.; Li, X.; Liu, W.; and Loy, C.~C. 2024.
+\newblock {CLIPSelf}: Vision Transformer Distills Itself for Open-Vocabulary
+  Dense Prediction.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Xiao et~al.(2021)Xiao, Engstrom, Ilyas, and
+  Madry}]{xiao2021backgrounds}
+Xiao, K.~Y.; Engstrom, L.; Ilyas, A.; and Madry, A. 2021.
+\newblock Noise or Signal: The Role of Image Backgrounds in Object Recognition.
+\newblock In \emph{International Conference on Learning Representations}.
+
+\bibitem[{Zhang et~al.(2020)Zhang, Zhang, Tang, Hua, and Sun}]{zhang2020conta}
+Zhang, D.; Zhang, H.; Tang, J.; Hua, X.-S.; and Sun, Q. 2020.
+\newblock Causal Intervention for Weakly-Supervised Semantic Segmentation.
+\newblock In \emph{Advances in Neural Information Processing Systems},
+  volume~33, 655--666.
+
+\end{thebibliography}

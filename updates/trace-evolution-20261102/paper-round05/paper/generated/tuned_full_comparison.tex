@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\caption{Full-population mIoU (\%, seed 0). Uniform and Confidence use the TRACE-selected configuration within each dataset, without separate tuning. All splits retain historical development exposure; Waterbirds includes all 256 calibration sources among its 5,322 images. $\Delta$ is TRACE minus Confidence in percentage points; Object/Stuff denote COCO Object/COCO-Stuff.}
+\label{tab:tuned-full-comparison}
+\centering\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Dataset & Images & No Adapt & Uniform & Confidence & TRACE & $\Delta$ \\
+\midrule
+VOC20 & 1,449 & 79.04 & 81.93 & 82.24 & 83.61 & +1.37 \\
+VOC21 & 1,449 & 49.66 & 47.36 & 50.25 & 53.38 & +3.13 \\
+PC59 & 5,105 & 31.59 & 32.92 & 33.17 & 33.59 & +0.41 \\
+PC60 & 5,105 & 28.95 & 30.59 & 30.57 & 30.78 & +0.21 \\
+Object & 5,000 & 29.65 & 27.51 & 29.36 & 32.67 & +3.31 \\
+Stuff & 5,000 & 20.19 & 21.80 & 21.80 & 21.91 & +0.11 \\
+COCO-CD & 500 & 62.82 & 60.15 & 64.66 & 74.23 & +9.57 \\
+Waterbirds & 5,322 & 47.46 & 41.62 & 44.36 & 56.08 & +11.72 \\
+\bottomrule
+\end{tabular}
+\end{table*}

@@ -1,0 +1,124 @@
+{
+  "status": "predicted",
+  "images": 5000,
+  "arms": [
+    "no_adapt",
+    "image_uniform",
+    "image_confidence",
+    "image_C"
+  ],
+  "config": {
+    "dataset": "COCOObjectDataset",
+    "data_subdir": "coco_stuff",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 13,
+    "lr": 0.00375,
+    "steps": 30,
+    "trace_max_regions": 35,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+  },
+  "timings": {
+    "no_adapt": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 16.093943072482944,
+      "seconds_per_image": 0.003227179280626217,
+      "images_per_second": 309.8681272538275,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_uniform": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1300.7432388719171,
+      "seconds_per_image": 0.26082679744774756,
+      "images_per_second": 3.8339618849950945,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_confidence": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1302.135070135817,
+      "seconds_per_image": 0.26110588933944595,
+      "images_per_second": 3.8298638247104733,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_C": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1597.6209577349946,
+      "seconds_per_image": 0.32035712005915273,
+      "images_per_second": 3.121516387134938,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "costs": {
+    "no_adapt": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 385,
+      "eval_forward_inputs": 5000,
+      "adapt_forward_calls": 0,
+      "adapt_forward_inputs": 0,
+      "encoder_calls": 385,
+      "encoder_inputs": 5000,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_uniform": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 12320,
+      "encoder_inputs": 160000,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_confidence": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 12320,
+      "encoder_inputs": 160000,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_C": {
+      "diagnostic_forward_calls": 11058,
+      "diagnostic_forward_inputs": 173503,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 23378,
+      "encoder_inputs": 333503,
+      "diagnostic_encoder_calls": 11058,
+      "diagnostic_encoder_inputs": 173503
+    }
+  },
+  "timing_scope": "Synchronized model-side wallclock: exact reset/state check, candidate admission, diagnostic views, optimization, final inference/reconstruction/CPU transfer and observation hooks. NoAdapt is reset plus evaluation only. Excludes setup, RGB decode/H2D/geometry, disk writes and offline scoring. Episode 0 is warmup, retained in all counts and scores.",
+  "dataset": "coco_object",
+  "stage": "full",
+  "seed": 0,
+  "calibration": false,
+  "full_split": true
+}

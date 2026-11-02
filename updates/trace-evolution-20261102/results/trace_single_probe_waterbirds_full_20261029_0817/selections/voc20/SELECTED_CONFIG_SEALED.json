@@ -1,0 +1,346 @@
+{
+  "dataset": "voc20",
+  "config": {
+    "dataset": "PascalVOC20Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 2,
+    "lr": 0.0015,
+    "steps": 9,
+    "trace_max_regions": 8,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "selected_trial": {
+    "dataset": "voc20",
+    "stage": "lr/fine",
+    "trial": 29,
+    "status": "completed",
+    "config": {
+      "dataset": "PascalVOC20Dataset",
+      "data_subdir": "VOCdevkit/VOC2012",
+      "resize": [
+        224,
+        224
+      ],
+      "patch_size": [
+        224,
+        224
+      ],
+      "patch_stride": 112,
+      "batch_size": 2,
+      "lr": 0.0015,
+      "steps": 9,
+      "trace_max_regions": 8,
+      "class_extensions": true,
+      "trace_view_batch_size": 16,
+      "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+    },
+    "mIoU": 81.37957351872083,
+    "ms_per_image": 174.49482622021063,
+    "images": 256,
+    "full_split": false,
+    "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/029_78a5b72e144cef6f251720d9/result.json",
+    "scored_seal_sha256": "4e4e8f1bcab229120fc7938065a18d0cc344ee8a49154fd9291b9c3504e59639"
+  },
+  "unique_trials": 55,
+  "all_trials": [
+    {
+      "key": "91da1d500253cb81c632314e",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/000_91da1d500253cb81c632314e/result.json"
+    },
+    {
+      "key": "6218da143e363973f565d226",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/001_6218da143e363973f565d226/result.json"
+    },
+    {
+      "key": "cf942356526de093525f80eb",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/002_cf942356526de093525f80eb/result.json"
+    },
+    {
+      "key": "02b2bba6a882b2166f4f9153",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/003_02b2bba6a882b2166f4f9153/result.json"
+    },
+    {
+      "key": "911bd568e69ae8d5e837f76f",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/004_911bd568e69ae8d5e837f76f/result.json"
+    },
+    {
+      "key": "8d6947eb4eb20b1dd85a3764",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/005_8d6947eb4eb20b1dd85a3764/result.json"
+    },
+    {
+      "key": "e96a173b749a3746e822d2f0",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/006_e96a173b749a3746e822d2f0/result.json"
+    },
+    {
+      "key": "f7d64f06f9f4589fca1ea042",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/007_f7d64f06f9f4589fca1ea042/result.json"
+    },
+    {
+      "key": "51892336e7ed5fa43b2210fe",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/008_51892336e7ed5fa43b2210fe/result.json"
+    },
+    {
+      "key": "4ca729180f51d43efbaf15d0",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/009_4ca729180f51d43efbaf15d0/result.json"
+    },
+    {
+      "key": "35b6c1522a059fe4cddd82cf",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/010_35b6c1522a059fe4cddd82cf/result.json"
+    },
+    {
+      "key": "5fa03a444b9bd7882ebb8d4a",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/011_5fa03a444b9bd7882ebb8d4a/result.json"
+    },
+    {
+      "key": "6aede015efa19c4a6906de1b",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/012_6aede015efa19c4a6906de1b/result.json"
+    },
+    {
+      "key": "e07c3913fb7ea9e754cc2b6f",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/013_e07c3913fb7ea9e754cc2b6f/result.json"
+    },
+    {
+      "key": "cc7d63aaec135b1d900e0b15",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/014_cc7d63aaec135b1d900e0b15/result.json"
+    },
+    {
+      "key": "2ab8dd768d18d029df7f4f1a",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/015_2ab8dd768d18d029df7f4f1a/result.json"
+    },
+    {
+      "key": "e7e282a4df0faa8b033bbd49",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/016_e7e282a4df0faa8b033bbd49/result.json"
+    },
+    {
+      "key": "2f3147e9ced12209d5f78dcc",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/017_2f3147e9ced12209d5f78dcc/result.json"
+    },
+    {
+      "key": "a42f6fe5d3b4e58c6c15252f",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/018_a42f6fe5d3b4e58c6c15252f/result.json"
+    },
+    {
+      "key": "cb5f293fc10a08f26244292d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/019_cb5f293fc10a08f26244292d/result.json"
+    },
+    {
+      "key": "1eb9f3202cfbf85cc3e2f65a",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/020_1eb9f3202cfbf85cc3e2f65a/result.json"
+    },
+    {
+      "key": "ed875dfeec47a87afdc59293",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/021_ed875dfeec47a87afdc59293/result.json"
+    },
+    {
+      "key": "c101f4810daf9ec0ad448d69",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/022_c101f4810daf9ec0ad448d69/result.json"
+    },
+    {
+      "key": "32957c79953de767f243d9ef",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/023_32957c79953de767f243d9ef/result.json"
+    },
+    {
+      "key": "bf8db17aea87af5c3ed8a154",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/024_bf8db17aea87af5c3ed8a154/result.json"
+    },
+    {
+      "key": "518c4e4454e219aa003c9cbc",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/025_518c4e4454e219aa003c9cbc/result.json"
+    },
+    {
+      "key": "092e9be48d7bf07d139ebc24",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/026_092e9be48d7bf07d139ebc24/result.json"
+    },
+    {
+      "key": "8db4ace0dcab78a069c075b6",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/027_8db4ace0dcab78a069c075b6/result.json"
+    },
+    {
+      "key": "75d7d011cb2c3799029c0bea",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/028_75d7d011cb2c3799029c0bea/result.json"
+    },
+    {
+      "key": "78a5b72e144cef6f251720d9",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/029_78a5b72e144cef6f251720d9/result.json"
+    },
+    {
+      "key": "3b1178a62d173f43cf0df93d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/030_3b1178a62d173f43cf0df93d/result.json"
+    },
+    {
+      "key": "82ff05b35328fa0cd66b59ab",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/031_82ff05b35328fa0cd66b59ab/result.json"
+    },
+    {
+      "key": "6e50039a74ea3494e4478ac6",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/032_6e50039a74ea3494e4478ac6/result.json"
+    },
+    {
+      "key": "35740ec1133600fc8f2b97a8",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/033_35740ec1133600fc8f2b97a8/result.json"
+    },
+    {
+      "key": "bcaf1049c6908337d7d960b8",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/034_bcaf1049c6908337d7d960b8/result.json"
+    },
+    {
+      "key": "fba0df6ff0b2894b2b741be6",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/035_fba0df6ff0b2894b2b741be6/result.json"
+    },
+    {
+      "key": "b7515477f8d0ddfd348ae0b8",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/036_b7515477f8d0ddfd348ae0b8/result.json"
+    },
+    {
+      "key": "2a18b94506d9052e729a3cf9",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/037_2a18b94506d9052e729a3cf9/result.json"
+    },
+    {
+      "key": "300832f790c4c0281bc88b7c",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/038_300832f790c4c0281bc88b7c/result.json"
+    },
+    {
+      "key": "bcaec35dcd3463b1c498d188",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/039_bcaec35dcd3463b1c498d188/result.json"
+    },
+    {
+      "key": "a1398ba90360bc2195745db5",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/040_a1398ba90360bc2195745db5/result.json"
+    },
+    {
+      "key": "f4aabb65582c594ce5b214ba",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/041_f4aabb65582c594ce5b214ba/result.json"
+    },
+    {
+      "key": "ad7b77957479f2126992e05b",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/042_ad7b77957479f2126992e05b/result.json"
+    },
+    {
+      "key": "ab3495150a833c917a21718e",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/043_ab3495150a833c917a21718e/result.json"
+    },
+    {
+      "key": "1dde556b8a68ecbc3e2e8b35",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/044_1dde556b8a68ecbc3e2e8b35/result.json"
+    },
+    {
+      "key": "bfa59ac717820fedd4bb7f1d",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/045_bfa59ac717820fedd4bb7f1d/result.json"
+    },
+    {
+      "key": "34d60b609652a93736de7239",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/046_34d60b609652a93736de7239/result.json"
+    },
+    {
+      "key": "f197df7653c3202a232ff0e1",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/047_f197df7653c3202a232ff0e1/result.json"
+    },
+    {
+      "key": "723fc55235f2cfa34db55797",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/048_723fc55235f2cfa34db55797/result.json"
+    },
+    {
+      "key": "27fd93e75a844159bf95f467",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/049_27fd93e75a844159bf95f467/result.json"
+    },
+    {
+      "key": "0888364c697bbea43d0f0320",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/050_0888364c697bbea43d0f0320/result.json"
+    },
+    {
+      "key": "b24c428e18e1aec2c18c263b",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/051_b24c428e18e1aec2c18c263b/result.json"
+    },
+    {
+      "key": "ba223d6ac4cefe2733af1bb3",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/052_ba223d6ac4cefe2733af1bb3/result.json"
+    },
+    {
+      "key": "74043718a9d36a472d0c4412",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/053_74043718a9d36a472d0c4412/result.json"
+    },
+    {
+      "key": "3d9c6cbbcfbb336e47cff536",
+      "status": "completed",
+      "result_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/trials/voc20/054_3d9c6cbbcfbb336e47cff536/result.json"
+    }
+  ],
+  "calibration_only": true,
+  "full_evaluation_used_for_selection": false,
+  "calibration_panel_sha256": "3d572d3e90b428b7771aa8026598185cea10ab000d67c880348583d471204803",
+  "suite_prepared_sha256": "4f3e54226f99230af48b2105372300d06f31651515324b3ab99dbe138ff3cfa3",
+  "selection_reused_without_search": true,
+  "origin": {
+    "source_suite": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748",
+    "source_prepared_sha256": "e1a1fcac0fa225cefebcc29f2f676e5366feade2a72388969b5d2d948de60426",
+    "selection_path": "/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748/selections/voc20/SELECTED_CONFIG_SEALED.json",
+    "selection_sha256": "bc5bc7699b9fb305452dddfa8d34c587fecc9e038005a315e2df82d6474dfad0",
+    "original_panel_sha256": "1e2cadc0db94d7cd4f89024c376574edc74f56fec6316905c703cc13354649f9",
+    "trial_csv_sha256": "3a5469e3e7e4bc4aae65d6f81f51697737bacf87aa39bec7db82c3f3cdd916ad"
+  }
+}

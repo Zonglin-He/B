@@ -1,0 +1,157 @@
+{
+  "status": "predicted",
+  "images": 5000,
+  "arms": [
+    "image_region",
+    "episode_region",
+    "image_token",
+    "episode_token",
+    "image_shuffled"
+  ],
+  "config": {
+    "dataset": "COCOObjectDataset",
+    "data_subdir": "coco_stuff",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 13,
+    "lr": 0.00375,
+    "steps": 30,
+    "trace_max_regions": 35,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/coco_mlmp"
+  },
+  "timings": {
+    "image_region": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1545.9256998933852,
+      "seconds_per_image": 0.3099911168825717,
+      "images_per_second": 3.2258988904472763,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "episode_region": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1557.7170840008184,
+      "seconds_per_image": 0.3123555412073027,
+      "images_per_second": 3.2014799421673286,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_token": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1565.815339253284,
+      "seconds_per_image": 0.3139794143279094,
+      "images_per_second": 3.1849221775910257,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "episode_token": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1558.5961349504068,
+      "seconds_per_image": 0.3125318096952891,
+      "images_per_second": 3.1996743018733853,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_shuffled": {
+      "measured_episodes": 384,
+      "measured_images": 4987,
+      "seconds": 1564.984932674095,
+      "seconds_per_image": 0.31381290007501406,
+      "images_per_second": 3.1866121493442727,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "costs": {
+    "image_region": {
+      "diagnostic_forward_calls": 11058,
+      "diagnostic_forward_inputs": 173503,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 23378,
+      "encoder_inputs": 333503,
+      "diagnostic_encoder_calls": 11058,
+      "diagnostic_encoder_inputs": 173503
+    },
+    "episode_region": {
+      "diagnostic_forward_calls": 11058,
+      "diagnostic_forward_inputs": 173503,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 23378,
+      "encoder_inputs": 333503,
+      "diagnostic_encoder_calls": 11058,
+      "diagnostic_encoder_inputs": 173503
+    },
+    "image_token": {
+      "diagnostic_forward_calls": 11058,
+      "diagnostic_forward_inputs": 173503,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 23378,
+      "encoder_inputs": 333503,
+      "diagnostic_encoder_calls": 11058,
+      "diagnostic_encoder_inputs": 173503
+    },
+    "episode_token": {
+      "diagnostic_forward_calls": 11058,
+      "diagnostic_forward_inputs": 173503,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 23378,
+      "encoder_inputs": 333503,
+      "diagnostic_encoder_calls": 11058,
+      "diagnostic_encoder_inputs": 173503
+    },
+    "image_shuffled": {
+      "diagnostic_forward_calls": 11058,
+      "diagnostic_forward_inputs": 173503,
+      "eval_forward_calls": 770,
+      "eval_forward_inputs": 10000,
+      "adapt_forward_calls": 11550,
+      "adapt_forward_inputs": 150000,
+      "encoder_calls": 23378,
+      "encoder_inputs": 333503,
+      "diagnostic_encoder_calls": 11058,
+      "diagnostic_encoder_inputs": 173503
+    }
+  },
+  "shuffle_coverage": {
+    "active_candidates": 171161,
+    "active_sources": 5000,
+    "eligible_candidates": 171161,
+    "eligible_sources": 5000,
+    "moved_candidates": 166207,
+    "moved_sources": 5000,
+    "changed_score_candidates": 166207,
+    "changed_score_sources": 5000
+  },
+  "timing_scope": "Synchronized model-side wallclock: reset/state check, candidate admission, C diagnostic, allocation preparation/metadata, optimization, final inference/reconstruction/CPU transfer, finite and operation-count hooks. Excludes model setup, shared RGB decode/H2D/geometry, receipt serialization/disk writes and offline scoring. Episode 0 excluded only from timings.",
+  "algorithm": "TRACE:C-allocation-controls:v1",
+  "dataset": "coco_object",
+  "stage": "full",
+  "seed": 0,
+  "permutation_seed": 20261029,
+  "full_split": true
+}

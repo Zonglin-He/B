@@ -1,0 +1,681 @@
+{
+  "format_version": 1,
+  "status": "completed",
+  "created_at": "2026-10-28T16:29:48.360636+00:00",
+  "source": "/home/wwww/hzl/results/trace_self_evolution_20261028_1338",
+  "claim_boundary": "Descriptive mechanism characterization of existing development-exposed frozen arms, not a new independent validation. No causality, independent significance, necessity, or speed claim. Candidates within episodes are not independent replicates. All five datasets and both comparison directions are retained; no outcome selection.",
+  "definitions": {
+    "eps_admission_strict_gt": 1e-08,
+    "comparison_absolute_tolerance": 1e-06,
+    "abs_gap_threshold_inclusive": 0.05,
+    "tv_threshold_strict_gt": 0.05,
+    "undefined_tv": "null if either distribution has no admitted weight",
+    "rank": "exact weak ordering including exact ties",
+    "allocation_equal": "absolute tolerance 1e-6, rtol=0",
+    "aggregation": "episode-weighted TV; candidate-pooled limiting counts per dataset"
+  },
+  "audit_source_sha256": "f87d3806d501f07853419868fe2e66dfe07cd4af835860de9cec0ef7a8fad9c0",
+  "test_source_sha256": "b70d8cd412b49a889ca4818e80d79516745c5115ad3f6e932ec704d600bada2a",
+  "verification_scope": "Rehashed suite-linked manifest, queue state, five cell prediction/scoring seals and results, prediction protocols/panels/state/checkpoint identity metadata, and all 84 frozen-runtime source files. Checked complete episode NPZ population and NPZ/receipt coverage in linked sealed cache inventories. Episode receipt hashes are checked during streaming. No NPZ or prediction payload rehash; no prediction pixels, checkpoint payload, score-count streams, input images or annotations opened. Existing inventory hashes bind cache provenance, not a fresh cache-byte integrity proof.",
+  "execution": {
+    "python": "3.13.12",
+    "numpy": "2.3.5",
+    "cpu_only": true,
+    "cuda_visible_devices": "",
+    "gt_opened": false,
+    "score_streams_opened": false,
+    "selected_datasets": [
+      "coco_cd",
+      "pc60",
+      "voc21",
+      "coco_object",
+      "coco_stuff"
+    ],
+    "elapsed_seconds": 1.6307566277682781,
+    "peak_rss_kib": 6615400,
+    "model_modules_imported": false,
+    "post_run_verified_sources_unchanged": true
+  },
+  "datasets": {
+    "coco_cd": {
+      "episodes": 18,
+      "candidates": 1998,
+      "min_active_candidates": 1998,
+      "limit_all": {
+        "denominator": 1998,
+        "counts": {
+          "T_lt_C": 1056,
+          "C_lt_T": 942,
+          "tie": 0,
+          "abs_gap_ge_005": 1221,
+          "T_lt_C_gap_ge_005": 600,
+          "C_lt_T_gap_ge_005": 621
+        },
+        "fractions": {
+          "T_lt_C": 0.5285285285285285,
+          "C_lt_T": 0.47147147147147145,
+          "tie": 0.0,
+          "abs_gap_ge_005": 0.6111111111111112,
+          "T_lt_C_gap_ge_005": 0.3003003003003003,
+          "C_lt_T_gap_ge_005": 0.3108108108108108
+        }
+      },
+      "limit_min_active": {
+        "denominator": 1998,
+        "counts": {
+          "T_lt_C": 1056,
+          "C_lt_T": 942,
+          "tie": 0,
+          "abs_gap_ge_005": 1221,
+          "T_lt_C_gap_ge_005": 600,
+          "C_lt_T_gap_ge_005": 621
+        },
+        "fractions": {
+          "T_lt_C": 0.5285285285285285,
+          "C_lt_T": 0.47147147147147145,
+          "tie": 0.0,
+          "abs_gap_ge_005": 0.6111111111111112,
+          "T_lt_C_gap_ge_005": 0.3003003003003003,
+          "C_lt_T_gap_ge_005": 0.3108108108108108
+        }
+      },
+      "active_episode_counts": {
+        "min": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 18
+        },
+        "T_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 18
+        },
+        "C_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 18
+        }
+      },
+      "both_limiters_present_all_episodes": 18,
+      "both_limiters_present_min_active_episodes": 18,
+      "tv": {
+        "min_vs_T_only": {
+          "all_episodes": {
+            "eligible_episodes": 18,
+            "undefined_episodes": 0,
+            "mean": 0.1286688120049434,
+            "median": 0.12391687910227808,
+            "count_gt_005": 18,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 18,
+            "undefined_episodes": 0,
+            "mean": 0.1286688120049434,
+            "median": 0.12391687910227808,
+            "count_gt_005": 18,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        },
+        "min_vs_C_only": {
+          "all_episodes": {
+            "eligible_episodes": 18,
+            "undefined_episodes": 0,
+            "mean": 0.09525517703157362,
+            "median": 0.09659431945486273,
+            "count_gt_005": 18,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 18,
+            "undefined_episodes": 0,
+            "mean": 0.09525517703157362,
+            "median": 0.09659431945486273,
+            "count_gt_005": 18,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        }
+      },
+      "observed_array_schema": {
+        "T:float64": 18,
+        "C:float64": 18,
+        "q:float64": 18,
+        "rho:float64": 18
+      },
+      "consumed_T_C_q_rho_sha256": "7d1d80e6649b1ab57289cdfdf6561b82257abdb987f5cec40b9563657a98331e",
+      "images": 500
+    },
+    "pc60": {
+      "episodes": 568,
+      "candidates": 111514,
+      "min_active_candidates": 110189,
+      "limit_all": {
+        "denominator": 111514,
+        "counts": {
+          "T_lt_C": 64686,
+          "C_lt_T": 45959,
+          "tie": 869,
+          "abs_gap_ge_005": 58083,
+          "T_lt_C_gap_ge_005": 36624,
+          "C_lt_T_gap_ge_005": 21459
+        },
+        "fractions": {
+          "T_lt_C": 0.5800706637731585,
+          "C_lt_T": 0.41213659271481606,
+          "tie": 0.007792743512025396,
+          "abs_gap_ge_005": 0.5208583675592302,
+          "T_lt_C_gap_ge_005": 0.3284251304768908,
+          "C_lt_T_gap_ge_005": 0.19243323708233945
+        }
+      },
+      "limit_min_active": {
+        "denominator": 110189,
+        "counts": {
+          "T_lt_C": 64143,
+          "C_lt_T": 45638,
+          "tie": 408,
+          "abs_gap_ge_005": 57983,
+          "T_lt_C_gap_ge_005": 36561,
+          "C_lt_T_gap_ge_005": 21422
+        },
+        "fractions": {
+          "T_lt_C": 0.5821179972592545,
+          "C_lt_T": 0.41417927379320985,
+          "tie": 0.003702728947535598,
+          "abs_gap_ge_005": 0.5262140504043054,
+          "T_lt_C_gap_ge_005": 0.33180263002659066,
+          "C_lt_T_gap_ge_005": 0.19441142037771467
+        }
+      },
+      "active_episode_counts": {
+        "min": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 568
+        },
+        "T_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 568
+        },
+        "C_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 568
+        }
+      },
+      "both_limiters_present_all_episodes": 568,
+      "both_limiters_present_min_active_episodes": 568,
+      "tv": {
+        "min_vs_T_only": {
+          "all_episodes": {
+            "eligible_episodes": 568,
+            "undefined_episodes": 0,
+            "mean": 0.20813449420326327,
+            "median": 0.20651000587533141,
+            "count_gt_005": 568,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 568,
+            "undefined_episodes": 0,
+            "mean": 0.20813449420326327,
+            "median": 0.20651000587533141,
+            "count_gt_005": 568,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        },
+        "min_vs_C_only": {
+          "all_episodes": {
+            "eligible_episodes": 568,
+            "undefined_episodes": 0,
+            "mean": 0.30859002927469625,
+            "median": 0.30668000632099407,
+            "count_gt_005": 568,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 568,
+            "undefined_episodes": 0,
+            "mean": 0.30859002927469625,
+            "median": 0.30668000632099407,
+            "count_gt_005": 568,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        }
+      },
+      "observed_array_schema": {
+        "T:float64": 568,
+        "C:float64": 568,
+        "q:float64": 568,
+        "rho:float64": 568
+      },
+      "consumed_T_C_q_rho_sha256": "968e362b8c878d1d0668a83d354e3a581a47a0290fac848775bc51d0c627bcab",
+      "images": 5105
+    },
+    "voc21": {
+      "episodes": 91,
+      "candidates": 46892,
+      "min_active_candidates": 46375,
+      "limit_all": {
+        "denominator": 46892,
+        "counts": {
+          "T_lt_C": 27389,
+          "C_lt_T": 19167,
+          "tie": 336,
+          "abs_gap_ge_005": 24870,
+          "T_lt_C_gap_ge_005": 15505,
+          "C_lt_T_gap_ge_005": 9365
+        },
+        "fractions": {
+          "T_lt_C": 0.5840868378401433,
+          "C_lt_T": 0.4087477608120788,
+          "tie": 0.0071654013477778725,
+          "abs_gap_ge_005": 0.5303676533310586,
+          "T_lt_C_gap_ge_005": 0.33065341636099976,
+          "C_lt_T_gap_ge_005": 0.19971423697005886
+        }
+      },
+      "limit_min_active": {
+        "denominator": 46375,
+        "counts": {
+          "T_lt_C": 27169,
+          "C_lt_T": 19063,
+          "tie": 143,
+          "abs_gap_ge_005": 24840,
+          "T_lt_C_gap_ge_005": 15483,
+          "C_lt_T_gap_ge_005": 9357
+        },
+        "fractions": {
+          "T_lt_C": 0.5858544474393531,
+          "C_lt_T": 0.4110619946091644,
+          "tie": 0.00308355795148248,
+          "abs_gap_ge_005": 0.535633423180593,
+          "T_lt_C_gap_ge_005": 0.33386522911051214,
+          "C_lt_T_gap_ge_005": 0.20176819407008087
+        }
+      },
+      "active_episode_counts": {
+        "min": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 91
+        },
+        "T_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 91
+        },
+        "C_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 91
+        }
+      },
+      "both_limiters_present_all_episodes": 91,
+      "both_limiters_present_min_active_episodes": 91,
+      "tv": {
+        "min_vs_T_only": {
+          "all_episodes": {
+            "eligible_episodes": 91,
+            "undefined_episodes": 0,
+            "mean": 0.22784006560822526,
+            "median": 0.22385792574233346,
+            "count_gt_005": 91,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 91,
+            "undefined_episodes": 0,
+            "mean": 0.22784006560822526,
+            "median": 0.22385792574233346,
+            "count_gt_005": 91,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        },
+        "min_vs_C_only": {
+          "all_episodes": {
+            "eligible_episodes": 91,
+            "undefined_episodes": 0,
+            "mean": 0.32576347299095115,
+            "median": 0.323552120950502,
+            "count_gt_005": 91,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 91,
+            "undefined_episodes": 0,
+            "mean": 0.32576347299095115,
+            "median": 0.323552120950502,
+            "count_gt_005": 91,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        }
+      },
+      "observed_array_schema": {
+        "T:float64": 91,
+        "C:float64": 91,
+        "q:float64": 91,
+        "rho:float64": 91
+      },
+      "consumed_T_C_q_rho_sha256": "7777c3f50fdfcd70d2d59108fcbcd1d6ba9f735707e5c52004c148362307ab71",
+      "images": 1449
+    },
+    "coco_object": {
+      "episodes": 358,
+      "candidates": 168669,
+      "min_active_candidates": 160773,
+      "limit_all": {
+        "denominator": 168669,
+        "counts": {
+          "T_lt_C": 103572,
+          "C_lt_T": 61173,
+          "tie": 3924,
+          "abs_gap_ge_005": 79334,
+          "T_lt_C_gap_ge_005": 52726,
+          "C_lt_T_gap_ge_005": 26608
+        },
+        "fractions": {
+          "T_lt_C": 0.6140547462782135,
+          "C_lt_T": 0.36268075342831224,
+          "tie": 0.0232645002934742,
+          "abs_gap_ge_005": 0.4703531769323349,
+          "T_lt_C_gap_ge_005": 0.31260041857128457,
+          "C_lt_T_gap_ge_005": 0.15775275836105035
+        }
+      },
+      "limit_min_active": {
+        "denominator": 160773,
+        "counts": {
+          "T_lt_C": 99057,
+          "C_lt_T": 60344,
+          "tie": 1372,
+          "abs_gap_ge_005": 78505,
+          "T_lt_C_gap_ge_005": 51938,
+          "C_lt_T_gap_ge_005": 26567
+        },
+        "fractions": {
+          "T_lt_C": 0.6161295739956336,
+          "C_lt_T": 0.3753366547865624,
+          "tie": 0.008533771217803984,
+          "abs_gap_ge_005": 0.48829716432485554,
+          "T_lt_C_gap_ge_005": 0.323051756202845,
+          "C_lt_T_gap_ge_005": 0.16524540812201052
+        }
+      },
+      "active_episode_counts": {
+        "min": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 358
+        },
+        "T_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 358
+        },
+        "C_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 358
+        }
+      },
+      "both_limiters_present_all_episodes": 358,
+      "both_limiters_present_min_active_episodes": 358,
+      "tv": {
+        "min_vs_T_only": {
+          "all_episodes": {
+            "eligible_episodes": 358,
+            "undefined_episodes": 0,
+            "mean": 0.20187530607599363,
+            "median": 0.20031699698353253,
+            "count_gt_005": 358,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 358,
+            "undefined_episodes": 0,
+            "mean": 0.20187530607599363,
+            "median": 0.20031699698353253,
+            "count_gt_005": 358,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        },
+        "min_vs_C_only": {
+          "all_episodes": {
+            "eligible_episodes": 358,
+            "undefined_episodes": 0,
+            "mean": 0.3430517253649456,
+            "median": 0.3419475647566744,
+            "count_gt_005": 358,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 358,
+            "undefined_episodes": 0,
+            "mean": 0.3430517253649456,
+            "median": 0.3419475647566744,
+            "count_gt_005": 358,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        }
+      },
+      "observed_array_schema": {
+        "T:float64": 358,
+        "C:float64": 358,
+        "q:float64": 358,
+        "rho:float64": 358
+      },
+      "consumed_T_C_q_rho_sha256": "9dc61155425a00cda590b7a8c28f1923477e68ad9210a6839c041127ecf76f99",
+      "images": 5000
+    },
+    "coco_stuff": {
+      "episodes": 1000,
+      "candidates": 164543,
+      "min_active_candidates": 157365,
+      "limit_all": {
+        "denominator": 164543,
+        "counts": {
+          "T_lt_C": 100612,
+          "C_lt_T": 60377,
+          "tie": 3554,
+          "abs_gap_ge_005": 74015,
+          "T_lt_C_gap_ge_005": 49544,
+          "C_lt_T_gap_ge_005": 24471
+        },
+        "fractions": {
+          "T_lt_C": 0.6114632649216314,
+          "C_lt_T": 0.36693751785247625,
+          "tie": 0.02159921722589232,
+          "abs_gap_ge_005": 0.44982162717344404,
+          "T_lt_C_gap_ge_005": 0.30110062415295696,
+          "C_lt_T_gap_ge_005": 0.14872100302048705
+        }
+      },
+      "limit_min_active": {
+        "denominator": 157365,
+        "counts": {
+          "T_lt_C": 96577,
+          "C_lt_T": 59498,
+          "tie": 1290,
+          "abs_gap_ge_005": 73309,
+          "T_lt_C_gap_ge_005": 48877,
+          "C_lt_T_gap_ge_005": 24432
+        },
+        "fractions": {
+          "T_lt_C": 0.6137133415943825,
+          "C_lt_T": 0.37808915578432306,
+          "tie": 0.008197502621294444,
+          "abs_gap_ge_005": 0.465853271057732,
+          "T_lt_C_gap_ge_005": 0.31059638420233215,
+          "C_lt_T_gap_ge_005": 0.15525688685539987
+        }
+      },
+      "active_episode_counts": {
+        "min": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 1000
+        },
+        "T_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 1000
+        },
+        "C_only": {
+          "zero": 0,
+          "one": 0,
+          "at_least_two": 1000
+        }
+      },
+      "both_limiters_present_all_episodes": 1000,
+      "both_limiters_present_min_active_episodes": 1000,
+      "tv": {
+        "min_vs_T_only": {
+          "all_episodes": {
+            "eligible_episodes": 1000,
+            "undefined_episodes": 0,
+            "mean": 0.210885433017033,
+            "median": 0.20758686020977957,
+            "count_gt_005": 1000,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 1000,
+            "undefined_episodes": 0,
+            "mean": 0.210885433017033,
+            "median": 0.20758686020977957,
+            "count_gt_005": 1000,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        },
+        "min_vs_C_only": {
+          "all_episodes": {
+            "eligible_episodes": 1000,
+            "undefined_episodes": 0,
+            "mean": 0.3591625263913751,
+            "median": 0.3551781262510034,
+            "count_gt_005": 1000,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          },
+          "at_least_two_min_active": {
+            "eligible_episodes": 1000,
+            "undefined_episodes": 0,
+            "mean": 0.3591625263913751,
+            "median": 0.3551781262510034,
+            "count_gt_005": 1000,
+            "fraction_gt_005": 1.0,
+            "same_rank_episodes": 0,
+            "same_multiset_episodes": 0,
+            "same_assignment_episodes": 0,
+            "same_rank_but_tv_gt_005": 0,
+            "same_multiset_but_different_assignment": 0
+          }
+        }
+      },
+      "observed_array_schema": {
+        "T:float64": 1000,
+        "C:float64": 1000,
+        "q:float64": 1000,
+        "rho:float64": 1000
+      },
+      "consumed_T_C_q_rho_sha256": "f23867f37025afb9087afaff71844eb57130272207e2c8be1965ff2cc5407e6b",
+      "images": 5000
+    }
+  }
+}

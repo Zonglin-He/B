@@ -1,0 +1,19 @@
+\begin{table*}[t]
+\caption{TRACE-selected configurations: episode size $B$, learning rate, update steps, and maximum regions per image $K$. Uniform and Confidence reuse these settings without separate tuning. Selection uses 256 calibration images per dataset; the Waterbirds calibration sources overlap its full development population. Historical development exposure is retained.}
+\label{tab:tuned-full-configurations}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Dataset & $B$ & Learning rate & Steps & $K$ \\
+\midrule
+VOC20 & 2 & 0.0015 & 9 & 8 \\
+VOC21 & 18 & 0.00125 & 31 & 46 \\
+PC59 & 6 & 0.002 & 10 & 46 \\
+PC60 & 13 & 0.00375 & 7 & 20 \\
+Object & 13 & 0.00375 & 30 & 35 \\
+Stuff & 7 & 0.00425 & 10 & 33 \\
+COCO-CD & 26 & 0.015 & 5 & 4 \\
+Waterbirds & 12 & 0.005 & 4 & 7 \\
+\bottomrule
+\end{tabular}
+\end{table*}

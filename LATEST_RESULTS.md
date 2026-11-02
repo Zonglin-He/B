@@ -4,6 +4,21 @@ This page separates submitted-method evidence from new algorithm variants.
 The authoritative rows, populations, seeds, and paths remain in the linked CSVs.
 This is a snapshot, not a live experiment dashboard.
 
+## November 2: Evolution Results, Implementation And Manuscript
+
+The [new TRACE evolution update](updates/trace-evolution-20261102/README.md)
+publishes the current code/tests, existing round05 paper PDF/TeX/appendix,
+32 tuned full-split outcomes, 455 calibration configurations and ten completed
+allocation-control outcomes. Raw results, including historical/negative/failed
+records, are indexed and attached to its release. These are different method
+identities and protocols from the submitted-method evidence below.
+
+The latest local baseline attempt failed before MLMP construction and has no
+new baseline scores. A subsequent repair/new controlled queue was explicitly
+approved but is not executed by this upload. The paper remains an existing
+5/10-reviewed draft with development exposure and asymmetric-selection limits,
+not a completed revised paper incorporating future baseline reruns.
+
 ## New: Completed Sham Intervention Controls
 
 The [verified sham update](updates/sham-20261025/README.md) contains both fixed

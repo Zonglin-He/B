@@ -1,0 +1,5 @@
+dataset,images,scope,reference_miou,simplified_miou,reference_ms_per_image,simplified_ms_per_image,reference_peak_mib,simplified_peak_mib
+COCO-CD,500,full,75.16,75.05,39.982,36.202,7786.163,6820.415
+PC60,512,subset,29.93,29.98,142.890,143.257,3237.936,2927.610
+COCO-Stuff,512,subset,21.14,21.37,217.494,218.724,2335.082,2162.006
+VOC21,512,subset,52.32,52.61,321.652,317.648,5014.441,4463.230

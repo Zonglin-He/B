@@ -1,0 +1,275 @@
+{
+  "review_id": "round01",
+  "review_type": "first_substantive_independent_review_of_new_manuscript",
+  "reviewed_at": "2026-10-28T13:37:18+08:00",
+  "time_limit_minutes": 10,
+  "review_started_at": "2026-10-28T13:34:05+08:00",
+  "manuscript_root": "/home/wwww/.codex/worktrees/trace-simplification/hzl/paper_evolution",
+  "language": "zh-CN",
+  "overall_score": 5,
+  "score_scale": "1-10",
+  "recommendation": "weak_reject",
+  "acceptance_thresholds": {
+    "weak_accept": 6,
+    "accept": 7
+  },
+  "confidence": {
+    "score": 4,
+    "scale": "1-5",
+    "meaning": "对证据缺口和已核算术有较高把握；不是全运行链或文献优先权认证"
+  },
+  "summary": "方法定义和有限实现核对基本一致，四个完整评估 split 的历史单次结果成立；但区分该方法与普通区域熵适应的核心匹配控制、更新风险分析仍全部未完成。最新四图确定性诊断修复了等价性判读前提，没有补齐这些科学证据。当前不足以达到6分。",
+  "dimensions": {
+    "contribution": {
+      "score": 5,
+      "reason": "可识别的候选级双探针设计，但min的代数性质不能建立实证必要性，尚无已完成控制证明其增量知识。未作外部文献优先权检索，不断言其已被前人完整覆盖。"
+    },
+    "correctness": {
+      "score": 7,
+      "reason": "所核候选选择、变换、支持读出和区域熵实现与有限值数学定义一致；CPU小张量验证通过。未发现足以宣布公式错误的证据。完整继承读出及estimator不在准许源范围内，未认证全部调用链。"
+    },
+    "experimental_support": {
+      "score": 4,
+      "reason": "有四个完整split和20个completed本地结果的可核计数；核心机制控制和风险验证全pending，单次历史结果的运行重复性仍未知。"
+    },
+    "comparison_and_interpretation_boundaries": {
+      "score": 8,
+      "reason": "文献报告值、本地值、不同预算/后端、非因果非校准解释明确分开；没有因引用MLMP数值要求重跑全部baseline。少量已完成式措辞应修正。"
+    },
+    "clarity_and_reproducibility": {
+      "score": 6,
+      "reason": "逐段方法主链可读且数学对象明确；自适应层聚合、精确checkpoint、扩展映射算子和完整可执行身份仍依赖inherited/established描述；已知默认dispatch非确定性需进入协议。"
+    }
+  },
+  "evidence": {
+    "historical_full_method": {
+      "status": "completed_historical_single_run_not_new_deterministic_validation",
+      "root": "/home/wwww/hzl/results/trace_two_view_full_20261025",
+      "algorithm": "quality_only",
+      "values": [
+        {
+          "dataset": "VOC21",
+          "images": 1449,
+          "miou": 52.39648940361091
+        },
+        {
+          "dataset": "PC60",
+          "images": 5105,
+          "miou": 30.584325228702784
+        },
+        {
+          "dataset": "COCO-CD",
+          "images": 500,
+          "miou": 75.1895608124621
+        },
+        {
+          "dataset": "COCO Object",
+          "images": 5000,
+          "miou": 32.67826958917333
+        }
+      ],
+      "audit": "20个result.json的completed状态、样本数和类别交并计数重算；所核result、两份suite seal、fixed_configs哈希与generated/provenance.json一致；未读预测payload或GT内容，未重新认证完整标签隔离链。"
+    },
+    "deterministic_diagnostic": {
+      "status": "completed_diagnostic_only",
+      "path": "/home/wwww/hzl/results/trace_evolution_repeatability_20261028_1332/summary.json",
+      "gt_contents_opened": false,
+      "default_aa_changed_labels": [
+        11024,
+        4583
+      ],
+      "default_aa_max_loss_abs_difference": [
+        0.018973201513290405,
+        0.0019092559814453125
+      ],
+      "deterministic_default_pairs": 3,
+      "deterministic_default_all_supports_losses_gradients_parameters_predictions_exact": true,
+      "limits": "四图及旧旧/新新/旧新的说明来自用户；summary独立确认所列三组deterministic_default比较的零loss差、support/gradient/parameter相等及零标签改变。未从该文件推断mIoU变化、全量重复性或消融结果。"
+    },
+    "new_deterministic_experiments": {
+      "status": "pending_user_reports_freezing_not_counted_completed"
+    },
+    "mechanism_controls": {
+      "status": "pending",
+      "source": "paper_evolution/generated/mechanism_status.tex:2-13"
+    },
+    "cpu_tests": {
+      "status": "passed",
+      "model_loaded": false,
+      "gpu_used": false,
+      "checks": [
+        "prompt_and_region_average_matches_equation",
+        "common_positive_score_scaling_invariance",
+        "single_active_candidate_score_cancellation",
+        "empty_objective_zero"
+      ],
+      "synthetic_loss": 8.9,
+      "limits": "AST提取准许objective类，在CPU小张量上测试；不是模型forward、性能测试或完整实现等价认证。"
+    }
+  },
+  "findings": [
+    {
+      "id": "W1",
+      "severity": "high",
+      "status": "confirmed_missing_completed_evidence",
+      "title": "所有区分核心设计的匹配控制仍pending，无法识别性能增益来源",
+      "locations": [
+        "paper_evolution/main.tex:101-121",
+        "paper_evolution/main.tex:142-150",
+        "paper_evolution/generated/mechanism_status.tex:2-13",
+        "paper_evolution/appendix.tex:101-106"
+      ],
+      "reasoning": "完整方法同时引入连通候选、top-K、区域平均、双探针及min权重。全方法对文献或native基线的差值不能回答探针、第二视图、min或区域平均是否必要。当前已完成证据也兼容区域均匀熵即可达到同样效果，或第二视图/min没有收益。附录min的优化刻画只证明顺序性质。",
+      "affected_conclusions": [
+        "两视图及min构成有效增量贡献",
+        "探针提供超出初始置信度的有用分配信息"
+      ],
+      "minimal_fix": "在确定性reference gate通过后，至少在预先声明的两个不同完整split上固定候选、episode、读出、参数、LR和步数，完成region-uniform、candidate-confidence、T-only、C-only、mean、product、min控制；另做相同选中token集合的uniform-token目标。权重控制保留相同诊断forward；报告paired episode不确定性，保留负结果。不要改用已看过结果选择最有利子集。",
+      "requires": [
+        "experiment",
+        "text"
+      ],
+      "algorithm_change_required": false
+    },
+    {
+      "id": "W2",
+      "severity": "high",
+      "status": "confirmed_missing_validation_not_confirmed_algorithm_failure",
+      "title": "common support与有益更新之间的关键联系未被观察证据检验",
+      "locations": [
+        "paper_evolution/main.tex:16-20",
+        "paper_evolution/main.tex:104-121",
+        "paper_evolution/main.tex:150",
+        "paper_evolution/appendix.tex:75-99",
+        "paper_evolution/appendix.tex:108-113",
+        "trace_ovss/method/two_view.py:74-85"
+      ],
+      "reasoning": "rho=min(T,C)是两个修改后query响应的绝对共同支持，不直接测量正确性或更新效用；诊断与优化还使用不同prompt/层聚合分支。共同错误、保留上下文或大mask可产生高分。极端全crop候选令两视图退化为原输入；其在真实评估中的频率未知，不能当成已观察失败。论文承认这些边界，但尚无已完成风险分层或score-assignment控制，将分数称为reliability仍只是工作假设。",
+      "affected_conclusions": [
+        "该分配针对动机中的错误自强化风险",
+        "高common support值得更大相对熵权重"
+      ],
+      "minimal_fix": "预先定义离线有害更新结局，在相近初始置信度/面积层内比较rho与风险；分别报告正确类别概率变化和C-to-W/W-to-C，不互相替代。以完整episode内匹配score shuffle保持mask及score multiset，验证候选特定分配是否改变且改善结果。按episode估计不确定性、先seal预测后读标签。若结果仅支持描述性重分配，标题/动机及结论同步限定；不能用单候选自行归一化更新检验rho作用。",
+      "requires": [
+        "experiment",
+        "text"
+      ],
+      "algorithm_change_required": false
+    },
+    {
+      "id": "W3",
+      "severity": "medium_high",
+      "status": "completed_local_fix_with_pending_full_scale_validation",
+      "title": "已知默认运行非确定性尚未转化为历史性能的稳定性证据",
+      "locations": [
+        "paper_evolution/main.tex:125",
+        "paper_evolution/main.tex:152-168",
+        "paper_evolution/appendix.tex:39-54",
+        "paper_evolution/generated/provenance.json:33-39",
+        "/home/wwww/hzl/results/trace_evolution_repeatability_20261028_1332/summary.json"
+      ],
+      "reasoning": "最新summary显示默认A/A的support相同但loss/梯度/参数/预测不同，不能把这种差别归咎新实现。deterministic-default三组比较全部exact是已完成的局部修复，不应继续指控新旧方法不等价。然而四图无GT诊断并未量化历史单次全split分数的运行变异，也未给新确定性配置的完整结果；单seed不能被当作重复性保证。原分数仍是完成的历史测量，不因此自动作废，变化方向未知。",
+      "affected_conclusions": [
+        "已报性能的可重复性",
+        "未来matched-control差值可归因于唯一实验因子"
+      ],
+      "minimal_fix": "明确冻结deterministic开关、dispatch、精度、软件硬件及episode顺序；将四图equivalence gate、历史单次全split和新确定性全split分开登记。新控制在同一冻结runtime执行，补全方法重复运行/episode或seed稳定性和paired区间。只对实际参与新matched比较的臂复测；不要求因文献引用而重跑全部baseline，也不把pending结果写入表。",
+      "requires": [
+        "experiment",
+        "text",
+        "runtime_configuration"
+      ],
+      "algorithm_change_required": false
+    },
+    {
+      "id": "W4",
+      "severity": "medium",
+      "status": "confirmed_documentation_gap",
+      "title": "重要预测接口仍以继承名称代替可独立复现的定义",
+      "locations": [
+        "paper_evolution/main.tex:53-63",
+        "paper_evolution/main.tex:127",
+        "paper_evolution/appendix.tex:15",
+        "paper_evolution/appendix.tex:24-25",
+        "trace_ovss/method/trace/engine.py:69-80"
+      ],
+      "reasoning": "关键rho及优化分布依赖inherited adaptive weighted layer combination、prompt aggregation、logit尺度，以及established extension map。文稿给出18层/7模板，却未明确自适应层权重公式、精确checkpoint身份、扩展汇聚算子及词表工件的直接复现入口。现有provenance有实现和词表哈希链接，改善审计但不是这些操作的自足说明。本轮未越界阅读adapter、dense_clip或estimator，不能据此断言代码错误。",
+      "affected_conclusions": [
+        "从论文及公开对应工件可准确重建所评估算法"
+      ],
+      "minimal_fix": "在附录补充诊断/优化的层聚合公式、归一化与logit温度；给出checkpoint标识/哈希、词表及extension-map工件/汇聚顺序算子、历史quality_only与当前入口的精确版本和命令。连同W3给运行开关。此项不要求改变算法或额外大规模实验。",
+      "requires": [
+        "text",
+        "artifact_manifest"
+      ],
+      "algorithm_change_required": false
+    }
+  ],
+  "minor_findings": [
+    {
+      "id": "M1",
+      "locations": [
+        "paper_evolution/main.tex:144-150",
+        "paper_evolution/main.tex:168"
+      ],
+      "status": "confirmed_text_inconsistency",
+      "issue": "机制表明确全pending，周围仍用examine/are held fixed/controlled studies isolate等已完成式措辞。",
+      "minimal_fix": "未完成控制统一使用计划语态；结尾不得把实验设计写成已产生结论。",
+      "requires": [
+        "text"
+      ]
+    },
+    {
+      "id": "M2",
+      "locations": [
+        "paper_evolution/generated/cost_snapshot.tex:2-12"
+      ],
+      "status": "clarification",
+      "issue": "Views是diagnostic inputs/image而不是总forward inputs/image，不能与公式中的总输入数混读。",
+      "minimal_fix": "列名写成Diag. inputs/img，并保持现有非speedup的边界。",
+      "requires": [
+        "text"
+      ]
+    }
+  ],
+  "must_fix": [
+    "W1",
+    "W2",
+    "W3",
+    "W4",
+    "M1"
+  ],
+  "not_findings": [
+    "不把引用MLMP已报告数值本身判为缺陷，不要求重跑全部文献baseline。",
+    "不把主表差值解释为同协议/同预算/公式级因果效果；当前表注明确排除了这些解释。",
+    "不把pending实验当完成，也不推测其最终好坏。",
+    "不把singleton权重抵消或全低分仍归一化称作隐藏bug；附录已如实解释。",
+    "不把四图确定性成功夸为全split验证，也不把此前A/A失败当作新旧算法不等价证据。",
+    "未作GT泄漏或历史性能造假的指控；计数核验不等于完整标签隔离认证。",
+    "不把未做所有backbone/corruption/vocabulary扩展当独立否决条件。"
+  ],
+  "scope_and_limits": {
+    "no_other_reviews_or_scores_read": true,
+    "no_self_evolution_contract_read": true,
+    "old_manuscript_used": false,
+    "no_web_search": true,
+    "no_gpu_or_model_forward": true,
+    "no_prediction_or_model_payload_scan": true,
+    "only_written_files": [
+      "paper_evolution/reviews/round01.md",
+      "paper_evolution/reviews/round01.json"
+    ],
+    "allowed_source_chain_not_fully_certified": "只核用户指定五份源码；未查看其余继承模块或历史research wrapper源码。",
+    "memory_policy": "启动时按环境要求检索了工作区历史证据索引；没有打开历史评审或其他代理分数，没有把旧方法历史审计当作新稿机制证据或评分依据。"
+  },
+  "manuscript_snapshot_sha256": {
+    "main.tex": "e491c1383f1fdd308b60ddcaae6c426bac066db79fc0e54323e616d0c0b6e2f4",
+    "appendix.tex": "6ab2f67daccd876c3b66934489e12612666aaef1ab8ea644a0419a8c2285c44e",
+    "preamble.tex": "2ccb07e4b5ff752ff304623c2abb6aca2fe651a00045d5039a4ef649f92e7a13",
+    "references.bib": "f73e8ba3f2513085c490372a08aad6fda3e036a838ad9d0a72738e85f1e83a06",
+    "build/main.pdf": "73a7a3f01463736f09c1cd4b3718a1916770f439d018124964f1e1aa6c105363",
+    "build/supplement.pdf": "d4ca2274f002d3738bb8aef809b1a3138f02dd2bce462ca518f22e89571814c0",
+    "generated/provenance.json": "ec22ecd82f9b7da0695f15e3d2dbace2add7e24c753ebbef591f3a7799b9ffb6"
+  }
+}
+

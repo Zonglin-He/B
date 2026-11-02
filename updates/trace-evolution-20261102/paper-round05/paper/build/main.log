@@ -1,0 +1,680 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023/Debian) (preloaded format=pdflatex 2026.7.2)  29 OCT 2026 18:47
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**../main.tex
+(../main.tex
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2024-01-22>
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2023/05/17 v1.4n Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2023/05/17 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count187
+\c@section=\count188
+\c@subsection=\count189
+\c@subsubsection=\count190
+\c@paragraph=\count191
+\c@subparagraph=\count192
+\c@figure=\count193
+\c@table=\count194
+\abovecaptionskip=\skip48
+\belowcaptionskip=\skip49
+\bibindent=\dimen140
+) (../preamble.tex
+(../aaai2027.sty
+Package: aaai2027 2027/05/04 AAAI 2027 Submission format
+
+Conference Style for AAAI for LaTeX 2e
+(/usr/share/texlive/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2022/02/03 v1.0f TeX engine tests
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2021/04/29 v2.0v Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/newtxtext.sty
+Package: newtxtext 2024/01/11 v1.737(Michael Sharpe) latex and unicode latex su
+pport for TeXGyreTermesX
+
+`newtxtext' v1.737, 2024/01/11 Text macros taking advantage of TeXGyre Termes a
+nd its extensions (msharpe)
+(/usr/share/texlive/texmf-dist/tex/latex/xpatch/xpatch.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2024-01-22 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2024-01-04 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count195
+\l__pdf_internal_box=\box51
+))
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2023-10-10 L3 Experimental document command parser
+)
+(/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count196
+))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2023/11/15 v3.01 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1350.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1354.
+Package xcolor Info: Model `RGB' extended on input line 1366.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1368.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1371.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1372.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1373.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/keyval.tex))
+\XKV@depth=\count197
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/base/textcomp.sty
+Package: textcomp 2020/02/02 v2.0n Standard LaTeX package
+)
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xstring/xstring.tex
+\xs_counta=\count198
+\xs_countb=\count199
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2022/04/13 v1.1d Standard LaTeX ifthen package (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/carlisle/scalefnt.sty)
+LaTeX Font Info:    Setting ntxLF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 24.
+
+(/usr/share/texlive/texmf-dist/tex/generic/kastrup/binhex.tex)
+\ntx@tmpcnta=\count266
+\ntx@cnt=\count267
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2020/07/21 v1.0e Font selection axes
+LaTeX Info: Redefining \upshape on input line 29.
+LaTeX Info: Redefining \itshape on input line 31.
+LaTeX Info: Redefining \slshape on input line 33.
+LaTeX Info: Redefining \swshape on input line 35.
+LaTeX Info: Redefining \scshape on input line 37.
+LaTeX Info: Redefining \sscshape on input line 39.
+LaTeX Info: Redefining \ulcshape on input line 41.
+LaTeX Info: Redefining \textsw on input line 47.
+LaTeX Info: Redefining \textssc on input line 48.
+LaTeX Info: Redefining \textulc on input line 49.
+)
+\tx@sixem=\dimen141
+\tx@y=\dimen142
+\tx@x=\dimen143
+\tx@tmpdima=\dimen144
+\tx@tmpdimb=\dimen145
+\tx@tmpdimc=\dimen146
+\tx@tmpdimd=\dimen147
+\tx@tmpdime=\dimen148
+\tx@tmpdimf=\dimen149
+\tx@dimA=\dimen150
+\tx@dimAA=\dimen151
+\tx@dimB=\dimen152
+\tx@dimBB=\dimen153
+\tx@dimC=\dimen154
+LaTeX Info: Redefining \oldstylenums on input line 893.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+Package: helvet 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+Package: courier 2020/03/25 PSNFSS-v9.3 (WaS) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/placeins/placeins.sty
+Package: placeins 2005/04/18  v 2.2
+)
+\titlebox=\skip50
+\aaai@thanksins=\insert252
+\aaai@copyrightins=\insert251
+)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty
+Package: times 2020/03/25 PSNFSS-v9.3 (SPQR) 
+)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip16
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 107.
+)
+\Gin@req@height=\dimen155
+\Gin@req@width=\dimen156
+)
+(/usr/share/texlive/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip51
+\bibsep=\skip52
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count268
+)
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen157
+\captionmargin=\dimen158
+\caption@leftmargin=\dimen159
+\caption@rightmargin=\dimen160
+\caption@width=\dimen161
+\caption@indent=\dimen162
+\caption@parindent=\dimen163
+\caption@hangindent=\dimen164
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count269
+\c@continuedfloat=\count270
+)
+(/usr/share/texlive/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen165
+\lightrulewidth=\dimen166
+\cmidrulewidth=\dimen167
+\belowrulesep=\dimen168
+\belowbottomsep=\dimen169
+\aboverulesep=\dimen170
+\abovetopsep=\dimen171
+\cmidrulesep=\dimen172
+\cmidrulekern=\dimen173
+\defaultaddspace=\dimen174
+\@cmidla=\count271
+\@cmidlb=\count272
+\@aboverulesep=\dimen175
+\@belowrulesep=\dimen176
+\@thisruleclass=\count273
+\@lastruleclass=\count274
+\@thisrulewidth=\dimen177
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2023/05/13 v2.17o AMS math features
+\@mathmargin=\skip53
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2021/08/26 v2.01 AMS text
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks19
+\ex@=\dimen178
+))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen179
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count275
+LaTeX Info: Redefining \frac on input line 234.
+\uproot@=\count276
+\leftroot@=\count277
+LaTeX Info: Redefining \overline on input line 399.
+LaTeX Info: Redefining \colon on input line 410.
+\classnum@=\count278
+\DOTSCASE@=\count279
+LaTeX Info: Redefining \ldots on input line 496.
+LaTeX Info: Redefining \dots on input line 499.
+LaTeX Info: Redefining \cdots on input line 620.
+\Mathstrutbox@=\box52
+\strutbox@=\box53
+LaTeX Info: Redefining \big on input line 722.
+LaTeX Info: Redefining \Big on input line 723.
+LaTeX Info: Redefining \bigg on input line 724.
+LaTeX Info: Redefining \Bigg on input line 725.
+\big@size=\dimen180
+LaTeX Font Info:    Redeclaring font encoding OML on input line 743.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 744.
+\macc@depth=\count280
+LaTeX Info: Redefining \bmod on input line 905.
+LaTeX Info: Redefining \pmod on input line 910.
+LaTeX Info: Redefining \smash on input line 940.
+LaTeX Info: Redefining \relbar on input line 970.
+LaTeX Info: Redefining \Relbar on input line 971.
+\c@MaxMatrixCols=\count281
+\dotsspace@=\muskip17
+\c@parentequation=\count282
+\dspbrk@lvl=\count283
+\tag@help=\toks20
+\row@=\count284
+\column@=\count285
+\maxfields@=\count286
+\andhelp@=\toks21
+\eqnshift@=\dimen181
+\alignsep@=\dimen182
+\tagshift@=\dimen183
+\tagwidth@=\dimen184
+\totwidth@=\dimen185
+\lineht@=\dimen186
+\@envbody=\toks22
+\multlinegap=\skip54
+\multlinetaggap=\skip55
+\mathdisplay@stack=\toks23
+LaTeX Info: Redefining \[ on input line 2953.
+LaTeX Info: Redefining \] on input line 2954.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2013/01/14 v3.01 AMS font symbols
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+))
+(/usr/share/texlive/texmf-dist/tex/latex/tools/array.sty
+Package: array 2023/10/16 v2.5g Tabular extension package (FMi)
+\col@sep=\dimen187
+\ar@mcellbox=\box54
+\extrarowheight=\dimen188
+\NC@list=\toks24
+\extratabsurround=\skip56
+\backup@length=\skip57
+\ar@cellbox=\box55
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+))
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
+ 6.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtlf.fd
+File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 6.
+ (./main.aux)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 6.
+LaTeX Font Info:    ... okay on input line 6.
+
+(/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count287
+\scratchdimen=\dimen189
+\scratchbox=\box56
+\nofMPsegments=\count288
+\nofMParguments=\count289
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count290
+\MPscratchDim=\dimen190
+\MPnumerator=\count291
+\makeMPintoPDFobject=\count292
+\everyMPtoPDFconversion=\toks26
+) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
+e
+))
+\c@mv@tabular=\count293
+\c@mv@boldtabular=\count294
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c@aaai@eqfn=\count295
+\c@aaai@corrfn=\count296
+\titlearea=\box57
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 8.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 8.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 8.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 8.
+\actualheight=\skip58
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 8.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.0pt on input line 10.
+<figure/tuned/image_full_teaser.pdf, id=1, 243.91125pt x 336.05548pt>
+File: figure/tuned/image_full_teaser.pdf Graphic file (type pdf)
+<use figure/tuned/image_full_teaser.pdf>
+Package pdftex.def Info: figure/tuned/image_full_teaser.pdf  used on input line
+ 23.
+(pdftex.def)             Requested size: 239.39438pt x 329.83464pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 28.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 28.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 28.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 34.
+
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 34.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf
+-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}
+
+
+
+]
+Underfull \hbox (badness 1158) in paragraph at lines 36--37
+[]\T1/ntxtlf/m/n/10 We es-tab-lish the value of the ad-di-tional re-sponse
+ []
+
+
+Underfull \hbox (badness 3260) in paragraph at lines 41--42
+ \T1/ntxtlf/b/n/10 Open-vocabulary dense pre-dic-tion. \T1/ntxtlf/m/n/10 OVSS t
+rans-fers
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 41--42
+\T1/ntxtlf/m/n/10 vision--language rep-re-sen-ta-tions through dense match-
+ []
+
+<figure/tuned/image_full_pipeline.pdf, id=11, 496.85625pt x 433.62pt>
+File: figure/tuned/image_full_pipeline.pdf Graphic file (type pdf)
+<use figure/tuned/image_full_pipeline.pdf>
+Package pdftex.def Info: figure/tuned/image_full_pipeline.pdf  used on input li
+ne 55.
+(pdftex.def)             Requested size: 505.89pt x 441.51242pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.95pt on input line 60.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 10.95pt on input line 60.
+[2{/usr/share/texmf/fonts/enc/dvips/tex-gyre/q-ts1.enc} <../figure/tuned/image_
+full_teaser.pdf>] [3 <../figure/tuned/image_full_pipeline.pdf>]
+Underfull \hbox (badness 3872) in paragraph at lines 102--103
+[]\T1/ntxtlf/m/n/10 Let $\OML/cmm/m/it/10 p[]$ \T1/ntxtlf/m/n/10 be the cur-ren
+t query dis-tri-bu-tion for
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--127
+ \T1/ntxtlf/b/n/10 Datasets and im-ple-men-ta-tion. \T1/ntxtlf/m/n/10 Eval-u-a-
+tion cov-ers
+ []
+
+[4] (../generated/tuned_full_comparison.tex)
+<figure/tuned/image_full_allocation.pdf, id=67, 243.91125pt x 296.307pt>
+File: figure/tuned/image_full_allocation.pdf Graphic file (type pdf)
+<use figure/tuned/image_full_allocation.pdf>
+Package pdftex.def Info: figure/tuned/image_full_allocation.pdf  used on input 
+line 145.
+(pdftex.def)             Requested size: 239.39438pt x 290.82196pt.
+<figure/tuned/image_full_segmentation.pdf, id=68, 496.85625pt x 523.9575pt>
+File: figure/tuned/image_full_segmentation.pdf Graphic file (type pdf)
+<use figure/tuned/image_full_segmentation.pdf>
+Package pdftex.def Info: figure/tuned/image_full_segmentation.pdf  used on inpu
+t line 152.
+(pdftex.def)             Requested size: 505.89pt x 533.49417pt.
+
+(../generated/tuned_full_reference.tex) [5 <../figure/tuned/image_full_allocati
+on.pdf>] [6] [7 <../figure/tuned/image_full_segmentation.pdf>] (./main.bbl
+Underfull \hbox (badness 3503) in paragraph at lines 12--17
+[]\T1/ntxtlf/m/n/10 De Silva, U.; Sama-raweera, D.; Wani-gath-unga, S.;
+ []
+
+[8]) [9
+
+] (../appendix.tex
+LaTeX Font Info:    Trying to load font information for T1+pcr on input line 4.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/t1pcr.fd
+File: t1pcr.fd 2001/06/04 font definitions for T1/pcr.
+)
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+[]\T1/ntxtlf/m/n/10 The run-time uses de-ter-min-is-tic Py-Torch al-go-
+ []
+
+
+Underfull \hbox (badness 5637) in paragraph at lines 8--9
+\T1/ntxtlf/m/n/10 rithms with er-rors on non-de-ter-min-is-tic op-er-a-tions,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 8--9
+\T1/pcr/m/n/10 CUBLAS_WORKSPACE_CONFIG=:4096:8\T1/ntxtlf/m/n/10 , de-ter-min-
+ []
+
+
+Underfull \hbox (badness 3168) in paragraph at lines 27--28
+\T1/ntxtlf/m/n/10 The C probe changes only the com-ple-ment of a
+ []
+
+
+Underfull \hbox (badness 3635) in paragraph at lines 27--28
+\T1/ntxtlf/m/n/10 can-di-date's input-space mask. De-nor-mal-ize crop $\OML/cmm
+/m/it/10 x[]$
+ []
+
+
+Underfull \hbox (badness 1596) in paragraph at lines 27--28
+\T1/ntxtlf/m/n/10 to RGB pix-els $\OML/cmm/m/it/10 u[] \OMS/cmsy/m/n/10 2 \OT1/
+cmr/m/n/10 [0\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 255][]$ \T1/ntxtlf/m/n/10 us-in
+g mean
+ []
+
+
+Underfull \hbox (badness 2173) in paragraph at lines 27--28
+\OT1/cmr/m/n/10 (122\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 7709\OML/cmm/m/it/10 ; \O
+T1/cmr/m/n/10 116\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 7460\OML/cmm/m/it/10 ; \OT1/
+cmr/m/n/10 104\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0937)$ \T1/ntxtlf/m/n/10 and st
+an-dard de-vi-a-tion
+ []
+
+[10
+
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}]
+(../generated/tuned_full_configurations.tex) [11]
+Underfull \hbox (badness 1377) in paragraph at lines 120--122
+\T1/ntxtlf/m/n/10 or a cat-e-gory col-lapse be-fore can-di-date con-struc-tion.
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+\T1/pcr/m/n/10 trace _ ovss / resources / class _ names/$ \T1/ntxtlf/m/n/10 de-
+fine
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+\T1/pcr/m/n/10 cls_context59.txt\T1/ntxtlf/m/n/10 , \T1/pcr/m/n/10 cls_context6
+0.txt\T1/ntxtlf/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 120--122
+\T1/pcr/m/n/10 cls_coco_object.txt\T1/ntxtlf/m/n/10 , \T1/pcr/m/n/10 coco_cd.tx
+t\T1/ntxtlf/m/n/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/ntxtlf/m/n/10 The full eval-u-a-tion is $\T1/pcr/m/n/10 trace _ single _ pr
+obe _
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/pcr/m/n/10 waterbirds _ full _ 20261029 _ 0817$ \T1/ntxtlf/m/n/10 un-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/ntxtlf/m/n/10 der $\T1/pcr/m/n/10 /home / wwww / hzl / results/$\T1/ntxtlf/
+m/n/10 . It im-
+ []
+
+
+Underfull \hbox (badness 6961) in paragraph at lines 132--133
+\T1/ntxtlf/m/n/10 ports seven com-pleted cal-i-bra-tion se-lec-tions from
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/pcr/m/n/10 trace _ single _ probe _ tuning _ 20261029 _ 0748$\T1/ntxtlf/m/n
+/10 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/ntxtlf/m/n/10 then se-lects Wa-ter-birds set-tings with the same
+ []
+
+
+Underfull \hbox (badness 1472) in paragraph at lines 132--133
+\T1/ntxtlf/m/n/10 search rule. Eight four-image RGB-only gates across
+ []
+
+
+Underfull \hbox (badness 6396) in paragraph at lines 132--133
+\T1/ntxtlf/m/n/10 the two stages com-pare the worker with di-rect
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 132--133
+\T1/pcr/m/n/10 ImageBalancedTRACE(view_mode="C")\T1/ntxtlf/m/n/10 ; these
+ []
+
+
+Underfull \hbox (badness 6675) in paragraph at lines 146--147
+[]\T1/ntxtlf/m/n/10 Batch size tests in-te-gers 1--16 and its in-her-
+ []
+
+
+Underfull \hbox (badness 7064) in paragraph at lines 146--147
+\T1/ntxtlf/m/n/10 ited set-ting, fol-lowed by lo-cal in-te-ger neigh-bors
+ []
+
+
+Underfull \hbox (badness 1484) in paragraph at lines 146--147
+\T1/ntxtlf/m/n/10 within three, bounded by 1--32. Learning-rate coarse
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+\T1/ntxtlf/m/n/10 choices are $\OT1/cmr/m/n/10 10[]\OML/cmm/m/it/10 ; \OT1/cmr/
+m/n/10 3 \OMS/cmsy/m/n/10 ^^B \OT1/cmr/m/n/10 10[]\OML/cmm/m/it/10 ; \OT1/cmr/m
+/n/10 10[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 3 \OMS/cmsy/m/n/10 ^^B \OT1/cmr/m/
+n/10 10[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 5 \OMS/cmsy/m/n/10 ^^B
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 146--147
+\OT1/cmr/m/n/10 10[]\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/
+cmr/m/n/10 001\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/
+n/10 002\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 0
+03\OML/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 005\OML
+/cmm/m/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 008\OML/cmm/m
+/it/10 ; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 01\OML/cmm/m/it/10 
+; \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 015\OML/cmm/m/it/10 ; \OT1
+/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 02$
+ []
+
+[12] [13] (../generated/image_budget_comparison.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.0pt on input line 3.
+)
+(../generated/tuned_full_cost.tex) (../generated/image_budget_cost.tex)
+[14]) [15] [16] (./main.aux)
+ ***********
+LaTeX2e <2023-11-01> patch level 1
+L3 programming layer <2020/03/25>
+ ***********
+ ) 
+Here is how much of TeX's memory you used:
+ 7453 strings out of 476182
+ 119376 string characters out of 5795596
+ 1963975 words of memory out of 5000000
+ 29302 multiletter control sequences out of 15000+600000
+ 596836 words of font info for 73 fonts, out of 8000000 for 9000
+ 14 hyphenation exceptions out of 8191
+ 100i,13n,120p,1198b,359s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texli
+ve/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texm
+f-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/
+fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
+ype1/public/amsfonts/cm/cmr5.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.
+pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></u
+sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></us
+r/share/texmf/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/urw/courier/ucrr8a.pfb></usr/share/texlive/texmf-dist/fonts/type
+1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx
+/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on main.pdf (16 pages, 801553 bytes).
+PDF statistics:
+ 250 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
+ 0 named destinations out of 1000 (max. 500000)
+ 21 words of extra memory for PDF output out of 10000 (max. 10000000)
+

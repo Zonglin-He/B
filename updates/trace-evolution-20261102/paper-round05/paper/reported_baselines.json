@@ -1,0 +1,21 @@
+{
+  "citation_key": "noori2025mlmp",
+  "source_pdf": "/home/wwww/.codex/attachments/25b85770-f761-4f32-a2e0-b41621a491c0/Test-Time Adaptation of Vision-Language Models for Open-Vocabulary Semantic Segmentation.pdf",
+  "source_url": "https://arxiv.org/abs/2505.21844",
+  "source_table": "Main-paper Table 5, Original rows, OVSS Backbone: NACLIP",
+  "source_pdf_sha256": "30911a11e6b890b2bf466adb8e33e6f1ac53b82c50b56efb7d8749cef1c82ac7",
+  "extraction_evidence": "Fresh local pdftotext -layout verification, main Table 5 on PDF page 9 (printed page 9), Original NACLIP rows; all six methods in all five columns checked. Exporter re-extracts and checks these rows on import.",
+  "std_policy": "Use main Table 5 standard deviations only; do not mix appendix variants",
+  "backbone": "NACLIP ViT-L/14",
+  "reported_adaptation": {"batch_size": 2, "lr": 0.001, "steps": 10, "optimizer": "Adam", "episodic_reset": true},
+  "methods": ["No Adapt", "TENT", "TPT", "WATT", "CLIPArTT", "MLMP"],
+  "datasets": {
+    "voc20": {"No Adapt": [75.91, null], "TENT": [77.00, 0.04], "TPT": [75.93, 0.01], "WATT": [57.73, 0.06], "CLIPArTT": [72.77, 0.14], "MLMP": [83.76, 0.00]},
+    "voc21": {"No Adapt": [45.12, null], "TENT": [45.65, 0.02], "TPT": [45.17, 0.01], "WATT": [28.58, 0.05], "CLIPArTT": [39.50, 0.04], "MLMP": [50.78, 0.02]},
+    "pc60": {"No Adapt": [24.95, null], "TENT": [25.29, 0.01], "TPT": [24.98, 0.01], "WATT": [14.77, 0.03], "CLIPArTT": [21.88, 0.03], "MLMP": [27.99, 0.03]},
+    "coco_object": {"No Adapt": [23.80, null], "TENT": [24.88, 0.01], "TPT": [23.84, 0.01], "WATT": [14.14, 0.06], "CLIPArTT": [21.34, 0.03], "MLMP": [28.84, 0.01]},
+    "coco_stuff": {"No Adapt": [18.34, null], "TENT": [18.76, 0.01], "TPT": [18.35, 0.01], "WATT": [9.49, 0.02], "CLIPArTT": [15.48, 0.01], "MLMP": [21.25, 0.01]}
+  },
+  "new_method_completed": ["voc20", "voc21", "pc60", "coco_object", "coco_stuff", "coco_cd"],
+  "unasserted_equivalence": ["exact checkpoint", "loader", "query extension mapping", "episode size", "optimization budget", "tuning exposure"]
+}

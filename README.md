@@ -1,12 +1,15 @@
 # B: TRACE Experiment Results
 
-Public evidence archive for TRACE research. This is a **results repository**, not
-the model implementation. It preserves historical results, the submitted method's
+Public evidence archive for TRACE research. The November 2 update also includes
+an explicitly authorized implementation and manuscript snapshot. It preserves historical results, the submitted method's
 reviewer evidence, and newer algorithm variants without treating them as one
 interchangeable method.
 
 ## Start Here
 
+- [New experiment results, code and paper, 2026-11-02](updates/trace-evolution-20261102/README.md)
+- [Current paper PDF](updates/trace-evolution-20261102/paper/build/main.pdf) and [supplement](updates/trace-evolution-20261102/paper/build/supplement.pdf)
+- [Current implementation and tests](updates/trace-evolution-20261102/code/)
 - [Completed sham intervention controls, 2026-10-25](updates/sham-20261025/README.md)
 - [Completed 64-image rebuttal update, 2026-10-25](updates/rebuttal64-20261025/README.md)
 - [Completed context/top-K/episode-bootstrap cache analysis](updates/mechanism-audit-20261025/README.md)

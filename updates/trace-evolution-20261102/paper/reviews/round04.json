@@ -1,0 +1,226 @@
+{
+  "review_type": "raw_independent_ml_cv_conference_review",
+  "round": "04",
+  "paper_title": "TRACE: Context-Probed Region Allocation for Test-Time Adaptation in Open-Vocabulary Semantic Segmentation",
+  "packet_root": "/home/wwww/hzl/results/trace_evolution_review_round04_20261029_0703",
+  "overall_score": 6,
+  "score_scale": "1-10; 4 reject, 5 borderline, 6 weak accept, 7 accept, 8 strong accept",
+  "acceptance_recommendation": "weak_accept",
+  "confidence": 4,
+  "confidence_scale": "1-5",
+  "fatal_validity_issue_evidenced": false,
+  "fatal_validity_assessment": "No concrete fatal validity issue, inference-time label leakage, or selected-C/full-execution method mismatch was evidenced. Documented development exposure and missing evidence limit inference but do not by themselves demonstrate a runtime bug.",
+  "scope": {
+    "combined_pdf": "/home/wwww/hzl/results/trace_evolution_review_round04_20261029_0703/paper/build/main.pdf",
+    "combined_pdf_pages_read": 15,
+    "appendices_read": ["A", "B", "C", "D", "E", "F"],
+    "standalone_supplement": "/home/wwww/hzl/results/trace_evolution_review_round04_20261029_0703/paper/build/supplement.pdf",
+    "standalone_supplement_pages_read": 8,
+    "visual_inspection": "Rendered combined-PDF page overview and enlarged candidate, pipeline, results, segmentation, and mathematical-appendix pages.",
+    "table_numbering": "Combined PDF; standalone supplement renumbers tables and equations.",
+    "evidence_roots_inspected": [
+      "/home/wwww/hzl/results/trace_image_full_20261029_0333",
+      "/home/wwww/hzl/results/trace_image_budget_20261029_0233"
+    ],
+    "independence": "No earlier review reports, author claim ledgers, handoffs, or planning documents consulted. A workspace memory index was queried for scope at the outset; its historical experimental findings were not used as evidence or to determine the review.",
+    "not_performed": [
+      "GPU work",
+      "new inference or scoring",
+      "bootstrap analysis",
+      "large prediction/model payload scans or complete evidence-payload rehash",
+      "independent execution replay",
+      "repairs or frozen-packet/evidence modifications",
+      "manuscript or figure edits",
+      "agents",
+      "Git commits",
+      "exhaustive literature-priority search"
+    ]
+  },
+  "integrity": {
+    "packet_manifest_sha256": "87101bab5260be343cf82a5d092309b54848af766c2aaeecbdbfadb580ef302d",
+    "packet_files_checked": 65,
+    "packet_file_mismatches": [],
+    "full_runtime_files_checked": 149,
+    "full_runtime_mismatches": [],
+    "budget_runtime_files_checked": 144,
+    "budget_runtime_mismatches": [],
+    "selected_full_metadata_hash_checks": 67,
+    "selected_full_metadata_mismatches": [],
+    "budget_canonical_result_hash_checks": 8,
+    "budget_canonical_result_mismatches": [],
+    "full_suite_prepared_sha256": "e0f7374042eadb65fbc8146de6dfcf35a71151dc1c95c115b0d4cf9c8444edaa",
+    "full_prepared_identity_matches_packet": true,
+    "selection_seal_sha256": "90fa3a20097698e9b83cafd416a4b05fe7f033dcd8aadb027c970a9788ac11e4",
+    "selected_mode": "C",
+    "selection_seal_matches_across_suites": true,
+    "full_canonical_results_checked": 6,
+    "full_result_pooled_count_arithmetic_matches": true,
+    "full_prediction_seal_links_checked": 6,
+    "full_prediction_seal_links_match_barrier_results_and_score_seals": true,
+    "recorded_four_image_gates_passed": 6,
+    "recorded_gate_max_gradient_difference": 0.0,
+    "limits": "Hash consistency is relative to supplied records, not an independently timestamped origin. Prediction payloads were not freshly rehashed, experiments were not replayed, and every historical label-access event was not independently reconstructed. Pooled arithmetic checks used recorded canonical counts, not new prediction scoring."
+  },
+  "contribution_assessment": "A coherent, relatively modest regional allocation contribution: candidate-preserving context-response weighting and explicit source-image-normalized regional entropy. It is not a new backbone, optimizer, or identified causal reliability estimator. The primary evidence is the complete matched Uniform/Confidence/C comparison.",
+  "strengths": [
+    {
+      "id": "S1",
+      "title": "Complete matched allocation evidence",
+      "assessment": "All six recorded full protocols favor C over Confidence with candidates, geometry, initialization, order, readouts, and optimization matched within each protocol. Object and CD show useful finite-run effects; this does not establish significance.",
+      "locations": ["Section 4.1", "Section 4.2", "Table 1", "full-root cells/full/*/seed0/result.json"]
+    },
+    {
+      "id": "S2",
+      "title": "Explicit, correctly bounded mathematics",
+      "assessment": "The paper distinguishes fixed query diagnostics, regional averaging, coefficient budgets, gradient magnitudes, rescaling, singleton cancellation, and batch dependence.",
+      "locations": ["Sections 3.1-3.3", "Appendix B"]
+    },
+    {
+      "id": "S3",
+      "title": "Inspected method and execution agree",
+      "assessment": "The selected C path computes one candidate-preserving view, mean original-query probabilities, detached weights, and source-image grouping. Different adaptation and inference readouts are explicitly documented.",
+      "locations": ["Appendix A.3-A.5", "full-root runtime/trace_ovss/method/image_balanced.py:67-134", "full-root runtime/trace_ovss/method/trace/objective.py:14-59"]
+    },
+    {
+      "id": "S4",
+      "title": "Locked selection and appropriately interpreted references",
+      "assessment": "C is globally calibration-selected before confirmation. Negative results and stronger alternative arms are retained. Reported/local operating points are not claimed to be matched external superiority.",
+      "locations": ["Sections 4.3-4.4", "Tables 2-3", "Appendices C and F", "SELECTION_SEALED.json"]
+    },
+    {
+      "id": "S5",
+      "title": "Auditable artifacts, cost, and qualitative limitations",
+      "assessment": "The frozen sources and canonical metadata are inspectable. Qualitative examples include a negative case and explicit extreme-selection rules. Input counts, encoder calls, and model-side latency are distinguished.",
+      "locations": ["Figures 1-4", "Section 4.5", "Appendices A.7, D, E", "Tables 7-10"]
+    }
+  ],
+  "full_split_results": [
+    {"protocol": "PC60", "images": 5105, "uniform_miou": 30.383771362, "confidence_miou": 30.337222321, "trace_C_miou": 30.693151577, "delta_C_minus_confidence_pp": 0.3559292559492313},
+    {"protocol": "COCO Object", "images": 5000, "uniform_miou": 29.807068303, "confidence_miou": 30.825095822, "trace_C_miou": 32.594583407, "delta_C_minus_confidence_pp": 1.7694875853839385},
+    {"protocol": "VOC21", "images": 1449, "uniform_miou": 52.442452768, "confidence_miou": 52.325474616, "trace_C_miou": 52.621491003, "delta_C_minus_confidence_pp": 0.2960163874424211},
+    {"protocol": "VOC20", "images": 1449, "uniform_miou": 81.783665659, "confidence_miou": 82.177486891, "trace_C_miou": 83.487219186, "delta_C_minus_confidence_pp": 1.309732295055582},
+    {"protocol": "COCO-CD", "images": 500, "uniform_miou": 66.216729024, "confidence_miou": 67.664307653, "trace_C_miou": 74.982118364, "delta_C_minus_confidence_pp": 7.317810710912241},
+    {"protocol": "COCO-Stuff", "images": 5000, "uniform_miou": 21.744497792, "confidence_miou": 21.793356425, "trace_C_miou": 21.836221454, "delta_C_minus_confidence_pp": 0.042865028753904966}
+  ],
+  "findings": [
+    {
+      "id": "W1",
+      "priority": 1,
+      "severity": "high",
+      "title": "Generalization and uncertainty remain limited",
+      "classification": "documented_exposure_and_missing_independent_evidence",
+      "demonstrated_bug": false,
+      "fatal": false,
+      "locations": ["Section 4.1", "Table 1", "Appendix A.7", "Appendix C"],
+      "evidence": "The manuscript discloses development-exposed full evaluation splits, inherited configurations with some full-validation-conditioned choices, and incomplete historical July candidate-pool exclusion mapping. There is one backbone, one deterministic model seed, a fixed transform, and 224 x 224 single-crop resized evaluation. Confirmation orders reuse images, and VOC20/VOC21 share source images. Small C-minus-Confidence differences include Stuff +0.042865 pp, VOC21 +0.296016 pp, and PC60 +0.355929 pp. CD's largest gain is on a three-category protocol.",
+      "impact": "The finite-run allocation effect is supported, but independent generalization, significance, native-resolution robustness, and broad-vocabulary transfer are not established. Sealing the new run does not erase earlier tuning exposure.",
+      "claim_interpretation": "The paper largely acknowledges these limits. This is not evidence of inference-time ground-truth leakage or a fatal runtime bug.",
+      "highest_value_fix": "Add genuinely prospective locked-protocol evidence; separately estimate conditional uncertainty from retained counts using complete paired adaptation episodes and re-pooled class counts, without treating orders or pixels as independent and without claiming tuning bias is removed."
+    },
+    {
+      "id": "W2",
+      "priority": 2,
+      "severity": "medium",
+      "title": "No matched reset baseline for the current pipeline",
+      "classification": "missing_experimental_evidence",
+      "demonstrated_bug": false,
+      "fatal": false,
+      "locations": ["Tables 1-3", "Appendix E", "Appendix F"],
+      "evidence": "Table 1 contains three adapting allocation policies. The historical native No Adapt result is explicitly not a certified reset readout of the new pipeline. Reported external results have unverified protocol matches; historical native CD methods retain different settings, including learning rate 0.001 and 10 updates versus C's 0.0086 and five updates.",
+      "impact": "The results determine relative allocation performance here, not per-protocol gains over the exact starting predictor or matched external competitiveness.",
+      "claim_interpretation": "Tables 2-3 are correctly labeled operating-point references. They are not misleading matched comparisons, and their differences must not be interpreted as significance or equal-budget superiority.",
+      "highest_value_fix": "In a separate versioned experiment, add the exact reset/no-adaptation arm with the same checkpoint, readout, query extensions, geometry, and scorer. Do not substitute the historical native row."
+    },
+    {
+      "id": "W3",
+      "priority": 3,
+      "severity": "medium",
+      "title": "Normalization accuracy contribution is not isolated for selected C",
+      "classification": "mixed_evidence_and_missing_selected_method_ablation",
+      "demonstrated_bug": false,
+      "fatal": false,
+      "locations": ["Section 3.3", "Section 4.4", "Equations 6-7", "Appendix B", "Tables 5-6"],
+      "evidence": "Table 1 keeps image normalization fixed. The normalization control compares image-min against episode-min, not image-C against episode-C. Image-min is lower than episode-min in all three PC60 confirmation orders but higher in all three Object orders. Old-min exceeds C on PC60, and equally single-probe T exceeds C on Object in every confirmation order. Regional averaging is not isolated in the main full-split controls.",
+      "impact": "Equal coefficient mass is established algebraically, but general accuracy benefit of image normalization and empirical best-probe status for C are not established.",
+      "claim_interpretation": "These observations do not contradict the algebra or the declared minimax selection rule. The paper acknowledges non-optimality; the issue is incomplete component attribution.",
+      "highest_value_fix": "Prioritize a direct image-C versus episode-C comparison with all other settings fixed; keep algebraic normalization properties separate from empirical accuracy benefits."
+    },
+    {
+      "id": "W4",
+      "priority": 4,
+      "severity": "medium",
+      "title": "Mechanistic explanation and distinctiveness lag the aggregate effect",
+      "classification": "missing_explanatory_evidence_and_limited_demonstrated_breadth",
+      "demonstrated_bug": false,
+      "fatal": false,
+      "locations": ["Section 3.2", "Section 5", "Figures 1 and 4", "Appendices B.2 and E"],
+      "evidence": "Support-extreme examples and final joint-update segmentations do not measure population frequency, correctness association within confidence/area strata, or the importance of candidate-specific score assignment. There is no reported current-method within-image score permutation, targeted contrast/channel-shift ablation, or distributional account of singleton/near-zero-support behavior. Singleton support cancels; uniformly low positive support does not suppress an image budget.",
+      "impact": "The method's empirical allocation effect is more convincing than an explanation of why the particular transform and assignment work or how transferable they are. The core novelty remains relatively modest.",
+      "claim_interpretation": "The paper does not claim calibrated correctness or identified causal effects. No specific prior-work duplication is alleged.",
+      "highest_value_fix": "Add a targeted within-image score permutation preserving the score multiset and a separate transform control in new evidence; summarize current candidate-support/size/singleton distributions without using selected examples as prevalence evidence."
+    },
+    {
+      "id": "W5",
+      "priority": 5,
+      "severity": "low",
+      "title": "Portable reproduction and presentation can improve",
+      "classification": "reproducibility_and_presentation_gap",
+      "demonstrated_bug": false,
+      "fatal": false,
+      "locations": ["Appendix A", "Appendix D", "Tables 7-10", "Figure 3", "full-root cells/full/*/seed0/initial_state.json"],
+      "evidence": "The PDF omits explicit timing hardware/software identification and a concise runnable reproduction entry point, although canonical metadata records RTX 5090, Python 3.10.13, and PyTorch 2.7.0+cu128. Local absolute result paths are not a portable release. Figure 3 largely repeats Table 1, while repeated provenance caveats consume substantial space. Inspected visual material is legible.",
+      "impact": "Readers must discover environment information in artifacts and assemble the execution path; manuscript space could convey more scientific evidence.",
+      "claim_interpretation": "No conference page-limit violation is asserted.",
+      "highest_value_fix": "Surface hardware, software, dependencies, and exact reproduction entry points, and package executed sources/configs portably. Consolidate repeated caveats while preserving their substance."
+    }
+  ],
+  "mathematical_and_implementation_assessment": [
+    {
+      "topic": "Objective algebra",
+      "assessment": "Correct for the stated finite active set: within-image weights sum to one, active-image coefficient mass is 1/|I+|, positive common scaling cancels if the active set is unchanged, and singleton cancellation follows. This does not imply equal gradients or batch invariance.",
+      "locations": ["Equations 6-7", "Appendix B", "full-root runtime/trace_ovss/method/image_balanced.py:18-50", "full-root runtime/trace_ovss/method/trace/objective.py:14-59"]
+    },
+    {
+      "topic": "Probe identity",
+      "assessment": "The selected C branch implements candidate pixel preservation, full-crop-mean contrast/channel transform outside the mask, original-query token probability means, and detached fixed supports. It does not evaluate an unreported second view.",
+      "locations": ["Appendix A.3", "full-root runtime/trace_ovss/method/image_balanced.py:67-120", "full-root runtime/trace_ovss/method/trace/interventions.py:171-182"]
+    },
+    {
+      "topic": "Readouts and entropy target",
+      "assessment": "Documented adaptive weighted-layer diagnosis/inference and uniform mean-layer prompt-specific adaptation match inspected code. Candidate query identities select diagnostics, not cross-entropy pseudo-labels.",
+      "locations": ["Appendix A.4-A.5", "full-root runtime/trace_ovss/method/adapter.py", "full-root runtime/trace_ovss/models/dense_clip.py:105-124"]
+    },
+    {
+      "topic": "Label separation and reset",
+      "assessment": "Inspected RGB-only loading, source-image bookkeeping, independent reset arms, candidate-identity checks, and separately barrier-gated annotation scoring support the declared runtime separation. Consistent seal links are not proof of every historical event.",
+      "locations": ["Appendix A.7", "full-root runtime/tools/evolution/run_cell.py:77-103", "full-root runtime/tools/evolution_image_full/run.py:254-306", "full-root runtime/tools/evolution_image_full/run.py:424-476"]
+    },
+    {
+      "topic": "Nonfinite handling",
+      "assessment": "Inherited helpers include nan_to_num, but the full worker observes raw model outputs before downstream sanitization and parameters/gradients/Adam state around updates with abort-on-nonfinite guards. No silent nonfinite-repair substitution was demonstrated in the completed guarded full run; this does not certify semantic safety.",
+      "locations": ["Appendix D", "full-root runtime/tools/evolution_image_full/run.py:196-241"]
+    },
+    {
+      "topic": "Computation",
+      "assessment": "Recorded C diagnostic input counts match Table 8, and (S+2)P+n is an input-count rather than batched-call formula. C adds about 42.6% model-side time on PC60 and 43.9% on Stuff relative to Confidence; Stuff gains only 0.043 pp. Halving diagnostic inputs versus two views is not halving total work or a measured full-split dual-probe speedup.",
+      "locations": ["Section 4.5", "Appendix D", "Tables 7-10"]
+    }
+  ],
+  "questions": [
+    {"id": "Q1", "question": "Can the exact current reset/no-adaptation baseline be provided for the same readout, query extensions, checkpoint, and resize geometry without substituting a historical native row?"},
+    {"id": "Q2", "question": "What prospective evaluation avoids recycling the disclosed tuning exposure, and what uncertainty unit preserves complete jointly adapted episodes rather than treating existing reorders as independent samples?"},
+    {"id": "Q3", "question": "What is image normalization's effect specifically for C versus episode-normalized C, and how often does singleton cancellation make absolute support irrelevant?"},
+    {"id": "Q4", "question": "What controls distinguish candidate-specific context information from generic weight concentration and transform-specific effects? A within-image score-multiset-preserving permutation and a targeted transform control address different parts."}
+  ],
+  "highest_value_feasible_fixes": [
+    {"priority": 1, "scope": "existing_records_and_documentation", "action": "Expose per-class effects, especially CD's three classes, and current cost/accuracy tradeoffs; add hardware/software/dependency/reproduction information and consolidate protocol distinctions.", "executed_during_review": false},
+    {"priority": 2, "scope": "subsequent_statistical_analysis_of_retained_counts", "action": "Resample complete paired adaptation episodes and re-pool class counts for conditional uncertainty; do not treat pixels, candidates, existing orders, or VOC20/VOC21 as independent replications, and do not claim this removes historical tuning bias.", "executed_during_review": false},
+    {"priority": 3, "scope": "new_separately_versioned_controlled_experiment", "action": "Add the exact current reset baseline, then image-C versus episode-C and an assignment-permutation control preserving within-image score multisets. Do not modify this frozen evidence set.", "executed_during_review": false},
+    {"priority": 4, "scope": "new_prospective_generalization_evidence", "action": "Test the locked method under a genuinely prospective protocol and predeclare any geometry/backbone extension. New clean evidence cannot retroactively make current full splits unseen.", "executed_during_review": false}
+  ],
+  "overall_rationale": "Weak accept because a simple, inspectable allocation mechanism and correct explicit objective have complete matched same-pipeline support, particularly on Object and CD. Global calibration selection, retained negative results, provenance, and bounded interpretation make that narrow contribution credible. Not a strong accept because novelty breadth is modest, independent generalization is unestablished, the exact reset baseline is missing, and normalization/mechanism attribution is incomplete. No credit is assigned for significance, matched external superiority, calibrated correctness, native-resolution robustness, or universal safety. Confidence is 4 rather than 5 because the review was bounded to source and metadata without a fresh payload audit, execution, or exhaustive literature-priority search. The rating is a substantive judgment, not an arithmetic category average.",
+  "output_paths": {
+    "markdown": "/home/wwww/.codex/worktrees/trace-simplification/hzl/paper_evolution/reviews/round04.md",
+    "json": "/home/wwww/.codex/worktrees/trace-simplification/hzl/paper_evolution/reviews/round04.json"
+  }
+}

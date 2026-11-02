@@ -1,0 +1,65 @@
+{
+  "complete": true,
+  "manifest_sha256": "f78373dc96213571b24bc8b9d7e491c3d47293fb787f7846a3eb8b86349fd9ef",
+  "prediction_seal_sha256": "96ee78329a907d0d267d63f8b69c9e2fce5a18f6dc9a8d1275138d9c608145b5",
+  "barrier_sha256": "14a33045b3713374581c384a9a999cabfec5d1a2ef2e74fcfbf9fa58025cceb5",
+  "ten_arm_scope": [
+    {
+      "dataset": "coco_object",
+      "arm": "image_region",
+      "images": 5000
+    },
+    {
+      "dataset": "coco_object",
+      "arm": "episode_region",
+      "images": 5000
+    },
+    {
+      "dataset": "coco_object",
+      "arm": "image_token",
+      "images": 5000
+    },
+    {
+      "dataset": "coco_object",
+      "arm": "episode_token",
+      "images": 5000
+    },
+    {
+      "dataset": "coco_object",
+      "arm": "image_shuffled",
+      "images": 5000
+    },
+    {
+      "dataset": "pc60",
+      "arm": "image_region",
+      "images": 5105
+    },
+    {
+      "dataset": "pc60",
+      "arm": "episode_region",
+      "images": 5105
+    },
+    {
+      "dataset": "pc60",
+      "arm": "image_token",
+      "images": 5105
+    },
+    {
+      "dataset": "pc60",
+      "arm": "episode_token",
+      "images": 5105
+    },
+    {
+      "dataset": "pc60",
+      "arm": "image_shuffled",
+      "images": 5105
+    }
+  ],
+  "artifact_sha256": {
+    "SCORING_STARTED.json": "4c14a6b3ca6ff60aedbcd465ef276fb1212507a3d1e684f161da99ca4497390a",
+    "result.json": "3542c468e8d7e3b90994a31ea441ff93c541b4ed858106a028d1582e5f2bc6c8",
+    "score_inputs.json": "e618fbeb7379da0158ded7dfc4812bede322a693ced941a30679f5b8c752c49c",
+    "scores_by_episode.jsonl": "c1075ca6643eae6b3286251c14a7d6b001a3af16ded50510a8fe71a586714e54",
+    "scores_by_image.jsonl": "32d79f2f2c5cd7d885ca307ae1b135314294e6330f0afd48a2db3174a8410f1e"
+  }
+}

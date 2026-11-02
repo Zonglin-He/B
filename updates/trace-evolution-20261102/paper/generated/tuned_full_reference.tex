@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\caption{Published references (R) and local TRACE (L), mIoU (\%). Reported means and standard deviations follow Table~5, Original NACLIP, of \citet{noori2025mlmp}; No Adapt has no reported dispersion. Local results use seed 0 and TRACE-selected configurations on development-exposed populations. Published and local methods retain their respective protocols.}
+\label{tab:tuned-full-reference}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Method & VOC20 & VOC21 & PC60 & Object & Stuff \\
+\midrule
+No Adapt (R) & $75.91$ & $45.12$ & $24.95$ & $23.80$ & $18.34$ \\
+TENT (R) & $77.00 \pm 0.04$ & $45.65 \pm 0.02$ & $25.29 \pm 0.01$ & $24.88 \pm 0.01$ & $18.76 \pm 0.01$ \\
+TPT (R) & $75.93 \pm 0.01$ & $45.17 \pm 0.01$ & $24.98 \pm 0.01$ & $23.84 \pm 0.01$ & $18.35 \pm 0.01$ \\
+WATT (R) & $57.73 \pm 0.06$ & $28.58 \pm 0.05$ & $14.77 \pm 0.03$ & $14.14 \pm 0.06$ & $9.49 \pm 0.02$ \\
+CLIPArTT (R) & $72.77 \pm 0.14$ & $39.50 \pm 0.04$ & $21.88 \pm 0.03$ & $21.34 \pm 0.03$ & $15.48 \pm 0.01$ \\
+MLMP (R) & $83.76 \pm 0.00$ & $50.78 \pm 0.02$ & $27.99 \pm 0.03$ & $28.84 \pm 0.01$ & $21.25 \pm 0.01$ \\
+\midrule
+TRACE (L) & 83.61 & 53.38 & 30.78 & 32.67 & 21.91 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\caption{COCO-CD mIoU (\%) alongside existing local native baselines. TENT is the strongest historical local baseline (72.20). Historical baselines and tuned TRACE retain their respective backends, prompts, and optimization settings; the historical No Adapt uses its native readout.}
+\label{tab:tuned-full-cd-reference}
+\centering\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Method / protocol & COCO-CD \\
+\midrule
+No Adapt (L, historical native) & 61.14 \\
+TENT (L, historical native) & 72.20 \\
+TPT (L, historical native) & 64.27 \\
+MLMP (L, historical native) & 71.01 \\
+\midrule
+TRACE (L, tuned) & 74.23 \\
+\bottomrule
+\end{tabular}
+\end{table*}

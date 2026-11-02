@@ -1,0 +1,36 @@
+\begin{table*}[t]
+\caption{Global C was sealed from calibration before confirmation; no reselection. Prospective training-source cohorts under partial documented history only; July candidate pools remain uncertified. Not independent-unseen or full-split evidence. All orders are dependent reorderings, not confidence intervals or significance evidence. Pooled mIoU includes warmup. Calibration128 is separate from confirmation256; all six arms and three confirmation orders are retained.}
+\centering\scriptsize
+\begin{tabular}{@{}lllrrrrrr@{}}
+\toprule
+Dataset & Stage & Order & Old min & Image uniform & Image confidence & Image T & Image C & Image min \\
+\midrule
+PC60 & Calibration & Sorted & 24.846289 & 25.250079 & 25.212533 & 24.693866 & 24.939576 & 24.903935 \\
+Object & Calibration & Sorted & 25.799302 & 25.620627 & 25.639792 & 26.711807 & 26.219353 & 25.574809 \\
+PC60 & Confirmation & Sorted & 26.569958 & 26.352055 & 26.341809 & 26.287044 & 26.518186 & 26.458232 \\
+PC60 & Confirmation & 20261030 & 26.629852 & 26.496603 & 26.386787 & 26.412501 & 26.455814 & 26.456690 \\
+PC60 & Confirmation & 20261031 & 26.681803 & 26.358987 & 26.390180 & 26.301490 & 26.544012 & 26.356117 \\
+Object & Confirmation & Sorted & 29.955178 & 26.573758 & 27.221342 & 31.100526 & 29.324619 & 29.975437 \\
+Object & Confirmation & 20261030 & 30.351900 & 26.833645 & 28.066020 & 30.881844 & 30.166647 & 30.837342 \\
+Object & Confirmation & 20261031 & 29.796538 & 26.328251 & 27.041885 & 30.440226 & 29.966576 & 29.832325 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\caption{Signed differences versus image confidence in percentage points. Retain negative, zero and positive differences; no post-confirmation mode choice.}
+\centering\scriptsize
+\begin{tabular}{@{}lllrrrrrr@{}}
+\toprule
+Dataset & Stage & Order & Old min & Image uniform & Image confidence & Image T & Image C & Image min \\
+\midrule
+PC60 & Calibration & Sorted & -0.366244 & +0.037546 & +0.000000 & -0.518667 & -0.272957 & -0.308598 \\
+Object & Calibration & Sorted & +0.159510 & -0.019165 & +0.000000 & +1.072014 & +0.579561 & -0.064984 \\
+PC60 & Confirmation & Sorted & +0.228150 & +0.010246 & +0.000000 & -0.054764 & +0.176377 & +0.116423 \\
+PC60 & Confirmation & 20261030 & +0.243065 & +0.109815 & +0.000000 & +0.025714 & +0.069026 & +0.069902 \\
+PC60 & Confirmation & 20261031 & +0.291623 & -0.031193 & +0.000000 & -0.088690 & +0.153832 & -0.034063 \\
+Object & Confirmation & Sorted & +2.733836 & -0.647584 & +0.000000 & +3.879184 & +2.103277 & +2.754095 \\
+Object & Confirmation & 20261030 & +2.285879 & -1.232375 & +0.000000 & +2.815823 & +2.100626 & +2.771322 \\
+Object & Confirmation & 20261031 & +2.754653 & -0.713634 & +0.000000 & +3.398341 & +2.924691 & +2.790440 \\
+\bottomrule
+\end{tabular}
+\end{table*}

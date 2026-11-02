@@ -1,0 +1,18 @@
+{
+  "format_version": 1,
+  "status": "completed",
+  "created_at": "2026-10-28T16:29:49.783434+00:00",
+  "source_sha256": {
+    "/home/wwww/.codex/worktrees/trace-simplification/hzl/tools/evolution_followup/probe_audit.py": "f87d3806d501f07853419868fe2e66dfe07cd4af835860de9cec0ef7a8fad9c0",
+    "/home/wwww/.codex/worktrees/trace-simplification/hzl/tests/test_probe_complementarity.py": "b70d8cd412b49a889ca4818e80d79516745c5115ad3f6e932ec704d600bada2a"
+  },
+  "source_suite_seal_sha256": "b2c28c41ded424043ff00de5c02a4c988f5aeeb301a920e8913b42bec79a998a",
+  "artifact_sha256": {
+    "source_inventory.json": "bcead0dd00b121ffc5df96bf06900a8d7258e876ca10d254112d92e9ba1bab11",
+    "episodes.jsonl": "8c6c4f07614c5da8bc23901662ab0431a28775ac150aeff44ebd1041a387cfc4",
+    "summary.json": "87430e3e70cb2efb1020f7b0b938c45ab9b16f684bc606527cd1ee3bb40cd29c",
+    "RESULTS.md": "73ef8f06f25de088f68a189896003d70fba7dcf2a12878ec13320bddc492e58a"
+  },
+  "verification_scope": "Rehashed suite-linked manifest, queue state, five cell prediction/scoring seals and results, prediction protocols/panels/state/checkpoint identity metadata, and all 84 frozen-runtime source files. Checked complete episode NPZ population and NPZ/receipt coverage in linked sealed cache inventories. Episode receipt hashes are checked during streaming. No NPZ or prediction payload rehash; no prediction pixels, checkpoint payload, score-count streams, input images or annotations opened. Existing inventory hashes bind cache provenance, not a fresh cache-byte integrity proof.",
+  "claim_boundary": "Descriptive mechanism characterization of existing development-exposed frozen arms, not a new independent validation. No causality, independent significance, necessity, or speed claim. Candidates within episodes are not independent replicates. All five datasets and both comparison directions are retained; no outcome selection."
+}

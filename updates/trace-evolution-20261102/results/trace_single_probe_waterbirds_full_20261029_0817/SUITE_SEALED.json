@@ -1,0 +1,33 @@
+{
+  "complete": true,
+  "datasets": [
+    "voc20",
+    "voc21",
+    "pc59",
+    "pc60",
+    "coco_object",
+    "coco_stuff",
+    "coco_cd",
+    "waterbirds_seg"
+  ],
+  "arm_results": 32,
+  "suite_prepared_sha256": "4f3e54226f99230af48b2105372300d06f31651515324b3ab99dbe138ff3cfa3",
+  "parent_import_sha256": "1aca53b7370fabff128850cf0781cd32653785d8b6d258c30457a18e7eafae4e",
+  "waterbirds_gate_sha256": "05b55f3abf73e3d395fa8531282e05ab45d66636ec892662d9886e0cdee0d1e4",
+  "selected_config_sha256": "bbd5acc449b5407e923379c32499884ad0e1c4fdfc1d07577943b7fb52f01903",
+  "all_full_prediction_barrier_sha256": "928683d8136f9d6b35f1cf11a0b6745b851b8fba678f4a801cdbdecd0292c65f",
+  "scored_seals": {
+    "voc20": "d314a7779bd686c220dbd09c3625d3995b4549733bfe19b69877021c0bbf5952",
+    "voc21": "d078e29f4206b870b9383c0b9f7dfafb9e53246c054100268b1d6e65441d29c8",
+    "pc59": "acff07bb11553c265869e664c80852b672c231282ad4569d5c67cb79d1f152f8",
+    "pc60": "ab458be2fb920d033abadae730009f80a0224a19a7a5bee4c92e3e5e76fe1ba0",
+    "coco_cd": "b37602673dd8d333360abdaf27b59d3295d911f9e4b5013f302d721b47da7f21",
+    "coco_object": "ffb9f57ab7151b4adf1a01443cf1ba48c1985227509cacf1755d2bed89e5db43",
+    "coco_stuff": "769cc61727e44be27281eb12a39a7a470ad79e2c7d5249f838fc35ae0196f777",
+    "waterbirds_seg": "755874fc2a89b263480cf2f8548125441fe40e6f40735aeb5d67ead428f3704f"
+  },
+  "metrics_sha256": "2af213600b11a178b081d84f283c02a7e5c32cc195c61af0904a7021900542e7",
+  "trials_sha256": "3e318b919e4f70501510fe13c16c4a52ec990687f8243e93169759642100321a",
+  "waterbirds_evaluation_scope": "development_overlap",
+  "service_exit_certified": false
+}

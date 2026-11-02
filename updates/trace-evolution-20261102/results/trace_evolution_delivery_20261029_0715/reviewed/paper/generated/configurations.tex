@@ -1,0 +1,17 @@
+\begin{table*}[t]
+\caption{Frozen per-dataset settings; all allocation and spatial-normalization controls retain their dataset configuration. Batch denotes source images per episode, $K$ candidate limit, $B_v$ diagnostic view-batch size, and Ext. query extensions. Complete preprocessing and source identities are retained in the generated provenance.}
+\label{tab:configurations}
+\centering\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Dataset & Batch & LR & Steps & $K$ & $B_v$ & Ext. \\
+\midrule
+COCO-CD & 28 & 0.0086 & 5 & 4 & 16 & No \\
+PC60 & 9 & 0.00225 & 11 & 22 & 16 & Yes \\
+VOC21 & 16 & 0.00063 & 36 & 33 & 16 & Yes \\
+COCO Object & 14 & 0.003 & 29 & 34 & 16 & Yes \\
+COCO-Stuff & 5 & 0.0034 & 12 & 33 & 16 & Yes \\
+VOC20 & 1 & 0.001105 & 9 & 8 & 16 & Yes \\
+\bottomrule
+\end{tabular}
+\end{table*}

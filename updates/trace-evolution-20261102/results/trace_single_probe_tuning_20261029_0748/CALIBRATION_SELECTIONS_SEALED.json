@@ -1,0 +1,18 @@
+{
+  "complete": false,
+  "full_evaluation_ready": false,
+  "blocked": {
+    "waterbirds_seg": "All existing Waterbirds training IDs overlap original full. Remaining CUB training IDs are not materialized Waterbirds examples. No exact provenance-justified original CUB/Places compositing builder is available in the bounded archived source inventory; the existing calibration builder only selects existing training examples and reads their masks."
+  },
+  "selections": {
+    "voc20": "bc5bc7699b9fb305452dddfa8d34c587fecc9e038005a315e2df82d6474dfad0",
+    "voc21": "97c76da3fe94c8027ac4b6ad2c393ae209684bede7b499fdfc91c75504c7930b",
+    "pc59": "a0cad37c09ead3f08c44771326e8f3dcc64f3f3e70d520a83353056582ff9960",
+    "pc60": "10ff61ec03a90ad08316481c977c472150503c4b389658f65c842a83d582bd2f",
+    "coco_cd": "4ee70591ec19f656ef1ae3e315f78c527c782d12369713114f043420e2ada861",
+    "coco_object": "016c30561d4dbe4465f80721bf32e21f5b88490139e3360cfc8d545091434000",
+    "coco_stuff": "31e4743c61118b05a54fa3ebc504f35c626a1934b0bf136b9ebde116b30ac021"
+  },
+  "suite_prepared_sha256": "e1a1fcac0fa225cefebcc29f2f676e5366feade2a72388969b5d2d948de60426",
+  "full_evaluation_used_for_selection": false
+}

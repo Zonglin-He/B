@@ -1,0 +1,44 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "seed": 2,
+  "images": 500,
+  "full_split": true,
+  "policy_results": [
+    {
+      "policy": "trace",
+      "policy_label": "trace",
+      "permutation_seed": null,
+      "miou_unrounded": 75.10479394854072,
+      "intersection": [
+        19930142,
+        1849031,
+        1602554
+      ],
+      "union": [
+        21613915,
+        2652593,
+        2527765
+      ]
+    }
+  ],
+  "pre_result": {
+    "policy": "pre",
+    "policy_label": "pre",
+    "permutation_seed": null,
+    "miou_unrounded": 62.81844970968557,
+    "intersection": [
+      17701052,
+      1973785,
+      1799885
+    ],
+    "union": [
+      21197865,
+      3064881,
+      4438532
+    ]
+  },
+  "prediction_seal_sha256": "8b0bb02ce4ad62ee1d97a0381b0d62548674d0c0142632f1cdd4f74ee351dbbe",
+  "label_contents_first_opened_after_prediction_seal": true,
+  "timing_scope": "Shared pre/diagnosis once; separate policy adaptation/evaluation. Not standalone formal cost."
+}

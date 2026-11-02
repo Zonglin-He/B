@@ -1,0 +1,25 @@
+{
+  "status": "design_locked_before_new_predictions",
+  "created_beijing": "2026-10-29 00:38",
+  "purpose": "Separate real standalone probe cost, fixed common-configuration transfer and episode regrouping from shared-diagnostic mechanism scores.",
+  "datasets": ["pc60", "coco_object"],
+  "images_per_dataset": 128,
+  "subset_selection_seed": 20261029,
+  "model_seed": 0,
+  "arms": ["uniform", "confidence", "target", "counterfactual", "trace"],
+  "conditions": [
+    {"name": "inherited_sorted", "config": "unchanged current dataset settings", "episode_order_seed": null},
+    {"name": "common_sorted", "overrides": {"batch_size": 2, "lr": 0.001, "steps": 10, "trace_max_regions": 16, "trace_view_batch_size": 16}, "episode_order_seed": null},
+    {"name": "inherited_regrouped", "config": "unchanged current dataset settings", "episode_order_seed": 20261030}
+  ],
+  "vocabulary": "Keep each dataset's current extension/category protocol unchanged in every condition.",
+  "new_method": false,
+  "parameter_search": false,
+  "subset_scope": "A new fixed subset/composition of historically development-exposed evaluation images, not fresh independent labels or a new population.",
+  "counts": {"formal_cells": 6, "adaptation_arm_results": 30, "images_per_formal_cell": 128},
+  "timing": "Each arm actually computes only its required0/1/2 views. Synchronized full adaptation plus final prediction, excluding setup/loading/scoring and first complete warmup episode. Warmup predictions remain in accuracy; counts and timing images reported separately.",
+  "scoring": "All requested arms' predictions sealed before opening label pixels; pooled intersections/unions,224x224 nearest-neighbor labels. No metric/aggregator/threshold selection from new scores.",
+  "execution_gate": "No GPU until worker review, CPU tests, small GT-free schedule/reset/equivalence smoke, explicit source+image+config+ordered-panel manifest and checksums. One worker under shared GPU lock, bounded systemd memory, no retry/overwrite.",
+  "acceptance": "Report every arm, condition and sign. Do not require min to win; a tie or loss is an informative result. Do not change the rule, subset or configs after observing scores.",
+  "not_authorized_by_this_plan": ["baseline retuning", "MLMP reruns on reported datasets", "full slow datasets", "second backbone", "ACDC", "posthoc aggregator selection", "automatic new conditions"]
+}

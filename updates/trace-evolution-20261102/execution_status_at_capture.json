@@ -1,0 +1,22 @@
+{
+  "captured_at_utc": "2026-11-02T03:40:21.417599+00:00",
+  "services": {
+    "trace-local-baselines-20261030-0008.service": {
+      "MainPID": "0",
+      "Result": "exit-code",
+      "ExecMainStatus": "1",
+      "LoadState": "loaded",
+      "ActiveState": "failed",
+      "SubState": "failed",
+      "InvocationID": "9acee57420c1427fafdad156e53a4f6d"
+    }
+  },
+  "baseline": {
+    "passed_gates": 0,
+    "formal_predictions": 0,
+    "new_scores": 0,
+    "failure": "Unrelated CFCTTA eager package import; MLMP constructor not entered"
+  },
+  "latest_human_decision": "Import repair, CPU regression, independent audit and fresh single controlled queue approved; not yet executed",
+  "publication_started_gpu_work": false
+}

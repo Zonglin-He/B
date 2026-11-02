@@ -1,0 +1,122 @@
+{
+  "status": "completed",
+  "dataset": "coco_cd",
+  "stage": "full",
+  "seed": 0,
+  "images": 500,
+  "full_split": true,
+  "arm_results": {
+    "image_uniform": {
+      "miou_unrounded": 66.21672902361878,
+      "intersection": [
+        18544522,
+        1885047,
+        1761678
+      ],
+      "union": [
+        21291830,
+        2889765,
+        3803158
+      ]
+    },
+    "image_confidence": {
+      "miou_unrounded": 67.66430765308858,
+      "intersection": [
+        18757806,
+        1897209,
+        1754203
+      ],
+      "union": [
+        21307478,
+        2872012,
+        3587292
+      ]
+    },
+    "image_C": {
+      "miou_unrounded": 74.98211836400083,
+      "intersection": [
+        19887755,
+        1871694,
+        1602053
+      ],
+      "union": [
+        21591905,
+        2688085,
+        2534508
+      ]
+    }
+  },
+  "timings": {
+    "image_uniform": {
+      "measured_episodes": 17,
+      "measured_images": 472,
+      "seconds": 11.03755699004978,
+      "seconds_per_image": 0.023384654639935974,
+      "images_per_second": 42.76308610913648,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_confidence": {
+      "measured_episodes": 17,
+      "measured_images": 472,
+      "seconds": 11.033775438554585,
+      "seconds_per_image": 0.02337664287829361,
+      "images_per_second": 42.777742090954824,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_C": {
+      "measured_episodes": 17,
+      "measured_images": 472,
+      "seconds": 14.094919053837657,
+      "seconds_per_image": 0.029862116639486562,
+      "images_per_second": 33.487244460016065,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "costs": {
+    "image_uniform": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 36,
+      "eval_forward_inputs": 1000,
+      "adapt_forward_calls": 90,
+      "adapt_forward_inputs": 2500,
+      "encoder_calls": 126,
+      "encoder_inputs": 3500,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_confidence": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 36,
+      "eval_forward_inputs": 1000,
+      "adapt_forward_calls": 90,
+      "adapt_forward_inputs": 2500,
+      "encoder_calls": 126,
+      "encoder_inputs": 3500,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_C": {
+      "diagnostic_forward_calls": 125,
+      "diagnostic_forward_inputs": 1998,
+      "eval_forward_calls": 36,
+      "eval_forward_inputs": 1000,
+      "adapt_forward_calls": 90,
+      "adapt_forward_inputs": 2500,
+      "encoder_calls": 251,
+      "encoder_inputs": 5498,
+      "diagnostic_encoder_calls": 125,
+      "diagnostic_encoder_inputs": 1998
+    }
+  },
+  "timing_scope": "Synchronized CUDA wallclock per independent arm: episodic reset, initial readout, candidate construction/selection, requested diagnostic views, LayerNorm optimization, final inference and reconstruction/CPU prediction transfer. Includes accounting hooks. Excludes model setup/loading, RGB decode/H2D/geometry preparation common to arms, post-run provenance checks, prediction/receipt disk writes, and offline scoring. Exclude only first complete episode (episode 0) per arm from timing aggregates; retain every prediction, count and accuracy observation including warmup.",
+  "prediction_seal_sha256": "e37d47dabaaf3fae071c75ab5e4d004d32ee07233d4c548b7b079393022945ff",
+  "barrier_sha256": "8e3fcaf3f5d1ebbd2f64b19f9b1a0fbedae5ca399e52f47beb09aed1479510f5",
+  "selection_sha256": "90fa3a20097698e9b83cafd416a4b05fe7f033dcd8aadb027c970a9788ac11e4",
+  "label_contents_first_opened_after_all_full_predictions_sealed": true,
+  "exposure_scope": "Development-exposed official full splits and inherited per-dataset configurations; fixed C, not untouched or equal-tuning confirmation."
+}

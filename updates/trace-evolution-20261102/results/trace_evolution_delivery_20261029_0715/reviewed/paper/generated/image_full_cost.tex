@@ -1,0 +1,34 @@
+\begin{table*}[t]
+\caption{Synchronized model-side ms/image for the new full-split runs. $N_t$ excludes only episode 0 per arm. Includes reset, initial readout, candidates, requested views, LayerNorm optimization, final inference and CPU prediction transfer. Excludes loading, RGB decode, H2D/geometry preparation, provenance checks, disk writes and scoring; not end-to-end throughput.}
+\label{tab:image-full-cost}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Dataset & $N_t$ & Uniform & Confidence & TRACE(C) \\
+\midrule
+PC60 & 5096 & 83.65 & 83.73 & 119.41 \\
+Object & 4986 & 237.34 & 237.41 & 292.00 \\
+VOC21 & 1433 & 278.48 & 278.24 & 330.59 \\
+VOC20 & 1448 & 279.88 & 279.94 & 295.56 \\
+COCO-CD & 472 & 23.38 & 23.38 & 29.86 \\
+Stuff & 4995 & 129.44 & 129.35 & 186.14 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+\begin{table*}[t]
+\caption{Actual diagnostic encoder calls / inputs, including warmup. Uniform and Confidence compute zero probes; TRACE(C) computes one input per candidate. Counts are from these full populations, not earlier cohort ratios. Total encoder work is retained in provenance.}
+\label{tab:image-full-work}
+\centering\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+Dataset & $N$ & Candidates & Uniform & Confidence & TRACE(C) \\
+\midrule
+PC60 & 5105 & 111514 & 0 / 0 & 0 / 0 & 7317 / 111514 \\
+Object & 5000 & 168669 & 0 / 0 & 0 / 0 & 10662 / 168669 \\
+VOC21 & 1449 & 46892 & 0 / 0 & 0 / 0 & 2956 / 46892 \\
+VOC20 & 1449 & 11583 & 0 / 0 & 0 / 0 & 1449 / 11583 \\
+COCO-CD & 500 & 1998 & 0 / 0 & 0 / 0 & 125 / 1998 \\
+Stuff & 5000 & 164543 & 0 / 0 & 0 / 0 & 10964 / 164543 \\
+\bottomrule
+\end{tabular}
+\end{table*}

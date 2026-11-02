@@ -1,0 +1,209 @@
+{
+  "review_round": "round03",
+  "reviewer_role": "independent ML/CV conference manuscript reviewer",
+  "packet_root": "/home/wwww/hzl/results/trace_evolution_review_round03_20261029_0145",
+  "overall_score": 5,
+  "recommendation": "Weak Reject",
+  "confidence": 4,
+  "score_scale": "1-10; 5 denotes borderline, marginally below acceptance; overall is holistic, not the mean of dimensions",
+  "confidence_scale": "1-5",
+  "decision_summary": "The method is coherent and canonical records support substantial fixed-configuration allocation gains on CD/Object. No confirmed fatal identity, inference-label leakage, metric, or central unsupported-claim error was found. The main blockers are development-exposed evaluation without independent confirmation, configuration/composition dependence, and weak incremental accuracy/cost support for the specifically two-view minimum rule.",
+  "page_reference_convention": "One-based physical PDF pages: M=paper/build/main.pdf including its appendix, S=paper/build/supplement.pdf. Page count is not a decision criterion.",
+  "dimension_scores": {
+    "originality_and_contribution": 5,
+    "mathematical_and_method_correctness": 8,
+    "experimental_support": 6,
+    "comparison_quality_and_interpretation": 5,
+    "clarity": 8,
+    "reproducibility": 8,
+    "significance_and_practical_value": 5
+  },
+  "strengths": [
+    {
+      "id": "S1",
+      "priority": 1,
+      "title": "Meaningful controlled allocation gains on complete CD/Object panels",
+      "assessment": "At fixed candidates, readouts and optimization, min improves over Confidence by 8.0144 pp on CD and 1.9369 pp on Object. The region-versus-q-weighted-pixel control yields 0.6852/0.3273 pp on PC60/Object at fixed geometry and scores.",
+      "references": ["M pp. 5-7, Tables 3 and 9", "S p. 5, Table 4", "paper/main.tex:152", "paper/main.tex:163", "paper/main.tex:170", "paper/generated/mechanism_status.tex", "paper/generated/cd_mechanism.tex", "trace_self_evolution_20261028_1338/cells/mechanism/coco_cd/result.json", "trace_self_evolution_20261028_1338/cells/mechanism/coco_object/result.json"]
+    },
+    {
+      "id": "S2",
+      "priority": 2,
+      "title": "Well-defined method with matching inspected implementation",
+      "assessment": "Fixed diagnostic geometry, query/category distinction, two readouts, detached min weights, region means and episode normalization are explicit. The two-view override does not call the historical suppressed-view evaluator. The minimum ordering identity and normalization caveats are mathematically correct.",
+      "references": ["M pp. 3-4, 13-16", "S pp. 2, 4-5", "paper/main.tex:119", "paper/appendix.tex:40", "paper/appendix.tex:147", "trace_ovss/method/two_view.py:30", "trace_ovss/method/trace/objective.py:16", "trace_ovss/method/adapter.py:12"]
+    },
+    {
+      "id": "S3",
+      "priority": 3,
+      "title": "Accurate comparison and uncertainty boundaries",
+      "assessment": "Literature references, local native baselines and fixed-candidate controls are distinguished. Numerical replay is not treated as independent seeds; permutations are not confidence intervals; null/negative results and shared VOC images are disclosed. Unmatched literature rows are not judged as falsely advertised matched local baselines.",
+      "references": ["M pp. 5-7, 10, 12, 18", "S pp. 1, 3, 7", "paper/main.tex:140", "paper/main.tex:144", "paper/main.tex:208", "paper/generated/reported_comparison.tex", "paper/appendix.tex:8"]
+    },
+    {
+      "id": "S4",
+      "priority": 4,
+      "title": "Inspectable provenance and inference/scoring separation",
+      "assessment": "All 41 packet hashes match; 130 stored pooled scores across three main suites, including smoke/replays, and 30 standalone arm scores recompute from saved class counts. Inspected image-only prediction and separate scoring code support the label boundary. These checks do not constitute independent inference reproduction.",
+      "references": ["M pp. 12-14, 17-19", "S pp. 1-3, 6-8", "paper/appendix.tex:115", "packet_manifest.json", "trace_self_evolution_20261028_1338/runtime/tools/evolution/run_cell.py:77", "trace_self_evolution_20261028_1338/runtime/tools/evolution/run_cell.py:398"]
+    }
+  ],
+  "weaknesses": [
+    {
+      "id": "W1",
+      "priority": 1,
+      "severity": "major",
+      "title": "No independent confirmation after evaluation-conditioned development",
+      "assessment": "The supplementary selection-history table confirms full-validation-conditioned LR decisions for VOC20/Stuff/CD, prior full-score exposure elsewhere and unresolved parameter origins. The new 128-image diagnostics reuse exposed images. A new freeze cannot retrospectively create an untouched evaluation set. This is a generalization blocker, not demonstrated inference-time leakage.",
+      "references": ["M pp. 5, 7, 14-15, Table 8", "S pp. 3-4, Table 3", "paper/appendix.tex:91", "paper/appendix.tex:102", "paper/appendix.tex:112", "paper/main.tex:175", "trace_standalone_followup_20261029_0105/frozen_plan.json"],
+      "minimum_repair": "Predeclare and evaluate an actually unexposed evaluation population/split using disjoint development selection, frozen current design and all key allocation arms; surface historical exposure beside main results. Resampling an exposed validation subset is not independent confirmation."
+    },
+    {
+      "id": "W2",
+      "priority": 2,
+      "severity": "major",
+      "title": "Weak incremental value for a second probe and minimum aggregation",
+      "assessment": "Full-split min exceeds C-only by only 0.0001798 pp on CD and T-only by 0.0689571 pp on Object; other splits favor a single view and/or Mean. On retained 128-image Object, T scores 28.1060 versus min 27.4582 and costs 272.40 versus 329.13 ms/image. On retained PC60, min slightly underperforms Confidence at 142.08 versus 69.24 ms/image. Complementarity is not evidence of extra task benefit. The paper acknowledges nonuniform optimality, so this is a value/support concern, not a falsely claimed universal win.",
+      "references": ["M pp. 5-7, 19, Tables 3-4, 9, 13", "S pp. 5-8, Tables 4-5, 8", "paper/main.tex:168", "paper/main.tex:181", "paper/main.tex:206", "paper/generated/standalone_comparison.tex", "paper/generated/standalone_cost.tex", "trace_standalone_followup_20261029_0105/rows.csv"],
+      "minimum_repair": "Pair standalone cost with accuracy under a fixed declared budget and independent evidence. Demonstrate a reproducible benefit/tradeoff for the full two-view rule or narrow the contribution to candidate-preserving probe allocation with min as one conservative, sometimes dominated option. Do not select dataset-specific winners post hoc."
+    },
+    {
+      "id": "W3",
+      "priority": 3,
+      "severity": "major",
+      "title": "Configuration and episode-composition portability unresolved",
+      "assessment": "Common-setting Object gives min-minus-Confidence -0.4538 pp, versus PC60 +0.3165. Regrouping PC60 changes that contrast from -0.0267 to +0.6091 on the same images. One extra ordering and a multifactor common bundle do not characterize robustness. Deterministic replay supplies no independent uncertainty, and paired episode intervals are absent.",
+      "references": ["M pp. 5-7, 10, Table 4", "S pp. 6-8", "paper/main.tex:175", "paper/main.tex:179", "paper/main.tex:208", "paper/generated/standalone_comparison.tex", "trace_standalone_followup_20261029_0105/cells/*/*/result.json"],
+      "minimum_repair": "Test several predeclared regroupings at frozen settings and quantify paired differences by resampling complete adaptation episodes and recomputing pooled class IoUs. Explain that these intervals are conditional and do not repair historical selection."
+    },
+    {
+      "id": "W4",
+      "priority": 4,
+      "severity": "moderate-to-major",
+      "title": "Competitiveness against a close external method remains unisolated",
+      "assessment": "Reported-reference rows correctly compare operating points rather than matched implementations. The local reset readout already exceeds the reported reset baseline. CD local methods also retain different backends and optimization/tuning histories. The allocation controls establish an internal effect but not matched superiority to a strong close external method. This is an evidence gap, not a misrepresentation of the draft's labeled comparisons.",
+      "references": ["M pp. 5-6, Tables 1-2; p. 18", "S p. 7", "paper/main.tex:138", "paper/main.tex:140", "paper/main.tex:144", "paper/generated/reported_comparison.tex", "paper/generated/cd_local.tex", "paper/appendix.tex final comparison-protocol section"],
+      "minimum_repair": "Add a focused common-protocol local comparison to a close method such as MLMP on at least one general-purpose split, with matched checkpoint/vocabulary/preprocessing/scoring and documented comparable optimization/tuning opportunity; retain native and literature context separately."
+    },
+    {
+      "id": "W5",
+      "priority": 5,
+      "severity": "moderate",
+      "title": "Mechanistic conclusion is narrower than a general reliable-adaptation principle",
+      "assessment": "Area normalization is tested on two splits. Unstratified shuffles do not identify a special semantic reliability mechanism. Joint-update risk strata are descriptive, with increased highlighted-group C-to-W on Object/Stuff. The minimum ordering identity cannot justify the transforms or infer correctness. Boundary/color/context/query-extension sensitivity remains untested. Most limits are acknowledged, but they reduce the scope and significance of the new scientific result.",
+      "references": ["M pp. 3-5, 7, 15-18", "S pp. 4-7", "paper/main.tex:193", "paper/main.tex:197", "paper/main.tex:212", "paper/appendix.tex:171", "paper/generated/update_risk.tex", "paper/generated/risk_strata.tex"],
+      "minimum_repair": "Keep causal/calibration/safety claims excluded; explicitly bound the conclusion to fixed-candidate allocation and the two observed area controls. Broader mechanistic claims require transform/boundary or matched-stratum interventions and independent confirmation, not more descriptions of the same cache."
+    },
+    {
+      "id": "W6",
+      "priority": 6,
+      "severity": "minor",
+      "title": "Main-text exposure caveat and qualitative heading collision",
+      "assessment": "Historical development exposure should be stated beside the main protocol/results, not left mainly to the appendix. Figure 4's TRACE and Ground truth headings visually run together on physical main page 9. No page-length penalty is applied.",
+      "references": ["M pp. 5, 9", "paper/main.tex:135", "paper/main.tex:188", "paper/figure/segmentation_examples.pdf"],
+      "minimum_repair": "Add one main-text development-exposure sentence, separate figure column headings, preserve all negative controls and provide a concrete frozen-config predict/seal/score invocation."
+    }
+  ],
+  "fatal_issues": {
+    "any_confirmed": false,
+    "method_identity": {
+      "confirmed_fatal": false,
+      "status": "not_observed",
+      "assessment": "TwoViewTRACE, detached min scores, region normalization, resets and readouts agree with the inspected method description. Live two-view/adapter/dense-readout sources match main and VOC20 frozen copies; product/spatial controls use a separately recorded parent-bound replay worker."
+    },
+    "inference_label_leakage": {
+      "confirmed_fatal": false,
+      "status": "not_observed_in_inspected_prediction_path",
+      "assessment": "Inspected image-only prediction code opens RGB bytes; annotation contents are opened by separate scoring after sealing. Offline GT-filtered figures are disclosed. This is not an exhaustive dynamic noninterference proof."
+    },
+    "historical_evaluation_conditioning": {
+      "present": true,
+      "confirmed_fatal": false,
+      "status": "major_generalization_limitation",
+      "assessment": "Confirmed by the supplied supplementary selection-history table. It prevents interpreting full-split scores as untouched confirmation but does not invalidate finite-panel contrasts or imply GT was fed to inference. Raw historical author search ledgers were not read."
+    },
+    "metric_or_protocol": {
+      "confirmed_fatal": false,
+      "status": "not_observed",
+      "assessment": "Saved-count pooled mIoU recomputes; category/background/ignore conventions, 224x224 annotation resizing and extension mapping are explicit and consistent with inspected scoring. Native-resolution equivalence is not certified."
+    },
+    "unsupported_central_claim": {
+      "confirmed_fatal": false,
+      "status": "not_observed_under_actual_bounded_wording",
+      "assessment": "The six reset-to-adapt gains and CD/Object allocation effects are supported. Uniform aggregation optimality, calibrated safety, causal attribution, independent-seed uncertainty and matched-local SOTA superiority are not established and largely are not claimed. Full-design value and generalization remain insufficient for acceptance."
+    }
+  },
+  "minimum_repairs": [
+    {"priority": 1, "type": "new_independent_evidence", "action": "Predeclare an actually unexposed evaluation split/population after disjoint development selection; keep method/settings frozen and compare Uniform, Confidence, T, C and min without selecting a winner from outcomes."},
+    {"priority": 2, "type": "evidence_or_contribution_narrowing", "action": "Establish a reproducible accuracy/cost tradeoff for the second view against single-view controls, or narrow the contribution to probe allocation without suggesting complementarity proves added task value."},
+    {"priority": 3, "type": "uncertainty_and_composition", "action": "Use complete-episode paired resampling with pooled class counts and several locked regroupings; distinguish conditional uncertainty from independent confirmation and never treat deterministic replays as independent seeds."},
+    {"priority": 4, "type": "focused_external_comparison", "action": "Add a close common-protocol local reference on a general-purpose split with documented comparable optimization/tuning opportunity; keep published references and native operating points separate."},
+    {"priority": 5, "type": "text_and_reproducibility", "action": "Foreground development exposure, repair Figure 4 headings, retain all mixed outcomes, provide exact frozen-config commands and retain unresolved parameter origins as unknown unless records resolve them."}
+  ],
+  "inspected_artifacts": [
+    {
+      "root": "/home/wwww/hzl/results/trace_evolution_review_round03_20261029_0145",
+      "artifacts": ["packet_manifest.json", "paper/main.tex", "paper/appendix.tex", "paper/supplement.tex", "paper/build/main.pdf", "paper/build/supplement.pdf", "paper/build/main.log", "paper/build/supplement.log", "paper/generated/*.tex", "paper/generated/evolution_provenance.json selected fields", "paper/generated/standalone_provenance.json selected fields", "paper/generated/probe_provenance.json", "paper/generated/risk_provenance.json", "paper/figure/final_figure_provenance.json", "paper/tools/export_evolution.py relevant import/verification logic"],
+      "checks": "All 41 manifest-listed file SHA-256 values match. Read manuscript/supplement sources and PDF text; visually rendered main physical pages 1,7,9,15,19 in memory."
+    },
+    {
+      "root": "/home/wwww/hzl/results/trace_self_evolution_20261028_1338",
+      "artifacts": ["SUITE_SEALED.json", "manifest.json runtime identity fields", "cells/*/.../result.json canonical suite-listed results", "cells/mechanism/{coco_cd,pc60,coco_object,voc21,coco_stuff}/prediction_protocol.json selected fields", "cells/mechanism/coco_cd/PREDICTIONS_SEALED.json", "cells/mechanism/coco_cd/SCORED_SEALED.json", "runtime/tools/evolution/run_cell.py relevant loader/readout/scorer code", "runtime/tools/evolution/policies.py", "runtime/trace_ovss/method/two_view.py hash", "runtime/trace_ovss/method/adapter.py hash", "runtime/trace_ovss/models/dense_clip.py hash"],
+      "checks": "Recomputed 116 stored pooled mIoUs, including smoke and replay. Checked 37 selected manifest/result/scoring-seal hashes without mismatch. The three named live implementation files match this frozen runtime."
+    },
+    {
+      "root": "/home/wwww/hzl/results/trace_evolution_product_pixel_recovery_20261028_2215",
+      "artifacts": ["manifest.json", "SUITE_SEALED.json", "cells/pc60/result.json", "cells/coco_object/result.json", "cells/pc60/replay_gate.json", "cells/coco_object/replay_gate.json"],
+      "checks": "Recomputed six saved scores and checked five selected metadata hashes without mismatch. Parent-bound replay gates report zero changed prediction-label pixels."
+    },
+    {
+      "root": "/home/wwww/hzl/results/trace_evolution_voc20_cli_recovery_20261028_2312",
+      "artifacts": ["SUITE_SEALED.json", "manifest.json runtime identity fields", "cells/mechanism/voc20/result.json", "cells/smoke/voc20/result.json", "cells/repetition/voc20/seed1/result.json", "cells/repetition/voc20/seed2/result.json", "runtime/trace_ovss/method/two_view.py hash", "runtime/trace_ovss/method/adapter.py hash", "runtime/trace_ovss/models/dense_clip.py hash"],
+      "checks": "Recomputed eight saved scores and checked nine selected metadata hashes without mismatch. The three named live implementation files match this frozen runtime."
+    },
+    {
+      "root": "/home/wwww/hzl/results/trace_standalone_followup_20261029_0105",
+      "artifacts": ["frozen_plan.json", "ALL_PREDICTIONS_SEALED.json", "SUITE_SEALED.json", "rows.csv", "cells/{pc60,coco_object}/{inherited_sorted,common_sorted,inherited_regrouped}/result.json", "small JSON/CSV metadata covered by suite seal"],
+      "checks": "Recomputed all 30 arm mIoUs from saved class counts; all six result files report labels opened after the all-arm barrier. Checked 41 small JSON/CSV suite-covered metadata hashes without mismatch. Accuracy includes all 128 images; timing excludes the first episode."
+    },
+    {
+      "root": "/home/wwww/hzl/results/trace_evolution_final_analysis_20261028_2342",
+      "artifacts": ["summary.json selected fixed-threshold transition counts/rates"],
+      "checks": "Compared Confidence/TRACE highlighted-group sizes and transition rates on all five datasets to manuscript values. No prediction or candidate-cache payload opened."
+    },
+    {
+      "root": "/home/wwww/hzl/results/trace_probe_complementarity_20261029_0030",
+      "artifacts": ["summary.json selected support, candidate-count and episode-statistic fields"],
+      "checks": "Checked definitions and descriptive complementarity context against manuscript. No candidate arrays or episode stream scanned."
+    },
+    {
+      "root": "/home/wwww/.codex/worktrees/trace-simplification/hzl",
+      "artifacts": ["trace_ovss/method/two_view.py", "trace_ovss/method/adapter.py", "trace_ovss/method/trace/engine.py", "trace_ovss/method/trace/objective.py", "trace_ovss/method/trace/interventions.py", "trace_ovss/method/trace/estimator.py", "trace_ovss/method/trace/candidates.py", "trace_ovss/models/dense_clip.py relevant readout/encoder code"],
+      "checks": "Read candidate construction, two-view override, transformations, fixed-score objective, reset/LayerNorm adaptation and dense readout. No model imported or executed."
+    }
+  ],
+  "verification_summary": {
+    "packet_files_hashed": 41,
+    "packet_hash_mismatches": 0,
+    "main_suite_metadata_hashes_checked": 51,
+    "main_suite_stored_scores_recomputed_including_smoke_and_replay": 130,
+    "standalone_small_metadata_hashes_checked": 41,
+    "standalone_arm_scores_recomputed": 30,
+    "pooled_score_mismatches": 0,
+    "prediction_payloads_opened": false,
+    "model_loaded": false,
+    "gpu_jobs_run": false,
+    "experiments_modified": false
+  },
+  "scope_limits": [
+    "No internal author review, target score, author claim ledger or raw historical search ledger was opened. Parameter-selection history was assessed from the supplied supplementary manuscript.",
+    "A preliminary memory-index search was not used as evidence for the manuscript findings or score; no prior review or target score informed the decision.",
+    "No external literature search or re-extraction of the original MLMP source PDF was performed. Exhaustive novelty and independently verified published-reference transcription are not certified.",
+    "Local native-baseline payloads outside authorized packet evidence roots were not opened; those comparisons were assessed from frozen tables/provenance and their stated limits.",
+    "No prediction arrays, candidate-cache payloads, raw RGB/annotation pixels or checkpoint weights were loaded or rehashed. No large prediction directory was scanned.",
+    "Metadata/seal consistency and recomputed saved counts are not independent reproduction of model inference or exhaustive proof of absence of data leakage.",
+    "Full-split results are development-exposed fixed-configuration evidence. The 128-image diagnostics, deterministic replays, score permutations, candidates and pixels are not independent confirmation samples.",
+    "All reads were bounded to manuscript material, small canonical protocol/results/seal records and relevant permitted implementation. Only round03.md and round03.json were written, using apply_patch.",
+    "No page-count criterion was applied. A second backbone and native-resolution study would broaden scope but were not made blanket acceptance prerequisites."
+  ]
+}

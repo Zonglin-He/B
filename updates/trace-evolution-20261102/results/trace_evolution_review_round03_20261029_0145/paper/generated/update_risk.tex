@@ -1,0 +1,18 @@
+\begin{table}[!t]
+\caption{Label transitions (\%) on high-confidence, low-support footprints ($\kappa_R\geq0.9$, $\rho_R<0.25$), full seed-0 splits. C$\to$W conditions on initially correct pixels; W$\to$C on initially wrong pixels. Group sizes and exact denominators appear in Appendix Table~\ref{tab:risk-group-counts}. Policies share initial candidates; outcomes follow joint adaptation. Bold marks the better rate in each pair.}
+\label{tab:update-risk}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+ & \multicolumn{2}{c}{Confidence} & \multicolumn{2}{c}{TRACE} \\
+\cmidrule(lr){2-3}\cmidrule(lr){4-5}
+Dataset & C$\to$W $\downarrow$ & W$\to$C $\uparrow$ & C$\to$W $\downarrow$ & W$\to$C $\uparrow$ \\
+\midrule
+VOC21 & $2.39$ & $15.08$ & $\mathbf{2.16}$ & $\mathbf{15.46}$ \\
+PC60 & $8.06$ & $6.44$ & $\mathbf{6.87}$ & $\mathbf{9.32}$ \\
+COCO Object & $\mathbf{7.10}$ & $20.03$ & $8.03$ & $\mathbf{22.99}$ \\
+COCO-CD & $18.98$ & $25.86$ & $\mathbf{7.24}$ & $\mathbf{68.52}$ \\
+COCO-Stuff & $\mathbf{8.93}$ & $6.01$ & $9.70$ & $\mathbf{8.59}$ \\
+\bottomrule
+\end{tabular}
+\end{table}

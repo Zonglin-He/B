@@ -1,0 +1,157 @@
+{
+  "suite": "/home/wwww/hzl/results/trace_self_evolution_20261028_1338",
+  "replay": "/home/wwww/hzl/results/trace_evolution_product_pixel_recovery_20261028_2215",
+  "support_cases": [
+    {
+      "dataset": "coco_object",
+      "image_index": 2582,
+      "episode": 184,
+      "candidate": 204,
+      "query": 86,
+      "semantic_class": 55,
+      "name": "donut",
+      "confidence": 0.9945200085639954,
+      "T": 0.9749804139137268,
+      "C": 0.9511775970458984,
+      "q": 0.9511775970458984,
+      "offline_gt_purity": 0.8939771030363365
+    },
+    {
+      "dataset": "coco_object",
+      "image_index": 4768,
+      "episode": 340,
+      "candidate": 277,
+      "query": 48,
+      "semantic_class": 17,
+      "name": "dog",
+      "confidence": 0.9118417501449585,
+      "T": 0.009951308369636536,
+      "C": 0.6533331871032715,
+      "q": 0.009951308369636536
+    },
+    {
+      "dataset": "pc60",
+      "image_index": 3508,
+      "episode": 389,
+      "candidate": 160,
+      "query": 29,
+      "semantic_class": 29,
+      "name": "grass",
+      "confidence": 0.9492684006690979,
+      "T": 0.9823911786079407,
+      "C": 0.966834306716919,
+      "q": 0.966834306716919,
+      "offline_gt_purity": 0.7398921832884097
+    },
+    {
+      "dataset": "pc60",
+      "image_index": 996,
+      "episode": 110,
+      "candidate": 140,
+      "query": 48,
+      "semantic_class": 48,
+      "name": "snow",
+      "confidence": 0.9107595086097717,
+      "T": 0.0010423639323562384,
+      "C": 0.7011046409606934,
+      "q": 0.0010423639323562384
+    }
+  ],
+  "teaser_cases": [
+    {
+      "dataset": "pc60",
+      "image_index": 3508,
+      "episode": 389,
+      "candidate": 160,
+      "query": 29,
+      "semantic_class": 29,
+      "name": "grass",
+      "confidence": 0.9492684006690979,
+      "T": 0.9823911786079407,
+      "C": 0.966834306716919,
+      "q": 0.966834306716919,
+      "offline_gt_purity": 0.7398921832884097
+    },
+    {
+      "dataset": "coco_object",
+      "image_index": 4768,
+      "episode": 340,
+      "candidate": 277,
+      "query": 48,
+      "semantic_class": 17,
+      "name": "dog",
+      "confidence": 0.9118417501449585,
+      "T": 0.009951308369636536,
+      "C": 0.6533331871032715,
+      "q": 0.009951308369636536
+    }
+  ],
+  "segmentation_cases": [
+    {
+      "dataset": "coco_cd",
+      "image_index": 394,
+      "classes": [
+        1
+      ],
+      "names": [
+        "cat"
+      ],
+      "confidence_iou": 0.0,
+      "trace_iou": 59.88086895585144,
+      "delta": 59.88086895585144,
+      "failure": false
+    },
+    {
+      "dataset": "coco_object",
+      "image_index": 38,
+      "classes": [
+        1,
+        37
+      ],
+      "names": [
+        "person",
+        "skateboard"
+      ],
+      "confidence_iou": 0.0,
+      "trace_iou": 58.70985595562972,
+      "delta": 58.70985595562972,
+      "failure": false
+    },
+    {
+      "dataset": "pc60",
+      "image_index": 285,
+      "classes": [
+        53
+      ],
+      "names": [
+        "tree"
+      ],
+      "confidence_iou": 15.906562847608456,
+      "trace_iou": 73.37278106508876,
+      "delta": 57.466218217480304,
+      "failure": false
+    },
+    {
+      "dataset": "voc21",
+      "image_index": 154,
+      "classes": [
+        19
+      ],
+      "names": [
+        "train"
+      ],
+      "confidence_iou": 64.39996258535217,
+      "trace_iou": 43.58713058669384,
+      "delta": -20.812831998658332,
+      "failure": true
+    }
+  ],
+  "selection": "Illustrative extremes, not random or representative: high-confidence masks32-192 tokens ranked by common support; high-support illustrations additionally require offline semantic GT purity>=0.7, never used in adaptation; named-class IoU extremes among first400 images per dataset.",
+  "transforms": "CPU rendering through the exact intervention helper; displayed scores are stored GPU measurements, not recomputed.",
+  "segmentation_metric": "Mean IoU over the explicitly named one/two ground-truth categories, not dataset or whole-image mIoU.",
+  "source_sha256": {
+    "/home/wwww/hzl/results/trace_self_evolution_20261028_1338/SUITE_SEALED.json": "b2c28c41ded424043ff00de5c02a4c988f5aeeb301a920e8913b42bec79a998a",
+    "/home/wwww/hzl/results/trace_evolution_product_pixel_recovery_20261028_2215/SUITE_SEALED.json": "323b8d8593c9645485c10124e8896605a9ae05d1adc8c70401abd99c59b60aa8",
+    "/home/wwww/.codex/worktrees/trace-simplification/hzl/tools/draw_final_evolution_figures.py": "8245b6d3be6233d8e48b200affdb948ab31d541063dc7901dd31bfbc509f178e"
+  }
+}

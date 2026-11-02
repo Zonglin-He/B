@@ -1,0 +1,136 @@
+{
+  "status": "predicted",
+  "images": 256,
+  "full_split": false,
+  "timings": {
+    "episode_min": {
+      "measured_episodes": 28,
+      "measured_images": 247,
+      "seconds": 33.70310727227479,
+      "seconds_per_image": 0.13644982701325828,
+      "images_per_second": 7.32870111959053,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_uniform": {
+      "measured_episodes": 28,
+      "measured_images": 247,
+      "seconds": 16.412071184255183,
+      "seconds_per_image": 0.06644563232491976,
+      "images_per_second": 15.049898165013925,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_confidence": {
+      "measured_episodes": 28,
+      "measured_images": 247,
+      "seconds": 16.422405244782567,
+      "seconds_per_image": 0.06648747062665007,
+      "images_per_second": 15.040427776465474,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_T": {
+      "measured_episodes": 28,
+      "measured_images": 247,
+      "seconds": 25.15730742085725,
+      "seconds_per_image": 0.10185144704800507,
+      "images_per_second": 9.818220840089545,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_C": {
+      "measured_episodes": 28,
+      "measured_images": 247,
+      "seconds": 25.22894546482712,
+      "seconds_per_image": 0.1021414796146847,
+      "images_per_second": 9.790341825596894,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_min": {
+      "measured_episodes": 28,
+      "measured_images": 247,
+      "seconds": 33.82381247635931,
+      "seconds_per_image": 0.13693851205003768,
+      "images_per_second": 7.302547581607995,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "costs": {
+    "episode_min": {
+      "diagnostic_forward_calls": 707,
+      "diagnostic_forward_inputs": 11188,
+      "eval_forward_calls": 58,
+      "eval_forward_inputs": 512,
+      "adapt_forward_calls": 319,
+      "adapt_forward_inputs": 2816,
+      "encoder_calls": 1084,
+      "encoder_inputs": 14516,
+      "diagnostic_encoder_calls": 707,
+      "diagnostic_encoder_inputs": 11188
+    },
+    "image_uniform": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 58,
+      "eval_forward_inputs": 512,
+      "adapt_forward_calls": 319,
+      "adapt_forward_inputs": 2816,
+      "encoder_calls": 377,
+      "encoder_inputs": 3328,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_confidence": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 58,
+      "eval_forward_inputs": 512,
+      "adapt_forward_calls": 319,
+      "adapt_forward_inputs": 2816,
+      "encoder_calls": 377,
+      "encoder_inputs": 3328,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_T": {
+      "diagnostic_forward_calls": 367,
+      "diagnostic_forward_inputs": 5594,
+      "eval_forward_calls": 58,
+      "eval_forward_inputs": 512,
+      "adapt_forward_calls": 319,
+      "adapt_forward_inputs": 2816,
+      "encoder_calls": 744,
+      "encoder_inputs": 8922,
+      "diagnostic_encoder_calls": 367,
+      "diagnostic_encoder_inputs": 5594
+    },
+    "image_C": {
+      "diagnostic_forward_calls": 367,
+      "diagnostic_forward_inputs": 5594,
+      "eval_forward_calls": 58,
+      "eval_forward_inputs": 512,
+      "adapt_forward_calls": 319,
+      "adapt_forward_inputs": 2816,
+      "encoder_calls": 744,
+      "encoder_inputs": 8922,
+      "diagnostic_encoder_calls": 367,
+      "diagnostic_encoder_inputs": 5594
+    },
+    "image_min": {
+      "diagnostic_forward_calls": 707,
+      "diagnostic_forward_inputs": 11188,
+      "eval_forward_calls": 58,
+      "eval_forward_inputs": 512,
+      "adapt_forward_calls": 319,
+      "adapt_forward_inputs": 2816,
+      "encoder_calls": 1084,
+      "encoder_inputs": 14516,
+      "diagnostic_encoder_calls": 707,
+      "diagnostic_encoder_inputs": 11188
+    }
+  },
+  "timing_scope": "Synchronized CUDA wallclock per independent arm: episodic reset, initial readout, candidate construction/selection, requested diagnostic views, LayerNorm optimization, final inference and reconstruction/CPU prediction transfer. Includes accounting hooks. Excludes model setup/loading, RGB decode/H2D/geometry preparation common to arms, post-run provenance checks, prediction/receipt disk writes, and offline scoring. Exclude only first complete episode (episode 0) per arm from timing aggregates; retain every prediction, count and accuracy observation including warmup."
+}

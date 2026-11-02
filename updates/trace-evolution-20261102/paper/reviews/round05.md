@@ -1,0 +1,223 @@
+# Independent Review: TRACE
+
+**Recommendation:** 5/10 (Borderline reject). **Confidence:** 4/5.
+
+**Fatal correctness/leakage/metric/method-identity issues:** `[]`.
+
+None identified in the inspected evidence. This is not a certification of every prediction payload, historical exposure record, or model implementation. Disclosed development overlap and historical validation exposure limit evaluation independence; they are not evidence of annotation access during adaptation.
+
+## Independence and Scope
+
+Review based on the frozen submission and bounded technical verification only. No earlier reviews, author plans, self-evolution documents, review targets, ratings, chat history, or memory records were consulted. No internet or external-paper inspection was performed.
+
+All page numbers are physical PDF pages. Main narrative/results occupy main.pdf pp. 1-8, references continue on p. 9, and its appendix occupies pp. 10-16. The same appendix is typeset separately in supplement.pdf pp. 1-8 with different equation/table numbering. References below explicitly distinguish these files.
+
+## Summary
+
+TRACE extracts confidence-ranked connected components from reset-model token predictions, preserves each candidate's input pixels while applying a fixed contrast/channel transform outside it, and measures the original query probability at the original token positions. Detached supports normalize within source image and weight mean regional prompt entropy during episodic visual LayerNorm adaptation. Eight full-population protocols show positive TRACE-minus-Confidence differences at TRACE-selected settings, ranging from approximately 0.11 to 11.72 mIoU percentage points. The strongest non-Waterbirds matched effects are COCO-CD and COCO Object. The evidence establishes useful weighting behavior at those operating points, not independently tuned method superiority, calibrated reliability, causal context identification, or untouched-test generalization.
+
+## Strengths
+
+### S1. Precise and coherent adaptation mechanism
+
+**References:** main.pdf pp. 2-4, Sections 3.1-3.3, Eqs. (1)-(7); supplement.pdf pp. 1-4, Sections A.1-A.6 and B.
+
+Candidates, preserved pixel masks, original query/location readout, detached weights, prompt/token averaging, image normalization, and reset behavior are specified separately. The equal coefficient-mass, fixed-active-set rescaling, and singleton statements are algebraically correct. The paper correctly distinguishes loss coefficients from gradient norms and optimization outcomes.
+
+### S2. Meaningful full-population fixed-setting comparisons
+
+**References:** main.pdf pp. 5-6, Section 4.2 and Table 1.
+
+Uniform, Confidence, and C share candidates and optimization settings. The measured differences of +9.57 on COCO-CD, +3.31 on Object, and +3.13 on VOC21 are substantial descriptive evidence that changing the weighting signal can matter. All 32 published full-population scores agree with recomputation from the canonical aggregate intersections/unions; these are not panel results relabeled as full evaluations.
+
+### S3. Honest scope and negative evidence
+
+**References:** main.pdf pp. 4-6, Sections 4.1-4.4; supplement.pdf pp. 3-6, Sections A.7-A.8, C, and E.
+
+The paper discloses TRACE-only tuning, historical development exposure, Waterbirds overlap, dependent reorderings, the negative PC60 calibration margin, and alternatives that outperform C. It neither claims calibrated correctness nor turns qualitative extrema into representative evidence. The negative VOC21 display is retained.
+
+### S4. Useful implementation and cost accounting
+
+**References:** main.pdf p. 6, Section 4.5, Eq. (8); supplement.pdf pp. 5, 7-8, Section D and Tables 4-6.
+
+Diagnostic inputs are distinguished from calls and total encoder work. Timing scope, warmup exclusion, and omitted end-to-end costs are explicit. The inspected C implementation actually constructs only the selected probe, and the checked source hashes match the frozen provenance.
+
+## Weaknesses
+
+### W1. The central comparison is conditioned on hyperparameters selected for TRACE
+
+**Seriousness:** High. **References:** main.pdf pp. 4-6, Sections 4.1-4.2 and Table 1; main.pdf p. 12, Table 4; supplement.pdf pp. 3-4, Sections A.5/A.8 and Table 1.
+
+**Evidence:** Only TRACE is searched; Uniform and Confidence inherit its selected batch size, learning rate, steps, and K. The search comprises 455 configurations overall. Selected regimes can be aggressive, for example COCO-CD B=26, learning rate 0.015, five steps, K=4, and Object 30 steps. Uniform underperforms No Adapt on several datasets, but its own preferred operating point is unknown.
+
+**Why it matters:** The replacement experiment is valid at the chosen operating point, as the text acknowledges. It does not estimate the advantage over a well-selected confidence-weighted method, and part of the large margin can reflect an interaction between weighting and TRACE-favored optimization. This is the main limitation of the empirical contribution, not evidence that the matched experiment is incorrectly executed.
+
+**Minimum evidence or correction:** Independently select Confidence, and preferably Uniform, using the same training-source panels and a comparable search budget, then evaluate all locked selections on a disjoint evaluation population. At minimum, provide shared-grid response curves around the learning-rate/step operating points on Object and COCO-CD, including a conservative common configuration. Retain the current matched-setting table as a separate intervention comparison.
+
+### W2. There is no untouched evaluation of the final selected method
+
+**Seriousness:** High. **References:** main.pdf pp. 4-6, Section 4.1 and Table 1; supplement.pdf p. 3, Section A.7; supplement.pdf pp. 5-6, Section C.2.
+
+**Evidence:** Every full protocol retains historical development exposure, including validation-informed choices. Waterbirds directly includes all 256 calibration sources in its 5,322-image evaluation population. The prospective probe cohorts have only a partial historical exclusion inventory. Sealing predictions before scoring does not remove these selection dependencies.
+
+**Why it matters:** The eight positive full-population differences remain valid descriptive observations on the declared populations, but they do not establish generalization after method/configuration selection. Waterbirds is a development demonstration rather than an independent test. VOC20/VOC21 and PC59/PC60 also share source images, so the eight protocols should not be interpreted as eight independent replications. These restrictions are disclosed and are not a hidden inference-time leakage finding.
+
+**Minimum evidence or correction:** Add at least one genuinely disjoint, previously uninspected evaluation population with the transform, readouts, hyperparameter-selection procedure, and analysis locked beforehand. For Waterbirds, use a separately held-out population; merely deleting the known 256 images would not establish freedom from the acknowledged historical exposure. Qualify the abstract's broad eight-protocol summary as development-exposed evidence until then.
+
+### W3. The paper lacks a competitive external comparison under a common evaluation protocol
+
+**Seriousness:** High. **References:** main.pdf pp. 5-6, Section 4.3 and Table 2; main.pdf p. 8, Table 3; supplement.pdf pp. 6-7, Section F.
+
+**Evidence:** Published MLMP-family rows and local historical CD rows retain different geometry, readouts, query/optimization protocols, and tuning exposure. The local No Adapt is already 29.65 on Object and 28.95 on PC60, above the reported adapted MLMP values 28.84 and 27.99, respectively. Thus higher TRACE totals in Table 2 cannot be attributed to a better adaptation method. The CD comparison also changes backend/settings and episode composition.
+
+**Why it matters:** The text accurately labels these as reference operating points, so I do not treat the table as a fabricated or explicitly asserted controlled win. Nevertheless, the submission does not establish competitiveness against the closest full method under comparable conditions. The same table cannot supply evidence that the regional contribution surpasses MLMP.
+
+**Minimum evidence or correction:** Rerun at least MLMP and a simple TENT-style reference on the identical evaluation geometry, vocabulary, checkpoint/readout where method identity permits, with explicit method-preserving differences and comparable selection budgets. Report both reset performance and adaptation gain. Keep published rows contextual and separate from the primary competitive conclusion.
+
+### W4. The design contribution is not adequately decomposed
+
+**Seriousness:** Medium. **References:** main.pdf pp. 1-4, contributions and Section 3.3, Eqs. (5)-(7); main.pdf pp. 5-6, Section 4.4; supplement.pdf pp. 4-6, Sections B/C and Table 2.
+
+**Evidence:** The main controls all use regional means and image normalization, so Table 1 isolates the support choice but not the other two advertised design decisions. The available normalization contrast is Old min versus Image min on two small cohorts, not episode-normalized C versus image-normalized C at the full settings. Moreover, Old min exceeds Image min in all three PC60 confirmation orders; for the sorted order they are 26.569958 and 26.458232. T also exceeds C on Object in all three confirmation orders.
+
+**Why it matters:** The normalization algebra is correct and does not promise improved mIoU. What remains unestablished is its empirical role in the selected single-probe method and whether the complete design offers more than a useful incremental reweighting heuristic on an inherited dense adaptation pipeline. There is no basis here for calling C universally best, and the paper appropriately avoids that claim.
+
+**Minimum evidence or correction:** Add a compact factorial ablation at fixed candidates/settings on Object and PC60 or CD: C with image versus episode normalization, and regional-mean versus token-pooled entropy with coefficient accounting stated explicitly. Report all signs. Either connect normalization to demonstrated performance/robustness benefits or present it strictly as a chosen budget convention rather than an empirically validated advantage.
+
+### W5. Small improvements lack uncertainty and broader episode-composition checks
+
+**Seriousness:** Medium. **References:** main.pdf pp. 5-6, Table 1 and Sections 4.4-4.5; supplement.pdf p. 5, Section C.2; supplement.pdf p. 7, Table 4.
+
+**Evidence:** Full evaluations use one seed and one order. PC60 improves over Confidence by about 0.21 pp, Stuff by 0.11 pp, and PC59 by 0.41 pp. Three dependent reorderings are reported only for the two earlier 256-image confirmation cohorts, not the tuned full protocols. PC60 and Stuff incur approximately 62.68% and 56.45% extra model-side time, respectively.
+
+**Why it matters:** The deterministic score differences are real for the frozen runs; determinism is not an estimate of sampling variability or order robustness. The evidence does not show whether the small effects are stable enough to justify the diagnostic cost. The manuscript explicitly disclaims significance, so this is missing evidence, not an invented statistical error.
+
+**Minimum evidence or correction:** For the fixed full configurations, report several locked episode orderings and, if estimating population uncertainty from saved counts, paired complete-episode resampling with pooled class intersections/unions recomputed in each replicate. Keep all jointly adapted images together, do not treat candidates/pixels as independent replicates, and state that such intervals do not remove development-selection bias. Present the small-gain datasets as unresolved practical tradeoffs until evaluated.
+
+### W6. Context-specific interpretation is supported less strongly than the useful-weighting observation
+
+**Seriousness:** Medium. **References:** main.pdf p. 2, Figure 1; main.pdf p. 4, Section 3.2 and Eq. (4); main.pdf pp. 5, 7-8, Sections 4.6/5; supplement.pdf pp. 5-6, Section E.
+
+**Evidence:** The only selected transform is a fixed outside-mask contrast reduction plus channel permutation. The teaser selects support extremes among initially confident candidates; the segmentation figure selects named-class IoU extrema after scoring. These establish possible behaviors, not the prevalence or diagnostic quality of the score. There is no pairing-destroying control or confidence/area-conditioned analysis showing what information the candidate-specific response adds, beyond the aggregate optimization outcome.
+
+**Why it matters:** The fixed-setting gain does support that this particular probe-derived weighting can be useful. It does not identify a causal context mechanism, validate support as correctness probability, or show that contextual specificity rather than a different weight distribution is essential. The authors largely state these boundaries correctly; this limitation concerns explanatory depth, not a fatal overclaim.
+
+**Minimum evidence or correction:** A small predeclared control that permutes measured C weights among candidates within each image while preserving the score multiset, alongside confidence/area-stratified descriptive analyses, would test candidate-specific pairing. A limited contrast-only/channel-only sensitivity check would clarify transform specificity. Keep the current geometric, noncausal wording if these checks are unavailable; do not infer calibrated reliability from the selected figures.
+
+### W7. Evaluation breadth is narrower than the headline protocol count suggests
+
+**Seriousness:** Medium. **References:** main.pdf p. 4, Section 4.1; main.pdf pp. 7-8, Section 5; supplement.pdf pp. 1, 3, Sections A.2/A.6.
+
+**Evidence:** All local results use one NACLIP ViT-L/14 setup and square-resize both images and labels to 224x224. That changes object scale, aspect ratio, and boundary resolution relative to ordinary full-resolution segmentation evaluation. The general multi-crop algorithm is described, but the experiments all have one crop and therefore do not test its cross-crop candidate/normalization behavior.
+
+**Why it matters:** The resized metric is explicitly defined and internally consistent; it is not a metric bug. However, the evidence does not establish that the gains persist for the standard segmentation geometry, another encoder, or the multi-crop setting. This matters particularly for claims of broadly useful OVSS adaptation rather than a narrowly scoped proof of concept.
+
+**Minimum evidence or correction:** At minimum, test the locked method on one standard-resolution/aspect-preserving protocol with matched controls. A second backbone or a genuine multi-crop evaluation would strengthen transfer evidence. Until then, make the one-backbone/224x224 scope prominent when summarizing performance, not only in implementation details.
+
+### W8. Local auditability is stronger than publication-ready reproducibility
+
+**Seriousness:** Medium. **References:** main.pdf pp. 4, 6, Sections 4.1/4.5; supplement.pdf pp. 1-4, Section A and Table 1; supplement.pdf pp. 5, 7-8, Section D.
+
+**Evidence:** The appendix specifies much of the mathematics, checkpoint identity, optimizer, prompts, resizing, and scoring, but relies heavily on absolute local experiment paths. It does not give a self-contained construction/source specification for the 500-image COCO-CD and 5,322-image Waterbirds-Seg masks/classes, or a publication-ready software/hardware environment for reproducing timing. Table 1 gives B/lr/steps/K but omits the actual diagnostic view batch size and per-dataset extension flags; the inspected worker fixes view batch size to 16 and extensions off for CD/Waterbirds.
+
+**Why it matters:** The provided local provenance permits substantial verification on this machine, but a reader cannot reconstruct the complete protocol from the PDFs alone. Hashes authenticate named artifacts; they do not substitute for access to the artifacts, split construction, dependencies, or hardware.
+
+**Minimum evidence or correction:** Supply a portable versioned code/config archive with exact split IDs or deterministic construction scripts, mask provenance and category mappings for the two specialized datasets, all query resources, software/CUDA/PyTorch versions, precision settings, GPU model, view batch size, extension flags, and predict-then-score commands. Keep the detailed label-isolation protocol, but supplement it with an executable reproduction recipe.
+
+## Minor Comments
+
+- **M1 (main.pdf p. 3, Figure 2):** The phrase 'Detach; normalize per image' appears directly below the entropy expression in the pipeline panel. Label it 'Detach supports' to avoid suggesting that the entropy/gradient-bearing objective is detached. The equations and inspected implementation are unambiguous; this is a diagram clarification only.
+- **M2 (supplement.pdf pp. 6-8, generated comparison/cost tables):** Six-decimal mIoU tables and long repeated audit captions are difficult to scan at the rendered table size. Keep exact values in machine-readable provenance and use precision appropriate to interpretation in the PDF. No substantive clipping/overlap error is asserted from the inspected pages.
+
+## Questions
+
+1. **Q1:** After independent selection with the same calibration budget, how much of the Object, VOC21, and CD advantage remains over Confidence? Can a common conservative setting avoid the degradation of the zero-probe controls?
+2. **Q2:** Which source population can serve as a genuinely uninspected test of the fully locked method and selection procedure, and what historical-exposure documentation establishes that boundary?
+3. **Q3:** For the chosen single-probe C method, what is the empirical effect of image versus episode normalization, and how does it interact with region averaging? The minimum-probe cohort contrast does not answer this directly.
+4. **Q4:** Does destroying candidate-to-C-score pairing within an image remove the benefit, after preserving the score distribution and considering initial confidence and region area?
+5. **Q5:** What exact datasets/mask-construction procedures and hardware/software configuration reproduce COCO-CD, Waterbirds-Seg, and the model-side latency table outside this machine?
+
+## Correctness and Claim Boundaries
+
+**mathematics:** No fatal error found in Eqs. (1)-(8), the finite-active-score loss, or Appendix B's normalization/gradient identities. Fixed active-set and numerical qualifications are important and are stated.
+
+**implementation:** Inspected C branch measures original-query mean probability at original candidate indices, uses a candidate-complement transform, and applies detached per-image normalized regional entropy. Source identity is retained. Single-mode shared_support(support,support) is the identity, not an unintended two-probe minimum. Adaptation is visual LayerNorm-only with optimizer/model reset. The inspected interfaces distinguish inference and prompt-specific optimization readouts. The full dense encoder and every data-loader helper were not independently audited.
+
+**metric:** Recomputed all 32 mIoU values from original result.json aggregate class intersections/unions; they agree with generated provenance and Table 1 rounding. This verifies aggregate arithmetic, not the derivation of every count from RGB/GT/prediction payloads. Resized-grid scoring is nonstandard in scope but explicitly defined, not silently replaced by original-resolution evaluation.
+
+**leakage:** Inspected worker separates RGB prediction from annotation-content reading in the score phase and requires prediction barriers. Recorded label isolation is consistent with the intended design. Historical exposure and Waterbirds calibration overlap are openly disclosed. This review does not independently prove process-level nonaccess over the entire execution history.
+
+**method identity:** The reviewed result is ImageBalancedTRACE with global C, not the two-probe, role/dominance, deletion, or CLS variants. The ten inspected implementation files match hashes in frozen source provenance. One four-image Waterbirds identity-gate receipt was content-inspected; its recorded support/coefficient/loss/gradient/parameter differences and changed-label count are zero. No gate was rerun.
+
+**defensible claim:** At the selected, development-exposed, one-backbone/224x224 operating points, replacing uniform or initial-confidence weights with the specified C response improves the recorded pooled mIoU, with marked dataset-dependent gains and costs.
+
+**Not established by this submission:**
+
+- Superiority over independently tuned Confidence/Uniform
+- Controlled superiority over published MLMP or historical native TENT
+- Untouched-test generalization or eight independent dataset replications
+- Statistical significance or independent uncertainty estimates
+- A causal context effect or calibrated correctness/update-safety probability
+- Universal optimality of C or empirical superiority of image normalization
+- Standard-resolution, multi-crop, or cross-backbone effectiveness
+
+## Evidence Actually Inspected
+
+### Integrity
+
+The manifest is `/home/wwww/hzl/results/trace_evolution_review_round05_20261029_tuned/packet_manifest.json`. Its SHA-256 is `386ae89c92a21329dcef08d21262071dac27e71788da07879170885943c8fb23`. All 62 listed files were hashed before substantive review; there were zero mismatches. The manifest is in the parent of `paper/`. Hashing figure arrays did not decode them.
+
+### Reading and Visual Inspection
+
+- Entire main.tex and appendix.tex, supplement.tex, preamble.tex, and packet reported_baselines.json
+- Main PDF narrative/results/references text, and the complete appendix through source plus the separately typeset supplement
+- All generated comparison, configuration, reference, and cost tables
+- Selected fields of generated/tuned_full_provenance.json, generated/image_budget_provenance.json, and figure/tuned/image_full_provenance.json
+
+Rendered and visually examined main.pdf physical pages 1-8 and supplement.pdf physical pages 2, 4, 5, 6, 7, 8, including all four main figures, main result/reference tables, method equations, configuration table, and supplemental selection/cost tables. Rendering used in-memory PNGs and created no temporary files. The complete appendix was read; not every duplicate appendix layout page was rendered.
+
+### Bounded Original Evidence
+
+- `/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817`
+- `/home/wwww/hzl/results/trace_single_probe_tuning_20261029_0748`
+- `/home/wwww/hzl/results/trace_image_budget_20261029_0233`
+- `/home/wwww/hzl/results/trace_two_view_full_baselines_20261025/coco_cd`
+
+Rehashed 286 explicitly linked metadata files inside these permitted roots, each at most 2,000,000 bytes, with zero mismatches. This was metadata hashing, not semantic inspection of every record. Oversized manifests/inventories/protocols and inputs.json, plus out-of-scope upstream references, were skipped. Original full/<dataset>/result.json records for all eight datasets were read, and all 32 pooled mIoU values were recomputed from aggregate class intersections/unions, matching generated provenance and table rounding.
+
+Content-inspected preparation/seal/barrier records, the CD protocol's non-manifest fields, selected Waterbirds four-image identity-gate outcomes, and packet qualitative-selection/provenance fields. The gate reports zero support/coefficient/loss/gradient/parameter differences and zero changed-label pixels; it was not rerun. Most other metadata records were only rehashed.
+
+### Technical Source Inspection
+
+- `tools/evolution_tuning/worker.py`
+- `trace_ovss/method/image_balanced.py`
+- `trace_ovss/method/two_view.py`
+- `trace_ovss/method/trace/objective.py`
+- `trace_ovss/method/trace/engine.py`
+- `trace_ovss/method/trace/estimator.py`
+- `trace_ovss/method/trace/candidates.py`
+- `trace_ovss/method/trace/interventions.py`
+- `trace_ovss/method/adapter.py`
+- `tools/evolution_confirmation/run.py`
+
+The requested current worktree worker and adaptation modules were read in full or relevant bounded sections. The experiment subclass, objective/readout selection interfaces, and make_data reference locations were inspected inside the authorized frozen runtime. All ten listed implementation files matched the frozen provenance; unrelated source modules and author documentation were not opened.
+
+### Exclusions and Limits
+
+- No earlier review, rating, target, author plan, self-evolution document, or memory consultation
+- No model import/loading or CPU/GPU inference, optimization, or experiment execution
+- No decoding/scanning of full prediction arrays, per_image_counts, checkpoint weights, RGB images, or annotation payloads
+- No invented intervals or unreported experimental outcomes
+- No changes to the frozen packet or original experiment artifacts
+- Only round05.md and round05.json are written
+
+No fresh exhaustive prediction-payload hash audit, GT-derived recount, or re-execution of temporal label isolation. No independent verification of the original MLMP PDF outside the packet or of complete historical exposure.
+
+## Overall Assessment
+
+A coherent and potentially useful incremental method with substantial fixed-operating-point gains on some populations, correct objective algebra, and unusually explicit evidence boundaries. However, asymmetric hyperparameter selection, absence of an untouched evaluation, unmatched external references, and incomplete isolation of the proposed design choices leave the general scientific contribution insufficiently established for acceptance. This is an evidence and contribution judgment, not a finding that the reported descriptive results are false.
+
+The present submission supports a useful, honestly bounded descriptive result: candidate-specific transformed responses can improve entropy-allocation behavior at selected settings. The equations and inspected implementation are coherent, and the audited aggregate results are internally consistent. I lean against acceptance because the available evidence does not yet separate that useful effect from TRACE-favored selection, establish an untouched test, or position it convincingly against closely related adaptation methods under comparable conditions. The most decisive additions are a symmetrically selected Confidence comparison and a locked independent evaluation; more audit prose or stronger wording would not address these scientific gaps.
+
+**Final recommendation: 5/10, borderline reject. Confidence: 4/5. Fatal issue list: empty.**
+

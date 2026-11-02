@@ -1,0 +1,492 @@
+{
+  "schema_version": 1,
+  "algorithm": "ImageBalancedTRACE:C",
+  "suite_root": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817",
+  "suite_prepared_sha256": "4f3e54226f99230af48b2105372300d06f31651515324b3ab99dbe138ff3cfa3",
+  "runtime_root": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime",
+  "dataset": "waterbirds_seg",
+  "stage": "gate",
+  "seed": 0,
+  "config": {
+    "dataset": "WaterbirdsSegDataset",
+    "data_subdir": "waterbirds_seg/correlation_0.95",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 16,
+    "lr": 0.003,
+    "steps": 4,
+    "trace_max_regions": 7,
+    "class_extensions": false,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95"
+  },
+  "checkpoint": {
+    "path": "/home/wwww/.cache/clip/ViT-L-14.pt",
+    "sha256": "b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836",
+    "bytes": 932768134,
+    "mtime_ns": 1781674734507313389,
+    "official_url": "https://openaipublic.azureedge.net/clip/models/b8cca3fd41ae0c99ba7e8951adf17d267cdb84cd88be6f7c2e0eca1737a03836/ViT-L-14.pt",
+    "backbone": "ViT-L/14"
+  },
+  "panel": {
+    "classes": [
+      "background",
+      "landbird",
+      "waterbird"
+    ],
+    "queries": [
+      "background",
+      "landbird",
+      "waterbird"
+    ],
+    "query_to_class": null,
+    "vocabulary_sha256": "3503eaf8a9ae98240619ca7efa84126725a5695540b4b90270f5ef369398f7d8",
+    "reduce_zero_label": false,
+    "inputs": [
+      {
+        "official_id": "cub:001.Black_footed_Albatross/Black_Footed_Albatross_0080_796096",
+        "image": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/images/001.Black_footed_Albatross/Black_Footed_Albatross_0080_796096.jpg",
+        "label": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/masks/001.Black_footed_Albatross/Black_Footed_Albatross_0080_796096.png",
+        "image_sha256": "5161ffa587af2fe58e9477b192324ec6469733458bb939a42d454070fd610878",
+        "label_metadata": [
+          1542,
+          1782272862171679792
+        ],
+        "label_metadata_details": {
+          "size_bytes": 1542,
+          "mtime_ns": 1782272862171679792,
+          "device": 66306,
+          "inode": 2396936,
+          "contents_read": false
+        }
+      },
+      {
+        "official_id": "cub:002.Laysan_Albatross/Laysan_Albatross_0003_1033",
+        "image": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/images/002.Laysan_Albatross/Laysan_Albatross_0003_1033.jpg",
+        "label": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/masks/002.Laysan_Albatross/Laysan_Albatross_0003_1033.png",
+        "image_sha256": "3e2df4c372f0c13240d93a2bfc3172962ab5cc89883db31eb4262b060b399292",
+        "label_metadata": [
+          2292,
+          1782272855583818065
+        ],
+        "label_metadata_details": {
+          "size_bytes": 2292,
+          "mtime_ns": 1782272855583818065,
+          "device": 66306,
+          "inode": 2395660,
+          "contents_read": false
+        }
+      },
+      {
+        "official_id": "cub:002.Laysan_Albatross/Laysan_Albatross_0013_910",
+        "image": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/images/002.Laysan_Albatross/Laysan_Albatross_0013_910.jpg",
+        "label": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/masks/002.Laysan_Albatross/Laysan_Albatross_0013_910.png",
+        "image_sha256": "fd4cff95367e4ad6eb6463f64f5a5b633901f99e787b83648bf3e1929645bbcc",
+        "label_metadata": [
+          1695,
+          1782272855293668621
+        ],
+        "label_metadata_details": {
+          "size_bytes": 1695,
+          "mtime_ns": 1782272855293668621,
+          "device": 66306,
+          "inode": 2395421,
+          "contents_read": false
+        }
+      },
+      {
+        "official_id": "cub:002.Laysan_Albatross/Laysan_Albatross_0018_492",
+        "image": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/images/002.Laysan_Albatross/Laysan_Albatross_0018_492.jpg",
+        "label": "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/masks/002.Laysan_Albatross/Laysan_Albatross_0018_492.png",
+        "image_sha256": "4ecbce9d829f8a98ec9f333da18928d6a8256baafbb554249a5a750d8124f6ae",
+        "label_metadata": [
+          1340,
+          1782272856062102649
+        ],
+        "label_metadata_details": {
+          "size_bytes": 1340,
+          "mtime_ns": 1782272856062102649,
+          "device": 66306,
+          "inode": 2395752,
+          "contents_read": false
+        }
+      }
+    ],
+    "available": true,
+    "block_reason": null,
+    "full_split": false,
+    "selection_seed": 2027,
+    "requested_images": 256,
+    "available_images": 2458,
+    "stage": "calibration",
+    "protocol": "development_overlap",
+    "development_overlap": true,
+    "allow_waterbirds_development_overlap": true,
+    "cal_full_source_id_overlap": 256,
+    "train_full_source_id_overlap": 2458,
+    "declared_train_count": 2458,
+    "original_full_count": 5322,
+    "independent_test_claim": false,
+    "global_never_seen_certified": false,
+    "evaluation_scope": "development_overlap",
+    "claim_boundary": "Development evaluation: selected training sources overlap original full; no independent-test or globally never-seen claim.",
+    "ordered_ids": [
+      "cub:001.Black_footed_Albatross/Black_Footed_Albatross_0080_796096",
+      "cub:002.Laysan_Albatross/Laysan_Albatross_0003_1033",
+      "cub:002.Laysan_Albatross/Laysan_Albatross_0013_910",
+      "cub:002.Laysan_Albatross/Laysan_Albatross_0018_492"
+    ],
+    "images": 256,
+    "source_hashes": {
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/configs/trace.py": {
+        "sha256": "6d77de91a45b28023a1d77f491d4b1ae06418da480bca05b725c9c4399afe744",
+        "bytes": 4458
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/data/datasets.py": {
+        "sha256": "642ee448234a13c5e99fda9c4a5c937f83da2d9407f0dcbfbcc6071287c15efa",
+        "bytes": 10359
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/data/vocabulary.py": {
+        "sha256": "4846280dfead1fc2c0d22718df890405664755645fa6e95a97701b908b84864d",
+        "bytes": 2789
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/tools/evolution_tuning/inputs.py": {
+        "sha256": "872cfd4bf30e606e37eb17e0da3fba66bddda574c62a560acbabfe1dab242cdd",
+        "bytes": 32457
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/tools/evolution_confirmation/cohorts.py": {
+        "sha256": "15bfa1e08867b6e3e4cf173f0a907cc305627fb57efcdee2e434164d151f4cec",
+        "bytes": 43888
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/tools/evolution_confirmation/run.py": {
+        "sha256": "9c5ece8ce6fd34f5634424b53156effa93c79e483c970534eb2a1122fc1d910a",
+        "bytes": 36262
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/frozen_contract.md": {
+        "sha256": "765b0b13fc00de16357806e4bf923db2792033b3c7e9f842e3b759f6fff7fbaf",
+        "bytes": 7079
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/prompts.txt": {
+        "sha256": "6d182bb38a67d27a488498fba48ded6a884cc244696114ff25b4f342a703d433",
+        "bytes": 137
+      },
+      "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/_snapshot/SHA256SUMS": {
+        "sha256": "a47eefe3aec8a885a8cb0780a03dcc81d233fe9868c848ee763299f33d52cbcc",
+        "bytes": 1431
+      },
+      "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/_snapshot/root_method_and_experiments.tar.gz": {
+        "sha256": "2b80f347545fa0e943188ed4589c7edb970030b5f93ddab5103102185d5986b7",
+        "bytes": 389475
+      },
+      "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/_snapshot/mlmp_trace_sources.tar.gz": {
+        "sha256": "7ab2d93b9e065eed58b009c34a6dfa53a3e067821dec6ac10f258d1cfb4aca33",
+        "bytes": 17388
+      },
+      "/home/wwww/hzl/results/trace_image_full_20261029_0333/configs/voc20.json": {
+        "sha256": "1e73dac8becdeb90a5836b2e8511cbb090ccc8e8e0a455c5d81bfc6a841a71f9",
+        "bytes": 366
+      },
+      "/home/wwww/hzl/data/VOCdevkit/VOC2012/ImageSets/Segmentation/val.txt": {
+        "sha256": "cdc1326d12f69ce5153aa5da04a4d8783e146868d42d19f82f44e74b97ac907d",
+        "bytes": 17388
+      },
+      "/home/wwww/hzl/data/VOCdevkit/VOC2012/ImageSets/Segmentation/train.txt": {
+        "sha256": "aa623bd2c8ce4443a8aaae51c524c0eb165e8e44caf6aa9e3ad33d7b75a3ef20",
+        "bytes": 17568
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/cls_voc20.txt": {
+        "sha256": "c68f65a2b342397cdfe05ff5289517e1e370b1d574a218ff1a17db27f2576db1",
+        "bytes": 283
+      },
+      "/home/wwww/hzl/results/trace_image_full_20261029_0333/configs/voc21.json": {
+        "sha256": "9c100372e09fd4cfc7851b435d6305c64f439f3bce7418eea5831787953ae1cc",
+        "bytes": 368
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/cls_voc21.txt": {
+        "sha256": "80e643a9a143966800cd4a49324fd0be2f94c0d7bac817ea16a5f66ed706bc38",
+        "bytes": 463
+      },
+      "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/frozen_configs_final/pc59/best_config.json": {
+        "sha256": "47fadba3c768b77efc27f8a777071cba5294dad2eabd3bebe5735872124c6f27",
+        "bytes": 4861
+      },
+      "/home/wwww/hzl/data/VOCdevkit/VOC2012/ImageSets/SegmentationContext/val.txt": {
+        "sha256": "94299e448382f73b4f4d6dd7ae643e9ea4545f7f06ce1636810fc65f319f1e45",
+        "bytes": 61260
+      },
+      "/home/wwww/hzl/data/VOCdevkit/VOC2012/ImageSets/SegmentationContext/train.txt": {
+        "sha256": "e6693b6eb57877df5746000119781e96baaee47c06927151bdb5121f2df1a448",
+        "bytes": 59976
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/cls_context59.txt": {
+        "sha256": "cd808465f06a16169edc25580073f0eda347e64f06cc1c2e24acd0b237f6497d",
+        "bytes": 378
+      },
+      "/home/wwww/hzl/results/trace_image_full_20261029_0333/configs/pc60.json": {
+        "sha256": "d4fee6fe72d1b9d97f1826c745eeab3fa36d0e11c58cd338eea7c42d8f6e1656",
+        "bytes": 371
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/cls_context60.txt": {
+        "sha256": "c8278f9257ab2ed0d7499b99bd6c69485d15881768e26c64b01ee6cefad39eac",
+        "bytes": 390
+      },
+      "/home/wwww/hzl/results/trace_image_full_20261029_0333/configs/coco_object.json": {
+        "sha256": "8988df660b20e10e0b51da7ebfcc2d3a4fb4d7091585bb46e7569c8471a28233",
+        "bytes": 350
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/cls_coco_object.txt": {
+        "sha256": "99d6c99943318498e5f4e484db98a786e49e1fa7fec094d0ff5c6432f7c9bcb9",
+        "bytes": 907
+      },
+      "/home/wwww/hzl/results/trace_image_full_20261029_0333/configs/coco_stuff.json": {
+        "sha256": "388a4ab3f9abbfe4b13d529cbc775f39b3fe4c10366a517d625c8dd4b9d24781",
+        "bytes": 350
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/cls_coco_stuff.txt": {
+        "sha256": "fb98709b9ab1baff4fd930bac4a77772a0458c7d534911de545f9a4081e14a3e",
+        "bytes": 1374
+      },
+      "/home/wwww/hzl/results/trace_image_full_20261029_0333/configs/coco_cd.json": {
+        "sha256": "4ab9b3dd5cd4549cf645359e0818053e2d06ebdf7d7f1b3ad7dc6f36372ec3cb",
+        "bytes": 351
+      },
+      "/home/wwww/hzl/data/coco_cd_ovss/splits/test_balanced.txt": {
+        "sha256": "42c87ead26c819286d61ecc3baa39cfbc30b68fc0b509aebd037ddf05052be2e",
+        "bytes": 11462
+      },
+      "/home/wwww/hzl/data/coco_cd_ovss/splits/train_corr0.95.txt": {
+        "sha256": "1a7174b06e456846f732ae20dd5e3eae69e2af590a77ad19cc5550c215d7e66f",
+        "bytes": 38224
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/coco_cd.txt": {
+        "sha256": "6919f57f710db460f52caeceb9b035cb55aac0496caa151adeb280629888d9e7",
+        "bytes": 19
+      },
+      "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/frozen_configs_final/waterbirds_seg/best_config.json": {
+        "sha256": "6072e3c7a808ec29e9a1f95ca43ff3e84f9dd54e3e4d5eed65d07eabab7c3dcf",
+        "bytes": 5058
+      },
+      "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/splits/train.txt": {
+        "sha256": "99a2566ba8384f8f9e8e882a36041813767c41635f254102f9c791a087a50b57",
+        "bytes": 117461
+      },
+      "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/runtime/trace_ovss/resources/class_names/waterbirds_seg.txt": {
+        "sha256": "3b06e13e8fb22d42fd52bcc378ed06a18de293cdb5afa47e3650b41f8d5ac8fb",
+        "bytes": 30
+      },
+      "/home/wwww/hzl/data/waterbirds_seg/correlation_0.95/images/metadata.csv": {
+        "sha256": "307165f782c614a8f30397990eed9a160dc93b381ca1f98cdaac3792362915e0",
+        "bytes": 496293
+      },
+      "/home/wwww/hzl/data/waterbirds_sources/CUB_200_2011/images.txt": {
+        "sha256": "e1cfc5ed1f4bd1b838040784b6f75c44f7a25d9b31707a3adab49ec694618c1f",
+        "bytes": 682287
+      },
+      "/home/wwww/hzl/data/waterbirds_sources/CUB_200_2011/train_test_split.txt": {
+        "sha256": "8bbbfcc09b4d3c9c6e3e40c9874bd863eb6658f4f456e472df1b33d3403d2600",
+        "bytes": 83198
+      },
+      "/home/wwww/hzl/results/trace_v2_simplification_20260721_225456/calibration_splits/waterbirds_seg.json": {
+        "sha256": "40fdf0aea51e1497e7c30f69ff735ad5648c556a3901fd4f170b32360247512f",
+        "bytes": 65941
+      },
+      "/home/wwww/hzl/experiments/build_trace_v2_calibration_splits.py": {
+        "sha256": "98c79da331520cefaf346982fe081c40ec947f233e7698bdf069dd0cf345548b",
+        "bytes": 7695
+      }
+    },
+    "source_sha256": {
+      "trace_ovss/configs/trace.py": "6d77de91a45b28023a1d77f491d4b1ae06418da480bca05b725c9c4399afe744",
+      "trace_ovss/data/datasets.py": "642ee448234a13c5e99fda9c4a5c937f83da2d9407f0dcbfbcc6071287c15efa",
+      "trace_ovss/data/vocabulary.py": "4846280dfead1fc2c0d22718df890405664755645fa6e95a97701b908b84864d",
+      "tools/evolution_tuning/inputs.py": "872cfd4bf30e606e37eb17e0da3fba66bddda574c62a560acbabfe1dab242cdd",
+      "tools/evolution_confirmation/cohorts.py": "15bfa1e08867b6e3e4cf173f0a907cc305627fb57efcdee2e434164d151f4cec",
+      "tools/evolution_confirmation/run.py": "9c5ece8ce6fd34f5634424b53156effa93c79e483c970534eb2a1122fc1d910a",
+      "docs/single-probe-tuning-contract.md": "765b0b13fc00de16357806e4bf923db2792033b3c7e9f842e3b759f6fff7fbaf",
+      "trace_ovss/resources/prompts.txt": "6d182bb38a67d27a488498fba48ded6a884cc244696114ff25b4f342a703d433",
+      "trace_ovss/resources/class_names/cls_voc20.txt": "c68f65a2b342397cdfe05ff5289517e1e370b1d574a218ff1a17db27f2576db1",
+      "trace_ovss/resources/class_names/cls_voc21.txt": "80e643a9a143966800cd4a49324fd0be2f94c0d7bac817ea16a5f66ed706bc38",
+      "trace_ovss/resources/class_names/cls_context59.txt": "cd808465f06a16169edc25580073f0eda347e64f06cc1c2e24acd0b237f6497d",
+      "trace_ovss/resources/class_names/cls_context60.txt": "c8278f9257ab2ed0d7499b99bd6c69485d15881768e26c64b01ee6cefad39eac",
+      "trace_ovss/resources/class_names/cls_coco_object.txt": "99d6c99943318498e5f4e484db98a786e49e1fa7fec094d0ff5c6432f7c9bcb9",
+      "trace_ovss/resources/class_names/cls_coco_stuff.txt": "fb98709b9ab1baff4fd930bac4a77772a0458c7d534911de545f9a4081e14a3e",
+      "trace_ovss/resources/class_names/coco_cd.txt": "6919f57f710db460f52caeceb9b035cb55aac0496caa151adeb280629888d9e7",
+      "trace_ovss/resources/class_names/waterbirds_seg.txt": "3b06e13e8fb22d42fd52bcc378ed06a18de293cdb5afa47e3650b41f8d5ac8fb"
+    },
+    "input_identity_sha256": "ebddb50d522c013592beff748cfeed723a87fa099cef36f7883353fe05dc6bc1"
+  },
+  "arms": [
+    "image_C"
+  ],
+  "source_sha256": {
+    "trace_ovss/__init__.py": "fa816c9e5836263a6242ca2921c12559fc78ae1b52cf0fb2fc21422ff5c0bfc3",
+    "trace_ovss/cli.py": "9a9e11e109001cec6c05c37955ce277585ca2f4bb8ce7d817be4a47c5b7fcae4",
+    "trace_ovss/configs/__init__.py": "e964f921b4a240681f559ac61bc3ff828be9a63dca974325242c00f3f313d14b",
+    "trace_ovss/configs/trace.py": "6d77de91a45b28023a1d77f491d4b1ae06418da480bca05b725c9c4399afe744",
+    "trace_ovss/data/__init__.py": "d5726374d8b9e240a7cf9388f646efdb3f0ce4b80507c7da21a8037204d7cdc1",
+    "trace_ovss/data/datasets.py": "642ee448234a13c5e99fda9c4a5c937f83da2d9407f0dcbfbcc6071287c15efa",
+    "trace_ovss/data/vocabulary.py": "4846280dfead1fc2c0d22718df890405664755645fa6e95a97701b908b84864d",
+    "trace_ovss/evaluation/__init__.py": "955d8d114124550ab94e75652e6a8936a0a58f3c386620b079874e7954a6b016",
+    "trace_ovss/evaluation/metrics.py": "a1bb3eda1fddb15e73c70d7e3b20568c431283b8dad2d3977c4ef5bce32021ff",
+    "trace_ovss/evaluation/patches.py": "a53fc59b7cef866bcd0f38ca2b7f68a321e55b5d3388033d075886277acdb78e",
+    "trace_ovss/method/__init__.py": "87096f538a26f5e2f749a6cd5a9fc1aac6167820d41fce00559c35aec14aac99",
+    "trace_ovss/method/adapter.py": "3a6bcc67b9fbdb3714ddd7bbcc78d84d6f3ae5571d385cd987f00c4da8a35abd",
+    "trace_ovss/method/image_balanced.py": "fc45c3628723e2b70e2ce63c32db924bfc7ece29489ff2112a26ed24282a6aff",
+    "trace_ovss/method/trace/__init__.py": "5453dd2f603c8d3b70e4184daeee53c4ca119ac029abe33c9866309ed72c33bf",
+    "trace_ovss/method/trace/candidates.py": "f8b570021a788b5ab8ff113c653951027047c6ab795b8655494a35c01408449c",
+    "trace_ovss/method/trace/constants.py": "2aa42a8c7c405ac7b1b2498ec245378622c721b33e73217c55ac77cb1d642a1b",
+    "trace_ovss/method/trace/engine.py": "9c3cbccd9524c5f46fd272bfca97524165b16737621c009bfd6a68ac99679a64",
+    "trace_ovss/method/trace/estimator.py": "fc54e6435c7c7ec9e6ff1dd58faab389d89bda64a2990f05f420387e2cba656c",
+    "trace_ovss/method/trace/indexing.py": "514bca2f55c41d3be6ffce4cbb2dc682df9190413d8e7d6382c0ee00c2a04dc6",
+    "trace_ovss/method/trace/interventions.py": "c89e59c797bcff136806afe0e0ac2eb04de1d069371c6391df88817bbb6cf939",
+    "trace_ovss/method/trace/objective.py": "d1dce2a27de03a371b8d00716609c49676b6a444c6d0f4e39b3c09963c8af589",
+    "trace_ovss/method/trace/reliability.py": "a99ffff04daf65eb1408d73e350b5df3c75cc3d4b0bb9dc77426f9c7d2b108f5",
+    "trace_ovss/method/two_view.py": "35d1b926c0e2e2d0e4c43d8ed7b2c34555eb38e7d1eda97f9cc0b442ea16490b",
+    "trace_ovss/models/__init__.py": "2ec2a907ab7a5794a7723c83d0d046a2612ae7373eeebf95516066913d022901",
+    "trace_ovss/models/_vendor_clip/__init__.py": "c6c2be395aa9cacedb0c243a1a2a8dcc74300029d813aa9e1bd97d6f8bef4916",
+    "trace_ovss/models/_vendor_clip/bpe_simple_vocab_16e6.txt.gz": "924691ac288e54409236115652ad4aa250f48203de50a9e4722a6ecd48d6804a",
+    "trace_ovss/models/_vendor_clip/clip.py": "7e7725c8210f5bbb83eb05d094e9470ed65639c671138c1217b5fa3368ef58dd",
+    "trace_ovss/models/_vendor_clip/model.py": "e4411cfbad17b7c531c60cb860ae4aeac826d73092ce00243f25d6eb7f020c17",
+    "trace_ovss/models/_vendor_clip/simple_tokenizer.py": "51df5371fe5ac7ad9e3d49219496fe403384ef610aec22f9a0fe9fd60ca1ba69",
+    "trace_ovss/models/dense_clip.py": "d56f5d62f2f1c28235e97f897794adf0d0f0097733f0ba3bcfa3cfd7546331fe",
+    "trace_ovss/resources/NOTICE.md": "8986eb77f6ddc38ec91418445828089c0712a82d94435842650af1ffdd888b05",
+    "trace_ovss/resources/__init__.py": "1cd6233658739b1bf45c1bbd39ab4502d6798a2fcdca46e7f983186b79ea245b",
+    "trace_ovss/resources/class_names/__init__.py": "7052da937da40ea8a30e343760c0064f9d70993d598ff178a0765321264fd68f",
+    "trace_ovss/resources/class_names/cls_city_scapes.txt": "6f6782fc1bf92bfd9f5562192e92045e0e093870e613f387f6c98fc66d4ceba4",
+    "trace_ovss/resources/class_names/cls_coco_object.txt": "99d6c99943318498e5f4e484db98a786e49e1fa7fec094d0ff5c6432f7c9bcb9",
+    "trace_ovss/resources/class_names/cls_coco_stuff.txt": "fb98709b9ab1baff4fd930bac4a77772a0458c7d534911de545f9a4081e14a3e",
+    "trace_ovss/resources/class_names/cls_context59.txt": "cd808465f06a16169edc25580073f0eda347e64f06cc1c2e24acd0b237f6497d",
+    "trace_ovss/resources/class_names/cls_context60.txt": "c8278f9257ab2ed0d7499b99bd6c69485d15881768e26c64b01ee6cefad39eac",
+    "trace_ovss/resources/class_names/cls_voc20.txt": "c68f65a2b342397cdfe05ff5289517e1e370b1d574a218ff1a17db27f2576db1",
+    "trace_ovss/resources/class_names/cls_voc21.txt": "80e643a9a143966800cd4a49324fd0be2f94c0d7bac817ea16a5f66ed706bc38",
+    "trace_ovss/resources/class_names/coco_cd.txt": "6919f57f710db460f52caeceb9b035cb55aac0496caa151adeb280629888d9e7",
+    "trace_ovss/resources/class_names/waterbirds_seg.txt": "3b06e13e8fb22d42fd52bcc378ed06a18de293cdb5afa47e3650b41f8d5ac8fb",
+    "trace_ovss/resources/licenses/NACLIP_LICENSE.txt": "a929829742b07fb590d0cd8f0dbf437565fc559ee481ba8121ffa962730822db",
+    "trace_ovss/resources/prompts.txt": "6d182bb38a67d27a488498fba48ded6a884cc244696114ff25b4f342a703d433",
+    "tools/analyze_ablation_mechanisms.py": "c13ea8d78188a76e4f250c88acd61bf2a49a90fbfc719ab4840f5c7f1c5b2a75",
+    "tools/analyze_dataset_response.py": "4c4e4832122e850ad3b94f1699f3b3ed35ef984804f70df2105ac0db7ded5765",
+    "tools/analyze_evolution.py": "10acf51a65f442c983d483f7f321ba3f597c12a0e9c9d2d7883350ec07a860ca",
+    "tools/analyze_evolution_strata.py": "5636eb0d82b9127cc8f16787d25d8ae7fd2f0fe4017efcd5a16a71cb332fdb5a",
+    "tools/analyze_forward_budget.py": "053eb15fcaf2f25c765ae2081dd0ccb52cd8449ef96c08a750adad04cfcc4a62",
+    "tools/analyze_selective_tracing.py": "91a7d53de626535f39718c833f27bc7eb615a88e33539e86ee89ea53d2b0d4aa",
+    "tools/analyze_simplification.py": "bfa2e644caec91896f53958c6022ba59938f94821142ebbb70cb18ef5ac8fc04",
+    "tools/analyze_two_view_full.py": "ed584db9165db5d52692d86edc1934a8b05c24e5beaf27adcc43ab47d28590c2",
+    "tools/analyze_voc21_tuning.py": "cadaf137b9497ed67dc80ed15ae541b4d92663d411e15067804dfc90d3de9e0f",
+    "tools/benchmark_matched_baselines.py": "4a8d0da52712b4de376c2c72cc542d98adf8aa65cedba9c48bb9e48337e0f3e5",
+    "tools/benchmark_simplification.py": "b6bf43e29da02d8888a654074a6ec9a25be168b05a1a4ca0779e0cd2b260aaa5",
+    "tools/build_final_evolution_analysis.py": "949d4079b72e8e14ca31a824509d401666fa3663e52cc76add662bd8f63af88e",
+    "tools/check_fused_gpu_numerics.py": "c9c61ca65772cf4a3c8eb8828dd492682440e82c59a2dd4ea476891f4ce785dc",
+    "tools/debug_evolution_repeatability.py": "53f29f32d103de80cbc68c3b35d5fdf10a863f756388bfa54c50c7dd1539ef68",
+    "tools/draw_evolution_figures.py": "4f7b9de1296adb06430d00dfab0eff39d3f2ac5fcbd52e940b6c9381be135e24",
+    "tools/draw_final_evolution_figures.py": "8245b6d3be6233d8e48b200affdb948ab31d541063dc7901dd31bfbc509f178e",
+    "tools/draw_image_full_figures.py": "d25d145d1d3b94b7a12feed006856784ed82f6343b39f71ad26cd55f0f878d9d",
+    "tools/evolution/README.md": "4381c3eaad01773a960ff5ee05f4153b52060441b6763f99797a8d3e5ff85c72",
+    "tools/evolution/__init__.py": "cb2765fb56e2095fdd337a52f24e6c39c3159cb935aeb6fbaa78702b6f696354",
+    "tools/evolution/policies.py": "57df7444ec359e07822f326703a4f0379441580622897b9bbe6e2935a835bc71",
+    "tools/evolution/run_cell.py": "af99a47ce69c2da2632f3b858ca9d434ef96e99ea1535ee04e9f82696df95413",
+    "tools/evolution/test_deterministic_runtime.py": "6a7b2a7ecc8d962a0fbea1f24602dadcb86aacba2e8d5092cbc62a9fcd84d322",
+    "tools/evolution/test_run_cell.py": "4efc6f157717b8d135c1ed0abcac544faf938b23f5bce4f88e45bc0e8d2356af",
+    "tools/evolution_completion.py": "3f481f477991442fb2d776f858a52ed068aa4afc7211b51993177dd56162f02d",
+    "tools/evolution_confirmation/cohorts.py": "15bfa1e08867b6e3e4cf173f0a907cc305627fb57efcdee2e434164d151f4cec",
+    "tools/evolution_confirmation/queue.py": "c25342f3f868fb4e485dd1784d3e8da061ba31b48a0ac01001bc1457163464dc",
+    "tools/evolution_confirmation/run.py": "9c5ece8ce6fd34f5634424b53156effa93c79e483c970534eb2a1122fc1d910a",
+    "tools/evolution_followup/README.md": "ccd1a5f0e6a71a5a30826f29d732000137bce3b4b6a1a5672230de20bc13acc8",
+    "tools/evolution_followup/probe_audit.py": "f87d3806d501f07853419868fe2e66dfe07cd4af835860de9cec0ef7a8fad9c0",
+    "tools/evolution_followup/queue.py": "a298cf9f4052ae4b693d7746d85aa6f30e1769cecf83e9d25af5ad164eb462f5",
+    "tools/evolution_followup/smoke.py": "feac5b77e80132ebd533d23e0c637ae23a3f66875f4173e1d52522f811c639d8",
+    "tools/evolution_followup/standalone.py": "a2be201affc5a3de9074dff8b6ae225d6e537b8276dc07eea53e64612ec5fb02",
+    "tools/evolution_image_full/__init__.py": "d0fcf9bb35f968ee7eea6537fd648909fc1985b21950fbf139d705141426f954",
+    "tools/evolution_image_full/queue.py": "6cdf867cf94821634c186adf4e7b6a760af7a83cc274793614e8f56f60da12a9",
+    "tools/evolution_image_full/run.py": "6bacdc7e8eb1114867f83bfd35b40d2dfffb28767161316fa828b764a25c0e82",
+    "tools/evolution_replay/README.md": "550f2725d82f7b43fc1d8fbc6abe561f49c8e5c783aab38697c4146dba30b09f",
+    "tools/evolution_replay/__init__.py": "fad94868a469f43ea2b6f184b8a994881e94338da7c9afc1e7c24888d390b676",
+    "tools/evolution_replay/controller.py": "4750492ca29b466bc12aa5b513ade05a79dff4a1b8f34ce8bc1ce49e28bb3d7c",
+    "tools/evolution_replay/run_cell.py": "81117cef54a7f9dc80515c671d52acf3f39af51c63e03bea9fb3bfda8973d3f4",
+    "tools/evolution_replay/test_controller.py": "5ebc29b07a1e9c1c53ac215e80997af4c3d494f18df67dc3a9f93b73c395f9b0",
+    "tools/evolution_replay/test_run_cell.py": "a6e8789bd345f8447e14c2d69d1d4c09b144a34721c7fa1908bd3b3b0f4a40f5",
+    "tools/evolution_tuning/__init__.py": "015ffa6c154a6cca5c6bf2f730996bac2c6d3f24eae350221c4ad85dd53e8a81",
+    "tools/evolution_tuning/common.py": "aafc87fd02fb935631877f2ef96024021bc313a719bd0b36ca94f6cfabfa7007",
+    "tools/evolution_tuning/continuation.py": "48c4a0bd5c60c4009bd9279d27c8fd1e05b481971ddc55a7e7d4ca8dc3be59c3",
+    "tools/evolution_tuning/inputs.py": "872cfd4bf30e606e37eb17e0da3fba66bddda574c62a560acbabfe1dab242cdd",
+    "tools/evolution_tuning/queue.py": "20e07e6263c3d47c20ae825c5ac0cde7984de5cdf923c31fdb6fc73ccd7cee1d",
+    "tools/evolution_tuning/worker.py": "259fbb901b164eed6ca3c211db612947afdf96b7bd8259df47a3c35605767755",
+    "tools/finalize_removal_suite.py": "58ffcbba36d1ef8ad074e9ac12bea5aa801c9f457fc707555ed793a3a6c7e7d2",
+    "tools/replay_lazy_quality.py": "cf07866ae391d6bb6b0d6b425ffebb2213be9e6c08158d9409f5b6b2f257af97",
+    "tools/report_final_simplification.py": "c89d9d012ae10e5cb2064b201c662bd7756f961b87a3add45162edec825b4aa0",
+    "tools/run_accuracy_budget_search.py": "ac8075be957eb18b151bddaf9aa532162063f9dd2c1ae9ae32ca016f329bd331",
+    "tools/run_algorithm_efficiency_suite.py": "87886ef4d0e2ad9664a6b14b0b4feb0ae0377b1f455ffcb1d9c7280bb343f43f",
+    "tools/run_full_baseline_followup.py": "6481e25ad8749f8897dd8a3a52836a394d872e240e71885cabde24a660c0064b",
+    "tools/run_fused_panel.py": "c31a49c0379e4b3e3f703db2d9d5a2fc4e9d2f2c9d91fa03369f22e0e8b03bf2",
+    "tools/run_lazy_quality_suite.py": "7be13f7869e3337f33a47a25ff18ab1281ef950e728c524292ac979b852b37e1",
+    "tools/run_matched_baseline_suite.py": "c4af81d2f2112b5b5d9cdf32d90b7512c7002b9f1c9df8950002886eeffe9816",
+    "tools/run_removal_suite.py": "14d673a911ef358ec7ebfe3da6716508ffe5d13b13a930eb35362871e5bb289b",
+    "tools/run_simplification_suite.py": "b6f6b338050b41e3ec50ea9e8974e248714c8f632a0a3bc0cf55d70edb82e899",
+    "tools/run_two_view_full_suite.py": "153853be0cbeafc2501455088f13ecb3359938dfc63dd114d81195982ef52cdf",
+    "tools/run_voc21_batch_tuning.py": "4808a61201908140523c7d3f2e7113f8d4fe58c8c0e9f70531e5dc042dcdaa9f",
+    "tools/run_voc21_prefix_suite.py": "37c1aa9389a119183fd8e60f7e7c2251bd8f4f0003c522ea21fcedde2cefde0a",
+    "tools/self_evolution_controller.py": "da9bbc4d03fbf3703cb241c1e170209f9c6e34de8f793bf67d190648d42c3a34",
+    "tools/suite_inputs.py": "04da714d76fd47dd0bfa3bb329d41979856975ad9c016d8e4ce50658ccd25d36",
+    "tools/trace_ablation_variants.py": "a5b4f68f7969bcc06055f7ab7a07e8b9390c329c9f16dd7b400f5f7f24e2aec4",
+    "tools/trace_algorithm_variants.py": "4f0cff47895bb94dcea5a11234a03809fd0bd0af17f8c4e0546bb5de89691a53",
+    "tools/trace_cached_prefix.py": "66ea9be584e75435fda30dd4f9c098afbfb2d2f9304b3563a5cd6bc464fe1d92",
+    "tools/trace_execution_audit.py": "f27a07c0010bae8555a07bf0914563e852f6b250915cd6abd064f064fe07b7a5",
+    "tools/trace_lazy_quality.py": "03a098e47b747c213dff739632e36c06150cdd2e7c64bff111b33ee1f2b2a201",
+    "tools/verify_mask_control.py": "3dd8f451c3dbdb458ab629f5ba88527edcebbac7c68de102413c038de533e9dc",
+    "tests/test_ablation_mechanisms.py": "e52d5e546637e9de84438a364a968fc488dec7c98478607894a184ef21fef1ab",
+    "tests/test_ablation_variants.py": "2ac517086d4639a3ae9619354b9a4206d59279c51472e106a7e2dc1357f0b45e",
+    "tests/test_accuracy_budget_search.py": "7ae2d7b711409e821a40d86f2bee1d5e1ae83181f08adf612ed1a59ebde43d98",
+    "tests/test_algorithm_efficiency_suite.py": "55e6078e4dc0c746e21f09e58ddf95b2000d20b2a4761465c79720bc313e2ad3",
+    "tests/test_algorithm_variants.py": "a059a43c2d2fa644603e554cacffc16ebffb9249ae56b14c8391527ed2ae28fa",
+    "tests/test_cached_prefix.py": "55ee17dd2bec46da69d6da5f04c224ad45a9719abcb5e141d0a3b1673820111d",
+    "tests/test_confirmation_cohorts.py": "a476b9c97c64460a376dc336d2f8e2db77c92f967a18db69447cd078150da8fc",
+    "tests/test_confirmation_queue.py": "13fbf8d7db9756b00ceae4b3290cd8968074cb19eb65bbf54dedca08ea7cf0b2",
+    "tests/test_confirmation_worker.py": "8e2a8ffc8456b5dfa21a5f49cb8d37bc1f80f46a80c7f965f4bd21f0dde33d34",
+    "tests/test_dataset_response.py": "34234748af2c7d89421fb14d370d97b0ca79062e43b073d95539e8a05e2cca2c",
+    "tests/test_evolution_allocation_shares.py": "69d552449696159f85b85ce254ecf4d4f64a9dcbff16e45af3fb475eb10db4b0",
+    "tests/test_evolution_completion.py": "fc7067d7d3a9558c3384c50ef2dabd5acf5d684d0f67a3e3324028f3820039af",
+    "tests/test_evolution_controller.py": "3ea55a845eeeabd23bc31aea9178e881a8a3706dae37b6ebb9ea4f1178223d4d",
+    "tests/test_evolution_dependencies.py": "030f28a5e1a4b3025ccd0eb942df7cb58762997aa9250bc091bb505e100ad5ed",
+    "tests/test_evolution_strata.py": "ab1394b1492ef0cbfed8e7b293c8189df7bc00b53a52964c70db02f5fff412dc",
+    "tests/test_evolution_tuning_continuation.py": "45dd88a06f43f2ae1567f64de95273c295d8be79e5838ec19ee858ed55b9f7dd",
+    "tests/test_evolution_tuning_inputs.py": "38ec71e3def37875f05c7d24faa4b0447a41fc696de26bdb01e3573a8a9cfd5a",
+    "tests/test_evolution_tuning_queue.py": "9582a0423099f96b787f375c1bf572a9a38ada7bde1745634219a18d18ac01f7",
+    "tests/test_evolution_tuning_worker.py": "bcdeda797e280e34998b5143eaf8a11ded37c1f1d804b41fa2ba57e0b1feb034",
+    "tests/test_execution_audit.py": "17e4144614847b42d077c40e24a079a5e7f354a0ca59a5013b2adab74afe5a8d",
+    "tests/test_forward_budget.py": "4a88bf6b43a81371c0b6ddf61b7f0e085f4fcb49c024338ff1fe7d6429457580",
+    "tests/test_full_baseline_followup.py": "450a44f88d7196ed94d80592999beffb0c29905f27c46501d305375b9576d680",
+    "tests/test_fused_attention.py": "5b991a4b7b1e35a1f4a03dbef3369191d8cde48e7fea11da9d3f75c681f2197b",
+    "tests/test_image_balanced_trace.py": "348dcf7d2bfa81de5d137d67ab2d2c40dc363547ea28c907a2ad2a013bbe107b",
+    "tests/test_image_full_figures.py": "d313b9723cbc76bae66be7a4b2a6300ac49851ec75542505021c88fb00cd21d6",
+    "tests/test_image_full_queue.py": "36c4be9b1e9f1edf18632d81c009061256da79181da1954bf3fe415d562e124b",
+    "tests/test_image_full_worker.py": "8b3819ac13a93b8a907b28f44fe511b36828105f97c45ce153aad570216d345c",
+    "tests/test_lazy_quality.py": "ea122161c19df7e6d92e83362e9b6124da307b3cc280554f32f565324b58f908",
+    "tests/test_lazy_quality_suite.py": "5a30597dfc97c1c891d9c6fbe2bbad87e8cd5e3997d3e2c135b22f5eb33472f9",
+    "tests/test_matched_baseline_suite.py": "3e933c1b89968440c398c6aebddc966c3be23ae24ffd32adaf180981de684692",
+    "tests/test_matched_baselines.py": "f9f2c192e7542366a043d29df11495b90cd0f0185c77c575ccaf865077677922",
+    "tests/test_prefix_costs.py": "820e9a3c0d283c03955f0a777d5accbc36f004b62f35c1db039dfd0b80166019",
+    "tests/test_probe_complementarity.py": "b70d8cd412b49a889ca4818e80d79516745c5115ad3f6e932ec704d600bada2a",
+    "tests/test_removal_suite.py": "3758fa9384eda9d87c469cec2a14def12e745e2bf0ed07efd5a8251e20559cb9",
+    "tests/test_runtime_optimizations.py": "d0b3e86ec1ec8a92f515dd2eee4a7ebd78cff9d737b5468d392db7626ed58424",
+    "tests/test_selective_selector_crosscheck.py": "2fd2071139804344bd8bec625abdd4970c1fb64223d7546335d099c88297bd26",
+    "tests/test_selective_tracing.py": "50b39bffa2cc66e4f159a11724b3bbd4cd724657e7a673a5c02a74dabe0b7f62",
+    "tests/test_simplified_trace.py": "f5ad8ab9bf23975b12f5c74ed6be469abae0c90bd8597bf8e59d1134452d6204",
+    "tests/test_standalone_probes.py": "95a372a1b73534e9564e0d090da868aa2fb616dd09a14ac6fef3cbbe6af6523c",
+    "tests/test_standalone_queue.py": "bc74430af1cb929368481b29153a14a4232529951cbdb44b1e3da14302e5267d",
+    "tests/test_suite_inputs.py": "445c2978bf9427181ab13f569e7e898ccabe9295355a727b08fa91eb2b44ac69",
+    "tests/test_trace.py": "92887d34aaf558efb149096c8435811f24fe27e81b39f41c28ef564e10c6e0ad",
+    "tests/test_two_view_analysis.py": "c111b6c0733dda63c17897b4a5e9c7e8fb610953b25ce31f7e93637be63de2e9",
+    "tests/test_two_view_entrypoint.py": "4619c28d9e122d1c39292517e6974a1e4ab7a10ac453fc8e9313b3e803d014c1",
+    "tests/test_two_view_full_suite.py": "1364f34a6590ef458cb0a2fb9e849b52bbb09a791591652561d0f30401a8e48f",
+    "tests/test_voc21_analysis.py": "b00ee9022c632105820206d1ea6d30d1b3a1ef2bdfdffcef8cb1d3abcbed6e33",
+    "tests/test_voc21_batch_tuning.py": "413d23410a91a044d4eb6d314069833a67c58ed1aa3be0ac1d345c52a5f01764",
+    "tests/test_voc21_prefix_suite.py": "92e54419d4f22bf6948055fbf5b75f490ea0560e15d48d0b9caacbbacac1d460"
+  },
+  "output": "/home/wwww/hzl/results/trace_single_probe_waterbirds_full_20261029_0817/gates/waterbirds_seg"
+}

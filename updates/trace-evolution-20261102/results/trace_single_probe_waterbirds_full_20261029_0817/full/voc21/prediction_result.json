@@ -1,0 +1,124 @@
+{
+  "status": "predicted",
+  "images": 1449,
+  "arms": [
+    "no_adapt",
+    "image_uniform",
+    "image_confidence",
+    "image_C"
+  ],
+  "config": {
+    "dataset": "PascalVOC21Dataset",
+    "data_subdir": "VOCdevkit/VOC2012",
+    "resize": [
+      224,
+      224
+    ],
+    "patch_size": [
+      224,
+      224
+    ],
+    "patch_stride": 112,
+    "batch_size": 18,
+    "lr": 0.00125,
+    "steps": 31,
+    "trace_max_regions": 46,
+    "class_extensions": true,
+    "trace_view_batch_size": 16,
+    "data_dir": "/home/wwww/hzl/data/VOCdevkit/VOC2012"
+  },
+  "timings": {
+    "no_adapt": {
+      "measured_episodes": 80,
+      "measured_images": 1431,
+      "seconds": 3.535228139720857,
+      "seconds_per_image": 0.0024704599159474892,
+      "images_per_second": 404.78292869466475,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_uniform": {
+      "measured_episodes": 80,
+      "measured_images": 1431,
+      "seconds": 391.15718551632017,
+      "seconds_per_image": 0.2733453427787003,
+      "images_per_second": 3.658375847323645,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_confidence": {
+      "measured_episodes": 80,
+      "measured_images": 1431,
+      "seconds": 391.3063565501943,
+      "seconds_per_image": 0.2734495852901428,
+      "images_per_second": 3.6569812272304354,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    },
+    "image_C": {
+      "measured_episodes": 80,
+      "measured_images": 1431,
+      "seconds": 491.8836236782372,
+      "seconds_per_image": 0.3437341884543936,
+      "images_per_second": 2.909224725351052,
+      "warmup_episode": 0,
+      "accuracy_includes_warmup": true
+    }
+  },
+  "costs": {
+    "no_adapt": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 81,
+      "eval_forward_inputs": 1449,
+      "adapt_forward_calls": 0,
+      "adapt_forward_inputs": 0,
+      "encoder_calls": 81,
+      "encoder_inputs": 1449,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_uniform": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 162,
+      "eval_forward_inputs": 2898,
+      "adapt_forward_calls": 2511,
+      "adapt_forward_inputs": 44919,
+      "encoder_calls": 2673,
+      "encoder_inputs": 47817,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_confidence": {
+      "diagnostic_forward_calls": 0,
+      "diagnostic_forward_inputs": 0,
+      "eval_forward_calls": 162,
+      "eval_forward_inputs": 2898,
+      "adapt_forward_calls": 2511,
+      "adapt_forward_inputs": 44919,
+      "encoder_calls": 2673,
+      "encoder_inputs": 47817,
+      "diagnostic_encoder_calls": 0,
+      "diagnostic_encoder_inputs": 0
+    },
+    "image_C": {
+      "diagnostic_forward_calls": 4004,
+      "diagnostic_forward_inputs": 63471,
+      "eval_forward_calls": 162,
+      "eval_forward_inputs": 2898,
+      "adapt_forward_calls": 2511,
+      "adapt_forward_inputs": 44919,
+      "encoder_calls": 6677,
+      "encoder_inputs": 111288,
+      "diagnostic_encoder_calls": 4004,
+      "diagnostic_encoder_inputs": 63471
+    }
+  },
+  "timing_scope": "Synchronized model-side wallclock: exact reset/state check, candidate admission, diagnostic views, optimization, final inference/reconstruction/CPU transfer and observation hooks. NoAdapt is reset plus evaluation only. Excludes setup, RGB decode/H2D/geometry, disk writes and offline scoring. Episode 0 is warmup, retained in all counts and scores.",
+  "dataset": "voc21",
+  "stage": "full",
+  "seed": 0,
+  "calibration": false,
+  "full_split": true
+}

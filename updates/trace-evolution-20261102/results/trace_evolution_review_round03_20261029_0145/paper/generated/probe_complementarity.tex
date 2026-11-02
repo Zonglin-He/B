@@ -1,0 +1,16 @@
+\begin{table*}[t]
+\caption{Descriptive two-probe complementarity on the five full-split candidate caches. Percentages pool candidates; $T<C$ and $C<T$ use absolute tolerance $10^{-6}$, with remaining cases tied. TV is the episode-mean total variation between normalized minimum weights and the indicated single-view allocation, after each arm's $10^{-8}$ admission rule. Both views change allocation, but this alone does not establish extra segmentation gain or justify their cost.}
+\label{tab:probe-complementarity}
+\centering\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+Dataset & Candidates & $T<C$ (\%) & $C<T$ (\%) & $|T-C|\geq.05$ (\%) & TV vs. $T$ & TV vs. $C$ \\
+\midrule
+VOC21 & 46,892 & 58.41 & 40.87 & 53.04 & 0.228 & 0.326 \\
+PC60 & 111,514 & 58.01 & 41.21 & 52.09 & 0.208 & 0.309 \\
+COCO Object & 168,669 & 61.41 & 36.27 & 47.04 & 0.202 & 0.343 \\
+COCO-CD & 1,998 & 52.85 & 47.15 & 61.11 & 0.129 & 0.095 \\
+COCO-Stuff & 164,543 & 61.15 & 36.69 & 44.98 & 0.211 & 0.359 \\
+\bottomrule
+\end{tabular}
+\end{table*}

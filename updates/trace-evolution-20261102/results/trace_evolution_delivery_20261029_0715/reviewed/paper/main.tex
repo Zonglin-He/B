@@ -1,0 +1,198 @@
+\documentclass[letterpaper]{article}
+\input{preamble}
+\title{TRACE: Context-Probed Region Allocation for Test-Time Adaptation\\in Open-Vocabulary Semantic Segmentation}
+\author{Anonymous Authors}
+\affiliations{}
+\begin{document}
+\raggedbottom
+\maketitle
+
+\begin{abstract}
+Open-vocabulary semantic segmentation assigns text-specified categories to image locations, while test-time adaptation learns from these predictions without labels. A confident local response does not reveal whether it remains supported when its surroundings change. We introduce TRACE, which uses a candidate-preserving context probe to allocate self-supervision. Connected predicted regions define the diagnostic units. For each region, one transformed input preserves its pixels and modifies its surroundings; the original query's response at the same locations supplies a fixed, detached support weight. TRACE normalizes these weights within each source image and applies them to region-averaged, prompt-specific entropy. This separates regional allocation from a direct pixel-area multiplier and gives each active image the same normalized loss budget. Only visual LayerNorm affine parameters adapt. Across six complete evaluation protocols, TRACE improves over matched initial-confidence weighting, with gains of 1.77 mIoU on COCO Object and 7.32 on COCO-CD. Explicit zero-, single-, and dual-probe controls examine the allocation and computational tradeoffs.
+\end{abstract}
+
+\section{Introduction}
+Open-vocabulary semantic segmentation (OVSS) predicts a category at each image location from a supplied text vocabulary. Vision--language models provide transferable image--text representations, and dense prediction methods make them spatially accessible~\cite{radford2021clip,hajimiri2025naclip}. Test-time adaptation (TTA) adds a different decision: which unlabeled predictions should influence the model's parameters? Entropy-based adaptation sharpens current predictions~\cite{wang2021tent,noori2025mlmp}, making the choice of self-supervision important even when the initial segmentation appears confident.
+
+Local confidence describes the model's response under the observed image, not its dependence on the surrounding content. This distinction matters in OVSS because local text matching is built from contextualized features learned largely through image--text alignment. Patch-aligned learning, local self-distillation, and modified token interactions address the global-to-local transfer~\cite{mukhoti2023pacl,wu2024clipself,shao2024cliptrase}. Object--context and region--language studies further examine how neighboring semantics affect dense representations~\cite{kim2025cass,li2025densevlm}. These methods improve the representations used for prediction; they do not by themselves decide which test-time region should contribute more to a parameter update.
+
+Context need not be removed from prediction to make this distinction useful. Surrounding information can aid recognition~\cite{xiao2021backgrounds}; the additional question is how a candidate's response behaves when that information changes. Figure~\ref{fig:teaser} illustrates this question with actual model responses. Keeping a candidate's own pixels unchanged, we modify only its surroundings and read the same query at the same locations. Initially confident regions can then receive different support scores. This is a behavioral measurement under a specified intervention, rather than identification of a unique causal source of confidence.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figure/image_full_teaser.pdf}
+\caption{Initial confidence and support after a candidate-preserving context change. Candidate pixels and diagnostic locations remain fixed. Labels show stored initial confidence and measured context-probe support from the evaluated single-probe method. These examples illustrate different responses, not their population frequency; Appendix~\ref{app:figures} describes selection and rendering.}
+\label{fig:teaser}
+\end{figure}
+
+We use this measurement for \emph{regional allocation}, not for deleting contextual evidence from the final image. TRACE constructs connected regions from initial token predictions, bounds their number by top-$K$ confidence per source image, and evaluates one context probe per selected region. The detached score weights that region's average entropy. We normalize regional weights within each image before averaging image objectives. Consequently, neither a larger region nor an image with more total candidate support automatically receives a larger normalized loss budget.
+
+Across six complete category protocols, the single-probe method improves on matched initial-confidence weighting in every protocol. The largest differences are on COCO-CD and COCO Object, at +7.32 and +1.77 mIoU; the COCO-Stuff difference is +0.04. Separate zero-, single-, and dual-probe comparisons on fixed training-source panels examine probe choice and cost, with a global mode selected on calibration before confirmation. Published MLMP values provide external operating-point references, separate from attribution within the same candidate and optimization pipeline.
+
+Our contributions are:
+\begin{itemize}
+\item A candidate-preserving context probe that supplies fixed regional support for OVSS test-time self-supervision using one diagnostic input per candidate.
+\item A source-image-normalized, region-averaged entropy objective that separates relative support from explicit area and cross-image normalization effects.
+\item Six full-split matched allocation comparisons, calibration-locked probe comparisons under three fixed input orderings, and actual forward-count and timing measurements.
+\end{itemize}
+
+\section{Related Work}
+\paragraph{Open-vocabulary dense prediction.}
+OVSS transfers vision--language representations through dense matching, mask classification, or segmentation-oriented adaptation~\cite{ghiasi2022openseg,liang2023ovseg,cho2024catseg}. PACL aligns local patches with language, while CLIPSelf distills local visual features~\cite{mukhoti2023pacl,wu2024clipself}. NACLIP and CLIPtrase modify or analyze spatial-token interactions for training-free segmentation~\cite{hajimiri2025naclip,shao2024cliptrase}. TRACE addresses the subsequent allocation of test-time self-supervision, using the dense predictor as its inference interface.
+
+\paragraph{Test-time adaptation.}
+TENT optimizes entropy through normalization-affine parameters~\cite{wang2021tent}. CoTTA, EATA, and SAR introduce consistency, selection, or optimization controls~\cite{wang2022cotta,niu2022eata,niu2023sar}. TPT and WATT adapt vision--language models through prompts or template-associated weights~\cite{shu2022tpt,osowiechi2024watt}; Seg-TTO and SemLA address segmentation-specific adaptation~\cite{desilva2025segtto,qorbani2025semla}. MLMP combines visual levels and prompt-specific entropy with a global image-level term~\cite{noori2025mlmp}. TRACE retains dense prompt-specific entropy but assigns its influence through candidate-context responses and within-image regional normalization.
+
+\paragraph{Context and model probing.}
+Background-dependence studies distinguish recognition from the evidence sustaining it~\cite{xiao2021backgrounds}. CASS models object--context relations in OVSS, while DenseVLM examines biases in region--language alignment~\cite{kim2025cass,li2025densevlm}. Perturbation-based explanations inspect model behavior under controlled input changes~\cite{fong2019extremal,zhang2020conta}. TRACE uses a fixed, candidate-preserving perturbation to obtain relative update weights; it does not train an explanation model or assume calibrated probabilities of correctness.
+
+\section{Method}
+\label{sec:method}
+An episode starts from reset model parameters $\theta_0$ and unlabeled source images $X_j$. TRACE selects connected predicted regions, measures their support under a candidate-preserving context change, and uses fixed regional weights to adapt the visual encoder. Figure~\ref{fig:pipeline} summarizes these three steps. Diagnostics never use image annotations.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/image_full_pipeline.pdf}
+\caption{TRACE with one context probe per candidate. Initial token predictions define connected regions and source-image top-$K$ selection. Each candidate keeps its pixels while its surroundings undergo the fixed transform. The reset encoder measures the candidate query at its original token locations. Detached scores are normalized within source images and weight regional prompt entropy on unmodified inputs. Only visual LayerNorm affine parameters update; the inference readout reconstructs the final segmentation.}
+\label{fig:pipeline}
+\end{figure*}
+
+\subsection{Candidate Region Construction}
+Regions provide a spatial unit between an individual token and an entire image. They can be constructed from predictions without instance annotations or a separate proposal network. Here a region means a connected prediction component, not an estimated physical object instance.
+
+Each source image is preprocessed into normalized input crops $x_b$, with source index $j(b)$. A $224\times224$ crop contains $16\times16$ spatial tokens for ViT-L/14; a ViT patch is distinct from an input crop. Let $\mathcal C$ be the text-query vocabulary, including any extensions. It need not equal the final evaluation-category set $\mathcal Y$. The reset diagnostic branch defines
+\begin{equation}
+\pi^0_{b,i}(c\mid x_b)=\operatorname{softmax}_{c\in\mathcal C}
+z^{\mathrm{eval}}_{\theta_0}(x_b)_{i,c}.
+\label{eq:reference}
+\end{equation}
+This branch uses normalized mean prompt embeddings and entropy-weighted visual-layer aggregation. Gradient-bearing optimization uses separate prompt distributions; Appendix~\ref{app:readout} specifies both readouts.
+
+For each crop, we take the query argmax and extract four-neighbor connected components within its valid token mask. A candidate $R=(b_R,\Omega_R,c_R)$ records the crop, token locations, and predicted query. Its initial confidence is $\kappa_R=|\Omega_R|^{-1}\sum_{i\in\Omega_R}\pi^0_{b_R,i}(c_R\mid x_{b_R})$. Proposals from all crops of the same source image compete for its top-$K$ positions by descending $\kappa_R$; deterministic tie rules appear in Appendix~\ref{app:protocol}. The selected set for image $j$ is $\mathcal R_j$.
+
+Confidence bounds the diagnostic workload and identifies predictions likely to be used for self-supervision; it does not certify reliability. The next module assigns weights independently of the initial rank. Components are not stitched across crops or merged across query extensions, even when extensions map to the same final category. Candidate geometry and query identities remain fixed within the episode.
+
+\subsection{Candidate-Preserving Context Probe}
+The probe asks whether the candidate's predicted query remains supported after a specified change to its surroundings. Preserving candidate pixels avoids deleting the semantic content whose response is measured. All categories use the same construction.
+
+Let $u=\operatorname{Denorm}(x_{b_R})$ be the crop in RGB pixel space, and $M_R$ its token mask upsampled by nearest-neighbor interpolation to the crop dimensions. For the crop's per-channel spatial mean $\mu$, define
+\begin{equation}
+A(u)=\operatorname{clip}_{[0,255]}
+\left(\operatorname{Shift}\bigl(\mu+0.35(u-\mu)\bigr)\right),
+\end{equation}
+where $\operatorname{Shift}(r,g,b)=(g,b,r)$. The diagnostic input is
+\begin{equation}
+x_R^{\mathrm{ctx}}=\operatorname{Norm}
+\left(M_R\odot u+(1-M_R)\odot A(u)\right).
+\label{eq:context-view}
+\end{equation}
+Only the mask complement is replaced. The response uses the original query and token locations:
+\begin{equation}
+\rho_R=\frac{1}{|\Omega_R|}\sum_{i\in\Omega_R}
+\pi^0_{b_R,i}(c_R\mid x_R^{\mathrm{ctx}}).
+\label{eq:support}
+\end{equation}
+This is a mean of probabilities, not logits. No new region is extracted from the transformed prediction. The score measures support under this context change, not invariance to every possible context. We call this probe mode $C$ in the comparisons below.
+
+Each region receives its own transformed input, but regions do not require serial model calls. We index views by candidate, stack them into bounded batches, and map their logits back to the corresponding candidate before averaging over $\Omega_R$. Diagnostic inputs therefore number one per candidate, while encoder calls depend on view batch size. The resulting scores are detached and fixed during the episode.
+
+\subsection{Image-Balanced Regional Adaptation}
+Support and size should play distinct roles in allocating self-supervision. Normalizing scores across an entire episode also makes images compete through a shared denominator. TRACE instead normalizes within each source image, then averages the active image objectives.
+
+Let $p^a_{\theta,b,i}$ be the current query distribution for prompt $a\in\{1,\ldots,J\}$ on an unmodified crop, and $H(p)=-\sum_{c\in\mathcal C}p(c)\log p(c)$. Each candidate has mean prompt/token entropy
+\begin{equation}
+\overline H_R(\theta)=\frac{1}{J|\Omega_R|}
+\sum_{a=1}^{J}\sum_{i\in\Omega_R}H\bigl(p^a_{\theta,b_R,i}\bigr).
+\end{equation}
+Define active regions $\mathcal R_j^+=\{R\in\mathcal R_j:\rho_R>\epsilon\}$, with the fixed numerical threshold $\epsilon=10^{-8}$, and active images $\mathcal I_+=\{j:\mathcal R_j^+\neq\varnothing\}$. We optimize
+\begin{align}
+\alpha_{R\mid j}&=\frac{\sg(\rho_R)}
+{\sum_{Q\in\mathcal R_j^+}\sg(\rho_Q)},\\
+\mathcal L_{\mathrm{TRACE}}(\theta)&=\frac{1}{|\mathcal I_+|}\sum_{j\in\mathcal I_+}
+\sum_{R\in\mathcal R_j^+}\alpha_{R\mid j}\overline H_R(\theta).
+\label{eq:loss}
+\end{align}
+Here $\sg$ denotes stop-gradient. Images without active candidates contribute no term; if no image is active, adaptation is skipped. The candidate query selects the diagnostic response but is not a cross-entropy pseudo-label for this entropy objective.
+
+Each active image has total coefficient mass $1/|\mathcal I_+|$. Within it, $\alpha_{R\mid j}$ gives relative regional priority without an explicit area multiplier. This is a loss-budget property, not equality of gradient norms or invariance to batch composition. Common positive scaling of an image's active scores cancels; a singleton candidate's positive score also cancels. Support thus controls relative allocation, not the absolute learning rate or number of updates (Appendix~\ref{app:theory}).
+
+Only visual LayerNorm affine parameters update using Adam; the text encoder and other visual parameters remain frozen. Model and optimizer reset before each episode. Final inference uses unmodified inputs, reconstructs pixel query scores, and takes the maximum over extensions of each evaluation category before category argmax. Appendix~\ref{app:protocol} gives this coordinate and vocabulary mapping.
+
+\section{Experiments}
+\subsection{Evaluation Protocol}
+We ask whether probing improves allocation beyond initial confidence, whether one view is a useful operating point, and what computation it requires. Evaluation covers six complete protocols: VOC20/VOC21 (1,449 images each), PC60 (5,105), COCO Object (5,000), COCO-CD (500), and COCO-Stuff (5,000). VOC20/VOC21 share source images but differ in categories. We pool per-class intersection and union over each complete split, then average IoU over positive-union classes.
+
+All local arms use NACLIP ViT-L/14, the last 18 visual outputs, seven prompts, and the same checkpoint. Source images and evaluation labels are resized to $224\times224$, using nearest-neighbor interpolation for labels. The crop size is also $224\times224$, so these measurements use one crop per resized image, not native-resolution evaluation. Uniform, Confidence, and TRACE use identical candidates, order, readouts, learning rate, update steps, and episodic initialization. Each arm executes independently and resets its optimizer. All six splits' predictions are sealed before offline scoring.
+
+The global probe mode is selected using two fixed 128-image training calibration panels, then frozen before 256-image confirmation panels under three predeclared orderings. This stage performs no full-evaluation mode or parameter search. The inherited configurations and official evaluation splits have prior development exposure. Training-panel exclusions cover documented historical selections, but incomplete July candidate-pool mappings prevent certification that all historical exposure was excluded. We distinguish calibration, descriptive confirmation, and development-exposed full evaluation, rather than presenting them as globally unseen validation. Appendix~\ref{app:selection} gives the selection rule and complete outcomes.
+
+\subsection{Full-Split Regional Allocation}
+\label{sec:allocation}
+Matched controls isolate the information supplied by the probe. Uniform assigns equal regional weights; Confidence uses initial $\kappa_R$; TRACE uses the context-probe score. All three normalize within images and average regional entropy. Only TRACE constructs diagnostic views.
+
+\input{generated/image_full_comparison.tex}
+
+TRACE improves over Confidence on all six protocols (Table~\ref{tab:image-full-comparison}): +1.31 on VOC20, +0.30 on VOC21, +0.36 on PC60, +1.77 on Object, +7.32 on CD, and +0.04 on Stuff. Its largest differences from Uniform are +8.77 on CD and +2.79 on Object. Fixed candidates and optimizer settings make these differences evidence for allocation rather than a different proposal network or update budget.
+
+The effect sizes identify where this information is useful. On CD, initial confidence improves Uniform by 1.45 points, while the additional context response contributes a further 7.32. On Object, the corresponding differences are 1.02 and 1.77. In these conditions, selecting which candidate receives weight matters beyond preferring confident proposals. On Stuff, Confidence and TRACE are within 0.05 points: the evidence supports compatibility with this mixed-category protocol, not a large independent effect there. These controls do not isolate candidate construction or calibrate individual update utility.
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\columnwidth]{figure/image_full_allocation.pdf}
+\caption{TRACE minus matched Confidence and Uniform allocation, in mIoU percentage points. All six protocols use the same candidate and optimization pipeline within each comparison. Policies differ in allocation scores; TRACE alone adds a context probe.}
+\label{fig:allocation}
+\end{figure}
+
+\subsection{Published and Local References}
+Table~\ref{tab:image-full-reference} reproduces the clean NACLIP values reported by MLMP~\cite{noori2025mlmp}, including reported dispersion, and separately lists our local single-seed results. TRACE reaches 83.49/52.62/30.69/32.59/21.84 on VOC20/VOC21/PC60/Object/Stuff. Against the strongest reported method in each column, MLMP, the differences are $-0.27/ +1.84/ +2.70/ +3.75/ +0.59$ points.
+
+\input{generated/image_full_reference.tex}
+
+Published methods retain their own readouts and settings. A shared backbone name does not establish identical checkpoints, extensions, evaluation geometry, or optimization budgets. In particular, the VOC20 reference exceeds our score. We do not interpret cross-paper differences as matched superiority; the allocation controls provide direct attribution within our implementation.
+
+COCO-CD has no entry in that published table. Its completed local native comparison gives 72.20 mIoU for the strongest baseline, TENT, versus 74.98 for selected TRACE, a difference of 2.78 points. Native methods share the ordered CD panel but retain their method-specific backends and settings (Appendix~\ref{app:native}). This is a separate operating-point comparison, not an equal-budget causal estimate.
+
+\subsection{Probe Choice and Input Ordering}
+Probe comparisons separate the value of probing from the cost of collecting multiple responses. We compare a candidate-preserving grayscale-blur view ($T$), the context transform ($C$), and their minimum under the image-normalized objective. Uniform and Confidence are zero-probe controls; an episode-normalized minimum separately tests the cross-image denominator. Candidate sets, configurations, and all six arms are fixed before prediction.
+
+Calibration selects one global mode by its worst-dataset margin against image-normalized Confidence on PC60 and Object, with a fixed cost-aware tie rule. It selects $C$, sealed before confirmation prediction. The calibration PC60 margin is $-0.27$, so selection does not mean both calibration datasets improve. Appendix~\ref{app:selection} retains all outcomes rather than substituting per-dataset winners.
+
+On each 256-image confirmation panel, selected $C$ exceeds Confidence under all three orderings: +0.07--0.18 on PC60 and +2.10--2.92 on Object. $T$ is higher on Object; the original episode-normalized minimum is higher on PC60. These results support a single-probe operating point, not universal optimality of $C$ or image normalization. The latter removes an explicit cross-image score denominator algebraically, but shared gradients and Adam still make grouping relevant. Reordering the same images diagnoses composition dependence; it is not independent population sampling or a confidence interval.
+
+\subsection{Actual Computation}
+One context probe requires $N_{\mathrm{cand}}$ diagnostic inputs, versus $2N_{\mathrm{cand}}$ for a dual-probe minimum. With $P$ input crops and $S$ update steps, a nonempty episode uses
+\begin{equation}
+N_{\mathrm{enc\ inputs}}=N_{\mathrm{cand}}+(S+2)P,
+\end{equation}
+including initial readout, adaptation, and final inference. Zero-probe controls omit the first term. Diagnostic \emph{calls} depend on the view batch size; input count is not a wall-time speedup.
+
+Full-split independent-arm measurements give 119.41 ms/image for TRACE versus 83.73 for Confidence on PC60, and 292.00 versus 237.41 on Object, alongside +0.36/+1.77 mIoU. On Stuff, 186.14 versus 129.35 ms/image accompanies a +0.04-point difference. The measured return therefore depends on how much allocation changes the task outcome. Appendix~\ref{app:cost} reports every arm, actual input/call counts, and timing denominators.
+
+These are synchronized model-side measurements including reset, diagnosis, optimization, reconstruction, CPU prediction transfer, and finite-value observations. They exclude setup, decoding, shared transfer/geometry preparation, artifact writes, and scoring. Only episode 0 is omitted from time; all images remain in accuracy and work counts. Earlier training-panel single/dual-probe timings use their own instrumentation; their percentage differences are not transferred to this full stage.
+
+\subsection{Qualitative Allocation Effects}
+Figure~\ref{fig:segmentation-cases} compares actual Confidence and TRACE segmentations from the new full evaluation. The comparator changes allocation, not the candidate generator or initialization, making the examples inspectable illustrations of the joint update. Positive and negative examples are retained. The selected class-level IoUs concern the displayed images, not full-dataset performance.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/image_full_segmentation.pdf}
+\caption{Actual selected segmentations: Input / Confidence / TRACE / Ground truth. Confidence is the matched initial-confidence allocation control, not MLMP. Annotations are IoU for the named class in the displayed image, not dataset mIoU. Cases include positive and negative differences and are selected for diagnostic visibility, not representativeness. GT is used only offline. Appendix~\ref{app:figures} gives identities and selection rules.}
+\label{fig:segmentation-cases}
+\end{figure*}
+
+\section{Discussion and Scope}
+TRACE measures support under a particular context change and uses it for relative allocation. High support can coexist with shared errors or sensitivity to untested transformations. Connected regions can contain mixed-quality positions, and top-$K$ can exclude useful low-confidence candidates. Region averaging and equal image budgets constrain coefficients, not gradient magnitudes or an individual update's realized value.
+
+The evidence directly supports allocation effects in the six matched protocols and the specified computation. Its scope is one backbone, fixed transformation, inherited per-dataset settings, and resized evaluation geometry. Development exposure and published-reference protocol differences limit claims about untouched generalization and matched external competitiveness. These boundaries do not alter the fixed-candidate comparison, but prevent interpreting it as universal update safety or state-of-the-art performance under every protocol.
+
+\section{Conclusion}
+TRACE turns one candidate-preserving context response into a fixed regional allocation score for OVSS test-time adaptation. Normalizing within source images and averaging regional entropy makes the loss budget explicit while retaining the dense prediction pipeline. Full-split matched comparisons show that the additional response can improve on initial-confidence weighting, especially on COCO-CD and COCO Object. Calibration-locked probe comparisons and actual execution measurements establish the corresponding single-probe operating point and its computational tradeoff.
+
+\section*{AI Assistance}
+AI assistance was used for source drafting, experimental orchestration, mathematical consistency checks, visualizations, and table-provenance tooling. The authors remain responsible for verifying the experimental evidence and final text.
+
+\bibliography{references}
+\clearpage
+\appendix
+\input{appendix}
+\end{document}

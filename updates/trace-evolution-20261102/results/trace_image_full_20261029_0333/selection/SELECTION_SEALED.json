@@ -1,0 +1,53 @@
+{
+  "complete": true,
+  "selected_mode": "C",
+  "cohort_sha256": "d9439990d8eeb2d10cc75ac5ad1fe9f03f1f03a01cb29d0eca9d224d314916da",
+  "rule": {
+    "uses": "Only the two new calibration results, never any confirmation labels or scores.",
+    "primary": "Maximize the worst-dataset mIoU difference versus image_confidence across PC60 and COCO Object.",
+    "tie_band_pp": 0.02,
+    "tie_order": [
+      "fewer actual diagnostic encoder inputs over calibration images",
+      "larger unweighted mean mIoU difference",
+      "fixed mode ordering T then C then min"
+    ],
+    "global": true,
+    "freeze_before_confirmation_prediction": true,
+    "no_reselection_after_confirmation": true
+  },
+  "candidates": {
+    "T": {
+      "margin_pp": {
+        "pc60": -0.5186668803051617,
+        "coco_object": 1.0720141192581423
+      },
+      "worst_dataset_margin_pp": -0.5186668803051617,
+      "macro_margin_pp": 0.2766736194764903,
+      "diagnostic_encoder_inputs": 7123
+    },
+    "C": {
+      "margin_pp": {
+        "pc60": -0.27295706510211915,
+        "coco_object": 0.579560590414264
+      },
+      "worst_dataset_margin_pp": -0.27295706510211915,
+      "macro_margin_pp": 0.15330176265607243,
+      "diagnostic_encoder_inputs": 7123
+    },
+    "min": {
+      "margin_pp": {
+        "pc60": -0.3085979351570529,
+        "coco_object": -0.06498351920495438
+      },
+      "worst_dataset_margin_pp": -0.3085979351570529,
+      "macro_margin_pp": -0.18679072718100365,
+      "diagnostic_encoder_inputs": 14246
+    }
+  },
+  "suite_prepared_sha256": "579372bf5a4208ad9e1f465698b0d82193ecd8d7c70162b3b1b3c67c84f056c5",
+  "calibration_barrier_sha256": "a264107d37e0b5ed5c063f417fde5c41417f6e6a8c6abd705f6e7bdd841cbf24",
+  "calibration_score_sha256": {
+    "cells/calibration/pc60/sorted": "8019d2ec9a963410fe5f7c31700c3f4f558668130a28579323b1e42276ea67b4",
+    "cells/calibration/coco_object/sorted": "58f5adc8e5471ae671a1c791cc63fc83132240d803d29a2b36d142f76a0b785f"
+  }
+}

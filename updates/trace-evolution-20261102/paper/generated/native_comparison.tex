@@ -1,0 +1,18 @@
+\begin{table}[ht]
+\caption{Historical local native-backend comparison, full splits, seed 0, mIoU ($\uparrow$). All rows use the same input panels and episodes, not identical backends, prompts, tuning histories, or optimization budgets. Native baselines use learning rate 0.001 and 10 steps; \method{} uses dataset-specific settings. These native deltas are separate from the published-baseline deltas in main-paper Table~\mainref{tab:reported}.}
+\label{tab:native}
+\centering\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+Method & PC60 & VOC21 & COCO-CD & Object \\
+\midrule
+No Adapt & $26.93$ & $45.20$ & $61.14$ & $25.41$ \\
+TENT & $27.60$ & $45.72$ & $72.20$ & $26.32$ \\
+TPT & $25.95$ & $47.99$ & $64.27$ & $25.53$ \\
+MLMP & $29.60$ & $50.29$ & $71.01$ & $30.36$ \\
+\midrule
+\method{} & $\mathbf{30.58}$ & $\mathbf{52.40}$ & $\mathbf{75.19}$ & $\mathbf{32.68}$ \\
+TRACE gain & $+0.98$ & $+2.10$ & $+2.99$ & $+2.32$ \\
+\bottomrule
+\end{tabular}
+\end{table}

@@ -1,0 +1,211 @@
+\documentclass[letterpaper]{article}
+\input{preamble}
+\title{TRACE: Tracing Confidence Sources for Reliable Test-Time Adaptation\\in Open-Vocabulary Semantic Segmentation}
+\author{Anonymous Authors}
+\affiliations{}
+\begin{document}
+\raggedbottom
+\maketitle
+
+\begin{abstract}
+Open-vocabulary semantic segmentation uses text-specified categories, while test-time adaptation updates the model from its unlabeled predictions. Confidence alone does not describe how a local response behaves when its surroundings change. We introduce TRACE, which probes connected predicted regions before allocating self-supervision. Two deterministic views preserve each candidate while modifying its surroundings through grayscale blur or a fixed channel-shift transformation. The minimum of their mean query probabilities provides conservative, parameter-free common support. These fixed, detached scores allocate region-averaged, prompt-specific entropy, while only visual LayerNorm affine parameters adapt episodically. This separates candidate weight from area while retaining the dense prediction and pixel reconstruction pipeline. Across six complete evaluation splits, TRACE exceeds the cited MLMP reference values on five splits and the best local native baseline on COCO-CD. Matched controls show direct gains over uniform and confidence allocation on COCO-CD and COCO Object, while spatial-normalization controls demonstrate the benefit of separating support from region area on PC60 and COCO Object.
+\end{abstract}
+
+\section{Introduction}
+Open-vocabulary semantic segmentation (OVSS) uses text queries to specify the categories of a dense prediction. Vision--language models such as CLIP provide a transferable image--text representation, and segmentation methods adapt that representation to spatial prediction~\cite{radford2021clip,hajimiri2025naclip}. An open vocabulary expands what can be named, but it does not determine which unlabeled predictions should be used to update the model. Test-time adaptation (TTA) introduces precisely this decision: a test prediction becomes not only an output, but also a training signal.
+
+Prediction confidence and update usefulness are different quantities. Entropy minimization sharpens the model's current distribution~\cite{wang2021tent}; it does not directly observe whether the resulting parameter change will improve an unknown ground-truth segmentation. This distinction is especially relevant to OVSS, which transfers image-level vision--language representations to local token--text matching. Patch alignment, local self-distillation, and modified token interactions improve this transfer~\cite{mukhoti2023pacl,wu2024clipself,shao2024cliptrase}, yet a contextualized spatial token can still respond to both its local region and the surrounding image. Region--language studies likewise expose the interaction between object and context representations~\cite{kim2025cass,li2025densevlm}. Surrounding information can aid recognition; the adaptation question is how much influence to assign a region when its response changes with that information.
+
+A candidate-preserving probe measures the local response under specified changes to its surroundings. We preserve a candidate's input pixels in two views and modify only the complement of its mask. The first view uses grayscale conversion and average blur outside the candidate; the second reduces contrast and cyclically shifts the surrounding color channels. Figure~\ref{fig:teaser} illustrates how initially confident regions can retain or lose support under these changes. Their minimum gives a conservative common-support score: a low response in either view limits its relative allocation weight.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/two_view_teaser.pdf}
+\caption{Confidence before adaptation and support after changing the surroundings. Both selected regions initially receive high confidence. Keeping their own pixels unchanged, grass retains high support in both views, whereas the dog's response falls sharply when its surroundings are grayscaled and blurred. Support is the mean probability of the predicted class at the original region locations. These two illustrative cases use stored model measurements; the four-case panel and selection details appear in Appendix~\ref{app:mechanism}.}
+\label{fig:teaser}
+\end{figure*}
+
+We formulate this idea as \method, short for \emph{Tracing Confidence Sources}, using context interventions to probe the dependence of a local response. Candidates are connected components on the initial token grid, selected by top-$K$ confidence per source image. Each candidate is evaluated at its original token locations in both views. Their minimum is its common-support score, used directly as a detached weight in a region-normalized entropy objective. All candidates follow one rule, without semantic-role annotations. The diagnostic geometry and weights remain fixed during visual LayerNorm adaptation, and the original reconstruction produces the final segmentation.
+
+Experiments cover six complete evaluation splits: VOC20, VOC21, PC60, COCO Object, COCO-CD, and COCO-Stuff. TRACE attains higher mIoU than the cited MLMP reference values on the five overlapping splits and than the best local native baseline on COCO-CD. Fixed-candidate controls directly compare allocation rules on five splits, with substantial gains over uniform and initial-confidence weights on COCO-CD and COCO Object. Product and spatial-normalization comparisons further examine how score aggregation and region area enter the update. Descriptive transition analysis connects these allocation choices to the outcomes of joint adaptation.
+
+Our contributions are:
+\begin{itemize}
+\item A candidate-level two-view rule that measures conservative common query support under controlled context changes, without class-specific rules or a learned score combiner.
+\item A region-normalized prompt-entropy objective that separates fixed diagnostics from optimization and candidate weight from area during episodic visual LayerNorm adaptation.
+\item Evaluation on six full splits, matched allocation controls on five splits, and product/spatial-normalization controls on two splits, linking measured segmentation gains to candidate allocation and region normalization.
+\end{itemize}
+
+\section{Related Work}
+\paragraph{From global alignment to dense prediction.}
+OVSS transfers vision--language representations to spatial labeling through dense matching, mask classification, or segmentation-oriented adaptation~\cite{ghiasi2022openseg,liang2023ovseg,cho2024catseg}. The transfer is not automatic: CLIP is trained primarily through image--text alignment~\cite{radford2021clip}, whereas segmentation requires local region--text correspondence. PACL introduces patch-aligned contrastive learning, and CLIPSelf distills local visual features~\cite{mukhoti2023pacl,wu2024clipself}. NACLIP and CLIPtrase examine or modify token interactions for training-free segmentation~\cite{hajimiri2025naclip,shao2024cliptrase}. These methods improve the representations that produce a dense prediction. TRACE addresses the subsequent decision of how predicted regions should contribute to a test-time update.
+
+\paragraph{Entropy-based test-time adaptation.}
+TENT optimizes prediction entropy through normalization-affine updates~\cite{wang2021tent}. CoTTA uses teacher and augmentation consistency, while EATA and SAR introduce reliability selection or optimization controls~\cite{wang2022cotta,niu2022eata,niu2023sar}. For vision--language models, TPT learns prompts from test-time views, and WATT combines weights adapted under multiple templates~\cite{shu2022tpt,osowiechi2024watt}. Seg-TTO and SemLA further address segmentation-specific adaptation~\cite{desilva2025segtto,qorbani2025semla}. Most closely related, MLMP combines visual levels and prompt-specific entropy with a global image-level term~\cite{noori2025mlmp}. TRACE retains prompt-specific spatial predictions but allocates their entropy through fixed candidate-level probes and region averaging.
+
+\paragraph{Object--context dependence.}
+Context is useful for recognition, yet can sustain a class response beyond the region that the response labels~\cite{xiao2021backgrounds}. CASS explicitly models object--context structure for OVSS, and DenseVLM studies region--language alignment and its foreground/background biases~\cite{kim2025cass,li2025densevlm}. Controlled image changes offer a complementary way to inspect model dependence~\cite{fong2019extremal,zhang2020conta}. TRACE uses candidate-preserving context changes during testing to obtain relative update weights, linking this representation-level concern to entropy allocation.
+
+\section{Method}
+\label{sec:method}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/two_view_pipeline.pdf}
+\caption{Overview of TRACE. Candidates are constructed within each crop on the initial text-query token grid and selected across all crops of the same source image. The reset encoder evaluates preserved and context-perturbed views at original candidate token positions. Detached common-support scores weight region-normalized prompt entropy on unmodified inputs. Only visual LayerNorm affine parameters adapt; pixel reconstruction and the prescribed extension map produce category predictions.}
+\label{fig:pipeline}
+\end{figure*}
+
+\subsection{Prediction Interface and Fixed Reference}
+Diagnosis and optimization serve different purposes. Diagnosis should describe the model before its own entropy updates can change the candidate geometry or weights. Optimization must retain gradients through the current spatial predictions. We therefore define these branches separately.
+
+Let $\mathcal C$ be the supplied \emph{text-query vocabulary}, including any query extensions, and let $C=|\mathcal C|$. It is not necessarily the set of final evaluation categories $\mathcal Y$. An episode contains source images, each converted to one or more input crops $x_b$ of size $224\times224$. The ViT patch size is $14\times14$ pixels, yielding a $16\times16$ spatial-token grid per crop. Input crops and ViT patches are distinct units.
+
+The reset parameters are $\theta_0$. The diagnostic inference interface, \texttt{forward\_eval\_logits}, returns token-grid logits using normalized mean prompt embeddings and entropy-weighted visual-layer aggregation. Its query distribution is
+\begin{equation}
+\pi^0_{b,i}(c\mid x_b)=\operatorname{softmax}_{c\in\mathcal C}
+\bigl(z^{\mathrm{eval}}_{\theta_0}(x_b)_{i,c}\bigr).
+\label{eq:reference}
+\end{equation}
+The adaptation interface, \texttt{forward\_adapt\_logits}, instead retains $J$ prompt-specific distributions $p^j_{\theta,b,i}(c\mid x_b)$ using a uniform mean of the selected visual-layer outputs before projection. Appendix~\ref{app:readout} defines both readouts, their frozen logit scale, and the final category mapping.
+
+The reference distributions define candidates and their diagnostic scores once per episode, without gradients. The prompt-specific distributions remain differentiable during optimization. Final categories are obtained only after pixel-score reconstruction and the prescribed extension map; query synonyms are not merged for candidate construction.
+
+\subsection{Connected Candidate Selection}
+A single token can be an unstable unit for changing the input, whereas a whole crop can contain unrelated predictions. Connected query components give spatially aligned units without requiring instance masks or semantic-role metadata.
+
+For every valid token in crop $b$, set $\widehat c_{b,i}=\arg\max_{c\in\mathcal C}\pi^0_{b,i}(c\mid x_b)$. Four-neighbor connected components are computed separately within each crop for each predicted query. A candidate $R=(b_R,\Omega_R,c_R)$ consists of a crop index, its token locations, and its query identity. Its initial confidence is
+\begin{equation}
+\kappa_R=\frac{1}{|\Omega_R|}\sum_{i\in\Omega_R}
+\pi^0_{b_R,i}(c_R\mid x_{b_R}).
+\end{equation}
+All candidate proposals from all crops belonging to one source image compete for its top-$K$ positions, ranked by $\kappa_R$. Ties use the deterministic implementation ordering described in the appendix. Connectivity is never stitched across crops. Components predicted as different query extensions remain distinct even if their final category will coincide.
+
+The selected episode set is $\mathcal S$. Each binary token mask is nearest-neighbor upsampled to an input-space mask $M_R$. Candidate masks, query identities, and initial ranks remain fixed throughout the episode. Initial confidence chooses a bounded set of predictions that would be plausible self-supervision; the probes then determine their relative update weights. Selection and weighting therefore serve different purposes. There is no additional fragment guard.
+
+\subsection{Two Candidate-Preserving Views}
+The probes ask whether the same predicted query remains supported under two specified modifications of the surrounding pixels. Preserving the candidate in both views avoids the need to interpret a response after deleting the candidate or to decide which semantic classes permit deletion.
+
+Transforms are applied in denormalized RGB pixel space and then renormalized for the encoder. Let $u$ denote a crop in pixel space. Let $W(u)$ be the replicated grayscale image after a $9\times9$ average blur. Let
+\begin{equation}
+A(u)=\operatorname{clip}_{[0,255]}
+\left(\operatorname{Shift}\bigl(\mu+0.35(u-\mu)\bigr)\right),
+\end{equation}
+where $\mu$ is the crop's per-channel spatial mean and $\operatorname{Shift}(r,g,b)=(g,b,r)$. This fixed transform is named \texttt{channel\_shift} in the method description. The two views are
+\begin{align}
+u_R^{\mathrm{pres}}&=M_R\odot u+(1-M_R)\odot W(u),\\
+u_R^{\mathrm{ctx}}&=M_R\odot u+(1-M_R)\odot A(u).
+\end{align}
+The normalized encoder inputs are $x_R^{\mathrm{pres}}=\operatorname{Norm}(u_R^{\mathrm{pres}})$ and $x_R^{\mathrm{ctx}}=\operatorname{Norm}(u_R^{\mathrm{ctx}})$. Both are evaluated with the fixed diagnostic branch of Eq.~\ref{eq:reference}. Their supports are means of \emph{query probabilities}, not logits, at the original candidate tokens:
+\begin{align}
+T_R&=\frac{1}{|\Omega_R|}\sum_{i\in\Omega_R}
+\pi^0_{b_R,i}(c_R\mid x_R^{\mathrm{pres}}),\\
+C_R&=\frac{1}{|\Omega_R|}\sum_{i\in\Omega_R}
+\pi^0_{b_R,i}(c_R\mid x_R^{\mathrm{ctx}}).
+\end{align}
+No component is re-extracted from either transformed prediction.
+
+Every candidate therefore has two spatially aligned readouts from the same initial model. Batching views across candidates reduces encoder calls without merging their masks or query identities. Pixel-level decoding is unnecessary for these token-grid measurements.
+
+\subsection{Common Support and Region Entropy}
+The minimum implements a conservative common-support criterion without a learned combiner or a mixing parameter. Requiring both measured responses to upper-bound the score prevents a stronger response from compensating for a weaker one. The objective then separates this candidate-level score from area.
+
+We use common support directly as the candidate's reliability weight, with no separate attenuation term:
+\begin{equation}
+\rho_R=\min(T_R,C_R).
+\label{eq:minimum}
+\end{equation}
+The diagnostic quality $q_R$ is the same quantity as $\rho_R$ and remains fixed during adaptation; it is not a measured update gain. The minimum is the \emph{largest common lower bound} of the two supports: a high value requires both responses to be high. Appendix~\ref{app:theory} gives this ordering interpretation and its limits.
+
+Let $\mathcal S_+=\{R\in\mathcal S:\rho_R>\epsilon\}$ with the implementation threshold $\epsilon=10^{-8}$. For $H(p)=-\sum_{c\in\mathcal C}p(c)\log p(c)$, define
+\begin{align}
+\overline H_R(\theta)&=\frac{1}{J|\Omega_R|}
+\sum_{j=1}^J\sum_{i\in\Omega_R}H(p^j_{\theta,b_R,i}),\\
+\alpha_R&=\frac{\sg(\rho_R)}{\sum_{Q\in\mathcal S_+}\sg(\rho_Q)},\\
+\mathcal L(\theta)&=\sum_{R\in\mathcal S_+}\alpha_R\overline H_R(\theta).
+\label{eq:loss}
+\end{align}
+If $\mathcal S_+$ is empty, adaptation is skipped. Normalization is over the episode, not independently per source image. The loss uses unmodified inputs and prompt-specific logits, not the diagnostic views. Query $c_R$ defines the probe but is not a cross-entropy pseudo-label in Eq.~\ref{eq:loss}.
+
+The coefficients allocate relative entropy weight among selected regions. For a fixed active set, common positive rescaling leaves the objective unchanged; with one active candidate in the entire episode, $\rho_R$ cancels exactly. Region averaging removes the direct area multiplier, while region-uniform weights set active $\rho_R$ to one. We update only visual LayerNorm affine parameters using Adam and reset model and optimizer state before each episode. Final inference uses unmodified inputs, reconstructs pixel query scores, takes the maximum across extensions of each evaluation category, and then predicts the category.
+
+\section{Experiments}
+\subsection{Questions and Evaluation Protocol}
+The evaluation asks whether TRACE improves full-split segmentation, which allocation choices account for the differences, and how spatial normalization changes the objective. We evaluate VOC20 and VOC21 (1,449 images each), PC60 (5,105), COCO Object (5,000), COCO-CD (500), and COCO-Stuff (5,000). VOC20 and VOC21 are distinct category protocols on the same source split, not independent image populations. We pool class intersections and unions over each split before computing mIoU.
+
+The backbone is NACLIP ViT-L/14 with the last 18 visual outputs and seven fixed prompts. Images are resized to $224\times224$. Predictions and diagnostics are sealed before offline label-based scoring; labels do not enter adaptation. All matched arms share candidate proposals, episode order, readouts, trainable parameters, optimizer, learning rate, and update count. Appendix~\ref{app:protocol} gives the configurations and deterministic runtime.
+
+\subsection{Full-Split Operating-Point Comparisons}
+Table~\ref{tab:reported} compares clean NACLIP ViT-L/14 reference values reported by MLMP~\cite{noori2025mlmp} (R) with our local measurements (L). TRACE obtains 83.94/52.38/30.57/32.70/21.75 mIoU on VOC20/VOC21/PC60/COCO Object/COCO-Stuff, improving on the respective MLMP references by +0.18/+1.60/+2.58/+3.86/+0.50 percentage points. Methods retain their own adaptation settings, so these are operating-point rather than equal-budget comparisons.
+
+\input{generated/reported_comparison.tex}
+
+COCO-CD is absent from that reported table, so Table~\ref{tab:cd-local} provides a separate local native comparison. TRACE obtains 75.10 mIoU versus 72.20 for the best local native baseline, TENT, a difference of +2.90 points. The local comparison uses the same ordered input panel and episodes but retains method-native backends and adaptation settings.
+
+\input{generated/cd_local.tex}
+
+The matched controls below address allocation while holding the rest of TRACE fixed.
+
+\subsection{Matched Candidate Allocation}
+\label{sec:mechanism}
+Fixed-candidate controls test whether the probes add useful allocation information beyond initial confidence. On VOC21, PC60, COCO Object, COCO-CD, and COCO-Stuff, we compare region-uniform weights, initial candidate confidence, $T$ only, $C$ only, their arithmetic mean, and their minimum (Tables~\ref{tab:mechanism} and~\ref{tab:cd-mechanism}). Diagnostic responses are shared across arms, so each arm uses the same measured candidates rather than regenerating them after adaptation. VOC20 has no matched allocation controls.
+
+\input{generated/mechanism_status.tex}
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/allocation_controls.pdf}
+\caption{Change in full-split mIoU relative to matched Confidence allocation, in percentage points, on five complete splits. Each panel has its own horizontal-axis scale. Values come from the actual local fixed-candidate comparisons: candidates, diagnostic responses, episodes, readouts, and optimization settings are shared; allocation weights change. Product and pixel-normalized controls are available on PC60/Object only. VOC20 controls were not run.}
+\label{fig:allocation}
+\end{figure*}
+
+Common-support allocation yields its largest improvements on COCO-CD and COCO Object (Figure~\ref{fig:allocation}). CD reaches 75.10 versus 66.33 with Uniform and 67.09 with Confidence, gains of +8.78 and +8.01 points. Object reaches 32.70 versus 29.86 and 30.76, gains of +2.85 and +1.94 points. PC60's corresponding gains are smaller (+0.18/+0.22), while VOC21 and COCO-Stuff are nearly unchanged or slightly lower than the simple allocation controls.
+
+Permuting the same score multiset among candidates within each episode tests assignment beyond the score distribution. The three fixed permutations yield 59.38--65.54 on CD and 29.79--30.19 on Object, below the original assignment. PC60 and COCO-Stuff also score lower after permutation; VOC21 is mixed (52.17--52.58 versus 52.38). Thus the assignment of support to particular candidates matters most clearly on CD/Object.
+
+\subsection{Score Aggregation and Spatial Normalization}
+Aggregation determines how conservatively the two responses combine. On PC60 and Object, product weighting $TC$ gives 30.47 and 32.41 mIoU versus 30.57 and 32.70 for the minimum. The broader comparison also shows the cost of this conservatism: $C$ only/Mean reach 30.69/30.69 on PC60, 52.70/52.76 on VOC21, and 21.82/21.91 on Stuff, above the respective minimum scores of 30.57, 52.38, and 21.75. CD is effectively tied with $C$ only at 75.10; Object favors the minimum over Mean (32.64) and $C$ only (32.42). The minimum is therefore a parameter-free common-support criterion, not a uniformly optimal aggregator.
+
+Spatial normalization separates support from region area. Assigning effective region weight $q_R|\Omega_R|$ before normalizing region-mean entropies instead gives $q$-weighted token-normalized entropy, restoring a direct area factor. This control reaches 29.88 on PC60 and 32.37 on Object, respectively 0.69 and 0.33 points below TRACE. With candidate geometry and initial scores fixed, the comparison supports removing the explicit area multiplier. This is a $q$-weighted spatial control, distinct from uniform-token entropy.
+
+\subsection{Diagnostic Readouts and Update Outcomes}
+The probe examples in Appendix Figure~\ref{fig:probe-cases} show the measured responses behind the allocation score. Figure~\ref{fig:segmentation-cases} compares actual segmentations under matched Confidence and TRACE allocation, including positive and negative changes. Both use the same candidate and segmentation pipeline.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{figure/segmentation_examples.pdf}
+\caption{Selected positive and negative segmentation examples: Input / Confidence / TRACE / GT. Confidence uses initial candidate-confidence weights in the same candidate and optimization pipeline as TRACE, isolating allocation; it is not MLMP. Scores are IoU for the explicitly named class, or mean IoU over the two explicitly named classes, in the displayed image only, not whole-image or full-split mIoU. Cases were selected for large positive or negative named-class changes, not representativeness. GT is used only for offline scoring and illustration.}
+\label{fig:segmentation-cases}
+\end{figure*}
+
+Table~\ref{tab:update-risk} measures transitions over original candidate footprints after the joint episode update. Correct-to-wrong (C$\to$W) conditions on initially correct valid pixels; wrong-to-correct (W$\to$C) conditions on initially wrong valid pixels. In the fixed high-confidence/low-support group ($\kappa_R\geq0.90$, $q_R<0.25$), CD shows the strongest change: C$\to$W falls from 18.98\% with Confidence to 7.24\% with TRACE, while W$\to$C rises from 25.86\% to 68.52\%. PC60 and VOC21 show the same directions with smaller changes. Object instead exhibits a tradeoff: C$\to$W rises from 7.10\% to 8.03\%, alongside W$\to$C rising from 20.03\% to 22.99\%. Stuff shows the same tradeoff, with C$\to$W rising from 8.93\% to 9.70\% and W$\to$C from 6.01\% to 8.59\%. These conditional rates describe different pre-update pixel subsets, so their difference is not a net accuracy gain or a decomposition of full-split mIoU.
+
+\input{generated/update_risk.tex}
+
+A separate comparison uses the lowest and highest $q$ quartiles within predicted-class, initial-confidence, and area strata (Appendix Table~\ref{tab:risk-strata}). Under Confidence allocation, low-$q$ candidates have higher C$\to$W on all five analyzed splits. The relation is much flatter under TRACE on CD/PC60/Stuff and reverses on VOC21, showing that the association depends on the allocation policy. These are descriptive outcomes of joint adaptation; Appendix~\ref{app:mechanism} specifies the distinct threshold and rank-tail groups and their aggregation.
+
+\subsection{Computation and Deterministic Replay}
+Two views require $2N_{\mathrm{cand}}$ diagnostic image inputs per episode. With $P$ input crops and $S$ update steps, a nonempty episode uses
+\begin{equation}
+N_{\mathrm{inputs}}=2N_{\mathrm{cand}}+(S+2)P,
+\end{equation}
+counting initial diagnosis, adaptation forwards, and final inference. Shared diagnosis across matched arms reduces repeated diagnostic execution, whereas standalone latency also depends on batching, backward passes, and memory behavior. Appendix~\ref{app:mechanism} separates input accounting from profiling measurements.
+
+Seeds 1 and 2 exactly replay the seed-0 prediction hashes and full-split scores on VOC20, VOC21, PC60, Object, and CD under the fixed deterministic runtime and episode order (Appendix Table~\ref{tab:seed-replay}). Stuff has seed 0 only. These fixed-order repeats establish numerical replay, not independent robustness uncertainty.
+
+\clearpage
+\section{Discussion and Limitations}
+Common support is a behavioral allocation proxy: shared errors, retained context, or transform-specific color sensitivity can affect it. Region averaging removes the explicit area factor but does not equalize gradient norms or eliminate shared-parameter interactions. Confidence top-$K$, overlapping crops, and separate query extensions also constrain which regions contribute.
+
+The six-split evidence uses one backbone and fixed perturbations. Allocation gains and the preferred aggregator vary by dataset; the minimum is not uniformly best. The matched controls address allocation and spatial normalization rather than candidate construction or the entire literature-baseline gap, and fixed-order replay leaves episode-composition robustness unmeasured.
+
+\section{Conclusion}
+TRACE turns candidate-preserving context probes into fixed common-support weights for episodic OVSS adaptation. Region-normalized prompt entropy separates relative support from the direct area multiplier while retaining the full segmentation pipeline. Six full-split evaluations show gains over the cited MLMP references and the local CD baseline. Matched CD/Object comparisons demonstrate direct gains over uniform and confidence allocation, while the PC60/Object spatial control supports region normalization at fixed candidates and scores. Together, these results establish candidate-level diagnosis and area-independent allocation as concrete, testable choices in entropy-based adaptation.
+
+\section*{AI Assistance}
+AI assistance was used for source drafting, mathematical consistency checks, and table-provenance tooling. The authors remain responsible for verifying the experimental evidence and final text.
+
+\bibliography{references}
+\clearpage
+\appendix
+\input{appendix}
+\end{document}
