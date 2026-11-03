@@ -1,0 +1,14 @@
+{
+  "status": "FAILED_PRESERVED_NO_RETRY_ON_UNCHANGED_BYTES",
+  "stage": "create-plan/make_plan/registry_metadata/metadata_path",
+  "source_sha256": "9f0a53e489b5c9fa0de364e9c6f156336d544cd091aa04d87e51f7e3a4661748",
+  "tests_sha256": "5d7e9876657e882fb410a55caa196943087dbe0ab01bf91f1c134e66a52a671f",
+  "spec_sha256": "9abb37a32ec3d2bf3419e0fad7a8e26900e7ddcabd85e46ab134d786efef2cb2",
+  "attempted_destination": "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_plan_001",
+  "destination_created": false,
+  "actual_error": "ValueError: Not an allowlisted small summary/seal/terminal",
+  "cause": "Frozen exporter registry includes V01_offline_score_terminal_001.json; terminal-name regex admits only M/G families, not fixed V01. Exact36registry membership inspected without reading metric/prediction/GT/RGB payloads.",
+  "runtime_code_v002_archive_preserved": "2d234c34cb94790782c28ed9c941df94bd0958b287bc154bf9b1b52d615a22d0",
+  "real_packaging_or_upload_performed": false,
+  "next": "Narrow fixed-V01 naming repair, synthetic regression, newcodefreeze/independentclosure and distinctSPEC002/plan002. No widening to arbitraryVstudies/streams/rawpayloads."
+}

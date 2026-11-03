@@ -1,0 +1,26 @@
+{
+  "suite_prepared_sha256": "ad2804b18158528eefc11525d87d43c696b02ae57f3c2a94291663545d5b9569",
+  "audit": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G_offline_score_20261102_2321/ADMITTED.json",
+    "admission_sha256": "a61f64bac7df1fb42d4a1dcfb3e62c85d267db87711be2c5e3768313fb0f0c86",
+    "admission_identity": [
+      66306,
+      58237965,
+      1169,
+      1793633306559704061
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G_offline_score_20261102_2321/INDEPENDENT_REPORT.md",
+    "report_sha256": "81f3465cf748467bae8caef28cf45734817fefceb8dbeccacd7b9a723181dd49",
+    "report_identity": [
+      66306,
+      58237964,
+      28231,
+      1793633255393585309
+    ],
+    "independent_reviewer": "Codex independent exact G1954 offline CPU_GT artifact audit, current execution; no additional agents"
+  },
+  "pid": 2094938,
+  "GT_opened": false,
+  "automatic_retry": false,
+  "parent_barrier_sha256": "4efdffa4a7fd0d95eff2319ee78cbce49ad6d7436ec81621dd3859d627fe04dc"
+}

@@ -1,0 +1,37 @@
+{
+  "suite_prepared_sha256": "8d7799ab1538c84429c3e6300ffd28c31d33d444c9d89467872c9a770d0c4fb6",
+  "support_barrier_sha256": "e655da31c2945770f8e799f3e68a30a66a7c01d7a5def66728969de102ca0206",
+  "retained_terminal": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainPID": "2012362",
+    "ExecMainCode": "1",
+    "ExecMainStatus": "0",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "exited",
+    "InvocationID": "e3dc7670213c4c6c897b0c037a28515a"
+  },
+  "audit_binding": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M01_offline_score_20261102_1942/ADMITTED.json",
+    "admission_sha256": "d3b97ae5279ec51e878510004c646752392d49f4a52037ed345077e20184188a",
+    "admission_identity": [
+      66306,
+      58204947,
+      441,
+      1793620090201735704
+    ],
+    "report_identity": [
+      66306,
+      58204946,
+      15162,
+      1793620081236729794
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M01_offline_score_20261102_1942/INDEPENDENT_REPORT.md",
+    "report_sha256": "669f59d7ad548a666f62181d880a527ca9b2e908502ae3af28624cde717b8370",
+    "independent_reviewer": "codex-independent-exactCPU-M01-1942-20261102"
+  },
+  "admitted_GT_boundary": true,
+  "pid": 2040310,
+  "automatic_retry": false
+}

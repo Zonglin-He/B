@@ -1,0 +1,32 @@
+{
+  "suite_prepared_sha256": "1c2f7280a4ee0a2eda531745018cae56fa5ee8cabd94a0ffd9466db88a67226b",
+  "audit": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M03_offline_score_20261103_0856/ADMITTED.json",
+    "admission_sha256": "d2f2606250593138bae7c2f5584bd2bb0e7d5d6ac26dba3af90af607a73d09ac",
+    "admission_identity": [
+      66306,
+      59375970,
+      1381,
+      1793667843057529853
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M03_offline_score_20261103_0856/INDEPENDENT_REPORT.md",
+    "report_sha256": "955637742c540133efd26e0da8fa891642788190680219e79902a707ea7aff4f",
+    "report_identity": [
+      66306,
+      59375969,
+      15501,
+      1793667824958487499
+    ],
+    "independent_reviewer": "Codex independent exact M03 CPU_GT artifact audit, 2026-11-03"
+  },
+  "pid": 2237275,
+  "GT_opened": false,
+  "automatic_retry": false,
+  "parent_pins": {
+    "pid": 2190696,
+    "invocation": "f32b507b0a0c46759dd6e52527c83a8f",
+    "start_sha256": "ddfac6c9a79d04e062dbd46f11fd9c76b4673d2aa2983c3f1f6097dc6426e9ef",
+    "gate_sha256": "2e92fa383367c88c08b01c5af0efb8f414f4578fc651df7e974bc2550b438b95",
+    "barrier_sha256": "13daf2fb890492e7c905f1411d4eef806744f93325390a649cf6cc4feab0dd8c"
+  }
+}

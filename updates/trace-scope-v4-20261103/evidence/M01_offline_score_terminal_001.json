@@ -1,0 +1,388 @@
+{
+  "observed_at_UTC": "2026-11-02T11:58:39Z",
+  "suite": "M01_offline_score_20261102_1942",
+  "prepared_sha256": "8d7799ab1538c84429c3e6300ffd28c31d33d444c9d89467872c9a770d0c4fb6",
+  "analysis_successfully_completed": true,
+  "service": {
+    "unit": "trace-risk-offline-score-20261102-1942.service",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "exited",
+    "MainPID": 0,
+    "ExecMainPID": 2040310,
+    "ExecMainCode": 1,
+    "ExecMainStatus": 0,
+    "Result": "success",
+    "InvocationID": "20122292c96648bb8a3f26450f3b1781",
+    "ExecMainExitTimestamp_Beijing": "2026-11-02 19:56:40"
+  },
+  "global_analysis_sha256": "ab367e2121d3a979aede1b63a6f96e6472f57c0e283505487ebc87ad51839a96",
+  "elapsed_seconds": 380.73088171705604,
+  "all_results_hashes_verified": true,
+  "CUDA_initialized": false,
+  "summary": {
+    "coco_object": {
+      "candidates": 1024,
+      "original_episodes": 113,
+      "unique_sources": 128,
+      "inside_checkpoints": {
+        "1": {
+          "C_Q1_harm": {
+            "value": 37.5609756097561,
+            "lower95": 29.953861394955364,
+            "upper95": 45.679169016732466,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_harm": {
+            "value": 23.902439024390244,
+            "lower95": 17.587939698492463,
+            "upper95": 30.869715487878178,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_minus_Q1_harm": {
+            "value": -13.658536585365855,
+            "lower95": -23.993502684833693,
+            "upper95": -3.566069546702467,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "Confidence_Q5_minus_Q1_harm": {
+            "value": -2.439024390243901,
+            "lower95": -12.697899096261962,
+            "upper95": 7.6260185938106755,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "matched": {
+            "initial_scores": {
+              "matched_strata": 190,
+              "matched_candidates": 494,
+              "total_candidates": 1024,
+              "median_ties": 530,
+              "unmatched_candidates": 495,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": -9.412280701754387,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": 0.01093724042414514,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            },
+            "initial_scores_and_GT_quality": {
+              "matched_strata": 120,
+              "matched_candidates": 298,
+              "total_candidates": 1024,
+              "median_ties": 726,
+              "unmatched_candidates": 705,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": -1.7083333333333335,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": 0.013069480386534342,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            }
+          }
+        },
+        "30": {
+          "C_Q1_harm": {
+            "value": 38.048780487804876,
+            "lower95": 30.73170731707317,
+            "upper95": 45.8128078817734,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_harm": {
+            "value": 26.341463414634145,
+            "lower95": 19.767082974447316,
+            "upper95": 33.62464996964771,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_minus_Q1_harm": {
+            "value": -11.707317073170731,
+            "lower95": -21.329771594950504,
+            "upper95": -2.168304701107498,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "Confidence_Q5_minus_Q1_harm": {
+            "value": 2.926829268292682,
+            "lower95": -6.3522125055566985,
+            "upper95": 11.878060611537506,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "matched": {
+            "initial_scores": {
+              "matched_strata": 190,
+              "matched_candidates": 494,
+              "total_candidates": 1024,
+              "median_ties": 530,
+              "unmatched_candidates": 495,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": -5.021929824561403,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": -0.002840024745101367,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            },
+            "initial_scores_and_GT_quality": {
+              "matched_strata": 120,
+              "matched_candidates": 298,
+              "total_candidates": 1024,
+              "median_ties": 726,
+              "unmatched_candidates": 705,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": 1.666666666666667,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": -0.020046707333241817,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "pc60": {
+      "candidates": 1018,
+      "original_episodes": 105,
+      "unique_sources": 128,
+      "inside_checkpoints": {
+        "1": {
+          "C_Q1_harm": {
+            "value": 58.333333333333336,
+            "lower95": 51.29282714412025,
+            "upper95": 65.09433962264151,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_harm": {
+            "value": 31.862745098039216,
+            "lower95": 25.414364640883978,
+            "upper95": 38.70967741935484,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_minus_Q1_harm": {
+            "value": -26.47058823529412,
+            "lower95": -36.18221483817739,
+            "upper95": -16.552789132019104,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "Confidence_Q5_minus_Q1_harm": {
+            "value": -18.137254901960787,
+            "lower95": -29.97178485881385,
+            "upper95": -6.331088049601071,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "matched": {
+            "initial_scores": {
+              "matched_strata": 192,
+              "matched_candidates": 626,
+              "total_candidates": 1018,
+              "median_ties": 392,
+              "unmatched_candidates": 337,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": -2.065479370166869,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": -0.017887565091775238,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            },
+            "initial_scores_and_GT_quality": {
+              "matched_strata": 161,
+              "matched_candidates": 434,
+              "total_candidates": 1018,
+              "median_ties": 584,
+              "unmatched_candidates": 545,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": 6.020139281008845,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": -0.0325109064693723,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            }
+          }
+        },
+        "7": {
+          "C_Q1_harm": {
+            "value": 66.17647058823529,
+            "lower95": 59.39080752776361,
+            "upper95": 72.68047523258738,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_harm": {
+            "value": 37.745098039215684,
+            "lower95": 30.408926728586174,
+            "upper95": 45.146022549326645,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "C_Q5_minus_Q1_harm": {
+            "value": -28.431372549019606,
+            "lower95": -38.64999233351905,
+            "upper95": -18.21440328588662,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "Confidence_Q5_minus_Q1_harm": {
+            "value": -25.49019607843138,
+            "lower95": -35.24859020330236,
+            "upper95": -15.276724881307564,
+            "undefined_replicates": 0,
+            "total_replicates": 10000,
+            "no_replicate_dropped": true
+          },
+          "matched": {
+            "initial_scores": {
+              "matched_strata": 192,
+              "matched_candidates": 626,
+              "total_candidates": 1018,
+              "median_ties": 392,
+              "unmatched_candidates": 337,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": -3.4262597934472936,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": 0.001401352295988317,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            },
+            "initial_scores_and_GT_quality": {
+              "matched_strata": 161,
+              "matched_candidates": 434,
+              "total_candidates": 1018,
+              "median_ties": 584,
+              "unmatched_candidates": 545,
+              "contrasts": {
+                "support_harm_rate_threshold_0.001": {
+                  "value": 4.881422924901185,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                },
+                "candidate_mean_support_change": {
+                  "value": -0.021952818110035032,
+                  "lower95": null,
+                  "upper95": null,
+                  "undefined_replicates": 10000,
+                  "total_replicates": 10000,
+                  "no_replicate_dropped": true
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "verified_scope": "All244frozen source inventory, prepared/protocol/input/parent metadata/audit/report/STARTED/global and both dataset seals, every four-result-file hash per dataset; no repeated support/prediction-array payload scan in terminal verification",
+  "new_GPU": false,
+  "new_adaptation": false,
+  "independent_C_signal_or_causal_effect_established": false,
+  "claim_boundary": "Unadjusted C quintiles discriminate harm in this selected panel. GT-quality-controlled contrasts are mixed/reversed and all fixed-stratum bootstrap draws undefined; no unique C information or causal allocation claim. No post-result bin merging or positive-result rerun."
+}

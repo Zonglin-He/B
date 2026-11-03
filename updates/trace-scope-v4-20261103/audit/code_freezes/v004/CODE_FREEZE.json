@@ -1,0 +1,17 @@
+{
+  "version": "publication_code_v004",
+  "members": {
+    "tools/evolution_fifty/delivery_packager.py": {
+      "sha256": "4e41bb3496edc2c2cd177d3bab6ea726966fd268cd4e717a50882bb2a10498f7",
+      "bytes": 52088
+    },
+    "tools/evolution_fifty/test_delivery_packager.py": {
+      "sha256": "67dffe406205991f5745f0473294fbeb1f10c7240e62521f5b7eb322d3370a1d",
+      "bytes": 42997
+    }
+  },
+  "prior_closed_source_sha256": "d66504d3b23a4adb73b78c26e8c5dab599c31b6fde254dcc319df60d3d449ff3",
+  "prior_plan002_decision": "DENIED",
+  "prior_denied_report_sha256": "102c08af2388d8b399c4fa019b14413ecf1cfd93b1ef74b762cec68d60a85b7a",
+  "scope": "C4 explicit exact-pinned readonly registry nlink2 seals only; original nine sealed paths; other roles and outputs single-link. Author114synthetic tests0.99s/main114tests1.04s, no realinput admission or packet. Prior failedspec/plans and freezes retained."
+}

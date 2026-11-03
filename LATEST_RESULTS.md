@@ -4,6 +4,35 @@ This page separates submitted-method evidence from new algorithm variants.
 The authoritative rows, populations, seeds, and paths remain in the linked CSVs.
 This is a snapshot, not a live experiment dashboard.
 
+## November 3: Completed Fixed SCOPE_v4 Studies And Manuscript Revision
+
+The [separate follow-up](updates/trace-scope-v4-20261103/README.md) integrates
+the completed M01/M02/M03/M04 mechanism studies, primary B/16/SCLIP/corruption
+transfer, five severity curves, V01 fixed compute grid, cached groups/events and
+four fixed cases. All necessary fixed predictions and offline scores completed
+before manuscript integration; this update does not start a new experiment.
+
+The operational gains are conditional. Independent candidate-risk information
+is unestablished; PC60 spatial intervals cross zero; the legacy comparison has
+opposite dataset directions; factorial effects interact; SCLIP transfer is
+negative; severe-corruption estimates are mixed; both eligible near-time accuracy
+outcomes are null. No new subset, tuning grid, bootstrap rule or positive-only
+selection is introduced.
+
+The actual full manuscript review required revision. Same-reviewer narrow
+verification of frozen draft_v002 marks R2/R3/R4 corrected and R1 partial, with
+no newly confirmed material regression in that revision scope. Local COCO-CD
+and Waterbirds mask/subset construction remains unrecovered. Waterbirds' 256
+calibration sources are nested inside all 2,458 declared training sources that
+overlap the 5,322-source development population; those counts are not additive
+or a claim of CLIP pretraining leakage. The paper is not certified accepted,
+fully reconstructible, independently tuned or evaluated on untouched tests.
+
+The release preserves exact reviewed paper archives and raw reports, bounded
+sealed summaries/provenance, and a separately labeled current first-party code
+snapshot. It excludes raw RGB/GT, prediction arrays, weights and count streams.
+Earlier versions and large release assets remain unchanged.
+
 ## November 2: Evolution Results, Implementation And Manuscript
 
 The [new TRACE evolution update](updates/trace-evolution-20261102/README.md)

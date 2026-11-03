@@ -1,5 +1,27 @@
 # Archive Policy
 
+## November 3 Bounded Follow-Up
+
+`updates/trace-scope-v4-20261103/` is a distinct fixed-scope follow-up, not a
+replacement or re-export of the historical large archive. It preserves exact
+reviewed manuscript versions, new raw independent reports and factual finding
+disposition; bounded sealed summaries/receipts; and an explicitly hashed current
+first-party code snapshot. Current source is not silently called identical to
+all frozen runtimes. Original manuscript hashes and per-member delivery hashes
+define the included scope; source paths are provenance, not portable data access.
+
+Raw source RGB/GT, prediction arrays, model/optimizer weights, per-image count
+streams, external/vendor/dependency trees and credentials are excluded from this
+follow-up. The four pre-existing paper-derived case composites already inside
+the reviewed manuscripts are the only included qualitative image assets; their
+unchanged bytes do not grant access to or redistribute raw datasets.
+
+R1 remains partial: local COCO-CD/Waterbirds construction histories are not
+fully recovered. Disclosure does not reconstruct them. The package is not a
+turnkey independently reconstructible dataset benchmark or an acceptance claim.
+All negative/null outcomes, historical exposure and fixed scientific limits stay.
+The older policy/archives below retain their own historical scope unchanged.
+
 ## November 2 Code And Paper Authorization
 
 The explicit 2026-11-02 request extends this repository beyond its original

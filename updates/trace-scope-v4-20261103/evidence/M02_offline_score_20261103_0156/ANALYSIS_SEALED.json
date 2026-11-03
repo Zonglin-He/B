@@ -1,0 +1,39 @@
+{
+  "complete": true,
+  "datasets": 2,
+  "cells": 8,
+  "image_method_evaluations": 40420,
+  "artifact_sha256": {
+    "coco_object.episode_counts.jsonl": "a10bee1dd756628fae0fbad76fba0d10962c6375220d7f151c5f492433873207",
+    "pc60.episode_counts.jsonl": "cc2d64ef3b4ac8571e31d2d572760fd6b686c2d32e2055ce9a589f0c85da8f8d",
+    "DATASET_RESULTS.json": "ed0a5091c4c949863060955a49ae33f5037ac975ff5b51fd9456d507348df23e",
+    "ANNOTATIONS_READ.json": "a87e2ccb31b2eff56b0f1642aae1f78dae55378576069c49c8096bb9e7fee9bd"
+  },
+  "GT_opened": true,
+  "new_GPU": false,
+  "output_bytes": 6224939,
+  "suite_prepared_sha256": "92f758aa4dd172b8487b034bd6217aae57d4e0e536b882f179b4ff38bb6032e5",
+  "parent_barrier_sha256": "10ea6d4e43f9e4dd2829de66dab52310af2d4c80290cf5f3f1a695d24132dc73",
+  "prospective_analysis_sha256": "84df1e6183124027de039ef342bed1eb1d1238b8809dc9fc109c67d00ea9a21c",
+  "audit_binding": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M02_offline_score_20261103_0156/ADMITTED.json",
+    "admission_sha256": "39477e50d30ca87a4b852b36e6a8da0ce6b2c3ca75f0fcd118106f6055e6e1e6",
+    "admission_identity": [
+      66306,
+      58238099,
+      1592,
+      1793642896924119605
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M02_offline_score_20261103_0156/INDEPENDENT_REPORT.md",
+    "report_sha256": "8c1cb0653b3d3229c893556362f9a4e932ca773a6dca2551ec09c59ea973c988",
+    "report_identity": [
+      66306,
+      58238098,
+      8211,
+      1793642873819106564
+    ],
+    "independent_reviewer": "Codex independent M02 CPU_GT scoring artifact auditor (current task; no extra agents)"
+  },
+  "started_sha256": "81f6df1078e06e5c2af6e65097ea60d136eac6725e5fbde07582fbb9fd2c8a9d",
+  "elapsed_seconds": 88.82948338333517
+}

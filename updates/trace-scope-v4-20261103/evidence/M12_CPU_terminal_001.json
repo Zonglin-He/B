@@ -1,0 +1,210 @@
+{
+  "suite": "/home/wwww/hzl/results/trace_mechanism_20261102/M12_cases_20261103_0906",
+  "prepared_sha256": "06b04ccf5407146074b597f0576424ae1a387be007393c3a51537390b9d4ed76",
+  "terminal_verified_at_UTC": "2026-11-03T01:16:12Z",
+  "service": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStartTimestamp": "Tue 2026-11-03 09:14:53 CST",
+    "ExecMainExitTimestamp": "Tue 2026-11-03 09:15:26 CST",
+    "ExecMainPID": "2245052",
+    "ExecMainCode": "1",
+    "ExecMainStatus": "0",
+    "MemoryPeak": "2097152",
+    "MemorySwapPeak": "0",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "exited",
+    "InvocationID": "64d9f5407ecf4da7bc402643c2810488"
+  },
+  "cases_global_sha256": "5294c795c040fbab138f9d0cd9fe617a22686f71782e05337cf7798f11bd6462",
+  "seal": {
+    "complete": true,
+    "cases": 4,
+    "datasets": [
+      "coco_object",
+      "pc60"
+    ],
+    "GT_opened": true,
+    "RGB_opened": true,
+    "GPU_used": false,
+    "MODEL_used": false,
+    "uploaded": false,
+    "B_published": false,
+    "paper_integration": false,
+    "artifact_sha256": {
+      "cases/coco_object.000000.png": "89245afe01fff6cb14884e9f57947edf24107164fef4cbc42c0821b5adda61fb",
+      "cases/coco_object.000000.json": "e945597e9621cfe768abc00caa342eb504e5e344d38009b417d667c25b2fc632",
+      "cases/coco_object.000001.png": "e2c14ef69858be2ecc8fe64a20e287c7e2d644d4f15fc535f11e4e59e28a2332",
+      "cases/coco_object.000001.json": "e809e97475d0e417227f30fa09e65180f64dd7bfb3038600139f4725848bb3cf",
+      "cases/pc60.000000.png": "0ad9153793972fe0e11b593911222d471e36f5c984bd46e97cf609935206b6c6",
+      "cases/pc60.000000.json": "e76d8ce924600c2896cac4941c531a4e8c4221a3533088701f1019ef0ab2f308",
+      "cases/pc60.000001.png": "4c12e73beb49b051481ebef973d3af4e3a06fd2bfac235bc016573127fa6e831",
+      "cases/pc60.000001.json": "efe1e5b797e8746887856b0ad923e772e7972fbaebce0cfe21eee5e1fe1d9499",
+      "CASES.json": "d91fda652736b6c00c6ddf914dd396821fbad2f812c2a22eb50397e7d3622312"
+    },
+    "artifact_identities": {
+      "cases/coco_object.000000.png": [
+        66306,
+        59376334,
+        185611,
+        "1793668512043364537",
+        "1793668512043364537",
+        1,
+        33152
+      ],
+      "cases/coco_object.000000.json": [
+        66306,
+        59376335,
+        29189,
+        "1793668512047889188",
+        "1793668512047889188",
+        1,
+        33152
+      ],
+      "cases/coco_object.000001.png": [
+        66306,
+        59376337,
+        243384,
+        "1793668512211055227",
+        "1793668512211055227",
+        1,
+        33152
+      ],
+      "cases/coco_object.000001.json": [
+        66306,
+        59376338,
+        29193,
+        "1793668512215478868",
+        "1793668512215478868",
+        1,
+        33152
+      ],
+      "cases/pc60.000000.png": [
+        66306,
+        59376336,
+        231825,
+        "1793668512376040906",
+        "1793668512376040906",
+        1,
+        33152
+      ],
+      "cases/pc60.000000.json": [
+        66306,
+        59376340,
+        26243,
+        "1793668512381569197",
+        "1793668512381569197",
+        1,
+        33152
+      ],
+      "cases/pc60.000001.png": [
+        66306,
+        59376339,
+        243048,
+        "1793668512525393891",
+        "1793668512525393891",
+        1,
+        33152
+      ],
+      "cases/pc60.000001.json": [
+        66306,
+        59376342,
+        26247,
+        "1793668512529633245",
+        "1793668512529633245",
+        1,
+        33152
+      ],
+      "CASES.json": [
+        66306,
+        59376341,
+        2866,
+        "1793668512533678962",
+        "1793668512533678962",
+        1,
+        33152
+      ]
+    },
+    "output_bytes": 1017606,
+    "suite_prepared_sha256": "06b04ccf5407146074b597f0576424ae1a387be007393c3a51537390b9d4ed76",
+    "scope_sha256": "0d338e009b5f9505dfb070867527383bd67ca24c56b47efb2cf07632e89f83f8",
+    "case_protocol_sha256": "397edb0aa6896d0976aad2fabd80c2e1c2498eaabb3284aca39ff555e88d2ed4",
+    "parent_prepared_sha256": "f3eaa8494d4bdd07224b0c640af13985a92dd5ea3391761d13a91c1459ef2e69",
+    "parent_barrier_sha256": "10ea6d4e43f9e4dd2829de66dab52310af2d4c80290cf5f3f1a695d24132dc73",
+    "audit_binding": {
+      "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M12_cases_20261103_0906/ADMITTED.json",
+      "admission_sha256": "c4291b85e264b4aac38d1c0481ee33468c02f1fe0a6615afae9e23836d1fc532",
+      "admission_identity": [
+        66306,
+        59376331,
+        2309,
+        "1793668403756186276"
+      ],
+      "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M12_cases_20261103_0906/INDEPENDENT_REPORT.md",
+      "report_sha256": "4fb7441cdf8b6378ae4f9a59b032a6db336fd5c30eeb051284879802666d6f12",
+      "report_identity": [
+        66306,
+        59376330,
+        23762,
+        "1793668391512209963"
+      ],
+      "independent_reviewer": "Faraday - independent exact M12 qualitative CPU artifact audit"
+    },
+    "started_sha256": "33d91d55ecf479cea8a83f8e7f3818ac3228becac246c3907c6a8da2aa0134cf",
+    "elapsed_seconds": 17.78580658789724
+  },
+  "all_output_hashes_and_bytes_verified": {
+    "cases/coco_object.000000.png": {
+      "sha256": "89245afe01fff6cb14884e9f57947edf24107164fef4cbc42c0821b5adda61fb",
+      "bytes": 185611
+    },
+    "cases/coco_object.000000.json": {
+      "sha256": "e945597e9621cfe768abc00caa342eb504e5e344d38009b417d667c25b2fc632",
+      "bytes": 29189
+    },
+    "cases/coco_object.000001.png": {
+      "sha256": "e2c14ef69858be2ecc8fe64a20e287c7e2d644d4f15fc535f11e4e59e28a2332",
+      "bytes": 243384
+    },
+    "cases/coco_object.000001.json": {
+      "sha256": "e809e97475d0e417227f30fa09e65180f64dd7bfb3038600139f4725848bb3cf",
+      "bytes": 29193
+    },
+    "cases/pc60.000000.png": {
+      "sha256": "0ad9153793972fe0e11b593911222d471e36f5c984bd46e97cf609935206b6c6",
+      "bytes": 231825
+    },
+    "cases/pc60.000000.json": {
+      "sha256": "e76d8ce924600c2896cac4941c531a4e8c4221a3533088701f1019ef0ab2f308",
+      "bytes": 26243
+    },
+    "cases/pc60.000001.png": {
+      "sha256": "4c12e73beb49b051481ebef973d3af4e3a06fd2bfac235bc016573127fa6e831",
+      "bytes": 243048
+    },
+    "cases/pc60.000001.json": {
+      "sha256": "efe1e5b797e8746887856b0ad923e772e7972fbaebce0cfe21eee5e1fe1d9499",
+      "bytes": 26247
+    },
+    "CASES.json": {
+      "sha256": "d91fda652736b6c00c6ddf914dd396821fbad2f812c2a22eb50397e7d3622312",
+      "bytes": 2866
+    }
+  },
+  "own_runtime_files_verified": 325,
+  "parent_native68_source_cost_reset_audit_start_gates_stat_graph_verified": true,
+  "actual_threads": [
+    1,
+    1,
+    1
+  ],
+  "CUDA_initialized": false,
+  "terminal_raw_GT_RGB_prediction_array_rescan": false,
+  "actual_case_generation_completed": true,
+  "scientific_population_claim": false,
+  "visual_QA_pending": true,
+  "main_frozen_admission_receipt": "M12_CPU_admission_validation_001.json",
+  "live_execution_receipt": "M12_CPU_execution_started_001.json",
+  "metadata_large_integer_encoding": "Identity nanosecond integers above2^53 encoded as exactdecimalstrings; originalhashedseal unchanged"
+}

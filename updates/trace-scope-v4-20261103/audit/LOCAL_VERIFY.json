@@ -1,0 +1,29 @@
+{
+  "archive": {
+    "bytes": 8926222,
+    "sha256": "43c6693e580fc6d609fd8379c1eaaa1a38bb03e43b5a536c7b7455e4e77aa0a4"
+  },
+  "complete": true,
+  "local_archive_verified": true,
+  "manifest": {
+    "bytes": 214992,
+    "sha256": "64fb80ff46b73028ecb5afd426698e8d2cacdffa8e7f4f870748da6450403a34"
+  },
+  "member_count": 317,
+  "plan_sha256": "ea0954464286696bcc64255931ce3e0fece455a7d67cd6826936e687890d52c2",
+  "publication_actions_performed": false,
+  "scope": {
+    "R1": "PARTIAL: historical local COCO-CD/Waterbirds mask and subset creation remains unrecovered; not fully reproducible.",
+    "credentials": "Known sensitive/hidden paths are refused. Explicit code/config membership requires author review; this is not a semantic secret-scanning certification.",
+    "current_code": "Current explicit first-party roots, not a claim of frozen-runtime identity or dependency closure.",
+    "evidence_basis": "Pinned reviewed-exporter metadata and raw review/disposition bytes, not a fresh service/completion/scientific audit. Operator completion acknowledgements are not machine grading of Markdown conclusions.",
+    "excluded": "No datasets, raw RGB/GT, predictions/NPY, weights/models, count/source-feature/transition streams, vendor/dependency trees, old release exports or whole evidence archive.",
+    "not_turnkey": "Other first-party tool roots, external dependencies and dataset construction are not silently bundled; this is not turnkey reconstruction.",
+    "paper": "Original whole archives preserved byte-for-byte; raw reviews/disposition are separate post-freeze additions.",
+    "publication": "Local packet only. No Git, network, push, upload or release action; main author handles any later Zonglin-He/B publication.",
+    "science": "No metric computation, new experiment, positivity/rating filter, GT permission or overall acceptance claim.",
+    "tests": "Source presence is not execution evidence; six reference-mutation demonstrations remain NOT RUN by this packaging task.",
+    "verification_contract": "Completion requires the pinned LOCAL_VERIFY.json, exact three-file output membership and successful archive/manifest byte verification. Any FAILED.json invalidates completion even if a receipt was already written before an ordinary close error."
+  },
+  "version": "trace-scope-v4-20261103"
+}

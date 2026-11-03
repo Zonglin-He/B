@@ -1,4 +1,16 @@
-# TRACE Results Snapshot: 2026-10-25
+# TRACE Release Notes
+
+## SCOPE_v4 Follow-Up: 2026-11-03
+
+Separate bounded follow-up of completed fixed studies, a frozen reviewed8-page
+main/31-page supplement, raw review/disposition, sealed summary provenance and
+current first-party implementation snapshot. R2-R4 manuscript findings are
+corrected; R1 construction reproducibility remains partial. No acceptance,
+unseen-test, independent-risk, universal-transfer or equal-time claim follows.
+All historical releases and their assets remain unchanged. See the exact new
+update manifest and verification receipt for published coverage and hashes.
+
+## Historical TRACE Results Snapshot: 2026-10-25
 
 This private release archives all included experiment evidence discovered under
 `/home/wwww/hzl/results`, with explicit exclusions and scientific provenance.

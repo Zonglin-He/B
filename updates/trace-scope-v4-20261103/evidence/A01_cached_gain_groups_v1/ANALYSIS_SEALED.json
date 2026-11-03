@@ -1,0 +1,16 @@
+{
+  "complete": true,
+  "scope": "cache-first partial grouped evidence only",
+  "artifact_sha256": {
+    "PROTOCOL.json": "388979f9585873aa8affee3ec90fa51c1959c2c09eb61cc49fce305a8735c7df",
+    "PREPARED.json": "f839bccc950248da71c102cb984ba8e2f7d50e52d51061460c3794ab5576e5e0",
+    "STARTED.json": "6a63fc326826620713a8ddf9bb42e6afcdb598704f8e89efb16fc344a3000e5b",
+    "RESULT.json": "2334d40a7a1dab38fd50d06f8e10694154ad1e884444c221a6cb1088ac4cc36c",
+    "coco_object.source_features.jsonl": "49e9b46e6d5dcd8585ae960fa30741210161b548e30a3e415a61313c29c24843",
+    "coco_object.completed.json": "6dd6dbbd667d281d00474d2c721f41509f7c71bd5dc067bf8bc71aacb218671e",
+    "pc60.source_features.jsonl": "376e3976a3d51524157b984903731e6c9f394d087341db0fb862562aec9d6730",
+    "pc60.completed.json": "9ab1e8b7cf2a6e0ddc09702231f16862aee4cb3c7d42e3e6bec570e4688929a6"
+  },
+  "new_GPU_work": false,
+  "all_requested_group_estimands_complete": false
+}

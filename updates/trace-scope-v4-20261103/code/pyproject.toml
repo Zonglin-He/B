@@ -1,0 +1,33 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trace-ovss"
+version = "0.3.0"
+description = "Tracing confidence sources for reliable OVSS test-time adaptation"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "ftfy>=6.1",
+  "numpy>=1.24",
+  "packaging>=23.0",
+  "pillow>=10.0",
+  "regex>=2023.0",
+  "scipy>=1.10",
+  "torch>=2.1",
+  "torchvision>=0.16",
+  "tqdm>=4.66",
+]
+
+[project.scripts]
+trace-ovss = "trace_ovss.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["trace_ovss", "trace_ovss.*"]
+namespaces = false
+
+[tool.setuptools.package-data]
+"trace_ovss.models._vendor_clip" = ["*.gz"]
+"trace_ovss.resources" = ["*.txt", "*.md", "licenses/*.txt"]
+"trace_ovss.resources.class_names" = ["*.txt"]

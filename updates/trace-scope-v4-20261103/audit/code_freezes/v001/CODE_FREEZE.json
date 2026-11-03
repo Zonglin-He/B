@@ -1,0 +1,14 @@
+{
+  "version": "publication_code_v001",
+  "members": {
+    "tools/evolution_fifty/delivery_packager.py": {
+      "sha256": "607991a2fed6a7f6341e8e9c3d3634c05ad10f01005d6c4c62b08ddc90565cad",
+      "bytes": 45568
+    },
+    "tools/evolution_fifty/test_delivery_packager.py": {
+      "sha256": "081668380a9272a8bba7a4a0a2ba3aa4c4cab9dbca946c9acaa967a70b3a880c",
+      "bytes": 22097
+    }
+  },
+  "scope": "Source/test freeze only; not independent CODE review or real delivery permission"
+}

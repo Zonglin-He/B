@@ -1,0 +1,16 @@
+{
+  "version": "publication_code_v005",
+  "members": {
+    "tools/evolution_fifty/delivery_packager.py": {
+      "sha256": "eb87a9acca0e9fc89844169c93329cac29f6370e851dd1803411ed5d708320e9",
+      "bytes": 52459
+    },
+    "tools/evolution_fifty/test_delivery_packager.py": {
+      "sha256": "aaae80239f4a778c1452ccffa2f69d45618e6bc8e5cb06d02f92ffb6ea85c92e",
+      "bytes": 45735
+    }
+  },
+  "prior_source_sha256": "4e41bb3496edc2c2cd177d3bab6ea726966fd268cd4e717a50882bb2a10498f7",
+  "prior_C4_unclosed_report_sha256": "6c971b78154e22b1b3ff0eb15aea1e934a63297282b7f1cba9aa74c74ee84251",
+  "scope": "C4-F1 main repair moves existing bounded trusted v002 archive/manifest authentication before any exception-authorized seal read; reuse its check. Original trusted archive unchanged regression: validate and build reject beforesealopen; legal fixedarchivecontrolpasses.117synthetic main tests1.07s, no realinputadmission/build."
+}

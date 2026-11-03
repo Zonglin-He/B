@@ -1,0 +1,204 @@
+{
+  "schema_version": 1,
+  "decision": "DENIED",
+  "independent_reviewer": "Codex independent exact-input-plan reviewer",
+  "scope": "Exact SPEC002/plan002 CPU-local bounded-build admission only; no new CODE, paper, scientific or artifact acceptance",
+  "permission_granted": false,
+  "CPU_LOCAL_BOUNDED_BUILD": false,
+  "GPU_allowed": false,
+  "GT_scoring_allowed": false,
+  "RGB_reading_allowed": false,
+  "NPY_payload_reading_allowed": false,
+  "MODEL_allowed": false,
+  "network_allowed": false,
+  "Git_allowed": false,
+  "upload_allowed": false,
+  "paper_acceptance": false,
+  "source": {
+    "path": "/home/wwww/.codex/worktrees/trace-simplification/hzl/tools/evolution_fifty/delivery_packager.py",
+    "sha256": "d66504d3b23a4adb73b78c26e8c5dab599c31b6fde254dcc319df60d3d449ff3",
+    "bytes": 46190
+  },
+  "tests": {
+    "path": "/home/wwww/.codex/worktrees/trace-simplification/hzl/tools/evolution_fifty/test_delivery_packager.py",
+    "sha256": "d3e4ac4cd5adba2611e0c96afbd07d4a996e78652213e199440a1aae55563970"
+  },
+  "resident_runtime": {
+    "path": "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_plan_002/runtime/delivery_packager.py",
+    "sha256": "d66504d3b23a4adb73b78c26e8c5dab599c31b6fde254dcc319df60d3d449ff3",
+    "bytes": 46190,
+    "identity": [
+      66306,
+      59638148,
+      46190,
+      "1793702838492276445",
+      "1793702838492276445",
+      1,
+      33204
+    ]
+  },
+  "code_freeze": {
+    "path": "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_code_003/CODE_FREEZE.json",
+    "sha256": "0947dfa26644ab6c8842dc9bd31f509f5bebce838c3b1e9c6dce186da5e024f7"
+  },
+  "code_archive": {
+    "path": "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_code_003/code_v003.tar.gz",
+    "sha256": "37c34fe0ab72269bd4caa956a1840f9d96badec8bc4de12d32897102918f2de0"
+  },
+  "specification": {
+    "path": "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_spec_002/SPEC.json",
+    "sha256": "2b12d51f18c231293334086d1a72b8ad7c7eede32c06b04caa6d02c00365650e",
+    "bytes": 6708,
+    "identity": [
+      66306,
+      59638144,
+      6708,
+      "1793702770143490492",
+      "1793702770143490492",
+      1,
+      33204
+    ]
+  },
+  "plan": {
+    "path": "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_plan_002/PIN_PLAN.json",
+    "sha256": "3801bba95c6f83ecd3eae6c95e9fbf042de60d2a06741b66b870facc339c02d7",
+    "bytes": 74294,
+    "identity": [
+      66306,
+      59638146,
+      74294,
+      "1793702775038611027",
+      "1793702775038611027",
+      1,
+      33152
+    ]
+  },
+  "report_path": "/home/wwww/.codex/worktrees/trace-simplification/hzl/docs/scope-v4-delivery-plan-independent-20261103.md",
+  "report_sha256": "102c08af2388d8b399c4fa019b14413ecf1cfd93b1ef74b762cec68d60a85b7a",
+  "blocker": {
+    "classification": "Exact-plan stat preflight policy incompatibility; not content-corruption or scientific-failure evidence",
+    "policy_source_line": 212,
+    "required_nlink": 1,
+    "observed_nlink": 2,
+    "inputs": [
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/G03_offline_score_20261103_1455/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 59638127,
+        "bytes": 5738,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/G_offline_score_20261102_2321/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 58237988,
+        "bytes": 4186,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/M01_offline_score_20261102_1942/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 58205233,
+        "bytes": 1816,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/M01_offline_score_20261102_1942/coco_object/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 58204956,
+        "bytes": 654,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/M01_offline_score_20261102_1942/pc60/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 58205236,
+        "bytes": 654,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/M02_offline_score_20261103_0156/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 58238105,
+        "bytes": 1774,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/M03_offline_score_20261103_0856/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 59376327,
+        "bytes": 2018,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/M04_offline_score_20261103_0646/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 58238398,
+        "bytes": 1743,
+        "nlink": 2,
+        "role_cap": 8388608
+      },
+      {
+        "path": "/home/wwww/hzl/results/trace_mechanism_20261102/V01_offline_score_20261103_1258/ANALYSIS_SEALED.json",
+        "role": "sealed_summary_metadata",
+        "device": 66306,
+        "inode": 59404559,
+        "bytes": 2020,
+        "nlink": 2,
+        "role_cap": 8388608
+      }
+    ]
+  },
+  "validation": {
+    "validator_succeeded": false,
+    "error_type": "ValueError",
+    "error": "Not bounded single-link regular input",
+    "exact_cli": [
+      "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_plan_002/runtime/delivery_packager.py",
+      "validate",
+      "--plan",
+      "/home/wwww/hzl/results/trace_scope_v4_delivery_20261103_plan_002/PIN_PLAN.json",
+      "--sha256",
+      "3801bba95c6f83ecd3eae6c95e9fbf042de60d2a06741b66b870facc339c02d7"
+    ],
+    "enumerated_payload_content_opens": 0,
+    "stat_input_files": 312,
+    "pinned_input_bytes": 16188345,
+    "observed_input_bytes": 16188345,
+    "stat_failures": 9,
+    "extent_mismatches": 0,
+    "role_cap_violations": 0,
+    "role_inode_collisions": 0,
+    "persistent_writes_by_validator": 0,
+    "CUDA_visible_devices": "",
+    "CUDA_initialized": false,
+    "torch_intra_threads": 1,
+    "torch_inter_threads": 1,
+    "cv2_threads": 1,
+    "all_input_content_hash_validation_completed": false,
+    "whole_paper_archive_validation_completed": false,
+    "terminal_success_semantic_verification_completed": false
+  },
+  "historical_R1_status": "PARTIAL",
+  "local_mask_subset_generation_recovered": false,
+  "no_plan002_or_sealed_inputs_modified": true,
+  "no_ADMITTED_marker_created": true,
+  "no_packet_or_build_created": true,
+  "no_embedded_payload_paths_followed": true,
+  "new_code_freeze_spec_plan_required_for_reconsideration": true
+}

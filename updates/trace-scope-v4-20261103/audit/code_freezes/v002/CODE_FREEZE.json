@@ -1,0 +1,16 @@
+{
+  "version": "publication_code_v002",
+  "members": {
+    "tools/evolution_fifty/delivery_packager.py": {
+      "sha256": "9f0a53e489b5c9fa0de364e9c6f156336d544cd091aa04d87e51f7e3a4661748",
+      "bytes": 46186
+    },
+    "tools/evolution_fifty/test_delivery_packager.py": {
+      "sha256": "5d7e9876657e882fb410a55caa196943087dbe0ab01bf91f1c134e66a52a671f",
+      "bytes": 26735
+    }
+  },
+  "initial_report_sha256": "8c8da4b54b441a5523164f7403e94e7c792fa7c58c4f8065d03784eaf64e5674",
+  "original_v001_archive_sha256": "e62fa728902de586134dc9fb209e3117d612fc844e81bb921197d4d3dca4bd5e",
+  "scope": "C1 final3leaf+membership+directory-state rebind;C2 FD registered before fstat;60main synthetic tests0.67s. Not independent closure or actual delivery permission."
+}

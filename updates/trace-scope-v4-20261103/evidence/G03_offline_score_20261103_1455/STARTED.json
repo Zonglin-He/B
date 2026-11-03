@@ -1,0 +1,37 @@
+{
+  "suite_prepared_sha256": "2d7908f30ec2c3f6826e1ee5c317e5773c5facb6de5b020a9be60db074f62a5a",
+  "audit": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G03_offline_score_20261103_1455/ADMITTED.json",
+    "admission_sha256": "780f138b868f29207f0861ef84b57272e18a1d88b2476d3223ff5565d65a2dec",
+    "admission_identity": [
+      66306,
+      59638114,
+      3162,
+      1793689567125807500
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G03_offline_score_20261103_1455/INDEPENDENT_REPORT.md",
+    "report_sha256": "7eb6bfdfcfaf537b890aa346a240bd8bc5d9c988165efe6a850ad4e2ab3e983d",
+    "report_identity": [
+      66306,
+      59638113,
+      24856,
+      1793689547192325414
+    ],
+    "independent_reviewer": "Faraday - independent exact G03 CPU GT artifact audit, genuine frozen source/status/origin bindings, no additional agents"
+  },
+  "pid": 2312767,
+  "parent_pins": {
+    "root": "/home/wwww/hzl/results/trace_mechanism_20261102/G03_predictions_20261103_1258",
+    "prepared_sha256": "dadb651d45f9d9d60341d61727da56863606a5404dba7de6119bd277e1c0832c",
+    "unit": "trace-curve-predictions-20261103-1258.service",
+    "pid": 2289686,
+    "invocation": "74be1990a0a544e0a78a39f5a6a0501b",
+    "global_sha256": "c8045079f20a8730b33026656fc0d19348a576f855ebd6b86d0ca7049e072a8a",
+    "started_sha256": "f4aa72f5319db739ac79973f276ec334654964a86ae96d6b4e2664a8535e627f",
+    "gate_sha256": "2912cfc7e7427f7b1ee7f9fb0b85c12a16425faf5db6486a7893ae9a4079a62d",
+    "admission_sha256": "e5f92e9445ac2df0102f7f8f22854b3a5d16129314e49d6bc98d749486f695ec",
+    "report_sha256": "e118554d3391b92cec7dfb90ae4333b4c13e91d3ca7c87f357740040f479f684"
+  },
+  "GT_opened": false,
+  "automatic_retry": false
+}

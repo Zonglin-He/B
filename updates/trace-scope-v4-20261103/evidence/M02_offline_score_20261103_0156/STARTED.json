@@ -1,0 +1,26 @@
+{
+  "suite_prepared_sha256": "92f758aa4dd172b8487b034bd6217aae57d4e0e536b882f179b4ff38bb6032e5",
+  "audit": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M02_offline_score_20261103_0156/ADMITTED.json",
+    "admission_sha256": "39477e50d30ca87a4b852b36e6a8da0ce6b2c3ca75f0fcd118106f6055e6e1e6",
+    "admission_identity": [
+      66306,
+      58238099,
+      1592,
+      1793642896924119605
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M02_offline_score_20261103_0156/INDEPENDENT_REPORT.md",
+    "report_sha256": "8c1cb0653b3d3229c893556362f9a4e932ca773a6dca2551ec09c59ea973c988",
+    "report_identity": [
+      66306,
+      58238098,
+      8211,
+      1793642873819106564
+    ],
+    "independent_reviewer": "Codex independent M02 CPU_GT scoring artifact auditor (current task; no extra agents)"
+  },
+  "pid": 2135111,
+  "GT_opened": false,
+  "automatic_retry": false,
+  "parent_barrier_sha256": "10ea6d4e43f9e4dd2829de66dab52310af2d4c80290cf5f3f1a695d24132dc73"
+}

@@ -1,0 +1,545 @@
+{
+  "observed_at_UTC": "2026-11-02T15:33:00Z",
+  "suite": "/home/wwww/hzl/results/trace_mechanism_20261102/G_offline_score_20261102_2321",
+  "prepared_sha256": "ad2804b18158528eefc11525d87d43c696b02ae57f3c2a94291663545d5b9569",
+  "actual_CPU_scoring_completed": true,
+  "new_GPU": false,
+  "service": {
+    "unit": "trace-generalization-score-20261102-2321.service",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "exited",
+    "MainPID": 0,
+    "ExecMainPID": 2094938,
+    "ExecMainCode": 1,
+    "ExecMainStatus": 0,
+    "Result": "success",
+    "InvocationID": "bccd4c5d1f564e3380b3acadbd42bdd5",
+    "start_Beijing": "2026-11-02 23:30:16",
+    "exit_Beijing": "2026-11-02 23:31:45"
+  },
+  "analysis_sha256": "9356fe54cb3eeeb94e0068f06593efbbc7194ff459581897bc685851b9210048",
+  "parent_barrier_sha256": "4efdffa4a7fd0d95eff2319ee78cbce49ad6d7436ec81621dd3859d627fe04dc",
+  "prospective_analysis_sha256": "c9bc701da574d453e06d25b431a8bb2d65ae6e8e823053113913208dc5a12e6b",
+  "STARTED_sha256": "02dfd3d718d895b1ce939a0328649cb191a1786927c55290ff5436fdfd82fde1",
+  "independent_admission_sha256": "a61f64bac7df1fb42d4a1dcfb3e62c85d267db87711be2c5e3768313fb0f0c86",
+  "independent_report_sha256": "81f3465cf748467bae8caef28cf45734817fefceb8dbeccacd7b9a723181dd49",
+  "conditions": 19,
+  "cells": 57,
+  "image_method_evaluations": 104214,
+  "elapsed_seconds": 84.64839667174965,
+  "output_bytes": 17919844,
+  "verified_artifact_files": 22,
+  "verified_runtime_files": 269,
+  "CUDA_initialized": false,
+  "verification_scope": "Main exact frozen admission/runtime membership/content, parent actual retained terminal/metadata/gates/19children, protocol/input/audit/report/STARTED/global and every22score-child SHA checked once; no repeated real GT/RGB/prediction-array payload scan or metric rerun",
+  "operator_caps": {
+    "RAM_bytes": 4294967296,
+    "swap_bytes": 536870912,
+    "CPUQuota_percent": 100,
+    "Nice": 10,
+    "IO": "idle",
+    "CUDA_VISIBLE_DEVICES": "",
+    "threads": [
+      1,
+      1,
+      1
+    ],
+    "OOMPolicy": "stop",
+    "Restart": "no",
+    "RemainAfterExit": true,
+    "KillMode": "control-group",
+    "actual_proc_env_cgroup_verified": true
+  },
+  "scientific_results": {
+    "all_type_differences": {
+      "naclip.ViT-L-14.voc20.brightness.s5": {
+        "CI95": [
+          0.20838089122700512,
+          1.5493168147650538
+        ],
+        "delta": 0.8373045699029262
+      },
+      "naclip.ViT-L-14.voc20.contrast.s5": {
+        "CI95": [
+          -2.2690352973506878,
+          0.1720116202929267
+        ],
+        "delta": -1.038307081900271
+      },
+      "naclip.ViT-L-14.voc20.defocus_blur.s5": {
+        "CI95": [
+          -0.42576238358321944,
+          1.8724530550501748
+        ],
+        "delta": 0.7104256697732012
+      },
+      "naclip.ViT-L-14.voc20.elastic_transform.s5": {
+        "CI95": [
+          -1.9977616510130016,
+          -0.045643428944961435
+        ],
+        "delta": -1.0060071825391503
+      },
+      "naclip.ViT-L-14.voc20.fog.s5": {
+        "CI95": [
+          -0.541379628456384,
+          1.286305060799428
+        ],
+        "delta": 0.39345461658231784
+      },
+      "naclip.ViT-L-14.voc20.frost.s5": {
+        "CI95": [
+          0.577925429367529,
+          2.147456537665006
+        ],
+        "delta": 1.3602486843994797
+      },
+      "naclip.ViT-L-14.voc20.gaussian_noise.s5": {
+        "CI95": [
+          -1.6049982048308233,
+          1.0228161788849914
+        ],
+        "delta": -0.2798702509702764
+      },
+      "naclip.ViT-L-14.voc20.glass_blur.s5": {
+        "CI95": [
+          1.2776551329098655,
+          3.474626466753374
+        ],
+        "delta": 2.350911611410524
+      },
+      "naclip.ViT-L-14.voc20.impulse_noise.s5": {
+        "CI95": [
+          -2.1895078163537134,
+          0.19492516704543042
+        ],
+        "delta": -0.9854527472668764
+      },
+      "naclip.ViT-L-14.voc20.jpeg_compression.s5": {
+        "CI95": [
+          -0.40394330993265437,
+          0.9458883866405879
+        ],
+        "delta": 0.292409900023344
+      },
+      "naclip.ViT-L-14.voc20.motion_blur.s5": {
+        "CI95": [
+          0.5228552953405778,
+          3.0121972754107684
+        ],
+        "delta": 1.7007479388519187
+      },
+      "naclip.ViT-L-14.voc20.pixelate.s5": {
+        "CI95": [
+          0.8389163957132247,
+          2.5951780509266036
+        ],
+        "delta": 1.7032219679751677
+      },
+      "naclip.ViT-L-14.voc20.shot_noise.s5": {
+        "CI95": [
+          -0.10882061061473527,
+          2.0879365722915155
+        ],
+        "delta": 1.0110927273344856
+      },
+      "naclip.ViT-L-14.voc20.snow.s5": {
+        "CI95": [
+          0.014976432766124516,
+          1.365457697984484
+        ],
+        "delta": 0.6948126394487701
+      },
+      "naclip.ViT-L-14.voc20.zoom_blur.s5": {
+        "CI95": [
+          -0.18718894506055894,
+          2.0759846395917925
+        ],
+        "delta": 0.9682329564223835
+      }
+    },
+    "clean": {
+      "naclip.ViT-B-16.coco_object.original.s0": {
+        "C_minus_Confidence_pp": 2.008516532802229,
+        "arms": {
+          "image_C": {
+            "CI95_pp": [
+              29.02002563385859,
+              30.6524261300318
+            ],
+            "mIoU": 29.95189136544864,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "image_confidence": {
+            "CI95_pp": [
+              27.10942250662156,
+              28.566590213820135
+            ],
+            "mIoU": 27.94337483264641,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "no_adapt": {
+            "CI95_pp": [
+              29.21560445897521,
+              30.486526240408452
+            ],
+            "mIoU": 29.977026575833435,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          }
+        },
+        "paired_difference": {
+          "CI95_pp": [
+            1.4783992245629063,
+            2.5347378349091367
+          ],
+          "total_draws": 10000,
+          "undefined_draws": 0
+        }
+      },
+      "naclip.ViT-B-16.pc60.original.s0": {
+        "C_minus_Confidence_pp": 0.7929744630198954,
+        "arms": {
+          "image_C": {
+            "CI95_pp": [
+              30.353378488053977,
+              31.31599981228922
+            ],
+            "mIoU": 30.867324017869045,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "image_confidence": {
+            "CI95_pp": [
+              29.575264372005794,
+              30.512372641895393
+            ],
+            "mIoU": 30.07434955484915,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "no_adapt": {
+            "CI95_pp": [
+              30.518325095623823,
+              31.432784432235945
+            ],
+            "mIoU": 31.004466054965178,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          }
+        },
+        "paired_difference": {
+          "CI95_pp": [
+            0.6299508025420135,
+            0.9545311586875578
+          ],
+          "total_draws": 10000,
+          "undefined_draws": 0
+        }
+      },
+      "naclip.ViT-B-16.voc20.original.s0": {
+        "C_minus_Confidence_pp": 1.1004959375644177,
+        "arms": {
+          "image_C": {
+            "CI95_pp": [
+              82.1313297337515,
+              84.93193267713617
+            ],
+            "mIoU": 83.64790443827438,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "image_confidence": {
+            "CI95_pp": [
+              80.92926020573715,
+              83.8803448969908
+            ],
+            "mIoU": 82.54740850070996,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "no_adapt": {
+            "CI95_pp": [
+              78.70663144610639,
+              81.64960068544559
+            ],
+            "mIoU": 80.30954627713648,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          }
+        },
+        "paired_difference": {
+          "CI95_pp": [
+            0.3340431827147679,
+            1.9242226258820705
+          ],
+          "total_draws": 10000,
+          "undefined_draws": 0
+        }
+      },
+      "sclip.ViT-B-16.voc20.original.s0": {
+        "C_minus_Confidence_pp": -2.395063526609796,
+        "arms": {
+          "image_C": {
+            "CI95_pp": [
+              29.272141499590433,
+              33.581905952238046
+            ],
+            "mIoU": 31.53313688316704,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "image_confidence": {
+            "CI95_pp": [
+              31.617476367634325,
+              35.97999449607662
+            ],
+            "mIoU": 33.928200409776835,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          },
+          "no_adapt": {
+            "CI95_pp": [
+              32.78754184475231,
+              37.27895754674222
+            ],
+            "mIoU": 35.21455503664886,
+            "total_draws": 10000,
+            "undefined_draws": 0
+          }
+        },
+        "paired_difference": {
+          "CI95_pp": [
+            -3.5124635207815444,
+            -1.344539965237621
+          ],
+          "total_draws": 10000,
+          "undefined_draws": 0
+        }
+      }
+    },
+    "corruption": {
+      "ViT-L/14.voc20": {
+        "C_versus_Confidence": {
+          "losses": 4,
+          "ties": 0,
+          "undefined": 0,
+          "wins": 11
+        },
+        "aggregation": "Arithmetic mean of condition-specific pooled mIoUs, never globally pooled corruptions",
+        "groups": {
+          "blur": {
+            "C_minus_Confidence_pp": 1.4325795441145175,
+            "arms": {
+              "image_C": {
+                "CI95_pp": [
+                  73.620200449518,
+                  76.69859925817282
+                ],
+                "mIoU": 75.28154494317874,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "image_confidence": {
+                "CI95_pp": [
+                  72.20866043987878,
+                  75.27350041453245
+                ],
+                "mIoU": 73.84896539906423,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "no_adapt": {
+                "CI95_pp": [
+                  69.36201309811187,
+                  72.57572022559225
+                ],
+                "mIoU": 71.09736224886423,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              }
+            },
+            "paired_difference": {
+              "CI95_pp": [
+                0.7552974446009155,
+                2.101281274549048
+              ],
+              "total_draws": 10000,
+              "undefined_draws": 0
+            }
+          },
+          "digital": {
+            "C_minus_Confidence_pp": -0.012170599110220337,
+            "arms": {
+              "image_C": {
+                "CI95_pp": [
+                  75.68812699521587,
+                  78.43101350543868
+                ],
+                "mIoU": 77.16027208249554,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "image_confidence": {
+                "CI95_pp": [
+                  75.79457405974728,
+                  78.36441311459095
+                ],
+                "mIoU": 77.17244268160576,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "no_adapt": {
+                "CI95_pp": [
+                  71.87652927941622,
+                  74.59812146618594
+                ],
+                "mIoU": 73.36058414677038,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              }
+            },
+            "paired_difference": {
+              "CI95_pp": [
+                -0.5477386196228071,
+                0.52899003814106
+              ],
+              "total_draws": 10000,
+              "undefined_draws": 0
+            }
+          },
+          "noise": {
+            "C_minus_Confidence_pp": -0.08474342363422238,
+            "arms": {
+              "image_C": {
+                "CI95_pp": [
+                  68.05713163606978,
+                  71.6193378161671
+                ],
+                "mIoU": 69.92978387533948,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "image_confidence": {
+                "CI95_pp": [
+                  68.21823169100784,
+                  71.58307691157252
+                ],
+                "mIoU": 70.0145272989737,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "no_adapt": {
+                "CI95_pp": [
+                  63.69098383788367,
+                  67.03364447391141
+                ],
+                "mIoU": 65.45162291901956,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              }
+            },
+            "paired_difference": {
+              "CI95_pp": [
+                -0.907903754745648,
+                0.7165303988242702
+              ],
+              "total_draws": 10000,
+              "undefined_draws": 0
+            }
+          },
+          "weather": {
+            "C_minus_Confidence_pp": 0.821455127583377,
+            "arms": {
+              "image_C": {
+                "CI95_pp": [
+                  76.16119088985917,
+                  78.76932332491955
+                ],
+                "mIoU": 77.56208814273909,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "image_confidence": {
+                "CI95_pp": [
+                  75.37180176513333,
+                  77.91240689564316
+                ],
+                "mIoU": 76.74063301515571,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              },
+              "no_adapt": {
+                "CI95_pp": [
+                  70.89055789917954,
+                  73.72137638583156
+                ],
+                "mIoU": 72.40581403362903,
+                "total_draws": 10000,
+                "undefined_draws": 0
+              }
+            },
+            "paired_difference": {
+              "CI95_pp": [
+                0.36701777218148735,
+                1.2856120295039937
+              ],
+              "total_draws": 10000,
+              "undefined_draws": 0
+            }
+          }
+        },
+        "macro15": {
+          "C_minus_Confidence_pp": 0.5808817346298696,
+          "arms": {
+            "image_C": {
+              "CI95_pp": [
+                73.92973970142548,
+                76.52003318076555
+              ],
+              "mIoU": 75.3203314866448,
+              "total_draws": 10000,
+              "undefined_draws": 0
+            },
+            "image_confidence": {
+              "CI95_pp": [
+                73.39725848739036,
+                75.87394399960294
+              ],
+              "mIoU": 74.73944975201493,
+              "total_draws": 10000,
+              "undefined_draws": 0
+            },
+            "no_adapt": {
+              "CI95_pp": [
+                69.45008551789239,
+                72.16442580170681
+              ],
+              "mIoU": 70.9206606982742,
+              "total_draws": 10000,
+              "undefined_draws": 0
+            }
+          },
+          "paired_difference": {
+            "CI95_pp": [
+              0.22136298561848416,
+              0.9470741894742889
+            ],
+            "total_draws": 10000,
+            "undefined_draws": 0
+          }
+        }
+      }
+    }
+  },
+  "claims": {
+    "NACLIP_B16_C_beats_same_config_Confidence": "Supported in three tested clean datasets with paired pointwise CIs >0, fixed inherited/historically exposed settings; not proof of all backbones or independent tuning",
+    "C_improves_over_NoAdapt_everywhere": false,
+    "C_generalizes_to_tested_SCLIP": "Not supported; C is below Confidence and zero-update control in configured multilayer SCLIP variant, not a reproduced published SCLIP pipeline",
+    "corruption": "Positive macro15 and 11/15 point wins, but4/15 point losses, noise/digital group CIs include0 and elastic_transform pairedCI<0; not universal robust superiority",
+    "negative_results_rerun_for_positivity": false
+  }
+}

@@ -7,9 +7,12 @@ interchangeable method.
 
 ## Start Here
 
+- [SCOPE_v4 fixed studies and reviewed manuscript, 2026-11-03](updates/trace-scope-v4-20261103/README.md)
+- [SCOPE_v4 main PDF](updates/trace-scope-v4-20261103/paper/main.pdf) and [supplement](updates/trace-scope-v4-20261103/paper/supplement.pdf)
+- [Original full review](updates/trace-scope-v4-20261103/reviews/manuscript_review_draft_v001.md) and [same-reviewer revision verification](updates/trace-scope-v4-20261103/reviews/manuscript_review_draft_v002_closure.md)
 - [New experiment results, code and paper, 2026-11-02](updates/trace-evolution-20261102/README.md)
-- [Current paper PDF](updates/trace-evolution-20261102/paper/build/main.pdf) and [supplement](updates/trace-evolution-20261102/paper/build/supplement.pdf)
-- [Current implementation and tests](updates/trace-evolution-20261102/code/)
+- [Historical November 2 paper PDF](updates/trace-evolution-20261102/paper/build/main.pdf) and [supplement](updates/trace-evolution-20261102/paper/build/supplement.pdf)
+- [November 2 implementation and tests](updates/trace-evolution-20261102/code/)
 - [Completed sham intervention controls, 2026-10-25](updates/sham-20261025/README.md)
 - [Completed 64-image rebuttal update, 2026-10-25](updates/rebuttal64-20261025/README.md)
 - [Completed context/top-K/episode-bootstrap cache analysis](updates/mechanism-audit-20261025/README.md)
@@ -21,6 +24,13 @@ interchangeable method.
 - [Archive checksums and object counts](index/archives.json)
 - [Integrity verification](verification.json)
 - [Archive policy and interpretation](ARCHIVE_POLICY.md)
+
+The November 3 follow-up is a bounded summary/source/manuscript delivery, not a
+repeat of the historical large archive. Its independent revision verification
+marks R2-R4 corrected and R1 partial: local COCO-CD/Waterbirds mask and subset
+construction remains unrecovered. Historical exposure, mixed/negative/null
+results, unmatched equal-time comparisons and this reproducibility limitation
+remain explicit. It is not an acceptance rating or a turnkey dataset release.
 
 Browsable tables, small result records, protocols, and configuration files are in
 `results/<original-suite-name>/`. Larger diagnostics, per-image counts,

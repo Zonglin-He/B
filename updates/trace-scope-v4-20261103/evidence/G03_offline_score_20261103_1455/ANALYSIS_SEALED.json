@@ -1,0 +1,144 @@
+{
+  "complete": true,
+  "conditions": 15,
+  "cells": 45,
+  "new_prediction_conditions": 10,
+  "new_prediction_cells": 30,
+  "image_method_evaluations": 43470,
+  "reused_image_method_evaluations": 21735,
+  "GT_opened": true,
+  "new_GPU": false,
+  "artifact_sha256": {
+    "naclip.ViT-L-14.voc20.gaussian_noise.s1.episode_counts.jsonl": "6c592abf7d7d7788eb84920b32cbaa4366e34892c078039be2228c547031020c",
+    "naclip.ViT-L-14.voc20.gaussian_noise.s3.episode_counts.jsonl": "dc7b1426efda001703a838fa4f179c1e8bea00bd0cba16f97feb078e76cf21b4",
+    "naclip.ViT-L-14.voc20.motion_blur.s1.episode_counts.jsonl": "c1aa9b21fe4f8e9bc067a79185bac8252fb70ac269165245f8b978eb288a223f",
+    "naclip.ViT-L-14.voc20.motion_blur.s3.episode_counts.jsonl": "745ff4374aaaaaabc7335eef1f848c3ebf7c0d97b6b399aa45e30425e0353251",
+    "naclip.ViT-L-14.voc20.fog.s1.episode_counts.jsonl": "7b140d8e3629592de028c68f118981ea98f890a60c4d67226a232418055e2a34",
+    "naclip.ViT-L-14.voc20.fog.s3.episode_counts.jsonl": "a8531d1af0738b88d7b823dd3314345b5336435ff4744eed6bcfcaf7289074a0",
+    "naclip.ViT-L-14.voc20.contrast.s1.episode_counts.jsonl": "7346bad708519eb0d8683e23969a928be4a135aef44239a58fb6930e43becc1d",
+    "naclip.ViT-L-14.voc20.contrast.s3.episode_counts.jsonl": "99361b144d4c556428a230f0f661a7f2cc8ac530d1234b0e9d758d95b771a2ce",
+    "naclip.ViT-L-14.voc20.jpeg_compression.s1.episode_counts.jsonl": "93912bd222ee894736e00aae813d9428664ee0c5eb0bd51e64a1cd4ae7ba7ef1",
+    "naclip.ViT-L-14.voc20.jpeg_compression.s3.episode_counts.jsonl": "22133b44a296ad8e4ee0fb4de34345e9d1ce4703d06544c2f9e386cd8c832909",
+    "CURVE_RESULTS.json": "983abda09c0580f4fbf426055d4d3d845ce66b339f252d32e26cece74502feb0",
+    "ANNOTATIONS_READ.json": "2c4e36db79f2da43decf256c5faa2c77ef9ee9f63cf173e9717509b6b7d53096",
+    "REUSED_S5_PROVENANCE.json": "ea820cb4fe5c3b6fe5a11e45acea0dd0f95a34801ca3c546f668be636af5c006"
+  },
+  "artifact_identities": {
+    "naclip.ViT-L-14.voc20.gaussian_noise.s1.episode_counts.jsonl": [
+      66306,
+      59638116,
+      677662,
+      1793689773412419687
+    ],
+    "naclip.ViT-L-14.voc20.gaussian_noise.s3.episode_counts.jsonl": [
+      66306,
+      59638118,
+      678160,
+      1793689780405409410
+    ],
+    "naclip.ViT-L-14.voc20.motion_blur.s1.episode_counts.jsonl": [
+      66306,
+      59638117,
+      677434,
+      1793689787293399446
+    ],
+    "naclip.ViT-L-14.voc20.motion_blur.s3.episode_counts.jsonl": [
+      66306,
+      59638119,
+      677010,
+      1793689794217389587
+    ],
+    "naclip.ViT-L-14.voc20.fog.s1.episode_counts.jsonl": [
+      66306,
+      59638120,
+      678485,
+      1793689801399379524
+    ],
+    "naclip.ViT-L-14.voc20.fog.s3.episode_counts.jsonl": [
+      66306,
+      59638121,
+      678365,
+      1793689808448369807
+    ],
+    "naclip.ViT-L-14.voc20.contrast.s1.episode_counts.jsonl": [
+      66306,
+      59638122,
+      677561,
+      1793689815439360324
+    ],
+    "naclip.ViT-L-14.voc20.contrast.s3.episode_counts.jsonl": [
+      66306,
+      59638123,
+      677289,
+      1793689822464350947
+    ],
+    "naclip.ViT-L-14.voc20.jpeg_compression.s1.episode_counts.jsonl": [
+      66306,
+      59638124,
+      677293,
+      1793689829401341836
+    ],
+    "naclip.ViT-L-14.voc20.jpeg_compression.s3.episode_counts.jsonl": [
+      66306,
+      59638125,
+      677240,
+      1793689836318332896
+    ],
+    "CURVE_RESULTS.json": [
+      66306,
+      59638126,
+      299445,
+      1793689837494267801
+    ],
+    "ANNOTATIONS_READ.json": [
+      66306,
+      59638128,
+      210108,
+      1793689837499947120
+    ],
+    "REUSED_S5_PROVENANCE.json": [
+      66306,
+      59638129,
+      96222,
+      1793689837503272831
+    ]
+  },
+  "output_bytes": 7382274,
+  "scientific_completion": false,
+  "suite_prepared_sha256": "2d7908f30ec2c3f6826e1ee5c317e5773c5facb6de5b020a9be60db074f62a5a",
+  "parent_pins": {
+    "root": "/home/wwww/hzl/results/trace_mechanism_20261102/G03_predictions_20261103_1258",
+    "prepared_sha256": "dadb651d45f9d9d60341d61727da56863606a5404dba7de6119bd277e1c0832c",
+    "unit": "trace-curve-predictions-20261103-1258.service",
+    "pid": 2289686,
+    "invocation": "74be1990a0a544e0a78a39f5a6a0501b",
+    "global_sha256": "c8045079f20a8730b33026656fc0d19348a576f855ebd6b86d0ca7049e072a8a",
+    "started_sha256": "f4aa72f5319db739ac79973f276ec334654964a86ae96d6b4e2664a8535e627f",
+    "gate_sha256": "2912cfc7e7427f7b1ee7f9fb0b85c12a16425faf5db6486a7893ae9a4079a62d",
+    "admission_sha256": "e5f92e9445ac2df0102f7f8f22854b3a5d16129314e49d6bc98d749486f695ec",
+    "report_sha256": "e118554d3391b92cec7dfb90ae4333b4c13e91d3ca7c87f357740040f479f684"
+  },
+  "reused_analysis_sha256": "9356fe54cb3eeeb94e0068f06593efbbc7194ff459581897bc685851b9210048",
+  "prospective_analysis_sha256": "7655bee2573e1c79b8a4856f9272ce9b45b5ccc025c1c09ca740f2d9b96cca86",
+  "audit_binding": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G03_offline_score_20261103_1455/ADMITTED.json",
+    "admission_sha256": "780f138b868f29207f0861ef84b57272e18a1d88b2476d3223ff5565d65a2dec",
+    "admission_identity": [
+      66306,
+      59638114,
+      3162,
+      1793689567125807500
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G03_offline_score_20261103_1455/INDEPENDENT_REPORT.md",
+    "report_sha256": "7eb6bfdfcfaf537b890aa346a240bd8bc5d9c988165efe6a850ad4e2ab3e983d",
+    "report_identity": [
+      66306,
+      59638113,
+      24856,
+      1793689547192325414
+    ],
+    "independent_reviewer": "Faraday - independent exact G03 CPU GT artifact audit, genuine frozen source/status/origin bindings, no additional agents"
+  },
+  "started_sha256": "36acab65a284e05e95588b1e6ad66bd38525bb819eb1a971e7a0bc44aaa15b9f",
+  "elapsed_seconds": 102.5546807795763
+}

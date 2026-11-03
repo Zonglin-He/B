@@ -1,0 +1,100 @@
+{
+  "suite": "/home/wwww/hzl/results/trace_mechanism_20261102/M03_offline_score_20261103_0856",
+  "prepared_sha256": "1c2f7280a4ee0a2eda531745018cae56fa5ee8cabd94a0ffd9466db88a67226b",
+  "terminal_verified_at_UTC": "2026-11-03T01:07:16Z",
+  "service": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStartTimestamp": "Tue 2026-11-03 09:05:22 CST",
+    "ExecMainExitTimestamp": "Tue 2026-11-03 09:06:54 CST",
+    "ExecMainPID": "2237275",
+    "ExecMainCode": "1",
+    "ExecMainStatus": "0",
+    "MemoryPeak": "2591879168",
+    "MemorySwapPeak": "0",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "exited",
+    "InvocationID": "e1a5aadc86cb4268852178937a1884e3"
+  },
+  "analysis_global_sha256": "0ada9651e815e216394ce19aa6f0922ac997e27d651bb3a43f1894e4fe0c67e4",
+  "seal": {
+    "complete": true,
+    "datasets": 2,
+    "cells": 8,
+    "GT_opened": true,
+    "new_GPU": false,
+    "image_method_evaluations": 40420,
+    "artifact_sha256": {
+      "coco_object.episode_counts.jsonl": "a76cba03fe3610dc1dc6522b0b9b70d3cb0283dc43ca6396e88487dfb661579a",
+      "pc60.episode_counts.jsonl": "348facd8fb7e14661f2f0db57daeeeceb8c28c74e3e9d94976c57c28c4b483ca",
+      "DATASET_RESULTS.json": "6e20a652c2ed86b6d70e549da23cf7d9f5e56d153642709778827ca0f86f0ff0",
+      "ANNOTATIONS_READ.json": "a87e2ccb31b2eff56b0f1642aae1f78dae55378576069c49c8096bb9e7fee9bd"
+    },
+    "output_bytes": 6228658,
+    "suite_prepared_sha256": "1c2f7280a4ee0a2eda531745018cae56fa5ee8cabd94a0ffd9466db88a67226b",
+    "parent_pins": {
+      "pid": 2190696,
+      "invocation": "f32b507b0a0c46759dd6e52527c83a8f",
+      "start_sha256": "ddfac6c9a79d04e062dbd46f11fd9c76b4673d2aa2983c3f1f6097dc6426e9ef",
+      "gate_sha256": "2e92fa383367c88c08b01c5af0efb8f414f4578fc651df7e974bc2550b438b95",
+      "barrier_sha256": "13daf2fb890492e7c905f1411d4eef806744f93325390a649cf6cc4feab0dd8c"
+    },
+    "prospective_analysis_sha256": "d302adb2178d79188e2eced086ffc24965d1e2f0738467435f6950870dab4fc3",
+    "audit_binding": {
+      "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M03_offline_score_20261103_0856/ADMITTED.json",
+      "admission_sha256": "d2f2606250593138bae7c2f5584bd2bb0e7d5d6ac26dba3af90af607a73d09ac",
+      "admission_identity": [
+        66306,
+        59375970,
+        1381,
+        "1793667843057529853"
+      ],
+      "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M03_offline_score_20261103_0856/INDEPENDENT_REPORT.md",
+      "report_sha256": "955637742c540133efd26e0da8fa891642788190680219e79902a707ea7aff4f",
+      "report_identity": [
+        66306,
+        59375969,
+        15501,
+        "1793667824958487499"
+      ],
+      "independent_reviewer": "Codex independent exact M03 CPU_GT artifact audit, 2026-11-03"
+    },
+    "started_sha256": "9b54a8aab7fd2cc0aaa047fe5ecb1b3cb64e793968869c3813c0a6b797270112",
+    "elapsed_seconds": 84.31482401583344
+  },
+  "all_output_hashes_and_bytes_verified": {
+    "coco_object.episode_counts.jsonl": {
+      "sha256": "a76cba03fe3610dc1dc6522b0b9b70d3cb0283dc43ca6396e88487dfb661579a",
+      "bytes": 2206989
+    },
+    "pc60.episode_counts.jsonl": {
+      "sha256": "348facd8fb7e14661f2f0db57daeeeceb8c28c74e3e9d94976c57c28c4b483ca",
+      "bytes": 2124310
+    },
+    "DATASET_RESULTS.json": {
+      "sha256": "6e20a652c2ed86b6d70e549da23cf7d9f5e56d153642709778827ca0f86f0ff0",
+      "bytes": 336396
+    },
+    "ANNOTATIONS_READ.json": {
+      "sha256": "a87e2ccb31b2eff56b0f1642aae1f78dae55378576069c49c8096bb9e7fee9bd",
+      "bytes": 1560963
+    }
+  },
+  "own_runtime_files_verified": 325,
+  "parent_native_bindings_verified": 68,
+  "parent_complete_graph_stat_revalidated": true,
+  "parent_and_own_metadata_audit_start_gates_cost_state_verified": true,
+  "terminal_GT_RGB_prediction_array_rescan": false,
+  "actual_threads": [
+    1,
+    1,
+    1
+  ],
+  "CUDA_initialized": false,
+  "scientific_score_successfully_completed": true,
+  "main_exact_frozen_CPU_admission_receipt": "M03_CPU_score_admission_validation_001.json",
+  "live_execution_receipt": "M03_offline_score_execution_started_001.json",
+  "metadata_large_integer_encoding": "Identity nanosecond integers above2^53 encoded as exact decimalstrings; original hashedseals unchanged",
+  "new_GPU": false
+}

@@ -1,0 +1,16 @@
+{
+  "version": "publication_code_v003",
+  "members": {
+    "tools/evolution_fifty/delivery_packager.py": {
+      "sha256": "d66504d3b23a4adb73b78c26e8c5dab599c31b6fde254dcc319df60d3d449ff3",
+      "bytes": 46190
+    },
+    "tools/evolution_fifty/test_delivery_packager.py": {
+      "sha256": "d3e4ac4cd5adba2611e0c96afbd07d4a996e78652213e199440a1aae55563970",
+      "bytes": 27395
+    }
+  },
+  "prior_closed_source_sha256": "9f0a53e489b5c9fa0de364e9c6f156336d544cd091aa04d87e51f7e3a4661748",
+  "prior_C1_C2_closure_sha256": "69e40c438bb4dd4ee76d7d45faeb8cae5927bd92a55914deb0a8f059d5af3be1",
+  "scope": "C3 adds only fixedV01 terminal-name support from frozen36metadata registry;61main synthetic tests0.67s. PriorfailedSPEC001/codev002 retained, no realplan/packet."
+}

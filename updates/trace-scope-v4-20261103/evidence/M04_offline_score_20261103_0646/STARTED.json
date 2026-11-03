@@ -1,0 +1,26 @@
+{
+  "suite_prepared_sha256": "46f5c1b644cbc7a0361b08b3e5ef1bec0dcad77d96b64324b6960022f31b3ee9",
+  "audit": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M04_offline_score_20261103_0646/ADMITTED.json",
+    "admission_sha256": "5f65b15bb0bc310bb37b3b83d296dac9d0912e05bfeb9350ba96a72580c04e48",
+    "admission_identity": [
+      66306,
+      58238392,
+      2422,
+      1793660078790856799
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M04_offline_score_20261103_0646/INDEPENDENT_REPORT.md",
+    "report_sha256": "da78fc903041c227736a892e353c444d01df85260c067e95412c7586a7d20674",
+    "report_identity": [
+      66306,
+      58238391,
+      19340,
+      1793660050814850569
+    ],
+    "independent_reviewer": "Codex-independent-M04-replacement-artifact-20261103"
+  },
+  "pid": 2204185,
+  "GT_opened": false,
+  "automatic_retry": false,
+  "parent_barrier_sha256": "eb201ac715e7a06d23c2297dcb7332c60be813136a853157ba477951ed5320a3"
+}

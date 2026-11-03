@@ -1,0 +1,57 @@
+{
+  "complete": true,
+  "conditions": 19,
+  "cells": 57,
+  "image_method_evaluations": 104214,
+  "artifact_sha256": {
+    "naclip.ViT-B-16.coco_object.original.s0.episode_counts.jsonl": "ed0b9fa1906841cd035c177c3333d66fbf109a60fa529f201aba5297b5a0ff78",
+    "naclip.ViT-B-16.pc60.original.s0.episode_counts.jsonl": "c6462fd6776575ee7ff6268a56770070630850e4146d8ac61d96d97406ac2a06",
+    "naclip.ViT-B-16.voc20.original.s0.episode_counts.jsonl": "defdf08494f3b6ad2c6445cc9714f215db9c3fa2ec6768d0411969a293946d95",
+    "sclip.ViT-B-16.voc20.original.s0.episode_counts.jsonl": "ef1fc9f1fddec6500f1cd623813cb6eec5023130960e32c2adb6fefed503e115",
+    "naclip.ViT-L-14.voc20.gaussian_noise.s5.episode_counts.jsonl": "7be0713859d555e85546c003c2c8ea78b725580ea39425abcfd1a888d4b6296b",
+    "naclip.ViT-L-14.voc20.shot_noise.s5.episode_counts.jsonl": "d3f1a46b1a8630fd19e83ba5bb249985c8f998a770251733ebb09cf7053ddc1d",
+    "naclip.ViT-L-14.voc20.impulse_noise.s5.episode_counts.jsonl": "a434d20dafa1b0961048e498f46e566f7ad3ad2a0cd0bd89eb0be5bd4e23e3f8",
+    "naclip.ViT-L-14.voc20.defocus_blur.s5.episode_counts.jsonl": "ae9817ed1cf8cd94c7b9e954e0c671102c0e06065280a4363adf4ab558cb8a62",
+    "naclip.ViT-L-14.voc20.glass_blur.s5.episode_counts.jsonl": "494817a1ed8a65f5ce806ee4d20d9e427fb62754bad7a777308d0b1b85605738",
+    "naclip.ViT-L-14.voc20.motion_blur.s5.episode_counts.jsonl": "15a82a9e1ee5ab8092fa8f9436a1ed066d98a596aa3ce1e909f505b2e5f6194a",
+    "naclip.ViT-L-14.voc20.zoom_blur.s5.episode_counts.jsonl": "c10ba4c53146b2f3edb87a02fbf05c9a9c516e75ddc77eb91a1f95c8939c60e2",
+    "naclip.ViT-L-14.voc20.snow.s5.episode_counts.jsonl": "0308026cf8c10cf85ad02411854c64c3591a73ca92befc6aa5c0ab525e67810a",
+    "naclip.ViT-L-14.voc20.frost.s5.episode_counts.jsonl": "9b14cda9d1ea024b7557a262e20824ad1e9398af7770ec58d81430112c6d7f56",
+    "naclip.ViT-L-14.voc20.fog.s5.episode_counts.jsonl": "1db16df1711fdaa3f715924eb58ede438f9bbd72331154a47c3a7f8130f07df8",
+    "naclip.ViT-L-14.voc20.brightness.s5.episode_counts.jsonl": "ef3cbd945230c426c66eef8db38b53bb674ad6fd9f688b8ccb5c1c81ea94cf44",
+    "naclip.ViT-L-14.voc20.contrast.s5.episode_counts.jsonl": "f9e4bc199aef254e027a05feb1dbc81ad32dbd78daca14c4b0454c0adfaffb9a",
+    "naclip.ViT-L-14.voc20.elastic_transform.s5.episode_counts.jsonl": "929d63a27732dd3c3557073c68703d0af02d67d0c345330b073b47b74af51a0a",
+    "naclip.ViT-L-14.voc20.pixelate.s5.episode_counts.jsonl": "fb77fc49ada83fb35cdf1738aa98074fc38da74889b4ed99a5f88dfde12ffe2c",
+    "naclip.ViT-L-14.voc20.jpeg_compression.s5.episode_counts.jsonl": "5edcba750f0794e261519f9b92616a80da62d92b6837f65fee813eb44cb35658",
+    "CONDITION_RESULTS.json": "adcc97e1b22896e757b0af4e797f746aeff3f9faa0fd86f0746d99614e5632d3",
+    "PAIRED_SUMMARIES.json": "fac408d31a19c2da3ed00fd3272bacdece5f91a5818cfd25ca14b42d68f28077",
+    "ANNOTATIONS_READ.json": "02ec960c47ddefd4aa96d41997869f8c55a523674961a1d04b2607fa8ccc5efb"
+  },
+  "GT_opened": true,
+  "new_GPU": false,
+  "output_bytes": 17919844,
+  "suite_prepared_sha256": "ad2804b18158528eefc11525d87d43c696b02ae57f3c2a94291663545d5b9569",
+  "parent_barrier_sha256": "4efdffa4a7fd0d95eff2319ee78cbce49ad6d7436ec81621dd3859d627fe04dc",
+  "prospective_analysis_sha256": "c9bc701da574d453e06d25b431a8bb2d65ae6e8e823053113913208dc5a12e6b",
+  "audit_binding": {
+    "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G_offline_score_20261102_2321/ADMITTED.json",
+    "admission_sha256": "a61f64bac7df1fb42d4a1dcfb3e62c85d267db87711be2c5e3768313fb0f0c86",
+    "admission_identity": [
+      66306,
+      58237965,
+      1169,
+      1793633306559704061
+    ],
+    "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/G_offline_score_20261102_2321/INDEPENDENT_REPORT.md",
+    "report_sha256": "81f3465cf748467bae8caef28cf45734817fefceb8dbeccacd7b9a723181dd49",
+    "report_identity": [
+      66306,
+      58237964,
+      28231,
+      1793633255393585309
+    ],
+    "independent_reviewer": "Codex independent exact G1954 offline CPU_GT artifact audit, current execution; no additional agents"
+  },
+  "started_sha256": "02dfd3d718d895b1ce939a0328649cb191a1786927c55290ff5436fdfd82fde1",
+  "elapsed_seconds": 84.64839667174965
+}

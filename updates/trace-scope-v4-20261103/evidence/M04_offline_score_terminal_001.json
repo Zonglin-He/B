@@ -1,0 +1,637 @@
+{
+  "terminal_verified_at_UTC": "2026-11-02T23:02:00Z",
+  "service": {
+    "MainPID": "0",
+    "Result": "success",
+    "ExecMainStartTimestamp": "Tue 2026-11-03 06:57:18 CST",
+    "ExecMainExitTimestamp": "Tue 2026-11-03 07:01:43 CST",
+    "ExecMainPID": "2204185",
+    "ExecMainCode": "1",
+    "ExecMainStatus": "0",
+    "MemoryPeak": "4294967296",
+    "MemorySwapPeak": "0",
+    "LoadState": "loaded",
+    "ActiveState": "active",
+    "SubState": "exited",
+    "InvocationID": "f65ee607060b43e08aefdfbe7544155b"
+  },
+  "prepared_sha256": "46f5c1b644cbc7a0361b08b3e5ef1bec0dcad77d96b64324b6960022f31b3ee9",
+  "analysis_global_sha256": "b17a1d44381276205c0b80fd75c86ac96c22e95980e8be95f010fde6ff981b57",
+  "seal": {
+    "complete": true,
+    "datasets": 2,
+    "cells": 16,
+    "GT_opened": true,
+    "new_GPU": false,
+    "image_method_evaluations": 80840,
+    "artifact_sha256": {
+      "coco_object.episode_counts.jsonl": "d0d9081acef8b2670ab8ca009d1deac1bf97e130599b9967df3fe5dbba929590",
+      "pc60.episode_counts.jsonl": "c82bd40faead73d8d23ef936ffc341df1060a0b47a04441f8307f50b52e5faa5",
+      "DATASET_RESULTS.json": "41f359060a4c63551e75fdfd8a5e97dbc750c160f54290ccc486e4aad6a5bdde",
+      "ANNOTATIONS_READ.json": "a87e2ccb31b2eff56b0f1642aae1f78dae55378576069c49c8096bb9e7fee9bd"
+    },
+    "output_bytes": 8255051,
+    "suite_prepared_sha256": "46f5c1b644cbc7a0361b08b3e5ef1bec0dcad77d96b64324b6960022f31b3ee9",
+    "parent_barrier_sha256": "eb201ac715e7a06d23c2297dcb7332c60be813136a853157ba477951ed5320a3",
+    "prospective_analysis_sha256": "cf08822ef2e406b4508f2ac8f1b2c3093edd92248fc322aa161107c2aae63867",
+    "audit_binding": {
+      "admission_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M04_offline_score_20261103_0646/ADMITTED.json",
+      "admission_sha256": "5f65b15bb0bc310bb37b3b83d296dac9d0912e05bfeb9350ba96a72580c04e48",
+      "admission_identity": [
+        66306,
+        58238392,
+        2422,
+        "1793660078790856799"
+      ],
+      "report_path": "/home/wwww/hzl/results/trace_mechanism_20261102/M04_offline_score_20261103_0646/INDEPENDENT_REPORT.md",
+      "report_sha256": "da78fc903041c227736a892e353c444d01df85260c067e95412c7586a7d20674",
+      "report_identity": [
+        66306,
+        58238391,
+        19340,
+        "1793660050814850569"
+      ],
+      "independent_reviewer": "Codex-independent-M04-replacement-artifact-20261103"
+    },
+    "started_sha256": "29dd8d5c550bb92d86385c1cc9751572cd10241c2a150ac7fdc5fa2e7c5654cb",
+    "elapsed_seconds": 258.44664432294667
+  },
+  "all_output_hashes_and_bytes_verified": {
+    "coco_object.episode_counts.jsonl": {
+      "sha256": "d0d9081acef8b2670ab8ca009d1deac1bf97e130599b9967df3fe5dbba929590",
+      "bytes": 3240522
+    },
+    "pc60.episode_counts.jsonl": {
+      "sha256": "c82bd40faead73d8d23ef936ffc341df1060a0b47a04441f8307f50b52e5faa5",
+      "bytes": 3102433
+    },
+    "DATASET_RESULTS.json": {
+      "sha256": "41f359060a4c63551e75fdfd8a5e97dbc750c160f54290ccc486e4aad6a5bdde",
+      "bytes": 351133
+    },
+    "ANNOTATIONS_READ.json": {
+      "sha256": "a87e2ccb31b2eff56b0f1642aae1f78dae55378576069c49c8096bb9e7fee9bd",
+      "bytes": 1560963
+    }
+  },
+  "metadata_large_integer_encoding": "Nanosecond identity fields are exact decimal strings to avoid JavaScript integer rounding; raw hashed seal retains integer types",
+  "own_runtime_files_verified": 312,
+  "parent_native_bindings_verified": 68,
+  "parent_complete_graph_stat_revalidated": true,
+  "parent_and_own_metadata_audit_start_gates_cost_state_verified": true,
+  "terminal_GT_RGB_prediction_array_rescan": false,
+  "actual_threads": [
+    1,
+    1,
+    1
+  ],
+  "CUDA_initialized": false,
+  "suite": "/home/wwww/hzl/results/trace_mechanism_20261102/M04_offline_score_20261103_0646",
+  "main_exact_frozen_CPU_admission_receipt": "M04_CPU_score_admission_validation_002.json",
+  "live_execution_receipt": "M04_offline_score_execution_started_002.json",
+  "scientific_score_successfully_completed": true,
+  "old0604_failed_suite_preserved": true,
+  "new_GPU": false,
+  "results_summary": {
+    "coco_object": {
+      "images": 5000,
+      "episodes": 385,
+      "studies": {
+        "natural": {
+          "arms": {
+            "Dk_Ok": {
+              "mIoU": 29.361107076588144,
+              "CI95_pp": [
+                28.561542622347776,
+                30.01544544434859
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Oc": {
+              "mIoU": 32.67115876028661,
+              "CI95_pp": [
+                31.78478673387466,
+                33.29237043038778
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Ok": {
+              "mIoU": 30.963479938115142,
+              "CI95_pp": [
+                30.171994649566695,
+                31.515027921152768
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dk_Oc": {
+              "mIoU": 28.635600164244178,
+              "CI95_pp": [
+                27.782527208884936,
+                29.366671104634488
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          },
+          "contrasts": {
+            "native_C_minus_Confidence": {
+              "delta_pp": 3.3100516836984646,
+              "CI95_pp": [
+                2.6558057927010297,
+                3.8755649700032233
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_C_distribution": {
+              "delta_pp": 1.7076788221714665,
+              "CI95_pp": [
+                1.2235338268165177,
+                2.151878523853887
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_conf_distribution": {
+              "delta_pp": -0.7255069123439668,
+              "CI95_pp": [
+                -1.1177430314773837,
+                -0.3078301281041766
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_C_order": {
+              "delta_pp": 4.035558596042431,
+              "CI95_pp": [
+                3.2843209409500944,
+                4.658609092731143
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_conf_order": {
+              "delta_pp": 1.602372861526998,
+              "CI95_pp": [
+                0.9850379488751027,
+                2.179104870316709
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "distribution_order_interaction": {
+              "delta_pp": 2.433185734515437,
+              "CI95_pp": [
+                1.8446961071041836,
+                2.956681491137973
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          }
+        },
+        "common_active": {
+          "arms": {
+            "Dk_Ok": {
+              "mIoU": 29.36925791060406,
+              "CI95_pp": [
+                28.561612143241867,
+                30.027886277911595
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Oc": {
+              "mIoU": 32.67115876028661,
+              "CI95_pp": [
+                31.78478673387466,
+                33.29237043038778
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Ok": {
+              "mIoU": 30.911141685502095,
+              "CI95_pp": [
+                30.13728590503047,
+                31.4624574346198
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dk_Oc": {
+              "mIoU": 28.743283322023363,
+              "CI95_pp": [
+                27.900618105528757,
+                29.47344568723101
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          },
+          "contrasts": {
+            "native_C_minus_Confidence": {
+              "delta_pp": 3.30190084968255,
+              "CI95_pp": [
+                2.656346263063295,
+                3.8543846917248072
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_C_distribution": {
+              "delta_pp": 1.760017074784514,
+              "CI95_pp": [
+                1.2683438584539843,
+                2.2007372979968585
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_conf_distribution": {
+              "delta_pp": -0.6259745885806964,
+              "CI95_pp": [
+                -0.95171700794307,
+                -0.28256626468975765
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_C_order": {
+              "delta_pp": 3.9278754382632464,
+              "CI95_pp": [
+                3.1629625705091833,
+                4.552426974712573
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_conf_order": {
+              "delta_pp": 1.5418837748980359,
+              "CI95_pp": [
+                0.9307236056277635,
+                2.1130075288572616
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "distribution_order_interaction": {
+              "delta_pp": 2.385991663365207,
+              "CI95_pp": [
+                1.8200656197661744,
+                2.8652514893697902
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          }
+        }
+      },
+      "coverage": {
+        "natural.Dk_Ok": {
+          "original_candidates": 173503,
+          "retained_candidates": 173503,
+          "EPS_active_candidates": 173503,
+          "active_sources": 5000,
+          "sources": 5000
+        },
+        "natural.Dc_Oc": {
+          "original_candidates": 173503,
+          "retained_candidates": 173503,
+          "EPS_active_candidates": 171161,
+          "active_sources": 5000,
+          "sources": 5000
+        },
+        "natural.Dc_Ok": {
+          "original_candidates": 173503,
+          "retained_candidates": 173503,
+          "EPS_active_candidates": 171161,
+          "active_sources": 5000,
+          "sources": 5000
+        },
+        "natural.Dk_Oc": {
+          "original_candidates": 173503,
+          "retained_candidates": 173503,
+          "EPS_active_candidates": 173503,
+          "active_sources": 5000,
+          "sources": 5000
+        },
+        "common_active.Dk_Ok": {
+          "original_candidates": 173503,
+          "retained_candidates": 171161,
+          "EPS_active_candidates": 171161,
+          "active_sources": 5000,
+          "sources": 5000
+        },
+        "common_active.Dc_Oc": {
+          "original_candidates": 173503,
+          "retained_candidates": 171161,
+          "EPS_active_candidates": 171161,
+          "active_sources": 5000,
+          "sources": 5000
+        },
+        "common_active.Dc_Ok": {
+          "original_candidates": 173503,
+          "retained_candidates": 171161,
+          "EPS_active_candidates": 171161,
+          "active_sources": 5000,
+          "sources": 5000
+        },
+        "common_active.Dk_Oc": {
+          "original_candidates": 173503,
+          "retained_candidates": 171161,
+          "EPS_active_candidates": 171161,
+          "active_sources": 5000,
+          "sources": 5000
+        }
+      },
+      "raw_model_seconds": {
+        "natural.Dk_Ok": 1655.0576040130109,
+        "natural.Dc_Oc": 1647.2159824501723,
+        "natural.Dc_Ok": 1648.037722086534,
+        "natural.Dk_Oc": 1655.2276447340846,
+        "common_active.Dk_Ok": 1646.7329842559993,
+        "common_active.Dc_Oc": 1646.6380948824808,
+        "common_active.Dc_Ok": 1646.286341466941,
+        "common_active.Dk_Oc": 1647.7389558432624
+      },
+      "bootstrap_key": "[20261102,\"M04\",\"coco_object\",\"rank_distribution\"]",
+      "replicates": 10000,
+      "undefined_draws": 0,
+      "scope": "Fixed configuration, historical exposure; natural includes EPS admission differences, common-active is conditioned; not candidate causality"
+    },
+    "pc60": {
+      "images": 5105,
+      "episodes": 393,
+      "studies": {
+        "natural": {
+          "arms": {
+            "Dk_Ok": {
+              "mIoU": 30.573158315245976,
+              "CI95_pp": [
+                30.085639363595934,
+                30.997896596624397
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Oc": {
+              "mIoU": 30.78284293417,
+              "CI95_pp": [
+                30.277214282406575,
+                31.22996630073754
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Ok": {
+              "mIoU": 30.141726050774704,
+              "CI95_pp": [
+                29.652867989368453,
+                30.57533090212557
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dk_Oc": {
+              "mIoU": 30.67510805210377,
+              "CI95_pp": [
+                30.194577121654326,
+                31.096750386408626
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          },
+          "contrasts": {
+            "native_C_minus_Confidence": {
+              "delta_pp": 0.20968461892402246,
+              "CI95_pp": [
+                0.06533843715338215,
+                0.3484290123153129
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_C_distribution": {
+              "delta_pp": 0.6411168833952949,
+              "CI95_pp": [
+                0.48258877557087165,
+                0.7919106995814232
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_conf_distribution": {
+              "delta_pp": 0.10194973685779374,
+              "CI95_pp": [
+                0.056771802638082035,
+                0.1490775597811414
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_C_order": {
+              "delta_pp": 0.10773488206622872,
+              "CI95_pp": [
+                -0.025542833235721662,
+                0.2397084953742888
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_conf_order": {
+              "delta_pp": -0.4314322644712725,
+              "CI95_pp": [
+                -0.5335883747436045,
+                -0.3295922187177074
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "distribution_order_interaction": {
+              "delta_pp": 0.5391671465375012,
+              "CI95_pp": [
+                0.3922449326219047,
+                0.6827902878995439
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          }
+        },
+        "common_active": {
+          "arms": {
+            "Dk_Ok": {
+              "mIoU": 30.584039591826127,
+              "CI95_pp": [
+                30.09875513575424,
+                31.008765922073415
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Oc": {
+              "mIoU": 30.78284293417,
+              "CI95_pp": [
+                30.277214282406575,
+                31.22996630073754
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dc_Ok": {
+              "mIoU": 30.15195907918149,
+              "CI95_pp": [
+                29.663701414393163,
+                30.585659396484488
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "Dk_Oc": {
+              "mIoU": 30.669074542318715,
+              "CI95_pp": [
+                30.187896735738004,
+                31.091572679406063
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          },
+          "contrasts": {
+            "native_C_minus_Confidence": {
+              "delta_pp": 0.1988033423438722,
+              "CI95_pp": [
+                0.05701394961770952,
+                0.3350401354928749
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_C_distribution": {
+              "delta_pp": 0.6308838549885074,
+              "CI95_pp": [
+                0.4705050452546806,
+                0.7830306123440529
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_order_minus_conf_order_at_conf_distribution": {
+              "delta_pp": 0.08503495049258802,
+              "CI95_pp": [
+                0.03939109838327903,
+                0.13031061377858233
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_C_order": {
+              "delta_pp": 0.11376839185128418,
+              "CI95_pp": [
+                -0.018521907819737296,
+                0.24199225859341647
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "C_distribution_minus_conf_distribution_at_conf_order": {
+              "delta_pp": -0.4320805126446352,
+              "CI95_pp": [
+                -0.5331679107161237,
+                -0.3306140186534364
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            },
+            "distribution_order_interaction": {
+              "delta_pp": 0.5458489044959194,
+              "CI95_pp": [
+                0.39496353439117593,
+                0.6894297525005021
+              ],
+              "undefined_draws": 0,
+              "total_draws": 10000
+            }
+          }
+        }
+      },
+      "coverage": {
+        "natural.Dk_Ok": {
+          "original_candidates": 101505,
+          "retained_candidates": 101505,
+          "EPS_active_candidates": 101505,
+          "active_sources": 5105,
+          "sources": 5105
+        },
+        "natural.Dc_Oc": {
+          "original_candidates": 101505,
+          "retained_candidates": 101505,
+          "EPS_active_candidates": 101002,
+          "active_sources": 5105,
+          "sources": 5105
+        },
+        "natural.Dc_Ok": {
+          "original_candidates": 101505,
+          "retained_candidates": 101505,
+          "EPS_active_candidates": 101002,
+          "active_sources": 5105,
+          "sources": 5105
+        },
+        "natural.Dk_Oc": {
+          "original_candidates": 101505,
+          "retained_candidates": 101505,
+          "EPS_active_candidates": 101505,
+          "active_sources": 5105,
+          "sources": 5105
+        },
+        "common_active.Dk_Ok": {
+          "original_candidates": 101505,
+          "retained_candidates": 101002,
+          "EPS_active_candidates": 101002,
+          "active_sources": 5105,
+          "sources": 5105
+        },
+        "common_active.Dc_Oc": {
+          "original_candidates": 101505,
+          "retained_candidates": 101002,
+          "EPS_active_candidates": 101002,
+          "active_sources": 5105,
+          "sources": 5105
+        },
+        "common_active.Dc_Ok": {
+          "original_candidates": 101505,
+          "retained_candidates": 101002,
+          "EPS_active_candidates": 101002,
+          "active_sources": 5105,
+          "sources": 5105
+        },
+        "common_active.Dk_Oc": {
+          "original_candidates": 101505,
+          "retained_candidates": 101002,
+          "EPS_active_candidates": 101002,
+          "active_sources": 5105,
+          "sources": 5105
+        }
+      },
+      "raw_model_seconds": {
+        "natural.Dk_Ok": 460.1991398483515,
+        "natural.Dc_Oc": 460.05423448607326,
+        "natural.Dc_Ok": 459.3309467919171,
+        "natural.Dk_Oc": 459.8116841269657,
+        "common_active.Dk_Ok": 459.73405137844384,
+        "common_active.Dc_Oc": 459.6036486327648,
+        "common_active.Dc_Ok": 459.1374723678455,
+        "common_active.Dk_Oc": 459.55372183956206
+      },
+      "bootstrap_key": "[20261102,\"M04\",\"pc60\",\"rank_distribution\"]",
+      "replicates": 10000,
+      "undefined_draws": 0,
+      "scope": "Fixed configuration, historical exposure; natural includes EPS admission differences, common-active is conditioned; not candidate causality"
+    }
+  }
+}

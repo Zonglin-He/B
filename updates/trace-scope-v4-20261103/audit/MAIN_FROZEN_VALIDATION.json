@@ -1,0 +1,36 @@
+{
+  "admission_sha256": "cf7e6eacb0c03534e59c658fc7a992066f1b73c549fabb1545fca1f40cd7dddb",
+  "automatic_execution": false,
+  "build_not_run": true,
+  "elapsed_seconds": 0.2317552911117673,
+  "environment": {
+    "CUDA_VISIBLE_DEVICES": "",
+    "MKL_NUM_THREADS": "1",
+    "OMP_NUM_THREADS": "1",
+    "OPENBLAS_NUM_THREADS": "1",
+    "PYTHONDONTWRITEBYTECODE": "1"
+  },
+  "plan_sha256": "ea0954464286696bcc64255931ce3e0fece455a7d67cd6826936e687890d52c2",
+  "report_sha256": "98051b458e7c4682037e91b0d7333baea252358e5561e3aa49c22b73950da02a",
+  "runtime_sha256": "eb87a9acca0e9fc89844169c93329cac29f6370e851dd1803411ed5d708320e9",
+  "validation": {
+    "input_files": 314,
+    "members": 317,
+    "plan_sha256": "ea0954464286696bcc64255931ce3e0fece455a7d67cd6826936e687890d52c2",
+    "scope": {
+      "R1": "PARTIAL: historical local COCO-CD/Waterbirds mask and subset creation remains unrecovered; not fully reproducible.",
+      "credentials": "Known sensitive/hidden paths are refused. Explicit code/config membership requires author review; this is not a semantic secret-scanning certification.",
+      "current_code": "Current explicit first-party roots, not a claim of frozen-runtime identity or dependency closure.",
+      "evidence_basis": "Pinned reviewed-exporter metadata and raw review/disposition bytes, not a fresh service/completion/scientific audit. Operator completion acknowledgements are not machine grading of Markdown conclusions.",
+      "excluded": "No datasets, raw RGB/GT, predictions/NPY, weights/models, count/source-feature/transition streams, vendor/dependency trees, old release exports or whole evidence archive.",
+      "not_turnkey": "Other first-party tool roots, external dependencies and dataset construction are not silently bundled; this is not turnkey reconstruction.",
+      "paper": "Original whole archives preserved byte-for-byte; raw reviews/disposition are separate post-freeze additions.",
+      "publication": "Local packet only. No Git, network, push, upload or release action; main author handles any later Zonglin-He/B publication.",
+      "science": "No metric computation, new experiment, positivity/rating filter, GT permission or overall acceptance claim.",
+      "tests": "Source presence is not execution evidence; six reference-mutation demonstrations remain NOT RUN by this packaging task.",
+      "verification_contract": "Completion requires the pinned LOCAL_VERIFY.json, exact three-file output membership and successful archive/manifest byte verification. Any FAILED.json invalidates completion even if a receipt was already written before an ordinary close error."
+    },
+    "valid": true,
+    "writes_performed": false
+  }
+}

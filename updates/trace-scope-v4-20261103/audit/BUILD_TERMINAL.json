@@ -1,0 +1,81 @@
+{
+  "admission_sha256": "cf7e6eacb0c03534e59c658fc7a992066f1b73c549fabb1545fca1f40cd7dddb",
+  "all314input_stat_identities_unchanged": true,
+  "complete": true,
+  "dispatch_receipt_sha256": "0a830eb87de1c7b761045e0c2d75ed71ef5fca772248297f4d4f0a73aa66304d",
+  "exact_output_membership": true,
+  "invocation": "7782af5122ea42f688c2af6619de31d4",
+  "main_frozen_validation_sha256": "f0b6da4bdac72fff0a5c32da15c475f4c1fe793bb6e8cd2b19cc3ae66cc131a0",
+  "main_postbuild_full_packet_verify": true,
+  "manual_once": true,
+  "member_count": 317,
+  "no_FAILED_marker": true,
+  "observed_at_UTC": "2026-11-03T11:43:46.666139+00:00",
+  "outputs": {
+    "LOCAL_VERIFY.json": {
+      "bytes": 2322,
+      "identity": [
+        66306,
+        59638167,
+        2322,
+        1793706167934279075,
+        1793706167934279075,
+        1,
+        33152
+      ],
+      "sha256": "15fafddd597a3ff58e1ea5bc4460f1636275c0f75157cfe02a5be6dd22cd643a"
+    },
+    "MANIFEST.json": {
+      "bytes": 214992,
+      "identity": [
+        66306,
+        59638166,
+        214992,
+        1793706167810534150,
+        1793706167810534150,
+        1,
+        33152
+      ],
+      "sha256": "64fb80ff46b73028ecb5afd426698e8d2cacdffa8e7f4f870748da6450403a34"
+    },
+    "delivery.tar.gz": {
+      "bytes": 8926222,
+      "identity": [
+        66306,
+        59638165,
+        8926222,
+        1793706167803780678,
+        1793706167803780678,
+        1,
+        33152
+      ],
+      "sha256": "43c6693e580fc6d609fd8379c1eaaa1a38bb03e43b5a536c7b7455e4e77aa0a4"
+    }
+  },
+  "pid": 2373472,
+  "plan_sha256": "ea0954464286696bcc64255931ce3e0fece455a7d67cd6826936e687890d52c2",
+  "privacy_pattern_screen": {
+    "derived_composites_only_inside_original_paper_archives": true,
+    "high_confidence_pattern_hits": 0,
+    "raw_inputs_not_read": true,
+    "semantic_secret_certification": false,
+    "top_level_text_members": 315
+  },
+  "publication_performed": false,
+  "same_invocation_retained_success": true,
+  "scientific_or_GPU_work": false,
+  "service_memory_peak_not_scientific_cost": true,
+  "service_observed": {
+    "ActiveState": "active",
+    "ExecMainCode": 1,
+    "ExecMainExitTimestamp": "Tue 2026-11-03 19:42:47 CST",
+    "ExecMainPID": 2373472,
+    "ExecMainStartTimestamp": "Tue 2026-11-03 19:42:47 CST",
+    "ExecMainStatus": 0,
+    "LoadState": "loaded",
+    "MainPID": 0,
+    "Result": "success",
+    "SubState": "exited"
+  },
+  "unit": "trace-scope-v4-delivery-20261103-001.service"
+}
