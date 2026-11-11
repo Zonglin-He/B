@@ -1,0 +1,91 @@
+{
+  "original": {
+    "boundary": "Fixed native-system point estimates only; different budgets and episode grouping, no direct paired significance claim",
+    "comparisons": {
+      "coco_object": {
+        "MLMP_mIoU_percent": 30.781365833138217,
+        "TRACE_C_mIoU_percent": 29.95189136544864,
+        "TRACE_config": {
+          "batch_size": 13,
+          "class_extensions": true,
+          "data_dir": "[local path withheld]",
+          "data_subdir": "coco_stuff",
+          "dataset": "COCOObjectDataset",
+          "lr": 0.00375,
+          "patch_size": [
+            224,
+            224
+          ],
+          "patch_stride": 112,
+          "resize": [
+            224,
+            224
+          ],
+          "steps": 30,
+          "trace_max_regions": 35,
+          "trace_view_batch_size": 16
+        },
+        "TRACE_minus_MLMP_pp": -0.8294744676895789,
+        "equal_budget": false,
+        "paired_interval_available": false
+      },
+      "pc60": {
+        "MLMP_mIoU_percent": 31.438803481995343,
+        "TRACE_C_mIoU_percent": 30.867324017869045,
+        "TRACE_config": {
+          "batch_size": 13,
+          "class_extensions": true,
+          "data_dir": "[local path withheld]",
+          "data_subdir": "VOCdevkit/VOC2012",
+          "dataset": "PascalContext60Dataset",
+          "lr": 0.00375,
+          "patch_size": [
+            224,
+            224
+          ],
+          "patch_stride": 112,
+          "resize": [
+            224,
+            224
+          ],
+          "steps": 7,
+          "trace_max_regions": 20,
+          "trace_view_batch_size": 16
+        },
+        "TRACE_minus_MLMP_pp": -0.5714794641262984,
+        "equal_budget": false,
+        "paired_interval_available": false
+      },
+      "voc20": {
+        "MLMP_mIoU_percent": 84.38219889315894,
+        "TRACE_C_mIoU_percent": 83.64790443827438,
+        "TRACE_config": {
+          "batch_size": 2,
+          "class_extensions": true,
+          "data_dir": "[local path withheld]",
+          "data_subdir": "VOCdevkit/VOC2012",
+          "dataset": "PascalVOC20Dataset",
+          "lr": 0.0015,
+          "patch_size": [
+            224,
+            224
+          ],
+          "patch_stride": 112,
+          "resize": [
+            224,
+            224
+          ],
+          "steps": 9,
+          "trace_max_regions": 8,
+          "trace_view_batch_size": 16
+        },
+        "TRACE_minus_MLMP_pp": -0.7342944548845622,
+        "equal_budget": false,
+        "paired_interval_available": false
+      }
+    },
+    "complete": true
+  },
+  "reason": "MLMP PIL-nearest scorer differed from frozen G TRACE palette/CV2-nearest; corrected scores are canonical",
+  "status": "SUPERSEDED_FOR_SAME_GEOMETRY_COMPARISON"
+}

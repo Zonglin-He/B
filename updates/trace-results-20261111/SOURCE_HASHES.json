@@ -1,0 +1,101 @@
+{
+  "artifacts": [
+    {
+      "artifact": "R00_analysis_20261105_1746/output/RESULT.json",
+      "bytes": 7704000,
+      "sha256": "d22597874da10521393429c01a44c8a6b525061c83c01325d76234e305001c05"
+    },
+    {
+      "artifact": "R03_analysis_20261105_2140/output/SUMMARY.json",
+      "bytes": 26737,
+      "sha256": "8e61f9e57539dc9221bec020a3b956718900b86e7bd6070de4983b66e0bc70c4"
+    },
+    {
+      "artifact": "full/coco_object/result.json",
+      "bytes": 15030,
+      "sha256": "8e57c5539bbacc95cbe9354902015e000ae4974cc48f7ec2fd89bd0154fc3953"
+    },
+    {
+      "artifact": "full/voc21/result.json",
+      "bytes": 7274,
+      "sha256": "a23db4dd4fddc0376a209d49d8810f6bc99c6eeea73080a93a0b739557e6f2c0"
+    },
+    {
+      "artifact": "full/pc60/result.json",
+      "bytes": 12560,
+      "sha256": "42a64c93286626ccb7ca71b49191962354d0c01f96f4473e84726d2194317516"
+    },
+    {
+      "artifact": "full/voc20/result.json",
+      "bytes": 7118,
+      "sha256": "e448279ebcbde5e257b107a1d2722f27fb34759ca8de39754eb7045a88a4903b"
+    },
+    {
+      "artifact": "full/pc59/result.json",
+      "bytes": 12410,
+      "sha256": "58d8915211364097033b3a536aa95e75363c4d5cd9f81c8e24c37bb1a3c732e6"
+    },
+    {
+      "artifact": "full/coco_stuff/result.json",
+      "bytes": 26592,
+      "sha256": "b7557d9b6840240d916180ff159cb0aad4f782b8526732df430cab66149598e7"
+    },
+    {
+      "artifact": "full/coco_cd/result.json",
+      "bytes": 4880,
+      "sha256": "10bc5aa3283b01e50006a74c5337685bc72590e50437d234fd98768e74c3bc62"
+    },
+    {
+      "artifact": "full/waterbirds_seg/result.json",
+      "bytes": 4992,
+      "sha256": "40bcf7abee465eeb5f4f24bb5732ecc2a9976afa5a3e5671855047c093216b68"
+    },
+    {
+      "artifact": "trace_mechanism_20261102/G_offline_score_20261102_2321/CONDITION_RESULTS.json",
+      "bytes": 357932,
+      "sha256": "adcc97e1b22896e757b0af4e797f746aeff3f9faa0fd86f0746d99614e5632d3"
+    },
+    {
+      "artifact": "R01_native_score_first3_20261106_1115/output/RESULT.json",
+      "bytes": 577718,
+      "sha256": "e332685e501175b81b39231263c7481d511f45387d93586c5755c96c3315275a"
+    },
+    {
+      "artifact": "trace_revision_20261105/R01_native_next3_direct_score_20261109_1620/RESULT.json",
+      "bytes": 568790,
+      "sha256": "9d915937194f8b858036499b7e7df6ab791796b25d8b0d5e1aa9910a11e47c34"
+    },
+    {
+      "artifact": "trace_revision_20261105/R01_native_B16_direct_score_CV2_20261110_1220/RESULT.json",
+      "bytes": 574211,
+      "sha256": "0d26b9d823c2f327a64bd607e738d4fa658082d97004b8cf210a6f8e052dde40"
+    },
+    {
+      "artifact": "trace_revision_20261105/R01_native_B16_direct_score_20261110_0900/TRACE_COMPARISON.json",
+      "bytes": 1638,
+      "sha256": "9a85c02e8885b4073f024030664c0f528a0bb45e5614c6df8c01fe84077d0468"
+    },
+    {
+      "artifact": "trace_revision_20261105/R01_native_B16_direct_score_CV2_20261110_1220/TRACE_COMPARISON.json",
+      "bytes": 1638,
+      "sha256": "28ff4480a5f449de9ae19b7b3ab55eb406634b38683a0038bb7bb0dc7d1c6ddf"
+    },
+    {
+      "artifact": "R04_construction_20261106_0204/output/ALL_CASES_SEALED.json",
+      "bytes": 622801,
+      "sha256": "f418ade595afb3bd70d1739bdc88e0411bc0faf09150cc08c0fe78460b14f782"
+    },
+    {
+      "artifact": "R04_tensor_gate_20261106_0452/output/ALL_TENSORS_SEALED.json",
+      "bytes": 91891,
+      "sha256": "7c81322e2a9656892b058cec79d9e263a2e61483e9074d9873601251c20dbd58"
+    },
+    {
+      "artifact": "R01_MLMP_S5_direct_20261110_0915/predictions/queue_state.json",
+      "bytes": 188,
+      "sha256": "486a4f93fa8707f716caa68ccb535545c3756962a1775fc96d97be011f24d7df"
+    }
+  ],
+  "only_selected_summary_files_read": true,
+  "raw_paths_omitted": true
+}

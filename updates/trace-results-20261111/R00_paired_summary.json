@@ -1,0 +1,287 @@
+{
+  "complete": true,
+  "contrasts": 26,
+  "corruption_macro": {
+    "episodes": 725,
+    "estimand": "arithmetic mean of15 type-specific pooled-mIoU differences; never pixel pooling",
+    "interval": "pointwise percentile95, common whole-episode draws across15types/arms; no multiplicity adjustment; undefined retained",
+    "lower95_pp": 3.7180497482428114,
+    "namespace": "TRACE-R00-v1:20261105:L14.VOC20-C.S5.shared15",
+    "point_delta_pp": 4.399670788370579,
+    "seed": 6119448658016106585,
+    "source_images": 1449,
+    "total_draws": 10000,
+    "type_count": 15,
+    "types": {
+      "brightness": {
+        "lower95_pp": 3.6885363307632293,
+        "point_delta_pp": 4.8576813957152325,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 6.052270336565789
+      },
+      "contrast": {
+        "lower95_pp": 0.7321264398601433,
+        "point_delta_pp": 2.02570176046288,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 3.3573678999960643
+      },
+      "defocus_blur": {
+        "lower95_pp": 0.7722967401767701,
+        "point_delta_pp": 2.3086042970470544,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 3.8396422204201803
+      },
+      "elastic_transform": {
+        "lower95_pp": 3.836228494437091,
+        "point_delta_pp": 5.1303942995894545,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 6.40349419595801
+      },
+      "fog": {
+        "lower95_pp": 3.875967811569946,
+        "point_delta_pp": 5.033108592474491,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 6.218532506375877
+      },
+      "frost": {
+        "lower95_pp": 4.409705613670312,
+        "point_delta_pp": 5.60036372517304,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 6.782388058374911
+      },
+      "gaussian_noise": {
+        "lower95_pp": 2.634863610695461,
+        "point_delta_pp": 3.924427263216529,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 5.228096687865504
+      },
+      "glass_blur": {
+        "lower95_pp": 2.287259508430967,
+        "point_delta_pp": 3.679049507373165,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 5.061217242340766
+      },
+      "impulse_noise": {
+        "lower95_pp": 2.6289896434553492,
+        "point_delta_pp": 4.116827697831809,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 5.668719203110472
+      },
+      "jpeg_compression": {
+        "lower95_pp": 3.4147749725580914,
+        "point_delta_pp": 4.60342304840637,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 5.779133196757104
+      },
+      "motion_blur": {
+        "lower95_pp": 2.6806501175367026,
+        "point_delta_pp": 3.9704019990594333,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 5.3192886632735386
+      },
+      "pixelate": {
+        "lower95_pp": 2.255132763384485,
+        "point_delta_pp": 3.4392326344419644,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 4.609438471269801
+      },
+      "shot_noise": {
+        "lower95_pp": 4.077256268424783,
+        "point_delta_pp": 5.393227907911424,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 6.732475569889518
+      },
+      "snow": {
+        "lower95_pp": 3.906713204965959,
+        "point_delta_pp": 5.133942723077439,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 6.362402021878112
+      },
+      "zoom_blur": {
+        "lower95_pp": 5.0328053219312165,
+        "point_delta_pp": 6.778674973778394,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 8.509031620906455
+      }
+    },
+    "undefined_draws": 0,
+    "upper95_pp": 5.071764815387998
+  },
+  "direction": "TRACE image_C minus NoAdapt; percentage points",
+  "independent_conditions": {
+    "L14.clean.coco_cd": {
+      "episodes": 20,
+      "geometry": "PIL-nearest224",
+      "images": 500,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 9.837435718520464,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.coco_cd",
+      "point_delta_pp": 11.41275766116609,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 8810643932708194488,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 12.86331011419202
+    },
+    "L14.clean.coco_object": {
+      "episodes": 385,
+      "geometry": "PIL-nearest224",
+      "images": 5000,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 2.4932558284733775,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.coco_object",
+      "point_delta_pp": 3.0245396109906224,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 2700796204098475416,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 3.484022353443836
+    },
+    "L14.clean.coco_stuff": {
+      "episodes": 715,
+      "geometry": "PIL-nearest224",
+      "images": 5000,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 1.4808666068432839,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.coco_stuff",
+      "point_delta_pp": 1.719948024104582,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 18060935363297790241,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 1.9309966146769568
+    },
+    "L14.clean.pc59": {
+      "episodes": 851,
+      "geometry": "PIL-nearest224",
+      "images": 5105,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 1.7661275871091802,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.pc59",
+      "point_delta_pp": 1.9949827863509029,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 8096550205773824338,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 2.22117733029086
+    },
+    "L14.clean.pc60": {
+      "episodes": 393,
+      "geometry": "PIL-nearest224",
+      "images": 5105,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 1.64374922209498,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.pc60",
+      "point_delta_pp": 1.832074099108869,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 2125092308779453809,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 2.0192760873417823
+    },
+    "L14.clean.voc20": {
+      "episodes": 725,
+      "geometry": "PIL-nearest224",
+      "images": 1449,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 3.444305752526346,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.voc20",
+      "point_delta_pp": 4.5712419350978735,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 3099755341558260026,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 5.754585555002695
+    },
+    "L14.clean.voc21": {
+      "episodes": 81,
+      "geometry": "PIL-nearest224",
+      "images": 1449,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 3.0478877639852646,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.voc21",
+      "point_delta_pp": 3.7192267269085875,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 14642862308982725083,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 4.409077367088314
+    },
+    "L14.clean.waterbirds_seg": {
+      "episodes": 444,
+      "geometry": "PIL-nearest224",
+      "images": 5322,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 8.022268150289241,
+      "namespace": "TRACE-R00-v1:20261105:L14.clean.waterbirds_seg",
+      "point_delta_pp": 8.619347034370456,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 1216098738468371513,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 9.237267939551499
+    },
+    "naclip.ViT-B-16.coco_object.original.s0": {
+      "episodes": 385,
+      "geometry": "G-native palette/OpenCV-nearest224",
+      "images": 5000,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": -0.574224235260729,
+      "namespace": "TRACE-R00-v1:20261105:naclip.ViT-B-16.coco_object.original.s0",
+      "point_delta_pp": -0.02513521038479638,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 2400386002720120817,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 0.5277829058657856
+    },
+    "naclip.ViT-B-16.pc60.original.s0": {
+      "episodes": 393,
+      "geometry": "G-native palette/OpenCV-nearest224",
+      "images": 5105,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": -0.3636642036532323,
+      "namespace": "TRACE-R00-v1:20261105:naclip.ViT-B-16.pc60.original.s0",
+      "point_delta_pp": -0.13714203709613315,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 12179494551342709171,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 0.09194513240076467
+    },
+    "naclip.ViT-B-16.voc20.original.s0": {
+      "episodes": 725,
+      "geometry": "G-native palette/OpenCV-nearest224",
+      "images": 1449,
+      "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+      "lower95_pp": 2.421483507611225,
+      "namespace": "TRACE-R00-v1:20261105:naclip.ViT-B-16.voc20.original.s0",
+      "point_delta_pp": 3.3383581611379043,
+      "resampling_unit": "whole original episode shared by arms",
+      "seed": 201885119346818364,
+      "total_draws": 10000,
+      "undefined_draws": 0,
+      "upper95_pp": 4.292816638380633
+    }
+  },
+  "limitation": "Observed historical predictions and settings; WBdevelopment-overlap/localCDhistoric construction partial; no untouched or independent-run claim",
+  "new_inference": false,
+  "raw_GT_RGB_NPY_model_opened": false,
+  "readouts": 27,
+  "seconds": 29.585674873553216
+}

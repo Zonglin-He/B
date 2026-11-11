@@ -1,5 +1,9 @@
 # B: TRACE Experiment Results
 
+## November11 Results Snapshot
+
+[All completed results and current status](updates/trace-results-20261111/README.md):9 native MLMP comparisons, corrected B16 geometry, R00 paired intervals, all16R03 models and historical archive index. Original15S5 is still running/unscored. Earlier releases and limitations remain unchanged.
+
 Public evidence archive for TRACE research. The November 2 update also includes
 an explicitly authorized implementation and manuscript snapshot. It preserves historical results, the submitted method's
 reviewer evidence, and newer algorithm variants without treating them as one

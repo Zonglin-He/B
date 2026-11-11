@@ -1,5 +1,9 @@
 # Latest Completed Results
 
+## November11 Results Snapshot
+
+[All completed results and current status](updates/trace-results-20261111/README.md):9 native MLMP comparisons, corrected B16 geometry, R00 paired intervals, all16R03 models and historical archive index. Original15S5 is still running/unscored. Earlier releases and limitations remain unchanged.
+
 This page separates submitted-method evidence from new algorithm variants.
 The authoritative rows, populations, seeds, and paths remain in the linked CSVs.
 This is a snapshot, not a live experiment dashboard.

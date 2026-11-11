@@ -1,0 +1,206 @@
+{
+  "R01_native_B16_direct_score_CV2_20261110_1220": {
+    "coco_object": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 30.745577550440522
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 30.0957130897448
+        }
+      },
+      "images": 5000,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 0.25480862759969475,
+        "namespace": "TRACE-R01-B16-v1:20261105:coco_object:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 0.6498644606957242,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 12450208383728039071,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 1.031902453209427
+      }
+    },
+    "pc60": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 31.384636343842743
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 30.977217868123784
+        }
+      },
+      "images": 5105,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 0.17628727007027054,
+        "namespace": "TRACE-R01-B16-v1:20261105:pc60:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 0.40741847571895207,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 5011048625749986725,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 0.636971718540067
+      }
+    },
+    "voc20": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 84.32916305916027
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 80.60422322527265
+        }
+      },
+      "images": 1449,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 2.873166053833187,
+        "namespace": "TRACE-R01-B16-v1:20261105:voc20:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 3.7249398338876176,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 3867372927827426308,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 4.632017870729954
+      }
+    }
+  },
+  "R01_native_next3_direct_score_20261109_1620": {
+    "coco_stuff": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 21.05303658064759
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 20.192271231094143
+        }
+      },
+      "images": 5000,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 0.6806549685341322,
+        "namespace": "TRACE-R01-NEXT3-v1:20261105:coco_stuff:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 0.8607653495534464,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 13362853784739589525,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 1.0337104126425052
+      }
+    },
+    "pc59": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 32.78773052734897
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 31.591709852507627
+        }
+      },
+      "images": 5105,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 0.9991212605419056,
+        "namespace": "TRACE-R01-NEXT3-v1:20261105:pc59:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 1.1960206748413427,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 8406934960225083863,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 1.3960524939281016
+      }
+    },
+    "voc20": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 84.01105380074631
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 79.03724491892102
+        }
+      },
+      "images": 1449,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 4.107483394318806,
+        "namespace": "TRACE-R01-NEXT3-v1:20261105:voc20:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 4.973808881825306,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 3566247342662765075,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 5.867545979917559
+      }
+    }
+  },
+  "output": {
+    "coco_object": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 30.728470714645713
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 29.646988778853434
+        }
+      },
+      "images": 5000,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 0.8179825399990492,
+        "namespace": "TRACE-R01-v1:20261105:coco_object:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 1.0814819357922794,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 12552954390037721477,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 1.344226376027425
+      }
+    },
+    "pc60": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 29.851406230421308
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 28.95087348751653
+        }
+      },
+      "images": 5105,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 0.7231635267423697,
+        "namespace": "TRACE-R01-v1:20261105:pc60:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 0.9005327429047796,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 15422611690972670005,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 1.0823402335800476
+      }
+    },
+    "voc21": {
+      "arms": {
+        "MLMP": {
+          "mIoU_percent": 50.36535176317063
+        },
+        "native_NoAdapt": {
+          "mIoU_percent": 49.65909751364774
+        }
+      },
+      "images": 1449,
+      "paired_MLMP_minus_own_native_NoAdapt": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": 0.19075325952582017,
+        "namespace": "TRACE-R01-v1:20261105:voc21:MLMP-minus-native_NoAdapt",
+        "point_delta_pp": 0.7062542495228925,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 5375324976169017794,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 1.2428644503181385
+      }
+    }
+  }
+}

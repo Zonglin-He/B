@@ -1,0 +1,20 @@
+{
+  "automatic_next": "All predictions sealed and actual GPUexit0 -> separate CPUscore -> direct TRACE-C comparison",
+  "condition_images": 21735,
+  "conditions": 15,
+  "not_a_live_status_file": true,
+  "queue": {
+    "GT_opened": false,
+    "complete_conditions": 11,
+    "completed_sources": 136,
+    "condition": "contrast",
+    "phase": "FULL_PREDICTIONS",
+    "pid": 1326201,
+    "time_UTC": "2026-11-11T04:38:18Z",
+    "total_sources": 1449
+  },
+  "scientific_mIoU_available": false,
+  "snapshot_at_UTC": "2026-11-11T04:38:21.066744+00:00",
+  "status": "PREDICTION_RUNNING_NOT_SCORED",
+  "total_predictions": 43470
+}

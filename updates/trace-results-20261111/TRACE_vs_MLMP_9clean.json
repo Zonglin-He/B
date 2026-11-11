@@ -1,0 +1,113 @@
+{
+  "boundary": "Fixed complete native systems, unequal budgets/readouts/episode composition, not direct paired significance or SOTA/equally-tuned optimum",
+  "comparisons": [
+    {
+      "GT_geometry": "PIL-nearest224",
+      "MLMP_mIoU_percent": 30.728470714645713,
+      "MLMP_own_NoAdapt_mIoU_percent": 29.646988778853434,
+      "TRACE_C_mIoU_percent": 32.67115876028661,
+      "TRACE_minus_MLMP_pp": 1.942688045640896,
+      "backbone": "L14",
+      "dataset": "coco_object",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 5000
+    },
+    {
+      "GT_geometry": "PIL-nearest224",
+      "MLMP_mIoU_percent": 29.851406230421308,
+      "MLMP_own_NoAdapt_mIoU_percent": 28.95087348751653,
+      "TRACE_C_mIoU_percent": 30.78284293416999,
+      "TRACE_minus_MLMP_pp": 0.9314367037486839,
+      "backbone": "L14",
+      "dataset": "pc60",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 5105
+    },
+    {
+      "GT_geometry": "PIL-nearest224",
+      "MLMP_mIoU_percent": 50.36535176317063,
+      "MLMP_own_NoAdapt_mIoU_percent": 49.65909751364774,
+      "TRACE_C_mIoU_percent": 53.380927317501744,
+      "TRACE_minus_MLMP_pp": 3.0155755543311145,
+      "backbone": "L14",
+      "dataset": "voc21",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 1449
+    },
+    {
+      "GT_geometry": "PIL-nearest224",
+      "MLMP_mIoU_percent": 21.05303658064759,
+      "MLMP_own_NoAdapt_mIoU_percent": 20.192271231094143,
+      "TRACE_C_mIoU_percent": 21.91153604279533,
+      "TRACE_minus_MLMP_pp": 0.8584994621477406,
+      "backbone": "L14",
+      "dataset": "coco_stuff",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 5000
+    },
+    {
+      "GT_geometry": "PIL-nearest224",
+      "MLMP_mIoU_percent": 32.78773052734897,
+      "MLMP_own_NoAdapt_mIoU_percent": 31.591709852507627,
+      "TRACE_C_mIoU_percent": 33.5867529673231,
+      "TRACE_minus_MLMP_pp": 0.7990224399741308,
+      "backbone": "L14",
+      "dataset": "pc59",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 5105
+    },
+    {
+      "GT_geometry": "PIL-nearest224",
+      "MLMP_mIoU_percent": 84.01105380074631,
+      "MLMP_own_NoAdapt_mIoU_percent": 79.03724491892102,
+      "TRACE_C_mIoU_percent": 83.61434494676755,
+      "TRACE_minus_MLMP_pp": -0.3967088539787653,
+      "backbone": "L14",
+      "dataset": "voc20",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 1449
+    },
+    {
+      "GT_geometry": "palette-CV2-nearest224",
+      "MLMP_mIoU_percent": 30.745577550440522,
+      "MLMP_own_NoAdapt_mIoU_percent": 30.0957130897448,
+      "TRACE_C_mIoU_percent": 29.95189136544864,
+      "TRACE_minus_MLMP_pp": -0.7936861849918841,
+      "backbone": "B16",
+      "dataset": "coco_object",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 5000
+    },
+    {
+      "GT_geometry": "palette-CV2-nearest224",
+      "MLMP_mIoU_percent": 31.384636343842743,
+      "MLMP_own_NoAdapt_mIoU_percent": 30.977217868123784,
+      "TRACE_C_mIoU_percent": 30.867324017869045,
+      "TRACE_minus_MLMP_pp": -0.5173123259736983,
+      "backbone": "B16",
+      "dataset": "pc60",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 5105
+    },
+    {
+      "GT_geometry": "palette-CV2-nearest224",
+      "MLMP_mIoU_percent": 84.32916305916027,
+      "MLMP_own_NoAdapt_mIoU_percent": 80.60422322527265,
+      "TRACE_C_mIoU_percent": 83.64790443827438,
+      "TRACE_minus_MLMP_pp": -0.6812586208858846,
+      "backbone": "B16",
+      "dataset": "voc20",
+      "direct_paired_interval_available": false,
+      "equal_budget": false,
+      "images": 1449
+    }
+  ]
+}
