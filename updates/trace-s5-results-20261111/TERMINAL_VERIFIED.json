@@ -1,0 +1,40 @@
+{
+  "FAILED_absent": true,
+  "complete": true,
+  "status": {
+    "trace-direct-s5-gpu-20261110-0915.service": {
+      "ActiveState": "active",
+      "ExecMainCode": "1",
+      "ExecMainExitTimestamp": "Wed 2026-11-11 21:07:39 CST",
+      "ExecMainPID": "1326201",
+      "ExecMainStatus": "0",
+      "InvocationID": "76912be6ab6f4383a15441dcfc89bfaf",
+      "MainPID": "0",
+      "Result": "success",
+      "SubState": "exited"
+    },
+    "trace-direct-s5-pipeline-20261110-0915.service": {
+      "ActiveState": "active",
+      "ExecMainCode": "1",
+      "ExecMainExitTimestamp": "Wed 2026-11-11 21:08:30 CST",
+      "ExecMainPID": "1326186",
+      "ExecMainStatus": "0",
+      "InvocationID": "faa7059e3e9c495c89217fbc50588eff",
+      "MainPID": "0",
+      "Result": "success",
+      "SubState": "exited"
+    },
+    "trace-direct-s5-score-20261110-0915.service": {
+      "ActiveState": "active",
+      "ExecMainCode": "1",
+      "ExecMainExitTimestamp": "Wed 2026-11-11 21:08:22 CST",
+      "ExecMainPID": "1845685",
+      "ExecMainStatus": "0",
+      "InvocationID": "6232de72e7924659a4691106e47f7045",
+      "MainPID": "0",
+      "Result": "success",
+      "SubState": "exited"
+    }
+  },
+  "verified_output_hashes": 51
+}

@@ -1,0 +1,509 @@
+{
+  "arithmetic_15type_macro": {
+    "MLMP_mIoU_percent": 77.55523221660997,
+    "TRACE_C_mIoU_percent": 75.3203314866448,
+    "native_NoAdapt_mIoU_percent": 70.9205044117037,
+    "paired_TRACE_minus_MLMP": {
+      "episodes": 725,
+      "estimand": "arithmetic mean of15 type-specific pooled-mIoU differences; never pixel pooling",
+      "interval": "pointwise percentile95, common whole-episode draws across15types/arms; no multiplicity adjustment; undefined retained",
+      "lower95_pp": -2.774033679090416,
+      "namespace": "TRACE-R01-S5-v1:20261105:15type-macro:TRACE-C-minus-MLMP",
+      "point_delta_pp": -2.2349007299651777,
+      "seed": 1281959704736389221,
+      "source_images": 1449,
+      "total_draws": 10000,
+      "type_count": 15,
+      "types": {
+        "brightness": {
+          "lower95_pp": -2.3599675275251277,
+          "point_delta_pp": -1.2467223862683028,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.20565013507183408
+        },
+        "contrast": {
+          "lower95_pp": -4.873918365774473,
+          "point_delta_pp": -3.6246704184040937,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -2.3539982833757533
+        },
+        "defocus_blur": {
+          "lower95_pp": -4.6976945557219745,
+          "point_delta_pp": -3.141780851811518,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -1.67942397808868
+        },
+        "elastic_transform": {
+          "lower95_pp": -5.974272473324722,
+          "point_delta_pp": -4.452459314784946,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -2.9735990881793897
+        },
+        "fog": {
+          "lower95_pp": -2.6875163603059,
+          "point_delta_pp": -1.573750630573329,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.5218903808367864
+        },
+        "frost": {
+          "lower95_pp": -2.506707806086471,
+          "point_delta_pp": -1.3508909392112827,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.19097944913728523
+        },
+        "gaussian_noise": {
+          "lower95_pp": -4.233406526002951,
+          "point_delta_pp": -2.5761154492609535,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.9353197566565695
+        },
+        "glass_blur": {
+          "lower95_pp": -2.944694272611012,
+          "point_delta_pp": -1.2903241467202378,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": 0.3735219160267541
+        },
+        "impulse_noise": {
+          "lower95_pp": -4.305555182144006,
+          "point_delta_pp": -2.7354964133911324,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -1.1490190038073098
+        },
+        "jpeg_compression": {
+          "lower95_pp": -3.2988507113578214,
+          "point_delta_pp": -2.1898234833988823,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -1.161275665588796
+        },
+        "motion_blur": {
+          "lower95_pp": -2.7156256607268388,
+          "point_delta_pp": -1.669688019595668,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.679657198798755
+        },
+        "pixelate": {
+          "lower95_pp": -2.4181903663102298,
+          "point_delta_pp": -1.3007576049469378,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.26660302135608027
+        },
+        "shot_noise": {
+          "lower95_pp": -3.6852275665283045,
+          "point_delta_pp": -2.2362647969392953,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.8688076212354888
+        },
+        "snow": {
+          "lower95_pp": -2.8305011679578067,
+          "point_delta_pp": -1.6277239872591736,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.4930595376391527
+        },
+        "zoom_blur": {
+          "lower95_pp": -4.314303516352245,
+          "point_delta_pp": -2.5070425069119153,
+          "total_draws": 10000,
+          "undefined_draws": 0,
+          "upper95_pp": -0.7530243434721154
+        }
+      },
+      "undefined_draws": 0,
+      "upper95_pp": -1.719761257695322
+    }
+  },
+  "boundary": "Fixed native complete systems; historically exposed TRACE settings, unequal budgets/readouts; single original run, pointwise intervals without multiplicity correction; not causal or equally tuned/SOTA evidence",
+  "complete": true,
+  "conditions": {
+    "brightness": {
+      "TRACE_C_mIoU_percent": 82.1570338215848,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 83.4037562078531
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 77.29938152173739
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -2.364726772367836,
+        "namespace": "TRACE-R01-S5-v1:20261105:brightness:TRACE-C-minus-MLMP",
+        "point_delta_pp": -1.2467223862683028,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 15592484280350305082,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.2053354721094425
+      }
+    },
+    "contrast": {
+      "TRACE_C_mIoU_percent": 75.50254423205357,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 79.12721465045766
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 73.47755180317965
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -4.867375157998022,
+        "namespace": "TRACE-R01-S5-v1:20261105:contrast:TRACE-C-minus-MLMP",
+        "point_delta_pp": -3.6246704184040937,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 9818605731047407847,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -2.3740421371292286
+      }
+    },
+    "defocus_blur": {
+      "TRACE_C_mIoU_percent": 77.32510837419872,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 80.46688922601024
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 75.01930467509523
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -4.69293406085833,
+        "namespace": "TRACE-R01-S5-v1:20261105:defocus_blur:TRACE-C-minus-MLMP",
+        "point_delta_pp": -3.141780851811518,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 15449160765281772326,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -1.741610141204292
+      }
+    },
+    "elastic_transform": {
+      "TRACE_C_mIoU_percent": 69.54162132265857,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 73.9940806374435
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 64.40923823081894
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -5.983632867517316,
+        "namespace": "TRACE-R01-S5-v1:20261105:elastic_transform:TRACE-C-minus-MLMP",
+        "point_delta_pp": -4.452459314784946,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 12178587408978199528,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -2.954614814079988
+      }
+    },
+    "fog": {
+      "TRACE_C_mIoU_percent": 78.23960054576841,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 79.81335117634175
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 73.20130604545363
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -2.705956545599291,
+        "namespace": "TRACE-R01-S5-v1:20261105:fog:TRACE-C-minus-MLMP",
+        "point_delta_pp": -1.573750630573329,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 10869153233378740676,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.46450030543735554
+      }
+    },
+    "frost": {
+      "TRACE_C_mIoU_percent": 72.00648114617822,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 73.3573720853895
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 66.40627102487386
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -2.5317895427663135,
+        "namespace": "TRACE-R01-S5-v1:20261105:frost:TRACE-C-minus-MLMP",
+        "point_delta_pp": -1.3508909392112827,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 9476362056837088292,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.18365697521186453
+      }
+    },
+    "gaussian_noise": {
+      "TRACE_C_mIoU_percent": 68.29878918190538,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 70.87490463116633
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 64.37301409915233
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -4.242545391669298,
+        "namespace": "TRACE-R01-S5-v1:20261105:gaussian_noise:TRACE-C-minus-MLMP",
+        "point_delta_pp": -2.5761154492609535,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 14978307054620966381,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.9695585263209306
+      }
+    },
+    "glass_blur": {
+      "TRACE_C_mIoU_percent": 77.24193381869391,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 78.53225796541416
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 73.56166024291986
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -2.9560824796618,
+        "namespace": "TRACE-R01-S5-v1:20261105:glass_blur:TRACE-C-minus-MLMP",
+        "point_delta_pp": -1.2903241467202378,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 16783624499524156730,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": 0.35744480878754464
+      }
+    },
+    "impulse_noise": {
+      "TRACE_C_mIoU_percent": 68.51348338125796,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 71.24897979464909
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 64.39574057340096
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -4.327573876328029,
+        "namespace": "TRACE-R01-S5-v1:20261105:impulse_noise:TRACE-C-minus-MLMP",
+        "point_delta_pp": -2.7354964133911324,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 8063487481837628557,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -1.147984514851541
+      }
+    },
+    "jpeg_compression": {
+      "TRACE_C_mIoU_percent": 80.0109201147954,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 82.2007435981943
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 75.40902578829306
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -3.318229280320749,
+        "namespace": "TRACE-R01-S5-v1:20261105:jpeg_compression:TRACE-C-minus-MLMP",
+        "point_delta_pp": -2.1898234833988823,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 10023524596175625408,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -1.100282599454502
+      }
+    },
+    "motion_blur": {
+      "TRACE_C_mIoU_percent": 79.70061730673062,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 81.37030532632627
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 75.73275797260962
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -2.7215921953224567,
+        "namespace": "TRACE-R01-S5-v1:20261105:motion_blur:TRACE-C-minus-MLMP",
+        "point_delta_pp": -1.669688019595668,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 14718282410672505566,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.6773701372495798
+      }
+    },
+    "pixelate": {
+      "TRACE_C_mIoU_percent": 83.58600266047465,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 84.88676026542157
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 80.14637329418994
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -2.3858596828973497,
+        "namespace": "TRACE-R01-S5-v1:20261105:pixelate:TRACE-C-minus-MLMP",
+        "point_delta_pp": -1.3007576049469378,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 7992653795445808559,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.2689454374870178
+      }
+    },
+    "shot_noise": {
+      "TRACE_C_mIoU_percent": 72.97707906285513,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 75.21334385979442
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 67.5814608253044
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -3.67139208084889,
+        "namespace": "TRACE-R01-S5-v1:20261105:shot_noise:TRACE-C-minus-MLMP",
+        "point_delta_pp": -2.2362647969392953,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 5565177096575992929,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.8219472330451045
+      }
+    },
+    "snow": {
+      "TRACE_C_mIoU_percent": 77.8452370574249,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 79.47296104468407
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 72.71364462125648
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -2.8475321941632554,
+        "namespace": "TRACE-R01-S5-v1:20261105:snow:TRACE-C-minus-MLMP",
+        "point_delta_pp": -1.6277239872591736,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 17670057889094713917,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.4787274717276795
+      }
+    },
+    "zoom_blur": {
+      "TRACE_C_mIoU_percent": 66.85852027309171,
+      "arms": {
+        "MLMP": {
+          "defined_classes": 20,
+          "mIoU_percent": 69.36556278000363
+        },
+        "native_NoAdapt": {
+          "defined_classes": 20,
+          "mIoU_percent": 60.080835457270474
+        }
+      },
+      "images": 1449,
+      "paired_TRACE_minus_MLMP": {
+        "interval": "pointwise percentile95; no multiplicity adjustment; no dropping undefined draws",
+        "lower95_pp": -4.276757199994991,
+        "namespace": "TRACE-R01-S5-v1:20261105:zoom_blur:TRACE-C-minus-MLMP",
+        "point_delta_pp": -2.5070425069119153,
+        "resampling_unit": "whole original episode shared by arms",
+        "seed": 9934546889877433064,
+        "total_draws": 10000,
+        "undefined_draws": 0,
+        "upper95_pp": -0.769011202545613
+      }
+    }
+  },
+  "images": 21735,
+  "predictions": 43470
+}

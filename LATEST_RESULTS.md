@@ -1,5 +1,9 @@
 # Latest Completed Results
 
+## November11 Evening: Original15 S5 Complete
+
+[Completed corruption comparison](updates/trace-s5-results-20261111/README.md):TRACE-C75.320%,MLMP77.555%,paired delta-2.235pp,95%CI[-2.774,-1.720]. All15 TRACE point estimates lower;14 pointwise intervals below0. All24 fixed native MLMP conditions scored; other revision families remain incomplete. Earlier releases unchanged.
+
 ## November11 Results Snapshot
 
 [All completed results and current status](updates/trace-results-20261111/README.md):9 native MLMP comparisons, corrected B16 geometry, R00 paired intervals, all16R03 models and historical archive index. Original15S5 is still running/unscored. Earlier releases and limitations remain unchanged.
