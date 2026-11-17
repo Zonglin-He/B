@@ -1,0 +1,26 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{All fourteen core controls on 256 evaluation-disjoint training sources per family; three common-block orders. These are not full-test ablations.}
+\label{tab:ablations}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrrr}
+\toprule
+Control & L14Obj & L14PC & L14VOC & Birds & B16Obj & B16PC & B16VOC \\
+\midrule
+MLMP & 27.3789 & 27.3666 & 85.1580 & 52.7228 & 26.7469 & 27.4752 & 85.4209 \\
+Default area & 27.3559 & 27.3585 & 85.5281 & 53.5278 & 26.7864 & 27.3751 & 85.6407 \\
+Selected area & 29.7698 & 27.4814 & 86.4012 & 56.9606 & 26.8762 & 26.5061 & 85.1719 \\
+No region & 29.8751 & 27.5148 & 86.0399 & 56.5153 & 26.7458 & 26.6530 & 84.3408 \\
+No global & 21.5081 & 24.9032 & 86.5109 & 54.9724 & 24.3581 & 25.5889 & 84.3486 \\
+No CLS & 29.1259 & 27.3316 & 83.7738 & 54.6627 & 26.5546 & 26.1514 & 82.8931 \\
+No region/CLS & 29.7665 & 27.4428 & 83.0407 & 54.3601 & 26.5030 & 26.3761 & 82.3003 \\
+Region-balanced mass & 29.8745 & 27.6537 & 86.0919 & 56.3485 & 26.3574 & 26.6514 & 85.8282 \\
+Covered uniform & 30.0884 & 27.4341 & 86.3957 & 56.8866 & 26.6773 & 26.7427 & 85.1568 \\
+Image uniform & 30.2061 & 27.5372 & 86.0478 & 56.9545 & 27.0602 & 26.8649 & 84.9910 \\
+Spatial shuffle & 30.1805 & 27.6098 & 85.8565 & 57.0430 & 27.0955 & 26.7422 & 84.4041 \\
+Semantic top8 & 29.7304 & 27.4814 & 86.2969 & 56.9606 & 26.8121 & 26.5061 & 85.1625 \\
+Top4 & 29.7276 & 27.4712 & 86.4135 & 56.8918 & 26.8979 & 26.5976 & 85.0585 \\
+Top16 & 29.7993 & 27.3340 & 86.2522 & 56.8538 & 26.9651 & 26.6284 & 85.1321 \\
+\bottomrule
+\end{tabular}
+\end{table}

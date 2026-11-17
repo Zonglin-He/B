@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Selected pilot costs in seconds per source; CUDA peaks in GiB. Initialization is excluded from warm totals and recorded separately. Peaks include live wrapper/reference state and allocator history, not an intrinsic memory advantage.}
+\label{tab:cost}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrrrrrr}
+\toprule
+Task & Arm & Steps & Input & Reset & Probe & Update & Readout & Total & Alloc & Reserve \\
+\midrule
+L14\_coco\_object & MLMP\_paper & 10 & 0.0027 & 0.0024 & 0.0000 & 0.1251 & 0.0148 & 0.1450 & 3.665 & 3.902 \\
+L14\_coco\_object & area\_C & 1 & 0.0029 & 0.0048 & 0.0621 & 0.0367 & 0.0235 & 0.1301 & 3.633 & 3.902 \\
+L14\_pc60 & MLMP\_paper & 10 & 0.0023 & 0.0025 & 0.0000 & 0.1250 & 0.0123 & 0.1421 & 2.573 & 3.902 \\
+L14\_pc60 & area\_C & 10 & 0.0022 & 0.0013 & 0.0469 & 0.0790 & 0.0074 & 0.1368 & 2.834 & 3.902 \\
+\bottomrule
+\end{tabular}
+\end{table}

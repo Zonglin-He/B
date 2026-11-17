@@ -1,0 +1,24 @@
+\begin{table*}[t]
+\centering\small
+\caption{Full declared clean populations. Means average official per-trial rounded mIoU. Delta is TRACE minus MLMP in percentage points. Missing TENT cells were not run in the six-cell scope.}
+\label{tab:clean}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Condition & N & NoAdapt & TENT & MLMP & TRACE & Delta \\
+\midrule
+L14 Object & 5000 & 25.0300 & 26.0533 & 30.4200 & 32.4400 & +2.0200 \\
+L14 PC60 & 5104 & 24.9500 & 25.2800 & 27.9833 & 28.7133 & +0.7300 \\
+L14 VOC20 & 1449 & 75.9100 & 76.9967 & 83.8033 & 86.1200 & +2.3167 \\
+L14 VOC21 & 1449 & 45.1300 & 45.6433 & 50.7600 & 51.1433 & +0.3833 \\
+L14 PC59 & 5104 & 28.2300 & 28.7233 & 31.9433 & 32.8767 & +0.9333 \\
+L14 Stuff & 5000 & 18.3400 & 18.7567 & 21.2500 & 21.9933 & +0.7433 \\
+L14 Waterbirds-Seg & 2568 & 45.3700 & -- & 49.9033 & 54.0267 & +4.1233 \\
+L14 COCO-CD & 500 & 62.0600 & -- & 72.3967 & 77.3833 & +4.9867 \\
+\midrule
+B16 Object & 5000 & 29.5900 & -- & 30.5267 & 29.7900 & -0.7367 \\
+B16 PC60 & 5104 & 28.9000 & -- & 29.6133 & 29.2000 & -0.4133 \\
+B16 VOC20 & 1449 & 77.5900 & -- & 84.1233 & 84.3800 & +0.2567 \\
+\bottomrule
+\end{tabular}
+\end{table*}

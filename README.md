@@ -1,5 +1,9 @@
 # B: TRACE Experiment Results
 
+## November17: Complete area_C Results and Paper
+
+[New complete results and paper](updates/trace-area-c-complete-20261117/README.md):26mainconditions,126diagnosticcells,fullcomponent/time controls,sixTENT,context/groups,training-searchhistory and17pagepaper. S5macro+2.1089pp versus fixedMLMP;B16Object/PC60negative;C-specific/equal-time benefits unestablished. Earlier method versions and releases remain unchanged.
+
 ## November11 Evening: Original15 S5 Complete
 
 [Completed corruption comparison](updates/trace-s5-results-20261111/README.md):TRACE-C75.320%,MLMP77.555%,paired delta-2.235pp,95%CI[-2.774,-1.720]. All15 TRACE point estimates lower;14 pointwise intervals below0. All24 fixed native MLMP conditions scored; other revision families remain incomplete. Earlier releases unchanged.

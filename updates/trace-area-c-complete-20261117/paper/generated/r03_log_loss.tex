@@ -1,0 +1,28 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Historical R03 Log loss increments, M1 minus M0 in original score units, not percentage points. Fixed OOF fits; all null/negative results retained.}
+\label{tab:r03-log_loss}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrrrr}
+\toprule
+Dataset & Endpoint & M0 & GTquality & Delta & Lower95 & Upper95 \\
+\midrule
+Object & primary & linear & False & -0.001369 & -0.006348 & +0.003653 \\
+Object & primary & linear & True & -0.000262 & -0.003357 & +0.002826 \\
+Object & primary & nonlinear & False & +0.001424 & -0.005710 & +0.009849 \\
+Object & primary & nonlinear & True & +0.002371 & -0.002294 & +0.008550 \\
+Object & secondary\_support & linear & False & -0.000450 & -0.006440 & +0.005730 \\
+Object & secondary\_support & linear & True & +0.001276 & -0.000573 & +0.003131 \\
+Object & secondary\_support & nonlinear & False & +0.000528 & -0.004950 & +0.006312 \\
+Object & secondary\_support & nonlinear & True & +0.001678 & +0.000293 & +0.003150 \\
+PC60 & primary & linear & False & +0.000807 & -0.000332 & +0.002038 \\
+PC60 & primary & linear & True & +0.000762 & -0.000343 & +0.001963 \\
+PC60 & primary & nonlinear & False & +0.000476 & -0.001028 & +0.002067 \\
+PC60 & primary & nonlinear & True & +0.001267 & -0.000162 & +0.002671 \\
+PC60 & secondary\_support & linear & False & -0.002105 & -0.009333 & +0.004818 \\
+PC60 & secondary\_support & linear & True & +0.000563 & -0.001517 & +0.002668 \\
+PC60 & secondary\_support & nonlinear & False & -0.001658 & -0.009109 & +0.005554 \\
+PC60 & secondary\_support & nonlinear & True & +0.000640 & -0.000960 & +0.002214 \\
+\bottomrule
+\end{tabular}
+\end{table}

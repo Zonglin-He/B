@@ -1,0 +1,561 @@
+\documentclass[10pt,twocolumn]{article}
+\input{preamble}
+\title{TRACE: Area-Aware Contextual Allocation\\
+and Its Limits in Open-Vocabulary Segmentation}
+\author{Research Draft}
+\date{17 November 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+Context-dependent confidence motivates alternative allocation of test-time
+updates, but contextual self-support need not predict beneficial adaptation.
+We study \method, a training-calibrated episodic system retaining global pixel
+and CLS entropy while adding an area-aware regional bonus from fixed,
+region-preserving background views. Against fixed official MLMP, the selected
+system improves all eight declared L14 clean means and all fifteen severity-5
+corruption means, with a 2.109-point corruption macro gain, but regresses on
+B16 Object and PC60. We complete 126 training-diagnostic control cells, two
+full-population component controls, 126 foreground-preserving background
+interventions, six official TENT tasks, and a time-only budget study.
+The full regional-term effects are \ObjDelta{} points on Object and
+\PCDelta{} on PC60; both paired 95\% intervals include zero. Both full
+time-budget accuracy contrasts also include zero. These findings separate a
+useful selected operating point from an unestablished C-specific mechanism.
+We retain negative transfer, beneficial context, historical risk-prediction
+nulls, unequal calibration budgets, PC development exposure, an unresolved
+Object paper-value discrepancy, and uncertainty that cannot be identified
+from the original crossed update episodes. The evidence does not establish
+calibrated update reliability, universal transfer, or equal-budget superiority.
+\end{abstract}
+
+\section{Introduction}
+Open-vocabulary semantic segmentation transfers language--image representations
+to dense prediction without restricting inference to a fixed learned class
+head. CLIP provides a general representation \citep{radford2021clip}, while
+segmentation-specific readouts such as NACLIP improve spatial localization
+\citep{hajimiri2025naclip}. Test-time adaptation can additionally change a
+model using unlabeled test inputs. Its attraction is practical, but its
+self-supervised objective is only a proxy for segmentation quality.
+
+Contextual confidence is a plausible source of proxy failure. A predicted
+region can remain confident because its surroundings reinforce a class, and
+minimizing that prediction's entropy can reinforce an error. The converse
+also matters: context often contains useful evidence. A method should not
+assume that every background dependence is harmful, or equate a context-view
+score with the probability that an update improves segmentation.
+
+We examine an area-aware allocation rule on top of the MLMP adaptation system
+\citep{noori2025mlmp}. Predicted connected regions are selected at the initial
+model. Each region is preserved while its complement is altered, and the
+initial model's retained query support supplies a fixed regional score C.
+The current method retains global pixel and CLS entropy; its regional bonus
+is normalized over the whole image grid. It is not the older region-only,
+image-normalized objective, and C does not decide whether an image receives
+its selected update budget.
+
+The central experimental question is attribution, not just the final score.
+The selected system changes several operating fields relative to untuned
+paper MLMP. We therefore separate the full-system benchmark, the matched
+default-parameter C addition, selected-parameter remove/replace controls,
+full-population regional-term ablations, and independently selected time
+budgets. The resulting evidence supports a bounded empirical system finding:
+the selected operating point can outperform fixed MLMP, but neither the
+regional component nor equal-budget accuracy superiority is established by
+the two full component and time studies. These negative and null results
+are part of the contribution of this evaluation, not omitted exceptions.
+
+\begin{figure*}[t]
+  \centering\includegraphics[width=\textwidth]{figures/pipeline.png}
+  \caption{Current \method{} pipeline. Initial-model candidates and C stay fixed
+  within each episode. The update retains global pixel and CLS entropy and adds
+  a full-image-normalized regional bonus. Model and optimizer state reset before
+  the next episode. The final native MLMP readout is unchanged.}
+  \label{fig:pipeline}
+\end{figure*}
+
+\section{Related Work}
+Entropy minimization is an established adaptation mechanism, not a new
+objective introduced here. TENT adapts normalization parameters from test
+entropy \citep{wang2021tent}. MLMP specializes adaptation to open-vocabulary
+segmentation by combining intermediate visual features, multiple prompt
+templates, and pixel/CLS entropy \citep{noori2025mlmp}. Our fixed baseline is
+the original MLMP implementation, not an independently improvised surrogate.
+The six TENT cells use the original TENT class supplied in that same
+segmentation codebase.
+
+View-based confidence requires a precise intervention definition. DeYO uses
+object-destructive views and pseudo-label probability difference for sample
+selection and weighting \citep{lee2024deyo}. Our fixed Region-PLPD control is
+a regional adaptation, not a complete DeYO reproduction. The main C rule
+instead preserves a predicted region and alters its complement. Neither
+operation by itself makes a causal identification claim about beneficial
+updates. A GT-free quantile map to C is also not correctness calibration
+\citep{guo2017calibration}.
+
+Context and group shifts motivate additional evaluation but do not define
+interchangeable metrics. Pascal Context studies contextual dense labels
+\citep{mottaghi2014context}; COCO and COCO-Stuff distinguish objects and stuff
+\citep{lin2014coco,caesar2018cocostuff}. Group-shift work motivates reporting
+rare groups rather than average performance alone \citep{sagawa2020dro}.
+Our local Waterbirds-Seg extension measures segmentation, not standard
+Waterbirds classification accuracy. The fifteen corruption operators follow
+the common-corruption evaluation tradition \citep{hendrycks2019corruptions},
+but are applied to VOC images in the declared MLMP-derived protocol.
+
+\section{Current Method}
+\subsection{Initial Candidates and Contextual Support}
+For an episode of images $x_1,\ldots,x_B$, let $\theta_0$ be the initial
+model and $q$ a raw text query. We take the query argmax on the initial dense
+grid, form connected components, and retain up to $K$ regions per image in
+descending mean confidence, with frozen area and confidence thresholds.
+These candidates are fixed during the episode. They are not GT objects,
+and confidence preselection can exclude regions that C never evaluates.
+
+Let $m_{ir}$ denote a selected region mask. In RGB coordinates, a view keeps
+the mask pixels unchanged and transforms its complement by a fixed
+contrast/channel operation. If $\mu_i$ is the per-channel image mean and
+$D_{\rho,\pi}(x_i)=\operatorname{clip}_{[0,255]}
+\bigl(\pi[\mu_i+\rho(x_i-\mu_i)]\bigr)$ is the contrast transform with channel
+permutation, the view is
+\begin{equation}
+ \widetilde x_{ir}=m_{ir}\odot x_i+
+             (1-m_{ir})\odot D_{\rho,\pi}(x_i).
+\end{equation}
+Masks expand from the actual feature grid by nearest-neighbor interpolation.
+The C score is the initial model's mean probability for the region's original
+query $q_{ir}$ on its preserved support:
+\begin{equation}
+ C_{ir}=\frac{1}{|R_{ir}|}\sum_{u\in R_{ir}}
+       p_{\theta_0}(q_{ir},u\mid\widetilde x_{ir}).
+\end{equation}
+Candidate and C temperatures are explicit selected fields. C is a heuristic
+context-conditioned self-support score, not an estimated probability of
+correctness or positive update utility.
+
+\subsection{Area-Aware Regional Bonus}
+Let $P$ be the adaptation prompt-prefix count, $A$ the dense-grid area,
+and $H$ the entropy over raw query probabilities. With disjoint selected
+components, define $w_i(u)=\sum_r\mathbf{1}[u\in R_{ir}]C_{ir}^{\gamma}$.
+The current objective is
+\begin{align}
+ \mathcal L &=\mathcal L_{\rm pix}+
+     \alpha\mathcal L_{\rm cls}+\lambda\mathcal L_{\rm reg},\label{eq:objective}\\
+ \mathcal L_{\rm pix}&=\frac{1}{BPA}\sum_{i,t,u}H(p^t_\theta(u\mid x_i)),\\
+ \mathcal L_{\rm cls}&=\frac{1}{BP}\sum_{i,t}H(p^t_{\theta,\rm cls}(x_i)),\\
+ \mathcal L_{\rm reg}&=\frac{1}{BPA}\sum_{i,t,u}w_i(u)H(p^t_\theta(u\mid x_i)).
+\end{align}
+Pixel and CLS temperatures are applied before entropy. The regional sum
+divides by the full grid, not by the number of region pixels or by $\sum_r C_r$.
+Thus larger regions carry proportionate pixel mass, and smaller absolute C
+reduces the regional bonus. Global pixel and CLS terms still update the
+image for the selected number of steps. This is not an absolute update gate.
+
+\subsection{Optimization and Native Readout}
+We optimize the native visual LayerNorm parameter set with Adam and restore
+both model and optimizer state between episodes. Other parameters and text
+features stay fixed. The adaptation layer fraction selects feature outputs;
+it does not mean that only that fraction of parameters is trainable. The same
+numeric fraction maps to each backbone's actual depth.
+
+The final readout remains native MLMP: seven-prompt-average text embeddings,
+adaptive weighted aggregation of the prescribed visual layers, original
+patch reconstruction, and max-over-alias semantic decoding. Adaptation
+prompt-prefix changes do not silently change this final readout. Candidate
+regions are formed on raw queries; the semantic-candidate control changes
+that construction explicitly. For example, Object has 113 queries for 81
+classes, whereas PC60 has an identity 60-query/60-class mapping.
+
+\subsection{Training Calibration Is a Separate Budget}
+The adopted system has one selected 22-field configuration per L14 clean
+dataset. The operational screen covers learning rate, steps, batch size
+including 8/16, loss weights, candidates, views, temperatures, feature/prompt
+selection, and Adam fields through bounded one-factor and joint designs.
+This is not exhaustive Cartesian optimization. Refinement and confirmation
+use declared training panels; all matching B16 and VOC20 corruption fields
+are then copied unchanged. All exact selected values are in the supplement
+and machine-readable results.
+
+This calibration uses a different development-information and search budget
+from untuned MLMP. Although online adaptation sees no labels, the overall
+method-development procedure is not training-data-free. Earlier B16 and
+corruption searches were inspected before the final clean-only transfer
+policy and are disclosed rather than relabeled as never exposed.
+
+\section{Evaluation Protocol}
+\subsection{Populations and Baselines}
+The main comparison contains six canonical L14 segmentation conditions,
+two declared local extensions, three matching B16 conditions, and all fifteen
+VOC20 severity-5 corruptions: 26 conditions, three arms, and three shuffled
+orders. Pascal VOC uses the declared 20/21-class variants
+\citep{everingham2015pascal}; corrected Pascal Context uses the author-reference
+5104-image population. Object and Stuff have 5000 images each, VOC has 1449,
+local COCO-CD has 500, and local Waterbirds-Seg has 2568 declared test images.
+
+Official MLMP remains learning rate 0.001, ten steps, batch two, CLS coefficient
+one and seven prompts throughout. It is not tuned to match a target score.
+Official NoAdapt and TENT use their original single reference prompt and
+last-layer readout. Their contrast with MLMP is a system comparison, not a
+pure adaptation-update effect. Six full clean TENT cells complete the
+authorized canonical-baseline scope; no missing TENT cell is treated as zero.
+
+\subsection{Controls and Label Isolation}
+Seven diagnostic tasks use 256 training sources per family, disjoint from
+the actual official evaluation IDs and physical aliases, plus separate
+64-source GT-free calibration panels for score maps. Fourteen core controls
+cover global/CLS/region removals, mass-matched constant/shuffled weighting,
+semantic candidates and top-$K$. Seven additional fixed score-source controls
+run on Object/PC60 for both backbones, giving all 126 task/control cells.
+No new control is selected as the main method.
+
+Full Object/PC60 component studies remove only the regional term under the
+selected configuration. They were frozen after training diagnostics and
+historical main means had been seen, before their full no-region outcomes.
+The exposed chronology is explicit. Predictions are label-isolated, sealed
+and successfully exited before a separate CPU GT stage. Actual finite
+first-four-image loss/parameter/logit checks use tolerance $10^{-5}$ and
+zero changed decoded labels before model execution proceeds.
+
+\subsection{Dependence-Aware Uncertainty}
+Multiple images can share an optimizer update, and repeated shuffled
+arrangements create dependence across many images. The original TRACE/MLMP
+three-order comparisons connect each population into one component. We do
+not invent image-iid intervals or subtract independent marginal intervals
+for those main contrasts. Three-order standard deviations are not CIs.
+
+New controls keep episodes inside common eight-source blocks; the R04
+intervention uses four-source blocks. Ten thousand shared whole-block draws
+pair both arms and all orders, recomputing pooled class IoU and valid-class
+omission inside each draw. Common blocks conservatively contain all actual
+shared-update components; singleton-batch repetitions are not new independent
+sources. Intervals are pointwise and unadjusted, conditional on fixed runs,
+not independent-initialization uncertainty. Undefined draws are retained.
+
+\subsection{Exposure and Reproduction Boundaries}
+Correcting Pascal Context exposed overlap with earlier calibration:
+PC59 screen/refine/confirm contain 33/62/59 reference-validation IDs and PC60
+34/61/61. Fixed parameters were retained, but these are not untouched TRACE
+PC tests. Waterbirds-Seg is a locally rendered extension with 2458 training,
+296 validation and 2568 test images; the test is balanced at 642 per group.
+Earlier 5322-image mixed-split outcomes were exposed. COCO-CD is also a local
+declared extension, not a new independent official benchmark reproduction.
+
+Original source, transforms, vocabulary, ignore and metric paths are pinned,
+but the Object paper-value discrepancy remains unresolved: L14 NoAdapt is
+25.03 versus 23.80 in the reference, and MLMP is 30.42 versus 28.84. Corrected
+PC60 NoAdapt matches 24.95. Strict deterministic execution and workers-zero
+I/O are declared extensions; historical reused baseline stages keep their
+original runtime provenance. Source fidelity and scalar agreement are not
+treated as sufficient proof of complete protocol equivalence.
+
+\section{Results}
+\subsection{Selected-System Performance}
+Tables~\ref{tab:clean} and~\ref{tab:corruptions} contain all main conditions.
+The selected area\_C system exceeds fixed MLMP on all eight declared L14
+clean means and every corruption mean. The corruption arithmetic macro is
+79.6800 versus 77.5711, a 2.1089-point gain. This is not an equal-search-budget
+or universal SOTA claim. B16 Object regresses by 0.7367 points and PC60 by
+0.4133; B16 VOC20 improves by 0.2567. Negative transfer remains part of the
+result. All six original TENT means are below both selected area\_C and MLMP
+on the corresponding canonical clean populations.
+
+\input{generated/clean}
+
+\subsection{Does C Explain the Gain?}
+The full-population regional-term controls do not establish a C-specific
+mIoU benefit (Table~\ref{tab:full-component}). Object is \ObjFull{} with C
+and \ObjNoRegion{} without it: \ObjDelta{} points, 95\% CI
+$[\ObjLow,\ObjHigh]$. PC60 is \PCFull{} with C and \PCNoRegion{} without:
+\PCDelta{} points, CI $[\PCLow,\PCHigh]$. Both intervals include zero.
+Object's entire selected-C sourcewise integer-count arrays equal the original
+main C result. PC60's new common-block episodes differ from its original
+global shuffles, so its new mean does not replace the main table.
+
+The no-region operating point retains much of the point improvement over
+fixed paper MLMP. It also retains selected learning rate, batch, steps, CLS
+and temperature fields. Consequently the full-system advantage cannot be
+attributed to C from this comparison, nor decomposed into causal percentages
+for individual hyperparameters. A null interval is not proof of exact
+equivalence or absence of benefit at every possible setting.
+
+\begin{figure*}[p]
+ \centering\includegraphics[width=0.97\textwidth]{figures/component_intervals.png}
+ \caption{Selected area\_C minus no-region. Teal rows are evaluation-disjoint
+ training diagnostics; black squares are the two full-population component
+ controls. All intervals are paired, pointwise and unadjusted. Six of seven
+ diagnostic intervals and both full-population intervals contain zero.
+ The positive B16 VOC20 diagnostic is not a multiplicity-adjusted universal
+ mechanism finding.}
+ \label{fig:components}
+\end{figure*}
+
+Matched-default and selected-system comparisons answer different questions.
+The diagnostic default-area addition is nearly null on Object/PC60, whereas
+selected operating points change multiple fields. Removing global pixel
+entropy hurts Object/PC60 more; CLS removal is more damaging on VOC20 and
+Waterbirds. Uniform or spatially shuffled mass can match or exceed C on
+several tasks. All 126 cells, including these negative controls, remain in
+Tables~\ref{tab:ablations} and~\ref{tab:scores}; no best control replaces the
+adopted method after seeing results.
+
+\subsection{Backbone Transfer Is Not Explained by One Bug}
+Label-free profiles show larger candidate C and coverage on B16 Object/PC60
+(Table~\ref{tab:transfer}). They do not identify a causal explanation for the
+accuracy regressions. PC60's first-block regional/global gradient norm ratio
+does not increase, and relative parameter-update norms are lower on B16.
+Thus a blanket larger-update explanation is unsupported. PC60 has no alias
+merge ambiguity, so aliases cannot alone explain all failures. Geometry,
+feature distributions and objective interactions remain hypotheses. Gradient
+profiles cover only the first fixed eight-source block, with missing ratios
+retained; they are not full-population risk predictors.
+
+\subsection{Foreground-Preserving Context Interventions}
+R04 constructs 126 of 128 requested COCO cases; two have no eligible supported
+instance. All raw/model/native-normalized foreground pixels remain unchanged
+across original, sham, hard and edge contexts, without another resize. All
+sham predictions are exactly identical. The metric is foreground pixel
+accuracy averaged per selected object, not composite-image mIoU.
+
+MLMP scores 71.8265 on original context and 56.8850 after hard replacement;
+selected area\_C scores 67.3325 and 57.4963 (Table~\ref{tab:context}). TRACE
+minus MLMP is $-4.4941$ points on original views, CI $[-7.9620,-0.9964]$,
+and $+0.6113$ on hard replacements with a zero-crossing interval. A smaller
+drop from a lower starting accuracy does not establish superior robustness.
+Original context is beneficial on average for every method. At the case
+level, area\_C has 61 original-beneficial, 51 replacement-beneficial and 14
+null hard-replacement outcomes. Neither universal context removal nor a
+universal C reliability interpretation follows.
+
+\begin{figure*}[p]
+ \centering\includegraphics[width=0.97\textwidth]{figures/context_accuracy.png}
+ \caption{Mean selected-object foreground accuracy on the controlled context
+ set. The zero-based axis preserves the lower original-view starting point of
+ area\_C. Exact sham values equal original values and are listed in the table.
+ These bars are not full-image segmentation mIoU.}
+ \label{fig:context}
+\end{figure*}
+
+\subsection{Time-Budget Controls}
+The GT-free training pilot measures every integer step from one to twenty in
+three arrangements for Object/PC60. It selects the largest integer within
+fixed MLMP time in every arrangement: one step on Object and ten on PC60.
+Full test results are 30.5268 versus 30.4214 on Object, delta $+0.1054$ with
+CI $[-0.0286,0.2248]$, and 27.8738 versus 27.9684 on PC60, delta $-0.0946$
+with CI $[-0.3809,0.2047]$ (Table~\ref{tab:time}). Neither establishes an
+accuracy improvement. These controls do not replace the main selected
+twenty-step Object and five-step PC60 configurations.
+
+Object takes 0.892--0.907 of MLMP time: budget-feasible, but outside strict
+$\pm5\%$ near-time equality. PC60 ratios 0.958--0.966 satisfy both criteria.
+Formal time and accuracy never reselect steps. Timings include authenticated
+input loading/decode, transfer, resets, all probes, updates, readout and host
+labels. Model initialization is separate. Diagnostic shared-view timings
+and live wrapper/reference CUDA allocations are not intrinsic standalone
+speed or memory advantages. Historical time-matching NULL results remain
+separate rather than being retroactively relabeled as feasible matches.
+
+\subsection{Historical Risk and Declared Group Outcomes}
+The historical R03 isolated-update cohort contains 2042 recorded cases, all
+usable, not a new full-population current-method test. All evaluated bootstrap
+metrics have zero undefined draws. Grouped OOF
+M0 uses confidence/query/class/area; M1 adds C, with optional offline initial
+GT-quality controls and a fixed nonlinear M0 sensitivity. All 24 primary
+hard-harm metric-increment intervals include zero. A secondary Object
+nonlinear quality-adjusted variant worsens Brier and log loss. All 16 AP
+increment intervals include zero. These conditional fixed-fit intervals do
+not validate calibrated deployment-time update reliability or prove
+conditional independence; all results remain in the supplement.
+
+The declared Waterbirds-Seg test yields mean trial worst-group segmentation
+mIoU 30.5657/34.1243/37.6249 for NoAdapt/MLMP/area\_C. These are descriptive
+group-segmentation points, not classification worst-group accuracy, and no
+paired group interval is identified from the original crossed episodes.
+The new training diagnostic has group sizes 134/1/1/120, with 3605 undefined
+worst-group draws out of 10000; its interval remains unavailable. Balanced
+full-test groups do not repair that separate diagnostic uncertainty.
+
+\section{Limitations and Reproducibility}
+The principal limitation is scientific attribution: strong selected-system
+means do not establish that C supplies the gain. The method adds probe cost,
+uses confidence-selected fixed regions, and still performs fixed-step global
+updates on low-C images. Simpler mass controls and the two full component
+studies constrain the reliability narrative. The evaluation compares the
+authorized official MLMP/TENT scope, not every recent OVSS adaptation method,
+and does not support a state-of-the-art claim.
+
+Development exposure and unequal calibration remain substantive limits, not
+formatting caveats. Corrected PC overlap prevents untouched held-out TRACE
+claims; local Waterbirds/COCO-CD populations do not establish independent
+public-benchmark generalization. The unresolved Object scalar discrepancy
+prevents claiming complete paper-number reproduction. Common-block intervals
+condition on fixed runs and many hypotheses; borderline pointwise positives
+are not universal mechanistic evidence. We report no causal safety guarantee.
+
+All new science uses one GPU worker and the original shared lock, with
+12\,GiB host RAM/1\,GiB swap limits; CPU scoring uses 4\,GiB/1\,GiB, one thread
+and hidden CUDA. Complete sealed predictions and successful same-invocation
+exits precede each new GT score. A missed corrected-PC loader binding caused
+one CPU scoring failure before GT decode; its bytes and journals were retained.
+A separately frozen process-local routing repair reused the successful
+prediction, verified exact source order and continued only missing stages.
+No failed bytes were blindly retried and no successful science was replayed
+to find a favorable outcome. All original 96 frozen recovery sources remain
+unchanged. The new paper snapshot is independent of protected older papers.
+
+\section{Conclusion}
+\method{} provides a completely evaluated training-calibrated operating point
+with gains over fixed MLMP on the declared L14 clean and corruption settings
+and mixed B16 transfer. The accompanying controls do not establish a
+C-specific full-population benefit or an equal-budget accuracy advantage.
+Useful context, historical risk-prediction nulls and simpler weighting
+controls limit the proposed reliability interpretation. The warranted
+conclusion is a bounded system result and an attribution audit, not proof
+that context-conditioned support is calibrated update utility.
+
+\FloatBarrier
+\clearpage
+\bibliographystyle{plainnat}
+\bibliography{references}
+\clearpage
+\onecolumn
+\appendix
+
+\section{Complete Main Results}
+All values are percentages unless explicitly stated otherwise. Main means
+average the upstream rounded per-trial result; exact unrounded means are
+also retained. Extension populations and historical exposure are described
+in the main protocol. B16 and all fifteen corruptions reuse the corresponding
+clean L14 fields without retuning. NoAdapt/TENT and MLMP differ in readout,
+so the main comparisons are system-level comparisons.
+\input{generated/corruption}
+\FloatBarrier
+\input{generated/exact_main}
+\FloatBarrier\clearpage
+
+\section{All Diagnostic Component and Score Controls}
+Each family has 256 evaluation-disjoint training sources. L14 and B16 share
+source cohorts; orders are not new independent images. All fourteen core
+arms and all seven additional score-source controls are shown. The complete
+JSON includes every contrast and all bootstrap draws, including interaction
+controls; no branch was selected as a new main method.
+\input{generated/ablations}
+\input{generated/score_sources}
+\FloatBarrier
+\input{generated/diagnostic_intervals}
+\FloatBarrier\clearpage
+
+\section{Full Component and Time-Budget Evaluations}
+The full component studies keep every selected field fixed except removal
+of the regional term. Their common-block episode arrangements are a new
+declared post-diagnostic control. In particular, the PC60 mean from this
+design is not a replacement for the original shuffled main result.
+\input{generated/full_components}
+\input{generated/time_accuracy}
+\FloatBarrier
+\input{generated/time_grid}
+\input{generated/timing_cost}
+\FloatBarrier\clearpage
+
+\section{Complete Context Outcomes}
+Requested cases 21 and 102 are unavailable because no supported eligible
+instance exists; they are not interpolated or silently replaced. Donors
+were outcome-blind. All four contexts preserve the selected foreground,
+and exact shams have identical labels. Both helpful and harmful contexts
+remain. The MLMP zero-update arm uses its native multi-prompt/layer readout,
+not official single-prompt NoAdapt.
+\input{generated/context}
+\input{generated/context_benefit}
+\FloatBarrier
+\input{generated/context_intervals}
+\FloatBarrier\clearpage
+
+\section{Group and Backbone Diagnostics}
+Local Waterbirds-Seg groups use $g=2y+\mathrm{place}$, with landbird $y=0$
+and waterbird $y=1$. The declared test has 642 images in each group. Mask
+labels are background/landbird/waterbird. Group mIoU pools source I/U within
+each group and omits zero-union classes by the original metric definition;
+it need not equal the overall pooled mIoU when averaged across groups.
+\input{generated/bird_groups}
+\input{generated/transfer}
+\begin{figure}[htbp]
+ \centering\includegraphics[width=0.88\textwidth]{figures/transfer_profiles.png}
+ \caption{Candidate-weighted mean C and image-level coverage on the same
+ diagnostic sources. Actual feature-grid areas normalize the L14/B16
+ comparison. Lines are descriptive paired profiles, not causal estimates
+ or independently calibrated risk.}
+ \label{fig:transfer}
+\end{figure}
+\FloatBarrier\clearpage
+
+\section{All Selected Operating Fields}
+Full round-trip precision is in \texttt{complete\_results.json}; displayed
+parameter values use compact precision. Batch size is the actual adaptation
+batch, not diagnostic-view batch. Diagnostic views use forward batch four.
+The final policy selects only from clean L14 training panels and copies
+every field to corresponding B16/S5 tasks. Historical B16/S5 development
+exposure is not erased by that policy. Zero regional/CLS terms and an identity
+probe were diagnostic search controls, not eligible silent replacements
+for the adopted method.
+\input{generated/params0}
+\input{generated/params1}
+\FloatBarrier\clearpage
+
+\section{Current NoAdapt Pairing and Unidentifiable Designs}
+The following current-system analysis is distinct from the older image-C
+R00 study. It reuses current sealed integer counts only. Old TRACE-minus-MLMP
+crossed-order graphs have one connected component in all 26 conditions;
+their paired CIs are unidentifiable under the predeclared component rule.
+Eligible TRACE-minus-NoAdapt draws share complete dependence blocks across
+arms and orders. All fifteen corruption types share the same draws for the
+arithmetic macro. This includes prompt/readout changes, not just updates.
+\input{generated/noadapt_intervals}
+\FloatBarrier\clearpage
+
+\section{Historical R03: All Prespecified OOF Results}
+These are historically selected confidence-TopK isolated unit-weight updates,
+not newly generated current area\_C outcomes. Object has 1024 cases from
+128 sources/113 original episodes; PC60 has 1018 from 128/105. Five
+original-episode grouped folds share training-only preprocessing and fixed
+logistic models. Nonlinear M0 uses degree-one-to-three numerical terms;
+M1 adds standardized C. Offline GT quality is an adjustment covariate, not
+an inference input. Primary harm is negative net correct-pixel change;
+the secondary support proxy is not hard prediction harm. AP is
+noninterpolated average precision. All 10000 whole-original-episode draws
+are retained; each metric has zero undefined draws. Negative Brier/log loss
+and positive AP favor M1. These deltas are score units, not percentage points.
+\input{generated/r03_brier}
+\input{generated/r03_log_loss}
+\input{generated/r03_average_precision}
+\FloatBarrier\clearpage
+
+\section{Artifact and Execution Index}
+The official MLMP source is pinned to commit
+\texttt{2a887de018b3f2c3b132f69fe806bab12a2d511f}; DeYO source to
+\texttt{3d7d2897d864907571ef75edf31f0028d53f1432}. Local external caches are
+not called upstream commits. Source snapshots, input identities, exact
+episodes, gates, prediction seals, typed stage admissions and actual process
+identities are retained with the results. \texttt{EXPERIMENT\_INDEX.json}
+contains complete digests and successful parent bindings. The complete
+machine-readable artifact contains all main/ablation/component/context/time/
+TENT/group results, shared draws and historical R03 summaries, without raw
+RGB, GT, model weights or prediction arrays.
+
+The final recovery controller and final collation exited successfully on
+17 November; directory names alone were not accepted as completion.
+Successful R04, timing pilot, Object time evaluation and PC60 predictions
+were reused by exact identities, not replayed after the loader failure.
+The old failed postcontroller, waiting component controller and CPU score
+remain failed, with full journals preserved. No resource cap was enlarged,
+cache dropped, parallel GPU worker added, or baseline retuned for repair.
+
+Earlier positive/negative/null studies, old V01 infeasible time matches,
+failure/cancellation records, geometry distinctions and partial historical
+provenance remain valid records of their own scope. R03's original legacy
+prediction capture did not include ExecMainCode; that missing historical
+field was not invented. Six historical flagged reference-mutation
+demonstrations remain not run under platform restrictions; code tests do not
+turn them into empirical model gates. No Windows manuscript was supplied or
+claimed to have been read. No old paper, raw review, result or main checkout
+was overwritten by this independent snapshot.
+
+\end{document}

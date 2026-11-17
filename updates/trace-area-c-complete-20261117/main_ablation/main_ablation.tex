@@ -1,0 +1,20 @@
+\begin{table*}[t]
+\centering\small
+\caption{Main component ablation on full populations. The proposed regional
+branch is removed from the update while all other selected fields stay fixed.
+Values are three-arrangement mean mIoU (\%); intervals are pointwise paired95\%.
+The PC60 common-block protocol is separate from the original shuffled main table.}
+\label{tab:main-component-removal}
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{lrr}
+\toprule
+Method & Object5000 & PC605104 \\
+\midrule
+Complete TRACE area\_C & 32.4412 & 28.8355 \\
+w/o proposed regional branch & 32.3686 & 28.8921 \\
+\midrule
+Complete minus removed (pp) & +0.0726 & -0.0566 \\
+Paired95\% CI (pp) & [-0.0916,+0.2442] & [-0.1228,+0.0103] \\
+\bottomrule
+\end{tabular}
+\end{table*}

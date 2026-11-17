@@ -1,0 +1,16 @@
+\begin{table}[htbp]
+\centering\scriptsize
+\caption{Selected-instance foreground pixel accuracy (percent), averaged per object and order. Not full-composite mIoU. All sham predictions are exactly identical.}
+\label{tab:context}
+\setlength{\tabcolsep}{4pt}
+\begin{tabular}{lrrrr}
+\toprule
+Method & Original & Sham & Hard & Edge \\
+\midrule
+MLMP\_paper & 71.8265 & 71.8265 & 56.8850 & 57.1355 \\
+MLMP\_zero\_update & 70.6230 & 70.6230 & 56.7131 & 55.4147 \\
+area\_selected & 67.3325 & 67.3325 & 57.4963 & 57.9583 \\
+no\_region & 65.9075 & 65.9075 & 56.7841 & 57.4863 \\
+\bottomrule
+\end{tabular}
+\end{table}
